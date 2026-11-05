@@ -4910,12 +4910,6 @@
             <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="41:876" id="41:877"/>
         </ViewModelInstance>
     </ViewModel>
-    <ViewModel defaultInstanceId="122:3" name="NavExpansion" id="122:1">
-        <ViewModelPropertyBoolean name="allOpen" id="122:2"/>
-        <ViewModelInstance exports="true" name="Default" id="122:3">
-            <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="122:2" id="122:7"/>
-        </ViewModelInstance>
-    </ViewModel>
     <ViewModel defaultInstanceId="42:303" name="NavGroup" id="41:864">
         <ViewModelPropertyBoolean name="a11yHidden" id="41:878"/>
         <ViewModelPropertyString name="title" id="41:880"/>
@@ -5721,6 +5715,12 @@
             <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="112:12" id="112:161"/>
             <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="112:13" id="112:162"/>
             <ViewModelInstanceNumber propertyValue="7" viewModelPropertyId="117:265" id="117:267"/>
+        </ViewModelInstance>
+    </ViewModel>
+    <ViewModel defaultInstanceId="122:3" name="NavExpansion" id="122:1">
+        <ViewModelPropertyBoolean name="allOpen" id="122:2"/>
+        <ViewModelInstance exports="true" name="Default" id="122:3">
+            <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="122:2" id="122:7"/>
         </ViewModelInstance>
     </ViewModel>
 </Rive>

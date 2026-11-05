@@ -44,42 +44,42 @@
                     <LayoutComponent width="28" height="28" styleId="122:24" name="Toggle All" id="122:21">
                         <LayoutComponent width="16" height="16" styleId="122:23" name="Icon" id="122:31">
                             <Node name="Art" id="122:32">
-                        <Shape name="Collapse" id="122:41">
-                            <PointsPath id="122:36">
-                                <StraightVertex x="4.667" y="13.333" id="122:33"/>
-                                <StraightVertex x="8" y="10" id="122:34"/>
-                                <StraightVertex x="11.333" y="13.333" id="122:35"/>
-                            </PointsPath>
-                            <PointsPath id="122:40">
-                                <StraightVertex x="4.667" y="2.667" id="122:37"/>
-                                <StraightVertex x="8" y="6" id="122:38"/>
-                                <StraightVertex x="11.333" y="2.667" id="122:39"/>
-                            </PointsPath>
-                            <Stroke thickness="1.5" cap="round" join="round" id="122:42">
-                                <SolidColor colorValue="FFA1A1AA" id="122:43">
-                                    <DataBindContext sourcePathIds="41:866-41:892-10:7426" propertyKey="37" nameBased="true" id="122:44"/>
-                                </SolidColor>
-                            </Stroke>
-                            <DataBindContext sourcePathIds="41:866-122:4-122:2" propertyKey="18" nameBased="true" converterId="9:145" id="122:45"/>
-                        </Shape>
-                        <Shape opacity="0" name="Expand" id="122:54">
-                            <PointsPath id="122:49">
-                                <StraightVertex x="4.667" y="10" id="122:46"/>
-                                <StraightVertex x="8" y="13.333" id="122:47"/>
-                                <StraightVertex x="11.333" y="10" id="122:48"/>
-                            </PointsPath>
-                            <PointsPath id="122:53">
-                                <StraightVertex x="4.667" y="6" id="122:50"/>
-                                <StraightVertex x="8" y="2.667" id="122:51"/>
-                                <StraightVertex x="11.333" y="6" id="122:52"/>
-                            </PointsPath>
-                            <Stroke thickness="1.5" cap="round" join="round" id="122:55">
-                                <SolidColor colorValue="FFA1A1AA" id="122:56">
-                                    <DataBindContext sourcePathIds="41:866-41:892-10:7426" propertyKey="37" nameBased="true" id="122:57"/>
-                                </SolidColor>
-                            </Stroke>
-                            <DataBindContext sourcePathIds="41:866-122:4-122:2" propertyKey="18" nameBased="true" converterId="9:90" id="122:58"/>
-                        </Shape>
+                                <Shape name="Collapse" id="122:41">
+                                    <PointsPath id="122:36">
+                                        <StraightVertex x="4.6669998" y="13.333" id="122:33"/>
+                                        <StraightVertex x="8" y="10" id="122:34"/>
+                                        <StraightVertex x="11.333" y="13.333" id="122:35"/>
+                                    </PointsPath>
+                                    <PointsPath isClockwise="false" id="122:40">
+                                        <StraightVertex x="4.6669998" y="2.6670001" id="122:37"/>
+                                        <StraightVertex x="8" y="6" id="122:38"/>
+                                        <StraightVertex x="11.333" y="2.6670001" id="122:39"/>
+                                    </PointsPath>
+                                    <Stroke thickness="1.5" cap="round" join="round" id="122:42">
+                                        <SolidColor colorValue="FFA1A1AA" id="122:43">
+                                            <DataBindContext sourcePathIds="41:866-41:892-10:7426" propertyKey="37" nameBased="true" id="122:44"/>
+                                        </SolidColor>
+                                    </Stroke>
+                                    <DataBindContext sourcePathIds="41:866-122:4-122:2" propertyKey="18" nameBased="true" converterId="9:145" id="122:45"/>
+                                </Shape>
+                                <Shape opacity="0" name="Expand" id="122:54">
+                                    <PointsPath isClockwise="false" id="122:49">
+                                        <StraightVertex x="4.6669998" y="10" id="122:46"/>
+                                        <StraightVertex x="8" y="13.333" id="122:47"/>
+                                        <StraightVertex x="11.333" y="10" id="122:48"/>
+                                    </PointsPath>
+                                    <PointsPath id="122:53">
+                                        <StraightVertex x="4.6669998" y="6" id="122:50"/>
+                                        <StraightVertex x="8" y="2.6670001" id="122:51"/>
+                                        <StraightVertex x="11.333" y="6" id="122:52"/>
+                                    </PointsPath>
+                                    <Stroke thickness="1.5" cap="round" join="round" id="122:55">
+                                        <SolidColor colorValue="FFA1A1AA" id="122:56">
+                                            <DataBindContext sourcePathIds="41:866-41:892-10:7426" propertyKey="37" nameBased="true" id="122:57"/>
+                                        </SolidColor>
+                                    </Stroke>
+                                    <DataBindContext sourcePathIds="41:866-122:4-122:2" propertyKey="18" nameBased="true" converterId="9:90" id="122:58"/>
+                                </Shape>
                             </Node>
                             <LayoutComponentStyle id="122:23"/>
                         </LayoutComponent>
@@ -94,7 +94,8 @@
                             </LayoutComponentStyle>
                             <DataBindContext sourcePathIds="41:866-122:6" propertyKey="18" nameBased="true" converterId="9:145" id="122:30"/>
                         </LayoutComponent>
-                        <SemanticData role="button" label="Expand or collapse all sections" name="Semantics" id="122:59"/>
+                        <SemanticData role="button" label="Expand or collapse all sections" traitFlags="32" name="Semantics" id="122:59"/>
+                        <FocusData name="Focus" id="0:15809"/>
                         <LayoutComponentStyle layoutAlignmentType="center" layoutTypeValue="stack" id="122:24"/>
                     </LayoutComponent>
                     <LayoutComponentStyle gapHorizontal="10" paddingLeft="16" paddingRight="16" paddingTop="18" paddingBottom="18" layoutAlignmentType="spaceBetweenCenter" intrinsicallySizedValue="true" layoutWidthScaleType="fill" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="42:183"/>
@@ -248,8 +249,8 @@
                 </ListenerInputTypeSemantic>
                 <ListenerViewModelChange fromViewModelProperty="true" fromDataBindId="122:81" id="122:86">
                     <BindablePropertyBoolean id="122:87">
-                        <DataBindContext sourcePathIds="41:866-122:4-122:2" propertyKey="634" direction="true" converterId="1:1018" id="122:88"/>
                         <DataBindContext sourcePathIds="41:866-122:4-122:2" propertyKey="634" id="122:81"/>
+                        <DataBindContext sourcePathIds="41:866-122:4-122:2" propertyKey="634" direction="true" converterId="1:1018" id="122:88"/>
                     </BindablePropertyBoolean>
                 </ListenerViewModelChange>
             </StateMachineListener>
