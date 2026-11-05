@@ -170,7 +170,7 @@
     <DataBindContext sourcePathIds="1:1932-1:1958" propertyKey="718" id="1:1970"/>
     <DataBindContext sourcePathIds="1:1932-1:1960" propertyKey="719" id="1:1971"/>
     <DataConverterEnumToUint name="System Enum to Uint" id="9:109"/>
-    <DataConverterFormula name="SliderPercent" id="2:41">
+    <DataConverterFormula name="SliderPercent" groupId="1:2674" id="2:41">
         <FormulaTokenFunction functionType="round" id="2:42"/>
         <FormulaTokenParenthesisOpen id="2:43"/>
         <FormulaTokenInput id="2:44"/>
@@ -193,12 +193,12 @@
         <FormulaTokenValue operationValue="100" id="2:58"/>
         <FormulaTokenParenthesisClose id="2:59"/>
     </DataConverterFormula>
-    <DataConverterFormula name="DisabledToDisplay" id="9:93">
+    <DataConverterFormula name="DisabledToDisplay" groupId="1:2674" id="9:93">
         <FormulaTokenValue id="9:94"/>
         <FormulaTokenOperation operationType="subtract" id="9:95"/>
         <FormulaTokenInput id="9:96"/>
     </DataConverterFormula>
-    <DataConverterFormula name="ShadowAlpha" id="9:134">
+    <DataConverterFormula name="ShadowAlpha" groupId="1:2674" id="9:134">
         <FormulaTokenValue operationValue="51" id="9:135"/>
         <FormulaTokenOperation operationType="multiply" id="9:136"/>
         <FormulaTokenParenthesisOpen id="9:137"/>
@@ -207,7 +207,7 @@
         <FormulaTokenInput id="9:140"/>
         <FormulaTokenParenthesisClose id="9:141"/>
     </DataConverterFormula>
-    <DataConverterFormula name="IconNoneHide" id="33:216">
+    <DataConverterFormula name="IconNoneHide" groupId="1:2674" id="33:216">
         <FormulaTokenValue id="33:217"/>
         <FormulaTokenOperation operationType="subtract" id="33:218"/>
         <FormulaTokenFunction id="33:219"/>
@@ -216,19 +216,19 @@
         <FormulaTokenInput id="33:222"/>
         <FormulaTokenParenthesisClose id="33:223"/>
     </DataConverterFormula>
-    <DataConverterFormula name="IconOnlyPadF" id="33:227">
+    <DataConverterFormula name="IconOnlyPadF" groupId="1:2674" id="33:227">
         <FormulaTokenValue operationValue="16" id="33:228"/>
         <FormulaTokenOperation operationType="subtract" id="33:229"/>
         <FormulaTokenValue operationValue="4" id="33:230"/>
         <FormulaTokenOperation operationType="multiply" id="33:231"/>
         <FormulaTokenInput id="33:232"/>
     </DataConverterFormula>
-    <DataConverterFormula name="SecondaryStrokeF" id="33:254">
+    <DataConverterFormula name="SecondaryStrokeF" groupId="1:2674" id="33:254">
         <FormulaTokenValue operationValue="1.75" id="33:255"/>
         <FormulaTokenOperation operationType="multiply" id="33:256"/>
         <FormulaTokenInput id="33:257"/>
     </DataConverterFormula>
-    <DataConverterFormula name="Is7" id="38:407">
+    <DataConverterFormula name="Is7" groupId="1:2674" id="38:407">
         <FormulaTokenFunction functionType="max" id="38:408"/>
         <FormulaTokenValue operationValue="0" id="38:409"/>
         <FormulaTokenArgumentSeparator id="38:410"/>
@@ -243,7 +243,7 @@
         <FormulaTokenParenthesisClose id="38:419"/>
         <FormulaTokenParenthesisClose id="38:420"/>
     </DataConverterFormula>
-    <DataConverterFormula name="Is8" id="38:421">
+    <DataConverterFormula name="Is8" groupId="1:2674" id="38:421">
         <FormulaTokenFunction functionType="max" id="38:422"/>
         <FormulaTokenValue operationValue="0" id="38:423"/>
         <FormulaTokenArgumentSeparator id="38:424"/>
@@ -258,24 +258,24 @@
         <FormulaTokenParenthesisClose id="38:433"/>
         <FormulaTokenParenthesisClose id="38:434"/>
     </DataConverterFormula>
-    <DataConverterFormula name="PanelWidthF" id="42:372">
+    <DataConverterFormula name="PanelWidthF" groupId="1:2674" id="42:372">
         <FormulaTokenValue operationValue="240" id="42:373"/>
         <FormulaTokenOperation operationType="multiply" id="42:374"/>
         <FormulaTokenInput id="42:375"/>
     </DataConverterFormula>
-    <DataConverterFormula name="PanelFullTmp" id="42:469">
+    <DataConverterFormula name="PanelFullTmp" groupId="1:2674" id="42:469">
         <FormulaTokenValue operationValue="240" id="42:470"/>
         <FormulaTokenOperation id="42:471"/>
         <FormulaTokenValue operationValue="0" id="42:472"/>
         <FormulaTokenOperation operationType="multiply" id="42:473"/>
         <FormulaTokenInput id="42:474"/>
     </DataConverterFormula>
-    <DataConverterFormula name="Formula 1" id="70:513">
+    <DataConverterFormula name="Formula 1" groupId="1:2674" id="70:513">
         <FormulaTokenInput id="70:514"/>
         <FormulaTokenOperation operationType="multiply" id="70:515"/>
         <FormulaTokenValue operationValue="0.1" id="70:516"/>
     </DataConverterFormula>
-    <DataConverterFormula name="RadButtonLeft" id="99:108">
+    <DataConverterFormula name="RadButtonLeft" groupId="1:2674" id="99:108">
         <FormulaTokenParenthesisOpen id="99:114"/>
         <FormulaTokenValue operationValue="4" id="99:115"/>
         <FormulaTokenOperation operationType="multiply" id="99:116"/>
@@ -340,7 +340,7 @@
         <FormulaTokenParenthesisClose id="99:174"/>
         <FormulaTokenParenthesisClose id="99:175"/>
     </DataConverterFormula>
-    <DataConverterFormula name="RadButtonRight" id="99:109">
+    <DataConverterFormula name="RadButtonRight" groupId="1:2674" id="99:109">
         <FormulaTokenParenthesisOpen id="99:176"/>
         <FormulaTokenValue operationValue="4" id="99:177"/>
         <FormulaTokenOperation operationType="multiply" id="99:178"/>
@@ -413,7 +413,7 @@
         <FormulaTokenParenthesisClose id="99:243"/>
         <FormulaTokenParenthesisClose id="99:244"/>
     </DataConverterFormula>
-    <DataConverterFormula name="GroupDividerHide" id="99:110">
+    <DataConverterFormula name="GroupDividerHide" groupId="1:2674" id="99:110">
         <FormulaTokenValue id="99:245"/>
         <FormulaTokenOperation operationType="subtract" id="99:246"/>
         <FormulaTokenFunction id="99:247"/>
@@ -428,7 +428,7 @@
         <FormulaTokenParenthesisClose id="99:256"/>
         <FormulaTokenParenthesisClose id="99:257"/>
     </DataConverterFormula>
-    <DataConverterFormula name="ShadowAlphaGrouped" id="99:112">
+    <DataConverterFormula name="ShadowAlphaGrouped" groupId="1:2674" id="99:112">
         <FormulaTokenValue operationValue="51" id="99:258"/>
         <FormulaTokenOperation operationType="multiply" id="99:259"/>
         <FormulaTokenParenthesisOpen id="99:260"/>
@@ -449,10 +449,10 @@
         <FormulaTokenParenthesisClose id="99:274"/>
         <FormulaTokenParenthesisClose id="99:275"/>
     </DataConverterFormula>
-    <DataConverterFormula name="PageSlot1" id="102:21">
+    <DataConverterFormula name="PageSlot1" groupId="1:2674" id="102:21">
         <FormulaTokenValue id="102:22"/>
     </DataConverterFormula>
-    <DataConverterFormula name="PageSlot1Hide" id="102:23">
+    <DataConverterFormula name="PageSlot1Hide" groupId="1:2674" id="102:23">
         <FormulaTokenParenthesisOpen id="102:24"/>
         <FormulaTokenValue id="102:25"/>
         <FormulaTokenOperation operationType="subtract" id="102:26"/>
@@ -485,7 +485,7 @@
         <FormulaTokenParenthesisClose id="102:51"/>
         <FormulaTokenParenthesisClose id="102:52"/>
     </DataConverterFormula>
-    <DataConverterFormula name="PageSlot2" id="102:53">
+    <DataConverterFormula name="PageSlot2" groupId="1:2674" id="102:53">
         <FormulaTokenValue operationValue="2" id="102:54"/>
         <FormulaTokenOperation operationType="multiply" id="102:55"/>
         <FormulaTokenParenthesisOpen id="102:56"/>
@@ -548,7 +548,7 @@
         <FormulaTokenParenthesisClose id="102:110"/>
         <FormulaTokenParenthesisClose id="102:111"/>
     </DataConverterFormula>
-    <DataConverterFormula name="PageSlot2Hide" id="102:112">
+    <DataConverterFormula name="PageSlot2Hide" groupId="1:2674" id="102:112">
         <FormulaTokenParenthesisOpen id="102:113"/>
         <FormulaTokenValue id="102:114"/>
         <FormulaTokenOperation operationType="subtract" id="102:115"/>
@@ -581,7 +581,7 @@
         <FormulaTokenParenthesisClose id="102:140"/>
         <FormulaTokenParenthesisClose id="102:141"/>
     </DataConverterFormula>
-    <DataConverterFormula name="PageSlot3" id="102:142">
+    <DataConverterFormula name="PageSlot3" groupId="1:2674" id="102:142">
         <FormulaTokenValue operationValue="3" id="102:143"/>
         <FormulaTokenOperation operationType="multiply" id="102:144"/>
         <FormulaTokenParenthesisOpen id="102:145"/>
@@ -632,7 +632,7 @@
         <FormulaTokenParenthesisClose id="102:187"/>
         <FormulaTokenParenthesisClose id="102:188"/>
     </DataConverterFormula>
-    <DataConverterFormula name="PageSlot3Hide" id="102:189">
+    <DataConverterFormula name="PageSlot3Hide" groupId="1:2674" id="102:189">
         <FormulaTokenParenthesisOpen id="102:190"/>
         <FormulaTokenValue id="102:191"/>
         <FormulaTokenOperation operationType="subtract" id="102:192"/>
@@ -665,7 +665,7 @@
         <FormulaTokenParenthesisClose id="102:217"/>
         <FormulaTokenParenthesisClose id="102:218"/>
     </DataConverterFormula>
-    <DataConverterFormula name="PageSlot4" id="102:219">
+    <DataConverterFormula name="PageSlot4" groupId="1:2674" id="102:219">
         <FormulaTokenValue operationValue="4" id="102:220"/>
         <FormulaTokenOperation operationType="multiply" id="102:221"/>
         <FormulaTokenParenthesisOpen id="102:222"/>
@@ -720,7 +720,7 @@
         <FormulaTokenParenthesisClose id="102:268"/>
         <FormulaTokenParenthesisClose id="102:269"/>
     </DataConverterFormula>
-    <DataConverterFormula name="PageSlot4Hide" id="102:270">
+    <DataConverterFormula name="PageSlot4Hide" groupId="1:2674" id="102:270">
         <FormulaTokenParenthesisOpen id="102:271"/>
         <FormulaTokenValue id="102:272"/>
         <FormulaTokenOperation operationType="subtract" id="102:273"/>
@@ -753,7 +753,7 @@
         <FormulaTokenParenthesisClose id="102:298"/>
         <FormulaTokenParenthesisClose id="102:299"/>
     </DataConverterFormula>
-    <DataConverterFormula name="PageSlot5" id="102:300">
+    <DataConverterFormula name="PageSlot5" groupId="1:2674" id="102:300">
         <FormulaTokenValue operationValue="5" id="102:301"/>
         <FormulaTokenOperation operationType="multiply" id="102:302"/>
         <FormulaTokenParenthesisOpen id="102:303"/>
@@ -808,7 +808,7 @@
         <FormulaTokenParenthesisClose id="102:349"/>
         <FormulaTokenParenthesisClose id="102:350"/>
     </DataConverterFormula>
-    <DataConverterFormula name="PageSlot5Hide" id="102:351">
+    <DataConverterFormula name="PageSlot5Hide" groupId="1:2674" id="102:351">
         <FormulaTokenParenthesisOpen id="102:352"/>
         <FormulaTokenValue id="102:353"/>
         <FormulaTokenOperation operationType="subtract" id="102:354"/>
@@ -841,7 +841,7 @@
         <FormulaTokenParenthesisClose id="102:379"/>
         <FormulaTokenParenthesisClose id="102:380"/>
     </DataConverterFormula>
-    <DataConverterFormula name="PageSlot6" id="102:381">
+    <DataConverterFormula name="PageSlot6" groupId="1:2674" id="102:381">
         <FormulaTokenValue operationValue="6" id="102:382"/>
         <FormulaTokenOperation operationType="multiply" id="102:383"/>
         <FormulaTokenParenthesisOpen id="102:384"/>
@@ -914,7 +914,7 @@
         <FormulaTokenParenthesisClose id="102:446"/>
         <FormulaTokenParenthesisClose id="102:447"/>
     </DataConverterFormula>
-    <DataConverterFormula name="PageSlot6Hide" id="102:448">
+    <DataConverterFormula name="PageSlot6Hide" groupId="1:2674" id="102:448">
         <FormulaTokenParenthesisOpen id="102:449"/>
         <FormulaTokenValue id="102:450"/>
         <FormulaTokenOperation operationType="subtract" id="102:451"/>
@@ -947,7 +947,7 @@
         <FormulaTokenParenthesisClose id="102:476"/>
         <FormulaTokenParenthesisClose id="102:477"/>
     </DataConverterFormula>
-    <DataConverterFormula name="PageSlot7" id="102:478">
+    <DataConverterFormula name="PageSlot7" groupId="1:2674" id="102:478">
         <FormulaTokenValue operationValue="7" id="102:479"/>
         <FormulaTokenOperation operationType="multiply" id="102:480"/>
         <FormulaTokenParenthesisOpen id="102:481"/>
@@ -986,7 +986,7 @@
         <FormulaTokenParenthesisClose id="102:511"/>
         <FormulaTokenParenthesisClose id="102:512"/>
     </DataConverterFormula>
-    <DataConverterFormula name="PageSlot7Hide" id="102:513">
+    <DataConverterFormula name="PageSlot7Hide" groupId="1:2674" id="102:513">
         <FormulaTokenParenthesisOpen id="102:514"/>
         <FormulaTokenValue id="102:515"/>
         <FormulaTokenOperation operationType="subtract" id="102:516"/>
@@ -1019,7 +1019,7 @@
         <FormulaTokenParenthesisClose id="102:541"/>
         <FormulaTokenParenthesisClose id="102:542"/>
     </DataConverterFormula>
-    <DataConverterFormula name="PagePrev" id="102:543">
+    <DataConverterFormula name="PagePrev" groupId="1:2674" id="102:543">
         <FormulaTokenFunction functionType="max" id="102:544"/>
         <FormulaTokenValue id="102:545"/>
         <FormulaTokenArgumentSeparator id="102:546"/>
@@ -1028,7 +1028,7 @@
         <FormulaTokenValue id="102:549"/>
         <FormulaTokenParenthesisClose id="102:550"/>
     </DataConverterFormula>
-    <DataConverterFormula name="PageNext" id="102:551">
+    <DataConverterFormula name="PageNext" groupId="1:2674" id="102:551">
         <FormulaTokenFunction id="102:552"/>
         <FormulaTokenValue id="102:553">
             <DataBindContext sourcePathIds="102:7-102:9" propertyKey="777" nameBased="true" id="102:554"/>
@@ -1039,14 +1039,14 @@
         <FormulaTokenValue id="102:558"/>
         <FormulaTokenParenthesisClose id="102:559"/>
     </DataConverterFormula>
-    <DataConverterFormula name="PageEllipsisHide" id="102:560">
+    <DataConverterFormula name="PageEllipsisHide" groupId="1:2674" id="102:560">
         <FormulaTokenFunction id="102:561"/>
         <FormulaTokenValue id="102:562"/>
         <FormulaTokenArgumentSeparator id="102:563"/>
         <FormulaTokenInput id="102:564"/>
         <FormulaTokenParenthesisClose id="102:565"/>
     </DataConverterFormula>
-    <DataConverterFormula name="PageNumberHide" id="102:566">
+    <DataConverterFormula name="PageNumberHide" groupId="1:2674" id="102:566">
         <FormulaTokenValue id="102:567"/>
         <FormulaTokenOperation operationType="subtract" id="102:568"/>
         <FormulaTokenFunction id="102:569"/>
@@ -1055,7 +1055,7 @@
         <FormulaTokenInput id="102:572"/>
         <FormulaTokenParenthesisClose id="102:573"/>
     </DataConverterFormula>
-    <DataConverterFormula name="CrumbSeparatorHide" id="111:23">
+    <DataConverterFormula name="CrumbSeparatorHide" groupId="1:2674" id="111:23">
         <FormulaTokenValue id="111:24"/>
         <FormulaTokenOperation operationType="subtract" id="111:25"/>
         <FormulaTokenFunction id="111:26"/>
@@ -1064,7 +1064,7 @@
         <FormulaTokenInput id="111:29"/>
         <FormulaTokenParenthesisClose id="111:30"/>
     </DataConverterFormula>
-    <DataConverterFormula name="TooltipArrow0Hide" id="112:18">
+    <DataConverterFormula name="TooltipArrow0Hide" groupId="1:2674" id="112:18">
         <FormulaTokenFunction id="112:19"/>
         <FormulaTokenValue id="112:20"/>
         <FormulaTokenArgumentSeparator id="112:21"/>
@@ -1079,7 +1079,7 @@
         <FormulaTokenParenthesisClose id="112:30"/>
         <FormulaTokenParenthesisClose id="112:31"/>
     </DataConverterFormula>
-    <DataConverterFormula name="TooltipArrow1Hide" id="112:32">
+    <DataConverterFormula name="TooltipArrow1Hide" groupId="1:2674" id="112:32">
         <FormulaTokenFunction id="112:33"/>
         <FormulaTokenValue id="112:34"/>
         <FormulaTokenArgumentSeparator id="112:35"/>
@@ -1094,7 +1094,7 @@
         <FormulaTokenParenthesisClose id="112:44"/>
         <FormulaTokenParenthesisClose id="112:45"/>
     </DataConverterFormula>
-    <DataConverterFormula name="TooltipArrow2Hide" id="112:46">
+    <DataConverterFormula name="TooltipArrow2Hide" groupId="1:2674" id="112:46">
         <FormulaTokenFunction id="112:47"/>
         <FormulaTokenValue id="112:48"/>
         <FormulaTokenArgumentSeparator id="112:49"/>
@@ -1109,7 +1109,7 @@
         <FormulaTokenParenthesisClose id="112:58"/>
         <FormulaTokenParenthesisClose id="112:59"/>
     </DataConverterFormula>
-    <DataConverterFormula name="TooltipArrow3Hide" id="112:60">
+    <DataConverterFormula name="TooltipArrow3Hide" groupId="1:2674" id="112:60">
         <FormulaTokenFunction id="112:61"/>
         <FormulaTokenValue id="112:62"/>
         <FormulaTokenArgumentSeparator id="112:63"/>
@@ -1124,7 +1124,7 @@
         <FormulaTokenParenthesisClose id="112:72"/>
         <FormulaTokenParenthesisClose id="112:73"/>
     </DataConverterFormula>
-    <DataConverterFormula name="TooltipAlign" id="112:74">
+    <DataConverterFormula name="TooltipAlign" groupId="1:2674" id="112:74">
         <FormulaTokenValue operationValue="7" id="112:75"/>
         <FormulaTokenOperation operationType="subtract" id="112:76"/>
         <FormulaTokenValue operationValue="6" id="112:77"/>
@@ -1187,14 +1187,14 @@
         <FormulaTokenParenthesisClose id="112:134"/>
         <FormulaTokenParenthesisClose id="112:135"/>
     </DataConverterFormula>
-    <DataConverterFormula name="CanvasOpacity" id="115:15">
+    <DataConverterFormula name="CanvasOpacity" groupId="1:2674" id="115:15">
         <FormulaTokenInput id="115:16"/>
         <FormulaTokenOperation operationType="multiply" id="115:17"/>
         <FormulaTokenValue operationValue="0.0054347827" id="115:18"/>
         <FormulaTokenOperation operationType="subtract" id="115:19"/>
         <FormulaTokenValue operationValue="0.043478262" id="115:20"/>
     </DataConverterFormula>
-    <DataConverterFormula name="VariantIs0" id="118:8">
+    <DataConverterFormula name="VariantIs0" groupId="1:2674" id="118:8">
         <FormulaTokenFunction functionType="max" id="118:9"/>
         <FormulaTokenValue operationValue="0" id="118:10"/>
         <FormulaTokenArgumentSeparator id="118:11"/>
@@ -1209,7 +1209,7 @@
         <FormulaTokenParenthesisClose id="118:20"/>
         <FormulaTokenParenthesisClose id="118:21"/>
     </DataConverterFormula>
-    <DataConverterFormula name="VariantStroke0" id="118:22">
+    <DataConverterFormula name="VariantStroke0" groupId="1:2674" id="118:22">
         <FormulaTokenValue operationValue="1.75" id="118:23"/>
         <FormulaTokenOperation operationType="multiply" id="118:24"/>
         <FormulaTokenFunction functionType="max" id="118:25"/>
@@ -1226,7 +1226,7 @@
         <FormulaTokenParenthesisClose id="118:36"/>
         <FormulaTokenParenthesisClose id="118:37"/>
     </DataConverterFormula>
-    <DataConverterFormula name="VariantIs1" id="118:38">
+    <DataConverterFormula name="VariantIs1" groupId="1:2674" id="118:38">
         <FormulaTokenFunction functionType="max" id="118:39"/>
         <FormulaTokenValue operationValue="0" id="118:40"/>
         <FormulaTokenArgumentSeparator id="118:41"/>
@@ -1241,7 +1241,7 @@
         <FormulaTokenParenthesisClose id="118:50"/>
         <FormulaTokenParenthesisClose id="118:51"/>
     </DataConverterFormula>
-    <DataConverterFormula name="VariantStroke1" id="118:52">
+    <DataConverterFormula name="VariantStroke1" groupId="1:2674" id="118:52">
         <FormulaTokenValue operationValue="1.75" id="118:53"/>
         <FormulaTokenOperation operationType="multiply" id="118:54"/>
         <FormulaTokenFunction functionType="max" id="118:55"/>
@@ -1258,7 +1258,7 @@
         <FormulaTokenParenthesisClose id="118:66"/>
         <FormulaTokenParenthesisClose id="118:67"/>
     </DataConverterFormula>
-    <DataConverterFormula name="VariantIs2" id="118:68">
+    <DataConverterFormula name="VariantIs2" groupId="1:2674" id="118:68">
         <FormulaTokenFunction functionType="max" id="118:69"/>
         <FormulaTokenValue operationValue="0" id="118:70"/>
         <FormulaTokenArgumentSeparator id="118:71"/>
@@ -1273,7 +1273,7 @@
         <FormulaTokenParenthesisClose id="118:80"/>
         <FormulaTokenParenthesisClose id="118:81"/>
     </DataConverterFormula>
-    <DataConverterFormula name="VariantStroke2" id="118:82">
+    <DataConverterFormula name="VariantStroke2" groupId="1:2674" id="118:82">
         <FormulaTokenValue operationValue="1.75" id="118:83"/>
         <FormulaTokenOperation operationType="multiply" id="118:84"/>
         <FormulaTokenFunction functionType="max" id="118:85"/>
@@ -1290,7 +1290,7 @@
         <FormulaTokenParenthesisClose id="118:96"/>
         <FormulaTokenParenthesisClose id="118:97"/>
     </DataConverterFormula>
-    <DataConverterFormula name="VariantIs3" id="118:98">
+    <DataConverterFormula name="VariantIs3" groupId="1:2674" id="118:98">
         <FormulaTokenFunction functionType="max" id="118:99"/>
         <FormulaTokenValue operationValue="0" id="118:100"/>
         <FormulaTokenArgumentSeparator id="118:101"/>
@@ -1305,7 +1305,7 @@
         <FormulaTokenParenthesisClose id="118:110"/>
         <FormulaTokenParenthesisClose id="118:111"/>
     </DataConverterFormula>
-    <DataConverterFormula name="VariantStroke3" id="118:112">
+    <DataConverterFormula name="VariantStroke3" groupId="1:2674" id="118:112">
         <FormulaTokenValue operationValue="1.75" id="118:113"/>
         <FormulaTokenOperation operationType="multiply" id="118:114"/>
         <FormulaTokenFunction functionType="max" id="118:115"/>
@@ -1322,7 +1322,7 @@
         <FormulaTokenParenthesisClose id="118:126"/>
         <FormulaTokenParenthesisClose id="118:127"/>
     </DataConverterFormula>
-    <DataConverterFormula name="VariantHide0" id="118:128">
+    <DataConverterFormula name="VariantHide0" groupId="1:2674" id="118:128">
         <FormulaTokenFunction id="118:129"/>
         <FormulaTokenValue id="118:130"/>
         <FormulaTokenArgumentSeparator id="118:131"/>
@@ -1335,7 +1335,7 @@
         <FormulaTokenParenthesisClose id="118:138"/>
         <FormulaTokenParenthesisClose id="118:139"/>
     </DataConverterFormula>
-    <DataConverterFormula name="VariantHide1" id="118:140">
+    <DataConverterFormula name="VariantHide1" groupId="1:2674" id="118:140">
         <FormulaTokenFunction id="118:141"/>
         <FormulaTokenValue id="118:142"/>
         <FormulaTokenArgumentSeparator id="118:143"/>
@@ -1348,7 +1348,7 @@
         <FormulaTokenParenthesisClose id="118:150"/>
         <FormulaTokenParenthesisClose id="118:151"/>
     </DataConverterFormula>
-    <DataConverterFormula name="VariantHide3" id="118:152">
+    <DataConverterFormula name="VariantHide3" groupId="1:2674" id="118:152">
         <FormulaTokenFunction id="118:153"/>
         <FormulaTokenValue id="118:154"/>
         <FormulaTokenArgumentSeparator id="118:155"/>
@@ -1361,58 +1361,58 @@
         <FormulaTokenParenthesisClose id="118:162"/>
         <FormulaTokenParenthesisClose id="118:163"/>
     </DataConverterFormula>
-    <DataConverterGroup name="SliderPercentText" id="2:40">
+    <DataConverterGroup name="SliderPercentText" groupId="1:2674" id="2:40">
         <DataConverterGroupItem converterId="2:41" id="2:60"/>
         <DataConverterGroupItem converterId="2:61" id="2:62"/>
     </DataConverterGroup>
-    <DataConverterGroup name="DisabledShowShield" id="9:90">
+    <DataConverterGroup name="DisabledShowShield" groupId="1:2674" id="9:90">
         <DataConverterGroupItem converterId="9:91" id="9:92"/>
         <DataConverterGroupItem converterId="9:93" id="9:97"/>
     </DataConverterGroup>
-    <DataConverterGroup name="DisabledNoShadow" id="9:131">
+    <DataConverterGroup name="DisabledNoShadow" groupId="1:2674" id="9:131">
         <DataConverterGroupItem converterId="9:132" id="9:133"/>
         <DataConverterGroupItem converterId="9:134" id="9:142"/>
     </DataConverterGroup>
-    <DataConverterGroup name="IconOnlyPad" id="33:224">
+    <DataConverterGroup name="IconOnlyPad" groupId="1:2674" id="33:224">
         <DataConverterGroupItem converterId="33:225" id="33:226"/>
         <DataConverterGroupItem converterId="33:227" id="33:233"/>
     </DataConverterGroup>
-    <DataConverterGroup name="SecondaryStroke" id="33:251">
+    <DataConverterGroup name="SecondaryStroke" groupId="1:2674" id="33:251">
         <DataConverterGroupItem converterId="33:252" id="33:253"/>
         <DataConverterGroupItem converterId="33:254" id="33:258"/>
     </DataConverterGroup>
-    <DataConverterGroup name="PanelWidth" id="42:370">
+    <DataConverterGroup name="PanelWidth" groupId="1:2674" id="42:370">
         <DataConverterGroupItem converterId="9:91" id="42:371"/>
         <DataConverterGroupItem converterId="42:372" id="42:376"/>
     </DataConverterGroup>
-    <DataConverterGroup name="PanelFullWidth" id="42:481">
+    <DataConverterGroup name="PanelFullWidth" groupId="1:2674" id="42:481">
         <DataConverterGroupItem converterId="9:91" id="42:482"/>
         <DataConverterGroupItem converterId="42:469" id="42:483"/>
     </DataConverterGroup>
-    <DataConverterGroup name="Hover Tint" id="70:510">
+    <DataConverterGroup name="Hover Tint" groupId="1:2674" id="70:510">
         <DataConverterGroupItem converterId="70:511" id="70:512"/>
         <DataConverterGroupItem converterId="70:513" id="70:517"/>
     </DataConverterGroup>
-    <DataConverterGroup name="DisabledNoShadowGrouped" id="99:113">
+    <DataConverterGroup name="DisabledNoShadowGrouped" groupId="1:2674" id="99:113">
         <DataConverterGroupItem converterId="99:111" id="99:280"/>
         <DataConverterGroupItem converterId="99:112" id="99:281"/>
     </DataConverterGroup>
-    <DataConverterGroup name="TileCountText" id="100:60">
+    <DataConverterGroup name="TileCountText" groupId="1:2674" id="100:60">
         <DataConverterGroupItem converterId="100:59" id="100:61"/>
         <DataConverterGroupItem converterId="10:5473" id="100:62"/>
         <DataConverterGroupItem converterId="10:5574" id="100:63"/>
     </DataConverterGroup>
-    <DataConverterListToLength name="TileCount" id="100:59"/>
-    <DataConverterSystemNormalizer operationValue="2.55" operationType="multiply" name="Percentage to 0-255" id="9:144"/>
-    <DataConverterToNumber name="BoolToChecked" id="2:64"/>
-    <DataConverterToNumber name="DisabledNumberA" id="9:91"/>
-    <DataConverterToNumber name="DisabledNumberC" id="9:132"/>
-    <DataConverterToNumber name="DisabledOn" id="9:145"/>
-    <DataConverterToNumber name="IconOnlyNum" id="33:225"/>
-    <DataConverterToNumber name="SecondaryNum" id="33:252"/>
-    <DataConverterToNumber name="Convert to Number 1" id="70:511"/>
-    <DataConverterToNumber name="DisabledNumberG" id="99:111"/>
-    <DataConverterToString round="true" name="SliderPercentString" id="2:61"/>
+    <DataConverterListToLength name="TileCount" groupId="1:2674" id="100:59"/>
+    <DataConverterSystemNormalizer operationValue="2.55" operationType="multiply" name="Percentage to 0-255" groupId="1:2674" id="9:144"/>
+    <DataConverterToNumber name="BoolToChecked" groupId="1:2674" id="2:64"/>
+    <DataConverterToNumber name="DisabledNumberA" groupId="1:2674" id="9:91"/>
+    <DataConverterToNumber name="DisabledNumberC" groupId="1:2674" id="9:132"/>
+    <DataConverterToNumber name="DisabledOn" groupId="1:2674" id="9:145"/>
+    <DataConverterToNumber name="IconOnlyNum" groupId="1:2674" id="33:225"/>
+    <DataConverterToNumber name="SecondaryNum" groupId="1:2674" id="33:252"/>
+    <DataConverterToNumber name="Convert to Number 1" groupId="1:2674" id="70:511"/>
+    <DataConverterToNumber name="DisabledNumberG" groupId="1:2674" id="99:111"/>
+    <DataConverterToString round="true" name="SliderPercentString" groupId="1:2674" id="2:61"/>
     <DataFolder name="UI Kit" id="1:2753">
         <DataFolder name="Utils" id="1:1021">
             <DataConverterBooleanNegate name="Toggle" groupId="1:2674" id="1:1018"/>
@@ -3798,7 +3798,7 @@
                 </DataConverterFormula>
             </DataFolder>
         </DataFolder>
-        <ViewModel defaultInstanceId="10:63" viewModelType="global" name="Theme" groupId="1:2673" id="10:7">
+        <ViewModel defaultInstanceId="10:63" viewModelType="global" name="Theme" groupId="283:1" id="10:7">
             <ViewModelPropertyBoolean name="cursorPointer" id="63:244"/>
             <ViewModelPropertyBoolean name="_previewDisabled" id="15:419"/>
             <ViewModelPropertyNumber name="_canvas" id="117:1"/>
@@ -3910,6 +3910,7 @@
         </ViewModel>
     </DataFolder>
     <DataGroup name="View Models" type="viewModels" id="1:2673"/>
+    <DataGroup name="Global View Models" type="globalViewModels" id="283:1"/>
     <DataGroup name="Converters" type="converters" id="1:2674"/>
     <ElasticScrollPhysics constraintId="10:1708" id="10:1711"/>
     <Folder name="Components" id="10:8609">
@@ -4428,7 +4429,7 @@
     <TransitionValueTriggerComparator id="1:5390"/>
     <TransitionValueTriggerComparator id="1:5428"/>
     <TransitionValueTriggerComparator id="1:5432"/>
-    <ViewModel defaultInstanceId="38:327" name="SegmentSelection" id="38:326">
+    <ViewModel defaultInstanceId="38:327" name="SegmentSelection" groupId="1:2673" id="38:326">
         <ViewModelPropertyNumber name="selected" id="38:332"/>
         <ViewModelInstance exports="true" name="State" id="38:777">
             <ViewModelInstanceNumber viewModelPropertyId="38:332" id="38:778"/>
@@ -4449,7 +4450,7 @@
             <ViewModelInstanceNumber viewModelPropertyId="38:332" id="38:333"/>
         </ViewModelInstance>
     </ViewModel>
-    <ViewModel defaultInstanceId="38:329" name="Segment" id="38:328">
+    <ViewModel defaultInstanceId="38:329" name="Segment" groupId="1:2673" id="38:328">
         <ViewModelPropertyBoolean name="disabled" id="38:334"/>
         <ViewModelPropertyBoolean name="a11yHidden" id="38:336"/>
         <ViewModelPropertyNumber name="value" id="38:338"/>
@@ -4602,7 +4603,7 @@
             <ViewModelInstanceString propertyValue="Option" viewModelPropertyId="38:348" id="38:349"/>
         </ViewModelInstance>
     </ViewModel>
-    <ViewModel defaultInstanceId="38:624" name="SegmentedControl" id="38:330">
+    <ViewModel defaultInstanceId="38:624" name="SegmentedControl" groupId="1:2673" id="38:330">
         <ViewModelPropertyBoolean name="a11yHidden" id="38:350"/>
         <ViewModelPropertyList name="options" id="38:354"/>
         <ViewModelPropertyViewModel viewModelReferenceId="38:326" name="selection" id="38:356"/>
@@ -4652,7 +4653,7 @@
             <ViewModelInstanceViewModel propertyValue="38:595" viewModelPropertyId="38:356" id="38:628"/>
         </ViewModelInstance>
     </ViewModel>
-    <ViewModel defaultInstanceId="38:827" name="Toolbar" id="38:815">
+    <ViewModel defaultInstanceId="38:827" name="Toolbar" groupId="1:2673" id="38:815">
         <ViewModelPropertyViewModel viewModelReferenceId="38:330" name="mode" id="38:819"/>
         <ViewModelPropertyViewModel viewModelReferenceId="38:330" name="roundness" id="38:821"/>
         <ViewModelPropertyViewModel viewModelReferenceId="38:330" name="shadow" id="38:823"/>
@@ -4678,7 +4679,7 @@
             <ViewModelInstanceBoolean viewModelPropertyId="115:3" id="115:5"/>
         </ViewModelInstance>
     </ViewModel>
-    <ViewModel defaultInstanceId="41:863" name="NavItem" id="41:862">
+    <ViewModel defaultInstanceId="41:863" name="NavItem" groupId="1:2673" id="41:862">
         <ViewModelPropertyString name="label" id="41:868"/>
         <ViewModelPropertyNumber name="_slot" id="41:870"/>
         <ViewModelPropertyViewModel viewModelReferenceId="10:4577" name="_nav" id="41:872"/>
@@ -4780,7 +4781,7 @@
             <ViewModelInstanceBoolean viewModelPropertyId="41:874" id="41:875"/>
         </ViewModelInstance>
     </ViewModel>
-    <ViewModel defaultInstanceId="42:303" name="NavGroup" id="41:864">
+    <ViewModel defaultInstanceId="42:303" name="NavGroup" groupId="1:2673" id="41:864">
         <ViewModelPropertyBoolean name="a11yHidden" id="41:878"/>
         <ViewModelPropertyString name="title" id="41:880"/>
         <ViewModelPropertyNumber name="count" id="41:882"/>
@@ -4854,7 +4855,7 @@
             <ViewModelInstanceViewModel propertyValue="122:3" viewModelPropertyId="122:5" id="122:12"/>
         </ViewModelInstance>
     </ViewModel>
-    <ViewModel defaultInstanceId="42:346" name="Sidebar" id="41:866">
+    <ViewModel defaultInstanceId="42:346" name="Sidebar" groupId="1:2673" id="41:866">
         <ViewModelPropertyList name="sections" id="100:54"/>
         <ViewModelPropertyViewModel viewModelReferenceId="122:1" name="expansion" id="122:4"/>
         <ViewModelPropertyBoolean name="_toggleHover" id="122:6"/>
@@ -4870,7 +4871,7 @@
             <ViewModelInstanceBoolean viewModelPropertyId="122:6" id="122:14"/>
         </ViewModelInstance>
     </ViewModel>
-    <ViewModel defaultInstanceId="0:0" name="ButtonGroup" id="92:606">
+    <ViewModel defaultInstanceId="0:0" name="ButtonGroup" groupId="1:2673" id="92:606">
         <ViewModelPropertyString name="label" id="92:608"/>
         <ViewModelPropertyList name="buttons" id="92:610"/>
         <ViewModelPropertyBoolean name="a11yHidden" id="92:612"/>
@@ -4884,7 +4885,7 @@
             <ViewModelInstanceBoolean viewModelPropertyId="92:612" id="92:673"/>
         </ViewModelInstance>
     </ViewModel>
-    <ViewModel defaultInstanceId="102:19" name="PageItem" id="102:1">
+    <ViewModel defaultInstanceId="102:19" name="PageItem" groupId="1:2673" id="102:1">
         <ViewModelPropertyNumber name="value" id="102:2"/>
         <ViewModelPropertyNumber name="current" id="102:3"/>
         <ViewModelPropertyBoolean name="a11yHidden" id="102:4"/>
@@ -4896,7 +4897,7 @@
             <ViewModelInstanceBoolean viewModelPropertyId="102:6" id="102:578"/>
         </ViewModelInstance>
     </ViewModel>
-    <ViewModel defaultInstanceId="102:20" name="Pagination" id="102:7">
+    <ViewModel defaultInstanceId="102:20" name="Pagination" groupId="1:2673" id="102:7">
         <ViewModelPropertyNumber name="page" id="102:8"/>
         <ViewModelPropertyNumber name="pageCount" id="102:9"/>
         <ViewModelPropertyString name="label" id="102:10"/>
@@ -4920,7 +4921,7 @@
             <ViewModelInstanceTrigger viewModelPropertyId="102:18" id="102:589"/>
         </ViewModelInstance>
     </ViewModel>
-    <ViewModel defaultInstanceId="104:13" name="AccordionItem" id="104:1">
+    <ViewModel defaultInstanceId="104:13" name="AccordionItem" groupId="1:2673" id="104:1">
         <ViewModelPropertyString name="title" id="104:2"/>
         <ViewModelPropertyString name="body" id="104:3"/>
         <ViewModelPropertyBoolean name="open" id="104:4"/>
@@ -4948,7 +4949,7 @@
             <ViewModelInstanceBoolean viewModelPropertyId="104:7" id="104:34"/>
         </ViewModelInstance>
     </ViewModel>
-    <ViewModel defaultInstanceId="104:16" name="Accordion" id="104:8">
+    <ViewModel defaultInstanceId="104:16" name="Accordion" groupId="1:2673" id="104:8">
         <ViewModelPropertyList name="items" id="104:9"/>
         <ViewModelPropertyString name="label" id="104:10"/>
         <ViewModelPropertyBoolean name="a11yHidden" id="104:11"/>
@@ -4962,7 +4963,7 @@
             <ViewModelInstanceBoolean viewModelPropertyId="104:11" id="104:40"/>
         </ViewModelInstance>
     </ViewModel>
-    <ViewModel defaultInstanceId="110:233" name="Alert" id="110:223">
+    <ViewModel defaultInstanceId="110:233" name="Alert" groupId="1:2673" id="110:223">
         <ViewModelPropertyString name="title" id="110:224"/>
         <ViewModelPropertyString name="body" id="110:225"/>
         <ViewModelPropertyNumber name="variant" id="110:226"/>
@@ -4992,7 +4993,7 @@
             <ViewModelInstanceBoolean viewModelPropertyId="110:230" id="110:271"/>
         </ViewModelInstance>
     </ViewModel>
-    <ViewModel defaultInstanceId="111:19" name="BreadcrumbItem" id="111:1">
+    <ViewModel defaultInstanceId="111:19" name="BreadcrumbItem" groupId="1:2673" id="111:1">
         <ViewModelPropertyString name="label" id="111:2"/>
         <ViewModelPropertyBoolean name="current" id="111:3"/>
         <ViewModelPropertySymbolListIndex symbolTypeValue="itemIndex" name="listIndex" id="111:4"/>
@@ -5280,7 +5281,7 @@
             <ViewModelInstanceBoolean viewModelPropertyId="111:8" id="114:411"/>
         </ViewModelInstance>
     </ViewModel>
-    <ViewModel defaultInstanceId="111:22" name="Breadcrumbs" id="111:9">
+    <ViewModel defaultInstanceId="111:22" name="Breadcrumbs" groupId="1:2673" id="111:9">
         <ViewModelPropertyList name="items" id="111:10"/>
         <ViewModelPropertyNumber name="selected" id="111:11"/>
         <ViewModelPropertyString name="label" id="111:12"/>
@@ -5458,7 +5459,7 @@
             <ViewModelInstanceViewModel propertyValue="114:3" viewModelPropertyId="111:15" id="114:419"/>
         </ViewModelInstance>
     </ViewModel>
-    <ViewModel defaultInstanceId="111:18" name="BreadcrumbSelection" id="111:16">
+    <ViewModel defaultInstanceId="111:18" name="BreadcrumbSelection" groupId="1:2673" id="111:16">
         <ViewModelPropertyNumber name="selected" id="111:17"/>
         <ViewModelInstance exports="true" name="Breadcrumbs" id="111:18">
             <ViewModelInstanceNumber propertyValue="-1" viewModelPropertyId="111:17" id="111:61"/>
@@ -5467,7 +5468,7 @@
             <ViewModelInstanceNumber propertyValue="-1" viewModelPropertyId="111:17" id="114:4"/>
         </ViewModelInstance>
     </ViewModel>
-    <ViewModel defaultInstanceId="112:15" name="Tooltip" id="112:1">
+    <ViewModel defaultInstanceId="112:15" name="Tooltip" groupId="1:2673" id="112:1">
         <ViewModelPropertyString name="text" id="112:2"/>
         <ViewModelPropertyNumber name="placement" id="112:3"/>
         <ViewModelPropertyBoolean name="open" id="112:4"/>
@@ -5479,7 +5480,7 @@
             <ViewModelInstanceBoolean viewModelPropertyId="112:5" id="112:149"/>
         </ViewModelInstance>
     </ViewModel>
-    <ViewModel defaultInstanceId="112:16" name="TooltipButton" id="112:7">
+    <ViewModel defaultInstanceId="112:16" name="TooltipButton" groupId="1:2673" id="112:7">
         <ViewModelPropertyString name="label" id="112:8"/>
         <ViewModelPropertyString name="tooltip" id="112:9"/>
         <ViewModelPropertyNumber name="placement" id="112:10"/>
@@ -5503,7 +5504,7 @@
             <ViewModelInstanceNumber propertyValue="7" viewModelPropertyId="117:265" id="117:267"/>
         </ViewModelInstance>
     </ViewModel>
-    <ViewModel defaultInstanceId="122:3" name="NavExpansion" id="122:1">
+    <ViewModel defaultInstanceId="122:3" name="NavExpansion" groupId="1:2673" id="122:1">
         <ViewModelPropertyBoolean name="allOpen" id="122:2"/>
         <ViewModelInstance exports="true" name="Default" id="122:3">
             <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="122:2" id="122:7"/>
