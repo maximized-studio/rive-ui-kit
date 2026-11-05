@@ -275,119 +275,179 @@
         <FormulaTokenOperation operationType="multiply" id="70:515"/>
         <FormulaTokenValue operationValue="0.1" id="70:516"/>
     </DataConverterFormula>
-    <DataConverterFormula name="RadButtonGrouped" id="92:549">
-        <FormulaTokenParenthesisOpen id="92:550"/>
-        <FormulaTokenValue operationValue="4" id="92:551"/>
-        <FormulaTokenOperation operationType="multiply" id="92:552"/>
-        <FormulaTokenFunction functionType="max" id="92:553"/>
-        <FormulaTokenValue operationValue="0" id="92:554"/>
-        <FormulaTokenArgumentSeparator id="92:555"/>
-        <FormulaTokenValue id="92:556"/>
-        <FormulaTokenOperation operationType="subtract" id="92:557"/>
-        <FormulaTokenFunction functionType="pow" id="92:558"/>
-        <FormulaTokenInput id="92:559"/>
-        <FormulaTokenOperation operationType="subtract" id="92:560"/>
-        <FormulaTokenValue id="92:561"/>
-        <FormulaTokenArgumentSeparator id="92:562"/>
-        <FormulaTokenValue operationValue="2" id="92:563"/>
-        <FormulaTokenParenthesisClose id="92:564"/>
-        <FormulaTokenParenthesisClose id="92:565"/>
-        <FormulaTokenOperation id="92:566"/>
-        <FormulaTokenValue operationValue="8" id="92:567"/>
-        <FormulaTokenOperation operationType="multiply" id="92:568"/>
-        <FormulaTokenFunction functionType="max" id="92:569"/>
-        <FormulaTokenValue operationValue="0" id="92:570"/>
-        <FormulaTokenArgumentSeparator id="92:571"/>
-        <FormulaTokenValue id="92:572"/>
-        <FormulaTokenOperation operationType="subtract" id="92:573"/>
-        <FormulaTokenFunction functionType="pow" id="92:574"/>
-        <FormulaTokenInput id="92:575"/>
-        <FormulaTokenOperation operationType="subtract" id="92:576"/>
-        <FormulaTokenValue operationValue="2" id="92:577"/>
-        <FormulaTokenArgumentSeparator id="92:578"/>
-        <FormulaTokenValue operationValue="2" id="92:579"/>
-        <FormulaTokenParenthesisClose id="92:580"/>
-        <FormulaTokenParenthesisClose id="92:581"/>
-        <FormulaTokenOperation id="92:582"/>
-        <FormulaTokenValue operationValue="20" id="92:583"/>
-        <FormulaTokenOperation operationType="multiply" id="92:584"/>
-        <FormulaTokenFunction functionType="max" id="92:585"/>
-        <FormulaTokenValue operationValue="0" id="92:586"/>
-        <FormulaTokenArgumentSeparator id="92:587"/>
-        <FormulaTokenValue id="92:588"/>
-        <FormulaTokenOperation operationType="subtract" id="92:589"/>
-        <FormulaTokenFunction functionType="pow" id="92:590"/>
-        <FormulaTokenInput id="92:591"/>
-        <FormulaTokenOperation operationType="subtract" id="92:592"/>
-        <FormulaTokenValue operationValue="3" id="92:593"/>
-        <FormulaTokenArgumentSeparator id="92:594"/>
-        <FormulaTokenValue operationValue="2" id="92:595"/>
-        <FormulaTokenParenthesisClose id="92:596"/>
-        <FormulaTokenParenthesisClose id="92:597"/>
-        <FormulaTokenParenthesisClose id="92:598"/>
-        <FormulaTokenOperation operationType="multiply" id="92:599"/>
-        <FormulaTokenParenthesisOpen id="92:600"/>
-        <FormulaTokenValue id="92:601"/>
-        <FormulaTokenOperation operationType="subtract" id="92:602"/>
-        <FormulaTokenValue id="92:603">
-            <DataBindContext sourcePathIds="1:151-92:544" propertyKey="777" converterId="9:145" id="92:604"/>
+    <DataConverterFormula name="RadButtonLeft" id="99:108">
+        <FormulaTokenParenthesisOpen id="99:114"/>
+        <FormulaTokenValue operationValue="4" id="99:115"/>
+        <FormulaTokenOperation operationType="multiply" id="99:116"/>
+        <FormulaTokenFunction functionType="max" id="99:117"/>
+        <FormulaTokenValue operationValue="0" id="99:118"/>
+        <FormulaTokenArgumentSeparator id="99:119"/>
+        <FormulaTokenValue id="99:120"/>
+        <FormulaTokenOperation operationType="subtract" id="99:121"/>
+        <FormulaTokenFunction functionType="pow" id="99:122"/>
+        <FormulaTokenInput id="99:123"/>
+        <FormulaTokenOperation operationType="subtract" id="99:124"/>
+        <FormulaTokenValue id="99:125"/>
+        <FormulaTokenArgumentSeparator id="99:126"/>
+        <FormulaTokenValue operationValue="2" id="99:127"/>
+        <FormulaTokenParenthesisClose id="99:128"/>
+        <FormulaTokenParenthesisClose id="99:129"/>
+        <FormulaTokenOperation id="99:130"/>
+        <FormulaTokenValue operationValue="8" id="99:131"/>
+        <FormulaTokenOperation operationType="multiply" id="99:132"/>
+        <FormulaTokenFunction functionType="max" id="99:133"/>
+        <FormulaTokenValue operationValue="0" id="99:134"/>
+        <FormulaTokenArgumentSeparator id="99:135"/>
+        <FormulaTokenValue id="99:136"/>
+        <FormulaTokenOperation operationType="subtract" id="99:137"/>
+        <FormulaTokenFunction functionType="pow" id="99:138"/>
+        <FormulaTokenInput id="99:139"/>
+        <FormulaTokenOperation operationType="subtract" id="99:140"/>
+        <FormulaTokenValue operationValue="2" id="99:141"/>
+        <FormulaTokenArgumentSeparator id="99:142"/>
+        <FormulaTokenValue operationValue="2" id="99:143"/>
+        <FormulaTokenParenthesisClose id="99:144"/>
+        <FormulaTokenParenthesisClose id="99:145"/>
+        <FormulaTokenOperation id="99:146"/>
+        <FormulaTokenValue operationValue="20" id="99:147"/>
+        <FormulaTokenOperation operationType="multiply" id="99:148"/>
+        <FormulaTokenFunction functionType="max" id="99:149"/>
+        <FormulaTokenValue operationValue="0" id="99:150"/>
+        <FormulaTokenArgumentSeparator id="99:151"/>
+        <FormulaTokenValue id="99:152"/>
+        <FormulaTokenOperation operationType="subtract" id="99:153"/>
+        <FormulaTokenFunction functionType="pow" id="99:154"/>
+        <FormulaTokenInput id="99:155"/>
+        <FormulaTokenOperation operationType="subtract" id="99:156"/>
+        <FormulaTokenValue operationValue="3" id="99:157"/>
+        <FormulaTokenArgumentSeparator id="99:158"/>
+        <FormulaTokenValue operationValue="2" id="99:159"/>
+        <FormulaTokenParenthesisClose id="99:160"/>
+        <FormulaTokenParenthesisClose id="99:161"/>
+        <FormulaTokenParenthesisClose id="99:162"/>
+        <FormulaTokenOperation operationType="multiply" id="99:163"/>
+        <FormulaTokenFunction id="99:164"/>
+        <FormulaTokenValue id="99:165"/>
+        <FormulaTokenArgumentSeparator id="99:166"/>
+        <FormulaTokenFunction functionType="max" id="99:167"/>
+        <FormulaTokenValue operationValue="0" id="99:168"/>
+        <FormulaTokenArgumentSeparator id="99:169"/>
+        <FormulaTokenValue operationValue="2" id="99:170"/>
+        <FormulaTokenOperation operationType="subtract" id="99:171"/>
+        <FormulaTokenValue id="99:172">
+            <DataBindContext sourcePathIds="1:151-99:100" propertyKey="777" nameBased="true" id="99:173"/>
         </FormulaTokenValue>
-        <FormulaTokenParenthesisClose id="92:605"/>
+        <FormulaTokenParenthesisClose id="99:174"/>
+        <FormulaTokenParenthesisClose id="99:175"/>
     </DataConverterFormula>
-    <DataConverterFormula name="RadGroupInner" id="92:683">
-        <FormulaTokenFunction functionType="max" id="92:684"/>
-        <FormulaTokenValue operationValue="0" id="92:685"/>
-        <FormulaTokenArgumentSeparator id="92:686"/>
-        <FormulaTokenValue operationValue="4" id="92:687"/>
-        <FormulaTokenOperation operationType="multiply" id="92:688"/>
-        <FormulaTokenFunction functionType="max" id="92:689"/>
-        <FormulaTokenValue operationValue="0" id="92:690"/>
-        <FormulaTokenArgumentSeparator id="92:691"/>
-        <FormulaTokenValue id="92:692"/>
-        <FormulaTokenOperation operationType="subtract" id="92:693"/>
-        <FormulaTokenFunction functionType="pow" id="92:694"/>
-        <FormulaTokenInput id="92:695"/>
-        <FormulaTokenOperation operationType="subtract" id="92:696"/>
-        <FormulaTokenValue id="92:697"/>
-        <FormulaTokenArgumentSeparator id="92:698"/>
-        <FormulaTokenValue operationValue="2" id="92:699"/>
-        <FormulaTokenParenthesisClose id="92:700"/>
-        <FormulaTokenParenthesisClose id="92:701"/>
-        <FormulaTokenOperation id="92:702"/>
-        <FormulaTokenValue operationValue="8" id="92:703"/>
-        <FormulaTokenOperation operationType="multiply" id="92:704"/>
-        <FormulaTokenFunction functionType="max" id="92:705"/>
-        <FormulaTokenValue operationValue="0" id="92:706"/>
-        <FormulaTokenArgumentSeparator id="92:707"/>
-        <FormulaTokenValue id="92:708"/>
-        <FormulaTokenOperation operationType="subtract" id="92:709"/>
-        <FormulaTokenFunction functionType="pow" id="92:710"/>
-        <FormulaTokenInput id="92:711"/>
-        <FormulaTokenOperation operationType="subtract" id="92:712"/>
-        <FormulaTokenValue operationValue="2" id="92:713"/>
-        <FormulaTokenArgumentSeparator id="92:714"/>
-        <FormulaTokenValue operationValue="2" id="92:715"/>
-        <FormulaTokenParenthesisClose id="92:716"/>
-        <FormulaTokenParenthesisClose id="92:717"/>
-        <FormulaTokenOperation id="92:718"/>
-        <FormulaTokenValue operationValue="20" id="92:719"/>
-        <FormulaTokenOperation operationType="multiply" id="92:720"/>
-        <FormulaTokenFunction functionType="max" id="92:721"/>
-        <FormulaTokenValue operationValue="0" id="92:722"/>
-        <FormulaTokenArgumentSeparator id="92:723"/>
-        <FormulaTokenValue id="92:724"/>
-        <FormulaTokenOperation operationType="subtract" id="92:725"/>
-        <FormulaTokenFunction functionType="pow" id="92:726"/>
-        <FormulaTokenInput id="92:727"/>
-        <FormulaTokenOperation operationType="subtract" id="92:728"/>
-        <FormulaTokenValue operationValue="3" id="92:729"/>
-        <FormulaTokenArgumentSeparator id="92:730"/>
-        <FormulaTokenValue operationValue="2" id="92:731"/>
-        <FormulaTokenParenthesisClose id="92:732"/>
-        <FormulaTokenParenthesisClose id="92:733"/>
-        <FormulaTokenOperation operationType="subtract" id="92:734"/>
-        <FormulaTokenValue id="92:735"/>
-        <FormulaTokenParenthesisClose id="92:736"/>
+    <DataConverterFormula name="RadButtonRight" id="99:109">
+        <FormulaTokenParenthesisOpen id="99:176"/>
+        <FormulaTokenValue operationValue="4" id="99:177"/>
+        <FormulaTokenOperation operationType="multiply" id="99:178"/>
+        <FormulaTokenFunction functionType="max" id="99:179"/>
+        <FormulaTokenValue operationValue="0" id="99:180"/>
+        <FormulaTokenArgumentSeparator id="99:181"/>
+        <FormulaTokenValue id="99:182"/>
+        <FormulaTokenOperation operationType="subtract" id="99:183"/>
+        <FormulaTokenFunction functionType="pow" id="99:184"/>
+        <FormulaTokenInput id="99:185"/>
+        <FormulaTokenOperation operationType="subtract" id="99:186"/>
+        <FormulaTokenValue id="99:187"/>
+        <FormulaTokenArgumentSeparator id="99:188"/>
+        <FormulaTokenValue operationValue="2" id="99:189"/>
+        <FormulaTokenParenthesisClose id="99:190"/>
+        <FormulaTokenParenthesisClose id="99:191"/>
+        <FormulaTokenOperation id="99:192"/>
+        <FormulaTokenValue operationValue="8" id="99:193"/>
+        <FormulaTokenOperation operationType="multiply" id="99:194"/>
+        <FormulaTokenFunction functionType="max" id="99:195"/>
+        <FormulaTokenValue operationValue="0" id="99:196"/>
+        <FormulaTokenArgumentSeparator id="99:197"/>
+        <FormulaTokenValue id="99:198"/>
+        <FormulaTokenOperation operationType="subtract" id="99:199"/>
+        <FormulaTokenFunction functionType="pow" id="99:200"/>
+        <FormulaTokenInput id="99:201"/>
+        <FormulaTokenOperation operationType="subtract" id="99:202"/>
+        <FormulaTokenValue operationValue="2" id="99:203"/>
+        <FormulaTokenArgumentSeparator id="99:204"/>
+        <FormulaTokenValue operationValue="2" id="99:205"/>
+        <FormulaTokenParenthesisClose id="99:206"/>
+        <FormulaTokenParenthesisClose id="99:207"/>
+        <FormulaTokenOperation id="99:208"/>
+        <FormulaTokenValue operationValue="20" id="99:209"/>
+        <FormulaTokenOperation operationType="multiply" id="99:210"/>
+        <FormulaTokenFunction functionType="max" id="99:211"/>
+        <FormulaTokenValue operationValue="0" id="99:212"/>
+        <FormulaTokenArgumentSeparator id="99:213"/>
+        <FormulaTokenValue id="99:214"/>
+        <FormulaTokenOperation operationType="subtract" id="99:215"/>
+        <FormulaTokenFunction functionType="pow" id="99:216"/>
+        <FormulaTokenInput id="99:217"/>
+        <FormulaTokenOperation operationType="subtract" id="99:218"/>
+        <FormulaTokenValue operationValue="3" id="99:219"/>
+        <FormulaTokenArgumentSeparator id="99:220"/>
+        <FormulaTokenValue operationValue="2" id="99:221"/>
+        <FormulaTokenParenthesisClose id="99:222"/>
+        <FormulaTokenParenthesisClose id="99:223"/>
+        <FormulaTokenParenthesisClose id="99:224"/>
+        <FormulaTokenOperation operationType="multiply" id="99:225"/>
+        <FormulaTokenParenthesisOpen id="99:226"/>
+        <FormulaTokenValue id="99:227"/>
+        <FormulaTokenOperation operationType="subtract" id="99:228"/>
+        <FormulaTokenFunction id="99:229"/>
+        <FormulaTokenValue id="99:230"/>
+        <FormulaTokenArgumentSeparator id="99:231"/>
+        <FormulaTokenValue id="99:232">
+            <DataBindContext sourcePathIds="1:151-99:100" propertyKey="777" nameBased="true" id="99:233"/>
+        </FormulaTokenValue>
+        <FormulaTokenParenthesisClose id="99:234"/>
+        <FormulaTokenOperation id="99:235"/>
+        <FormulaTokenFunction functionType="max" id="99:236"/>
+        <FormulaTokenValue operationValue="0" id="99:237"/>
+        <FormulaTokenArgumentSeparator id="99:238"/>
+        <FormulaTokenValue id="99:239">
+            <DataBindContext sourcePathIds="1:151-99:100" propertyKey="777" nameBased="true" id="99:240"/>
+        </FormulaTokenValue>
+        <FormulaTokenOperation operationType="subtract" id="99:241"/>
+        <FormulaTokenValue operationValue="2" id="99:242"/>
+        <FormulaTokenParenthesisClose id="99:243"/>
+        <FormulaTokenParenthesisClose id="99:244"/>
+    </DataConverterFormula>
+    <DataConverterFormula name="GroupDividerHide" id="99:110">
+        <FormulaTokenValue id="99:245"/>
+        <FormulaTokenOperation operationType="subtract" id="99:246"/>
+        <FormulaTokenFunction id="99:247"/>
+        <FormulaTokenValue id="99:248"/>
+        <FormulaTokenArgumentSeparator id="99:249"/>
+        <FormulaTokenFunction functionType="max" id="99:250"/>
+        <FormulaTokenValue operationValue="0" id="99:251"/>
+        <FormulaTokenArgumentSeparator id="99:252"/>
+        <FormulaTokenInput id="99:253"/>
+        <FormulaTokenOperation operationType="subtract" id="99:254"/>
+        <FormulaTokenValue id="99:255"/>
+        <FormulaTokenParenthesisClose id="99:256"/>
+        <FormulaTokenParenthesisClose id="99:257"/>
+    </DataConverterFormula>
+    <DataConverterFormula name="ShadowAlphaGrouped" id="99:112">
+        <FormulaTokenValue operationValue="51" id="99:258"/>
+        <FormulaTokenOperation operationType="multiply" id="99:259"/>
+        <FormulaTokenParenthesisOpen id="99:260"/>
+        <FormulaTokenValue id="99:261"/>
+        <FormulaTokenOperation operationType="subtract" id="99:262"/>
+        <FormulaTokenInput id="99:263"/>
+        <FormulaTokenParenthesisClose id="99:264"/>
+        <FormulaTokenOperation operationType="multiply" id="99:265"/>
+        <FormulaTokenParenthesisOpen id="99:266"/>
+        <FormulaTokenValue id="99:267"/>
+        <FormulaTokenOperation operationType="subtract" id="99:268"/>
+        <FormulaTokenFunction id="99:269"/>
+        <FormulaTokenValue id="99:270"/>
+        <FormulaTokenArgumentSeparator id="99:271"/>
+        <FormulaTokenValue id="99:272">
+            <DataBindContext sourcePathIds="1:151-99:100" propertyKey="777" nameBased="true" id="99:273"/>
+        </FormulaTokenValue>
+        <FormulaTokenParenthesisClose id="99:274"/>
+        <FormulaTokenParenthesisClose id="99:275"/>
     </DataConverterFormula>
     <DataConverterGroup name="SliderPercentText" id="2:40">
         <DataConverterGroupItem converterId="2:41" id="2:60"/>
@@ -421,6 +481,10 @@
         <DataConverterGroupItem converterId="70:511" id="70:512"/>
         <DataConverterGroupItem converterId="70:513" id="70:517"/>
     </DataConverterGroup>
+    <DataConverterGroup name="DisabledNoShadowGrouped" id="99:113">
+        <DataConverterGroupItem converterId="99:111" id="99:280"/>
+        <DataConverterGroupItem converterId="99:112" id="99:281"/>
+    </DataConverterGroup>
     <DataConverterSystemNormalizer operationValue="2.55" operationType="multiply" name="Percentage to 0-255" id="9:144"/>
     <DataConverterToNumber name="BoolToChecked" id="2:64"/>
     <DataConverterToNumber name="DisabledNumberA" id="9:91"/>
@@ -429,6 +493,7 @@
     <DataConverterToNumber name="IconOnlyNum" id="33:225"/>
     <DataConverterToNumber name="SecondaryNum" id="33:252"/>
     <DataConverterToNumber name="Convert to Number 1" id="70:511"/>
+    <DataConverterToNumber name="DisabledNumberG" id="99:111"/>
     <DataConverterToString round="true" name="SliderPercentString" id="2:61"/>
     <DataFolder name="UI Kit" id="1:2753">
         <DataFolder name="Utils" id="1:1021">
@@ -897,7 +962,7 @@
                 </ViewModelInstance>
             </ViewModel>
             <ViewModel defaultInstanceId="1:152" name="Button" groupId="1:2673" id="1:151">
-                <ViewModelPropertyBoolean name="grouped" id="92:544"/>
+                <ViewModelPropertyNumber name="group" id="99:100"/>
                 <ViewModelPropertyBoolean name="secondary" id="33:159"/>
                 <ViewModelPropertyNumber name="icon" id="33:164"/>
                 <ViewModelPropertyBoolean name="iconOnly" id="33:169"/>
@@ -914,10 +979,10 @@
                     <ViewModelInstanceBoolean viewModelPropertyId="7:1" id="92:641"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="7:3" id="92:642"/>
                     <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="10:3108" id="92:643"/>
-                    <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="33:159" id="92:644"/>
+                    <ViewModelInstanceBoolean viewModelPropertyId="33:159" id="92:644"/>
                     <ViewModelInstanceNumber viewModelPropertyId="33:164" id="92:645"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="33:169" id="92:646"/>
-                    <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="92:544" id="92:647"/>
+                    <ViewModelInstanceNumber propertyValue="1" viewModelPropertyId="99:100" id="99:101"/>
                 </ViewModelInstance>
                 <ViewModelInstance exports="true" name="BG Cut" id="92:648">
                     <ViewModelInstanceString propertyValue="Cut" viewModelPropertyId="1:549" id="92:649"/>
@@ -926,10 +991,10 @@
                     <ViewModelInstanceBoolean viewModelPropertyId="7:1" id="92:652"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="7:3" id="92:653"/>
                     <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="10:3108" id="92:654"/>
-                    <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="33:159" id="92:655"/>
+                    <ViewModelInstanceBoolean viewModelPropertyId="33:159" id="92:655"/>
                     <ViewModelInstanceNumber viewModelPropertyId="33:164" id="92:656"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="33:169" id="92:657"/>
-                    <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="92:544" id="92:658"/>
+                    <ViewModelInstanceNumber propertyValue="2" viewModelPropertyId="99:100" id="99:102"/>
                 </ViewModelInstance>
                 <ViewModelInstance exports="true" name="BG Paste" id="92:659">
                     <ViewModelInstanceString propertyValue="Paste" viewModelPropertyId="1:549" id="92:660"/>
@@ -938,10 +1003,10 @@
                     <ViewModelInstanceBoolean viewModelPropertyId="7:1" id="92:663"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="7:3" id="92:664"/>
                     <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="10:3108" id="92:665"/>
-                    <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="33:159" id="92:666"/>
+                    <ViewModelInstanceBoolean viewModelPropertyId="33:159" id="92:666"/>
                     <ViewModelInstanceNumber viewModelPropertyId="33:164" id="92:667"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="33:169" id="92:668"/>
-                    <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="92:544" id="92:669"/>
+                    <ViewModelInstanceNumber propertyValue="3" viewModelPropertyId="99:100" id="99:103"/>
                 </ViewModelInstance>
                 <ViewModelInstance exports="true" name="Next Button" id="33:101">
                     <ViewModelInstanceString propertyValue="Next" viewModelPropertyId="1:549" id="33:102"/>
@@ -953,7 +1018,7 @@
                     <ViewModelInstanceBoolean viewModelPropertyId="33:159" id="33:160"/>
                     <ViewModelInstanceNumber propertyValue="3" viewModelPropertyId="33:164" id="33:165"/>
                     <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="33:169" id="33:170"/>
-                    <ViewModelInstanceBoolean viewModelPropertyId="92:544" id="92:545"/>
+                    <ViewModelInstanceNumber viewModelPropertyId="99:100" id="99:104"/>
                 </ViewModelInstance>
                 <ViewModelInstance exports="true" name="Prev Button" id="33:60">
                     <ViewModelInstanceString propertyValue="Previous" viewModelPropertyId="1:549" id="33:61"/>
@@ -965,7 +1030,7 @@
                     <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="33:159" id="33:161"/>
                     <ViewModelInstanceNumber propertyValue="2" viewModelPropertyId="33:164" id="33:166"/>
                     <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="33:169" id="33:171"/>
-                    <ViewModelInstanceBoolean viewModelPropertyId="92:544" id="92:546"/>
+                    <ViewModelInstanceNumber viewModelPropertyId="99:100" id="99:105"/>
                 </ViewModelInstance>
                 <ViewModelInstance exports="true" name="Back Button" id="33:19">
                     <ViewModelInstanceString propertyValue="All components" viewModelPropertyId="1:549" id="33:20"/>
@@ -977,7 +1042,7 @@
                     <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="33:159" id="33:162"/>
                     <ViewModelInstanceNumber propertyValue="1" viewModelPropertyId="33:164" id="33:167"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="33:169" id="33:172"/>
-                    <ViewModelInstanceBoolean viewModelPropertyId="92:544" id="92:547"/>
+                    <ViewModelInstanceNumber viewModelPropertyId="99:100" id="99:106"/>
                 </ViewModelInstance>
                 <ViewModelInstance exports="true" id="1:152">
                     <ViewModelInstanceString propertyValue="Button" viewModelPropertyId="1:549" id="1:550"/>
@@ -989,7 +1054,7 @@
                     <ViewModelInstanceBoolean viewModelPropertyId="33:159" id="33:163"/>
                     <ViewModelInstanceNumber viewModelPropertyId="33:164" id="33:168"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="33:169" id="33:173"/>
-                    <ViewModelInstanceBoolean viewModelPropertyId="92:544" id="92:548"/>
+                    <ViewModelInstanceNumber viewModelPropertyId="99:100" id="99:107"/>
                 </ViewModelInstance>
             </ViewModel>
             <ViewModel defaultInstanceId="1:150" name="Checkbox" groupId="1:2673" id="1:149">

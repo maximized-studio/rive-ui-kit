@@ -40,11 +40,11 @@ rive build/default --semantics=$PWD/build/default.semantics.json
 
 ## Button Group
 
-A row of kit Buttons joined into one control: outer corners follow the theme roundness, inner corners are square and a 1px border line separates the buttons. Primary and secondary buttons both work, and buttons in one group may mix.
+A row of kit Buttons joined into one control: the outer corners follow the theme roundness, the inner corners are square, and the group casts one shadow. Primary and secondary Buttons both work and may be mixed.
 
 - View model `ButtonGroup`: `label` (screen reader name), `buttons` (a list of `Button` instances), `a11yHidden`, `theme`.
-- Give every Button in the list `grouped = true`. That squares its corners and drops its own border so the group draws one; a Button with `grouped = false` keeps its normal look.
-- Each Button keeps its own `_pressed` trigger, hover and disabled state, so you handle clicks per button as you would for a single Button.
+- Set `group` on every Button in the list: `1` first, `2` middle, `3` last (`0`, the default, is a standalone Button). It rounds only the outer corners and draws a divider before middle and last buttons; secondary borders merge into one line.
+- Each Button keeps its own `_pressed` trigger, hover, press ripple and disabled state, so you handle clicks per button as you would for a single Button.
 
 ## Pointer cursor
 

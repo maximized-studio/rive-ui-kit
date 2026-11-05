@@ -6,23 +6,20 @@
         <LayoutComponentStyle layoutAlignmentType="center" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" id="92:617"/>
         <LayoutComponent styleId="92:740" name="Group" id="92:739">
             <Fill fillRule="clockwise" id="92:741">
-                <SolidColor colorValue="FF27272A" id="92:742">
-                    <DataBindContext sourcePathIds="38:330-38:352-10:7418" propertyKey="37" nameBased="true" id="92:747"/>
-                </SolidColor>
+                <SolidColor colorValue="33000000" id="92:742"/>
+                <Feather strength="8" offsetY="2" id="99:306">
+                    <DataBindContext sourcePathIds="92:606-92:614-10:2088" propertyKey="749" nameBased="true" converterId="10:3156" id="99:307"/>
+                    <DataBindContext sourcePathIds="92:606-92:614-10:2088" propertyKey="751" nameBased="true" converterId="10:3160" id="99:308"/>
+                </Feather>
             </Fill>
-            <LayoutComponent clip="true" styleId="92:744" name="Clip" id="92:743">
-                <LayoutComponentStyle gapHorizontal="1" layoutAlignmentType="centerLeft" intrinsicallySizedValue="true" cornerRadiusTL="7" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="92:744">
-                    <DataBindContext sourcePathIds="38:330-38:352-10:2086" propertyKey="640" nameBased="true" converterId="92:683" id="92:749"/>
-                </LayoutComponentStyle>
-                <ArtboardComponentList name="Buttons" participatesInLayout="true" id="92:745">
-                    <DataBindContext sourcePathIds="92:606-92:610" propertyKey="800" id="92:746"/>
-                </ArtboardComponentList>
-            </LayoutComponent>
-            <LayoutComponentStyle paddingLeft="1" paddingRight="1" paddingTop="1" paddingBottom="1" layoutAlignmentType="centerLeft" intrinsicallySizedValue="true" cornerRadiusTL="8" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="92:740">
-                <DataBindContext sourcePathIds="38:330-38:352-10:2086" propertyKey="640" nameBased="true" converterId="10:6095" id="92:748"/>
+            <ArtboardComponentList name="Buttons" participatesInLayout="true" id="92:745">
+                <DataBindContext sourcePathIds="92:606-92:610" propertyKey="800" id="92:746"/>
+            </ArtboardComponentList>
+            <LayoutComponentStyle layoutAlignmentType="centerLeft" intrinsicallySizedValue="true" cornerRadiusTL="8" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="92:740">
+                <DataBindContext sourcePathIds="92:606-92:614-10:2086" propertyKey="640" nameBased="true" converterId="10:6095" id="92:748"/>
             </LayoutComponentStyle>
             <SemanticData role="group" label="Clipboard" name="Semantics" id="92:750">
-                <DataBindContext sourcePathIds="10:4154-7:61" propertyKey="1004" nameBased="true" id="92:751"/>
+                <DataBindContext sourcePathIds="92:606-92:612" propertyKey="1004" nameBased="true" id="92:751"/>
                 <DataBindContext sourcePathIds="92:606-92:608" propertyKey="983" nameBased="true" id="92:752"/>
             </SemanticData>
         </LayoutComponent>
