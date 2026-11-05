@@ -1060,7 +1060,7 @@
                 </ViewModelInstance>
                 <ViewModelInstance exports="true" name="Inputs Count" id="10:12540">
                     <ViewModelInstanceBoolean viewModelPropertyId="7:53" id="7:55"/>
-                    <ViewModelInstanceString propertyValue="6" viewModelPropertyId="1:1750" id="10:12541"/>
+                    <ViewModelInstanceString propertyValue="7" viewModelPropertyId="1:1750" id="10:12541"/>
                     <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="10:3122" id="10:12542"/>
                 </ViewModelInstance>
                 <ViewModelInstance exports="true" id="1:1749">
@@ -1211,6 +1211,16 @@
                 <ViewModelPropertyNumber name="_index" id="10:5175"/>
                 <ViewModelPropertyNumber name="_zoom" id="10:5177"/>
                 <ViewModelPropertyViewModel viewModelReferenceId="10:5161" name="_stage" id="10:5179"/>
+                <ViewModelInstance exports="true" name="S Button Group" id="98:762">
+                    <ViewModelInstanceString propertyValue="Button Group" viewModelPropertyId="10:5171" id="98:763"/>
+                    <ViewModelInstanceList viewModelPropertyId="10:5173" id="98:764">
+                        <ViewModelInstanceListItem viewModelId="92:606" viewModelInstanceId="92:670" id="98:769"/>
+                    </ViewModelInstanceList>
+                    <ViewModelInstanceNumber propertyValue="6" viewModelPropertyId="10:5175" id="98:765"/>
+                    <ViewModelInstanceNumber propertyValue="2.2" viewModelPropertyId="10:5177" id="98:766"/>
+                    <ViewModelInstanceViewModel propertyValue="10:5193" viewModelPropertyId="10:5179" id="98:767"/>
+                    <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="10:6573" id="98:768"/>
+                </ViewModelInstance>
                 <ViewModelInstance exports="true" name="S Button" id="10:5197">
                     <ViewModelInstanceString propertyValue="Button" viewModelPropertyId="10:5171" id="10:5198"/>
                     <ViewModelInstanceList viewModelPropertyId="10:5173" id="10:5199">
@@ -1276,7 +1286,7 @@
                     <ViewModelInstanceList viewModelPropertyId="10:5173" id="10:5241">
                         <ViewModelInstanceListItem viewModelId="1:1211" viewModelInstanceId="1:1212" id="10:5245"/>
                     </ViewModelInstanceList>
-                    <ViewModelInstanceNumber propertyValue="6" viewModelPropertyId="10:5175" id="10:5242"/>
+                    <ViewModelInstanceNumber propertyValue="7" viewModelPropertyId="10:5175" id="10:5242"/>
                     <ViewModelInstanceNumber propertyValue="5" viewModelPropertyId="10:5177" id="10:5243"/>
                     <ViewModelInstanceViewModel propertyValue="10:5193" viewModelPropertyId="10:5179" id="10:5244"/>
                     <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="10:6573" id="10:6580"/>
@@ -1286,7 +1296,7 @@
                     <ViewModelInstanceList viewModelPropertyId="10:5173" id="10:5248">
                         <ViewModelInstanceListItem viewModelId="1:1748" viewModelInstanceId="1:1749" id="10:5252"/>
                     </ViewModelInstanceList>
-                    <ViewModelInstanceNumber propertyValue="7" viewModelPropertyId="10:5175" id="10:5249"/>
+                    <ViewModelInstanceNumber propertyValue="8" viewModelPropertyId="10:5175" id="10:5249"/>
                     <ViewModelInstanceNumber propertyValue="3.5" viewModelPropertyId="10:5177" id="10:5250"/>
                     <ViewModelInstanceViewModel propertyValue="10:5193" viewModelPropertyId="10:5179" id="10:5251"/>
                     <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="10:6573" id="10:6581"/>
@@ -1296,7 +1306,7 @@
                     <ViewModelInstanceList viewModelPropertyId="10:5173" id="10:5255">
                         <ViewModelInstanceListItem viewModelId="1:2082" viewModelInstanceId="1:2083" id="10:5259"/>
                     </ViewModelInstanceList>
-                    <ViewModelInstanceNumber propertyValue="8" viewModelPropertyId="10:5175" id="10:5256"/>
+                    <ViewModelInstanceNumber propertyValue="9" viewModelPropertyId="10:5175" id="10:5256"/>
                     <ViewModelInstanceNumber propertyValue="4" viewModelPropertyId="10:5177" id="10:5257"/>
                     <ViewModelInstanceViewModel propertyValue="10:5193" viewModelPropertyId="10:5179" id="10:5258"/>
                     <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="10:6573" id="10:6582"/>
@@ -1369,9 +1379,9 @@
                     </ViewModelInstanceList>
                     <ViewModelInstanceViewModel propertyValue="10:5193" viewModelPropertyId="10:5184" id="10:5292"/>
                     <ViewModelInstanceNumber propertyValue="1" viewModelPropertyId="10:5187" id="10:5293"/>
-                    <ViewModelInstanceNumber propertyValue="8" viewModelPropertyId="10:5190" id="10:5294"/>
-                    <ViewModelInstanceNumber propertyValue="9" viewModelPropertyId="10:5576" id="10:5577"/>
-                    <ViewModelInstanceNumber propertyValue="6" viewModelPropertyId="10:12435" id="10:12436"/>
+                    <ViewModelInstanceNumber propertyValue="9" viewModelPropertyId="10:5190" id="10:5294"/>
+                    <ViewModelInstanceNumber propertyValue="10" viewModelPropertyId="10:5576" id="10:5577"/>
+                    <ViewModelInstanceNumber propertyValue="7" viewModelPropertyId="10:12435" id="10:12436"/>
                     <ViewModelInstanceNumber propertyValue="3" viewModelPropertyId="10:12437" id="10:12438"/>
                     <ViewModelInstanceViewModel propertyValue="10:12540" viewModelPropertyId="10:12538" id="10:12539"/>
                     <ViewModelInstanceViewModel propertyValue="10:12578" viewModelPropertyId="10:12576" id="10:12577"/>
@@ -1394,6 +1404,17 @@
                 <ViewModelPropertyList name="content" id="10:3861"/>
                 <ViewModelPropertyViewModel viewModelReferenceId="10:7" name="theme" id="10:3657"/>
                 <ViewModelPropertyString name="name" id="10:3614"/>
+                <ViewModelInstance exports="true" name="T Button Group" id="98:753">
+                    <ViewModelInstanceString propertyValue="Button Group" viewModelPropertyId="10:3614" id="98:754"/>
+                    <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="10:3657" id="98:755"/>
+                    <ViewModelInstanceList viewModelPropertyId="10:3861" id="98:756">
+                        <ViewModelInstanceListItem viewModelId="1:151" viewModelInstanceId="1:152" id="98:757"/>
+                        <ViewModelInstanceListItem viewModelId="92:606" viewModelInstanceId="92:670" id="98:761"/>
+                    </ViewModelInstanceList>
+                    <ViewModelInstanceBoolean viewModelPropertyId="10:4507" id="98:758"/>
+                    <ViewModelInstanceNumber propertyValue="6" viewModelPropertyId="10:4567" id="98:759"/>
+                    <ViewModelInstanceViewModel propertyValue="10:4585" viewModelPropertyId="10:4589" id="98:760"/>
+                </ViewModelInstance>
                 <ViewModelInstance exports="true" name="T Button" id="10:4595">
                     <ViewModelInstanceString propertyValue="Button" viewModelPropertyId="10:3614" id="10:4596"/>
                     <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="10:3657" id="10:4598"/>
@@ -1461,7 +1482,7 @@
                         <ViewModelInstanceListItem viewModelId="1:1211" viewModelInstanceId="1:1212" id="10:4657"/>
                     </ViewModelInstanceList>
                     <ViewModelInstanceBoolean viewModelPropertyId="10:4507" id="10:4654"/>
-                    <ViewModelInstanceNumber propertyValue="6" viewModelPropertyId="10:4567" id="10:4655"/>
+                    <ViewModelInstanceNumber propertyValue="7" viewModelPropertyId="10:4567" id="10:4655"/>
                     <ViewModelInstanceViewModel propertyValue="10:4585" viewModelPropertyId="10:4589" id="10:4656"/>
                 </ViewModelInstance>
                 <ViewModelInstance exports="true" name="T Label" id="10:4658">
@@ -1471,7 +1492,7 @@
                         <ViewModelInstanceListItem viewModelId="1:1748" viewModelInstanceId="1:1749" id="10:4666"/>
                     </ViewModelInstanceList>
                     <ViewModelInstanceBoolean viewModelPropertyId="10:4507" id="10:4663"/>
-                    <ViewModelInstanceNumber propertyValue="7" viewModelPropertyId="10:4567" id="10:4664"/>
+                    <ViewModelInstanceNumber propertyValue="8" viewModelPropertyId="10:4567" id="10:4664"/>
                     <ViewModelInstanceViewModel propertyValue="10:4585" viewModelPropertyId="10:4589" id="10:4665"/>
                 </ViewModelInstance>
                 <ViewModelInstance exports="true" name="T Avatar" id="10:4667">
@@ -1481,7 +1502,7 @@
                         <ViewModelInstanceListItem viewModelId="1:2082" viewModelInstanceId="1:2083" id="10:4675"/>
                     </ViewModelInstanceList>
                     <ViewModelInstanceBoolean viewModelPropertyId="10:4507" id="10:4672"/>
-                    <ViewModelInstanceNumber propertyValue="8" viewModelPropertyId="10:4567" id="10:4673"/>
+                    <ViewModelInstanceNumber propertyValue="9" viewModelPropertyId="10:4567" id="10:4673"/>
                     <ViewModelInstanceViewModel propertyValue="10:4585" viewModelPropertyId="10:4589" id="10:4674"/>
                 </ViewModelInstance>
             </ViewModel>
@@ -3506,23 +3527,30 @@
         <ViewModelPropertyViewModel viewModelReferenceId="10:4577" name="_nav" id="41:872"/>
         <ViewModelPropertyBoolean name="_hover" id="41:874"/>
         <ViewModelPropertyViewModel viewModelReferenceId="10:7" name="theme" id="41:876"/>
+        <ViewModelInstance exports="true" name="Nav Button Group" id="98:770">
+            <ViewModelInstanceString propertyValue="Button Group" viewModelPropertyId="41:868" id="98:771"/>
+            <ViewModelInstanceNumber propertyValue="6" viewModelPropertyId="41:870" id="98:772"/>
+            <ViewModelInstanceViewModel propertyValue="10:4585" viewModelPropertyId="41:872" id="98:773"/>
+            <ViewModelInstanceBoolean viewModelPropertyId="41:874" id="98:774"/>
+            <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="41:876" id="98:775"/>
+        </ViewModelInstance>
         <ViewModelInstance exports="true" name="Nav Avatar" id="42:329">
             <ViewModelInstanceString propertyValue="Avatar" viewModelPropertyId="41:868" id="42:330"/>
-            <ViewModelInstanceNumber propertyValue="8" viewModelPropertyId="41:870" id="42:331"/>
+            <ViewModelInstanceNumber propertyValue="9" viewModelPropertyId="41:870" id="42:331"/>
             <ViewModelInstanceViewModel propertyValue="10:4585" viewModelPropertyId="41:872" id="42:332"/>
             <ViewModelInstanceBoolean viewModelPropertyId="41:874" id="42:333"/>
             <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="41:876" id="42:334"/>
         </ViewModelInstance>
         <ViewModelInstance exports="true" name="Nav Label" id="42:323">
             <ViewModelInstanceString propertyValue="Label" viewModelPropertyId="41:868" id="42:324"/>
-            <ViewModelInstanceNumber propertyValue="7" viewModelPropertyId="41:870" id="42:325"/>
+            <ViewModelInstanceNumber propertyValue="8" viewModelPropertyId="41:870" id="42:325"/>
             <ViewModelInstanceViewModel propertyValue="10:4585" viewModelPropertyId="41:872" id="42:326"/>
             <ViewModelInstanceBoolean viewModelPropertyId="41:874" id="42:327"/>
             <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="41:876" id="42:328"/>
         </ViewModelInstance>
         <ViewModelInstance exports="true" name="Nav Badge" id="42:317">
             <ViewModelInstanceString propertyValue="Badge" viewModelPropertyId="41:868" id="42:318"/>
-            <ViewModelInstanceNumber propertyValue="6" viewModelPropertyId="41:870" id="42:319"/>
+            <ViewModelInstanceNumber propertyValue="7" viewModelPropertyId="41:870" id="42:319"/>
             <ViewModelInstanceViewModel propertyValue="10:4585" viewModelPropertyId="41:872" id="42:320"/>
             <ViewModelInstanceBoolean viewModelPropertyId="41:874" id="42:321"/>
             <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="41:876" id="42:322"/>
@@ -3601,7 +3629,7 @@
         <ViewModelInstance exports="true" name="Inputs" id="42:303">
             <ViewModelInstanceBoolean viewModelPropertyId="41:878" id="42:304"/>
             <ViewModelInstanceString propertyValue="Inputs" viewModelPropertyId="41:880" id="42:305"/>
-            <ViewModelInstanceNumber propertyValue="6" viewModelPropertyId="41:882" id="42:306"/>
+            <ViewModelInstanceNumber propertyValue="7" viewModelPropertyId="41:882" id="42:306"/>
             <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="41:884" id="42:307"/>
             <ViewModelInstanceList viewModelPropertyId="41:886" id="42:308">
                 <ViewModelInstanceListItem name="Nav Button" viewModelId="41:862" viewModelInstanceId="42:267" id="42:311"/>
