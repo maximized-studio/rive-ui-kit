@@ -1,6 +1,7 @@
 <Rive version="1" kind="fragment">
     <AssetGroup type="images" name="Images" id="1:2093"/>
     <AssetGroup type="fonts" name="Fonts" id="1:2106"/>
+    <ComponentAsset artboardId="92:616" name="Segmented Control 2" id="92:636"/>
     <ComponentGroup id="1:2112"/>
     <CubicEaseInterpolator id="1:1357"/>
     <CubicEaseInterpolator id="1:1358"/>
@@ -273,6 +274,120 @@
         <FormulaTokenInput id="70:514"/>
         <FormulaTokenOperation operationType="multiply" id="70:515"/>
         <FormulaTokenValue operationValue="0.1" id="70:516"/>
+    </DataConverterFormula>
+    <DataConverterFormula name="RadButtonGrouped" id="92:549">
+        <FormulaTokenParenthesisOpen id="92:550"/>
+        <FormulaTokenValue operationValue="4" id="92:551"/>
+        <FormulaTokenOperation operationType="multiply" id="92:552"/>
+        <FormulaTokenFunction functionType="max" id="92:553"/>
+        <FormulaTokenValue operationValue="0" id="92:554"/>
+        <FormulaTokenArgumentSeparator id="92:555"/>
+        <FormulaTokenValue id="92:556"/>
+        <FormulaTokenOperation operationType="subtract" id="92:557"/>
+        <FormulaTokenFunction functionType="pow" id="92:558"/>
+        <FormulaTokenInput id="92:559"/>
+        <FormulaTokenOperation operationType="subtract" id="92:560"/>
+        <FormulaTokenValue id="92:561"/>
+        <FormulaTokenArgumentSeparator id="92:562"/>
+        <FormulaTokenValue operationValue="2" id="92:563"/>
+        <FormulaTokenParenthesisClose id="92:564"/>
+        <FormulaTokenParenthesisClose id="92:565"/>
+        <FormulaTokenOperation id="92:566"/>
+        <FormulaTokenValue operationValue="8" id="92:567"/>
+        <FormulaTokenOperation operationType="multiply" id="92:568"/>
+        <FormulaTokenFunction functionType="max" id="92:569"/>
+        <FormulaTokenValue operationValue="0" id="92:570"/>
+        <FormulaTokenArgumentSeparator id="92:571"/>
+        <FormulaTokenValue id="92:572"/>
+        <FormulaTokenOperation operationType="subtract" id="92:573"/>
+        <FormulaTokenFunction functionType="pow" id="92:574"/>
+        <FormulaTokenInput id="92:575"/>
+        <FormulaTokenOperation operationType="subtract" id="92:576"/>
+        <FormulaTokenValue operationValue="2" id="92:577"/>
+        <FormulaTokenArgumentSeparator id="92:578"/>
+        <FormulaTokenValue operationValue="2" id="92:579"/>
+        <FormulaTokenParenthesisClose id="92:580"/>
+        <FormulaTokenParenthesisClose id="92:581"/>
+        <FormulaTokenOperation id="92:582"/>
+        <FormulaTokenValue operationValue="20" id="92:583"/>
+        <FormulaTokenOperation operationType="multiply" id="92:584"/>
+        <FormulaTokenFunction functionType="max" id="92:585"/>
+        <FormulaTokenValue operationValue="0" id="92:586"/>
+        <FormulaTokenArgumentSeparator id="92:587"/>
+        <FormulaTokenValue id="92:588"/>
+        <FormulaTokenOperation operationType="subtract" id="92:589"/>
+        <FormulaTokenFunction functionType="pow" id="92:590"/>
+        <FormulaTokenInput id="92:591"/>
+        <FormulaTokenOperation operationType="subtract" id="92:592"/>
+        <FormulaTokenValue operationValue="3" id="92:593"/>
+        <FormulaTokenArgumentSeparator id="92:594"/>
+        <FormulaTokenValue operationValue="2" id="92:595"/>
+        <FormulaTokenParenthesisClose id="92:596"/>
+        <FormulaTokenParenthesisClose id="92:597"/>
+        <FormulaTokenParenthesisClose id="92:598"/>
+        <FormulaTokenOperation operationType="multiply" id="92:599"/>
+        <FormulaTokenParenthesisOpen id="92:600"/>
+        <FormulaTokenValue id="92:601"/>
+        <FormulaTokenOperation operationType="subtract" id="92:602"/>
+        <FormulaTokenValue id="92:603">
+            <DataBindContext sourcePathIds="1:151-92:544" propertyKey="777" converterId="9:145" id="92:604"/>
+        </FormulaTokenValue>
+        <FormulaTokenParenthesisClose id="92:605"/>
+    </DataConverterFormula>
+    <DataConverterFormula name="RadGroupInner" id="92:683">
+        <FormulaTokenFunction functionType="max" id="92:684"/>
+        <FormulaTokenValue operationValue="0" id="92:685"/>
+        <FormulaTokenArgumentSeparator id="92:686"/>
+        <FormulaTokenValue operationValue="4" id="92:687"/>
+        <FormulaTokenOperation operationType="multiply" id="92:688"/>
+        <FormulaTokenFunction functionType="max" id="92:689"/>
+        <FormulaTokenValue operationValue="0" id="92:690"/>
+        <FormulaTokenArgumentSeparator id="92:691"/>
+        <FormulaTokenValue id="92:692"/>
+        <FormulaTokenOperation operationType="subtract" id="92:693"/>
+        <FormulaTokenFunction functionType="pow" id="92:694"/>
+        <FormulaTokenInput id="92:695"/>
+        <FormulaTokenOperation operationType="subtract" id="92:696"/>
+        <FormulaTokenValue id="92:697"/>
+        <FormulaTokenArgumentSeparator id="92:698"/>
+        <FormulaTokenValue operationValue="2" id="92:699"/>
+        <FormulaTokenParenthesisClose id="92:700"/>
+        <FormulaTokenParenthesisClose id="92:701"/>
+        <FormulaTokenOperation id="92:702"/>
+        <FormulaTokenValue operationValue="8" id="92:703"/>
+        <FormulaTokenOperation operationType="multiply" id="92:704"/>
+        <FormulaTokenFunction functionType="max" id="92:705"/>
+        <FormulaTokenValue operationValue="0" id="92:706"/>
+        <FormulaTokenArgumentSeparator id="92:707"/>
+        <FormulaTokenValue id="92:708"/>
+        <FormulaTokenOperation operationType="subtract" id="92:709"/>
+        <FormulaTokenFunction functionType="pow" id="92:710"/>
+        <FormulaTokenInput id="92:711"/>
+        <FormulaTokenOperation operationType="subtract" id="92:712"/>
+        <FormulaTokenValue operationValue="2" id="92:713"/>
+        <FormulaTokenArgumentSeparator id="92:714"/>
+        <FormulaTokenValue operationValue="2" id="92:715"/>
+        <FormulaTokenParenthesisClose id="92:716"/>
+        <FormulaTokenParenthesisClose id="92:717"/>
+        <FormulaTokenOperation id="92:718"/>
+        <FormulaTokenValue operationValue="20" id="92:719"/>
+        <FormulaTokenOperation operationType="multiply" id="92:720"/>
+        <FormulaTokenFunction functionType="max" id="92:721"/>
+        <FormulaTokenValue operationValue="0" id="92:722"/>
+        <FormulaTokenArgumentSeparator id="92:723"/>
+        <FormulaTokenValue id="92:724"/>
+        <FormulaTokenOperation operationType="subtract" id="92:725"/>
+        <FormulaTokenFunction functionType="pow" id="92:726"/>
+        <FormulaTokenInput id="92:727"/>
+        <FormulaTokenOperation operationType="subtract" id="92:728"/>
+        <FormulaTokenValue operationValue="3" id="92:729"/>
+        <FormulaTokenArgumentSeparator id="92:730"/>
+        <FormulaTokenValue operationValue="2" id="92:731"/>
+        <FormulaTokenParenthesisClose id="92:732"/>
+        <FormulaTokenParenthesisClose id="92:733"/>
+        <FormulaTokenOperation operationType="subtract" id="92:734"/>
+        <FormulaTokenValue id="92:735"/>
+        <FormulaTokenParenthesisClose id="92:736"/>
     </DataConverterFormula>
     <DataConverterGroup name="SliderPercentText" id="2:40">
         <DataConverterGroupItem converterId="2:41" id="2:60"/>
@@ -782,6 +897,7 @@
                 </ViewModelInstance>
             </ViewModel>
             <ViewModel defaultInstanceId="1:152" name="Button" groupId="1:2673" id="1:151">
+                <ViewModelPropertyBoolean name="grouped" id="92:544"/>
                 <ViewModelPropertyBoolean name="secondary" id="33:159"/>
                 <ViewModelPropertyNumber name="icon" id="33:164"/>
                 <ViewModelPropertyBoolean name="iconOnly" id="33:169"/>
@@ -791,6 +907,42 @@
                 <ViewModelPropertyTrigger name="_pressed" id="1:1321"/>
                 <ViewModelPropertyBoolean name="_hover" id="1:587"/>
                 <ViewModelPropertyString name="text" id="1:549"/>
+                <ViewModelInstance exports="true" name="BG Copy" id="92:637">
+                    <ViewModelInstanceString propertyValue="Copy" viewModelPropertyId="1:549" id="92:638"/>
+                    <ViewModelInstanceBoolean viewModelPropertyId="1:587" id="92:639"/>
+                    <ViewModelInstanceTrigger viewModelPropertyId="1:1321" id="92:640"/>
+                    <ViewModelInstanceBoolean viewModelPropertyId="7:1" id="92:641"/>
+                    <ViewModelInstanceBoolean viewModelPropertyId="7:3" id="92:642"/>
+                    <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="10:3108" id="92:643"/>
+                    <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="33:159" id="92:644"/>
+                    <ViewModelInstanceNumber viewModelPropertyId="33:164" id="92:645"/>
+                    <ViewModelInstanceBoolean viewModelPropertyId="33:169" id="92:646"/>
+                    <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="92:544" id="92:647"/>
+                </ViewModelInstance>
+                <ViewModelInstance exports="true" name="BG Cut" id="92:648">
+                    <ViewModelInstanceString propertyValue="Cut" viewModelPropertyId="1:549" id="92:649"/>
+                    <ViewModelInstanceBoolean viewModelPropertyId="1:587" id="92:650"/>
+                    <ViewModelInstanceTrigger viewModelPropertyId="1:1321" id="92:651"/>
+                    <ViewModelInstanceBoolean viewModelPropertyId="7:1" id="92:652"/>
+                    <ViewModelInstanceBoolean viewModelPropertyId="7:3" id="92:653"/>
+                    <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="10:3108" id="92:654"/>
+                    <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="33:159" id="92:655"/>
+                    <ViewModelInstanceNumber viewModelPropertyId="33:164" id="92:656"/>
+                    <ViewModelInstanceBoolean viewModelPropertyId="33:169" id="92:657"/>
+                    <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="92:544" id="92:658"/>
+                </ViewModelInstance>
+                <ViewModelInstance exports="true" name="BG Paste" id="92:659">
+                    <ViewModelInstanceString propertyValue="Paste" viewModelPropertyId="1:549" id="92:660"/>
+                    <ViewModelInstanceBoolean viewModelPropertyId="1:587" id="92:661"/>
+                    <ViewModelInstanceTrigger viewModelPropertyId="1:1321" id="92:662"/>
+                    <ViewModelInstanceBoolean viewModelPropertyId="7:1" id="92:663"/>
+                    <ViewModelInstanceBoolean viewModelPropertyId="7:3" id="92:664"/>
+                    <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="10:3108" id="92:665"/>
+                    <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="33:159" id="92:666"/>
+                    <ViewModelInstanceNumber viewModelPropertyId="33:164" id="92:667"/>
+                    <ViewModelInstanceBoolean viewModelPropertyId="33:169" id="92:668"/>
+                    <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="92:544" id="92:669"/>
+                </ViewModelInstance>
                 <ViewModelInstance exports="true" name="Next Button" id="33:101">
                     <ViewModelInstanceString propertyValue="Next" viewModelPropertyId="1:549" id="33:102"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="1:587" id="33:103"/>
@@ -801,6 +953,7 @@
                     <ViewModelInstanceBoolean viewModelPropertyId="33:159" id="33:160"/>
                     <ViewModelInstanceNumber propertyValue="3" viewModelPropertyId="33:164" id="33:165"/>
                     <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="33:169" id="33:170"/>
+                    <ViewModelInstanceBoolean viewModelPropertyId="92:544" id="92:545"/>
                 </ViewModelInstance>
                 <ViewModelInstance exports="true" name="Prev Button" id="33:60">
                     <ViewModelInstanceString propertyValue="Previous" viewModelPropertyId="1:549" id="33:61"/>
@@ -812,6 +965,7 @@
                     <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="33:159" id="33:161"/>
                     <ViewModelInstanceNumber propertyValue="2" viewModelPropertyId="33:164" id="33:166"/>
                     <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="33:169" id="33:171"/>
+                    <ViewModelInstanceBoolean viewModelPropertyId="92:544" id="92:546"/>
                 </ViewModelInstance>
                 <ViewModelInstance exports="true" name="Back Button" id="33:19">
                     <ViewModelInstanceString propertyValue="All components" viewModelPropertyId="1:549" id="33:20"/>
@@ -823,6 +977,7 @@
                     <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="33:159" id="33:162"/>
                     <ViewModelInstanceNumber propertyValue="1" viewModelPropertyId="33:164" id="33:167"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="33:169" id="33:172"/>
+                    <ViewModelInstanceBoolean viewModelPropertyId="92:544" id="92:547"/>
                 </ViewModelInstance>
                 <ViewModelInstance exports="true" id="1:152">
                     <ViewModelInstanceString propertyValue="Button" viewModelPropertyId="1:549" id="1:550"/>
@@ -834,6 +989,7 @@
                     <ViewModelInstanceBoolean viewModelPropertyId="33:159" id="33:163"/>
                     <ViewModelInstanceNumber viewModelPropertyId="33:164" id="33:168"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="33:169" id="33:173"/>
+                    <ViewModelInstanceBoolean viewModelPropertyId="92:544" id="92:548"/>
                 </ViewModelInstance>
             </ViewModel>
             <ViewModel defaultInstanceId="1:150" name="Checkbox" groupId="1:2673" id="1:149">
@@ -3467,6 +3623,22 @@
             <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="41:892" id="42:347"/>
             <ViewModelInstanceViewModel propertyValue="42:303" viewModelPropertyId="41:894" id="42:348"/>
             <ViewModelInstanceViewModel propertyValue="42:335" viewModelPropertyId="41:896" id="42:349"/>
+        </ViewModelInstance>
+    </ViewModel>
+    <ViewModel defaultInstanceId="0:0" name="ButtonGroup" id="92:606">
+        <ViewModelPropertyString name="label" id="92:608"/>
+        <ViewModelPropertyList name="buttons" id="92:610"/>
+        <ViewModelPropertyBoolean name="a11yHidden" id="92:612"/>
+        <ViewModelPropertyViewModel viewModelReferenceId="10:7" name="theme" id="92:614"/>
+        <ViewModelInstance exports="true" name="Button Group" id="92:670">
+            <ViewModelInstanceString propertyValue="Clipboard" viewModelPropertyId="92:608" id="92:671"/>
+            <ViewModelInstanceList viewModelPropertyId="92:610" id="92:672">
+                <ViewModelInstanceListItem viewModelId="1:151" viewModelInstanceId="92:637" id="92:675"/>
+                <ViewModelInstanceListItem viewModelId="1:151" viewModelInstanceId="92:648" id="92:676"/>
+                <ViewModelInstanceListItem viewModelId="1:151" viewModelInstanceId="92:659" id="92:677"/>
+            </ViewModelInstanceList>
+            <ViewModelInstanceBoolean viewModelPropertyId="92:612" id="92:673"/>
+            <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="92:614" id="92:674"/>
         </ViewModelInstance>
     </ViewModel>
 </Rive>

@@ -10,7 +10,7 @@ The kit is also on the [Rive Community](https://rive.app/community/files/25701-5
 
 ## Components
 
-- **Inputs:** Button · Switch / Switch List · Slider · Dropdown · Radio Option / Radio Group · Checkbox / Checkbox Group
+- **Inputs:** Button · Button Group · Switch / Switch List · Slider · Dropdown · Radio Option / Radio Group · Checkbox / Checkbox Group
 - **Display:** Badge · Label · Avatar
 - **Building blocks:** List Item · Tile · Slide · Segment · Segmented Control · Nav Item · Accordion · Sidebar · Toolbar
 
@@ -27,7 +27,7 @@ The components carry Rive semantics, so screen readers get a real accessibility 
 | Checkbox | `checkbox` | label, checked |
 | Radio Option / Radio Group | `radioButton` / `radioGroup` | label, selected |
 | Slider | `slider` | label, value |
-| Switch List, Checkbox Group | `group` | group label |
+| Switch List, Checkbox Group, Button Group | `group` | group label |
 | List Item | `list` / `listItem` | label |
 | Label, Badge | `text` | text |
 | Avatar | `image` | label |
@@ -37,6 +37,14 @@ Labels are bound to the same view model properties as the visible text, so they 
 ```bash
 rive build/default --semantics=$PWD/build/default.semantics.json
 ```
+
+## Button Group
+
+A row of kit Buttons joined into one control: outer corners follow the theme roundness, inner corners are square and a 1px border line separates the buttons. Primary and secondary buttons both work, and buttons in one group may mix.
+
+- View model `ButtonGroup`: `label` (screen reader name), `buttons` (a list of `Button` instances), `a11yHidden`, `theme`.
+- Give every Button in the list `grouped = true`. That squares its corners and drops its own border so the group draws one; a Button with `grouped = false` keeps its normal look.
+- Each Button keeps its own `_pressed` trigger, hover and disabled state, so you handle clicks per button as you would for a single Button.
 
 ## Pointer cursor
 

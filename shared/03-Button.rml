@@ -13,7 +13,7 @@
                 </Fill>
                 <LayoutComponentStyle positionLeftUnitsValue="points" positionRightUnitsValue="points" positionTopUnitsValue="points" positionBottomUnitsValue="points" edgeConstraints="84" layoutAlignmentType="center" positionTypeValue="absolute" cornerRadiusTL="8" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="9:87">
                     <DataBindContext sourcePathIds="1:151-7:1" propertyKey="596" nameBased="true" converterId="9:90" id="9:108"/>
-                    <DataBindContext sourcePathIds="1:151-10:3108-10:2086" propertyKey="640" nameBased="true" converterId="10:6095" id="9:130"/>
+                    <DataBindContext sourcePathIds="1:151-10:3108-10:2086" propertyKey="640" nameBased="true" converterId="92:549" id="9:130"/>
                 </LayoutComponentStyle>
                 <LayoutComponent styleId="9:117" name="Label" id="9:116">
                     <Text alignValue="center" fitFontSizeResizesBox="false" name="Text" id="9:118">
@@ -102,7 +102,7 @@
                 </LayoutComponentStyle>
             </LayoutComponent>
             <LayoutComponentStyle gapHorizontal="6" paddingLeft="16" paddingRight="16" paddingTop="8" paddingBottom="8" layoutAlignmentType="center" intrinsicallySizedValue="true" cornerRadiusTL="8" layoutWidthScaleType="hug" widthUnitsValue="auto" name="Layout Style" id="1:146">
-                <DataBindContext sourcePathIds="1:151-10:3108-10:2086" propertyKey="640" converterId="10:6095" id="10:3168"/>
+                <DataBindContext sourcePathIds="1:151-10:3108-10:2086" propertyKey="640" converterId="92:549" id="10:3168"/>
                 <DataBindContext sourcePathIds="1:151-33:169" propertyKey="512" nameBased="true" converterId="33:224" id="33:301"/>
                 <DataBindContext sourcePathIds="1:151-33:169" propertyKey="513" nameBased="true" converterId="33:224" id="33:302"/>
             </LayoutComponentStyle>
@@ -151,7 +151,7 @@
                         </SolidColor>
                     </Fill>
                     <LayoutComponentStyle positionLeftUnitsValue="points" positionRightUnitsValue="points" positionTopUnitsValue="points" positionBottomUnitsValue="points" edgeConstraints="84" positionTypeValue="absolute" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="33:314">
-                        <DataBindContext sourcePathIds="1:151-10:3108-10:2086" propertyKey="640" nameBased="true" converterId="10:6095" id="33:318"/>
+                        <DataBindContext sourcePathIds="1:151-10:3108-10:2086" propertyKey="640" nameBased="true" converterId="92:549" id="33:318"/>
                     </LayoutComponentStyle>
                     <DataBindContext sourcePathIds="1:151-1:587" propertyKey="18" nameBased="true" converterId="9:145" id="33:319"/>
                 </LayoutComponent>
@@ -161,13 +161,14 @@
                     </SolidColor>
                 </Fill>
                 <LayoutComponentStyle positionLeftUnitsValue="points" positionRightUnitsValue="points" positionTopUnitsValue="points" positionBottomUnitsValue="points" edgeConstraints="84" positionTypeValue="absolute" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="33:304">
-                    <DataBindContext sourcePathIds="1:151-10:3108-10:2086" propertyKey="640" nameBased="true" converterId="10:6095" id="33:308"/>
+                    <DataBindContext sourcePathIds="1:151-10:3108-10:2086" propertyKey="640" nameBased="true" converterId="92:549" id="33:308"/>
                     <DataBindContext sourcePathIds="1:151-33:159" propertyKey="596" nameBased="true" converterId="9:90" id="33:312"/>
                 </LayoutComponentStyle>
                 <Stroke id="33:309">
                     <SolidColor colorValue="FF888888" id="33:310">
                         <DataBindContext sourcePathIds="1:151-10:3108-10:7418" propertyKey="37" nameBased="true" id="33:311"/>
                     </SolidColor>
+                    <DataBindContext sourcePathIds="1:151-92:544" propertyKey="47" nameBased="true" converterId="9:90" id="92:738"/>
                 </Stroke>
             </LayoutComponent>
             <Fill fillRule="clockwise" id="10:3128">
@@ -191,12 +192,12 @@
                     </SolidColor>
                 </Fill>
                 <LayoutComponentStyle positionLeftUnitsValue="points" positionRightUnitsValue="points" positionTopUnitsValue="points" positionBottomUnitsValue="points" edgeConstraints="84" positionTypeValue="absolute" cornerRadiusTL="8" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="10:3134">
-                    <DataBindContext sourcePathIds="1:151-10:3108-10:2086" propertyKey="640" converterId="10:6095" id="10:3169"/>
+                    <DataBindContext sourcePathIds="1:151-10:3108-10:2086" propertyKey="640" converterId="92:549" id="10:3169"/>
                 </LayoutComponentStyle>
             </LayoutComponent>
             <LayoutComponent styleId="10:3138" opacity="0" name="Ripple" id="10:3137">
                 <LayoutComponentStyle positionLeftUnitsValue="points" positionRightUnitsValue="points" positionTopUnitsValue="points" positionBottomUnitsValue="points" edgeConstraints="84" positionTypeValue="absolute" cornerRadiusTL="8" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="10:3138">
-                    <DataBindContext sourcePathIds="1:151-10:3108-10:2086" propertyKey="640" converterId="10:6095" id="10:3170"/>
+                    <DataBindContext sourcePathIds="1:151-10:3108-10:2086" propertyKey="640" converterId="92:549" id="10:3170"/>
                 </LayoutComponentStyle>
                 <Stroke thickness="0" id="10:3139">
                     <SolidColor colorValue="FF93C5FD" id="10:3140">
