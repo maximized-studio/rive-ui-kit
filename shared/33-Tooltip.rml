@@ -1,0 +1,182 @@
+<Rive version="1" kind="fragment">
+    <Artboard defaultStateMachineId="112:190" viewModelId="112:1" viewModelInstanceId="112:15" isComponent="true" spaceId="1:5601" width="120" height="40" styleId="112:189" x="1800" y="2014" name="Tooltip" id="112:188">
+        <Fill fillRule="clockwise" id="112:202">
+            <SolidColor colorValue="00000000" id="112:203"/>
+        </Fill>
+        <LayoutComponentStyle layoutAlignmentType="center" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="112:189"/>
+        <LayoutComponent styleId="112:192" name="Tooltip" id="112:191">
+            <ComponentOrigin originX="0.5" originY="0.5" id="112:204"/>
+            <LayoutComponent styleId="112:194" name="Body" id="112:193">
+                <Fill fillRule="clockwise" id="112:205">
+                    <SolidColor colorValue="FFFAFAFA" id="112:206">
+                        <DataBindContext sourcePathIds="112:1-112:6-10:7422" propertyKey="37" nameBased="true" id="112:207"/>
+                    </SolidColor>
+                </Fill>
+                <Text alignValue="center" fitFontSizeResizesBox="false" name="Text" id="112:208">
+                    <TextStylePaint fontSize="13" fontAssetId="0:7" familyName="Inter" styleName="Medium" id="112:201">
+                        <Fill fillRule="clockwise" id="112:209">
+                            <SolidColor colorValue="FF0B0B0F" id="112:210">
+                                <DataBindContext sourcePathIds="112:1-112:6-10:7402" propertyKey="37" nameBased="true" id="112:211"/>
+                            </SolidColor>
+                        </Fill>
+                        <TextStyleAxis tag="1869640570" axisValue="14" id="112:212"/>
+                        <TextStyleAxis tag="2003265652" axisValue="500" id="112:213"/>
+                    </TextStylePaint>
+                    <TextValueRun styleId="112:201" text="Tooltip" id="112:214">
+                        <DataBindContext sourcePathIds="112:1-112:2" propertyKey="268" nameBased="true" id="112:215"/>
+                    </TextValueRun>
+                    <LayoutParticipant layoutWidthScaleType="hug" layoutHeightScaleType="hug" id="112:216"/>
+                </Text>
+                <LayoutComponentStyle paddingLeft="10" paddingRight="10" paddingTop="6" paddingBottom="6" layoutAlignmentType="center" intrinsicallySizedValue="true" cornerRadiusTL="8" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="112:194">
+                    <DataBindContext sourcePathIds="112:1-112:6-10:2086" propertyKey="640" nameBased="true" converterId="10:6095" id="112:217"/>
+                </LayoutComponentStyle>
+                <SemanticData role="text" name="Semantics" id="112:218">
+                    <DataBindContext sourcePathIds="112:1-112:2" propertyKey="983" nameBased="true" id="112:219"/>
+                    <DataBindContext sourcePathIds="112:1-112:5" propertyKey="1004" nameBased="true" id="112:220"/>
+                </SemanticData>
+            </LayoutComponent>
+            <LayoutComponent styleId="112:196" name="Arrow" id="112:195">
+                <LayoutComponent width="12" height="6" styleId="112:221" name="Arrow Down" id="112:225">
+                    <Node name="Art" id="112:226">
+                        <Shape name="Arrow Down" id="112:227">
+                            <PointsPath isClosed="true" id="112:228">
+                                <StraightVertex y="-1" id="112:222"/>
+                                <StraightVertex x="12" y="-1" id="112:223"/>
+                                <StraightVertex x="6" y="6" id="112:224"/>
+                            </PointsPath>
+                            <Fill fillRule="clockwise" id="112:229">
+                                <SolidColor colorValue="FFFAFAFA" id="112:230">
+                                    <DataBindContext sourcePathIds="112:1-112:6-10:7422" propertyKey="37" nameBased="true" id="112:231"/>
+                                </SolidColor>
+                            </Fill>
+                        </Shape>
+                    </Node>
+                    <LayoutComponentStyle id="112:221">
+                        <DataBindContext sourcePathIds="112:1-112:3" propertyKey="596" nameBased="true" converterId="112:18" id="112:232"/>
+                    </LayoutComponentStyle>
+                </LayoutComponent>
+                <LayoutComponent width="12" height="6" styleId="112:233" name="Arrow Up" id="112:237">
+                    <Node name="Art" id="112:238">
+                        <Shape name="Arrow Up" id="112:239">
+                            <PointsPath isClosed="true" id="112:240">
+                                <StraightVertex y="7" id="112:234"/>
+                                <StraightVertex x="6" id="112:235"/>
+                                <StraightVertex x="12" y="7" id="112:236"/>
+                            </PointsPath>
+                            <Fill fillRule="clockwise" id="112:241">
+                                <SolidColor colorValue="FFFAFAFA" id="112:242">
+                                    <DataBindContext sourcePathIds="112:1-112:6-10:7422" propertyKey="37" nameBased="true" id="112:243"/>
+                                </SolidColor>
+                            </Fill>
+                        </Shape>
+                    </Node>
+                    <LayoutComponentStyle displayValue="none" id="112:233">
+                        <DataBindContext sourcePathIds="112:1-112:3" propertyKey="596" nameBased="true" converterId="112:32" id="112:244"/>
+                    </LayoutComponentStyle>
+                </LayoutComponent>
+                <LayoutComponent width="6" height="12" styleId="112:245" name="Arrow Right" id="112:249">
+                    <Node name="Art" id="112:250">
+                        <Shape name="Arrow Right" id="112:251">
+                            <PointsPath isClosed="true" id="112:252">
+                                <StraightVertex x="-1" id="112:246"/>
+                                <StraightVertex x="6" y="6" id="112:247"/>
+                                <StraightVertex x="-1" y="12" id="112:248"/>
+                            </PointsPath>
+                            <Fill fillRule="clockwise" id="112:253">
+                                <SolidColor colorValue="FFFAFAFA" id="112:254">
+                                    <DataBindContext sourcePathIds="112:1-112:6-10:7422" propertyKey="37" nameBased="true" id="112:255"/>
+                                </SolidColor>
+                            </Fill>
+                        </Shape>
+                    </Node>
+                    <LayoutComponentStyle displayValue="none" id="112:245">
+                        <DataBindContext sourcePathIds="112:1-112:3" propertyKey="596" nameBased="true" converterId="112:46" id="112:256"/>
+                    </LayoutComponentStyle>
+                </LayoutComponent>
+                <LayoutComponent width="6" height="12" styleId="112:257" name="Arrow Left" id="112:261">
+                    <Node name="Art" id="112:262">
+                        <Shape name="Arrow Left" id="112:263">
+                            <PointsPath isClosed="true" id="112:264">
+                                <StraightVertex x="7" id="112:258"/>
+                                <StraightVertex x="7" y="12" id="112:259"/>
+                                <StraightVertex y="6" id="112:260"/>
+                            </PointsPath>
+                            <Fill fillRule="clockwise" id="112:265">
+                                <SolidColor colorValue="FFFAFAFA" id="112:266">
+                                    <DataBindContext sourcePathIds="112:1-112:6-10:7422" propertyKey="37" nameBased="true" id="112:267"/>
+                                </SolidColor>
+                            </Fill>
+                        </Shape>
+                    </Node>
+                    <LayoutComponentStyle displayValue="none" id="112:257">
+                        <DataBindContext sourcePathIds="112:1-112:3" propertyKey="596" nameBased="true" converterId="112:60" id="112:268"/>
+                    </LayoutComponentStyle>
+                </LayoutComponent>
+                <LayoutComponentStyle layoutAlignmentType="center" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="112:196"/>
+            </LayoutComponent>
+            <LayoutComponentStyle layoutAlignmentType="center" flexDirectionValue="column" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="112:192">
+                <DataBindContext sourcePathIds="112:1-112:3" propertyKey="598" nameBased="true" id="112:269"/>
+            </LayoutComponentStyle>
+        </LayoutComponent>
+        <StateMachine name="State Machine 1" id="112:190">
+            <StateMachineLayer name="Open" id="112:270">
+                <AnimationState animationId="112:197" x="300" y="100" stateName="Open" id="112:199"/>
+                <AnimationState animationId="112:198" x="160" stateName="Closed" id="112:200"/>
+                <AnyState x="400" id="112:271">
+                    <StateTransition stateToId="112:199" duration="150" interpolationType="cubic" id="112:272">
+                        <TransitionViewModelCondition id="112:273">
+                            <TransitionPropertyViewModelComparator id="112:274">
+                                <BindablePropertyBoolean id="112:275">
+                                    <DataBindContext sourcePathIds="112:1-112:4" propertyKey="634" id="112:276"/>
+                                </BindablePropertyBoolean>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueBooleanComparator value="true" id="112:277"/>
+                        </TransitionViewModelCondition>
+                        <CubicEaseInterpolator id="112:278"/>
+                    </StateTransition>
+                    <StateTransition stateToId="112:200" duration="150" interpolationType="cubic" id="112:279">
+                        <TransitionViewModelCondition id="112:280">
+                            <TransitionPropertyViewModelComparator id="112:281">
+                                <BindablePropertyBoolean id="112:282">
+                                    <DataBindContext sourcePathIds="112:1-112:4" propertyKey="634" id="112:283"/>
+                                </BindablePropertyBoolean>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueBooleanComparator id="112:284"/>
+                        </TransitionViewModelCondition>
+                        <CubicEaseInterpolator id="112:285"/>
+                    </StateTransition>
+                </AnyState>
+                <ExitState x="480" id="112:286"/>
+                <EntryState id="112:287">
+                    <StateTransition stateToId="112:200" id="112:288"/>
+                </EntryState>
+            </StateMachineLayer>
+        </StateMachine>
+        <LinearAnimation name="Closed" id="112:198">
+            <KeyedObject objectId="112:191" id="112:295">
+                <KeyedProperty property="opacity" id="112:289">
+                    <KeyFrameDouble interpolationType="linear" id="112:290"/>
+                </KeyedProperty>
+                <KeyedProperty property="scaleX" id="112:291">
+                    <KeyFrameDouble value="0.92000002" interpolationType="linear" id="112:292"/>
+                </KeyedProperty>
+                <KeyedProperty property="scaleY" id="112:293">
+                    <KeyFrameDouble value="0.92000002" interpolationType="linear" id="112:294"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+        <LinearAnimation name="Open" id="112:197">
+            <KeyedObject objectId="112:191" id="112:302">
+                <KeyedProperty property="opacity" id="112:296">
+                    <KeyFrameDouble value="1" interpolationType="linear" id="112:297"/>
+                </KeyedProperty>
+                <KeyedProperty property="scaleX" id="112:298">
+                    <KeyFrameDouble value="1" interpolationType="linear" id="112:299"/>
+                </KeyedProperty>
+                <KeyedProperty property="scaleY" id="112:300">
+                    <KeyFrameDouble value="1" interpolationType="linear" id="112:301"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+    </Artboard>
+</Rive>

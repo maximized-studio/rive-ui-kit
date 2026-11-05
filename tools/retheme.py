@@ -7,7 +7,8 @@ palette.json:
 Optional 4th/5th args (99-_root.rml in/out) also set the Theme view model instance's stored colours, which is what
 captures and Community thumbnails show (they render without the state machine).
 Brand Light/Dark variants follow the base kit's rule: Dark puts 950/900 in the 100/200 slots;
-soft tokens are 100/300/600 (Light) and 200/300/900 (Dark).
+soft tokens are 100/300/600 (Light) and 200/300/900 (Dark); info tokens are 50/200/700 (Light) and 950/800/400 (Dark).
+Semantic mode tokens (_successBg/_successBorder/_successText, _warning…, _error…) go in "mode" like the others.
 """
 import json, re, sys
 src, palette_path, out = sys.argv[1:4]
@@ -22,7 +23,11 @@ PROPS = {'_bg': '10:7402', '_bgClear': '10:7404', '_surface': '10:7406', '_surfa
          '_surfaceMutedClear': '10:7410', '_surfaceSubtle': '10:7412', '_surfaceRaised': '10:7414',
          '_surfaceHover': '10:7416', '_border': '10:7418', '_borderStrong': '10:7420', '_text': '10:7422',
          '_textSecondary': '10:7424', '_textMuted': '10:7426', '_softBg': '10:8486', '_softBorder': '10:8488',
-         '_softText': '10:8490'}
+         '_softText': '10:8490',
+         '_infoBg': '110:1', '_infoBorder': '110:2', '_infoText': '110:3',
+         '_successBg': '110:4', '_successBorder': '110:5', '_successText': '110:6',
+         '_warningBg': '110:7', '_warningBorder': '110:8', '_warningText': '110:9',
+         '_errorBg': '110:10', '_errorBorder': '110:11', '_errorText': '110:12'}
 STOPS = ['50', '100', '200', '300', '400', '500', '600', '700', '800', '900', '950']
 for i, st in enumerate(STOPS):
     PROPS['_brand' + st] = f'10:{2092 + 2 * i}'
@@ -35,9 +40,11 @@ def brand(ramp, dark):
     r = dict(zip(STOPS, ramp))
     t = {'_brand' + k: v for k, v in r.items()}
     if dark:
-        t.update(_brand100=r['950'], _brand200=r['900'], _softBg=r['200'], _softBorder=r['300'], _softText=r['900'])
+        t.update(_brand100=r['950'], _brand200=r['900'], _softBg=r['200'], _softBorder=r['300'], _softText=r['900'],
+                 _infoBg=r['950'], _infoBorder=r['800'], _infoText=r['400'])
     else:
-        t.update(_softBg=r['100'], _softBorder=r['300'], _softText=r['600'])
+        t.update(_softBg=r['100'], _softBorder=r['300'], _softText=r['600'],
+                 _infoBg=r['50'], _infoBorder=r['200'], _infoText=r['700'])
     return t
 
 targets = {}  # animation name -> {prop id: ARGB}

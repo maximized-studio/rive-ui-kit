@@ -1,5 +1,5 @@
 <Rive version="1" kind="fragment">
-    <Artboard defaultStateMachineId="102:776" viewModelId="102:7" viewModelInstanceId="102:20" isComponent="true" spaceId="1:5601" width="440" height="40" styleId="102:775" x="1200" y="1233" name="Pagination" id="102:774">
+    <Artboard defaultStateMachineId="102:776" viewModelId="102:7" viewModelInstanceId="102:20" isComponent="true" spaceId="1:5601" width="440" height="40" styleId="102:775" x="1800" y="1233" name="Pagination" id="102:774">
         <Fill fillRule="clockwise" id="102:944">
             <SolidColor colorValue="00000000" id="102:945"/>
         </Fill>
@@ -21,6 +21,7 @@
                         <ViewModelInstanceNumber propertyValue="2" viewModelPropertyId="33:164" id="102:957"/>
                         <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="33:169" id="102:958"/>
                         <ViewModelInstanceNumber viewModelPropertyId="99:100" id="102:959"/>
+                        <ViewModelInstanceString viewModelPropertyId="112:14" id="112:143"/>
                     </ViewModelInstance>
                 </NestedArtboardLayout>
                 <LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="102:780"/>
@@ -177,6 +178,7 @@
                         <ViewModelInstanceNumber propertyValue="3" viewModelPropertyId="33:164" id="102:971"/>
                         <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="33:169" id="102:972"/>
                         <ViewModelInstanceNumber viewModelPropertyId="99:100" id="102:973"/>
+                        <ViewModelInstanceString viewModelPropertyId="112:14" id="112:144"/>
                     </ViewModelInstance>
                 </NestedArtboardLayout>
                 <LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="102:782"/>

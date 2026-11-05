@@ -72,6 +72,21 @@
                     <DataBindContext sourcePathIds="10:7-10:8490" propertyKey="37" direction="true" id="10:14717"/>
                 </SolidColor>
             </Fill>
+            <Fill fillRule="clockwise" id="110:13">
+                <SolidColor colorValue="FF172554" id="110:14">
+                    <DataBindContext sourcePathIds="10:7-110:1" propertyKey="37" direction="true" id="110:15"/>
+                </SolidColor>
+            </Fill>
+            <Fill fillRule="clockwise" id="110:16">
+                <SolidColor colorValue="FF1E40AF" id="110:17">
+                    <DataBindContext sourcePathIds="10:7-110:2" propertyKey="37" direction="true" id="110:18"/>
+                </SolidColor>
+            </Fill>
+            <Fill fillRule="clockwise" id="110:19">
+                <SolidColor colorValue="FF60A5FA" id="110:20">
+                    <DataBindContext sourcePathIds="10:7-110:3" propertyKey="37" direction="true" id="110:21"/>
+                </SolidColor>
+            </Fill>
         </Shape>
         <Shape x="2" y="2" opacity="0" name="Mode Tokens" id="10:14633">
             <Rectangle width="1" height="1" id="10:14634"/>
@@ -140,6 +155,51 @@
                     <DataBindContext sourcePathIds="10:7-10:7426" propertyKey="37" direction="true" id="10:14703"/>
                 </SolidColor>
             </Fill>
+            <Fill fillRule="clockwise" id="110:22">
+                <SolidColor colorValue="FF052E16" id="110:23">
+                    <DataBindContext sourcePathIds="10:7-110:4" propertyKey="37" direction="true" id="110:24"/>
+                </SolidColor>
+            </Fill>
+            <Fill fillRule="clockwise" id="110:25">
+                <SolidColor colorValue="FF166534" id="110:26">
+                    <DataBindContext sourcePathIds="10:7-110:5" propertyKey="37" direction="true" id="110:27"/>
+                </SolidColor>
+            </Fill>
+            <Fill fillRule="clockwise" id="110:28">
+                <SolidColor colorValue="FF4ADE80" id="110:29">
+                    <DataBindContext sourcePathIds="10:7-110:6" propertyKey="37" direction="true" id="110:30"/>
+                </SolidColor>
+            </Fill>
+            <Fill fillRule="clockwise" id="110:31">
+                <SolidColor colorValue="FF451A03" id="110:32">
+                    <DataBindContext sourcePathIds="10:7-110:7" propertyKey="37" direction="true" id="110:33"/>
+                </SolidColor>
+            </Fill>
+            <Fill fillRule="clockwise" id="110:34">
+                <SolidColor colorValue="FF92400E" id="110:35">
+                    <DataBindContext sourcePathIds="10:7-110:8" propertyKey="37" direction="true" id="110:36"/>
+                </SolidColor>
+            </Fill>
+            <Fill fillRule="clockwise" id="110:37">
+                <SolidColor colorValue="FFFBBF24" id="110:38">
+                    <DataBindContext sourcePathIds="10:7-110:9" propertyKey="37" direction="true" id="110:39"/>
+                </SolidColor>
+            </Fill>
+            <Fill fillRule="clockwise" id="110:40">
+                <SolidColor colorValue="FF450A0A" id="110:41">
+                    <DataBindContext sourcePathIds="10:7-110:10" propertyKey="37" direction="true" id="110:42"/>
+                </SolidColor>
+            </Fill>
+            <Fill fillRule="clockwise" id="110:43">
+                <SolidColor colorValue="FF991B1B" id="110:44">
+                    <DataBindContext sourcePathIds="10:7-110:11" propertyKey="37" direction="true" id="110:45"/>
+                </SolidColor>
+            </Fill>
+            <Fill fillRule="clockwise" id="110:46">
+                <SolidColor colorValue="FFF87171" id="110:47">
+                    <DataBindContext sourcePathIds="10:7-110:12" propertyKey="37" direction="true" id="110:48"/>
+                </SolidColor>
+            </Fill>
         </Shape>
         <LayoutComponentStyle id="10:14624"/>
         <LinearAnimation duration="3" name="Mode Dark" id="10:14718">
@@ -206,6 +266,51 @@
             <KeyedObject objectId="10:14660" id="10:14806">
                 <KeyedProperty property="colorValue" id="10:14807">
                     <KeyFrameColor value="FFA1A1AA" id="10:14808"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="110:23" id="110:49">
+                <KeyedProperty property="colorValue" id="110:50">
+                    <KeyFrameColor value="FF052E16" id="110:51"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="110:26" id="110:52">
+                <KeyedProperty property="colorValue" id="110:53">
+                    <KeyFrameColor value="FF166534" id="110:54"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="110:29" id="110:55">
+                <KeyedProperty property="colorValue" id="110:56">
+                    <KeyFrameColor value="FF4ADE80" id="110:57"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="110:32" id="110:58">
+                <KeyedProperty property="colorValue" id="110:59">
+                    <KeyFrameColor value="FF451A03" id="110:60"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="110:35" id="110:61">
+                <KeyedProperty property="colorValue" id="110:62">
+                    <KeyFrameColor value="FF92400E" id="110:63"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="110:38" id="110:64">
+                <KeyedProperty property="colorValue" id="110:65">
+                    <KeyFrameColor value="FFFBBF24" id="110:66"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="110:41" id="110:67">
+                <KeyedProperty property="colorValue" id="110:68">
+                    <KeyFrameColor value="FF450A0A" id="110:69"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="110:44" id="110:70">
+                <KeyedProperty property="colorValue" id="110:71">
+                    <KeyFrameColor value="FF991B1B" id="110:72"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="110:47" id="110:73">
+                <KeyedProperty property="colorValue" id="110:74">
+                    <KeyFrameColor value="FFF87171" id="110:75"/>
                 </KeyedProperty>
             </KeyedObject>
         </LinearAnimation>
@@ -280,6 +385,21 @@
                     <KeyFrameColor value="FF2563EB" id="10:14850"/>
                 </KeyedProperty>
             </KeyedObject>
+            <KeyedObject objectId="110:14" id="110:76">
+                <KeyedProperty property="colorValue" id="110:77">
+                    <KeyFrameColor value="FFEFF6FF" id="110:78"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="110:17" id="110:79">
+                <KeyedProperty property="colorValue" id="110:80">
+                    <KeyFrameColor value="FFBFDBFE" id="110:81"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="110:20" id="110:82">
+                <KeyedProperty property="colorValue" id="110:83">
+                    <KeyFrameColor value="FF1D4ED8" id="110:84"/>
+                </KeyedProperty>
+            </KeyedObject>
         </LinearAnimation>
         <LinearAnimation duration="3" name="Brand Blue Dark" id="10:14720">
             <KeyedObject objectId="10:14664" id="10:14851">
@@ -350,6 +470,21 @@
             <KeyedObject objectId="10:14690" id="10:14890">
                 <KeyedProperty property="colorValue" id="10:14891">
                     <KeyFrameColor value="FF1E3A8A" id="10:14892"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="110:14" id="110:85">
+                <KeyedProperty property="colorValue" id="110:86">
+                    <KeyFrameColor value="FF172554" id="110:87"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="110:17" id="110:88">
+                <KeyedProperty property="colorValue" id="110:89">
+                    <KeyFrameColor value="FF1E40AF" id="110:90"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="110:20" id="110:91">
+                <KeyedProperty property="colorValue" id="110:92">
+                    <KeyFrameColor value="FF60A5FA" id="110:93"/>
                 </KeyedProperty>
             </KeyedObject>
         </LinearAnimation>
@@ -424,6 +559,21 @@
                     <KeyFrameColor value="FF7C3AED" id="10:14934"/>
                 </KeyedProperty>
             </KeyedObject>
+            <KeyedObject objectId="110:14" id="110:94">
+                <KeyedProperty property="colorValue" id="110:95">
+                    <KeyFrameColor value="FFF5F3FF" id="110:96"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="110:17" id="110:97">
+                <KeyedProperty property="colorValue" id="110:98">
+                    <KeyFrameColor value="FFDDD6FE" id="110:99"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="110:20" id="110:100">
+                <KeyedProperty property="colorValue" id="110:101">
+                    <KeyFrameColor value="FF6D28D9" id="110:102"/>
+                </KeyedProperty>
+            </KeyedObject>
         </LinearAnimation>
         <LinearAnimation duration="3" name="Brand Violet Dark" id="10:14722">
             <KeyedObject objectId="10:14664" id="10:14935">
@@ -494,6 +644,21 @@
             <KeyedObject objectId="10:14690" id="10:14974">
                 <KeyedProperty property="colorValue" id="10:14975">
                     <KeyFrameColor value="FF4C1D95" id="10:14976"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="110:14" id="110:103">
+                <KeyedProperty property="colorValue" id="110:104">
+                    <KeyFrameColor value="FF2E1065" id="110:105"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="110:17" id="110:106">
+                <KeyedProperty property="colorValue" id="110:107">
+                    <KeyFrameColor value="FF5B21B6" id="110:108"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="110:20" id="110:109">
+                <KeyedProperty property="colorValue" id="110:110">
+                    <KeyFrameColor value="FFA78BFA" id="110:111"/>
                 </KeyedProperty>
             </KeyedObject>
         </LinearAnimation>
@@ -568,6 +733,21 @@
                     <KeyFrameColor value="FF059669" id="10:15018"/>
                 </KeyedProperty>
             </KeyedObject>
+            <KeyedObject objectId="110:14" id="110:112">
+                <KeyedProperty property="colorValue" id="110:113">
+                    <KeyFrameColor value="FFECFDF5" id="110:114"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="110:17" id="110:115">
+                <KeyedProperty property="colorValue" id="110:116">
+                    <KeyFrameColor value="FFA7F3D0" id="110:117"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="110:20" id="110:118">
+                <KeyedProperty property="colorValue" id="110:119">
+                    <KeyFrameColor value="FF047857" id="110:120"/>
+                </KeyedProperty>
+            </KeyedObject>
         </LinearAnimation>
         <LinearAnimation duration="3" name="Brand Emerald Dark" id="10:14724">
             <KeyedObject objectId="10:14664" id="10:15019">
@@ -638,6 +818,21 @@
             <KeyedObject objectId="10:14690" id="10:15058">
                 <KeyedProperty property="colorValue" id="10:15059">
                     <KeyFrameColor value="FF064E3B" id="10:15060"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="110:14" id="110:121">
+                <KeyedProperty property="colorValue" id="110:122">
+                    <KeyFrameColor value="FF022C22" id="110:123"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="110:17" id="110:124">
+                <KeyedProperty property="colorValue" id="110:125">
+                    <KeyFrameColor value="FF065F46" id="110:126"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="110:20" id="110:127">
+                <KeyedProperty property="colorValue" id="110:128">
+                    <KeyFrameColor value="FF34D399" id="110:129"/>
                 </KeyedProperty>
             </KeyedObject>
         </LinearAnimation>
@@ -712,6 +907,21 @@
                     <KeyFrameColor value="FFEA580C" id="10:15102"/>
                 </KeyedProperty>
             </KeyedObject>
+            <KeyedObject objectId="110:14" id="110:130">
+                <KeyedProperty property="colorValue" id="110:131">
+                    <KeyFrameColor value="FFFFF7ED" id="110:132"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="110:17" id="110:133">
+                <KeyedProperty property="colorValue" id="110:134">
+                    <KeyFrameColor value="FFFED7AA" id="110:135"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="110:20" id="110:136">
+                <KeyedProperty property="colorValue" id="110:137">
+                    <KeyFrameColor value="FFC2410C" id="110:138"/>
+                </KeyedProperty>
+            </KeyedObject>
         </LinearAnimation>
         <LinearAnimation duration="3" name="Brand Orange Dark" id="10:14726">
             <KeyedObject objectId="10:14664" id="10:15103">
@@ -782,6 +992,21 @@
             <KeyedObject objectId="10:14690" id="10:15142">
                 <KeyedProperty property="colorValue" id="10:15143">
                     <KeyFrameColor value="FF7C2D12" id="10:15144"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="110:14" id="110:139">
+                <KeyedProperty property="colorValue" id="110:140">
+                    <KeyFrameColor value="FF431407" id="110:141"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="110:17" id="110:142">
+                <KeyedProperty property="colorValue" id="110:143">
+                    <KeyFrameColor value="FF9A3412" id="110:144"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="110:20" id="110:145">
+                <KeyedProperty property="colorValue" id="110:146">
+                    <KeyFrameColor value="FFFB923C" id="110:147"/>
                 </KeyedProperty>
             </KeyedObject>
         </LinearAnimation>
@@ -856,6 +1081,21 @@
                     <KeyFrameColor value="FFE11D48" id="10:15186"/>
                 </KeyedProperty>
             </KeyedObject>
+            <KeyedObject objectId="110:14" id="110:148">
+                <KeyedProperty property="colorValue" id="110:149">
+                    <KeyFrameColor value="FFFFF1F2" id="110:150"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="110:17" id="110:151">
+                <KeyedProperty property="colorValue" id="110:152">
+                    <KeyFrameColor value="FFFECDD3" id="110:153"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="110:20" id="110:154">
+                <KeyedProperty property="colorValue" id="110:155">
+                    <KeyFrameColor value="FFBE123C" id="110:156"/>
+                </KeyedProperty>
+            </KeyedObject>
         </LinearAnimation>
         <LinearAnimation duration="3" name="Brand Rose Dark" id="10:14728">
             <KeyedObject objectId="10:14664" id="10:15187">
@@ -926,6 +1166,21 @@
             <KeyedObject objectId="10:14690" id="10:15226">
                 <KeyedProperty property="colorValue" id="10:15227">
                     <KeyFrameColor value="FF881337" id="10:15228"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="110:14" id="110:157">
+                <KeyedProperty property="colorValue" id="110:158">
+                    <KeyFrameColor value="FF4C0519" id="110:159"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="110:17" id="110:160">
+                <KeyedProperty property="colorValue" id="110:161">
+                    <KeyFrameColor value="FF9F1239" id="110:162"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="110:20" id="110:163">
+                <KeyedProperty property="colorValue" id="110:164">
+                    <KeyFrameColor value="FFFB7185" id="110:165"/>
                 </KeyedProperty>
             </KeyedObject>
         </LinearAnimation>
@@ -1000,6 +1255,21 @@
                     <KeyFrameColor value="FF18181B" id="10:15270"/>
                 </KeyedProperty>
             </KeyedObject>
+            <KeyedObject objectId="110:14" id="110:166">
+                <KeyedProperty property="colorValue" id="110:167">
+                    <KeyFrameColor value="FF18181B" id="110:168"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="110:17" id="110:169">
+                <KeyedProperty property="colorValue" id="110:170">
+                    <KeyFrameColor value="FFE4E4E7" id="110:171"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="110:20" id="110:172">
+                <KeyedProperty property="colorValue" id="110:173">
+                    <KeyFrameColor value="FFE4E4E7" id="110:174"/>
+                </KeyedProperty>
+            </KeyedObject>
         </LinearAnimation>
         <LinearAnimation duration="3" name="Brand Zinc Dark" id="10:14730">
             <KeyedObject objectId="10:14664" id="10:15271">
@@ -1070,6 +1340,21 @@
             <KeyedObject objectId="10:14690" id="10:15310">
                 <KeyedProperty property="colorValue" id="10:15311">
                     <KeyFrameColor value="FF18181B" id="10:15312"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="110:14" id="110:175">
+                <KeyedProperty property="colorValue" id="110:176">
+                    <KeyFrameColor value="FFFFFFFF" id="110:177"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="110:17" id="110:178">
+                <KeyedProperty property="colorValue" id="110:179">
+                    <KeyFrameColor value="FFD4D4D8" id="110:180"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="110:20" id="110:181">
+                <KeyedProperty property="colorValue" id="110:182">
+                    <KeyFrameColor value="FF71717A" id="110:183"/>
                 </KeyedProperty>
             </KeyedObject>
         </LinearAnimation>
@@ -1425,6 +1710,51 @@
             <KeyedObject objectId="10:14660" id="10:14767">
                 <KeyedProperty property="colorValue" id="10:14768">
                     <KeyFrameColor value="FF71717A" id="10:14769"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="110:23" id="110:184">
+                <KeyedProperty property="colorValue" id="110:185">
+                    <KeyFrameColor value="FFF0FDF4" id="110:186"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="110:26" id="110:187">
+                <KeyedProperty property="colorValue" id="110:188">
+                    <KeyFrameColor value="FFBBF7D0" id="110:189"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="110:29" id="110:190">
+                <KeyedProperty property="colorValue" id="110:191">
+                    <KeyFrameColor value="FF15803D" id="110:192"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="110:32" id="110:193">
+                <KeyedProperty property="colorValue" id="110:194">
+                    <KeyFrameColor value="FFFFFBEB" id="110:195"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="110:35" id="110:196">
+                <KeyedProperty property="colorValue" id="110:197">
+                    <KeyFrameColor value="FFFDE68A" id="110:198"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="110:38" id="110:199">
+                <KeyedProperty property="colorValue" id="110:200">
+                    <KeyFrameColor value="FFB45309" id="110:201"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="110:41" id="110:202">
+                <KeyedProperty property="colorValue" id="110:203">
+                    <KeyFrameColor value="FFFEF2F2" id="110:204"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="110:44" id="110:205">
+                <KeyedProperty property="colorValue" id="110:206">
+                    <KeyFrameColor value="FFFECACA" id="110:207"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="110:47" id="110:208">
+                <KeyedProperty property="colorValue" id="110:209">
+                    <KeyFrameColor value="FFB91C1C" id="110:210"/>
                 </KeyedProperty>
             </KeyedObject>
         </LinearAnimation>
