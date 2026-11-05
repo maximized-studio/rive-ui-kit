@@ -2478,6 +2478,7 @@
             </DataFolder>
         </DataFolder>
         <ViewModel defaultInstanceId="10:63" name="Theme" groupId="1:2673" id="10:7">
+            <ViewModelPropertyBoolean name="cursorPointer" id="63:244"/>
             <ViewModelPropertyBoolean name="_previewDisabled" id="15:419"/>
             <ViewModelPropertyColor name="_softBg" id="10:8486"/>
             <ViewModelPropertyColor name="_softBorder" id="10:8488"/>
@@ -2545,6 +2546,7 @@
                 <ViewModelInstanceColor propertyValue="FF93C5FD" viewModelPropertyId="10:8488" id="10:8489"/>
                 <ViewModelInstanceColor propertyValue="FF1E3A8A" viewModelPropertyId="10:8490" id="10:8491"/>
                 <ViewModelInstanceBoolean viewModelPropertyId="15:419" id="15:420"/>
+                <ViewModelInstanceBoolean viewModelPropertyId="63:244" id="63:245"/>
             </ViewModelInstance>
         </ViewModel>
     </DataFolder>

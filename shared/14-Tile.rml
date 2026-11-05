@@ -144,6 +144,31 @@
             </KeyedObject>
         </LinearAnimation>
         <StateMachine name="State Machine 1" id="10:3623">
+            <StateMachineListener targetId="10:6070" name="Cursor Reset" id="63:455">
+                <ListenerInputType listenerTypeValue="click" id="63:456"/>
+                <ListenerViewModelChange id="63:457">
+                    <BindablePropertyBoolean id="63:458">
+                        <DataBindContext sourcePathIds="10:3612-10:3657-63:244" propertyKey="634" direction="true" id="63:459"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListener targetId="10:6070" name="Cursor Off" id="63:329">
+                <ListenerInputType listenerTypeValue="exit" id="63:330"/>
+                <ListenerViewModelChange id="63:331">
+                    <BindablePropertyBoolean id="63:332">
+                        <DataBindContext sourcePathIds="10:3612-10:3657-63:244" propertyKey="634" direction="true" id="63:333"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListener targetId="10:6070" name="Cursor On" id="63:323">
+                <ListenerInputType id="63:324"/>
+                <ListenerInputType listenerTypeValue="move" id="63:325"/>
+                <ListenerViewModelChange id="63:326">
+                    <BindablePropertyBoolean propertyValue="true" id="63:327">
+                        <DataBindContext sourcePathIds="10:3612-10:3657-63:244" propertyKey="634" direction="true" id="63:328"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
             <StateMachineListener targetId="10:6070" name="Open Tile" id="10:5793">
                 <ListenerInputType listenerTypeValue="click" id="10:5794"/>
                 <ListenerViewModelChange fromViewModelProperty="true" fromDataBindId="10:5814" id="10:5811">
