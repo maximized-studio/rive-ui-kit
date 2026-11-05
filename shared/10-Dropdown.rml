@@ -60,7 +60,7 @@
                     <TextStylePaint fontSize="16" fontAssetId="0:7" familyName="Inter" styleName="Medium" name="Style 1" id="1:4266">
                         <Fill name="Fill 1" id="1:4267">
                             <SolidColor colorValue="FFEFF6FF" name="Component" id="1:4268">
-                                <DataBindContext sourcePathIds="1:4248-10:3118-10:2092" propertyKey="37" id="10:3446"/>
+                                <DataBindContext sourcePathIds="1:4248-10:3118-118:4" propertyKey="37" id="10:3446"/>
                             </SolidColor>
                         </Fill>
                         <TextStyleAxis tag="1869640570" axisValue="14" name="Style Axis" id="1:4269"/>
@@ -83,8 +83,8 @@
                                 <StraightVertex x="6" y="-3" id="10:15573"/>
                             </PointsPath>
                             <Stroke thickness="2" cap="round" join="round" id="10:15575">
-                                <SolidColor colorValue="FFFAFAFA" id="10:15574">
-                                    <DataBindContext sourcePathIds="1:4248-10:3118-10:2092" propertyKey="37" id="10:15576"/>
+                                <SolidColor colorValue="FF18181B" id="10:15574">
+                                    <DataBindContext sourcePathIds="1:4248-10:3118-118:4" propertyKey="37" id="10:15576"/>
                                 </SolidColor>
                             </Stroke>
                         </Shape>
@@ -105,14 +105,14 @@
                 </Feather>
             </Fill>
             <Fill fillRule="clockwise" id="10:3411">
-                <SolidColor colorValue="FF2563EB" id="10:3412">
-                    <DataBindContext sourcePathIds="1:4248-10:3118-10:2104" propertyKey="37" id="10:3443"/>
+                <SolidColor colorValue="FFFAFAFA" id="10:3412">
+                    <DataBindContext sourcePathIds="1:4248-10:3118-118:2" propertyKey="37" id="10:3443"/>
                 </SolidColor>
             </Fill>
             <LayoutComponent styleId="10:3421" opacity="0" name="Hover" id="10:3420">
                 <Fill fillRule="clockwise" id="10:3422">
-                    <SolidColor colorValue="FF1E40AF" id="10:3423">
-                        <DataBindContext sourcePathIds="1:4248-10:3118-10:2108" propertyKey="37" id="10:3444"/>
+                    <SolidColor colorValue="FFE4E4E7" id="10:3423">
+                        <DataBindContext sourcePathIds="1:4248-10:3118-118:3" propertyKey="37" id="10:3444"/>
                     </SolidColor>
                 </Fill>
                 <LayoutComponentStyle positionLeftUnitsValue="points" positionRightUnitsValue="points" positionTopUnitsValue="points" positionBottomUnitsValue="points" edgeConstraints="84" positionTypeValue="absolute" cornerRadiusTL="8" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="10:3421">
@@ -124,8 +124,8 @@
                     <DataBindContext sourcePathIds="1:4248-10:3118-10:2086" propertyKey="640" converterId="10:6143" id="10:3450"/>
                 </LayoutComponentStyle>
                 <Stroke thickness="0" id="10:3426">
-                    <SolidColor colorValue="FF93C5FD" id="10:3427">
-                        <DataBindContext sourcePathIds="1:4248-10:3118-10:2098" propertyKey="37" id="10:3445"/>
+                    <SolidColor colorValue="FFE4E4E7" id="10:3427">
+                        <DataBindContext sourcePathIds="1:4248-10:3118-118:3" propertyKey="37" id="10:3445"/>
                     </SolidColor>
                 </Stroke>
             </LayoutComponent>

@@ -80,6 +80,7 @@ A button in one of four variants. The default follows the inverse colours of the
 
 - View model `Button`: `text`, `variant` (`0` primary, `1` secondary, `2` brand, `3` destructive), `icon`, `iconOnly`, `disabled`, `hint`, `group` (see Button Group), `a11yHidden`, `theme`. `_pressed` fires on a click.
 - Primary uses `_primaryBg` / `_primaryHover` / `_primaryText`, destructive `_dangerBg` / `_dangerHover` / `_dangerText`: Theme tokens per mode that ignore the brand. Only the brand variant follows the brand colour. Destructive stays red whatever the brand is.
+- The Dropdown trigger uses the same primary tokens, so the actions look alike; its list keeps the brand accent.
 
 ## Button Group
 
