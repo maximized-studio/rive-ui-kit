@@ -11,10 +11,10 @@ The kit is also on the [Rive Community](https://rive.app/community/files/25701-5
 ## Components
 
 - **Actions:** Button · Button Group
-- **Display:** Avatar · Badge · Label
+- **Display:** Accordion · Avatar · Badge · Label
 - **Inputs:** Checkbox / Checkbox Group · Dropdown · Radio Option / Radio Group · Slider · Switch / Switch List
 - **Navigation:** Pagination
-- **Building blocks:** List Item · Nav Group · Nav Item · Page Item · Segment · Segmented Control · Showcase Section · Sidebar · Slide · Tile · Toolbar
+- **Building blocks:** Accordion Item · List Item · Nav Group · Nav Item · Page Item · Segment · Segmented Control · Showcase Section · Sidebar · Slide · Tile · Toolbar
 
 Categories and the components in them are sorted A–Z. In the Showcase a category is data: a `ShowcaseSection` (title, tile list; the count is the list length) in `sections`, and a `NavGroup` in the Sidebar's `sections`.
 
@@ -26,6 +26,7 @@ The components carry Rive semantics, so screen readers get a real accessibility 
 
 | Component | Role | Exposed |
 |---|---|---|
+| Accordion | `group` / `button` per item | label; item title, expanded |
 | Avatar | `image` | label |
 | Badge, Label | `text` | text |
 | Button, Dropdown, Page Item | `button` | label (the page number) |
@@ -41,6 +42,14 @@ Labels are bound to the same view model properties as the visible text, so they 
 ```bash
 rive build/default --semantics=$PWD/build/default.semantics.json
 ```
+
+## Accordion
+
+A card of collapsible items; several can be open at once.
+
+- View model `Accordion`: `items` (a list of `AccordionItem`), `label` (screen reader name), `a11yHidden`, `theme`.
+- `AccordionItem`: `title`, `body`, `open`. Clicking the header (or a screen reader's activate) toggles `open`; the body grows open with a short layout animation and the chevron turns.
+- Each header is a `button` that reports expanded or collapsed.
 
 ## Button Group
 
@@ -61,7 +70,7 @@ Previous and next Buttons around up to seven page buttons. Set two numbers and t
 
 ## Pointer cursor
 
-A canvas can't change the mouse cursor by itself, so the kit tells your app when to. `theme/cursorPointer` (a boolean on the shared Theme view model) is `true` while the pointer is over something clickable: a button, checkbox, dropdown and its items, nav group header, nav item, page item, radio option, segment, slider, switch or tile. Disabled controls leave it `false`. The path below is the Showcase's; in your own artboard it is wherever your view model holds the Theme.
+A canvas can't change the mouse cursor by itself, so the kit tells your app when to. `theme/cursorPointer` (a boolean on the shared Theme view model) is `true` while the pointer is over something clickable: an accordion header, a button, checkbox, dropdown and its items, nav group header, nav item, page item, radio option, segment, slider, switch or tile. Disabled controls leave it `false`. The path below is the Showcase's; in your own artboard it is wherever your view model holds the Theme.
 
 ```js
 const flag = rive.viewModelInstance.boolean("theme/cursorPointer");

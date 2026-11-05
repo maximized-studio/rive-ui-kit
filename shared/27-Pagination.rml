@@ -1,5 +1,5 @@
 <Rive version="1" kind="fragment">
-    <Artboard defaultStateMachineId="102:776" viewModelId="102:7" viewModelInstanceId="102:20" isComponent="true" spaceId="1:5601" width="440" height="40" styleId="102:775" x="1200" y="683" name="Pagination" id="102:774">
+    <Artboard defaultStateMachineId="102:776" viewModelId="102:7" viewModelInstanceId="102:20" isComponent="true" spaceId="1:5601" width="440" height="40" styleId="102:775" y="1331" name="Pagination" id="102:774">
         <Fill fillRule="clockwise" id="102:944">
             <SolidColor colorValue="00000000" id="102:945"/>
         </Fill>

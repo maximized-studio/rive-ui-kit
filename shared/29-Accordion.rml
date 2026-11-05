@@ -1,0 +1,36 @@
+<Rive version="1" kind="fragment">
+    <Artboard defaultStateMachineId="104:185" viewModelId="104:8" viewModelInstanceId="104:16" isComponent="true" spaceId="1:5601" width="360" height="300" styleId="104:184" name="Accordion" id="104:183">
+        <Fill fillRule="clockwise" id="104:190">
+            <SolidColor colorValue="00000000" id="104:191"/>
+        </Fill>
+        <LayoutComponentStyle intrinsicallySizedValue="true" layoutHeightScaleType="hug" id="104:184"/>
+        <LayoutComponent clip="true" styleId="104:187" name="Frame" id="104:186">
+            <Fill fillRule="clockwise" id="104:192">
+                <SolidColor colorValue="FF27272A" id="104:193">
+                    <DataBindContext sourcePathIds="104:8-104:12-10:7418" propertyKey="37" nameBased="true" id="104:194"/>
+                </SolidColor>
+            </Fill>
+            <ArtboardComponentList name="Items" participatesInLayout="true" id="104:195">
+                <DataBindContext sourcePathIds="104:8-104:9" propertyKey="800" nameBased="true" id="104:196"/>
+            </ArtboardComponentList>
+            <LayoutComponentStyle gapVertical="1" paddingLeft="1" paddingRight="1" paddingTop="1" paddingBottom="1" flexDirectionValue="column" intrinsicallySizedValue="true" cornerRadiusTL="8" layoutWidthScaleType="fill" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="104:187">
+                <DataBindContext sourcePathIds="104:8-104:12-10:2086" propertyKey="640" nameBased="true" converterId="10:6095" id="104:197"/>
+            </LayoutComponentStyle>
+            <SemanticData role="group" label="FAQ" name="Semantics" id="104:198">
+                <DataBindContext sourcePathIds="104:8-104:10" propertyKey="983" nameBased="true" id="104:199"/>
+                <DataBindContext sourcePathIds="104:8-104:11" propertyKey="1004" nameBased="true" id="104:200"/>
+            </SemanticData>
+        </LayoutComponent>
+        <StateMachine name="State Machine 1" id="104:185">
+            <StateMachineLayer name="Layer 1" id="104:201">
+                <AnimationState animationId="104:188" x="160" id="104:189"/>
+                <AnyState x="400" id="104:202"/>
+                <ExitState x="480" id="104:203"/>
+                <EntryState id="104:204">
+                    <StateTransition stateToId="104:189" id="104:205"/>
+                </EntryState>
+            </StateMachineLayer>
+        </StateMachine>
+        <LinearAnimation name="Timeline 1" id="104:188"/>
+    </Artboard>
+</Rive>
