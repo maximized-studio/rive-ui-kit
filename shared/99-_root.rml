@@ -1,5 +1,4 @@
 <Rive version="1" kind="fragment">
-    <ScriptAsset file="Pagination Pages.luau" name="Pagination Pages" id="912:3"/>
     <AssetGroup type="images" name="Images" id="1:2093"/>
     <AssetGroup type="fonts" name="Fonts" id="1:2106"/>
     <ComponentAsset artboardId="92:616" name="Segmented Control 2" id="92:636"/>
@@ -1875,6 +1874,7 @@
     <ImageAsset file="Avatar.png" height="128" width="128" assetId="5251943" name="Avatar" groupId="1:2093" id="1:2091"/>
     <ImageAsset file="Showcase Cover.webp" format="webp" height="1080" width="1440" assetId="7319575" name="Showcase Cover" id="42:629"/>
     <RenderPreset name="Preset 1" artboardId="10:110" format="png_sequence" width="1440" height="1080" id="57:1"/>
+    <ScriptAsset file="Pagination Pages.luau" compilationOrder="1" serializedImplementedMethods="769" scriptProtocolValue="layout" codeFileId="0:15811" name="Pagination Pages" id="912:3"/>
     <Space name="Space 1" colorValue="FF2F2F2F" id="1:5601"/>
     <TransitionPropertyViewModelComparator id="1:2359"/>
     <TransitionPropertyViewModelComparator id="1:2363"/>
@@ -2849,13 +2849,13 @@
         <ViewModelPropertyBoolean name="_nextDisabled" id="102:14"/>
         <ViewModelPropertyList name="_pages" id="912:1"/>
         <ViewModelInstance exports="true" name="Pagination" id="102:20">
-            <ViewModelInstanceList viewModelPropertyId="912:1" id="912:2"/>
             <ViewModelInstanceNumber propertyValue="5" viewModelPropertyId="102:8" id="102:579"/>
             <ViewModelInstanceNumber propertyValue="20" viewModelPropertyId="102:9" id="102:580"/>
             <ViewModelInstanceString propertyValue="Pages" viewModelPropertyId="102:10" id="102:581"/>
             <ViewModelInstanceBoolean viewModelPropertyId="102:11" id="102:582"/>
             <ViewModelInstanceBoolean viewModelPropertyId="102:13" id="102:584"/>
             <ViewModelInstanceBoolean viewModelPropertyId="102:14" id="102:585"/>
+            <ViewModelInstanceList viewModelPropertyId="912:1" id="912:2"/>
         </ViewModelInstance>
     </ViewModel>
     <ViewModel defaultInstanceId="104:13" name="AccordionItem" groupId="1:2673" id="104:1">
