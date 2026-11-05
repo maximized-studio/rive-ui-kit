@@ -4017,8 +4017,8 @@
     </Folder>
     <FontAsset isCustom="false" includeTypeValue="custom" includedUnicodes="U+0020-007E,U+00A0-00FF,U+2018-201D,U+2026,U+20AC" assetId="4228759" name="Inter" groupId="1:2106" id="0:7"/>
     <ImageAsset file="Avatar.png" height="128" width="128" assetId="5251943" name="Avatar" groupId="1:2093" id="1:2091"/>
-    <ImageAsset file="Showcase Cover.webp" format="webp" height="1024" width="1440" assetId="7307905" name="Showcase Cover" id="42:629"/>
-    <RenderPreset name="Preset 1" artboardId="10:110" format="png_sequence" width="1440" height="1024" id="57:1"/>
+    <ImageAsset file="Showcase Cover.webp" format="webp" height="1080" width="1440" assetId="7319575" name="Showcase Cover" id="42:629"/>
+    <RenderPreset name="Preset 1" artboardId="10:110" format="png_sequence" width="1440" height="1080" id="57:1"/>
     <Space name="Space 1" colorValue="FF2F2F2F" id="1:5601"/>
     <TransitionPropertyViewModelComparator id="1:2359"/>
     <TransitionPropertyViewModelComparator id="1:2363"/>
@@ -4918,6 +4918,7 @@
         <ViewModelPropertyList name="items" id="41:886"/>
         <ViewModelPropertyBoolean name="_hover" id="41:888"/>
         <ViewModelPropertyViewModel viewModelReferenceId="10:7" name="theme" id="41:890"/>
+        <ViewModelPropertyViewModel viewModelReferenceId="122:1" name="expansion" id="122:5"/>
         <ViewModelInstance exports="true" name="Display" id="42:335">
             <ViewModelInstanceBoolean viewModelPropertyId="41:878" id="42:336"/>
             <ViewModelInstanceString propertyValue="Display" viewModelPropertyId="41:880" id="42:337"/>
@@ -4931,6 +4932,7 @@
             </ViewModelInstanceList>
             <ViewModelInstanceBoolean viewModelPropertyId="41:888" id="42:341"/>
             <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="41:890" id="42:342"/>
+            <ViewModelInstanceViewModel propertyValue="122:3" viewModelPropertyId="122:5" id="122:8"/>
         </ViewModelInstance>
         <ViewModelInstance exports="true" name="Actions" id="100:36">
             <ViewModelInstanceBoolean viewModelPropertyId="41:878" id="100:38"/>
@@ -4944,6 +4946,7 @@
             </ViewModelInstanceList>
             <ViewModelInstanceBoolean viewModelPropertyId="41:888" id="100:50"/>
             <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="41:890" id="100:51"/>
+            <ViewModelInstanceViewModel propertyValue="122:3" viewModelPropertyId="122:5" id="122:9"/>
         </ViewModelInstance>
         <ViewModelInstance exports="true" name="Feedback" id="110:323">
             <ViewModelInstanceBoolean viewModelPropertyId="41:878" id="110:324"/>
@@ -4956,6 +4959,7 @@
             </ViewModelInstanceList>
             <ViewModelInstanceBoolean viewModelPropertyId="41:888" id="110:332"/>
             <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="41:890" id="110:333"/>
+            <ViewModelInstanceViewModel propertyValue="122:3" viewModelPropertyId="122:5" id="122:10"/>
         </ViewModelInstance>
         <ViewModelInstance exports="true" name="Navigation" id="102:620">
             <ViewModelInstanceBoolean viewModelPropertyId="41:878" id="102:621"/>
@@ -4968,6 +4972,7 @@
             </ViewModelInstanceList>
             <ViewModelInstanceBoolean viewModelPropertyId="41:888" id="102:628"/>
             <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="41:890" id="102:629"/>
+            <ViewModelInstanceViewModel propertyValue="122:3" viewModelPropertyId="122:5" id="122:11"/>
         </ViewModelInstance>
         <ViewModelInstance exports="true" name="Inputs" id="42:303">
             <ViewModelInstanceBoolean viewModelPropertyId="41:878" id="42:304"/>
@@ -4982,11 +4987,14 @@
             </ViewModelInstanceList>
             <ViewModelInstanceBoolean viewModelPropertyId="41:888" id="42:309"/>
             <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="41:890" id="42:310"/>
+            <ViewModelInstanceViewModel propertyValue="122:3" viewModelPropertyId="122:5" id="122:12"/>
         </ViewModelInstance>
     </ViewModel>
     <ViewModel defaultInstanceId="42:346" name="Sidebar" id="41:866">
         <ViewModelPropertyViewModel viewModelReferenceId="10:7" name="theme" id="41:892"/>
         <ViewModelPropertyList name="sections" id="100:54"/>
+        <ViewModelPropertyViewModel viewModelReferenceId="122:1" name="expansion" id="122:4"/>
+        <ViewModelPropertyBoolean name="_toggleHover" id="122:6"/>
         <ViewModelInstance exports="true" name="Default" id="42:346">
             <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="41:892" id="42:347"/>
             <ViewModelInstanceList viewModelPropertyId="100:54" id="100:58">
@@ -4996,6 +5004,8 @@
                 <ViewModelInstanceListItem name="Inputs" viewModelId="41:864" viewModelInstanceId="42:303" id="100:57"/>
                 <ViewModelInstanceListItem name="Navigation" viewModelId="41:864" viewModelInstanceId="102:620" id="102:632"/>
             </ViewModelInstanceList>
+            <ViewModelInstanceViewModel propertyValue="122:3" viewModelPropertyId="122:4" id="122:13"/>
+            <ViewModelInstanceBoolean viewModelPropertyId="122:6" id="122:14"/>
         </ViewModelInstance>
     </ViewModel>
     <ViewModel defaultInstanceId="0:0" name="ButtonGroup" id="92:606">
@@ -5705,6 +5715,12 @@
             <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="112:12" id="112:161"/>
             <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="112:13" id="112:162"/>
             <ViewModelInstanceNumber propertyValue="7" viewModelPropertyId="117:265" id="117:267"/>
+        </ViewModelInstance>
+    </ViewModel>
+    <ViewModel defaultInstanceId="122:3" name="NavExpansion" id="122:1">
+        <ViewModelPropertyBoolean name="allOpen" id="122:2"/>
+        <ViewModelInstance exports="true" name="Default" id="122:3">
+            <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="122:2" id="122:7"/>
         </ViewModelInstance>
     </ViewModel>
 </Rive>

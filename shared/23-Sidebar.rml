@@ -1,5 +1,5 @@
 <Rive version="1" kind="fragment">
-    <Artboard defaultStateMachineId="42:169" viewModelId="41:866" viewModelInstanceId="42:346" isComponent="true" includeInExport="false" spaceId="1:5601" width="240" height="1024" styleId="42:167" x="-2420" name="Sidebar" id="42:164">
+    <Artboard defaultStateMachineId="42:169" viewModelId="41:866" viewModelInstanceId="42:346" isComponent="true" includeInExport="false" spaceId="1:5601" width="240" height="1080" styleId="42:167" x="-2420" name="Sidebar" id="42:164">
         <Fill fillRule="clockwise" id="42:165">
             <SolidColor colorValue="00000000" id="42:166"/>
         </Fill>
@@ -12,39 +12,6 @@
             </Fill>
             <LayoutComponent styleId="42:181" name="Column" id="42:180">
                 <LayoutComponent styleId="42:183" name="Brand" id="42:182">
-                    <LayoutComponent width="32" height="32" styleId="42:526" name="Maximized Tile" id="42:525">
-                        <Shape x="7" y="7" scaleX="0.81800002" scaleY="0.81800002" name="Maximized Logo" id="42:529">
-                            <PointsPath isClosed="true" isClockwise="false" id="42:530">
-                                <CubicDetachedVertex outRotation="2.0354056" outDistance="0.405" x="7.3330002" y="6.5999999" id="42:531"/>
-                                <CubicDetachedVertex inDistance="0.405" x="6.5999999" y="7.3330002" id="42:532"/>
-                                <CubicDetachedVertex outRotation="-2.212374" outDistance="0.405" x="0.73299998" y="7.3330002" id="42:533"/>
-                                <CubicDetachedVertex inRotation="-2.0354056" inDistance="0.405" y="8.0670004" id="42:534"/>
-                                <CubicDetachedVertex outRotation="2.0354056" outDistance="0.405" y="21.267" id="42:535"/>
-                                <CubicDetachedVertex inRotation="-2.212374" inDistance="0.405" x="0.73299998" y="22" id="42:536"/>
-                                <CubicDetachedVertex outDistance="0.405" x="6.5999999" y="22" id="42:537"/>
-                                <CubicDetachedVertex inRotation="2.0354056" inDistance="0.405" x="7.3330002" y="21.267" id="42:538"/>
-                                <CubicDetachedVertex outRotation="-2.0354056" outDistance="0.405" x="7.3330002" y="15.4" id="42:539"/>
-                                <CubicDetachedVertex inRotation="-2.212374" inDistance="0.405" x="8.0670004" y="14.667" id="42:540"/>
-                                <CubicDetachedVertex outDistance="0.405" x="13.933" y="14.667" id="42:541"/>
-                                <CubicDetachedVertex inRotation="2.0354056" inDistance="0.405" x="14.667" y="13.933" id="42:542"/>
-                                <CubicDetachedVertex outRotation="-2.0354056" outDistance="0.405" x="14.667" y="8.0670004" id="42:543"/>
-                                <CubicDetachedVertex inRotation="-2.212374" inDistance="0.405" x="15.4" y="7.3330002" id="42:544"/>
-                                <CubicDetachedVertex outDistance="0.405" x="21.267" y="7.3330002" id="42:545"/>
-                                <CubicDetachedVertex inRotation="2.0354056" inDistance="0.405" x="22" y="6.5999999" id="42:546"/>
-                                <CubicDetachedVertex outRotation="-2.0354056" outDistance="0.405" x="22" y="0.73299998" id="42:547"/>
-                                <CubicDetachedVertex inDistance="0.405" x="21.267" id="42:548"/>
-                                <CubicDetachedVertex outRotation="-2.212374" outDistance="0.405" x="8.0670004" id="42:549"/>
-                                <CubicDetachedVertex inRotation="-2.0354056" inDistance="0.405" x="7.3330002" y="0.73299998" id="42:550"/>
-                            </PointsPath>
-                            <Fill fillRule="clockwise" id="42:551">
-                                <SolidColor colorValue="FF0B0B0B" id="42:552"/>
-                            </Fill>
-                        </Shape>
-                        <Fill fillRule="clockwise" id="42:527">
-                            <SolidColor colorValue="FF62C03A" id="42:528"/>
-                        </Fill>
-                        <LayoutComponentStyle cornerRadiusTL="8" id="42:526"/>
-                    </LayoutComponent>
                     <LayoutComponent styleId="42:189" name="Wordmark" id="42:188">
                         <Text id="42:190">
                             <TextStylePaint fontSize="15" fontAssetId="0:7" familyName="Inter" styleName="Regular" id="42:191">
@@ -74,7 +41,64 @@
                         </Text>
                         <LayoutComponentStyle gapVertical="1" flexDirectionValue="column" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="42:189"/>
                     </LayoutComponent>
-                    <LayoutComponentStyle gapHorizontal="10" paddingLeft="16" paddingRight="16" paddingTop="18" paddingBottom="18" layoutAlignmentType="centerLeft" intrinsicallySizedValue="true" layoutWidthScaleType="fill" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="42:183"/>
+                    <LayoutComponent width="28" height="28" styleId="122:24" name="Toggle All" id="122:21">
+                        <LayoutComponent width="16" height="16" styleId="122:23" name="Icon" id="122:31">
+                            <Node name="Art" id="122:32">
+                                <Shape name="Collapse" id="122:41">
+                                    <PointsPath id="122:36">
+                                        <StraightVertex x="4.6669998" y="13.333" id="122:33"/>
+                                        <StraightVertex x="8" y="10" id="122:34"/>
+                                        <StraightVertex x="11.333" y="13.333" id="122:35"/>
+                                    </PointsPath>
+                                    <PointsPath isClockwise="false" id="122:40">
+                                        <StraightVertex x="4.6669998" y="2.6670001" id="122:37"/>
+                                        <StraightVertex x="8" y="6" id="122:38"/>
+                                        <StraightVertex x="11.333" y="2.6670001" id="122:39"/>
+                                    </PointsPath>
+                                    <Stroke thickness="1.5" cap="round" join="round" id="122:42">
+                                        <SolidColor colorValue="FFA1A1AA" id="122:43">
+                                            <DataBindContext sourcePathIds="41:866-41:892-10:7426" propertyKey="37" nameBased="true" id="122:44"/>
+                                        </SolidColor>
+                                    </Stroke>
+                                    <DataBindContext sourcePathIds="41:866-122:4-122:2" propertyKey="18" nameBased="true" converterId="9:145" id="122:45"/>
+                                </Shape>
+                                <Shape opacity="0" name="Expand" id="122:54">
+                                    <PointsPath isClockwise="false" id="122:49">
+                                        <StraightVertex x="4.6669998" y="10" id="122:46"/>
+                                        <StraightVertex x="8" y="13.333" id="122:47"/>
+                                        <StraightVertex x="11.333" y="10" id="122:48"/>
+                                    </PointsPath>
+                                    <PointsPath id="122:53">
+                                        <StraightVertex x="4.6669998" y="6" id="122:50"/>
+                                        <StraightVertex x="8" y="2.6670001" id="122:51"/>
+                                        <StraightVertex x="11.333" y="6" id="122:52"/>
+                                    </PointsPath>
+                                    <Stroke thickness="1.5" cap="round" join="round" id="122:55">
+                                        <SolidColor colorValue="FFA1A1AA" id="122:56">
+                                            <DataBindContext sourcePathIds="41:866-41:892-10:7426" propertyKey="37" nameBased="true" id="122:57"/>
+                                        </SolidColor>
+                                    </Stroke>
+                                    <DataBindContext sourcePathIds="41:866-122:4-122:2" propertyKey="18" nameBased="true" converterId="9:90" id="122:58"/>
+                                </Shape>
+                            </Node>
+                            <LayoutComponentStyle id="122:23"/>
+                        </LayoutComponent>
+                        <LayoutComponent styleId="122:22" opacity="0" name="Toggle Hover" id="122:25">
+                            <Fill fillRule="clockwise" id="122:26">
+                                <SolidColor colorValue="FF323238" id="122:27">
+                                    <DataBindContext sourcePathIds="41:866-41:892-10:7416" propertyKey="37" nameBased="true" id="122:28"/>
+                                </SolidColor>
+                            </Fill>
+                            <LayoutComponentStyle cornerRadiusTL="6" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="122:22">
+                                <DataBindContext sourcePathIds="41:866-41:892-10:2086" propertyKey="640" nameBased="true" converterId="10:6840" id="122:29"/>
+                            </LayoutComponentStyle>
+                            <DataBindContext sourcePathIds="41:866-122:6" propertyKey="18" nameBased="true" converterId="9:145" id="122:30"/>
+                        </LayoutComponent>
+                        <SemanticData role="button" label="Expand or collapse all sections" traitFlags="32" name="Semantics" id="122:59"/>
+                        <FocusData name="Focus" id="0:15809"/>
+                        <LayoutComponentStyle layoutAlignmentType="center" layoutTypeValue="stack" id="122:24"/>
+                    </LayoutComponent>
+                    <LayoutComponentStyle gapHorizontal="10" paddingLeft="16" paddingRight="16" paddingTop="18" paddingBottom="18" layoutAlignmentType="spaceBetweenCenter" intrinsicallySizedValue="true" layoutWidthScaleType="fill" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="42:183"/>
                 </LayoutComponent>
                 <LayoutComponent height="1" styleId="42:207" name="Brand Divider" id="42:206">
                     <Fill fillRule="clockwise" id="42:208">
@@ -185,6 +209,51 @@
             <LayoutComponentStyle layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="42:177"/>
         </LayoutComponent>
         <StateMachine name="State Machine 1" id="42:169">
+            <StateMachineListener targetId="122:21" name="Toggle Hover On" id="122:61">
+                <ListenerInputType id="122:60"/>
+                <ListenerViewModelChange id="122:62">
+                    <BindablePropertyBoolean propertyValue="true" id="122:63">
+                        <DataBindContext sourcePathIds="41:866-122:6" propertyKey="634" direction="true" id="122:64"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListener targetId="122:21" name="Toggle Hover Off" id="122:66">
+                <ListenerInputType listenerTypeValue="exit" id="122:65"/>
+                <ListenerViewModelChange id="122:67">
+                    <BindablePropertyBoolean id="122:68">
+                        <DataBindContext sourcePathIds="41:866-122:6" propertyKey="634" direction="true" id="122:69"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListener targetId="122:21" name="Toggle Cursor On" id="122:72">
+                <ListenerInputType id="122:70"/>
+                <ListenerInputType listenerTypeValue="move" id="122:71"/>
+                <ListenerViewModelChange id="122:73">
+                    <BindablePropertyBoolean propertyValue="true" id="122:74">
+                        <DataBindContext sourcePathIds="41:866-41:892-63:244" propertyKey="634" direction="true" id="122:75"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListener targetId="122:21" name="Toggle Cursor Off" id="122:77">
+                <ListenerInputType listenerTypeValue="exit" id="122:76"/>
+                <ListenerViewModelChange id="122:78">
+                    <BindablePropertyBoolean id="122:79">
+                        <DataBindContext sourcePathIds="41:866-41:892-63:244" propertyKey="634" direction="true" id="122:80"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListener targetId="122:21" name="Toggle All" id="122:82">
+                <ListenerInputType listenerTypeValue="click" id="122:83"/>
+                <ListenerInputTypeSemantic listenerTypeValue="semanticAction" id="122:84">
+                    <SemanticInput id="122:85"/>
+                </ListenerInputTypeSemantic>
+                <ListenerViewModelChange fromViewModelProperty="true" fromDataBindId="122:81" id="122:86">
+                    <BindablePropertyBoolean id="122:87">
+                        <DataBindContext sourcePathIds="41:866-122:4-122:2" propertyKey="634" id="122:81"/>
+                        <DataBindContext sourcePathIds="41:866-122:4-122:2" propertyKey="634" direction="true" converterId="1:1018" id="122:88"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
             <StateMachineLayer name="Layer 1" id="42:170">
                 <AnyState x="400" id="42:171"/>
                 <ExitState x="480" id="42:172"/>
