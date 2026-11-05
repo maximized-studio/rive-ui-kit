@@ -1,14 +1,15 @@
 <Rive version="1" kind="fragment">
     <Artboard defaultStateMachineId="10:115" viewModelId="10:84" viewModelInstanceId="10:5260" includeInExport="false" spaceId="1:5601" width="1440" height="1024" styleId="10:113" x="-1640" name="Showcase" id="10:110">
         <Image assetId="42:629" x="720" y="512" opacity="0" name="Cover (thumbnail only)" id="10:15633"/>
-        <LayoutComponent styleId="42:466" name="Toolbar Slot" id="42:465">
-            <LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="42:466">
-                <DataBindContext sourcePathIds="10:84-42:368" propertyKey="596" nameBased="true" converterId="9:90" id="42:468"/>
-            </LayoutComponentStyle>
-            <NestedArtboardLayout instanceWidth="240" instanceHeightScaleType="fill" artboardId="10:2114" dataBindPathIds="10:84-39:833" name="Toolbar" id="10:2848">
-                <NestedStateMachine animationId="10:115" id="10:2849"/>
-                <DataBindContext sourcePathIds="10:84-42:368" propertyKey="663" nameBased="true" converterId="42:481" id="42:378"/>
-            </NestedArtboardLayout>
+        <LayoutComponent clip="true" width="240" styleId="42:466" name="Toolbar Slot" id="42:465">
+            <LayoutComponentStyle layoutHeightScaleType="fill" heightUnitsValue="auto" id="42:466"/>
+            <LayoutComponent width="240" styleId="114:503" name="Toolbar Panel" id="114:502">
+                <LayoutComponentStyle positionLeftUnitsValue="points" positionTopUnitsValue="points" positionBottomUnitsValue="points" edgeConstraints="80" positionTypeValue="absolute" layoutHeightScaleType="fill" heightUnitsValue="auto" id="114:503"/>
+                <NestedArtboardLayout instanceWidth="240" instanceHeightScaleType="fill" artboardId="10:2114" dataBindPathIds="10:84-39:833" name="Toolbar" id="10:2848">
+                    <NestedStateMachine animationId="10:115" id="10:2849"/>
+                    <DataBindContext sourcePathIds="10:84-42:368" propertyKey="663" nameBased="true" converterId="42:481" id="42:378"/>
+                </NestedArtboardLayout>
+            </LayoutComponent>
         </LayoutComponent>
         <LayoutComponent styleId="42:556" name="Main" id="42:555">
             <LayoutComponent width="960" height="1" styleId="42:592" name="Top Divider" id="42:591">
@@ -78,13 +79,7 @@
                 </LayoutComponent>
                 <LayoutComponent styleId="10:407" name="Detail" id="10:406">
                     <LayoutComponent styleId="10:409" name="Topbar" id="10:408">
-                        <LayoutComponentStyle gapHorizontal="8" positionLeft="24" positionRight="24" positionTop="8" positionLeftUnitsValue="points" positionRightUnitsValue="points" positionTopUnitsValue="points" edgeConstraints="20" layoutAlignmentType="spaceBetweenCenter" positionTypeValue="absolute" intrinsicallySizedValue="true" layoutWidthScaleType="fill" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="10:409"/>
-                        <LayoutComponent styleId="33:8" name="Back Slot" id="33:7">
-                            <NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="1:122" dataBindPathIds="10:84-33:1" name="Button" id="33:13">
-                                <NestedStateMachine animationId="10:115" id="33:14"/>
-                            </NestedArtboardLayout>
-                            <LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="33:8"/>
-                        </LayoutComponent>
+                        <LayoutComponentStyle gapHorizontal="8" positionLeft="24" positionRight="24" positionTop="8" positionLeftUnitsValue="points" positionRightUnitsValue="points" positionTopUnitsValue="points" edgeConstraints="20" layoutAlignmentType="centerRight" positionTypeValue="absolute" intrinsicallySizedValue="true" layoutWidthScaleType="fill" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="10:409"/>
                         <LayoutComponent styleId="33:321" name="Pager" id="33:320">
                             <LayoutComponentStyle gapHorizontal="8" layoutAlignmentType="centerLeft" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="33:321"/>
                             <LayoutComponent styleId="33:10" name="Prev Slot" id="33:9">
@@ -428,14 +423,15 @@
             </LayoutComponent>
             <LayoutComponentStyle flexDirectionValue="column" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="42:556"/>
         </LayoutComponent>
-        <LayoutComponent styleId="42:464" name="Sidebar Slot" id="42:463">
-            <LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="42:464">
-                <DataBindContext sourcePathIds="10:84-42:366" propertyKey="596" nameBased="true" converterId="9:90" id="42:467"/>
-            </LayoutComponentStyle>
-            <NestedArtboardLayout instanceWidth="240" instanceHeightScaleType="fill" artboardId="42:164" dataBindPathIds="10:84-42:352" name="Sidebar" id="42:350">
-                <NestedStateMachine animationId="10:115" id="42:351"/>
-                <DataBindContext sourcePathIds="10:84-42:366" propertyKey="663" nameBased="true" converterId="42:481" id="42:377"/>
-            </NestedArtboardLayout>
+        <LayoutComponent clip="true" width="240" styleId="42:464" name="Sidebar Slot" id="42:463">
+            <LayoutComponentStyle layoutHeightScaleType="fill" heightUnitsValue="auto" id="42:464"/>
+            <LayoutComponent width="240" styleId="114:433" name="Sidebar Panel" id="114:432">
+                <LayoutComponentStyle positionRightUnitsValue="points" positionTopUnitsValue="points" positionBottomUnitsValue="points" edgeConstraints="82" positionTypeValue="absolute" layoutHeightScaleType="fill" heightUnitsValue="auto" id="114:433"/>
+                <NestedArtboardLayout instanceWidth="240" instanceHeightScaleType="fill" artboardId="42:164" dataBindPathIds="10:84-42:352" name="Sidebar" id="42:350">
+                    <NestedStateMachine animationId="10:115" id="42:351"/>
+                    <DataBindContext sourcePathIds="10:84-42:366" propertyKey="663" nameBased="true" converterId="42:481" id="42:377"/>
+                </NestedArtboardLayout>
+            </LayoutComponent>
         </LayoutComponent>
         <Fill fillRule="clockwise" id="10:111">
             <SolidColor colorValue="FF09090B" id="10:112">
@@ -501,6 +497,116 @@
                 </KeyedProperty>
             </KeyedObject>
         </LinearAnimation>
+        <LinearAnimation loopValue="loop" name="Sidebar Opened" id="114:434">
+            <KeyedObject objectId="42:463" id="114:438">
+                <KeyedProperty property="width" id="114:439">
+                    <KeyFrameDouble value="240" id="114:440"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="114:433" id="114:442">
+                <KeyedProperty property="displayValue" id="114:443">
+                    <KeyFrameUint id="114:441"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+        <LinearAnimation duration="18" name="Sidebar Closing" id="114:435">
+            <KeyedObject objectId="42:463" id="114:444">
+                <KeyedProperty property="width" id="114:445">
+                    <KeyFrameDouble value="240" interpolationType="cubic" id="114:446">
+                        <CubicEaseInterpolator x1="0.4" y1="0" x2="0.2" y2="1" id="114:447"/>
+                    </KeyFrameDouble>
+                    <KeyFrameDouble frame="18" value="0" id="114:448"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="114:433" id="114:451">
+                <KeyedProperty property="displayValue" id="114:452">
+                    <KeyFrameUint id="114:449"/>
+                    <KeyFrameUint frame="18" value="1" id="114:450"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+        <LinearAnimation loopValue="loop" name="Sidebar Closed" id="114:436">
+            <KeyedObject objectId="42:463" id="114:453">
+                <KeyedProperty property="width" id="114:454">
+                    <KeyFrameDouble value="0" id="114:455"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="114:433" id="114:457">
+                <KeyedProperty property="displayValue" id="114:458">
+                    <KeyFrameUint value="1" id="114:456"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+        <LinearAnimation duration="18" name="Sidebar Opening" id="114:437">
+            <KeyedObject objectId="42:463" id="114:459">
+                <KeyedProperty property="width" id="114:460">
+                    <KeyFrameDouble value="0" interpolationType="cubic" id="114:461">
+                        <CubicEaseInterpolator x1="0.4" y1="0" x2="0.2" y2="1" id="114:462"/>
+                    </KeyFrameDouble>
+                    <KeyFrameDouble frame="18" value="240" id="114:463"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="114:433" id="114:465">
+                <KeyedProperty property="displayValue" id="114:466">
+                    <KeyFrameUint id="114:464"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+        <LinearAnimation loopValue="loop" name="Toolbar Opened" id="114:504">
+            <KeyedObject objectId="42:465" id="114:508">
+                <KeyedProperty property="width" id="114:509">
+                    <KeyFrameDouble value="240" id="114:510"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="114:503" id="114:512">
+                <KeyedProperty property="displayValue" id="114:513">
+                    <KeyFrameUint id="114:511"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+        <LinearAnimation duration="18" name="Toolbar Closing" id="114:505">
+            <KeyedObject objectId="42:465" id="114:514">
+                <KeyedProperty property="width" id="114:515">
+                    <KeyFrameDouble value="240" interpolationType="cubic" id="114:516">
+                        <CubicEaseInterpolator x1="0.4" y1="0" x2="0.2" y2="1" id="114:517"/>
+                    </KeyFrameDouble>
+                    <KeyFrameDouble frame="18" value="0" id="114:518"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="114:503" id="114:521">
+                <KeyedProperty property="displayValue" id="114:522">
+                    <KeyFrameUint id="114:519"/>
+                    <KeyFrameUint frame="18" value="1" id="114:520"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+        <LinearAnimation loopValue="loop" name="Toolbar Closed" id="114:506">
+            <KeyedObject objectId="42:465" id="114:523">
+                <KeyedProperty property="width" id="114:524">
+                    <KeyFrameDouble value="0" id="114:525"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="114:503" id="114:527">
+                <KeyedProperty property="displayValue" id="114:528">
+                    <KeyFrameUint value="1" id="114:526"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+        <LinearAnimation duration="18" name="Toolbar Opening" id="114:507">
+            <KeyedObject objectId="42:465" id="114:529">
+                <KeyedProperty property="width" id="114:530">
+                    <KeyFrameDouble value="0" interpolationType="cubic" id="114:531">
+                        <CubicEaseInterpolator x1="0.4" y1="0" x2="0.2" y2="1" id="114:532"/>
+                    </KeyFrameDouble>
+                    <KeyFrameDouble frame="18" value="240" id="114:533"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="114:503" id="114:535">
+                <KeyedProperty property="displayValue" id="114:536">
+                    <KeyFrameUint id="114:534"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
         <StateMachine name="State Machine 1" id="10:115">
             <StateMachineListener targetId="42:399" name="Theme Hover Off" id="70:505">
                 <ListenerInputType listenerTypeValue="exit" id="70:506"/>
@@ -531,14 +637,6 @@
                 <ListenerViewModelChange id="70:492">
                     <BindablePropertyBoolean propertyValue="true" id="70:493">
                         <DataBindContext sourcePathIds="10:84-70:470" propertyKey="634" direction="true" id="70:494"/>
-                    </BindablePropertyBoolean>
-                </ListenerViewModelChange>
-            </StateMachineListener>
-            <StateMachineListener targetId="33:7" name="Cursor Reset Back" id="63:465">
-                <ListenerInputType listenerTypeValue="click" id="63:466"/>
-                <ListenerViewModelChange id="63:467">
-                    <BindablePropertyBoolean id="63:468">
-                        <DataBindContext sourcePathIds="10:84-10:2850-63:244" propertyKey="634" direction="true" id="63:469"/>
                     </BindablePropertyBoolean>
                 </ListenerViewModelChange>
             </StateMachineListener>
@@ -630,12 +728,17 @@
                     </BindablePropertyNumber>
                 </ListenerViewModelChange>
             </StateMachineListener>
-            <StateMachineListener targetId="33:7" name="Back to home" id="33:142">
-                <ListenerInputType listenerTypeValue="click" id="33:143"/>
-                <ListenerViewModelChange id="33:144">
-                    <BindablePropertyBoolean id="33:145">
-                        <DataBindContext sourcePathIds="10:84-10:88" propertyKey="634" direction="true" id="33:146"/>
+            <StateMachineListener targetId="10:110" name="Breadcrumb home" id="114:424">
+                <ListenerInputTypeViewModel viewModelPathIds="10:84-114:2-111:17" listenerTypeValue="viewModel" id="114:425"/>
+                <ListenerViewModelChange id="114:426">
+                    <BindablePropertyBoolean id="114:427">
+                        <DataBindContext sourcePathIds="10:84-10:88" propertyKey="634" direction="true" id="114:428"/>
                     </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+                <ListenerViewModelChange id="114:429">
+                    <BindablePropertyNumber propertyValue="-1" id="114:430">
+                        <DataBindContext sourcePathIds="10:84-114:2-111:17" propertyKey="636" direction="true" id="114:431"/>
+                    </BindablePropertyNumber>
                 </ListenerViewModelChange>
             </StateMachineListener>
             <StateMachineListener targetId="10:110" name="Open from tile" id="10:5819">
@@ -683,6 +786,120 @@
                     </StateTransition>
                 </AnimationState>
                 <AnimationState animationId="10:5881" x="160" y="-140" stateName="Home Idle" id="10:5900"/>
+            </StateMachineLayer>
+            <StateMachineLayer name="Sidebar" id="114:471">
+                <AnyState x="400" id="114:472"/>
+                <ExitState x="480" id="114:473"/>
+                <EntryState id="114:474">
+                    <StateTransition stateToId="114:467" id="114:475"/>
+                </EntryState>
+                <AnimationState animationId="114:434" x="160" y="0" stateName="Opened" id="114:467">
+                    <StateTransition stateToId="114:468" id="114:481">
+                        <TransitionViewModelCondition id="114:476">
+                            <TransitionPropertyViewModelComparator id="114:477">
+                                <BindablePropertyBoolean id="114:478">
+                                    <DataBindContext sourcePathIds="10:84-42:366" propertyKey="634" id="114:479"/>
+                                </BindablePropertyBoolean>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueBooleanComparator id="114:480"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                </AnimationState>
+                <AnimationState animationId="114:435" x="320" y="100" stateName="Closing" id="114:468">
+                    <StateTransition stateToId="114:470" id="114:487">
+                        <TransitionViewModelCondition id="114:482">
+                            <TransitionPropertyViewModelComparator id="114:483">
+                                <BindablePropertyBoolean id="114:484">
+                                    <DataBindContext sourcePathIds="10:84-42:366" propertyKey="634" id="114:485"/>
+                                </BindablePropertyBoolean>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueBooleanComparator value="true" id="114:486"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                    <StateTransition stateToId="114:469" enableExitTime="true" exitTimeIsPercetange="true" exitTime="100" id="114:488"/>
+                </AnimationState>
+                <AnimationState animationId="114:436" x="160" y="200" stateName="Closed" id="114:469">
+                    <StateTransition stateToId="114:470" id="114:494">
+                        <TransitionViewModelCondition id="114:489">
+                            <TransitionPropertyViewModelComparator id="114:490">
+                                <BindablePropertyBoolean id="114:491">
+                                    <DataBindContext sourcePathIds="10:84-42:366" propertyKey="634" id="114:492"/>
+                                </BindablePropertyBoolean>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueBooleanComparator value="true" id="114:493"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                </AnimationState>
+                <AnimationState animationId="114:437" x="0" y="100" stateName="Opening" id="114:470">
+                    <StateTransition stateToId="114:468" id="114:500">
+                        <TransitionViewModelCondition id="114:495">
+                            <TransitionPropertyViewModelComparator id="114:496">
+                                <BindablePropertyBoolean id="114:497">
+                                    <DataBindContext sourcePathIds="10:84-42:366" propertyKey="634" id="114:498"/>
+                                </BindablePropertyBoolean>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueBooleanComparator id="114:499"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                    <StateTransition stateToId="114:467" enableExitTime="true" exitTimeIsPercetange="true" exitTime="100" id="114:501"/>
+                </AnimationState>
+            </StateMachineLayer>
+            <StateMachineLayer name="Toolbar" id="114:541">
+                <AnyState x="400" id="114:542"/>
+                <ExitState x="480" id="114:543"/>
+                <EntryState id="114:544">
+                    <StateTransition stateToId="114:537" id="114:545"/>
+                </EntryState>
+                <AnimationState animationId="114:504" x="160" y="0" stateName="Opened" id="114:537">
+                    <StateTransition stateToId="114:538" id="114:551">
+                        <TransitionViewModelCondition id="114:546">
+                            <TransitionPropertyViewModelComparator id="114:547">
+                                <BindablePropertyBoolean id="114:548">
+                                    <DataBindContext sourcePathIds="10:84-42:368" propertyKey="634" id="114:549"/>
+                                </BindablePropertyBoolean>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueBooleanComparator id="114:550"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                </AnimationState>
+                <AnimationState animationId="114:505" x="320" y="100" stateName="Closing" id="114:538">
+                    <StateTransition stateToId="114:540" id="114:557">
+                        <TransitionViewModelCondition id="114:552">
+                            <TransitionPropertyViewModelComparator id="114:553">
+                                <BindablePropertyBoolean id="114:554">
+                                    <DataBindContext sourcePathIds="10:84-42:368" propertyKey="634" id="114:555"/>
+                                </BindablePropertyBoolean>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueBooleanComparator value="true" id="114:556"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                    <StateTransition stateToId="114:539" enableExitTime="true" exitTimeIsPercetange="true" exitTime="100" id="114:558"/>
+                </AnimationState>
+                <AnimationState animationId="114:506" x="160" y="200" stateName="Closed" id="114:539">
+                    <StateTransition stateToId="114:540" id="114:564">
+                        <TransitionViewModelCondition id="114:559">
+                            <TransitionPropertyViewModelComparator id="114:560">
+                                <BindablePropertyBoolean id="114:561">
+                                    <DataBindContext sourcePathIds="10:84-42:368" propertyKey="634" id="114:562"/>
+                                </BindablePropertyBoolean>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueBooleanComparator value="true" id="114:563"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                </AnimationState>
+                <AnimationState animationId="114:507" x="0" y="100" stateName="Opening" id="114:540">
+                    <StateTransition stateToId="114:538" id="114:570">
+                        <TransitionViewModelCondition id="114:565">
+                            <TransitionPropertyViewModelComparator id="114:566">
+                                <BindablePropertyBoolean id="114:567">
+                                    <DataBindContext sourcePathIds="10:84-42:368" propertyKey="634" id="114:568"/>
+                                </BindablePropertyBoolean>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueBooleanComparator id="114:569"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                    <StateTransition stateToId="114:537" enableExitTime="true" exitTimeIsPercetange="true" exitTime="100" id="114:571"/>
+                </AnimationState>
             </StateMachineLayer>
             <StateMachineLayer name="Cover" id="10:15645">
                 <AnyState x="400" id="10:15646"/>
