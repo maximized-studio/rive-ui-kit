@@ -116,22 +116,22 @@
                     </Shape>
                     <Shape x="8" y="8" opacity="0" name="save" id="117:248">
                         <PointsPath isClosed="true" id="117:249">
-                            <StraightVertex x="-6.0" y="-6.0" radius="1.333" id="117:250"/>
-                            <StraightVertex x="2.333" y="-6.0" radius="0.667" id="117:251"/>
-                            <StraightVertex x="6.0" y="-2.333" radius="0.667" id="117:252"/>
-                            <StraightVertex x="6.0" y="6.0" radius="1.333" id="117:253"/>
-                            <StraightVertex x="-6.0" y="6.0" radius="1.333" id="117:254"/>
+                            <StraightVertex radius="1.3329999" x="-6" y="-6" id="117:250"/>
+                            <StraightVertex radius="0.667" x="2.3329999" y="-6" id="117:251"/>
+                            <StraightVertex radius="0.667" x="6" y="-2.3329999" id="117:252"/>
+                            <StraightVertex radius="1.3329999" x="6" y="6" id="117:253"/>
+                            <StraightVertex radius="1.3329999" x="-6" y="6" id="117:254"/>
                         </PointsPath>
-                        <PointsPath id="117:255">
-                            <StraightVertex x="3.333" y="6.0" id="117:256"/>
-                            <StraightVertex x="3.333" y="0.667" radius="0.667" id="117:257"/>
-                            <StraightVertex x="-3.333" y="0.667" radius="0.667" id="117:258"/>
-                            <StraightVertex x="-3.333" y="6.0" id="117:259"/>
+                        <PointsPath isClockwise="false" id="117:255">
+                            <StraightVertex x="3.3329999" y="6" id="117:256"/>
+                            <StraightVertex radius="0.667" x="3.3329999" y="0.667" id="117:257"/>
+                            <StraightVertex radius="0.667" x="-3.3329999" y="0.667" id="117:258"/>
+                            <StraightVertex x="-3.3329999" y="6" id="117:259"/>
                         </PointsPath>
-                        <PointsPath id="117:260">
-                            <StraightVertex x="-3.333" y="-6.0" id="117:261"/>
-                            <StraightVertex x="-3.333" y="-2.667" radius="0.667" id="117:262"/>
-                            <StraightVertex x="2.0" y="-2.667" id="117:263"/>
+                        <PointsPath isClockwise="false" id="117:260">
+                            <StraightVertex x="-3.3329999" y="-6" id="117:261"/>
+                            <StraightVertex radius="0.667" x="-3.3329999" y="-2.6670001" id="117:262"/>
+                            <StraightVertex x="2" y="-2.6670001" id="117:263"/>
                         </PointsPath>
                         <Stroke thickness="1.75" cap="round" join="round" id="117:237">
                             <SolidColor colorValue="FFFFFFFF" id="117:238">

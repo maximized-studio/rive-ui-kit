@@ -101,268 +101,268 @@
                     <Node name="Pattern" id="117:231">
                         <Shape name="Checkerboard" id="117:232">
                             <PointsPath isClosed="true" id="117:9">
-                                <StraightVertex x="16" y="0" id="117:10"/>
-                                <StraightVertex x="32" y="0" id="117:11"/>
+                                <StraightVertex x="16" id="117:10"/>
+                                <StraightVertex x="32" id="117:11"/>
                                 <StraightVertex x="32" y="240" id="117:12"/>
                                 <StraightVertex x="16" y="240" id="117:13"/>
                             </PointsPath>
                             <PointsPath isClosed="true" id="117:14">
-                                <StraightVertex x="48" y="0" id="117:15"/>
-                                <StraightVertex x="64" y="0" id="117:16"/>
+                                <StraightVertex x="48" id="117:15"/>
+                                <StraightVertex x="64" id="117:16"/>
                                 <StraightVertex x="64" y="240" id="117:17"/>
                                 <StraightVertex x="48" y="240" id="117:18"/>
                             </PointsPath>
                             <PointsPath isClosed="true" id="117:19">
-                                <StraightVertex x="80" y="0" id="117:20"/>
-                                <StraightVertex x="96" y="0" id="117:21"/>
+                                <StraightVertex x="80" id="117:20"/>
+                                <StraightVertex x="96" id="117:21"/>
                                 <StraightVertex x="96" y="240" id="117:22"/>
                                 <StraightVertex x="80" y="240" id="117:23"/>
                             </PointsPath>
                             <PointsPath isClosed="true" id="117:24">
-                                <StraightVertex x="112" y="0" id="117:25"/>
-                                <StraightVertex x="128" y="0" id="117:26"/>
+                                <StraightVertex x="112" id="117:25"/>
+                                <StraightVertex x="128" id="117:26"/>
                                 <StraightVertex x="128" y="240" id="117:27"/>
                                 <StraightVertex x="112" y="240" id="117:28"/>
                             </PointsPath>
                             <PointsPath isClosed="true" id="117:29">
-                                <StraightVertex x="144" y="0" id="117:30"/>
-                                <StraightVertex x="160" y="0" id="117:31"/>
+                                <StraightVertex x="144" id="117:30"/>
+                                <StraightVertex x="160" id="117:31"/>
                                 <StraightVertex x="160" y="240" id="117:32"/>
                                 <StraightVertex x="144" y="240" id="117:33"/>
                             </PointsPath>
                             <PointsPath isClosed="true" id="117:34">
-                                <StraightVertex x="176" y="0" id="117:35"/>
-                                <StraightVertex x="192" y="0" id="117:36"/>
+                                <StraightVertex x="176" id="117:35"/>
+                                <StraightVertex x="192" id="117:36"/>
                                 <StraightVertex x="192" y="240" id="117:37"/>
                                 <StraightVertex x="176" y="240" id="117:38"/>
                             </PointsPath>
                             <PointsPath isClosed="true" id="117:39">
-                                <StraightVertex x="208" y="0" id="117:40"/>
-                                <StraightVertex x="224" y="0" id="117:41"/>
+                                <StraightVertex x="208" id="117:40"/>
+                                <StraightVertex x="224" id="117:41"/>
                                 <StraightVertex x="224" y="240" id="117:42"/>
                                 <StraightVertex x="208" y="240" id="117:43"/>
                             </PointsPath>
                             <PointsPath isClosed="true" id="117:44">
-                                <StraightVertex x="240" y="0" id="117:45"/>
-                                <StraightVertex x="256" y="0" id="117:46"/>
+                                <StraightVertex x="240" id="117:45"/>
+                                <StraightVertex x="256" id="117:46"/>
                                 <StraightVertex x="256" y="240" id="117:47"/>
                                 <StraightVertex x="240" y="240" id="117:48"/>
                             </PointsPath>
                             <PointsPath isClosed="true" id="117:49">
-                                <StraightVertex x="272" y="0" id="117:50"/>
-                                <StraightVertex x="288" y="0" id="117:51"/>
+                                <StraightVertex x="272" id="117:50"/>
+                                <StraightVertex x="288" id="117:51"/>
                                 <StraightVertex x="288" y="240" id="117:52"/>
                                 <StraightVertex x="272" y="240" id="117:53"/>
                             </PointsPath>
                             <PointsPath isClosed="true" id="117:54">
-                                <StraightVertex x="304" y="0" id="117:55"/>
-                                <StraightVertex x="320" y="0" id="117:56"/>
+                                <StraightVertex x="304" id="117:55"/>
+                                <StraightVertex x="320" id="117:56"/>
                                 <StraightVertex x="320" y="240" id="117:57"/>
                                 <StraightVertex x="304" y="240" id="117:58"/>
                             </PointsPath>
                             <PointsPath isClosed="true" id="117:59">
-                                <StraightVertex x="336" y="0" id="117:60"/>
-                                <StraightVertex x="352" y="0" id="117:61"/>
+                                <StraightVertex x="336" id="117:60"/>
+                                <StraightVertex x="352" id="117:61"/>
                                 <StraightVertex x="352" y="240" id="117:62"/>
                                 <StraightVertex x="336" y="240" id="117:63"/>
                             </PointsPath>
                             <PointsPath isClosed="true" id="117:64">
-                                <StraightVertex x="368" y="0" id="117:65"/>
-                                <StraightVertex x="384" y="0" id="117:66"/>
+                                <StraightVertex x="368" id="117:65"/>
+                                <StraightVertex x="384" id="117:66"/>
                                 <StraightVertex x="384" y="240" id="117:67"/>
                                 <StraightVertex x="368" y="240" id="117:68"/>
                             </PointsPath>
                             <PointsPath isClosed="true" id="117:69">
-                                <StraightVertex x="400" y="0" id="117:70"/>
-                                <StraightVertex x="416" y="0" id="117:71"/>
+                                <StraightVertex x="400" id="117:70"/>
+                                <StraightVertex x="416" id="117:71"/>
                                 <StraightVertex x="416" y="240" id="117:72"/>
                                 <StraightVertex x="400" y="240" id="117:73"/>
                             </PointsPath>
                             <PointsPath isClosed="true" id="117:74">
-                                <StraightVertex x="432" y="0" id="117:75"/>
-                                <StraightVertex x="448" y="0" id="117:76"/>
+                                <StraightVertex x="432" id="117:75"/>
+                                <StraightVertex x="448" id="117:76"/>
                                 <StraightVertex x="448" y="240" id="117:77"/>
                                 <StraightVertex x="432" y="240" id="117:78"/>
                             </PointsPath>
                             <PointsPath isClosed="true" id="117:79">
-                                <StraightVertex x="464" y="0" id="117:80"/>
-                                <StraightVertex x="480" y="0" id="117:81"/>
+                                <StraightVertex x="464" id="117:80"/>
+                                <StraightVertex x="480" id="117:81"/>
                                 <StraightVertex x="480" y="240" id="117:82"/>
                                 <StraightVertex x="464" y="240" id="117:83"/>
                             </PointsPath>
                             <PointsPath isClosed="true" id="117:84">
-                                <StraightVertex x="496" y="0" id="117:85"/>
-                                <StraightVertex x="512" y="0" id="117:86"/>
+                                <StraightVertex x="496" id="117:85"/>
+                                <StraightVertex x="512" id="117:86"/>
                                 <StraightVertex x="512" y="240" id="117:87"/>
                                 <StraightVertex x="496" y="240" id="117:88"/>
                             </PointsPath>
                             <PointsPath isClosed="true" id="117:89">
-                                <StraightVertex x="528" y="0" id="117:90"/>
-                                <StraightVertex x="544" y="0" id="117:91"/>
+                                <StraightVertex x="528" id="117:90"/>
+                                <StraightVertex x="544" id="117:91"/>
                                 <StraightVertex x="544" y="240" id="117:92"/>
                                 <StraightVertex x="528" y="240" id="117:93"/>
                             </PointsPath>
                             <PointsPath isClosed="true" id="117:94">
-                                <StraightVertex x="560" y="0" id="117:95"/>
-                                <StraightVertex x="576" y="0" id="117:96"/>
+                                <StraightVertex x="560" id="117:95"/>
+                                <StraightVertex x="576" id="117:96"/>
                                 <StraightVertex x="576" y="240" id="117:97"/>
                                 <StraightVertex x="560" y="240" id="117:98"/>
                             </PointsPath>
                             <PointsPath isClosed="true" id="117:99">
-                                <StraightVertex x="592" y="0" id="117:100"/>
-                                <StraightVertex x="608" y="0" id="117:101"/>
+                                <StraightVertex x="592" id="117:100"/>
+                                <StraightVertex x="608" id="117:101"/>
                                 <StraightVertex x="608" y="240" id="117:102"/>
                                 <StraightVertex x="592" y="240" id="117:103"/>
                             </PointsPath>
                             <PointsPath isClosed="true" id="117:104">
-                                <StraightVertex x="624" y="0" id="117:105"/>
-                                <StraightVertex x="640" y="0" id="117:106"/>
+                                <StraightVertex x="624" id="117:105"/>
+                                <StraightVertex x="640" id="117:106"/>
                                 <StraightVertex x="640" y="240" id="117:107"/>
                                 <StraightVertex x="624" y="240" id="117:108"/>
                             </PointsPath>
                             <PointsPath isClosed="true" id="117:109">
-                                <StraightVertex x="656" y="0" id="117:110"/>
-                                <StraightVertex x="672" y="0" id="117:111"/>
+                                <StraightVertex x="656" id="117:110"/>
+                                <StraightVertex x="672" id="117:111"/>
                                 <StraightVertex x="672" y="240" id="117:112"/>
                                 <StraightVertex x="656" y="240" id="117:113"/>
                             </PointsPath>
                             <PointsPath isClosed="true" id="117:114">
-                                <StraightVertex x="688" y="0" id="117:115"/>
-                                <StraightVertex x="704" y="0" id="117:116"/>
+                                <StraightVertex x="688" id="117:115"/>
+                                <StraightVertex x="704" id="117:116"/>
                                 <StraightVertex x="704" y="240" id="117:117"/>
                                 <StraightVertex x="688" y="240" id="117:118"/>
                             </PointsPath>
                             <PointsPath isClosed="true" id="117:119">
-                                <StraightVertex x="720" y="0" id="117:120"/>
-                                <StraightVertex x="736" y="0" id="117:121"/>
+                                <StraightVertex x="720" id="117:120"/>
+                                <StraightVertex x="736" id="117:121"/>
                                 <StraightVertex x="736" y="240" id="117:122"/>
                                 <StraightVertex x="720" y="240" id="117:123"/>
                             </PointsPath>
                             <PointsPath isClosed="true" id="117:124">
-                                <StraightVertex x="752" y="0" id="117:125"/>
-                                <StraightVertex x="768" y="0" id="117:126"/>
+                                <StraightVertex x="752" id="117:125"/>
+                                <StraightVertex x="768" id="117:126"/>
                                 <StraightVertex x="768" y="240" id="117:127"/>
                                 <StraightVertex x="752" y="240" id="117:128"/>
                             </PointsPath>
                             <PointsPath isClosed="true" id="117:129">
-                                <StraightVertex x="784" y="0" id="117:130"/>
-                                <StraightVertex x="800" y="0" id="117:131"/>
+                                <StraightVertex x="784" id="117:130"/>
+                                <StraightVertex x="800" id="117:131"/>
                                 <StraightVertex x="800" y="240" id="117:132"/>
                                 <StraightVertex x="784" y="240" id="117:133"/>
                             </PointsPath>
                             <PointsPath isClosed="true" id="117:134">
-                                <StraightVertex x="816" y="0" id="117:135"/>
-                                <StraightVertex x="832" y="0" id="117:136"/>
+                                <StraightVertex x="816" id="117:135"/>
+                                <StraightVertex x="832" id="117:136"/>
                                 <StraightVertex x="832" y="240" id="117:137"/>
                                 <StraightVertex x="816" y="240" id="117:138"/>
                             </PointsPath>
                             <PointsPath isClosed="true" id="117:139">
-                                <StraightVertex x="848" y="0" id="117:140"/>
-                                <StraightVertex x="864" y="0" id="117:141"/>
+                                <StraightVertex x="848" id="117:140"/>
+                                <StraightVertex x="864" id="117:141"/>
                                 <StraightVertex x="864" y="240" id="117:142"/>
                                 <StraightVertex x="848" y="240" id="117:143"/>
                             </PointsPath>
                             <PointsPath isClosed="true" id="117:144">
-                                <StraightVertex x="880" y="0" id="117:145"/>
-                                <StraightVertex x="896" y="0" id="117:146"/>
+                                <StraightVertex x="880" id="117:145"/>
+                                <StraightVertex x="896" id="117:146"/>
                                 <StraightVertex x="896" y="240" id="117:147"/>
                                 <StraightVertex x="880" y="240" id="117:148"/>
                             </PointsPath>
                             <PointsPath isClosed="true" id="117:149">
-                                <StraightVertex x="912" y="0" id="117:150"/>
-                                <StraightVertex x="928" y="0" id="117:151"/>
+                                <StraightVertex x="912" id="117:150"/>
+                                <StraightVertex x="928" id="117:151"/>
                                 <StraightVertex x="928" y="240" id="117:152"/>
                                 <StraightVertex x="912" y="240" id="117:153"/>
                             </PointsPath>
                             <PointsPath isClosed="true" id="117:154">
-                                <StraightVertex x="944" y="0" id="117:155"/>
-                                <StraightVertex x="960" y="0" id="117:156"/>
+                                <StraightVertex x="944" id="117:155"/>
+                                <StraightVertex x="960" id="117:156"/>
                                 <StraightVertex x="960" y="240" id="117:157"/>
                                 <StraightVertex x="944" y="240" id="117:158"/>
                             </PointsPath>
                             <PointsPath isClosed="true" id="117:159">
-                                <StraightVertex x="976" y="0" id="117:160"/>
-                                <StraightVertex x="992" y="0" id="117:161"/>
+                                <StraightVertex x="976" id="117:160"/>
+                                <StraightVertex x="992" id="117:161"/>
                                 <StraightVertex x="992" y="240" id="117:162"/>
                                 <StraightVertex x="976" y="240" id="117:163"/>
                             </PointsPath>
                             <PointsPath isClosed="true" id="117:164">
-                                <StraightVertex x="1008" y="0" id="117:165"/>
-                                <StraightVertex x="1024" y="0" id="117:166"/>
+                                <StraightVertex x="1008" id="117:165"/>
+                                <StraightVertex x="1024" id="117:166"/>
                                 <StraightVertex x="1024" y="240" id="117:167"/>
                                 <StraightVertex x="1008" y="240" id="117:168"/>
                             </PointsPath>
                             <PointsPath isClosed="true" id="117:169">
-                                <StraightVertex x="1040" y="0" id="117:170"/>
-                                <StraightVertex x="1056" y="0" id="117:171"/>
+                                <StraightVertex x="1040" id="117:170"/>
+                                <StraightVertex x="1056" id="117:171"/>
                                 <StraightVertex x="1056" y="240" id="117:172"/>
                                 <StraightVertex x="1040" y="240" id="117:173"/>
                             </PointsPath>
                             <PointsPath isClosed="true" id="117:174">
-                                <StraightVertex x="1072" y="0" id="117:175"/>
-                                <StraightVertex x="1088" y="0" id="117:176"/>
+                                <StraightVertex x="1072" id="117:175"/>
+                                <StraightVertex x="1088" id="117:176"/>
                                 <StraightVertex x="1088" y="240" id="117:177"/>
                                 <StraightVertex x="1072" y="240" id="117:178"/>
                             </PointsPath>
                             <PointsPath isClosed="true" id="117:179">
-                                <StraightVertex x="1104" y="0" id="117:180"/>
-                                <StraightVertex x="1120" y="0" id="117:181"/>
+                                <StraightVertex x="1104" id="117:180"/>
+                                <StraightVertex x="1120" id="117:181"/>
                                 <StraightVertex x="1120" y="240" id="117:182"/>
                                 <StraightVertex x="1104" y="240" id="117:183"/>
                             </PointsPath>
                             <PointsPath isClosed="true" id="117:184">
-                                <StraightVertex x="1136" y="0" id="117:185"/>
-                                <StraightVertex x="1152" y="0" id="117:186"/>
+                                <StraightVertex x="1136" id="117:185"/>
+                                <StraightVertex x="1152" id="117:186"/>
                                 <StraightVertex x="1152" y="240" id="117:187"/>
                                 <StraightVertex x="1136" y="240" id="117:188"/>
                             </PointsPath>
                             <PointsPath isClosed="true" id="117:189">
-                                <StraightVertex x="1168" y="0" id="117:190"/>
-                                <StraightVertex x="1184" y="0" id="117:191"/>
+                                <StraightVertex x="1168" id="117:190"/>
+                                <StraightVertex x="1184" id="117:191"/>
                                 <StraightVertex x="1184" y="240" id="117:192"/>
                                 <StraightVertex x="1168" y="240" id="117:193"/>
                             </PointsPath>
                             <PointsPath isClosed="true" id="117:194">
-                                <StraightVertex x="0" y="16" id="117:195"/>
+                                <StraightVertex y="16" id="117:195"/>
                                 <StraightVertex x="1200" y="16" id="117:196"/>
                                 <StraightVertex x="1200" y="32" id="117:197"/>
-                                <StraightVertex x="0" y="32" id="117:198"/>
+                                <StraightVertex y="32" id="117:198"/>
                             </PointsPath>
                             <PointsPath isClosed="true" id="117:199">
-                                <StraightVertex x="0" y="48" id="117:200"/>
+                                <StraightVertex y="48" id="117:200"/>
                                 <StraightVertex x="1200" y="48" id="117:201"/>
                                 <StraightVertex x="1200" y="64" id="117:202"/>
-                                <StraightVertex x="0" y="64" id="117:203"/>
+                                <StraightVertex y="64" id="117:203"/>
                             </PointsPath>
                             <PointsPath isClosed="true" id="117:204">
-                                <StraightVertex x="0" y="80" id="117:205"/>
+                                <StraightVertex y="80" id="117:205"/>
                                 <StraightVertex x="1200" y="80" id="117:206"/>
                                 <StraightVertex x="1200" y="96" id="117:207"/>
-                                <StraightVertex x="0" y="96" id="117:208"/>
+                                <StraightVertex y="96" id="117:208"/>
                             </PointsPath>
                             <PointsPath isClosed="true" id="117:209">
-                                <StraightVertex x="0" y="112" id="117:210"/>
+                                <StraightVertex y="112" id="117:210"/>
                                 <StraightVertex x="1200" y="112" id="117:211"/>
                                 <StraightVertex x="1200" y="128" id="117:212"/>
-                                <StraightVertex x="0" y="128" id="117:213"/>
+                                <StraightVertex y="128" id="117:213"/>
                             </PointsPath>
                             <PointsPath isClosed="true" id="117:214">
-                                <StraightVertex x="0" y="144" id="117:215"/>
+                                <StraightVertex y="144" id="117:215"/>
                                 <StraightVertex x="1200" y="144" id="117:216"/>
                                 <StraightVertex x="1200" y="160" id="117:217"/>
-                                <StraightVertex x="0" y="160" id="117:218"/>
+                                <StraightVertex y="160" id="117:218"/>
                             </PointsPath>
                             <PointsPath isClosed="true" id="117:219">
-                                <StraightVertex x="0" y="176" id="117:220"/>
+                                <StraightVertex y="176" id="117:220"/>
                                 <StraightVertex x="1200" y="176" id="117:221"/>
                                 <StraightVertex x="1200" y="192" id="117:222"/>
-                                <StraightVertex x="0" y="192" id="117:223"/>
+                                <StraightVertex y="192" id="117:223"/>
                             </PointsPath>
                             <PointsPath isClosed="true" id="117:224">
-                                <StraightVertex x="0" y="208" id="117:225"/>
+                                <StraightVertex y="208" id="117:225"/>
                                 <StraightVertex x="1200" y="208" id="117:226"/>
                                 <StraightVertex x="1200" y="224" id="117:227"/>
-                                <StraightVertex x="0" y="224" id="117:228"/>
+                                <StraightVertex y="224" id="117:228"/>
                             </PointsPath>
                             <Fill fillRule="evenOdd" id="117:233">
                                 <SolidColor colorValue="FF27272A" id="117:234">
