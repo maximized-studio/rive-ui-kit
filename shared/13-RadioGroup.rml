@@ -1,5 +1,5 @@
 <Rive version="1" kind="fragment">
-    <Artboard defaultStateMachineId="10:3591" viewModelId="10:3548" viewModelInstanceId="10:3580" isComponent="true" includeInExport="false" spaceId="1:5601" width="220" height="130" styleId="10:3589" x="1800" y="683" name="Radio Group" id="10:3586">
+    <Artboard defaultStateMachineId="10:3591" viewModelId="10:3548" viewModelInstanceId="10:3580" isComponent="true" includeInExport="false" spaceId="1:5601" width="220" height="130" x="600" y="1331" styleId="10:3589" name="Radio Group" id="10:3586">
         <LayoutComponentStyle flexDirectionValue="column" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" id="10:3589"/>
         <LayoutComponent styleId="10:3599" name="Group" id="10:3598">
             <Text id="10:3600">
