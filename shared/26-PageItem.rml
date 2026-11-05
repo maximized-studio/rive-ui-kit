@@ -14,36 +14,36 @@
                 </LayoutComponentStyle>
             </LayoutComponent>
             <LayoutComponent styleId="101:167" name="Label" id="101:166">
-                    <Text alignValue="center" fitFontSizeResizesBox="false" opacity="0" name="Text Selected" id="101:172">
-                        <TextStylePaint fontSize="14" fontAssetId="0:7" familyName="Inter" styleName="Medium" id="101:183">
-                            <Fill id="101:184">
-                                <SolidColor colorValue="FFEFF6FF" id="101:185">
-                                    <DataBindContext sourcePathIds="101:3-101:8-10:2092" propertyKey="37" nameBased="true" id="101:186"/>
-                                </SolidColor>
-                            </Fill>
-                            <TextStyleAxis tag="1869640570" axisValue="14" id="101:187"/>
-                            <TextStyleAxis tag="2003265652" axisValue="500" id="101:188"/>
-                        </TextStylePaint>
-                        <TextValueRun styleId="101:183" text="1" id="101:189">
-                            <DataBindContext sourcePathIds="101:3-101:4" propertyKey="268" nameBased="true" id="101:190"/>
-                        </TextValueRun>
-                        <LayoutParticipant layoutWidthScaleType="hug" layoutHeightScaleType="hug" id="101:323"/>
-                    </Text>
-                    <Text alignValue="center" fitFontSizeResizesBox="false" name="Text" id="101:173">
-                        <TextStylePaint fontSize="14" fontAssetId="0:7" familyName="Inter" styleName="Medium" id="101:191">
-                            <Fill id="101:192">
-                                <SolidColor colorValue="FFFAFAFA" id="101:193">
-                                    <DataBindContext sourcePathIds="101:3-101:8-10:7422" propertyKey="37" nameBased="true" id="101:194"/>
-                                </SolidColor>
-                            </Fill>
-                            <TextStyleAxis tag="1869640570" axisValue="14" id="101:195"/>
-                            <TextStyleAxis tag="2003265652" axisValue="500" id="101:196"/>
-                        </TextStylePaint>
-                        <TextValueRun styleId="101:191" text="1" id="101:197">
-                            <DataBindContext sourcePathIds="101:3-101:4" propertyKey="268" nameBased="true" id="101:198"/>
-                        </TextValueRun>
-                        <LayoutParticipant layoutWidthScaleType="hug" layoutHeightScaleType="hug" id="101:324"/>
-                    </Text>
+                <Text alignValue="center" fitFontSizeResizesBox="false" opacity="0" name="Text Selected" id="101:172">
+                    <TextStylePaint fontSize="14" fontAssetId="0:7" familyName="Inter" styleName="Medium" id="101:183">
+                        <Fill id="101:184">
+                            <SolidColor colorValue="FFEFF6FF" id="101:185">
+                                <DataBindContext sourcePathIds="101:3-101:8-10:2092" propertyKey="37" nameBased="true" id="101:186"/>
+                            </SolidColor>
+                        </Fill>
+                        <TextStyleAxis tag="1869640570" axisValue="14" id="101:187"/>
+                        <TextStyleAxis tag="2003265652" axisValue="500" id="101:188"/>
+                    </TextStylePaint>
+                    <TextValueRun styleId="101:183" text="1" id="101:189">
+                        <DataBindContext sourcePathIds="101:3-101:4" propertyKey="268" nameBased="true" id="101:190"/>
+                    </TextValueRun>
+                    <LayoutParticipant layoutWidthScaleType="hug" layoutHeightScaleType="hug" id="101:323"/>
+                </Text>
+                <Text alignValue="center" fitFontSizeResizesBox="false" name="Text" id="101:173">
+                    <TextStylePaint fontSize="14" fontAssetId="0:7" familyName="Inter" styleName="Medium" id="101:191">
+                        <Fill id="101:192">
+                            <SolidColor colorValue="FFFAFAFA" id="101:193">
+                                <DataBindContext sourcePathIds="101:3-101:8-10:7422" propertyKey="37" nameBased="true" id="101:194"/>
+                            </SolidColor>
+                        </Fill>
+                        <TextStyleAxis tag="1869640570" axisValue="14" id="101:195"/>
+                        <TextStyleAxis tag="2003265652" axisValue="500" id="101:196"/>
+                    </TextStylePaint>
+                    <TextValueRun styleId="101:191" text="1" id="101:197">
+                        <DataBindContext sourcePathIds="101:3-101:4" propertyKey="268" nameBased="true" id="101:198"/>
+                    </TextValueRun>
+                    <LayoutParticipant layoutWidthScaleType="hug" layoutHeightScaleType="hug" id="101:324"/>
+                </Text>
                 <LayoutComponentStyle paddingLeft="10" paddingRight="10" paddingTop="8" paddingBottom="8" layoutAlignmentType="center" intrinsicallySizedValue="true" layoutTypeValue="stack" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="101:167"/>
             </LayoutComponent>
             <LayoutComponent styleId="101:169" opacity="0" name="Selected" id="101:168">
@@ -67,11 +67,12 @@
                 </LayoutComponentStyle>
                 <DataBindContext sourcePathIds="101:3-101:9" propertyKey="18" nameBased="true" converterId="9:145" id="101:203"/>
             </LayoutComponent>
-            <LayoutComponentStyle minWidth="40" minHeight="40" layoutAlignmentType="center" intrinsicallySizedValue="true" layoutTypeValue="stack" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="101:163"/>
+            <LayoutComponentStyle layoutAlignmentType="center" intrinsicallySizedValue="true" layoutTypeValue="stack" minWidth="40" minHeight="40" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="101:163"/>
             <SemanticData role="button" traitFlags="32" name="Semantics" id="101:208">
                 <DataBindContext sourcePathIds="101:3-101:4" propertyKey="983" nameBased="true" id="101:209"/>
                 <DataBindContext sourcePathIds="101:3-101:10" propertyKey="1004" nameBased="true" id="101:210"/>
             </SemanticData>
+            <FocusData name="Focus" id="0:15803"/>
         </LayoutComponent>
         <StateMachine name="State Machine 1" id="101:161">
             <StateMachineListener targetId="101:162" name="Cursor Off" id="101:215">
@@ -119,12 +120,14 @@
                 <ListenerInputType listenerTypeValue="click" id="101:238"/>
                 <ListenerViewModelChange fromViewModelProperty="true" fromDataBindId="101:239" id="101:240">
                     <BindablePropertyNumber id="101:241">
-                        <DataBindContext sourcePathIds="101:3-101:6-101:2" propertyKey="636" direction="true" id="101:242"/>
                         <DataBindContext sourcePathIds="101:3-101:5" propertyKey="636" id="101:239"/>
+                        <DataBindContext sourcePathIds="101:3-101:6-101:2" propertyKey="636" direction="true" id="101:242"/>
                     </BindablePropertyNumber>
                 </ListenerViewModelChange>
             </StateMachineListener>
             <StateMachineLayer name="Selected" id="101:243">
+                <AnimationState animationId="101:174" x="300" y="100" stateName="Selected" id="101:176"/>
+                <AnimationState animationId="101:175" x="160" id="101:177"/>
                 <AnyState x="400" id="101:244">
                     <StateTransition stateToId="101:176" duration="150" interpolationType="cubic" id="101:245">
                         <TransitionViewModelCondition id="101:246">
@@ -159,8 +162,6 @@
                 <EntryState id="101:262">
                     <StateTransition stateToId="101:177" id="101:263"/>
                 </EntryState>
-                <AnimationState animationId="101:175" x="160" id="101:177"/>
-                <AnimationState animationId="101:174" x="300" y="100" stateName="Selected" id="101:176"/>
             </StateMachineLayer>
         </StateMachine>
         <LinearAnimation name="Selected" id="101:174">

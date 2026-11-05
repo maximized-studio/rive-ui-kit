@@ -449,16 +449,8 @@
         <FormulaTokenParenthesisClose id="99:274"/>
         <FormulaTokenParenthesisClose id="99:275"/>
     </DataConverterFormula>
-    <DataConverterGroup name="SliderPercentText" id="2:40">
-        <DataConverterGroupItem converterId="2:41" id="2:60"/>
-        <DataConverterGroupItem converterId="2:61" id="2:62"/>
-    </DataConverterGroup>
-    <DataConverterGroup name="DisabledShowShield" id="9:90">
-        <DataConverterGroupItem converterId="9:91" id="9:92"/>
-        <DataConverterGroupItem converterId="9:93" id="9:97"/>
-    </DataConverterGroup>
     <DataConverterFormula name="PagePrev" id="101:98">
-        <FormulaTokenFunction functionType="1" id="101:100"/>
+        <FormulaTokenFunction functionType="max" id="101:100"/>
         <FormulaTokenValue id="101:101"/>
         <FormulaTokenArgumentSeparator id="101:102"/>
         <FormulaTokenInput id="101:103"/>
@@ -477,6 +469,14 @@
         <FormulaTokenValue id="101:113"/>
         <FormulaTokenParenthesisClose id="101:114"/>
     </DataConverterFormula>
+    <DataConverterGroup name="SliderPercentText" id="2:40">
+        <DataConverterGroupItem converterId="2:41" id="2:60"/>
+        <DataConverterGroupItem converterId="2:61" id="2:62"/>
+    </DataConverterGroup>
+    <DataConverterGroup name="DisabledShowShield" id="9:90">
+        <DataConverterGroupItem converterId="9:91" id="9:92"/>
+        <DataConverterGroupItem converterId="9:93" id="9:97"/>
+    </DataConverterGroup>
     <DataConverterGroup name="DisabledNoShadow" id="9:131">
         <DataConverterGroupItem converterId="9:132" id="9:133"/>
         <DataConverterGroupItem converterId="9:134" id="9:142"/>

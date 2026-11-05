@@ -12,7 +12,7 @@
                 <LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="101:288"/>
             </LayoutComponent>
             <LayoutComponent styleId="101:292" name="Pages" id="101:291">
-                <ArtboardComponentList participatesInLayout="true" name="Pages" id="101:299">
+                <ArtboardComponentList name="Pages" participatesInLayout="true" id="101:299">
                     <DataBindContext sourcePathIds="101:11-101:14" propertyKey="800" nameBased="true" id="101:300"/>
                 </ArtboardComponentList>
                 <LayoutComponentStyle gapHorizontal="2" layoutAlignmentType="center" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="101:292"/>
@@ -34,8 +34,8 @@
                 <ListenerInputType listenerTypeValue="click" id="101:308"/>
                 <ListenerViewModelChange fromViewModelProperty="true" fromDataBindId="101:306" id="101:309">
                     <BindablePropertyNumber id="101:310">
-                        <DataBindContext sourcePathIds="101:11-101:15-101:2" propertyKey="636" direction="true" id="101:311"/>
                         <DataBindContext sourcePathIds="101:11-101:15-101:2" propertyKey="636" converterId="101:98" id="101:306"/>
+                        <DataBindContext sourcePathIds="101:11-101:15-101:2" propertyKey="636" direction="true" id="101:311"/>
                     </BindablePropertyNumber>
                 </ListenerViewModelChange>
             </StateMachineListener>
@@ -43,18 +43,18 @@
                 <ListenerInputType listenerTypeValue="click" id="101:314"/>
                 <ListenerViewModelChange fromViewModelProperty="true" fromDataBindId="101:312" id="101:315">
                     <BindablePropertyNumber id="101:316">
-                        <DataBindContext sourcePathIds="101:11-101:15-101:2" propertyKey="636" direction="true" id="101:317"/>
                         <DataBindContext sourcePathIds="101:11-101:15-101:2" propertyKey="636" converterId="101:99" id="101:312"/>
+                        <DataBindContext sourcePathIds="101:11-101:15-101:2" propertyKey="636" direction="true" id="101:317"/>
                     </BindablePropertyNumber>
                 </ListenerViewModelChange>
             </StateMachineListener>
             <StateMachineLayer name="Layer 1" id="101:318">
+                <AnimationState animationId="101:293" x="160" id="101:294"/>
                 <AnyState x="400" id="101:319"/>
                 <ExitState x="480" id="101:320"/>
                 <EntryState id="101:321">
                     <StateTransition stateToId="101:294" id="101:322"/>
                 </EntryState>
-                <AnimationState animationId="101:293" x="160" id="101:294"/>
             </StateMachineLayer>
         </StateMachine>
         <LinearAnimation name="Timeline 1" id="101:293"/>
