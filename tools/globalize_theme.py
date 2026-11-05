@@ -22,7 +22,9 @@ files = {f: open(f, encoding='utf-8').read() for f in sorted(glob.glob(os.path.j
 everything = ''.join(files.values())
 refs = set(re.findall(r'<ViewModelPropertyViewModel viewModelReferenceId="%s"[^>]*\bid="([^"]+)"' % THEME, everything))
 used_ids = set(re.findall(r'\bid="([^"]+)"', everything))
-already = 'name="Theme Driver" id="%s"' % DRIVER_ID[0] in everything
+# tooltip_placement.py later turns the driver into a fill overlay with new ids: that counts as placed too
+placed = lambda s: 'id="%s"' % DRIVER_ID[0] in s or '<NestedArtboardLayout artboardId="%s"' % DRIVER_AB in s
+already = 'name="Theme Driver" id="%s"' % DRIVER_ID[0] in everything or placed(everything)
 for i in DRIVER_ID:
     assert already or i not in used_ids, 'id %s is already taken; pick another block for DRIVER_ID' % i
 
@@ -59,7 +61,7 @@ for f, s in files.items():
     if name != SHOWCASE:
         s, n = NESTED_DRIVER.subn('', s)
         stats['drivers'] += n
-    elif 'id="%s"' % DRIVER_ID[0] not in s:
+    elif not placed(s):
         cover = re.search(r'\n[ \t]*<Image [^>]*name="Cover \(thumbnail only\)"[^>]*/>', s)
         at = cover.end() if cover else s.index('>', s.index('<Artboard ')) + 1
         s = s[:at] + ('\n        <NestedArtboard artboardId="%s" name="Theme Driver" id="%s">'
