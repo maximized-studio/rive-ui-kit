@@ -1,5 +1,5 @@
 <Rive version="1" kind="fragment">
-    <Artboard defaultStateMachineId="38:375" viewModelId="38:330" viewModelInstanceId="38:624" isComponent="true" includeInExport="false" spaceId="1:5601" width="280" height="40" styleId="38:373" x="2552" name="Segmented Control" id="38:370">
+    <Artboard defaultStateMachineId="38:375" viewModelId="38:330" viewModelInstanceId="38:624" isComponent="true" includeInExport="false" spaceId="1:5601" width="280" height="40" x="1200" y="1084" styleId="38:373" name="Segmented Control" id="38:370">
         <Fill fillRule="clockwise" id="38:371">
             <SolidColor colorValue="00000000" id="38:372"/>
         </Fill>

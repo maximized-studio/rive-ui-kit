@@ -1,5 +1,5 @@
 <Rive version="1" kind="fragment">
-    <Artboard defaultStateMachineId="10:3623" viewModelId="10:3612" viewModelInstanceId="0:0" isComponent="true" includeInExport="false" spaceId="1:5601" width="306" height="282" styleId="10:3621" x="1540" name="Tile" id="10:3618">
+    <Artboard defaultStateMachineId="10:3623" viewModelId="10:3612" viewModelInstanceId="0:0" isComponent="true" includeInExport="false" spaceId="1:5601" width="306" height="282" x="-1806" y="1694" styleId="10:3621" name="Tile" id="10:3618">
         <DataBindContext sourcePathIds="10:3612-10:4589-10:4581" propertyKey="7" converterId="10:1654" id="10:4728"/>
         <Shape isTargetOpaque="true" name="Hit Shield" id="10:6070">
             <Rectangle width="291" height="282" originX="0" originY="0" id="10:6071">

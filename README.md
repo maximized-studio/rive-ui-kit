@@ -28,7 +28,7 @@ The components carry Rive semantics, so screen readers get a real accessibility 
 |---|---|---|
 | Avatar | `image` | label |
 | Badge, Label | `text` | text |
-| Button, Dropdown, Page Item | `button` | label |
+| Button, Dropdown, Page Item | `button` | label (the page number) |
 | Button Group, Checkbox Group, Pagination, Switch List | `group` | group label |
 | Checkbox | `checkbox` | label, checked |
 | List Item | `list` / `listItem` | label |
@@ -52,11 +52,12 @@ A row of kit Buttons joined into one control: the outer corners follow the theme
 
 ## Pagination
 
-Previous and next Buttons around a row of page items. The current page is filled with the brand colour.
+Previous and next Buttons around up to seven page buttons. Set two numbers and the component does the rest.
 
-- View model `Pagination`: `selection` (a `PageSelection`; `selection/page` is the current page), `pageCount`, `pages` (a list of `PageItem`), `label` (screen reader name), `a11yHidden`, `theme`, and `_prev` / `_next` (the two Button instances).
-- `PageItem`: `label` (the visible text), `value` (the page it opens), `group` (the same `PageSelection` as the Pagination), `disabled`. For a gap, add an item with label `…` and `disabled = true`.
-- Clicking a page sets `selection/page` to its `value`; previous and next step by one and stop at 1 and `pageCount`. Listen to `selection/page` in your app to load that page.
+- View model `Pagination`: `page` (the current page, two-way: clicks write it), `pageCount`, `label` (screen reader name), `a11yHidden`, `theme`.
+- Up to seven pages are shown as they are. With more, the row keeps the first and last page and three around the current one, with `…` for the gaps: `1 … 4 5 6 … 20`, `1 2 3 4 5 … 20`, `1 … 16 17 18 19 20`.
+- Previous and next step by one and are disabled on the first and last page.
+- Listen to `page` in your app to load that page.
 
 ## Pointer cursor
 
