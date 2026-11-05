@@ -4017,7 +4017,7 @@
     </Folder>
     <FontAsset isCustom="false" includeTypeValue="custom" includedUnicodes="U+0020-007E,U+00A0-00FF,U+2018-201D,U+2026,U+20AC" assetId="4228759" name="Inter" groupId="1:2106" id="0:7"/>
     <ImageAsset file="Avatar.png" height="128" width="128" assetId="5251943" name="Avatar" groupId="1:2093" id="1:2091"/>
-    <ImageAsset file="Showcase Cover.webp" format="webp" height="1024" width="1440" assetId="7319548" name="Showcase Cover" id="42:629"/>
+    <ImageAsset file="Showcase Cover.webp" format="webp" height="1024" width="1440" assetId="7319555" name="Showcase Cover" id="42:629"/>
     <RenderPreset name="Preset 1" artboardId="10:110" format="png_sequence" width="1440" height="1024" id="57:1"/>
     <Space name="Space 1" colorValue="FF2F2F2F" id="1:5601"/>
     <TransitionPropertyViewModelComparator id="1:2359"/>
