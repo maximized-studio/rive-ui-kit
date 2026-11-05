@@ -4488,12 +4488,22 @@
         <ViewModelPropertyViewModel viewModelReferenceId="38:330" name="roundness" id="38:821"/>
         <ViewModelPropertyViewModel viewModelReferenceId="38:330" name="shadow" id="38:823"/>
         <ViewModelPropertyViewModel viewModelReferenceId="38:330" name="state" id="38:825"/>
+        <ViewModelPropertyBoolean name="_modeTip" id="113:1"/>
+        <ViewModelPropertyBoolean name="_brandTip" id="113:2"/>
+        <ViewModelPropertyBoolean name="_roundnessTip" id="113:3"/>
+        <ViewModelPropertyBoolean name="_shadowTip" id="113:4"/>
+        <ViewModelPropertyBoolean name="_stateTip" id="113:5"/>
         <ViewModelInstance exports="true" name="Default" id="38:827">
             <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="38:817" id="38:828"/>
             <ViewModelInstanceViewModel propertyValue="38:667" viewModelPropertyId="38:819" id="38:829"/>
             <ViewModelInstanceViewModel propertyValue="38:715" viewModelPropertyId="38:821" id="38:830"/>
             <ViewModelInstanceViewModel propertyValue="38:765" viewModelPropertyId="38:823" id="38:831"/>
             <ViewModelInstanceViewModel propertyValue="38:797" viewModelPropertyId="38:825" id="38:832"/>
+            <ViewModelInstanceBoolean viewModelPropertyId="113:1" id="113:6"/>
+            <ViewModelInstanceBoolean viewModelPropertyId="113:2" id="113:7"/>
+            <ViewModelInstanceBoolean viewModelPropertyId="113:3" id="113:8"/>
+            <ViewModelInstanceBoolean viewModelPropertyId="113:4" id="113:9"/>
+            <ViewModelInstanceBoolean viewModelPropertyId="113:5" id="113:10"/>
         </ViewModelInstance>
     </ViewModel>
     <ViewModel defaultInstanceId="41:863" name="NavItem" id="41:862">
