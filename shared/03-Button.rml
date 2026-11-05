@@ -87,13 +87,13 @@
                 </Shape>
                 <Node name="Art" id="116:80">
                     <Shape x="8" y="8" opacity="0" name="copy" id="116:22">
-                        <Rectangle x="2.0" y="2.0" width="9.333" height="9.333" cornerRadiusTL="1.333" id="116:15"/>
+                        <Rectangle cornerRadiusTL="1.3329999" width="9.3330002" height="9.3330002" x="2" y="2" id="116:15"/>
                         <PointsPath id="116:16">
-                            <StraightVertex x="-5.333" y="2.667" id="116:17"/>
-                            <StraightVertex x="-6.667" y="2.667" radius="1.333" id="116:18"/>
-                            <StraightVertex x="-6.667" y="-6.667" radius="1.333" id="116:19"/>
-                            <StraightVertex x="2.667" y="-6.667" radius="1.333" id="116:20"/>
-                            <StraightVertex x="2.667" y="-5.333" id="116:21"/>
+                            <StraightVertex x="-5.3330002" y="2.6670001" id="116:17"/>
+                            <StraightVertex radius="1.3329999" x="-6.6669998" y="2.6670001" id="116:18"/>
+                            <StraightVertex radius="1.3329999" x="-6.6669998" y="-6.6669998" id="116:19"/>
+                            <StraightVertex radius="1.3329999" x="2.6670001" y="-6.6669998" id="116:20"/>
+                            <StraightVertex x="2.6670001" y="-5.3330002" id="116:21"/>
                         </PointsPath>
                         <Stroke thickness="1.75" cap="round" join="round" id="116:23">
                             <SolidColor colorValue="FFFFFFFF" id="116:24">
@@ -115,19 +115,19 @@
                         <DataBindContext sourcePathIds="1:151-33:164" propertyKey="18" nameBased="true" converterId="10:2490" id="116:34"/>
                     </Shape>
                     <Shape x="8" y="8" opacity="0" name="scissors" id="116:46">
-                        <Ellipse x="-4.0" y="-4.0" width="4.0" height="4.0" id="116:35"/>
-                        <Ellipse x="-4.0" y="4.0" width="4.0" height="4.0" id="116:36"/>
-                        <PointsPath id="116:37">
-                            <StraightVertex x="5.333" y="-5.333" id="116:38"/>
-                            <StraightVertex x="-2.587" y="2.587" id="116:39"/>
+                        <Ellipse width="4" height="4" x="-4" y="-4" id="116:35"/>
+                        <Ellipse width="4" height="4" x="-4" y="4" id="116:36"/>
+                        <PointsPath isClockwise="false" id="116:37">
+                            <StraightVertex x="5.3330002" y="-5.3330002" id="116:38"/>
+                            <StraightVertex x="-2.5869999" y="2.5869999" id="116:39"/>
                         </PointsPath>
                         <PointsPath id="116:40">
                             <StraightVertex x="1.647" y="1.653" id="116:41"/>
-                            <StraightVertex x="5.333" y="5.333" id="116:42"/>
+                            <StraightVertex x="5.3330002" y="5.3330002" id="116:42"/>
                         </PointsPath>
-                        <PointsPath id="116:43">
-                            <StraightVertex x="-2.587" y="-2.587" id="116:44"/>
-                            <StraightVertex x="0.0" y="0.0" id="116:45"/>
+                        <PointsPath isClockwise="false" id="116:43">
+                            <StraightVertex x="-2.5869999" y="-2.5869999" id="116:44"/>
+                            <StraightVertex id="116:45"/>
                         </PointsPath>
                         <Stroke thickness="1.75" cap="round" join="round" id="116:47">
                             <SolidColor colorValue="FFFFFFFF" id="116:48">
@@ -149,14 +149,14 @@
                         <DataBindContext sourcePathIds="1:151-33:164" propertyKey="18" nameBased="true" converterId="10:2504" id="116:58"/>
                     </Shape>
                     <Shape x="8" y="8" opacity="0" name="clipboard" id="116:67">
-                        <Rectangle x="0.0" y="-5.333" width="5.333" height="2.667" cornerRadiusTL="0.667" id="116:59"/>
+                        <Rectangle cornerRadiusTL="0.667" width="5.3330002" height="2.6670001" y="-5.3330002" id="116:59"/>
                         <PointsPath id="116:60">
-                            <StraightVertex x="2.667" y="-5.333" id="116:61"/>
-                            <StraightVertex x="5.333" y="-5.333" radius="1.333" id="116:62"/>
-                            <StraightVertex x="5.333" y="6.667" radius="1.333" id="116:63"/>
-                            <StraightVertex x="-5.333" y="6.667" radius="1.333" id="116:64"/>
-                            <StraightVertex x="-5.333" y="-5.333" radius="1.333" id="116:65"/>
-                            <StraightVertex x="-2.667" y="-5.333" id="116:66"/>
+                            <StraightVertex x="2.6670001" y="-5.3330002" id="116:61"/>
+                            <StraightVertex radius="1.3329999" x="5.3330002" y="-5.3330002" id="116:62"/>
+                            <StraightVertex radius="1.3329999" x="5.3330002" y="6.6669998" id="116:63"/>
+                            <StraightVertex radius="1.3329999" x="-5.3330002" y="6.6669998" id="116:64"/>
+                            <StraightVertex radius="1.3329999" x="-5.3330002" y="-5.3330002" id="116:65"/>
+                            <StraightVertex x="-2.6670001" y="-5.3330002" id="116:66"/>
                         </PointsPath>
                         <Stroke thickness="1.75" cap="round" join="round" id="116:68">
                             <SolidColor colorValue="FFFFFFFF" id="116:69">

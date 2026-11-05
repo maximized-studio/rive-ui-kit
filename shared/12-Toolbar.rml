@@ -746,7 +746,7 @@
                     <LayoutComponent clip="true" height="32" styleId="115:73" name="Canvas Slider Slot" id="115:76">
                         <LayoutComponentStyle layoutWidthScaleType="fill" widthUnitsValue="auto" id="115:73"/>
                         <LayoutComponent styleId="115:75" name="Track Pin" id="115:74">
-                            <LayoutComponentStyle positionLeft="0" positionBottom="8" positionLeftUnitsValue="points" positionBottomUnitsValue="points" positionTypeValue="absolute" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="115:75"/>
+                            <LayoutComponentStyle positionBottom="8" positionLeftUnitsValue="points" positionBottomUnitsValue="points" positionTypeValue="absolute" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="115:75"/>
                             <NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="1:1870" dataBindPathIds="38:815-115:1" name="Slider" id="115:77">
                                 <NestedStateMachine animationId="1:1875" id="115:78"/>
                             </NestedArtboardLayout>

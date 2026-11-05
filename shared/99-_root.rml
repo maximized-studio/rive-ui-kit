@@ -263,13 +263,6 @@
         <FormulaTokenOperation operationType="multiply" id="42:374"/>
         <FormulaTokenInput id="42:375"/>
     </DataConverterFormula>
-    <DataConverterFormula name="CanvasOpacity" id="115:15">
-        <FormulaTokenInput id="115:16"/>
-        <FormulaTokenOperation operationType="multiply" id="115:17"/>
-        <FormulaTokenValue operationValue="0.0054347827" id="115:18"/>
-        <FormulaTokenOperation operationType="subtract" id="115:19"/>
-        <FormulaTokenValue operationValue="0.04347826" id="115:20"/>
-    </DataConverterFormula>
     <DataConverterFormula name="PanelFullTmp" id="42:469">
         <FormulaTokenValue operationValue="240" id="42:470"/>
         <FormulaTokenOperation id="42:471"/>
@@ -1193,6 +1186,13 @@
         <FormulaTokenParenthesisClose id="112:133"/>
         <FormulaTokenParenthesisClose id="112:134"/>
         <FormulaTokenParenthesisClose id="112:135"/>
+    </DataConverterFormula>
+    <DataConverterFormula name="CanvasOpacity" id="115:15">
+        <FormulaTokenInput id="115:16"/>
+        <FormulaTokenOperation operationType="multiply" id="115:17"/>
+        <FormulaTokenValue operationValue="0.0054347827" id="115:18"/>
+        <FormulaTokenOperation operationType="subtract" id="115:19"/>
+        <FormulaTokenValue operationValue="0.043478262" id="115:20"/>
     </DataConverterFormula>
     <DataConverterGroup name="SliderPercentText" id="2:40">
         <DataConverterGroupItem converterId="2:41" id="2:60"/>
@@ -3549,21 +3549,6 @@
                     <FormulaTokenParenthesisClose id="10:2516"/>
                     <FormulaTokenParenthesisClose id="10:2517"/>
                 </DataConverterFormula>
-                <DataConverterFormula name="Is6" groupId="1:2674" id="116:1">
-                    <FormulaTokenFunction functionType="max" id="116:2"/>
-                    <FormulaTokenValue operationValue="0" id="116:3"/>
-                    <FormulaTokenArgumentSeparator id="116:4"/>
-                    <FormulaTokenValue id="116:5"/>
-                    <FormulaTokenOperation operationType="subtract" id="116:6"/>
-                    <FormulaTokenFunction functionType="pow" id="116:7"/>
-                    <FormulaTokenInput id="116:8"/>
-                    <FormulaTokenOperation operationType="subtract" id="116:9"/>
-                    <FormulaTokenValue operationValue="6" id="116:10"/>
-                    <FormulaTokenArgumentSeparator id="116:11"/>
-                    <FormulaTokenValue operationValue="2" id="116:12"/>
-                    <FormulaTokenParenthesisClose id="116:13"/>
-                    <FormulaTokenParenthesisClose id="116:14"/>
-                </DataConverterFormula>
                 <DataConverterFormula name="Hover1" groupId="1:2674" id="10:4745">
                     <FormulaTokenFunction functionType="max" id="10:4746"/>
                     <FormulaTokenValue operationValue="0" id="10:4747"/>
@@ -3653,6 +3638,21 @@
                     <FormulaTokenValue operationValue="2" id="10:4826"/>
                     <FormulaTokenParenthesisClose id="10:4827"/>
                     <FormulaTokenParenthesisClose id="10:4828"/>
+                </DataConverterFormula>
+                <DataConverterFormula name="Is6" groupId="1:2674" id="116:1">
+                    <FormulaTokenFunction functionType="max" id="116:2"/>
+                    <FormulaTokenValue operationValue="0" id="116:3"/>
+                    <FormulaTokenArgumentSeparator id="116:4"/>
+                    <FormulaTokenValue id="116:5"/>
+                    <FormulaTokenOperation operationType="subtract" id="116:6"/>
+                    <FormulaTokenFunction functionType="pow" id="116:7"/>
+                    <FormulaTokenInput id="116:8"/>
+                    <FormulaTokenOperation operationType="subtract" id="116:9"/>
+                    <FormulaTokenValue operationValue="6" id="116:10"/>
+                    <FormulaTokenArgumentSeparator id="116:11"/>
+                    <FormulaTokenValue operationValue="2" id="116:12"/>
+                    <FormulaTokenParenthesisClose id="116:13"/>
+                    <FormulaTokenParenthesisClose id="116:14"/>
                 </DataConverterFormula>
             </DataFolder>
         </DataFolder>
