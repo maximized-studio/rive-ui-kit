@@ -170,7 +170,7 @@ Do not publish a `PREVIEW` build: an embedded custom font blocks publishing to t
 - `mode.Light` / `mode.Dark`: surface, border and text tokens (`_bg`, `_surface`, `_surfaceMuted`, `_border`, `_text`, `_textMuted`, …). Any token may be left out.
 - Button tokens: `_primaryBg`, `_primaryHover`, `_primaryText`, `_dangerBg`, `_dangerHover`, `_dangerText` in `mode.Light` / `mode.Dark`.
 - Semantic tokens for the Alert: `_successBg`, `_successBorder`, `_successText` and the same for `_warning…` and `_error…` go in `mode.Light` / `mode.Dark`. The `_info…` tokens follow the brand ramp (Light 50/200/700, Dark 950/800/400).
-- `brands`: one ramp of 11 steps (50–950) per brand slot (`Blue`, `Violet`, `Emerald`, `Orange`, `Rose`, `Zinc`). `Zinc` is the Inverse swatch, the first one in the Theme panel and the default brand.
+- `brands`: one ramp of 11 steps (50–950) per brand slot (`Blue`, `Violet`, `Emerald`, `Orange`, `Rose`, `Zinc`). `Zinc` is the Inverse swatch, shown first in the Theme panel; the default brand is `Blue`.
 - `defaults` (optional): starting `roundness` and `shadow` (0–3). They are baked into the written values, so the editor canvas and the Community thumbnail show them too.
 
 `tools/retheme.py` turns the palette into the theme's Theme Driver. Known gap: the brand swatches in the Theme panel keep their default colours.

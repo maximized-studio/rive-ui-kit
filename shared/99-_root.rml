@@ -3935,18 +3935,18 @@
             <ViewModelInstance exports="true" name="Default" id="10:63">
                 <ViewModelInstanceNumber propertyValue="2" viewModelPropertyId="10:2086" id="10:2087"/>
                 <ViewModelInstanceNumber propertyValue="1" viewModelPropertyId="10:2088" id="10:2089"/>
-                <ViewModelInstanceNumber propertyValue="5" viewModelPropertyId="10:2090" id="10:2091"/>
-                <ViewModelInstanceColor propertyValue="FF18181B" viewModelPropertyId="10:2092" id="10:2093"/>
-                <ViewModelInstanceColor propertyValue="FF27272A" viewModelPropertyId="10:2094" id="10:2095"/>
-                <ViewModelInstanceColor propertyValue="FF3F3F46" viewModelPropertyId="10:2096" id="10:2097"/>
-                <ViewModelInstanceColor propertyValue="FF52525B" viewModelPropertyId="10:2098" id="10:2099"/>
-                <ViewModelInstanceColor propertyValue="FF71717A" viewModelPropertyId="10:2100" id="10:2101"/>
-                <ViewModelInstanceColor propertyValue="FFA1A1AA" viewModelPropertyId="10:2102" id="10:2103"/>
-                <ViewModelInstanceColor propertyValue="FFFAFAFA" viewModelPropertyId="10:2104" id="10:2105"/>
-                <ViewModelInstanceColor propertyValue="FFE4E4E7" viewModelPropertyId="10:2106" id="10:2107"/>
-                <ViewModelInstanceColor propertyValue="FFD4D4D8" viewModelPropertyId="10:2108" id="10:2109"/>
-                <ViewModelInstanceColor propertyValue="FFF4F4F5" viewModelPropertyId="10:2110" id="10:2111"/>
-                <ViewModelInstanceColor propertyValue="FFFFFFFF" viewModelPropertyId="10:2112" id="10:2113"/>
+                <ViewModelInstanceNumber viewModelPropertyId="10:2090" id="10:2091"/>
+                <ViewModelInstanceColor propertyValue="FFEFF6FF" viewModelPropertyId="10:2092" id="10:2093"/>
+                <ViewModelInstanceColor propertyValue="FF172554" viewModelPropertyId="10:2094" id="10:2095"/>
+                <ViewModelInstanceColor propertyValue="FF1E3A8A" viewModelPropertyId="10:2096" id="10:2097"/>
+                <ViewModelInstanceColor propertyValue="FF93C5FD" viewModelPropertyId="10:2098" id="10:2099"/>
+                <ViewModelInstanceColor propertyValue="FF60A5FA" viewModelPropertyId="10:2100" id="10:2101"/>
+                <ViewModelInstanceColor propertyValue="FF3B82F6" viewModelPropertyId="10:2102" id="10:2103"/>
+                <ViewModelInstanceColor propertyValue="FF2563EB" viewModelPropertyId="10:2104" id="10:2105"/>
+                <ViewModelInstanceColor propertyValue="FF1D4ED8" viewModelPropertyId="10:2106" id="10:2107"/>
+                <ViewModelInstanceColor propertyValue="FF1E40AF" viewModelPropertyId="10:2108" id="10:2109"/>
+                <ViewModelInstanceColor propertyValue="FF1E3A8A" viewModelPropertyId="10:2110" id="10:2111"/>
+                <ViewModelInstanceColor propertyValue="FF172554" viewModelPropertyId="10:2112" id="10:2113"/>
                 <ViewModelInstanceNumber viewModelPropertyId="10:4743" id="10:4744"/>
                 <ViewModelInstanceNumber propertyValue="1" viewModelPropertyId="10:7400" id="10:7401"/>
                 <ViewModelInstanceColor propertyValue="FF09090B" viewModelPropertyId="10:7402" id="10:7403"/>
