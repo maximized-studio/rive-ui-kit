@@ -15,9 +15,11 @@ trap 'rm -rf $tmp' EXIT
 if [[ -s $tmp/kit/99-_root.rml ]]; then
   rm -f shared/*
   cp $tmp/kit/[0-9]*.rml shared/
+  cp $tmp/kit/*.luau shared/ 2>/dev/null || true
 elif [[ -s $tmp/kit/scene.rml ]] && grep -q '<Artboard ' $tmp/kit/scene.rml; then
   rm -f shared/*
   python3 tools/split.py $tmp/kit/scene.rml shared >/dev/null
+  cp $tmp/kit/*.luau shared/ 2>/dev/null || true
 else
   echo "pull returned no markup; shared/ left untouched"; exit 1
 fi

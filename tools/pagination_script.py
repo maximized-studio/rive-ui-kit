@@ -14,13 +14,14 @@ import glob, os, re, shutil, sys
 d = sys.argv[1]
 here = os.path.dirname(os.path.abspath(__file__))
 SCRIPT = 'PaginationPages.luau'
+SCRIPT_FILE = 'Pagination Pages.luau'  # the name a pull gives it (the ScriptAsset's name)
 VM, ARTBOARD_FILE, INSTANCE = '102:7', '27-Pagination.rml', '102:20'
 IDS = dict(prop='912:1', value='912:2', asset='912:3', host='912:4', script='912:5', style='912:6', list='912:7', bind='912:8')
 TRIGGERS = ['102:15', '102:16', '102:17', '102:18']
 
 root_p, pg_p = os.path.join(d, '99-_root.rml'), os.path.join(d, ARTBOARD_FILE)
 root, pg = open(root_p, encoding='utf-8').read(), open(pg_p, encoding='utf-8').read()
-shutil.copy(os.path.join(here, 'scripts', SCRIPT), os.path.join(d, SCRIPT))
+shutil.copy(os.path.join(here, 'scripts', SCRIPT), os.path.join(d, SCRIPT_FILE))
 if 'id="%s"' % IDS['prop'] in root:
     print('pagination_script: already converted (script file refreshed)')
     sys.exit(0)
@@ -59,7 +60,7 @@ for t in TRIGGERS:
     root = re.sub(r'\n[ \t]*<ViewModelPropertyTrigger [^>]*\bid="%s"/>' % t, '', root)
     root = re.sub(r'\n[ \t]*<ViewModelInstanceTrigger [^>]*viewModelPropertyId="%s"[^>]*/>' % t, '', root)
 first = re.search(r'\n[ \t]*<(AssetGroup|ComponentAsset|ScriptAsset)\b', root)
-root = root[:first.start()] + '\n    <ScriptAsset file="%s" name="Pagination Pages" id="%s"/>' % (SCRIPT, IDS['asset']) + root[first.start():]
+root = root[:first.start()] + '\n    <ScriptAsset file="%s" name="Pagination Pages" id="%s"/>' % (SCRIPT_FILE, IDS['asset']) + root[first.start():]
 
 # artboard: one list instead of seven slots, the script host, no trigger relay
 first_slot = re.search(r'\n[ \t]*<LayoutComponent [^>]*name="Slot 1"', pg).start()
