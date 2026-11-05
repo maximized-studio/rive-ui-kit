@@ -1,0 +1,328 @@
+<Rive version="1" kind="fragment">
+    <Artboard defaultStateMachineId="102:776" viewModelId="102:7" viewModelInstanceId="102:20" isComponent="true" spaceId="1:5601" width="440" height="40" styleId="102:775" x="1200" y="683" name="Pagination" id="102:774">
+        <Fill fillRule="clockwise" id="102:944">
+            <SolidColor colorValue="00000000" id="102:945"/>
+        </Fill>
+        <LayoutComponentStyle layoutAlignmentType="center" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="102:775"/>
+        <LayoutComponent styleId="102:778" name="Row" id="102:777">
+            <LayoutComponent styleId="102:780" name="Previous" id="102:779">
+                <NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="1:122" isStateful="true" name="Button" id="102:946">
+                    <NestedStateMachine animationId="1:127" id="102:947"/>
+                    <ViewModelInstance viewModelId="1:151" exports="true" name="Previous Button" id="102:948">
+                        <ViewModelInstanceString propertyValue="Previous" viewModelPropertyId="1:549" id="102:949"/>
+                        <ViewModelInstanceBoolean viewModelPropertyId="1:587" id="102:950"/>
+                        <ViewModelInstanceTrigger viewModelPropertyId="1:1321" id="102:951"/>
+                        <ViewModelInstanceBoolean viewModelPropertyId="7:1" id="102:952">
+                            <DataBindContext sourcePathIds="102:7-102:13" propertyKey="593" nameBased="true" id="102:953"/>
+                        </ViewModelInstanceBoolean>
+                        <ViewModelInstanceBoolean viewModelPropertyId="7:3" id="102:954"/>
+                        <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="10:3108" id="102:955"/>
+                        <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="33:159" id="102:956"/>
+                        <ViewModelInstanceNumber propertyValue="2" viewModelPropertyId="33:164" id="102:957"/>
+                        <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="33:169" id="102:958"/>
+                        <ViewModelInstanceNumber viewModelPropertyId="99:100" id="102:959"/>
+                    </ViewModelInstance>
+                </NestedArtboardLayout>
+                <LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="102:780"/>
+            </LayoutComponent>
+            <LayoutComponent styleId="102:784" name="Pages" id="102:783">
+                <LayoutComponent styleId="102:854" name="Slot 1" id="102:853">
+                    <NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="102:634" isStateful="true" name="Page Item" id="102:855">
+                        <NestedStateMachine animationId="102:636" id="102:856"/>
+                        <ViewModelInstance viewModelId="102:1" exports="true" name="Slot 1" id="102:857">
+                            <ViewModelInstanceNumber propertyValue="1" viewModelPropertyId="102:2" id="102:858">
+                                <DataBindContext sourcePathIds="102:7-102:8" propertyKey="575" nameBased="true" converterId="102:21" id="102:859"/>
+                            </ViewModelInstanceNumber>
+                            <ViewModelInstanceNumber propertyValue="5" viewModelPropertyId="102:3" id="102:860">
+                                <DataBindContext sourcePathIds="102:7-102:8" propertyKey="575" twoWay="true" nameBased="true" id="102:861"/>
+                            </ViewModelInstanceNumber>
+                            <ViewModelInstanceBoolean viewModelPropertyId="102:4" id="102:862"/>
+                            <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="102:5" id="102:863"/>
+                            <ViewModelInstanceBoolean viewModelPropertyId="102:6" id="102:864"/>
+                        </ViewModelInstance>
+                    </NestedArtboardLayout>
+                    <LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="102:854">
+                        <DataBindContext sourcePathIds="102:7-102:8" propertyKey="596" nameBased="true" converterId="102:23" id="102:865"/>
+                    </LayoutComponentStyle>
+                </LayoutComponent>
+                <LayoutComponent styleId="102:867" name="Slot 2" id="102:866">
+                    <NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="102:634" isStateful="true" name="Page Item" id="102:868">
+                        <NestedStateMachine animationId="102:636" id="102:869"/>
+                        <ViewModelInstance viewModelId="102:1" exports="true" name="Slot 2" id="102:870">
+                            <ViewModelInstanceNumber propertyValue="2" viewModelPropertyId="102:2" id="102:871">
+                                <DataBindContext sourcePathIds="102:7-102:8" propertyKey="575" nameBased="true" converterId="102:53" id="102:872"/>
+                            </ViewModelInstanceNumber>
+                            <ViewModelInstanceNumber propertyValue="5" viewModelPropertyId="102:3" id="102:873">
+                                <DataBindContext sourcePathIds="102:7-102:8" propertyKey="575" twoWay="true" nameBased="true" id="102:874"/>
+                            </ViewModelInstanceNumber>
+                            <ViewModelInstanceBoolean viewModelPropertyId="102:4" id="102:875"/>
+                            <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="102:5" id="102:876"/>
+                            <ViewModelInstanceBoolean viewModelPropertyId="102:6" id="102:877"/>
+                        </ViewModelInstance>
+                    </NestedArtboardLayout>
+                    <LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="102:867">
+                        <DataBindContext sourcePathIds="102:7-102:8" propertyKey="596" nameBased="true" converterId="102:112" id="102:878"/>
+                    </LayoutComponentStyle>
+                </LayoutComponent>
+                <LayoutComponent styleId="102:880" name="Slot 3" id="102:879">
+                    <NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="102:634" isStateful="true" name="Page Item" id="102:881">
+                        <NestedStateMachine animationId="102:636" id="102:882"/>
+                        <ViewModelInstance viewModelId="102:1" exports="true" name="Slot 3" id="102:883">
+                            <ViewModelInstanceNumber propertyValue="3" viewModelPropertyId="102:2" id="102:884">
+                                <DataBindContext sourcePathIds="102:7-102:8" propertyKey="575" nameBased="true" converterId="102:142" id="102:885"/>
+                            </ViewModelInstanceNumber>
+                            <ViewModelInstanceNumber propertyValue="5" viewModelPropertyId="102:3" id="102:886">
+                                <DataBindContext sourcePathIds="102:7-102:8" propertyKey="575" twoWay="true" nameBased="true" id="102:887"/>
+                            </ViewModelInstanceNumber>
+                            <ViewModelInstanceBoolean viewModelPropertyId="102:4" id="102:888"/>
+                            <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="102:5" id="102:889"/>
+                            <ViewModelInstanceBoolean viewModelPropertyId="102:6" id="102:890"/>
+                        </ViewModelInstance>
+                    </NestedArtboardLayout>
+                    <LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="102:880">
+                        <DataBindContext sourcePathIds="102:7-102:8" propertyKey="596" nameBased="true" converterId="102:189" id="102:891"/>
+                    </LayoutComponentStyle>
+                </LayoutComponent>
+                <LayoutComponent styleId="102:893" name="Slot 4" id="102:892">
+                    <NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="102:634" isStateful="true" name="Page Item" id="102:894">
+                        <NestedStateMachine animationId="102:636" id="102:895"/>
+                        <ViewModelInstance viewModelId="102:1" exports="true" name="Slot 4" id="102:896">
+                            <ViewModelInstanceNumber propertyValue="4" viewModelPropertyId="102:2" id="102:897">
+                                <DataBindContext sourcePathIds="102:7-102:8" propertyKey="575" nameBased="true" converterId="102:219" id="102:898"/>
+                            </ViewModelInstanceNumber>
+                            <ViewModelInstanceNumber propertyValue="5" viewModelPropertyId="102:3" id="102:899">
+                                <DataBindContext sourcePathIds="102:7-102:8" propertyKey="575" twoWay="true" nameBased="true" id="102:900"/>
+                            </ViewModelInstanceNumber>
+                            <ViewModelInstanceBoolean viewModelPropertyId="102:4" id="102:901"/>
+                            <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="102:5" id="102:902"/>
+                            <ViewModelInstanceBoolean viewModelPropertyId="102:6" id="102:903"/>
+                        </ViewModelInstance>
+                    </NestedArtboardLayout>
+                    <LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="102:893">
+                        <DataBindContext sourcePathIds="102:7-102:8" propertyKey="596" nameBased="true" converterId="102:270" id="102:904"/>
+                    </LayoutComponentStyle>
+                </LayoutComponent>
+                <LayoutComponent styleId="102:906" name="Slot 5" id="102:905">
+                    <NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="102:634" isStateful="true" name="Page Item" id="102:907">
+                        <NestedStateMachine animationId="102:636" id="102:908"/>
+                        <ViewModelInstance viewModelId="102:1" exports="true" name="Slot 5" id="102:909">
+                            <ViewModelInstanceNumber propertyValue="5" viewModelPropertyId="102:2" id="102:910">
+                                <DataBindContext sourcePathIds="102:7-102:8" propertyKey="575" nameBased="true" converterId="102:300" id="102:911"/>
+                            </ViewModelInstanceNumber>
+                            <ViewModelInstanceNumber propertyValue="5" viewModelPropertyId="102:3" id="102:912">
+                                <DataBindContext sourcePathIds="102:7-102:8" propertyKey="575" twoWay="true" nameBased="true" id="102:913"/>
+                            </ViewModelInstanceNumber>
+                            <ViewModelInstanceBoolean viewModelPropertyId="102:4" id="102:914"/>
+                            <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="102:5" id="102:915"/>
+                            <ViewModelInstanceBoolean viewModelPropertyId="102:6" id="102:916"/>
+                        </ViewModelInstance>
+                    </NestedArtboardLayout>
+                    <LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="102:906">
+                        <DataBindContext sourcePathIds="102:7-102:8" propertyKey="596" nameBased="true" converterId="102:351" id="102:917"/>
+                    </LayoutComponentStyle>
+                </LayoutComponent>
+                <LayoutComponent styleId="102:919" name="Slot 6" id="102:918">
+                    <NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="102:634" isStateful="true" name="Page Item" id="102:920">
+                        <NestedStateMachine animationId="102:636" id="102:921"/>
+                        <ViewModelInstance viewModelId="102:1" exports="true" name="Slot 6" id="102:922">
+                            <ViewModelInstanceNumber propertyValue="6" viewModelPropertyId="102:2" id="102:923">
+                                <DataBindContext sourcePathIds="102:7-102:8" propertyKey="575" nameBased="true" converterId="102:381" id="102:924"/>
+                            </ViewModelInstanceNumber>
+                            <ViewModelInstanceNumber propertyValue="5" viewModelPropertyId="102:3" id="102:925">
+                                <DataBindContext sourcePathIds="102:7-102:8" propertyKey="575" twoWay="true" nameBased="true" id="102:926"/>
+                            </ViewModelInstanceNumber>
+                            <ViewModelInstanceBoolean viewModelPropertyId="102:4" id="102:927"/>
+                            <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="102:5" id="102:928"/>
+                            <ViewModelInstanceBoolean viewModelPropertyId="102:6" id="102:929"/>
+                        </ViewModelInstance>
+                    </NestedArtboardLayout>
+                    <LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="102:919">
+                        <DataBindContext sourcePathIds="102:7-102:8" propertyKey="596" nameBased="true" converterId="102:448" id="102:930"/>
+                    </LayoutComponentStyle>
+                </LayoutComponent>
+                <LayoutComponent styleId="102:932" name="Slot 7" id="102:931">
+                    <NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="102:634" isStateful="true" name="Page Item" id="102:933">
+                        <NestedStateMachine animationId="102:636" id="102:934"/>
+                        <ViewModelInstance viewModelId="102:1" exports="true" name="Slot 7" id="102:935">
+                            <ViewModelInstanceNumber propertyValue="7" viewModelPropertyId="102:2" id="102:936">
+                                <DataBindContext sourcePathIds="102:7-102:8" propertyKey="575" nameBased="true" converterId="102:478" id="102:937"/>
+                            </ViewModelInstanceNumber>
+                            <ViewModelInstanceNumber propertyValue="5" viewModelPropertyId="102:3" id="102:938">
+                                <DataBindContext sourcePathIds="102:7-102:8" propertyKey="575" twoWay="true" nameBased="true" id="102:939"/>
+                            </ViewModelInstanceNumber>
+                            <ViewModelInstanceBoolean viewModelPropertyId="102:4" id="102:940"/>
+                            <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="102:5" id="102:941"/>
+                            <ViewModelInstanceBoolean viewModelPropertyId="102:6" id="102:942"/>
+                        </ViewModelInstance>
+                    </NestedArtboardLayout>
+                    <LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="102:932">
+                        <DataBindContext sourcePathIds="102:7-102:8" propertyKey="596" nameBased="true" converterId="102:513" id="102:943"/>
+                    </LayoutComponentStyle>
+                </LayoutComponent>
+                <LayoutComponentStyle gapHorizontal="2" layoutAlignmentType="center" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="102:784"/>
+            </LayoutComponent>
+            <LayoutComponent styleId="102:782" name="Next" id="102:781">
+                <NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="1:122" isStateful="true" name="Button" id="102:960">
+                    <NestedStateMachine animationId="1:127" id="102:961"/>
+                    <ViewModelInstance viewModelId="1:151" exports="true" name="Next Button" id="102:962">
+                        <ViewModelInstanceString propertyValue="Next" viewModelPropertyId="1:549" id="102:963"/>
+                        <ViewModelInstanceBoolean viewModelPropertyId="1:587" id="102:964"/>
+                        <ViewModelInstanceTrigger viewModelPropertyId="1:1321" id="102:965"/>
+                        <ViewModelInstanceBoolean viewModelPropertyId="7:1" id="102:966">
+                            <DataBindContext sourcePathIds="102:7-102:14" propertyKey="593" nameBased="true" id="102:967"/>
+                        </ViewModelInstanceBoolean>
+                        <ViewModelInstanceBoolean viewModelPropertyId="7:3" id="102:968"/>
+                        <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="10:3108" id="102:969"/>
+                        <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="33:159" id="102:970"/>
+                        <ViewModelInstanceNumber propertyValue="3" viewModelPropertyId="33:164" id="102:971"/>
+                        <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="33:169" id="102:972"/>
+                        <ViewModelInstanceNumber viewModelPropertyId="99:100" id="102:973"/>
+                    </ViewModelInstance>
+                </NestedArtboardLayout>
+                <LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="102:782"/>
+            </LayoutComponent>
+            <LayoutComponentStyle gapHorizontal="8" layoutAlignmentType="center" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="102:778"/>
+            <SemanticData role="group" label="Pages" name="Semantics" id="102:974">
+                <DataBindContext sourcePathIds="102:7-102:10" propertyKey="983" nameBased="true" id="102:975"/>
+                <DataBindContext sourcePathIds="102:7-102:11" propertyKey="1004" nameBased="true" id="102:976"/>
+            </SemanticData>
+        </LayoutComponent>
+        <StateMachine name="State Machine 1" id="102:776">
+            <StateMachineListener targetId="102:779" name="Previous Page" id="102:978">
+                <ListenerInputType listenerTypeValue="click" id="102:979"/>
+                <ListenerViewModelChange fromViewModelProperty="true" fromDataBindId="102:977" id="102:980">
+                    <BindablePropertyNumber id="102:981">
+                        <DataBindContext sourcePathIds="102:7-102:8" propertyKey="636" converterId="102:543" id="102:977"/>
+                        <DataBindContext sourcePathIds="102:7-102:8" propertyKey="636" direction="true" id="102:982"/>
+                    </BindablePropertyNumber>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListener targetId="102:781" name="Next Page" id="102:984">
+                <ListenerInputType listenerTypeValue="click" id="102:985"/>
+                <ListenerViewModelChange fromViewModelProperty="true" fromDataBindId="102:983" id="102:986">
+                    <BindablePropertyNumber id="102:987">
+                        <DataBindContext sourcePathIds="102:7-102:8" propertyKey="636" converterId="102:551" id="102:983"/>
+                        <DataBindContext sourcePathIds="102:7-102:8" propertyKey="636" direction="true" id="102:988"/>
+                    </BindablePropertyNumber>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListener targetId="102:774" name="Disable previous" id="102:787">
+                <ListenerInputTypeViewModel viewModelPathIds="102:7-102:15" listenerTypeValue="viewModel" id="102:788"/>
+                <ListenerViewModelChange id="102:789">
+                    <BindablePropertyBoolean propertyValue="true" id="102:790">
+                        <DataBindContext sourcePathIds="102:7-102:13" propertyKey="634" direction="true" id="102:791"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListener targetId="102:774" name="Enable previous" id="102:792">
+                <ListenerInputTypeViewModel viewModelPathIds="102:7-102:16" listenerTypeValue="viewModel" id="102:793"/>
+                <ListenerViewModelChange id="102:794">
+                    <BindablePropertyBoolean id="102:795">
+                        <DataBindContext sourcePathIds="102:7-102:13" propertyKey="634" direction="true" id="102:796"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListener targetId="102:774" name="Disable next" id="102:797">
+                <ListenerInputTypeViewModel viewModelPathIds="102:7-102:17" listenerTypeValue="viewModel" id="102:798"/>
+                <ListenerViewModelChange id="102:799">
+                    <BindablePropertyBoolean propertyValue="true" id="102:800">
+                        <DataBindContext sourcePathIds="102:7-102:14" propertyKey="634" direction="true" id="102:801"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListener targetId="102:774" name="Enable next" id="102:802">
+                <ListenerInputTypeViewModel viewModelPathIds="102:7-102:18" listenerTypeValue="viewModel" id="102:803"/>
+                <ListenerViewModelChange id="102:804">
+                    <BindablePropertyBoolean id="102:805">
+                        <DataBindContext sourcePathIds="102:7-102:14" propertyKey="634" direction="true" id="102:806"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineLayer name="Previous" id="102:809">
+                <AnimationState animationId="102:785" x="160" stateName="Enabled" id="102:807">
+                    <StateMachineFireTrigger viewModelPathIds="102:7-102:16" id="102:826"/>
+                </AnimationState>
+                <AnimationState animationId="102:785" x="300" y="100" stateName="Disabled" id="102:808">
+                    <StateMachineFireTrigger viewModelPathIds="102:7-102:15" id="102:827"/>
+                </AnimationState>
+                <AnyState x="400" id="102:810">
+                    <StateTransition stateToId="102:808" id="102:811">
+                        <TransitionViewModelCondition opValue="lessThanOrEqual" id="102:812">
+                            <TransitionPropertyViewModelComparator id="102:813">
+                                <BindablePropertyNumber id="102:814">
+                                    <DataBindContext sourcePathIds="102:7-102:8" propertyKey="636" id="102:815"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueNumberComparator value="1" id="102:816"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                    <StateTransition stateToId="102:807" id="102:817">
+                        <TransitionViewModelCondition opValue="greaterThan" id="102:818">
+                            <TransitionPropertyViewModelComparator id="102:819">
+                                <BindablePropertyNumber id="102:820">
+                                    <DataBindContext sourcePathIds="102:7-102:8" propertyKey="636" id="102:821"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueNumberComparator value="1" id="102:822"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                </AnyState>
+                <ExitState x="480" id="102:823"/>
+                <EntryState id="102:824">
+                    <StateTransition stateToId="102:807" id="102:825"/>
+                </EntryState>
+            </StateMachineLayer>
+            <StateMachineLayer name="Next" id="102:830">
+                <AnimationState animationId="102:785" x="160" stateName="Enabled" id="102:828">
+                    <StateMachineFireTrigger viewModelPathIds="102:7-102:18" id="102:851"/>
+                </AnimationState>
+                <AnimationState animationId="102:785" x="300" y="100" stateName="Disabled" id="102:829">
+                    <StateMachineFireTrigger viewModelPathIds="102:7-102:17" id="102:852"/>
+                </AnimationState>
+                <AnyState x="400" id="102:831">
+                    <StateTransition stateToId="102:829" id="102:832">
+                        <TransitionViewModelCondition opValue="greaterThanOrEqual" id="102:833">
+                            <TransitionPropertyViewModelComparator id="102:834">
+                                <BindablePropertyNumber id="102:835">
+                                    <DataBindContext sourcePathIds="102:7-102:8" propertyKey="636" id="102:836"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionPropertyViewModelComparator id="102:837">
+                                <BindablePropertyNumber id="102:838">
+                                    <DataBindContext sourcePathIds="102:7-102:9" propertyKey="636" id="102:839"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                    <StateTransition stateToId="102:828" id="102:840">
+                        <TransitionViewModelCondition opValue="lessThan" id="102:841">
+                            <TransitionPropertyViewModelComparator id="102:842">
+                                <BindablePropertyNumber id="102:843">
+                                    <DataBindContext sourcePathIds="102:7-102:8" propertyKey="636" id="102:844"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionPropertyViewModelComparator id="102:845">
+                                <BindablePropertyNumber id="102:846">
+                                    <DataBindContext sourcePathIds="102:7-102:9" propertyKey="636" id="102:847"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                </AnyState>
+                <ExitState x="480" id="102:848"/>
+                <EntryState id="102:849">
+                    <StateTransition stateToId="102:828" id="102:850"/>
+                </EntryState>
+            </StateMachineLayer>
+            <StateMachineLayer name="Layer 1" id="102:989">
+                <AnimationState animationId="102:785" x="160" id="102:786"/>
+                <AnyState x="400" id="102:990"/>
+                <ExitState x="480" id="102:991"/>
+                <EntryState id="102:992">
+                    <StateTransition stateToId="102:786" id="102:993"/>
+                </EntryState>
+            </StateMachineLayer>
+        </StateMachine>
+        <LinearAnimation name="Timeline 1" id="102:785"/>
+    </Artboard>
+</Rive>

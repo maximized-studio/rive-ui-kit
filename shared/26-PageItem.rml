@@ -1,0 +1,225 @@
+<Rive version="1" kind="fragment">
+    <Artboard defaultStateMachineId="102:636" viewModelId="102:1" viewModelInstanceId="102:19" isComponent="true" includeInExport="false" spaceId="1:5601" width="40" height="40" styleId="102:635" x="600" y="683" name="Page Item" id="102:634">
+        <Fill fillRule="clockwise" id="102:657">
+            <SolidColor colorValue="00000000" id="102:658"/>
+        </Fill>
+        <LayoutComponentStyle layoutAlignmentType="center" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" id="102:635"/>
+        <LayoutComponent styleId="102:638" name="Item" id="102:637">
+            <LayoutComponent styleId="102:640" isTargetOpaque="true" name="Ellipsis Shield" id="102:639">
+                <Fill fillRule="clockwise" id="102:659">
+                    <SolidColor colorValue="00000000" id="102:660"/>
+                </Fill>
+                <LayoutComponentStyle layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" displayValue="none" id="102:640">
+                    <DataBindContext sourcePathIds="102:1-102:2" propertyKey="596" nameBased="true" converterId="102:560" id="102:661"/>
+                </LayoutComponentStyle>
+            </LayoutComponent>
+            <LayoutComponent styleId="102:642" name="Label" id="102:641">
+                <LayoutComponent styleId="102:644" name="Number" id="102:643">
+                    <Text alignValue="center" fitFontSizeResizesBox="false" opacity="0" name="Text Selected" id="102:651">
+                        <TextStylePaint fontSize="14" fontAssetId="0:7" familyName="Inter" styleName="Medium" id="102:662">
+                            <Fill id="102:663">
+                                <SolidColor colorValue="FFEFF6FF" id="102:664">
+                                    <DataBindContext sourcePathIds="102:1-102:5-10:2092" propertyKey="37" nameBased="true" id="102:665"/>
+                                </SolidColor>
+                            </Fill>
+                            <TextStyleAxis tag="1869640570" axisValue="14" id="102:666"/>
+                            <TextStyleAxis tag="2003265652" axisValue="500" id="102:667"/>
+                        </TextStylePaint>
+                        <TextValueRun styleId="102:662" text="1" id="102:668">
+                            <DataBindContext sourcePathIds="102:1-102:2" propertyKey="268" nameBased="true" converterId="10:5572" id="102:669"/>
+                        </TextValueRun>
+                        <LayoutParticipant layoutWidthScaleType="hug" layoutHeightScaleType="hug" id="102:670"/>
+                    </Text>
+                    <Text alignValue="center" fitFontSizeResizesBox="false" name="Text" id="102:652">
+                        <TextStylePaint fontSize="14" fontAssetId="0:7" familyName="Inter" styleName="Medium" id="102:671">
+                            <Fill id="102:672">
+                                <SolidColor colorValue="FFFAFAFA" id="102:673">
+                                    <DataBindContext sourcePathIds="102:1-102:5-10:7422" propertyKey="37" nameBased="true" id="102:674"/>
+                                </SolidColor>
+                            </Fill>
+                            <TextStyleAxis tag="1869640570" axisValue="14" id="102:675"/>
+                            <TextStyleAxis tag="2003265652" axisValue="500" id="102:676"/>
+                        </TextStylePaint>
+                        <TextValueRun styleId="102:671" text="1" id="102:677">
+                            <DataBindContext sourcePathIds="102:1-102:2" propertyKey="268" nameBased="true" converterId="10:5572" id="102:678"/>
+                        </TextValueRun>
+                        <LayoutParticipant layoutWidthScaleType="hug" layoutHeightScaleType="hug" id="102:679"/>
+                    </Text>
+                    <LayoutComponentStyle layoutAlignmentType="center" intrinsicallySizedValue="true" layoutTypeValue="stack" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="102:644">
+                        <DataBindContext sourcePathIds="102:1-102:2" propertyKey="596" nameBased="true" converterId="102:566" id="102:680"/>
+                    </LayoutComponentStyle>
+                </LayoutComponent>
+                <LayoutComponent styleId="102:646" name="Ellipsis" id="102:645">
+                    <Text alignValue="center" fitFontSizeResizesBox="false" name="Text Ellipsis" id="102:681">
+                        <TextStylePaint fontSize="14" fontAssetId="0:7" familyName="Inter" styleName="Medium" id="102:682">
+                            <Fill id="102:683">
+                                <SolidColor colorValue="FFA1A1AA" id="102:684">
+                                    <DataBindContext sourcePathIds="102:1-102:5-10:7426" propertyKey="37" nameBased="true" id="102:685"/>
+                                </SolidColor>
+                            </Fill>
+                            <TextStyleAxis tag="1869640570" axisValue="14" id="102:686"/>
+                            <TextStyleAxis tag="2003265652" axisValue="500" id="102:687"/>
+                        </TextStylePaint>
+                        <TextValueRun styleId="102:682" text="…" id="102:688"/>
+                        <LayoutParticipant layoutWidthScaleType="hug" layoutHeightScaleType="hug" id="102:689"/>
+                    </Text>
+                    <LayoutComponentStyle layoutAlignmentType="center" intrinsicallySizedValue="true" layoutTypeValue="stack" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" displayValue="none" id="102:646">
+                        <DataBindContext sourcePathIds="102:1-102:2" propertyKey="596" nameBased="true" converterId="102:560" id="102:690"/>
+                    </LayoutComponentStyle>
+                </LayoutComponent>
+                <LayoutComponentStyle paddingLeft="10" paddingRight="10" paddingTop="8" paddingBottom="8" layoutAlignmentType="center" intrinsicallySizedValue="true" layoutTypeValue="stack" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="102:642"/>
+            </LayoutComponent>
+            <LayoutComponent styleId="102:648" opacity="0" name="Selected" id="102:647">
+                <Fill fillRule="clockwise" id="102:691">
+                    <SolidColor colorValue="FF2563EB" id="102:692">
+                        <DataBindContext sourcePathIds="102:1-102:5-10:2104" propertyKey="37" nameBased="true" id="102:693"/>
+                    </SolidColor>
+                </Fill>
+                <LayoutComponentStyle cornerRadiusTL="8" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="102:648">
+                    <DataBindContext sourcePathIds="102:1-102:5-10:2086" propertyKey="640" nameBased="true" converterId="10:6095" id="102:694"/>
+                </LayoutComponentStyle>
+            </LayoutComponent>
+            <LayoutComponent styleId="102:650" opacity="0" name="Hover" id="102:649">
+                <Fill fillRule="clockwise" id="102:696">
+                    <SolidColor colorValue="FF323238" id="102:697">
+                        <DataBindContext sourcePathIds="102:1-102:5-10:7416" propertyKey="37" nameBased="true" id="102:698"/>
+                    </SolidColor>
+                </Fill>
+                <LayoutComponentStyle cornerRadiusTL="8" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="102:650">
+                    <DataBindContext sourcePathIds="102:1-102:5-10:2086" propertyKey="640" nameBased="true" converterId="10:6095" id="102:699"/>
+                </LayoutComponentStyle>
+                <DataBindContext sourcePathIds="102:1-102:6" propertyKey="18" nameBased="true" converterId="9:145" id="102:695"/>
+            </LayoutComponent>
+            <LayoutComponentStyle layoutAlignmentType="center" intrinsicallySizedValue="true" layoutTypeValue="stack" minWidth="40" minHeight="40" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="102:638"/>
+            <SemanticData role="button" traitFlags="32" name="Semantics" id="102:700">
+                <DataBindContext sourcePathIds="102:1-102:2" propertyKey="983" nameBased="true" converterId="10:5572" id="102:701"/>
+                <DataBindContext sourcePathIds="102:1-102:4" propertyKey="1004" nameBased="true" id="102:702"/>
+            </SemanticData>
+            <FocusData name="Focus" id="0:15803"/>
+        </LayoutComponent>
+        <StateMachine name="State Machine 1" id="102:636">
+            <StateMachineListener targetId="102:637" name="Cursor Off" id="102:707">
+                <ListenerInputType listenerTypeValue="exit" id="102:703"/>
+                <ListenerViewModelChange id="102:704">
+                    <BindablePropertyBoolean id="102:705">
+                        <DataBindContext sourcePathIds="102:1-102:5-63:244" propertyKey="634" direction="true" id="102:706"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListener targetId="102:637" name="Cursor On" id="102:713">
+                <ListenerInputType id="102:708"/>
+                <ListenerInputType listenerTypeValue="move" id="102:709"/>
+                <ListenerViewModelChange id="102:710">
+                    <BindablePropertyBoolean propertyValue="true" id="102:711">
+                        <DataBindContext sourcePathIds="102:1-102:5-63:244" propertyKey="634" direction="true" id="102:712"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListener targetId="102:637" name="Hover Off" id="102:718">
+                <ListenerInputType listenerTypeValue="exit" id="102:714"/>
+                <ListenerViewModelChange id="102:715">
+                    <BindablePropertyBoolean id="102:716">
+                        <DataBindContext sourcePathIds="102:1-102:6" propertyKey="634" direction="true" id="102:717"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListener targetId="102:637" name="Hover On" id="102:723">
+                <ListenerInputType id="102:719"/>
+                <ListenerViewModelChange id="102:720">
+                    <BindablePropertyBoolean propertyValue="true" id="102:721">
+                        <DataBindContext sourcePathIds="102:1-102:6" propertyKey="634" direction="true" id="102:722"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListener targetId="102:639" name="Ellipsis Block" id="102:728">
+                <ListenerInputType id="102:724"/>
+                <ListenerViewModelChange id="102:725">
+                    <BindablePropertyBoolean id="102:726">
+                        <DataBindContext sourcePathIds="102:1-102:6" propertyKey="634" direction="true" id="102:727"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListener targetId="102:637" name="Select" id="102:729">
+                <ListenerInputType listenerTypeValue="click" id="102:730"/>
+                <ListenerViewModelChange fromViewModelProperty="true" fromDataBindId="102:731" id="102:732">
+                    <BindablePropertyNumber id="102:733">
+                        <DataBindContext sourcePathIds="102:1-102:2" propertyKey="636" id="102:731"/>
+                        <DataBindContext sourcePathIds="102:1-102:3" propertyKey="636" direction="true" id="102:734"/>
+                    </BindablePropertyNumber>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineLayer name="Selected" id="102:735">
+                <AnimationState animationId="102:653" x="300" y="100" stateName="Selected" id="102:655"/>
+                <AnimationState animationId="102:654" x="160" id="102:656"/>
+                <AnyState x="400" id="102:736">
+                    <StateTransition stateToId="102:655" duration="150" interpolationType="cubic" id="102:737">
+                        <TransitionViewModelCondition id="102:738">
+                            <TransitionPropertyViewModelComparator id="102:739">
+                                <BindablePropertyNumber id="102:740">
+                                    <DataBindContext sourcePathIds="102:1-102:2" propertyKey="636" id="102:741"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionPropertyViewModelComparator id="102:742">
+                                <BindablePropertyNumber id="102:743">
+                                    <DataBindContext sourcePathIds="102:1-102:3" propertyKey="636" id="102:744"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                    <StateTransition stateToId="102:656" duration="150" interpolationType="cubic" id="102:745">
+                        <TransitionViewModelCondition opValue="notEqual" id="102:746">
+                            <TransitionPropertyViewModelComparator id="102:747">
+                                <BindablePropertyNumber id="102:748">
+                                    <DataBindContext sourcePathIds="102:1-102:2" propertyKey="636" id="102:749"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionPropertyViewModelComparator id="102:750">
+                                <BindablePropertyNumber id="102:751">
+                                    <DataBindContext sourcePathIds="102:1-102:3" propertyKey="636" id="102:752"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                </AnyState>
+                <ExitState x="480" id="102:753"/>
+                <EntryState id="102:754">
+                    <StateTransition stateToId="102:656" id="102:755"/>
+                </EntryState>
+            </StateMachineLayer>
+        </StateMachine>
+        <LinearAnimation name="Selected" id="102:653">
+            <KeyedObject objectId="102:647" id="102:756">
+                <KeyedProperty property="opacity" id="102:757">
+                    <KeyFrameDouble value="1" interpolationType="linear" id="102:758"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="102:651" id="102:759">
+                <KeyedProperty property="opacity" id="102:760">
+                    <KeyFrameDouble value="1" interpolationType="linear" id="102:761"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="102:652" id="102:762">
+                <KeyedProperty property="opacity" id="102:763">
+                    <KeyFrameDouble interpolationType="linear" id="102:764"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+        <LinearAnimation name="Unselected" id="102:654">
+            <KeyedObject objectId="102:647" id="102:765">
+                <KeyedProperty property="opacity" id="102:766">
+                    <KeyFrameDouble interpolationType="linear" id="102:767"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="102:651" id="102:768">
+                <KeyedProperty property="opacity" id="102:769">
+                    <KeyFrameDouble interpolationType="linear" id="102:770"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="102:652" id="102:771">
+                <KeyedProperty property="opacity" id="102:772">
+                    <KeyFrameDouble value="1" interpolationType="linear" id="102:773"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+    </Artboard>
+</Rive>

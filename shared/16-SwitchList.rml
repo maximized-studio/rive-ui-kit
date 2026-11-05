@@ -1,5 +1,5 @@
 <Rive version="1" kind="fragment">
-    <Artboard defaultStateMachineId="10:4490" viewModelId="10:4445" viewModelInstanceId="10:4467" isComponent="true" includeInExport="false" spaceId="1:5601" width="220" height="130" styleId="10:4473" x="600" y="2050" name="Switch List" id="10:4472">
+    <Artboard defaultStateMachineId="10:4490" viewModelId="10:4445" viewModelInstanceId="10:4467" isComponent="true" includeInExport="false" spaceId="1:5601" width="220" height="130" styleId="10:4473" x="600" y="1453" name="Switch List" id="10:4472">
         <LayoutComponent styleId="10:4475" name="Group" id="10:4474">
             <Text id="10:4476">
                 <TextStylePaint fontSize="13" fontAssetId="0:7" familyName="Inter" styleName="Bold" id="10:4477">

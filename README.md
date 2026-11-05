@@ -13,9 +13,10 @@ The kit is also on the [Rive Community](https://rive.app/community/files/25701-5
 - **Actions:** Button · Button Group
 - **Display:** Avatar · Badge · Label
 - **Inputs:** Checkbox / Checkbox Group · Dropdown · Radio Option / Radio Group · Slider · Switch / Switch List
-- **Building blocks:** Accordion · List Item · Nav Item · Segment · Segmented Control · Showcase Section · Sidebar · Slide · Tile · Toolbar
+- **Navigation:** Pagination
+- **Building blocks:** List Item · Nav Group · Nav Item · Page Item · Segment · Segmented Control · Showcase Section · Sidebar · Slide · Tile · Toolbar
 
-Categories and the components in them are sorted A–Z. In the Showcase a category is data: a `ShowcaseSection` (title, tile list; the count is the list length) in `sections`, and an `Accordion` in the Sidebar's `sections`.
+Categories and the components in them are sorted A–Z. In the Showcase a category is data: a `ShowcaseSection` (title, tile list; the count is the list length) in `sections`, and a `NavGroup` in the Sidebar's `sections`.
 
 Every component is driven by view models (data binding), not by state machine inputs. The **Theme** panel in the Showcase switches mode (light/dark), brand colour, roundness and shadow at runtime, and previews every component as enabled or disabled.
 
@@ -27,8 +28,8 @@ The components carry Rive semantics, so screen readers get a real accessibility 
 |---|---|---|
 | Avatar | `image` | label |
 | Badge, Label | `text` | text |
-| Button, Dropdown | `button` | label |
-| Button Group, Checkbox Group, Switch List | `group` | group label |
+| Button, Dropdown, Page Item | `button` | label (the page number) |
+| Button Group, Checkbox Group, Pagination, Switch List | `group` | group label |
 | Checkbox | `checkbox` | label, checked |
 | List Item | `list` / `listItem` | label |
 | Radio Option / Radio Group | `radioButton` / `radioGroup` | label, selected |
@@ -49,9 +50,18 @@ A row of kit Buttons joined into one control: the outer corners follow the theme
 - Set `group` on every Button in the list: `1` first, `2` middle, `3` last (`0`, the default, is a standalone Button). It rounds only the outer corners and draws a divider before middle and last buttons; secondary borders merge into one line.
 - Each Button keeps its own `_pressed` trigger, hover, press ripple and disabled state, so you handle clicks per button as you would for a single Button.
 
+## Pagination
+
+Previous and next Buttons around up to seven page buttons. Set two numbers and the component does the rest.
+
+- View model `Pagination`: `page` (the current page, two-way: clicks write it), `pageCount`, `label` (screen reader name), `a11yHidden`, `theme`.
+- Up to seven pages are shown as they are. With more, the row keeps the first and last page and three around the current one, with `…` for the gaps: `1 … 4 5 6 … 20`, `1 2 3 4 5 … 20`, `1 … 16 17 18 19 20`.
+- Previous and next step by one and are disabled on the first and last page.
+- Listen to `page` in your app to load that page.
+
 ## Pointer cursor
 
-A canvas can't change the mouse cursor by itself, so the kit tells your app when to. `theme/cursorPointer` (a boolean on the shared Theme view model) is `true` while the pointer is over something clickable: an accordion header, a button, checkbox, dropdown and its items, nav item, radio option, segment, slider, switch or tile. Disabled controls leave it `false`. The path below is the Showcase's; in your own artboard it is wherever your view model holds the Theme.
+A canvas can't change the mouse cursor by itself, so the kit tells your app when to. `theme/cursorPointer` (a boolean on the shared Theme view model) is `true` while the pointer is over something clickable: a button, checkbox, dropdown and its items, nav group header, nav item, page item, radio option, segment, slider, switch or tile. Disabled controls leave it `false`. The path below is the Showcase's; in your own artboard it is wherever your view model holds the Theme.
 
 ```js
 const flag = rive.viewModelInstance.boolean("theme/cursorPointer");

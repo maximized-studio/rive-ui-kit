@@ -1,10 +1,10 @@
 <Rive version="1" kind="fragment">
-    <Artboard defaultStateMachineId="42:69" viewModelId="41:864" viewModelInstanceId="42:303" isComponent="true" includeInExport="false" spaceId="1:5601" width="216" height="200" styleId="42:67" x="3248" name="Accordion" id="42:64">
+    <Artboard defaultStateMachineId="42:69" viewModelId="41:864" viewModelInstanceId="42:303" isComponent="true" includeInExport="false" spaceId="1:5601" width="216" height="200" styleId="42:67" x="-2420" y="1224" name="Nav Group" id="42:64">
         <Fill fillRule="clockwise" id="42:65">
             <SolidColor colorValue="00000000" id="42:66"/>
         </Fill>
         <LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="fill" layoutHeightScaleType="hug" id="42:67"/>
-        <LayoutComponent styleId="42:77" name="Accordion" id="42:76">
+        <LayoutComponent styleId="42:77" name="Group" id="42:76">
             <LayoutComponent styleId="42:79" name="Header" id="42:78">
                 <LayoutComponent styleId="42:81" name="Header Pad" id="42:80">
                     <GridItemPlacement id="42:82"/>

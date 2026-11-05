@@ -1,5 +1,5 @@
 <Rive version="1" kind="fragment">
-    <Artboard defaultStateMachineId="1:668" viewModelId="1:913" viewModelInstanceId="1:914" isComponent="true" spaceId="1:5601" width="44" height="24" styleId="1:666" x="900" y="1500" name="Switch" id="1:663">
+    <Artboard defaultStateMachineId="1:668" viewModelId="1:913" viewModelInstanceId="1:914" isComponent="true" spaceId="1:5601" width="44" height="24" styleId="1:666" y="1453" name="Switch" id="1:663">
         <NestedArtboard artboardId="10:14621" dataBindPathIds="1:913-10:3114" name="Theme Driver" id="10:15492">
             <NestedStateMachine animationId="1:668" id="10:15493"/>
         </NestedArtboard>
