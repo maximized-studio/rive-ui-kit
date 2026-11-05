@@ -66,14 +66,14 @@
             </LayoutComponent>
             <LayoutComponent styleId="111:102" name="Current" id="111:101">
                 <Text name="Text Current" id="111:135">
-                    <TextStylePaint fontSize="14" fontAssetId="0:7" familyName="Inter" styleName="Regular" id="111:136">
+                    <TextStylePaint fontSize="14" fontAssetId="0:7" familyName="Inter" styleName="SemiBold" id="111:136">
                         <Fill fillRule="clockwise" id="111:137">
                             <SolidColor colorValue="FFA1A1AA" id="111:138">
                                 <DataBindContext sourcePathIds="111:1-111:7-10:7426" propertyKey="37" nameBased="true" id="111:139"/>
                             </SolidColor>
                         </Fill>
                         <TextStyleAxis tag="1869640570" axisValue="14" id="111:140"/>
-                        <TextStyleAxis tag="2003265652" axisValue="400" id="111:141"/>
+                        <TextStyleAxis tag="2003265652" axisValue="600" id="111:141"/>
                     </TextStylePaint>
                     <TextValueRun styleId="111:136" text="Home" id="111:142">
                         <DataBindContext sourcePathIds="111:1-111:2" propertyKey="268" nameBased="true" id="111:143"/>
