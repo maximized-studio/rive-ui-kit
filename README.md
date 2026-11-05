@@ -10,9 +10,9 @@ The kit is also on the [Rive Community](https://rive.app/community/files/25701-5
 
 ## Components
 
-- **Inputs:** Button · Button Group · Switch / Switch List · Slider · Dropdown · Radio Option / Radio Group · Checkbox / Checkbox Group
-- **Display:** Badge · Label · Avatar
-- **Building blocks:** List Item · Tile · Slide · Segment · Segmented Control · Nav Item · Accordion · Sidebar · Toolbar
+- **Inputs:** Button · Button Group · Checkbox / Checkbox Group · Dropdown · Radio Option / Radio Group · Slider · Switch / Switch List
+- **Display:** Avatar · Badge · Label
+- **Building blocks:** Accordion · List Item · Nav Item · Segment · Segmented Control · Sidebar · Slide · Tile · Toolbar
 
 Every component is driven by view models (data binding), not by state machine inputs. The **Theme** panel in the Showcase switches mode (light/dark), brand colour, roundness and shadow at runtime, and previews every component as enabled or disabled.
 
@@ -22,15 +22,15 @@ The components carry Rive semantics, so screen readers get a real accessibility 
 
 | Component | Role | Exposed |
 |---|---|---|
+| Avatar | `image` | label |
+| Badge, Label | `text` | text |
 | Button, Dropdown | `button` | label |
-| Switch | `switchControl` | label, on/off |
+| Button Group, Checkbox Group, Switch List | `group` | group label |
 | Checkbox | `checkbox` | label, checked |
+| List Item | `list` / `listItem` | label |
 | Radio Option / Radio Group | `radioButton` / `radioGroup` | label, selected |
 | Slider | `slider` | label, value |
-| Switch List, Checkbox Group, Button Group | `group` | group label |
-| List Item | `list` / `listItem` | label |
-| Label, Badge | `text` | text |
-| Avatar | `image` | label |
+| Switch | `switchControl` | label, on/off |
 
 Labels are bound to the same view model properties as the visible text, so they stay correct when you change the copy. Check the tree headless:
 
@@ -48,7 +48,7 @@ A row of kit Buttons joined into one control: the outer corners follow the theme
 
 ## Pointer cursor
 
-A canvas can't change the mouse cursor by itself, so the kit tells your app when to. `theme/cursorPointer` (a boolean on the shared Theme view model) is `true` while the pointer is over something clickable: a button, switch, checkbox, radio option, slider, dropdown and its items, segment, nav item, accordion header or tile. Disabled controls leave it `false`. The path below is the Showcase's; in your own artboard it is wherever your view model holds the Theme.
+A canvas can't change the mouse cursor by itself, so the kit tells your app when to. `theme/cursorPointer` (a boolean on the shared Theme view model) is `true` while the pointer is over something clickable: an accordion header, a button, checkbox, dropdown and its items, nav item, radio option, segment, slider, switch or tile. Disabled controls leave it `false`. The path below is the Showcase's; in your own artboard it is wherever your view model holds the Theme.
 
 ```js
 const flag = rive.viewModelInstance.boolean("theme/cursorPointer");
