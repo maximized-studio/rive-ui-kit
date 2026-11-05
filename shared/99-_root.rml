@@ -2489,8 +2489,7 @@
                 </DataConverterFormula>
             </DataFolder>
             <DataFolder name="Shadow" id="10:8613"/>
-            <DataFolder name="States" id="10:8614">
-            </DataFolder>
+            <DataFolder name="States" id="10:8614"/>
         </DataFolder>
         <ViewModel defaultInstanceId="10:63" viewModelType="global" name="Theme" groupId="283:1" id="10:7">
             <ViewModelPropertyBoolean name="cursorPointer" id="63:244"/>

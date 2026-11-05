@@ -3,28 +3,28 @@
         <LayoutComponentStyle layoutAlignmentType="center" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="1:125"/>
         <LayoutComponent height="40" styleId="1:146" name="Button" id="1:134">
             <LayoutComponent width="16" height="16" styleId="33:235" name="Icon" id="33:234">
-                <Shape x="8" y="8" name="chevR" opacity="0" id="33:274">
+                <Shape x="8" y="8" opacity="0" name="chevR" id="33:274">
                     <PointsPath id="33:275">
                         <StraightVertex x="-2" y="-5" id="33:276"/>
                         <StraightVertex x="3" id="33:277"/>
                         <StraightVertex x="-2" y="5" id="33:278"/>
                     </PointsPath>
-                    <Stroke  cap="round" join="round" thickness="0" id="33:279">
+                    <Stroke thickness="0" cap="round" join="round" id="33:279">
                         <SolidColor colorValue="FFFFFFFF" id="33:280">
                             <DataBindContext sourcePathIds="10:7-10:2092" propertyKey="37" id="33:283"/>
                         </SolidColor>
                     </Stroke>
-                    <Stroke  cap="round" join="round" thickness="0" id="33:281">
+                    <Stroke thickness="0" cap="round" join="round" id="33:281">
                         <SolidColor colorValue="FF000000" id="33:282">
                             <DataBindContext sourcePathIds="10:7-10:7422" propertyKey="37" id="33:284"/>
                         </SolidColor>
                     </Stroke>
-                    <Stroke  cap="round" join="round" thickness="1.75" id="118:287">
+                    <Stroke thickness="1.75" cap="round" join="round" id="118:287">
                         <SolidColor colorValue="FF18181B" id="118:288">
                             <DataBindContext sourcePathIds="10:7-118:4" propertyKey="37" id="118:289"/>
                         </SolidColor>
                     </Stroke>
-                    <Stroke  cap="round" join="round" thickness="0" id="118:291">
+                    <Stroke thickness="0" cap="round" join="round" id="118:291">
                         <SolidColor colorValue="FFFFFFFF" id="118:292">
                             <DataBindContext sourcePathIds="10:7-118:7" propertyKey="37" id="118:293"/>
                         </SolidColor>
@@ -36,28 +36,28 @@
                         <DataBindContext sourcePathIds="1:151-7:1" propertyKey="47" nameBased="true" converterId="33:251" id="103:4"/>
                     </Stroke>
                 </Shape>
-                <Shape x="8" y="8" name="chevL" opacity="0" id="33:261">
+                <Shape x="8" y="8" opacity="0" name="chevL" id="33:261">
                     <PointsPath isClockwise="false" id="33:262">
                         <StraightVertex x="2" y="-5" id="33:263"/>
                         <StraightVertex x="-3" id="33:264"/>
                         <StraightVertex x="2" y="5" id="33:265"/>
                     </PointsPath>
-                    <Stroke  cap="round" join="round" thickness="0" id="33:266">
+                    <Stroke thickness="0" cap="round" join="round" id="33:266">
                         <SolidColor colorValue="FFFFFFFF" id="33:267">
                             <DataBindContext sourcePathIds="10:7-10:2092" propertyKey="37" id="33:270"/>
                         </SolidColor>
                     </Stroke>
-                    <Stroke  cap="round" join="round" thickness="0" id="33:268">
+                    <Stroke thickness="0" cap="round" join="round" id="33:268">
                         <SolidColor colorValue="FF000000" id="33:269">
                             <DataBindContext sourcePathIds="10:7-10:7422" propertyKey="37" id="33:271"/>
                         </SolidColor>
                     </Stroke>
-                    <Stroke  cap="round" join="round" thickness="1.75" id="118:297">
+                    <Stroke thickness="1.75" cap="round" join="round" id="118:297">
                         <SolidColor colorValue="FF18181B" id="118:298">
                             <DataBindContext sourcePathIds="10:7-118:4" propertyKey="37" id="118:299"/>
                         </SolidColor>
                     </Stroke>
-                    <Stroke  cap="round" join="round" thickness="0" id="118:301">
+                    <Stroke thickness="0" cap="round" join="round" id="118:301">
                         <SolidColor colorValue="FFFFFFFF" id="118:302">
                             <DataBindContext sourcePathIds="10:7-118:7" propertyKey="37" id="118:303"/>
                         </SolidColor>
@@ -69,7 +69,7 @@
                         <DataBindContext sourcePathIds="1:151-7:1" propertyKey="47" nameBased="true" converterId="33:251" id="103:8"/>
                     </Stroke>
                 </Shape>
-                <Shape x="8" y="8" name="arrow" opacity="0" id="33:237">
+                <Shape x="8" y="8" opacity="0" name="arrow" id="33:237">
                     <PointsPath id="33:238">
                         <StraightVertex x="5" id="33:239"/>
                         <StraightVertex x="-5" id="33:240"/>
@@ -79,22 +79,22 @@
                         <StraightVertex x="-5" id="33:243"/>
                         <StraightVertex x="-1" y="4" id="33:244"/>
                     </PointsPath>
-                    <Stroke  cap="round" join="round" thickness="0" id="33:245">
+                    <Stroke thickness="0" cap="round" join="round" id="33:245">
                         <SolidColor colorValue="FFFFFFFF" id="33:246">
                             <DataBindContext sourcePathIds="10:7-10:2092" propertyKey="37" id="33:249"/>
                         </SolidColor>
                     </Stroke>
-                    <Stroke  cap="round" join="round" thickness="0" id="33:247">
+                    <Stroke thickness="0" cap="round" join="round" id="33:247">
                         <SolidColor colorValue="FF000000" id="33:248">
                             <DataBindContext sourcePathIds="10:7-10:7422" propertyKey="37" id="33:250"/>
                         </SolidColor>
                     </Stroke>
-                    <Stroke  cap="round" join="round" thickness="1.75" id="118:307">
+                    <Stroke thickness="1.75" cap="round" join="round" id="118:307">
                         <SolidColor colorValue="FF18181B" id="118:308">
                             <DataBindContext sourcePathIds="10:7-118:4" propertyKey="37" id="118:309"/>
                         </SolidColor>
                     </Stroke>
-                    <Stroke  cap="round" join="round" thickness="0" id="118:311">
+                    <Stroke thickness="0" cap="round" join="round" id="118:311">
                         <SolidColor colorValue="FFFFFFFF" id="118:312">
                             <DataBindContext sourcePathIds="10:7-118:7" propertyKey="37" id="118:313"/>
                         </SolidColor>
@@ -107,7 +107,7 @@
                     </Stroke>
                 </Shape>
                 <Node name="Art" id="116:80">
-                    <Shape x="8" y="8" name="copy" opacity="0" id="116:22">
+                    <Shape x="8" y="8" opacity="0" name="copy" id="116:22">
                         <Rectangle cornerRadiusTL="1.3329999" width="9.3330002" height="9.3330002" x="2" y="2" id="116:15"/>
                         <PointsPath id="116:16">
                             <StraightVertex x="-5.3330002" y="2.6670001" id="116:17"/>
@@ -116,22 +116,22 @@
                             <StraightVertex radius="1.3329999" x="2.6670001" y="-6.6669998" id="116:20"/>
                             <StraightVertex x="2.6670001" y="-5.3330002" id="116:21"/>
                         </PointsPath>
-                        <Stroke  cap="round" join="round" thickness="0" id="116:23">
+                        <Stroke thickness="0" cap="round" join="round" id="116:23">
                             <SolidColor colorValue="FFFFFFFF" id="116:24">
                                 <DataBindContext sourcePathIds="10:7-10:2092" propertyKey="37" id="116:25"/>
                             </SolidColor>
                         </Stroke>
-                        <Stroke  cap="round" join="round" thickness="0" id="116:26">
+                        <Stroke thickness="0" cap="round" join="round" id="116:26">
                             <SolidColor colorValue="FF000000" id="116:27">
                                 <DataBindContext sourcePathIds="10:7-10:7422" propertyKey="37" id="116:28"/>
                             </SolidColor>
                         </Stroke>
-                        <Stroke  cap="round" join="round" thickness="1.75" id="118:317">
+                        <Stroke thickness="1.75" cap="round" join="round" id="118:317">
                             <SolidColor colorValue="FF18181B" id="118:318">
                                 <DataBindContext sourcePathIds="10:7-118:4" propertyKey="37" id="118:319"/>
                             </SolidColor>
                         </Stroke>
-                        <Stroke  cap="round" join="round" thickness="0" id="118:321">
+                        <Stroke thickness="0" cap="round" join="round" id="118:321">
                             <SolidColor colorValue="FFFFFFFF" id="118:322">
                                 <DataBindContext sourcePathIds="10:7-118:7" propertyKey="37" id="118:323"/>
                             </SolidColor>
@@ -143,7 +143,7 @@
                             <DataBindContext sourcePathIds="1:151-7:1" propertyKey="47" nameBased="true" converterId="33:251" id="116:33"/>
                         </Stroke>
                     </Shape>
-                    <Shape x="8" y="8" name="save" opacity="0" id="117:248">
+                    <Shape x="8" y="8" opacity="0" name="save" id="117:248">
                         <PointsPath isClosed="true" id="117:249">
                             <StraightVertex radius="1.3329999" x="-6" y="-6" id="117:250"/>
                             <StraightVertex radius="0.667" x="2.3329999" y="-6" id="117:251"/>
@@ -162,22 +162,22 @@
                             <StraightVertex radius="0.667" x="-3.3329999" y="-2.6670001" id="117:262"/>
                             <StraightVertex x="2" y="-2.6670001" id="117:263"/>
                         </PointsPath>
-                        <Stroke  cap="round" join="round" thickness="0" id="117:237">
+                        <Stroke thickness="0" cap="round" join="round" id="117:237">
                             <SolidColor colorValue="FFFFFFFF" id="117:238">
                                 <DataBindContext sourcePathIds="10:7-10:2092" propertyKey="37" id="117:239"/>
                             </SolidColor>
                         </Stroke>
-                        <Stroke  cap="round" join="round" thickness="0" id="117:240">
+                        <Stroke thickness="0" cap="round" join="round" id="117:240">
                             <SolidColor colorValue="FF000000" id="117:241">
                                 <DataBindContext sourcePathIds="10:7-10:7422" propertyKey="37" id="117:242"/>
                             </SolidColor>
                         </Stroke>
-                        <Stroke  cap="round" join="round" thickness="1.75" id="118:327">
+                        <Stroke thickness="1.75" cap="round" join="round" id="118:327">
                             <SolidColor colorValue="FF18181B" id="118:328">
                                 <DataBindContext sourcePathIds="10:7-118:4" propertyKey="37" id="118:329"/>
                             </SolidColor>
                         </Stroke>
-                        <Stroke  cap="round" join="round" thickness="0" id="118:331">
+                        <Stroke thickness="0" cap="round" join="round" id="118:331">
                             <SolidColor colorValue="FFFFFFFF" id="118:332">
                                 <DataBindContext sourcePathIds="10:7-118:7" propertyKey="37" id="118:333"/>
                             </SolidColor>
@@ -189,7 +189,7 @@
                             <DataBindContext sourcePathIds="1:151-7:1" propertyKey="47" nameBased="true" converterId="33:251" id="117:247"/>
                         </Stroke>
                     </Shape>
-                    <Shape x="8" y="8" name="scissors" opacity="0" id="116:46">
+                    <Shape x="8" y="8" opacity="0" name="scissors" id="116:46">
                         <Ellipse width="4" height="4" x="-4" y="-4" id="116:35"/>
                         <Ellipse width="4" height="4" x="-4" y="4" id="116:36"/>
                         <PointsPath isClockwise="false" id="116:37">
@@ -204,22 +204,22 @@
                             <StraightVertex x="-2.5869999" y="-2.5869999" id="116:44"/>
                             <StraightVertex id="116:45"/>
                         </PointsPath>
-                        <Stroke  cap="round" join="round" thickness="0" id="116:47">
+                        <Stroke thickness="0" cap="round" join="round" id="116:47">
                             <SolidColor colorValue="FFFFFFFF" id="116:48">
                                 <DataBindContext sourcePathIds="10:7-10:2092" propertyKey="37" id="116:49"/>
                             </SolidColor>
                         </Stroke>
-                        <Stroke  cap="round" join="round" thickness="0" id="116:50">
+                        <Stroke thickness="0" cap="round" join="round" id="116:50">
                             <SolidColor colorValue="FF000000" id="116:51">
                                 <DataBindContext sourcePathIds="10:7-10:7422" propertyKey="37" id="116:52"/>
                             </SolidColor>
                         </Stroke>
-                        <Stroke  cap="round" join="round" thickness="1.75" id="118:337">
+                        <Stroke thickness="1.75" cap="round" join="round" id="118:337">
                             <SolidColor colorValue="FF18181B" id="118:338">
                                 <DataBindContext sourcePathIds="10:7-118:4" propertyKey="37" id="118:339"/>
                             </SolidColor>
                         </Stroke>
-                        <Stroke  cap="round" join="round" thickness="0" id="118:341">
+                        <Stroke thickness="0" cap="round" join="round" id="118:341">
                             <SolidColor colorValue="FFFFFFFF" id="118:342">
                                 <DataBindContext sourcePathIds="10:7-118:7" propertyKey="37" id="118:343"/>
                             </SolidColor>
@@ -231,7 +231,7 @@
                             <DataBindContext sourcePathIds="1:151-7:1" propertyKey="47" nameBased="true" converterId="33:251" id="116:57"/>
                         </Stroke>
                     </Shape>
-                    <Shape x="8" y="8" name="clipboard" opacity="0" id="116:67">
+                    <Shape x="8" y="8" opacity="0" name="clipboard" id="116:67">
                         <Rectangle cornerRadiusTL="0.667" width="5.3330002" height="2.6670001" y="-5.3330002" id="116:59"/>
                         <PointsPath id="116:60">
                             <StraightVertex x="2.6670001" y="-5.3330002" id="116:61"/>
@@ -241,22 +241,22 @@
                             <StraightVertex radius="1.3329999" x="-5.3330002" y="-5.3330002" id="116:65"/>
                             <StraightVertex x="-2.6670001" y="-5.3330002" id="116:66"/>
                         </PointsPath>
-                        <Stroke  cap="round" join="round" thickness="0" id="116:68">
+                        <Stroke thickness="0" cap="round" join="round" id="116:68">
                             <SolidColor colorValue="FFFFFFFF" id="116:69">
                                 <DataBindContext sourcePathIds="10:7-10:2092" propertyKey="37" id="116:70"/>
                             </SolidColor>
                         </Stroke>
-                        <Stroke  cap="round" join="round" thickness="0" id="116:71">
+                        <Stroke thickness="0" cap="round" join="round" id="116:71">
                             <SolidColor colorValue="FF000000" id="116:72">
                                 <DataBindContext sourcePathIds="10:7-10:7422" propertyKey="37" id="116:73"/>
                             </SolidColor>
                         </Stroke>
-                        <Stroke  cap="round" join="round" thickness="1.75" id="118:347">
+                        <Stroke thickness="1.75" cap="round" join="round" id="118:347">
                             <SolidColor colorValue="FF18181B" id="118:348">
                                 <DataBindContext sourcePathIds="10:7-118:4" propertyKey="37" id="118:349"/>
                             </SolidColor>
                         </Stroke>
-                        <Stroke  cap="round" join="round" thickness="0" id="118:351">
+                        <Stroke thickness="0" cap="round" join="round" id="118:351">
                             <SolidColor colorValue="FFFFFFFF" id="118:352">
                                 <DataBindContext sourcePathIds="10:7-118:7" propertyKey="37" id="118:353"/>
                             </SolidColor>
@@ -339,7 +339,7 @@
                         <DataBindContext sourcePathIds="1:151-1:549" propertyKey="268" nameBased="true" id="118:367"/>
                     </TextValueRun>
                 </Text>
-                <Text alignValue="center" fitFontSizeResizesBox="false" name="Text Destructive" opacity="0" id="118:371">
+                <Text alignValue="center" fitFontSizeResizesBox="false" opacity="0" name="Text Destructive" id="118:371">
                     <TextStylePaint fontSize="16" fontAssetId="0:7" familyName="Inter" styleName="Medium" name="Style 1" id="118:372">
                         <Fill name="Fill 1" id="118:373">
                             <SolidColor colorValue="FFEFF6FF" name="Component" id="118:374">
@@ -353,7 +353,7 @@
                         <DataBindContext sourcePathIds="1:151-1:549" propertyKey="268" nameBased="true" id="118:379"/>
                     </TextValueRun>
                 </Text>
-                <Text alignValue="center" fitFontSizeResizesBox="false" name="Text Secondary" opacity="0" id="33:287">
+                <Text alignValue="center" fitFontSizeResizesBox="false" opacity="0" name="Text Secondary" id="33:287">
                     <TextStylePaint fontSize="16" fontAssetId="0:7" familyName="Inter" styleName="Medium" name="Style 1" id="33:288">
                         <Fill name="Fill 1" id="33:289">
                             <SolidColor colorValue="FFEFF6FF" name="Component" id="33:290">
@@ -367,7 +367,7 @@
                         <DataBindContext sourcePathIds="1:151-1:549" propertyKey="268" nameBased="true" id="33:322"/>
                     </TextValueRun>
                 </Text>
-                <Text alignValue="center" fitFontSizeResizesBox="false" name="Text" opacity="0" id="1:138">
+                <Text alignValue="center" fitFontSizeResizesBox="false" opacity="0" name="Text" id="1:138">
                     <TextStylePaint fontSize="16" fontAssetId="0:7" familyName="Inter" styleName="Medium" name="Style 1" id="1:139">
                         <Fill name="Fill 1" id="1:140">
                             <SolidColor colorValue="FFEFF6FF" name="Component" id="1:141">
@@ -529,18 +529,1010 @@
             </SemanticData>
             <FocusData name="Focus" id="0:15797"/>
         </LayoutComponent>
-        <LinearAnimation loopValue="loop" name="Variant Primary" id="902:1"><KeyedObject objectId="33:279" id="902:5"><KeyedProperty property="thickness" id="902:3"><KeyFrameDouble value="0" id="902:4"/></KeyedProperty></KeyedObject><KeyedObject objectId="33:281" id="902:8"><KeyedProperty property="thickness" id="902:6"><KeyFrameDouble value="0" id="902:7"/></KeyedProperty></KeyedObject><KeyedObject objectId="118:287" id="902:11"><KeyedProperty property="thickness" id="902:9"><KeyFrameDouble value="1.75" id="902:10"/></KeyedProperty></KeyedObject><KeyedObject objectId="118:291" id="902:14"><KeyedProperty property="thickness" id="902:12"><KeyFrameDouble value="0" id="902:13"/></KeyedProperty></KeyedObject><KeyedObject objectId="33:266" id="902:17"><KeyedProperty property="thickness" id="902:15"><KeyFrameDouble value="0" id="902:16"/></KeyedProperty></KeyedObject><KeyedObject objectId="33:268" id="902:20"><KeyedProperty property="thickness" id="902:18"><KeyFrameDouble value="0" id="902:19"/></KeyedProperty></KeyedObject><KeyedObject objectId="118:297" id="902:23"><KeyedProperty property="thickness" id="902:21"><KeyFrameDouble value="1.75" id="902:22"/></KeyedProperty></KeyedObject><KeyedObject objectId="118:301" id="902:26"><KeyedProperty property="thickness" id="902:24"><KeyFrameDouble value="0" id="902:25"/></KeyedProperty></KeyedObject><KeyedObject objectId="33:245" id="902:29"><KeyedProperty property="thickness" id="902:27"><KeyFrameDouble value="0" id="902:28"/></KeyedProperty></KeyedObject><KeyedObject objectId="33:247" id="902:32"><KeyedProperty property="thickness" id="902:30"><KeyFrameDouble value="0" id="902:31"/></KeyedProperty></KeyedObject><KeyedObject objectId="118:307" id="902:35"><KeyedProperty property="thickness" id="902:33"><KeyFrameDouble value="1.75" id="902:34"/></KeyedProperty></KeyedObject><KeyedObject objectId="118:311" id="902:38"><KeyedProperty property="thickness" id="902:36"><KeyFrameDouble value="0" id="902:37"/></KeyedProperty></KeyedObject><KeyedObject objectId="116:23" id="902:41"><KeyedProperty property="thickness" id="902:39"><KeyFrameDouble value="0" id="902:40"/></KeyedProperty></KeyedObject><KeyedObject objectId="116:26" id="902:44"><KeyedProperty property="thickness" id="902:42"><KeyFrameDouble value="0" id="902:43"/></KeyedProperty></KeyedObject><KeyedObject objectId="118:317" id="902:47"><KeyedProperty property="thickness" id="902:45"><KeyFrameDouble value="1.75" id="902:46"/></KeyedProperty></KeyedObject><KeyedObject objectId="118:321" id="902:50"><KeyedProperty property="thickness" id="902:48"><KeyFrameDouble value="0" id="902:49"/></KeyedProperty></KeyedObject><KeyedObject objectId="117:237" id="902:53"><KeyedProperty property="thickness" id="902:51"><KeyFrameDouble value="0" id="902:52"/></KeyedProperty></KeyedObject><KeyedObject objectId="117:240" id="902:56"><KeyedProperty property="thickness" id="902:54"><KeyFrameDouble value="0" id="902:55"/></KeyedProperty></KeyedObject><KeyedObject objectId="118:327" id="902:59"><KeyedProperty property="thickness" id="902:57"><KeyFrameDouble value="1.75" id="902:58"/></KeyedProperty></KeyedObject><KeyedObject objectId="118:331" id="902:62"><KeyedProperty property="thickness" id="902:60"><KeyFrameDouble value="0" id="902:61"/></KeyedProperty></KeyedObject><KeyedObject objectId="116:47" id="902:65"><KeyedProperty property="thickness" id="902:63"><KeyFrameDouble value="0" id="902:64"/></KeyedProperty></KeyedObject><KeyedObject objectId="116:50" id="902:68"><KeyedProperty property="thickness" id="902:66"><KeyFrameDouble value="0" id="902:67"/></KeyedProperty></KeyedObject><KeyedObject objectId="118:337" id="902:71"><KeyedProperty property="thickness" id="902:69"><KeyFrameDouble value="1.75" id="902:70"/></KeyedProperty></KeyedObject><KeyedObject objectId="118:341" id="902:74"><KeyedProperty property="thickness" id="902:72"><KeyFrameDouble value="0" id="902:73"/></KeyedProperty></KeyedObject><KeyedObject objectId="116:68" id="902:77"><KeyedProperty property="thickness" id="902:75"><KeyFrameDouble value="0" id="902:76"/></KeyedProperty></KeyedObject><KeyedObject objectId="116:71" id="902:80"><KeyedProperty property="thickness" id="902:78"><KeyFrameDouble value="0" id="902:79"/></KeyedProperty></KeyedObject><KeyedObject objectId="118:347" id="902:83"><KeyedProperty property="thickness" id="902:81"><KeyFrameDouble value="1.75" id="902:82"/></KeyedProperty></KeyedObject><KeyedObject objectId="118:351" id="902:86"><KeyedProperty property="thickness" id="902:84"><KeyFrameDouble value="0" id="902:85"/></KeyedProperty></KeyedObject><KeyedObject objectId="118:359" id="902:89"><KeyedProperty property="opacity" id="902:87"><KeyFrameDouble value="1" id="902:88"/></KeyedProperty></KeyedObject><KeyedObject objectId="118:371" id="902:92"><KeyedProperty property="opacity" id="902:90"><KeyFrameDouble value="0" id="902:91"/></KeyedProperty></KeyedObject><KeyedObject objectId="33:287" id="902:95"><KeyedProperty property="opacity" id="902:93"><KeyFrameDouble value="0" id="902:94"/></KeyedProperty></KeyedObject><KeyedObject objectId="1:138" id="902:98"><KeyedProperty property="opacity" id="902:96"><KeyFrameDouble value="0" id="902:97"/></KeyedProperty></KeyedObject><KeyedObject objectId="33:304" id="902:101"><KeyedProperty property="displayValue" id="902:99"><KeyFrameUint value="1" id="902:100"/></KeyedProperty></KeyedObject><KeyedObject objectId="118:397" id="902:104"><KeyedProperty property="displayValue" id="902:102"><KeyFrameUint value="0" id="902:103"/></KeyedProperty></KeyedObject><KeyedObject objectId="118:418" id="902:107"><KeyedProperty property="displayValue" id="902:105"><KeyFrameUint value="1" id="902:106"/></KeyedProperty></KeyedObject></LinearAnimation>
-        <LinearAnimation loopValue="loop" name="Variant Secondary" id="902:108"><KeyedObject objectId="33:279" id="902:112"><KeyedProperty property="thickness" id="902:110"><KeyFrameDouble value="0" id="902:111"/></KeyedProperty></KeyedObject><KeyedObject objectId="33:281" id="902:115"><KeyedProperty property="thickness" id="902:113"><KeyFrameDouble value="1.75" id="902:114"/></KeyedProperty></KeyedObject><KeyedObject objectId="118:287" id="902:118"><KeyedProperty property="thickness" id="902:116"><KeyFrameDouble value="0" id="902:117"/></KeyedProperty></KeyedObject><KeyedObject objectId="118:291" id="902:121"><KeyedProperty property="thickness" id="902:119"><KeyFrameDouble value="0" id="902:120"/></KeyedProperty></KeyedObject><KeyedObject objectId="33:266" id="902:124"><KeyedProperty property="thickness" id="902:122"><KeyFrameDouble value="0" id="902:123"/></KeyedProperty></KeyedObject><KeyedObject objectId="33:268" id="902:127"><KeyedProperty property="thickness" id="902:125"><KeyFrameDouble value="1.75" id="902:126"/></KeyedProperty></KeyedObject><KeyedObject objectId="118:297" id="902:130"><KeyedProperty property="thickness" id="902:128"><KeyFrameDouble value="0" id="902:129"/></KeyedProperty></KeyedObject><KeyedObject objectId="118:301" id="902:133"><KeyedProperty property="thickness" id="902:131"><KeyFrameDouble value="0" id="902:132"/></KeyedProperty></KeyedObject><KeyedObject objectId="33:245" id="902:136"><KeyedProperty property="thickness" id="902:134"><KeyFrameDouble value="0" id="902:135"/></KeyedProperty></KeyedObject><KeyedObject objectId="33:247" id="902:139"><KeyedProperty property="thickness" id="902:137"><KeyFrameDouble value="1.75" id="902:138"/></KeyedProperty></KeyedObject><KeyedObject objectId="118:307" id="902:142"><KeyedProperty property="thickness" id="902:140"><KeyFrameDouble value="0" id="902:141"/></KeyedProperty></KeyedObject><KeyedObject objectId="118:311" id="902:145"><KeyedProperty property="thickness" id="902:143"><KeyFrameDouble value="0" id="902:144"/></KeyedProperty></KeyedObject><KeyedObject objectId="116:23" id="902:148"><KeyedProperty property="thickness" id="902:146"><KeyFrameDouble value="0" id="902:147"/></KeyedProperty></KeyedObject><KeyedObject objectId="116:26" id="902:151"><KeyedProperty property="thickness" id="902:149"><KeyFrameDouble value="1.75" id="902:150"/></KeyedProperty></KeyedObject><KeyedObject objectId="118:317" id="902:154"><KeyedProperty property="thickness" id="902:152"><KeyFrameDouble value="0" id="902:153"/></KeyedProperty></KeyedObject><KeyedObject objectId="118:321" id="902:157"><KeyedProperty property="thickness" id="902:155"><KeyFrameDouble value="0" id="902:156"/></KeyedProperty></KeyedObject><KeyedObject objectId="117:237" id="902:160"><KeyedProperty property="thickness" id="902:158"><KeyFrameDouble value="0" id="902:159"/></KeyedProperty></KeyedObject><KeyedObject objectId="117:240" id="902:163"><KeyedProperty property="thickness" id="902:161"><KeyFrameDouble value="1.75" id="902:162"/></KeyedProperty></KeyedObject><KeyedObject objectId="118:327" id="902:166"><KeyedProperty property="thickness" id="902:164"><KeyFrameDouble value="0" id="902:165"/></KeyedProperty></KeyedObject><KeyedObject objectId="118:331" id="902:169"><KeyedProperty property="thickness" id="902:167"><KeyFrameDouble value="0" id="902:168"/></KeyedProperty></KeyedObject><KeyedObject objectId="116:47" id="902:172"><KeyedProperty property="thickness" id="902:170"><KeyFrameDouble value="0" id="902:171"/></KeyedProperty></KeyedObject><KeyedObject objectId="116:50" id="902:175"><KeyedProperty property="thickness" id="902:173"><KeyFrameDouble value="1.75" id="902:174"/></KeyedProperty></KeyedObject><KeyedObject objectId="118:337" id="902:178"><KeyedProperty property="thickness" id="902:176"><KeyFrameDouble value="0" id="902:177"/></KeyedProperty></KeyedObject><KeyedObject objectId="118:341" id="902:181"><KeyedProperty property="thickness" id="902:179"><KeyFrameDouble value="0" id="902:180"/></KeyedProperty></KeyedObject><KeyedObject objectId="116:68" id="902:184"><KeyedProperty property="thickness" id="902:182"><KeyFrameDouble value="0" id="902:183"/></KeyedProperty></KeyedObject><KeyedObject objectId="116:71" id="902:187"><KeyedProperty property="thickness" id="902:185"><KeyFrameDouble value="1.75" id="902:186"/></KeyedProperty></KeyedObject><KeyedObject objectId="118:347" id="902:190"><KeyedProperty property="thickness" id="902:188"><KeyFrameDouble value="0" id="902:189"/></KeyedProperty></KeyedObject><KeyedObject objectId="118:351" id="902:193"><KeyedProperty property="thickness" id="902:191"><KeyFrameDouble value="0" id="902:192"/></KeyedProperty></KeyedObject><KeyedObject objectId="118:359" id="902:196"><KeyedProperty property="opacity" id="902:194"><KeyFrameDouble value="0" id="902:195"/></KeyedProperty></KeyedObject><KeyedObject objectId="118:371" id="902:199"><KeyedProperty property="opacity" id="902:197"><KeyFrameDouble value="0" id="902:198"/></KeyedProperty></KeyedObject><KeyedObject objectId="33:287" id="902:202"><KeyedProperty property="opacity" id="902:200"><KeyFrameDouble value="1" id="902:201"/></KeyedProperty></KeyedObject><KeyedObject objectId="1:138" id="902:205"><KeyedProperty property="opacity" id="902:203"><KeyFrameDouble value="0" id="902:204"/></KeyedProperty></KeyedObject><KeyedObject objectId="33:304" id="902:208"><KeyedProperty property="displayValue" id="902:206"><KeyFrameUint value="0" id="902:207"/></KeyedProperty></KeyedObject><KeyedObject objectId="118:397" id="902:211"><KeyedProperty property="displayValue" id="902:209"><KeyFrameUint value="1" id="902:210"/></KeyedProperty></KeyedObject><KeyedObject objectId="118:418" id="902:214"><KeyedProperty property="displayValue" id="902:212"><KeyFrameUint value="1" id="902:213"/></KeyedProperty></KeyedObject></LinearAnimation>
-        <LinearAnimation loopValue="loop" name="Variant Brand" id="902:215"><KeyedObject objectId="33:279" id="902:219"><KeyedProperty property="thickness" id="902:217"><KeyFrameDouble value="1.75" id="902:218"/></KeyedProperty></KeyedObject><KeyedObject objectId="33:281" id="902:222"><KeyedProperty property="thickness" id="902:220"><KeyFrameDouble value="0" id="902:221"/></KeyedProperty></KeyedObject><KeyedObject objectId="118:287" id="902:225"><KeyedProperty property="thickness" id="902:223"><KeyFrameDouble value="0" id="902:224"/></KeyedProperty></KeyedObject><KeyedObject objectId="118:291" id="902:228"><KeyedProperty property="thickness" id="902:226"><KeyFrameDouble value="0" id="902:227"/></KeyedProperty></KeyedObject><KeyedObject objectId="33:266" id="902:231"><KeyedProperty property="thickness" id="902:229"><KeyFrameDouble value="1.75" id="902:230"/></KeyedProperty></KeyedObject><KeyedObject objectId="33:268" id="902:234"><KeyedProperty property="thickness" id="902:232"><KeyFrameDouble value="0" id="902:233"/></KeyedProperty></KeyedObject><KeyedObject objectId="118:297" id="902:237"><KeyedProperty property="thickness" id="902:235"><KeyFrameDouble value="0" id="902:236"/></KeyedProperty></KeyedObject><KeyedObject objectId="118:301" id="902:240"><KeyedProperty property="thickness" id="902:238"><KeyFrameDouble value="0" id="902:239"/></KeyedProperty></KeyedObject><KeyedObject objectId="33:245" id="902:243"><KeyedProperty property="thickness" id="902:241"><KeyFrameDouble value="1.75" id="902:242"/></KeyedProperty></KeyedObject><KeyedObject objectId="33:247" id="902:246"><KeyedProperty property="thickness" id="902:244"><KeyFrameDouble value="0" id="902:245"/></KeyedProperty></KeyedObject><KeyedObject objectId="118:307" id="902:249"><KeyedProperty property="thickness" id="902:247"><KeyFrameDouble value="0" id="902:248"/></KeyedProperty></KeyedObject><KeyedObject objectId="118:311" id="902:252"><KeyedProperty property="thickness" id="902:250"><KeyFrameDouble value="0" id="902:251"/></KeyedProperty></KeyedObject><KeyedObject objectId="116:23" id="902:255"><KeyedProperty property="thickness" id="902:253"><KeyFrameDouble value="1.75" id="902:254"/></KeyedProperty></KeyedObject><KeyedObject objectId="116:26" id="902:258"><KeyedProperty property="thickness" id="902:256"><KeyFrameDouble value="0" id="902:257"/></KeyedProperty></KeyedObject><KeyedObject objectId="118:317" id="902:261"><KeyedProperty property="thickness" id="902:259"><KeyFrameDouble value="0" id="902:260"/></KeyedProperty></KeyedObject><KeyedObject objectId="118:321" id="902:264"><KeyedProperty property="thickness" id="902:262"><KeyFrameDouble value="0" id="902:263"/></KeyedProperty></KeyedObject><KeyedObject objectId="117:237" id="902:267"><KeyedProperty property="thickness" id="902:265"><KeyFrameDouble value="1.75" id="902:266"/></KeyedProperty></KeyedObject><KeyedObject objectId="117:240" id="902:270"><KeyedProperty property="thickness" id="902:268"><KeyFrameDouble value="0" id="902:269"/></KeyedProperty></KeyedObject><KeyedObject objectId="118:327" id="902:273"><KeyedProperty property="thickness" id="902:271"><KeyFrameDouble value="0" id="902:272"/></KeyedProperty></KeyedObject><KeyedObject objectId="118:331" id="902:276"><KeyedProperty property="thickness" id="902:274"><KeyFrameDouble value="0" id="902:275"/></KeyedProperty></KeyedObject><KeyedObject objectId="116:47" id="902:279"><KeyedProperty property="thickness" id="902:277"><KeyFrameDouble value="1.75" id="902:278"/></KeyedProperty></KeyedObject><KeyedObject objectId="116:50" id="902:282"><KeyedProperty property="thickness" id="902:280"><KeyFrameDouble value="0" id="902:281"/></KeyedProperty></KeyedObject><KeyedObject objectId="118:337" id="902:285"><KeyedProperty property="thickness" id="902:283"><KeyFrameDouble value="0" id="902:284"/></KeyedProperty></KeyedObject><KeyedObject objectId="118:341" id="902:288"><KeyedProperty property="thickness" id="902:286"><KeyFrameDouble value="0" id="902:287"/></KeyedProperty></KeyedObject><KeyedObject objectId="116:68" id="902:291"><KeyedProperty property="thickness" id="902:289"><KeyFrameDouble value="1.75" id="902:290"/></KeyedProperty></KeyedObject><KeyedObject objectId="116:71" id="902:294"><KeyedProperty property="thickness" id="902:292"><KeyFrameDouble value="0" id="902:293"/></KeyedProperty></KeyedObject><KeyedObject objectId="118:347" id="902:297"><KeyedProperty property="thickness" id="902:295"><KeyFrameDouble value="0" id="902:296"/></KeyedProperty></KeyedObject><KeyedObject objectId="118:351" id="902:300"><KeyedProperty property="thickness" id="902:298"><KeyFrameDouble value="0" id="902:299"/></KeyedProperty></KeyedObject><KeyedObject objectId="118:359" id="902:303"><KeyedProperty property="opacity" id="902:301"><KeyFrameDouble value="0" id="902:302"/></KeyedProperty></KeyedObject><KeyedObject objectId="118:371" id="902:306"><KeyedProperty property="opacity" id="902:304"><KeyFrameDouble value="0" id="902:305"/></KeyedProperty></KeyedObject><KeyedObject objectId="33:287" id="902:309"><KeyedProperty property="opacity" id="902:307"><KeyFrameDouble value="0" id="902:308"/></KeyedProperty></KeyedObject><KeyedObject objectId="1:138" id="902:312"><KeyedProperty property="opacity" id="902:310"><KeyFrameDouble value="1" id="902:311"/></KeyedProperty></KeyedObject><KeyedObject objectId="33:304" id="902:315"><KeyedProperty property="displayValue" id="902:313"><KeyFrameUint value="1" id="902:314"/></KeyedProperty></KeyedObject><KeyedObject objectId="118:397" id="902:318"><KeyedProperty property="displayValue" id="902:316"><KeyFrameUint value="1" id="902:317"/></KeyedProperty></KeyedObject><KeyedObject objectId="118:418" id="902:321"><KeyedProperty property="displayValue" id="902:319"><KeyFrameUint value="1" id="902:320"/></KeyedProperty></KeyedObject></LinearAnimation>
-        <LinearAnimation loopValue="loop" name="Variant Destructive" id="902:322"><KeyedObject objectId="33:279" id="902:326"><KeyedProperty property="thickness" id="902:324"><KeyFrameDouble value="0" id="902:325"/></KeyedProperty></KeyedObject><KeyedObject objectId="33:281" id="902:329"><KeyedProperty property="thickness" id="902:327"><KeyFrameDouble value="0" id="902:328"/></KeyedProperty></KeyedObject><KeyedObject objectId="118:287" id="902:332"><KeyedProperty property="thickness" id="902:330"><KeyFrameDouble value="0" id="902:331"/></KeyedProperty></KeyedObject><KeyedObject objectId="118:291" id="902:335"><KeyedProperty property="thickness" id="902:333"><KeyFrameDouble value="1.75" id="902:334"/></KeyedProperty></KeyedObject><KeyedObject objectId="33:266" id="902:338"><KeyedProperty property="thickness" id="902:336"><KeyFrameDouble value="0" id="902:337"/></KeyedProperty></KeyedObject><KeyedObject objectId="33:268" id="902:341"><KeyedProperty property="thickness" id="902:339"><KeyFrameDouble value="0" id="902:340"/></KeyedProperty></KeyedObject><KeyedObject objectId="118:297" id="902:344"><KeyedProperty property="thickness" id="902:342"><KeyFrameDouble value="0" id="902:343"/></KeyedProperty></KeyedObject><KeyedObject objectId="118:301" id="902:347"><KeyedProperty property="thickness" id="902:345"><KeyFrameDouble value="1.75" id="902:346"/></KeyedProperty></KeyedObject><KeyedObject objectId="33:245" id="902:350"><KeyedProperty property="thickness" id="902:348"><KeyFrameDouble value="0" id="902:349"/></KeyedProperty></KeyedObject><KeyedObject objectId="33:247" id="902:353"><KeyedProperty property="thickness" id="902:351"><KeyFrameDouble value="0" id="902:352"/></KeyedProperty></KeyedObject><KeyedObject objectId="118:307" id="902:356"><KeyedProperty property="thickness" id="902:354"><KeyFrameDouble value="0" id="902:355"/></KeyedProperty></KeyedObject><KeyedObject objectId="118:311" id="902:359"><KeyedProperty property="thickness" id="902:357"><KeyFrameDouble value="1.75" id="902:358"/></KeyedProperty></KeyedObject><KeyedObject objectId="116:23" id="902:362"><KeyedProperty property="thickness" id="902:360"><KeyFrameDouble value="0" id="902:361"/></KeyedProperty></KeyedObject><KeyedObject objectId="116:26" id="902:365"><KeyedProperty property="thickness" id="902:363"><KeyFrameDouble value="0" id="902:364"/></KeyedProperty></KeyedObject><KeyedObject objectId="118:317" id="902:368"><KeyedProperty property="thickness" id="902:366"><KeyFrameDouble value="0" id="902:367"/></KeyedProperty></KeyedObject><KeyedObject objectId="118:321" id="902:371"><KeyedProperty property="thickness" id="902:369"><KeyFrameDouble value="1.75" id="902:370"/></KeyedProperty></KeyedObject><KeyedObject objectId="117:237" id="902:374"><KeyedProperty property="thickness" id="902:372"><KeyFrameDouble value="0" id="902:373"/></KeyedProperty></KeyedObject><KeyedObject objectId="117:240" id="902:377"><KeyedProperty property="thickness" id="902:375"><KeyFrameDouble value="0" id="902:376"/></KeyedProperty></KeyedObject><KeyedObject objectId="118:327" id="902:380"><KeyedProperty property="thickness" id="902:378"><KeyFrameDouble value="0" id="902:379"/></KeyedProperty></KeyedObject><KeyedObject objectId="118:331" id="902:383"><KeyedProperty property="thickness" id="902:381"><KeyFrameDouble value="1.75" id="902:382"/></KeyedProperty></KeyedObject><KeyedObject objectId="116:47" id="902:386"><KeyedProperty property="thickness" id="902:384"><KeyFrameDouble value="0" id="902:385"/></KeyedProperty></KeyedObject><KeyedObject objectId="116:50" id="902:389"><KeyedProperty property="thickness" id="902:387"><KeyFrameDouble value="0" id="902:388"/></KeyedProperty></KeyedObject><KeyedObject objectId="118:337" id="902:392"><KeyedProperty property="thickness" id="902:390"><KeyFrameDouble value="0" id="902:391"/></KeyedProperty></KeyedObject><KeyedObject objectId="118:341" id="902:395"><KeyedProperty property="thickness" id="902:393"><KeyFrameDouble value="1.75" id="902:394"/></KeyedProperty></KeyedObject><KeyedObject objectId="116:68" id="902:398"><KeyedProperty property="thickness" id="902:396"><KeyFrameDouble value="0" id="902:397"/></KeyedProperty></KeyedObject><KeyedObject objectId="116:71" id="902:401"><KeyedProperty property="thickness" id="902:399"><KeyFrameDouble value="0" id="902:400"/></KeyedProperty></KeyedObject><KeyedObject objectId="118:347" id="902:404"><KeyedProperty property="thickness" id="902:402"><KeyFrameDouble value="0" id="902:403"/></KeyedProperty></KeyedObject><KeyedObject objectId="118:351" id="902:407"><KeyedProperty property="thickness" id="902:405"><KeyFrameDouble value="1.75" id="902:406"/></KeyedProperty></KeyedObject><KeyedObject objectId="118:359" id="902:410"><KeyedProperty property="opacity" id="902:408"><KeyFrameDouble value="0" id="902:409"/></KeyedProperty></KeyedObject><KeyedObject objectId="118:371" id="902:413"><KeyedProperty property="opacity" id="902:411"><KeyFrameDouble value="1" id="902:412"/></KeyedProperty></KeyedObject><KeyedObject objectId="33:287" id="902:416"><KeyedProperty property="opacity" id="902:414"><KeyFrameDouble value="0" id="902:415"/></KeyedProperty></KeyedObject><KeyedObject objectId="1:138" id="902:419"><KeyedProperty property="opacity" id="902:417"><KeyFrameDouble value="0" id="902:418"/></KeyedProperty></KeyedObject><KeyedObject objectId="33:304" id="902:422"><KeyedProperty property="displayValue" id="902:420"><KeyFrameUint value="1" id="902:421"/></KeyedProperty></KeyedObject><KeyedObject objectId="118:397" id="902:425"><KeyedProperty property="displayValue" id="902:423"><KeyFrameUint value="1" id="902:424"/></KeyedProperty></KeyedObject><KeyedObject objectId="118:418" id="902:428"><KeyedProperty property="displayValue" id="902:426"><KeyFrameUint value="0" id="902:427"/></KeyedProperty></KeyedObject></LinearAnimation>
-        <LinearAnimation loopValue="loop" name="Icon Icon 0" id="903:1"><KeyedObject objectId="33:274" id="903:5"><KeyedProperty property="opacity" id="903:3"><KeyFrameDouble value="0" id="903:4"/></KeyedProperty></KeyedObject><KeyedObject objectId="33:261" id="903:8"><KeyedProperty property="opacity" id="903:6"><KeyFrameDouble value="0" id="903:7"/></KeyedProperty></KeyedObject><KeyedObject objectId="33:237" id="903:11"><KeyedProperty property="opacity" id="903:9"><KeyFrameDouble value="0" id="903:10"/></KeyedProperty></KeyedObject><KeyedObject objectId="116:22" id="903:14"><KeyedProperty property="opacity" id="903:12"><KeyFrameDouble value="0" id="903:13"/></KeyedProperty></KeyedObject><KeyedObject objectId="117:248" id="903:17"><KeyedProperty property="opacity" id="903:15"><KeyFrameDouble value="0" id="903:16"/></KeyedProperty></KeyedObject><KeyedObject objectId="116:46" id="903:20"><KeyedProperty property="opacity" id="903:18"><KeyFrameDouble value="0" id="903:19"/></KeyedProperty></KeyedObject><KeyedObject objectId="116:67" id="903:23"><KeyedProperty property="opacity" id="903:21"><KeyFrameDouble value="0" id="903:22"/></KeyedProperty></KeyedObject></LinearAnimation>
-        <LinearAnimation loopValue="loop" name="Icon Icon 1" id="903:24"><KeyedObject objectId="33:274" id="903:28"><KeyedProperty property="opacity" id="903:26"><KeyFrameDouble value="0" id="903:27"/></KeyedProperty></KeyedObject><KeyedObject objectId="33:261" id="903:31"><KeyedProperty property="opacity" id="903:29"><KeyFrameDouble value="0" id="903:30"/></KeyedProperty></KeyedObject><KeyedObject objectId="33:237" id="903:34"><KeyedProperty property="opacity" id="903:32"><KeyFrameDouble value="1" id="903:33"/></KeyedProperty></KeyedObject><KeyedObject objectId="116:22" id="903:37"><KeyedProperty property="opacity" id="903:35"><KeyFrameDouble value="0" id="903:36"/></KeyedProperty></KeyedObject><KeyedObject objectId="117:248" id="903:40"><KeyedProperty property="opacity" id="903:38"><KeyFrameDouble value="0" id="903:39"/></KeyedProperty></KeyedObject><KeyedObject objectId="116:46" id="903:43"><KeyedProperty property="opacity" id="903:41"><KeyFrameDouble value="0" id="903:42"/></KeyedProperty></KeyedObject><KeyedObject objectId="116:67" id="903:46"><KeyedProperty property="opacity" id="903:44"><KeyFrameDouble value="0" id="903:45"/></KeyedProperty></KeyedObject></LinearAnimation>
-        <LinearAnimation loopValue="loop" name="Icon Icon 2" id="903:47"><KeyedObject objectId="33:274" id="903:51"><KeyedProperty property="opacity" id="903:49"><KeyFrameDouble value="0" id="903:50"/></KeyedProperty></KeyedObject><KeyedObject objectId="33:261" id="903:54"><KeyedProperty property="opacity" id="903:52"><KeyFrameDouble value="1" id="903:53"/></KeyedProperty></KeyedObject><KeyedObject objectId="33:237" id="903:57"><KeyedProperty property="opacity" id="903:55"><KeyFrameDouble value="0" id="903:56"/></KeyedProperty></KeyedObject><KeyedObject objectId="116:22" id="903:60"><KeyedProperty property="opacity" id="903:58"><KeyFrameDouble value="0" id="903:59"/></KeyedProperty></KeyedObject><KeyedObject objectId="117:248" id="903:63"><KeyedProperty property="opacity" id="903:61"><KeyFrameDouble value="0" id="903:62"/></KeyedProperty></KeyedObject><KeyedObject objectId="116:46" id="903:66"><KeyedProperty property="opacity" id="903:64"><KeyFrameDouble value="0" id="903:65"/></KeyedProperty></KeyedObject><KeyedObject objectId="116:67" id="903:69"><KeyedProperty property="opacity" id="903:67"><KeyFrameDouble value="0" id="903:68"/></KeyedProperty></KeyedObject></LinearAnimation>
-        <LinearAnimation loopValue="loop" name="Icon Icon 3" id="903:70"><KeyedObject objectId="33:274" id="903:74"><KeyedProperty property="opacity" id="903:72"><KeyFrameDouble value="1" id="903:73"/></KeyedProperty></KeyedObject><KeyedObject objectId="33:261" id="903:77"><KeyedProperty property="opacity" id="903:75"><KeyFrameDouble value="0" id="903:76"/></KeyedProperty></KeyedObject><KeyedObject objectId="33:237" id="903:80"><KeyedProperty property="opacity" id="903:78"><KeyFrameDouble value="0" id="903:79"/></KeyedProperty></KeyedObject><KeyedObject objectId="116:22" id="903:83"><KeyedProperty property="opacity" id="903:81"><KeyFrameDouble value="0" id="903:82"/></KeyedProperty></KeyedObject><KeyedObject objectId="117:248" id="903:86"><KeyedProperty property="opacity" id="903:84"><KeyFrameDouble value="0" id="903:85"/></KeyedProperty></KeyedObject><KeyedObject objectId="116:46" id="903:89"><KeyedProperty property="opacity" id="903:87"><KeyFrameDouble value="0" id="903:88"/></KeyedProperty></KeyedObject><KeyedObject objectId="116:67" id="903:92"><KeyedProperty property="opacity" id="903:90"><KeyFrameDouble value="0" id="903:91"/></KeyedProperty></KeyedObject></LinearAnimation>
-        <LinearAnimation loopValue="loop" name="Icon Icon 4" id="903:93"><KeyedObject objectId="33:274" id="903:97"><KeyedProperty property="opacity" id="903:95"><KeyFrameDouble value="0" id="903:96"/></KeyedProperty></KeyedObject><KeyedObject objectId="33:261" id="903:100"><KeyedProperty property="opacity" id="903:98"><KeyFrameDouble value="0" id="903:99"/></KeyedProperty></KeyedObject><KeyedObject objectId="33:237" id="903:103"><KeyedProperty property="opacity" id="903:101"><KeyFrameDouble value="0" id="903:102"/></KeyedProperty></KeyedObject><KeyedObject objectId="116:22" id="903:106"><KeyedProperty property="opacity" id="903:104"><KeyFrameDouble value="1" id="903:105"/></KeyedProperty></KeyedObject><KeyedObject objectId="117:248" id="903:109"><KeyedProperty property="opacity" id="903:107"><KeyFrameDouble value="0" id="903:108"/></KeyedProperty></KeyedObject><KeyedObject objectId="116:46" id="903:112"><KeyedProperty property="opacity" id="903:110"><KeyFrameDouble value="0" id="903:111"/></KeyedProperty></KeyedObject><KeyedObject objectId="116:67" id="903:115"><KeyedProperty property="opacity" id="903:113"><KeyFrameDouble value="0" id="903:114"/></KeyedProperty></KeyedObject></LinearAnimation>
-        <LinearAnimation loopValue="loop" name="Icon Icon 5" id="903:116"><KeyedObject objectId="33:274" id="903:120"><KeyedProperty property="opacity" id="903:118"><KeyFrameDouble value="0" id="903:119"/></KeyedProperty></KeyedObject><KeyedObject objectId="33:261" id="903:123"><KeyedProperty property="opacity" id="903:121"><KeyFrameDouble value="0" id="903:122"/></KeyedProperty></KeyedObject><KeyedObject objectId="33:237" id="903:126"><KeyedProperty property="opacity" id="903:124"><KeyFrameDouble value="0" id="903:125"/></KeyedProperty></KeyedObject><KeyedObject objectId="116:22" id="903:129"><KeyedProperty property="opacity" id="903:127"><KeyFrameDouble value="0" id="903:128"/></KeyedProperty></KeyedObject><KeyedObject objectId="117:248" id="903:132"><KeyedProperty property="opacity" id="903:130"><KeyFrameDouble value="0" id="903:131"/></KeyedProperty></KeyedObject><KeyedObject objectId="116:46" id="903:135"><KeyedProperty property="opacity" id="903:133"><KeyFrameDouble value="1" id="903:134"/></KeyedProperty></KeyedObject><KeyedObject objectId="116:67" id="903:138"><KeyedProperty property="opacity" id="903:136"><KeyFrameDouble value="0" id="903:137"/></KeyedProperty></KeyedObject></LinearAnimation>
-        <LinearAnimation loopValue="loop" name="Icon Icon 6" id="903:139"><KeyedObject objectId="33:274" id="903:143"><KeyedProperty property="opacity" id="903:141"><KeyFrameDouble value="0" id="903:142"/></KeyedProperty></KeyedObject><KeyedObject objectId="33:261" id="903:146"><KeyedProperty property="opacity" id="903:144"><KeyFrameDouble value="0" id="903:145"/></KeyedProperty></KeyedObject><KeyedObject objectId="33:237" id="903:149"><KeyedProperty property="opacity" id="903:147"><KeyFrameDouble value="0" id="903:148"/></KeyedProperty></KeyedObject><KeyedObject objectId="116:22" id="903:152"><KeyedProperty property="opacity" id="903:150"><KeyFrameDouble value="0" id="903:151"/></KeyedProperty></KeyedObject><KeyedObject objectId="117:248" id="903:155"><KeyedProperty property="opacity" id="903:153"><KeyFrameDouble value="0" id="903:154"/></KeyedProperty></KeyedObject><KeyedObject objectId="116:46" id="903:158"><KeyedProperty property="opacity" id="903:156"><KeyFrameDouble value="0" id="903:157"/></KeyedProperty></KeyedObject><KeyedObject objectId="116:67" id="903:161"><KeyedProperty property="opacity" id="903:159"><KeyFrameDouble value="1" id="903:160"/></KeyedProperty></KeyedObject></LinearAnimation>
-        <LinearAnimation loopValue="loop" name="Icon Icon 7" id="903:162"><KeyedObject objectId="33:274" id="903:166"><KeyedProperty property="opacity" id="903:164"><KeyFrameDouble value="0" id="903:165"/></KeyedProperty></KeyedObject><KeyedObject objectId="33:261" id="903:169"><KeyedProperty property="opacity" id="903:167"><KeyFrameDouble value="0" id="903:168"/></KeyedProperty></KeyedObject><KeyedObject objectId="33:237" id="903:172"><KeyedProperty property="opacity" id="903:170"><KeyFrameDouble value="0" id="903:171"/></KeyedProperty></KeyedObject><KeyedObject objectId="116:22" id="903:175"><KeyedProperty property="opacity" id="903:173"><KeyFrameDouble value="0" id="903:174"/></KeyedProperty></KeyedObject><KeyedObject objectId="117:248" id="903:178"><KeyedProperty property="opacity" id="903:176"><KeyFrameDouble value="1" id="903:177"/></KeyedProperty></KeyedObject><KeyedObject objectId="116:46" id="903:181"><KeyedProperty property="opacity" id="903:179"><KeyFrameDouble value="0" id="903:180"/></KeyedProperty></KeyedObject><KeyedObject objectId="116:67" id="903:184"><KeyedProperty property="opacity" id="903:182"><KeyFrameDouble value="0" id="903:183"/></KeyedProperty></KeyedObject></LinearAnimation>
+        <LinearAnimation loopValue="loop" name="Variant Primary" id="902:1">
+            <KeyedObject objectId="33:279" id="902:5">
+                <KeyedProperty property="thickness" id="902:3">
+                    <KeyFrameDouble id="902:4"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="33:281" id="902:8">
+                <KeyedProperty property="thickness" id="902:6">
+                    <KeyFrameDouble id="902:7"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="118:287" id="902:11">
+                <KeyedProperty property="thickness" id="902:9">
+                    <KeyFrameDouble value="1.75" id="902:10"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="118:291" id="902:14">
+                <KeyedProperty property="thickness" id="902:12">
+                    <KeyFrameDouble id="902:13"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="33:266" id="902:17">
+                <KeyedProperty property="thickness" id="902:15">
+                    <KeyFrameDouble id="902:16"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="33:268" id="902:20">
+                <KeyedProperty property="thickness" id="902:18">
+                    <KeyFrameDouble id="902:19"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="118:297" id="902:23">
+                <KeyedProperty property="thickness" id="902:21">
+                    <KeyFrameDouble value="1.75" id="902:22"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="118:301" id="902:26">
+                <KeyedProperty property="thickness" id="902:24">
+                    <KeyFrameDouble id="902:25"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="33:245" id="902:29">
+                <KeyedProperty property="thickness" id="902:27">
+                    <KeyFrameDouble id="902:28"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="33:247" id="902:32">
+                <KeyedProperty property="thickness" id="902:30">
+                    <KeyFrameDouble id="902:31"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="118:307" id="902:35">
+                <KeyedProperty property="thickness" id="902:33">
+                    <KeyFrameDouble value="1.75" id="902:34"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="118:311" id="902:38">
+                <KeyedProperty property="thickness" id="902:36">
+                    <KeyFrameDouble id="902:37"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="116:23" id="902:41">
+                <KeyedProperty property="thickness" id="902:39">
+                    <KeyFrameDouble id="902:40"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="116:26" id="902:44">
+                <KeyedProperty property="thickness" id="902:42">
+                    <KeyFrameDouble id="902:43"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="118:317" id="902:47">
+                <KeyedProperty property="thickness" id="902:45">
+                    <KeyFrameDouble value="1.75" id="902:46"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="118:321" id="902:50">
+                <KeyedProperty property="thickness" id="902:48">
+                    <KeyFrameDouble id="902:49"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="117:237" id="902:53">
+                <KeyedProperty property="thickness" id="902:51">
+                    <KeyFrameDouble id="902:52"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="117:240" id="902:56">
+                <KeyedProperty property="thickness" id="902:54">
+                    <KeyFrameDouble id="902:55"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="118:327" id="902:59">
+                <KeyedProperty property="thickness" id="902:57">
+                    <KeyFrameDouble value="1.75" id="902:58"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="118:331" id="902:62">
+                <KeyedProperty property="thickness" id="902:60">
+                    <KeyFrameDouble id="902:61"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="116:47" id="902:65">
+                <KeyedProperty property="thickness" id="902:63">
+                    <KeyFrameDouble id="902:64"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="116:50" id="902:68">
+                <KeyedProperty property="thickness" id="902:66">
+                    <KeyFrameDouble id="902:67"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="118:337" id="902:71">
+                <KeyedProperty property="thickness" id="902:69">
+                    <KeyFrameDouble value="1.75" id="902:70"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="118:341" id="902:74">
+                <KeyedProperty property="thickness" id="902:72">
+                    <KeyFrameDouble id="902:73"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="116:68" id="902:77">
+                <KeyedProperty property="thickness" id="902:75">
+                    <KeyFrameDouble id="902:76"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="116:71" id="902:80">
+                <KeyedProperty property="thickness" id="902:78">
+                    <KeyFrameDouble id="902:79"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="118:347" id="902:83">
+                <KeyedProperty property="thickness" id="902:81">
+                    <KeyFrameDouble value="1.75" id="902:82"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="118:351" id="902:86">
+                <KeyedProperty property="thickness" id="902:84">
+                    <KeyFrameDouble id="902:85"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="118:359" id="902:89">
+                <KeyedProperty property="opacity" id="902:87">
+                    <KeyFrameDouble value="1" id="902:88"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="118:371" id="902:92">
+                <KeyedProperty property="opacity" id="902:90">
+                    <KeyFrameDouble id="902:91"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="33:287" id="902:95">
+                <KeyedProperty property="opacity" id="902:93">
+                    <KeyFrameDouble id="902:94"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="1:138" id="902:98">
+                <KeyedProperty property="opacity" id="902:96">
+                    <KeyFrameDouble id="902:97"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="33:304" id="902:101">
+                <KeyedProperty property="displayValue" id="902:99">
+                    <KeyFrameUint value="1" id="902:100"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="118:397" id="902:104">
+                <KeyedProperty property="displayValue" id="902:102">
+                    <KeyFrameUint id="902:103"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="118:418" id="902:107">
+                <KeyedProperty property="displayValue" id="902:105">
+                    <KeyFrameUint value="1" id="902:106"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+        <LinearAnimation loopValue="loop" name="Variant Secondary" id="902:108">
+            <KeyedObject objectId="33:279" id="902:112">
+                <KeyedProperty property="thickness" id="902:110">
+                    <KeyFrameDouble id="902:111"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="33:281" id="902:115">
+                <KeyedProperty property="thickness" id="902:113">
+                    <KeyFrameDouble value="1.75" id="902:114"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="118:287" id="902:118">
+                <KeyedProperty property="thickness" id="902:116">
+                    <KeyFrameDouble id="902:117"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="118:291" id="902:121">
+                <KeyedProperty property="thickness" id="902:119">
+                    <KeyFrameDouble id="902:120"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="33:266" id="902:124">
+                <KeyedProperty property="thickness" id="902:122">
+                    <KeyFrameDouble id="902:123"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="33:268" id="902:127">
+                <KeyedProperty property="thickness" id="902:125">
+                    <KeyFrameDouble value="1.75" id="902:126"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="118:297" id="902:130">
+                <KeyedProperty property="thickness" id="902:128">
+                    <KeyFrameDouble id="902:129"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="118:301" id="902:133">
+                <KeyedProperty property="thickness" id="902:131">
+                    <KeyFrameDouble id="902:132"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="33:245" id="902:136">
+                <KeyedProperty property="thickness" id="902:134">
+                    <KeyFrameDouble id="902:135"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="33:247" id="902:139">
+                <KeyedProperty property="thickness" id="902:137">
+                    <KeyFrameDouble value="1.75" id="902:138"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="118:307" id="902:142">
+                <KeyedProperty property="thickness" id="902:140">
+                    <KeyFrameDouble id="902:141"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="118:311" id="902:145">
+                <KeyedProperty property="thickness" id="902:143">
+                    <KeyFrameDouble id="902:144"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="116:23" id="902:148">
+                <KeyedProperty property="thickness" id="902:146">
+                    <KeyFrameDouble id="902:147"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="116:26" id="902:151">
+                <KeyedProperty property="thickness" id="902:149">
+                    <KeyFrameDouble value="1.75" id="902:150"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="118:317" id="902:154">
+                <KeyedProperty property="thickness" id="902:152">
+                    <KeyFrameDouble id="902:153"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="118:321" id="902:157">
+                <KeyedProperty property="thickness" id="902:155">
+                    <KeyFrameDouble id="902:156"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="117:237" id="902:160">
+                <KeyedProperty property="thickness" id="902:158">
+                    <KeyFrameDouble id="902:159"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="117:240" id="902:163">
+                <KeyedProperty property="thickness" id="902:161">
+                    <KeyFrameDouble value="1.75" id="902:162"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="118:327" id="902:166">
+                <KeyedProperty property="thickness" id="902:164">
+                    <KeyFrameDouble id="902:165"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="118:331" id="902:169">
+                <KeyedProperty property="thickness" id="902:167">
+                    <KeyFrameDouble id="902:168"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="116:47" id="902:172">
+                <KeyedProperty property="thickness" id="902:170">
+                    <KeyFrameDouble id="902:171"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="116:50" id="902:175">
+                <KeyedProperty property="thickness" id="902:173">
+                    <KeyFrameDouble value="1.75" id="902:174"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="118:337" id="902:178">
+                <KeyedProperty property="thickness" id="902:176">
+                    <KeyFrameDouble id="902:177"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="118:341" id="902:181">
+                <KeyedProperty property="thickness" id="902:179">
+                    <KeyFrameDouble id="902:180"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="116:68" id="902:184">
+                <KeyedProperty property="thickness" id="902:182">
+                    <KeyFrameDouble id="902:183"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="116:71" id="902:187">
+                <KeyedProperty property="thickness" id="902:185">
+                    <KeyFrameDouble value="1.75" id="902:186"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="118:347" id="902:190">
+                <KeyedProperty property="thickness" id="902:188">
+                    <KeyFrameDouble id="902:189"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="118:351" id="902:193">
+                <KeyedProperty property="thickness" id="902:191">
+                    <KeyFrameDouble id="902:192"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="118:359" id="902:196">
+                <KeyedProperty property="opacity" id="902:194">
+                    <KeyFrameDouble id="902:195"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="118:371" id="902:199">
+                <KeyedProperty property="opacity" id="902:197">
+                    <KeyFrameDouble id="902:198"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="33:287" id="902:202">
+                <KeyedProperty property="opacity" id="902:200">
+                    <KeyFrameDouble value="1" id="902:201"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="1:138" id="902:205">
+                <KeyedProperty property="opacity" id="902:203">
+                    <KeyFrameDouble id="902:204"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="33:304" id="902:208">
+                <KeyedProperty property="displayValue" id="902:206">
+                    <KeyFrameUint id="902:207"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="118:397" id="902:211">
+                <KeyedProperty property="displayValue" id="902:209">
+                    <KeyFrameUint value="1" id="902:210"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="118:418" id="902:214">
+                <KeyedProperty property="displayValue" id="902:212">
+                    <KeyFrameUint value="1" id="902:213"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+        <LinearAnimation loopValue="loop" name="Variant Brand" id="902:215">
+            <KeyedObject objectId="33:279" id="902:219">
+                <KeyedProperty property="thickness" id="902:217">
+                    <KeyFrameDouble value="1.75" id="902:218"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="33:281" id="902:222">
+                <KeyedProperty property="thickness" id="902:220">
+                    <KeyFrameDouble id="902:221"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="118:287" id="902:225">
+                <KeyedProperty property="thickness" id="902:223">
+                    <KeyFrameDouble id="902:224"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="118:291" id="902:228">
+                <KeyedProperty property="thickness" id="902:226">
+                    <KeyFrameDouble id="902:227"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="33:266" id="902:231">
+                <KeyedProperty property="thickness" id="902:229">
+                    <KeyFrameDouble value="1.75" id="902:230"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="33:268" id="902:234">
+                <KeyedProperty property="thickness" id="902:232">
+                    <KeyFrameDouble id="902:233"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="118:297" id="902:237">
+                <KeyedProperty property="thickness" id="902:235">
+                    <KeyFrameDouble id="902:236"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="118:301" id="902:240">
+                <KeyedProperty property="thickness" id="902:238">
+                    <KeyFrameDouble id="902:239"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="33:245" id="902:243">
+                <KeyedProperty property="thickness" id="902:241">
+                    <KeyFrameDouble value="1.75" id="902:242"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="33:247" id="902:246">
+                <KeyedProperty property="thickness" id="902:244">
+                    <KeyFrameDouble id="902:245"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="118:307" id="902:249">
+                <KeyedProperty property="thickness" id="902:247">
+                    <KeyFrameDouble id="902:248"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="118:311" id="902:252">
+                <KeyedProperty property="thickness" id="902:250">
+                    <KeyFrameDouble id="902:251"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="116:23" id="902:255">
+                <KeyedProperty property="thickness" id="902:253">
+                    <KeyFrameDouble value="1.75" id="902:254"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="116:26" id="902:258">
+                <KeyedProperty property="thickness" id="902:256">
+                    <KeyFrameDouble id="902:257"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="118:317" id="902:261">
+                <KeyedProperty property="thickness" id="902:259">
+                    <KeyFrameDouble id="902:260"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="118:321" id="902:264">
+                <KeyedProperty property="thickness" id="902:262">
+                    <KeyFrameDouble id="902:263"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="117:237" id="902:267">
+                <KeyedProperty property="thickness" id="902:265">
+                    <KeyFrameDouble value="1.75" id="902:266"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="117:240" id="902:270">
+                <KeyedProperty property="thickness" id="902:268">
+                    <KeyFrameDouble id="902:269"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="118:327" id="902:273">
+                <KeyedProperty property="thickness" id="902:271">
+                    <KeyFrameDouble id="902:272"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="118:331" id="902:276">
+                <KeyedProperty property="thickness" id="902:274">
+                    <KeyFrameDouble id="902:275"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="116:47" id="902:279">
+                <KeyedProperty property="thickness" id="902:277">
+                    <KeyFrameDouble value="1.75" id="902:278"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="116:50" id="902:282">
+                <KeyedProperty property="thickness" id="902:280">
+                    <KeyFrameDouble id="902:281"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="118:337" id="902:285">
+                <KeyedProperty property="thickness" id="902:283">
+                    <KeyFrameDouble id="902:284"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="118:341" id="902:288">
+                <KeyedProperty property="thickness" id="902:286">
+                    <KeyFrameDouble id="902:287"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="116:68" id="902:291">
+                <KeyedProperty property="thickness" id="902:289">
+                    <KeyFrameDouble value="1.75" id="902:290"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="116:71" id="902:294">
+                <KeyedProperty property="thickness" id="902:292">
+                    <KeyFrameDouble id="902:293"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="118:347" id="902:297">
+                <KeyedProperty property="thickness" id="902:295">
+                    <KeyFrameDouble id="902:296"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="118:351" id="902:300">
+                <KeyedProperty property="thickness" id="902:298">
+                    <KeyFrameDouble id="902:299"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="118:359" id="902:303">
+                <KeyedProperty property="opacity" id="902:301">
+                    <KeyFrameDouble id="902:302"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="118:371" id="902:306">
+                <KeyedProperty property="opacity" id="902:304">
+                    <KeyFrameDouble id="902:305"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="33:287" id="902:309">
+                <KeyedProperty property="opacity" id="902:307">
+                    <KeyFrameDouble id="902:308"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="1:138" id="902:312">
+                <KeyedProperty property="opacity" id="902:310">
+                    <KeyFrameDouble value="1" id="902:311"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="33:304" id="902:315">
+                <KeyedProperty property="displayValue" id="902:313">
+                    <KeyFrameUint value="1" id="902:314"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="118:397" id="902:318">
+                <KeyedProperty property="displayValue" id="902:316">
+                    <KeyFrameUint value="1" id="902:317"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="118:418" id="902:321">
+                <KeyedProperty property="displayValue" id="902:319">
+                    <KeyFrameUint value="1" id="902:320"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+        <LinearAnimation loopValue="loop" name="Variant Destructive" id="902:322">
+            <KeyedObject objectId="33:279" id="902:326">
+                <KeyedProperty property="thickness" id="902:324">
+                    <KeyFrameDouble id="902:325"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="33:281" id="902:329">
+                <KeyedProperty property="thickness" id="902:327">
+                    <KeyFrameDouble id="902:328"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="118:287" id="902:332">
+                <KeyedProperty property="thickness" id="902:330">
+                    <KeyFrameDouble id="902:331"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="118:291" id="902:335">
+                <KeyedProperty property="thickness" id="902:333">
+                    <KeyFrameDouble value="1.75" id="902:334"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="33:266" id="902:338">
+                <KeyedProperty property="thickness" id="902:336">
+                    <KeyFrameDouble id="902:337"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="33:268" id="902:341">
+                <KeyedProperty property="thickness" id="902:339">
+                    <KeyFrameDouble id="902:340"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="118:297" id="902:344">
+                <KeyedProperty property="thickness" id="902:342">
+                    <KeyFrameDouble id="902:343"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="118:301" id="902:347">
+                <KeyedProperty property="thickness" id="902:345">
+                    <KeyFrameDouble value="1.75" id="902:346"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="33:245" id="902:350">
+                <KeyedProperty property="thickness" id="902:348">
+                    <KeyFrameDouble id="902:349"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="33:247" id="902:353">
+                <KeyedProperty property="thickness" id="902:351">
+                    <KeyFrameDouble id="902:352"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="118:307" id="902:356">
+                <KeyedProperty property="thickness" id="902:354">
+                    <KeyFrameDouble id="902:355"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="118:311" id="902:359">
+                <KeyedProperty property="thickness" id="902:357">
+                    <KeyFrameDouble value="1.75" id="902:358"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="116:23" id="902:362">
+                <KeyedProperty property="thickness" id="902:360">
+                    <KeyFrameDouble id="902:361"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="116:26" id="902:365">
+                <KeyedProperty property="thickness" id="902:363">
+                    <KeyFrameDouble id="902:364"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="118:317" id="902:368">
+                <KeyedProperty property="thickness" id="902:366">
+                    <KeyFrameDouble id="902:367"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="118:321" id="902:371">
+                <KeyedProperty property="thickness" id="902:369">
+                    <KeyFrameDouble value="1.75" id="902:370"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="117:237" id="902:374">
+                <KeyedProperty property="thickness" id="902:372">
+                    <KeyFrameDouble id="902:373"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="117:240" id="902:377">
+                <KeyedProperty property="thickness" id="902:375">
+                    <KeyFrameDouble id="902:376"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="118:327" id="902:380">
+                <KeyedProperty property="thickness" id="902:378">
+                    <KeyFrameDouble id="902:379"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="118:331" id="902:383">
+                <KeyedProperty property="thickness" id="902:381">
+                    <KeyFrameDouble value="1.75" id="902:382"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="116:47" id="902:386">
+                <KeyedProperty property="thickness" id="902:384">
+                    <KeyFrameDouble id="902:385"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="116:50" id="902:389">
+                <KeyedProperty property="thickness" id="902:387">
+                    <KeyFrameDouble id="902:388"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="118:337" id="902:392">
+                <KeyedProperty property="thickness" id="902:390">
+                    <KeyFrameDouble id="902:391"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="118:341" id="902:395">
+                <KeyedProperty property="thickness" id="902:393">
+                    <KeyFrameDouble value="1.75" id="902:394"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="116:68" id="902:398">
+                <KeyedProperty property="thickness" id="902:396">
+                    <KeyFrameDouble id="902:397"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="116:71" id="902:401">
+                <KeyedProperty property="thickness" id="902:399">
+                    <KeyFrameDouble id="902:400"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="118:347" id="902:404">
+                <KeyedProperty property="thickness" id="902:402">
+                    <KeyFrameDouble id="902:403"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="118:351" id="902:407">
+                <KeyedProperty property="thickness" id="902:405">
+                    <KeyFrameDouble value="1.75" id="902:406"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="118:359" id="902:410">
+                <KeyedProperty property="opacity" id="902:408">
+                    <KeyFrameDouble id="902:409"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="118:371" id="902:413">
+                <KeyedProperty property="opacity" id="902:411">
+                    <KeyFrameDouble value="1" id="902:412"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="33:287" id="902:416">
+                <KeyedProperty property="opacity" id="902:414">
+                    <KeyFrameDouble id="902:415"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="1:138" id="902:419">
+                <KeyedProperty property="opacity" id="902:417">
+                    <KeyFrameDouble id="902:418"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="33:304" id="902:422">
+                <KeyedProperty property="displayValue" id="902:420">
+                    <KeyFrameUint value="1" id="902:421"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="118:397" id="902:425">
+                <KeyedProperty property="displayValue" id="902:423">
+                    <KeyFrameUint value="1" id="902:424"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="118:418" id="902:428">
+                <KeyedProperty property="displayValue" id="902:426">
+                    <KeyFrameUint id="902:427"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+        <LinearAnimation loopValue="loop" name="Icon Icon 0" id="903:1">
+            <KeyedObject objectId="33:274" id="903:5">
+                <KeyedProperty property="opacity" id="903:3">
+                    <KeyFrameDouble id="903:4"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="33:261" id="903:8">
+                <KeyedProperty property="opacity" id="903:6">
+                    <KeyFrameDouble id="903:7"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="33:237" id="903:11">
+                <KeyedProperty property="opacity" id="903:9">
+                    <KeyFrameDouble id="903:10"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="116:22" id="903:14">
+                <KeyedProperty property="opacity" id="903:12">
+                    <KeyFrameDouble id="903:13"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="117:248" id="903:17">
+                <KeyedProperty property="opacity" id="903:15">
+                    <KeyFrameDouble id="903:16"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="116:46" id="903:20">
+                <KeyedProperty property="opacity" id="903:18">
+                    <KeyFrameDouble id="903:19"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="116:67" id="903:23">
+                <KeyedProperty property="opacity" id="903:21">
+                    <KeyFrameDouble id="903:22"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+        <LinearAnimation loopValue="loop" name="Icon Icon 1" id="903:24">
+            <KeyedObject objectId="33:274" id="903:28">
+                <KeyedProperty property="opacity" id="903:26">
+                    <KeyFrameDouble id="903:27"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="33:261" id="903:31">
+                <KeyedProperty property="opacity" id="903:29">
+                    <KeyFrameDouble id="903:30"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="33:237" id="903:34">
+                <KeyedProperty property="opacity" id="903:32">
+                    <KeyFrameDouble value="1" id="903:33"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="116:22" id="903:37">
+                <KeyedProperty property="opacity" id="903:35">
+                    <KeyFrameDouble id="903:36"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="117:248" id="903:40">
+                <KeyedProperty property="opacity" id="903:38">
+                    <KeyFrameDouble id="903:39"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="116:46" id="903:43">
+                <KeyedProperty property="opacity" id="903:41">
+                    <KeyFrameDouble id="903:42"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="116:67" id="903:46">
+                <KeyedProperty property="opacity" id="903:44">
+                    <KeyFrameDouble id="903:45"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+        <LinearAnimation loopValue="loop" name="Icon Icon 2" id="903:47">
+            <KeyedObject objectId="33:274" id="903:51">
+                <KeyedProperty property="opacity" id="903:49">
+                    <KeyFrameDouble id="903:50"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="33:261" id="903:54">
+                <KeyedProperty property="opacity" id="903:52">
+                    <KeyFrameDouble value="1" id="903:53"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="33:237" id="903:57">
+                <KeyedProperty property="opacity" id="903:55">
+                    <KeyFrameDouble id="903:56"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="116:22" id="903:60">
+                <KeyedProperty property="opacity" id="903:58">
+                    <KeyFrameDouble id="903:59"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="117:248" id="903:63">
+                <KeyedProperty property="opacity" id="903:61">
+                    <KeyFrameDouble id="903:62"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="116:46" id="903:66">
+                <KeyedProperty property="opacity" id="903:64">
+                    <KeyFrameDouble id="903:65"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="116:67" id="903:69">
+                <KeyedProperty property="opacity" id="903:67">
+                    <KeyFrameDouble id="903:68"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+        <LinearAnimation loopValue="loop" name="Icon Icon 3" id="903:70">
+            <KeyedObject objectId="33:274" id="903:74">
+                <KeyedProperty property="opacity" id="903:72">
+                    <KeyFrameDouble value="1" id="903:73"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="33:261" id="903:77">
+                <KeyedProperty property="opacity" id="903:75">
+                    <KeyFrameDouble id="903:76"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="33:237" id="903:80">
+                <KeyedProperty property="opacity" id="903:78">
+                    <KeyFrameDouble id="903:79"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="116:22" id="903:83">
+                <KeyedProperty property="opacity" id="903:81">
+                    <KeyFrameDouble id="903:82"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="117:248" id="903:86">
+                <KeyedProperty property="opacity" id="903:84">
+                    <KeyFrameDouble id="903:85"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="116:46" id="903:89">
+                <KeyedProperty property="opacity" id="903:87">
+                    <KeyFrameDouble id="903:88"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="116:67" id="903:92">
+                <KeyedProperty property="opacity" id="903:90">
+                    <KeyFrameDouble id="903:91"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+        <LinearAnimation loopValue="loop" name="Icon Icon 4" id="903:93">
+            <KeyedObject objectId="33:274" id="903:97">
+                <KeyedProperty property="opacity" id="903:95">
+                    <KeyFrameDouble id="903:96"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="33:261" id="903:100">
+                <KeyedProperty property="opacity" id="903:98">
+                    <KeyFrameDouble id="903:99"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="33:237" id="903:103">
+                <KeyedProperty property="opacity" id="903:101">
+                    <KeyFrameDouble id="903:102"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="116:22" id="903:106">
+                <KeyedProperty property="opacity" id="903:104">
+                    <KeyFrameDouble value="1" id="903:105"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="117:248" id="903:109">
+                <KeyedProperty property="opacity" id="903:107">
+                    <KeyFrameDouble id="903:108"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="116:46" id="903:112">
+                <KeyedProperty property="opacity" id="903:110">
+                    <KeyFrameDouble id="903:111"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="116:67" id="903:115">
+                <KeyedProperty property="opacity" id="903:113">
+                    <KeyFrameDouble id="903:114"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+        <LinearAnimation loopValue="loop" name="Icon Icon 5" id="903:116">
+            <KeyedObject objectId="33:274" id="903:120">
+                <KeyedProperty property="opacity" id="903:118">
+                    <KeyFrameDouble id="903:119"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="33:261" id="903:123">
+                <KeyedProperty property="opacity" id="903:121">
+                    <KeyFrameDouble id="903:122"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="33:237" id="903:126">
+                <KeyedProperty property="opacity" id="903:124">
+                    <KeyFrameDouble id="903:125"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="116:22" id="903:129">
+                <KeyedProperty property="opacity" id="903:127">
+                    <KeyFrameDouble id="903:128"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="117:248" id="903:132">
+                <KeyedProperty property="opacity" id="903:130">
+                    <KeyFrameDouble id="903:131"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="116:46" id="903:135">
+                <KeyedProperty property="opacity" id="903:133">
+                    <KeyFrameDouble value="1" id="903:134"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="116:67" id="903:138">
+                <KeyedProperty property="opacity" id="903:136">
+                    <KeyFrameDouble id="903:137"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+        <LinearAnimation loopValue="loop" name="Icon Icon 6" id="903:139">
+            <KeyedObject objectId="33:274" id="903:143">
+                <KeyedProperty property="opacity" id="903:141">
+                    <KeyFrameDouble id="903:142"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="33:261" id="903:146">
+                <KeyedProperty property="opacity" id="903:144">
+                    <KeyFrameDouble id="903:145"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="33:237" id="903:149">
+                <KeyedProperty property="opacity" id="903:147">
+                    <KeyFrameDouble id="903:148"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="116:22" id="903:152">
+                <KeyedProperty property="opacity" id="903:150">
+                    <KeyFrameDouble id="903:151"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="117:248" id="903:155">
+                <KeyedProperty property="opacity" id="903:153">
+                    <KeyFrameDouble id="903:154"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="116:46" id="903:158">
+                <KeyedProperty property="opacity" id="903:156">
+                    <KeyFrameDouble id="903:157"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="116:67" id="903:161">
+                <KeyedProperty property="opacity" id="903:159">
+                    <KeyFrameDouble value="1" id="903:160"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+        <LinearAnimation loopValue="loop" name="Icon Icon 7" id="903:162">
+            <KeyedObject objectId="33:274" id="903:166">
+                <KeyedProperty property="opacity" id="903:164">
+                    <KeyFrameDouble id="903:165"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="33:261" id="903:169">
+                <KeyedProperty property="opacity" id="903:167">
+                    <KeyFrameDouble id="903:168"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="33:237" id="903:172">
+                <KeyedProperty property="opacity" id="903:170">
+                    <KeyFrameDouble id="903:171"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="116:22" id="903:175">
+                <KeyedProperty property="opacity" id="903:173">
+                    <KeyFrameDouble id="903:174"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="117:248" id="903:178">
+                <KeyedProperty property="opacity" id="903:176">
+                    <KeyFrameDouble value="1" id="903:177"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="116:46" id="903:181">
+                <KeyedProperty property="opacity" id="903:179">
+                    <KeyFrameDouble id="903:180"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="116:67" id="903:184">
+                <KeyedProperty property="opacity" id="903:182">
+                    <KeyFrameDouble id="903:183"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
         <StateMachine name="State Machine 1" id="1:127">
             <StateMachineListener targetId="1:134" name="Cursor Off" id="63:252">
                 <ListenerInputType listenerTypeValue="exit" id="63:253"/>
@@ -660,7 +1652,273 @@
                 </AnimationState>
                 <AnimationState animationId="1:1221" x="249" y="98" id="1:1337"/>
             </StateMachineLayer>
-        <StateMachineLayer name="Variant" id="902:477"><AnyState x="400" id="902:478"><StateTransition stateToId="902:2" id="902:453"><TransitionViewModelCondition id="902:454"><TransitionPropertyViewModelComparator id="902:455"><BindablePropertyNumber id="902:456"><DataBindContext sourcePathIds="1:151-118:1" propertyKey="636" id="902:457"/></BindablePropertyNumber></TransitionPropertyViewModelComparator><TransitionValueNumberComparator id="902:458"/></TransitionViewModelCondition></StateTransition><StateTransition stateToId="902:109" id="902:459"><TransitionViewModelCondition id="902:460"><TransitionPropertyViewModelComparator id="902:461"><BindablePropertyNumber id="902:462"><DataBindContext sourcePathIds="1:151-118:1" propertyKey="636" id="902:463"/></BindablePropertyNumber></TransitionPropertyViewModelComparator><TransitionValueNumberComparator value="1" id="902:464"/></TransitionViewModelCondition></StateTransition><StateTransition stateToId="902:216" id="902:465"><TransitionViewModelCondition id="902:466"><TransitionPropertyViewModelComparator id="902:467"><BindablePropertyNumber id="902:468"><DataBindContext sourcePathIds="1:151-118:1" propertyKey="636" id="902:469"/></BindablePropertyNumber></TransitionPropertyViewModelComparator><TransitionValueNumberComparator value="2" id="902:470"/></TransitionViewModelCondition></StateTransition><StateTransition stateToId="902:323" id="902:471"><TransitionViewModelCondition id="902:472"><TransitionPropertyViewModelComparator id="902:473"><BindablePropertyNumber id="902:474"><DataBindContext sourcePathIds="1:151-118:1" propertyKey="636" id="902:475"/></BindablePropertyNumber></TransitionPropertyViewModelComparator><TransitionValueNumberComparator value="3" id="902:476"/></TransitionViewModelCondition></StateTransition></AnyState><ExitState x="480" id="902:479"/><EntryState id="902:480"><StateTransition stateToId="902:2" id="902:429"><TransitionViewModelCondition id="902:430"><TransitionPropertyViewModelComparator id="902:431"><BindablePropertyNumber id="902:432"><DataBindContext sourcePathIds="1:151-118:1" propertyKey="636" id="902:433"/></BindablePropertyNumber></TransitionPropertyViewModelComparator><TransitionValueNumberComparator id="902:434"/></TransitionViewModelCondition></StateTransition><StateTransition stateToId="902:109" id="902:435"><TransitionViewModelCondition id="902:436"><TransitionPropertyViewModelComparator id="902:437"><BindablePropertyNumber id="902:438"><DataBindContext sourcePathIds="1:151-118:1" propertyKey="636" id="902:439"/></BindablePropertyNumber></TransitionPropertyViewModelComparator><TransitionValueNumberComparator value="1" id="902:440"/></TransitionViewModelCondition></StateTransition><StateTransition stateToId="902:216" id="902:441"><TransitionViewModelCondition id="902:442"><TransitionPropertyViewModelComparator id="902:443"><BindablePropertyNumber id="902:444"><DataBindContext sourcePathIds="1:151-118:1" propertyKey="636" id="902:445"/></BindablePropertyNumber></TransitionPropertyViewModelComparator><TransitionValueNumberComparator value="2" id="902:446"/></TransitionViewModelCondition></StateTransition><StateTransition stateToId="902:323" id="902:447"><TransitionViewModelCondition id="902:448"><TransitionPropertyViewModelComparator id="902:449"><BindablePropertyNumber id="902:450"><DataBindContext sourcePathIds="1:151-118:1" propertyKey="636" id="902:451"/></BindablePropertyNumber></TransitionPropertyViewModelComparator><TransitionValueNumberComparator value="3" id="902:452"/></TransitionViewModelCondition></StateTransition></EntryState><AnimationState animationId="902:1" x="160" y="-200" stateName="Primary" id="902:2"/><AnimationState animationId="902:108" x="160" y="-100" stateName="Secondary" id="902:109"/><AnimationState animationId="902:215" x="160" y="0" stateName="Brand" id="902:216"/><AnimationState animationId="902:322" x="160" y="100" stateName="Destructive" id="902:323"/></StateMachineLayer><StateMachineLayer name="Icon" id="903:281"><AnyState x="400" id="903:282"><StateTransition stateToId="903:2" id="903:233"><TransitionViewModelCondition id="903:234"><TransitionPropertyViewModelComparator id="903:235"><BindablePropertyNumber id="903:236"><DataBindContext sourcePathIds="1:151-33:164" propertyKey="636" id="903:237"/></BindablePropertyNumber></TransitionPropertyViewModelComparator><TransitionValueNumberComparator id="903:238"/></TransitionViewModelCondition></StateTransition><StateTransition stateToId="903:25" id="903:239"><TransitionViewModelCondition id="903:240"><TransitionPropertyViewModelComparator id="903:241"><BindablePropertyNumber id="903:242"><DataBindContext sourcePathIds="1:151-33:164" propertyKey="636" id="903:243"/></BindablePropertyNumber></TransitionPropertyViewModelComparator><TransitionValueNumberComparator value="1" id="903:244"/></TransitionViewModelCondition></StateTransition><StateTransition stateToId="903:48" id="903:245"><TransitionViewModelCondition id="903:246"><TransitionPropertyViewModelComparator id="903:247"><BindablePropertyNumber id="903:248"><DataBindContext sourcePathIds="1:151-33:164" propertyKey="636" id="903:249"/></BindablePropertyNumber></TransitionPropertyViewModelComparator><TransitionValueNumberComparator value="2" id="903:250"/></TransitionViewModelCondition></StateTransition><StateTransition stateToId="903:71" id="903:251"><TransitionViewModelCondition id="903:252"><TransitionPropertyViewModelComparator id="903:253"><BindablePropertyNumber id="903:254"><DataBindContext sourcePathIds="1:151-33:164" propertyKey="636" id="903:255"/></BindablePropertyNumber></TransitionPropertyViewModelComparator><TransitionValueNumberComparator value="3" id="903:256"/></TransitionViewModelCondition></StateTransition><StateTransition stateToId="903:94" id="903:257"><TransitionViewModelCondition id="903:258"><TransitionPropertyViewModelComparator id="903:259"><BindablePropertyNumber id="903:260"><DataBindContext sourcePathIds="1:151-33:164" propertyKey="636" id="903:261"/></BindablePropertyNumber></TransitionPropertyViewModelComparator><TransitionValueNumberComparator value="4" id="903:262"/></TransitionViewModelCondition></StateTransition><StateTransition stateToId="903:117" id="903:263"><TransitionViewModelCondition id="903:264"><TransitionPropertyViewModelComparator id="903:265"><BindablePropertyNumber id="903:266"><DataBindContext sourcePathIds="1:151-33:164" propertyKey="636" id="903:267"/></BindablePropertyNumber></TransitionPropertyViewModelComparator><TransitionValueNumberComparator value="5" id="903:268"/></TransitionViewModelCondition></StateTransition><StateTransition stateToId="903:140" id="903:269"><TransitionViewModelCondition id="903:270"><TransitionPropertyViewModelComparator id="903:271"><BindablePropertyNumber id="903:272"><DataBindContext sourcePathIds="1:151-33:164" propertyKey="636" id="903:273"/></BindablePropertyNumber></TransitionPropertyViewModelComparator><TransitionValueNumberComparator value="6" id="903:274"/></TransitionViewModelCondition></StateTransition><StateTransition stateToId="903:163" id="903:275"><TransitionViewModelCondition id="903:276"><TransitionPropertyViewModelComparator id="903:277"><BindablePropertyNumber id="903:278"><DataBindContext sourcePathIds="1:151-33:164" propertyKey="636" id="903:279"/></BindablePropertyNumber></TransitionPropertyViewModelComparator><TransitionValueNumberComparator value="7" id="903:280"/></TransitionViewModelCondition></StateTransition></AnyState><ExitState x="480" id="903:283"/><EntryState id="903:284"><StateTransition stateToId="903:2" id="903:185"><TransitionViewModelCondition id="903:186"><TransitionPropertyViewModelComparator id="903:187"><BindablePropertyNumber id="903:188"><DataBindContext sourcePathIds="1:151-33:164" propertyKey="636" id="903:189"/></BindablePropertyNumber></TransitionPropertyViewModelComparator><TransitionValueNumberComparator id="903:190"/></TransitionViewModelCondition></StateTransition><StateTransition stateToId="903:25" id="903:191"><TransitionViewModelCondition id="903:192"><TransitionPropertyViewModelComparator id="903:193"><BindablePropertyNumber id="903:194"><DataBindContext sourcePathIds="1:151-33:164" propertyKey="636" id="903:195"/></BindablePropertyNumber></TransitionPropertyViewModelComparator><TransitionValueNumberComparator value="1" id="903:196"/></TransitionViewModelCondition></StateTransition><StateTransition stateToId="903:48" id="903:197"><TransitionViewModelCondition id="903:198"><TransitionPropertyViewModelComparator id="903:199"><BindablePropertyNumber id="903:200"><DataBindContext sourcePathIds="1:151-33:164" propertyKey="636" id="903:201"/></BindablePropertyNumber></TransitionPropertyViewModelComparator><TransitionValueNumberComparator value="2" id="903:202"/></TransitionViewModelCondition></StateTransition><StateTransition stateToId="903:71" id="903:203"><TransitionViewModelCondition id="903:204"><TransitionPropertyViewModelComparator id="903:205"><BindablePropertyNumber id="903:206"><DataBindContext sourcePathIds="1:151-33:164" propertyKey="636" id="903:207"/></BindablePropertyNumber></TransitionPropertyViewModelComparator><TransitionValueNumberComparator value="3" id="903:208"/></TransitionViewModelCondition></StateTransition><StateTransition stateToId="903:94" id="903:209"><TransitionViewModelCondition id="903:210"><TransitionPropertyViewModelComparator id="903:211"><BindablePropertyNumber id="903:212"><DataBindContext sourcePathIds="1:151-33:164" propertyKey="636" id="903:213"/></BindablePropertyNumber></TransitionPropertyViewModelComparator><TransitionValueNumberComparator value="4" id="903:214"/></TransitionViewModelCondition></StateTransition><StateTransition stateToId="903:117" id="903:215"><TransitionViewModelCondition id="903:216"><TransitionPropertyViewModelComparator id="903:217"><BindablePropertyNumber id="903:218"><DataBindContext sourcePathIds="1:151-33:164" propertyKey="636" id="903:219"/></BindablePropertyNumber></TransitionPropertyViewModelComparator><TransitionValueNumberComparator value="5" id="903:220"/></TransitionViewModelCondition></StateTransition><StateTransition stateToId="903:140" id="903:221"><TransitionViewModelCondition id="903:222"><TransitionPropertyViewModelComparator id="903:223"><BindablePropertyNumber id="903:224"><DataBindContext sourcePathIds="1:151-33:164" propertyKey="636" id="903:225"/></BindablePropertyNumber></TransitionPropertyViewModelComparator><TransitionValueNumberComparator value="6" id="903:226"/></TransitionViewModelCondition></StateTransition><StateTransition stateToId="903:163" id="903:227"><TransitionViewModelCondition id="903:228"><TransitionPropertyViewModelComparator id="903:229"><BindablePropertyNumber id="903:230"><DataBindContext sourcePathIds="1:151-33:164" propertyKey="636" id="903:231"/></BindablePropertyNumber></TransitionPropertyViewModelComparator><TransitionValueNumberComparator value="7" id="903:232"/></TransitionViewModelCondition></StateTransition></EntryState><AnimationState animationId="903:1" x="160" y="-400" stateName="Icon 0" id="903:2"/><AnimationState animationId="903:24" x="160" y="-300" stateName="Icon 1" id="903:25"/><AnimationState animationId="903:47" x="160" y="-200" stateName="Icon 2" id="903:48"/><AnimationState animationId="903:70" x="160" y="-100" stateName="Icon 3" id="903:71"/><AnimationState animationId="903:93" x="160" y="0" stateName="Icon 4" id="903:94"/><AnimationState animationId="903:116" x="160" y="100" stateName="Icon 5" id="903:117"/><AnimationState animationId="903:139" x="160" y="200" stateName="Icon 6" id="903:140"/><AnimationState animationId="903:162" x="160" y="300" stateName="Icon 7" id="903:163"/></StateMachineLayer></StateMachine>
+            <StateMachineLayer name="Variant" id="902:477">
+                <AnimationState animationId="902:1" x="160" y="-200" stateName="Primary" id="902:2"/>
+                <AnimationState animationId="902:108" x="160" y="-100" stateName="Secondary" id="902:109"/>
+                <AnimationState animationId="902:215" x="160" stateName="Brand" id="902:216"/>
+                <AnimationState animationId="902:322" x="160" y="100" stateName="Destructive" id="902:323"/>
+                <AnyState x="400" id="902:478">
+                    <StateTransition stateToId="902:2" id="902:453">
+                        <TransitionViewModelCondition id="902:454">
+                            <TransitionPropertyViewModelComparator id="902:455">
+                                <BindablePropertyNumber id="902:456">
+                                    <DataBindContext sourcePathIds="1:151-118:1" propertyKey="636" id="902:457"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueNumberComparator id="902:458"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                    <StateTransition stateToId="902:109" id="902:459">
+                        <TransitionViewModelCondition id="902:460">
+                            <TransitionPropertyViewModelComparator id="902:461">
+                                <BindablePropertyNumber id="902:462">
+                                    <DataBindContext sourcePathIds="1:151-118:1" propertyKey="636" id="902:463"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueNumberComparator value="1" id="902:464"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                    <StateTransition stateToId="902:216" id="902:465">
+                        <TransitionViewModelCondition id="902:466">
+                            <TransitionPropertyViewModelComparator id="902:467">
+                                <BindablePropertyNumber id="902:468">
+                                    <DataBindContext sourcePathIds="1:151-118:1" propertyKey="636" id="902:469"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueNumberComparator value="2" id="902:470"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                    <StateTransition stateToId="902:323" id="902:471">
+                        <TransitionViewModelCondition id="902:472">
+                            <TransitionPropertyViewModelComparator id="902:473">
+                                <BindablePropertyNumber id="902:474">
+                                    <DataBindContext sourcePathIds="1:151-118:1" propertyKey="636" id="902:475"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueNumberComparator value="3" id="902:476"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                </AnyState>
+                <ExitState x="480" id="902:479"/>
+                <EntryState id="902:480">
+                    <StateTransition stateToId="902:2" id="902:429">
+                        <TransitionViewModelCondition id="902:430">
+                            <TransitionPropertyViewModelComparator id="902:431">
+                                <BindablePropertyNumber id="902:432">
+                                    <DataBindContext sourcePathIds="1:151-118:1" propertyKey="636" id="902:433"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueNumberComparator id="902:434"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                    <StateTransition stateToId="902:109" id="902:435">
+                        <TransitionViewModelCondition id="902:436">
+                            <TransitionPropertyViewModelComparator id="902:437">
+                                <BindablePropertyNumber id="902:438">
+                                    <DataBindContext sourcePathIds="1:151-118:1" propertyKey="636" id="902:439"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueNumberComparator value="1" id="902:440"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                    <StateTransition stateToId="902:216" id="902:441">
+                        <TransitionViewModelCondition id="902:442">
+                            <TransitionPropertyViewModelComparator id="902:443">
+                                <BindablePropertyNumber id="902:444">
+                                    <DataBindContext sourcePathIds="1:151-118:1" propertyKey="636" id="902:445"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueNumberComparator value="2" id="902:446"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                    <StateTransition stateToId="902:323" id="902:447">
+                        <TransitionViewModelCondition id="902:448">
+                            <TransitionPropertyViewModelComparator id="902:449">
+                                <BindablePropertyNumber id="902:450">
+                                    <DataBindContext sourcePathIds="1:151-118:1" propertyKey="636" id="902:451"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueNumberComparator value="3" id="902:452"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                </EntryState>
+            </StateMachineLayer>
+            <StateMachineLayer name="Icon" id="903:281">
+                <AnimationState animationId="903:1" x="160" y="-400" stateName="Icon 0" id="903:2"/>
+                <AnimationState animationId="903:24" x="160" y="-300" stateName="Icon 1" id="903:25"/>
+                <AnimationState animationId="903:47" x="160" y="-200" stateName="Icon 2" id="903:48"/>
+                <AnimationState animationId="903:70" x="160" y="-100" stateName="Icon 3" id="903:71"/>
+                <AnimationState animationId="903:93" x="160" stateName="Icon 4" id="903:94"/>
+                <AnimationState animationId="903:116" x="160" y="100" stateName="Icon 5" id="903:117"/>
+                <AnimationState animationId="903:139" x="160" y="200" stateName="Icon 6" id="903:140"/>
+                <AnimationState animationId="903:162" x="160" y="300" stateName="Icon 7" id="903:163"/>
+                <AnyState x="400" id="903:282">
+                    <StateTransition stateToId="903:2" id="903:233">
+                        <TransitionViewModelCondition id="903:234">
+                            <TransitionPropertyViewModelComparator id="903:235">
+                                <BindablePropertyNumber id="903:236">
+                                    <DataBindContext sourcePathIds="1:151-33:164" propertyKey="636" id="903:237"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueNumberComparator id="903:238"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                    <StateTransition stateToId="903:25" id="903:239">
+                        <TransitionViewModelCondition id="903:240">
+                            <TransitionPropertyViewModelComparator id="903:241">
+                                <BindablePropertyNumber id="903:242">
+                                    <DataBindContext sourcePathIds="1:151-33:164" propertyKey="636" id="903:243"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueNumberComparator value="1" id="903:244"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                    <StateTransition stateToId="903:48" id="903:245">
+                        <TransitionViewModelCondition id="903:246">
+                            <TransitionPropertyViewModelComparator id="903:247">
+                                <BindablePropertyNumber id="903:248">
+                                    <DataBindContext sourcePathIds="1:151-33:164" propertyKey="636" id="903:249"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueNumberComparator value="2" id="903:250"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                    <StateTransition stateToId="903:71" id="903:251">
+                        <TransitionViewModelCondition id="903:252">
+                            <TransitionPropertyViewModelComparator id="903:253">
+                                <BindablePropertyNumber id="903:254">
+                                    <DataBindContext sourcePathIds="1:151-33:164" propertyKey="636" id="903:255"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueNumberComparator value="3" id="903:256"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                    <StateTransition stateToId="903:94" id="903:257">
+                        <TransitionViewModelCondition id="903:258">
+                            <TransitionPropertyViewModelComparator id="903:259">
+                                <BindablePropertyNumber id="903:260">
+                                    <DataBindContext sourcePathIds="1:151-33:164" propertyKey="636" id="903:261"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueNumberComparator value="4" id="903:262"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                    <StateTransition stateToId="903:117" id="903:263">
+                        <TransitionViewModelCondition id="903:264">
+                            <TransitionPropertyViewModelComparator id="903:265">
+                                <BindablePropertyNumber id="903:266">
+                                    <DataBindContext sourcePathIds="1:151-33:164" propertyKey="636" id="903:267"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueNumberComparator value="5" id="903:268"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                    <StateTransition stateToId="903:140" id="903:269">
+                        <TransitionViewModelCondition id="903:270">
+                            <TransitionPropertyViewModelComparator id="903:271">
+                                <BindablePropertyNumber id="903:272">
+                                    <DataBindContext sourcePathIds="1:151-33:164" propertyKey="636" id="903:273"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueNumberComparator value="6" id="903:274"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                    <StateTransition stateToId="903:163" id="903:275">
+                        <TransitionViewModelCondition id="903:276">
+                            <TransitionPropertyViewModelComparator id="903:277">
+                                <BindablePropertyNumber id="903:278">
+                                    <DataBindContext sourcePathIds="1:151-33:164" propertyKey="636" id="903:279"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueNumberComparator value="7" id="903:280"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                </AnyState>
+                <ExitState x="480" id="903:283"/>
+                <EntryState id="903:284">
+                    <StateTransition stateToId="903:2" id="903:185">
+                        <TransitionViewModelCondition id="903:186">
+                            <TransitionPropertyViewModelComparator id="903:187">
+                                <BindablePropertyNumber id="903:188">
+                                    <DataBindContext sourcePathIds="1:151-33:164" propertyKey="636" id="903:189"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueNumberComparator id="903:190"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                    <StateTransition stateToId="903:25" id="903:191">
+                        <TransitionViewModelCondition id="903:192">
+                            <TransitionPropertyViewModelComparator id="903:193">
+                                <BindablePropertyNumber id="903:194">
+                                    <DataBindContext sourcePathIds="1:151-33:164" propertyKey="636" id="903:195"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueNumberComparator value="1" id="903:196"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                    <StateTransition stateToId="903:48" id="903:197">
+                        <TransitionViewModelCondition id="903:198">
+                            <TransitionPropertyViewModelComparator id="903:199">
+                                <BindablePropertyNumber id="903:200">
+                                    <DataBindContext sourcePathIds="1:151-33:164" propertyKey="636" id="903:201"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueNumberComparator value="2" id="903:202"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                    <StateTransition stateToId="903:71" id="903:203">
+                        <TransitionViewModelCondition id="903:204">
+                            <TransitionPropertyViewModelComparator id="903:205">
+                                <BindablePropertyNumber id="903:206">
+                                    <DataBindContext sourcePathIds="1:151-33:164" propertyKey="636" id="903:207"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueNumberComparator value="3" id="903:208"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                    <StateTransition stateToId="903:94" id="903:209">
+                        <TransitionViewModelCondition id="903:210">
+                            <TransitionPropertyViewModelComparator id="903:211">
+                                <BindablePropertyNumber id="903:212">
+                                    <DataBindContext sourcePathIds="1:151-33:164" propertyKey="636" id="903:213"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueNumberComparator value="4" id="903:214"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                    <StateTransition stateToId="903:117" id="903:215">
+                        <TransitionViewModelCondition id="903:216">
+                            <TransitionPropertyViewModelComparator id="903:217">
+                                <BindablePropertyNumber id="903:218">
+                                    <DataBindContext sourcePathIds="1:151-33:164" propertyKey="636" id="903:219"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueNumberComparator value="5" id="903:220"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                    <StateTransition stateToId="903:140" id="903:221">
+                        <TransitionViewModelCondition id="903:222">
+                            <TransitionPropertyViewModelComparator id="903:223">
+                                <BindablePropertyNumber id="903:224">
+                                    <DataBindContext sourcePathIds="1:151-33:164" propertyKey="636" id="903:225"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueNumberComparator value="6" id="903:226"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                    <StateTransition stateToId="903:163" id="903:227">
+                        <TransitionViewModelCondition id="903:228">
+                            <TransitionPropertyViewModelComparator id="903:229">
+                                <BindablePropertyNumber id="903:230">
+                                    <DataBindContext sourcePathIds="1:151-33:164" propertyKey="636" id="903:231"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueNumberComparator value="7" id="903:232"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                </EntryState>
+            </StateMachineLayer>
+        </StateMachine>
         <LinearAnimation name="Pressed" id="1:1221">
             <KeyedObject objectId="10:3137" id="10:3147">
                 <KeyedProperty property="opacity" id="10:3148">

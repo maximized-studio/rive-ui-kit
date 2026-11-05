@@ -29,7 +29,7 @@
                             </Fill>
                         </Shape>
                     </Node>
-                    <Node x="10" y="10" name="Success" opacity="0" id="110:416">
+                    <Node x="10" y="10" opacity="0" name="Success" id="110:416">
                         <Shape name="Success Icon" id="110:417">
                             <Ellipse width="16" height="16" id="110:411"/>
                             <PointsPath isClockwise="false" id="110:415">
@@ -44,7 +44,7 @@
                             </Stroke>
                         </Shape>
                     </Node>
-                    <Node x="10" y="10" name="Warning" opacity="0" id="110:435">
+                    <Node x="10" y="10" opacity="0" name="Warning" id="110:435">
                         <Shape name="Warning Icon" id="110:436">
                             <PointsPath isClosed="true" id="110:426">
                                 <StraightVertex y="-7.5" id="110:423"/>
@@ -70,7 +70,7 @@
                             </Fill>
                         </Shape>
                     </Node>
-                    <Node x="10" y="10" name="Error" opacity="0" id="110:448">
+                    <Node x="10" y="10" opacity="0" name="Error" id="110:448">
                         <Shape name="Error Icon" id="110:449">
                             <Ellipse width="16" height="16" id="110:441"/>
                             <PointsPath id="110:444">
@@ -143,7 +143,7 @@
                     <DataBindContext sourcePathIds="10:7-901:5" propertyKey="640" converterId="0:0" id="110:364"/>
                 </LayoutComponentStyle>
             </LayoutComponent>
-            <LayoutComponent styleId="110:367" name="Skin Success" opacity="0" id="110:366">
+            <LayoutComponent styleId="110:367" opacity="0" name="Skin Success" id="110:366">
                 <Stroke id="110:368">
                     <SolidColor colorValue="FF166534" id="110:369">
                         <DataBindContext sourcePathIds="10:7-110:5" propertyKey="37" id="110:370"/>
@@ -158,7 +158,7 @@
                     <DataBindContext sourcePathIds="10:7-901:5" propertyKey="640" converterId="0:0" id="110:374"/>
                 </LayoutComponentStyle>
             </LayoutComponent>
-            <LayoutComponent styleId="110:377" name="Skin Warning" opacity="0" id="110:376">
+            <LayoutComponent styleId="110:377" opacity="0" name="Skin Warning" id="110:376">
                 <Stroke id="110:378">
                     <SolidColor colorValue="FF92400E" id="110:379">
                         <DataBindContext sourcePathIds="10:7-110:8" propertyKey="37" id="110:380"/>
@@ -173,7 +173,7 @@
                     <DataBindContext sourcePathIds="10:7-901:5" propertyKey="640" converterId="0:0" id="110:384"/>
                 </LayoutComponentStyle>
             </LayoutComponent>
-            <LayoutComponent styleId="110:387" name="Skin Error" opacity="0" id="110:386">
+            <LayoutComponent styleId="110:387" opacity="0" name="Skin Error" id="110:386">
                 <Stroke id="110:388">
                     <SolidColor colorValue="FF991B1B" id="110:389">
                         <DataBindContext sourcePathIds="10:7-110:11" propertyKey="37" id="110:390"/>
@@ -194,10 +194,174 @@
                 <DataBindContext sourcePathIds="110:223-110:230" propertyKey="1004" nameBased="true" id="110:501"/>
             </SemanticData>
         </LayoutComponent>
-        <LinearAnimation loopValue="loop" name="Variant Info" id="904:1"><KeyedObject objectId="110:405" id="904:5"><KeyedProperty property="opacity" id="904:3"><KeyFrameDouble value="1" id="904:4"/></KeyedProperty></KeyedObject><KeyedObject objectId="110:416" id="904:8"><KeyedProperty property="opacity" id="904:6"><KeyFrameDouble value="0" id="904:7"/></KeyedProperty></KeyedObject><KeyedObject objectId="110:435" id="904:11"><KeyedProperty property="opacity" id="904:9"><KeyFrameDouble value="0" id="904:10"/></KeyedProperty></KeyedObject><KeyedObject objectId="110:448" id="904:14"><KeyedProperty property="opacity" id="904:12"><KeyFrameDouble value="0" id="904:13"/></KeyedProperty></KeyedObject><KeyedObject objectId="110:356" id="904:17"><KeyedProperty property="opacity" id="904:15"><KeyFrameDouble value="1" id="904:16"/></KeyedProperty></KeyedObject><KeyedObject objectId="110:366" id="904:20"><KeyedProperty property="opacity" id="904:18"><KeyFrameDouble value="0" id="904:19"/></KeyedProperty></KeyedObject><KeyedObject objectId="110:376" id="904:23"><KeyedProperty property="opacity" id="904:21"><KeyFrameDouble value="0" id="904:22"/></KeyedProperty></KeyedObject><KeyedObject objectId="110:386" id="904:26"><KeyedProperty property="opacity" id="904:24"><KeyFrameDouble value="0" id="904:25"/></KeyedProperty></KeyedObject></LinearAnimation>
-        <LinearAnimation loopValue="loop" name="Variant Success" id="904:27"><KeyedObject objectId="110:405" id="904:31"><KeyedProperty property="opacity" id="904:29"><KeyFrameDouble value="0" id="904:30"/></KeyedProperty></KeyedObject><KeyedObject objectId="110:416" id="904:34"><KeyedProperty property="opacity" id="904:32"><KeyFrameDouble value="1" id="904:33"/></KeyedProperty></KeyedObject><KeyedObject objectId="110:435" id="904:37"><KeyedProperty property="opacity" id="904:35"><KeyFrameDouble value="0" id="904:36"/></KeyedProperty></KeyedObject><KeyedObject objectId="110:448" id="904:40"><KeyedProperty property="opacity" id="904:38"><KeyFrameDouble value="0" id="904:39"/></KeyedProperty></KeyedObject><KeyedObject objectId="110:356" id="904:43"><KeyedProperty property="opacity" id="904:41"><KeyFrameDouble value="0" id="904:42"/></KeyedProperty></KeyedObject><KeyedObject objectId="110:366" id="904:46"><KeyedProperty property="opacity" id="904:44"><KeyFrameDouble value="1" id="904:45"/></KeyedProperty></KeyedObject><KeyedObject objectId="110:376" id="904:49"><KeyedProperty property="opacity" id="904:47"><KeyFrameDouble value="0" id="904:48"/></KeyedProperty></KeyedObject><KeyedObject objectId="110:386" id="904:52"><KeyedProperty property="opacity" id="904:50"><KeyFrameDouble value="0" id="904:51"/></KeyedProperty></KeyedObject></LinearAnimation>
-        <LinearAnimation loopValue="loop" name="Variant Warning" id="904:53"><KeyedObject objectId="110:405" id="904:57"><KeyedProperty property="opacity" id="904:55"><KeyFrameDouble value="0" id="904:56"/></KeyedProperty></KeyedObject><KeyedObject objectId="110:416" id="904:60"><KeyedProperty property="opacity" id="904:58"><KeyFrameDouble value="0" id="904:59"/></KeyedProperty></KeyedObject><KeyedObject objectId="110:435" id="904:63"><KeyedProperty property="opacity" id="904:61"><KeyFrameDouble value="1" id="904:62"/></KeyedProperty></KeyedObject><KeyedObject objectId="110:448" id="904:66"><KeyedProperty property="opacity" id="904:64"><KeyFrameDouble value="0" id="904:65"/></KeyedProperty></KeyedObject><KeyedObject objectId="110:356" id="904:69"><KeyedProperty property="opacity" id="904:67"><KeyFrameDouble value="0" id="904:68"/></KeyedProperty></KeyedObject><KeyedObject objectId="110:366" id="904:72"><KeyedProperty property="opacity" id="904:70"><KeyFrameDouble value="0" id="904:71"/></KeyedProperty></KeyedObject><KeyedObject objectId="110:376" id="904:75"><KeyedProperty property="opacity" id="904:73"><KeyFrameDouble value="1" id="904:74"/></KeyedProperty></KeyedObject><KeyedObject objectId="110:386" id="904:78"><KeyedProperty property="opacity" id="904:76"><KeyFrameDouble value="0" id="904:77"/></KeyedProperty></KeyedObject></LinearAnimation>
-        <LinearAnimation loopValue="loop" name="Variant Error" id="904:79"><KeyedObject objectId="110:405" id="904:83"><KeyedProperty property="opacity" id="904:81"><KeyFrameDouble value="0" id="904:82"/></KeyedProperty></KeyedObject><KeyedObject objectId="110:416" id="904:86"><KeyedProperty property="opacity" id="904:84"><KeyFrameDouble value="0" id="904:85"/></KeyedProperty></KeyedObject><KeyedObject objectId="110:435" id="904:89"><KeyedProperty property="opacity" id="904:87"><KeyFrameDouble value="0" id="904:88"/></KeyedProperty></KeyedObject><KeyedObject objectId="110:448" id="904:92"><KeyedProperty property="opacity" id="904:90"><KeyFrameDouble value="1" id="904:91"/></KeyedProperty></KeyedObject><KeyedObject objectId="110:356" id="904:95"><KeyedProperty property="opacity" id="904:93"><KeyFrameDouble value="0" id="904:94"/></KeyedProperty></KeyedObject><KeyedObject objectId="110:366" id="904:98"><KeyedProperty property="opacity" id="904:96"><KeyFrameDouble value="0" id="904:97"/></KeyedProperty></KeyedObject><KeyedObject objectId="110:376" id="904:101"><KeyedProperty property="opacity" id="904:99"><KeyFrameDouble value="0" id="904:100"/></KeyedProperty></KeyedObject><KeyedObject objectId="110:386" id="904:104"><KeyedProperty property="opacity" id="904:102"><KeyFrameDouble value="1" id="904:103"/></KeyedProperty></KeyedObject></LinearAnimation>
+        <LinearAnimation loopValue="loop" name="Variant Info" id="904:1">
+            <KeyedObject objectId="110:405" id="904:5">
+                <KeyedProperty property="opacity" id="904:3">
+                    <KeyFrameDouble value="1" id="904:4"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="110:416" id="904:8">
+                <KeyedProperty property="opacity" id="904:6">
+                    <KeyFrameDouble id="904:7"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="110:435" id="904:11">
+                <KeyedProperty property="opacity" id="904:9">
+                    <KeyFrameDouble id="904:10"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="110:448" id="904:14">
+                <KeyedProperty property="opacity" id="904:12">
+                    <KeyFrameDouble id="904:13"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="110:356" id="904:17">
+                <KeyedProperty property="opacity" id="904:15">
+                    <KeyFrameDouble value="1" id="904:16"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="110:366" id="904:20">
+                <KeyedProperty property="opacity" id="904:18">
+                    <KeyFrameDouble id="904:19"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="110:376" id="904:23">
+                <KeyedProperty property="opacity" id="904:21">
+                    <KeyFrameDouble id="904:22"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="110:386" id="904:26">
+                <KeyedProperty property="opacity" id="904:24">
+                    <KeyFrameDouble id="904:25"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+        <LinearAnimation loopValue="loop" name="Variant Success" id="904:27">
+            <KeyedObject objectId="110:405" id="904:31">
+                <KeyedProperty property="opacity" id="904:29">
+                    <KeyFrameDouble id="904:30"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="110:416" id="904:34">
+                <KeyedProperty property="opacity" id="904:32">
+                    <KeyFrameDouble value="1" id="904:33"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="110:435" id="904:37">
+                <KeyedProperty property="opacity" id="904:35">
+                    <KeyFrameDouble id="904:36"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="110:448" id="904:40">
+                <KeyedProperty property="opacity" id="904:38">
+                    <KeyFrameDouble id="904:39"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="110:356" id="904:43">
+                <KeyedProperty property="opacity" id="904:41">
+                    <KeyFrameDouble id="904:42"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="110:366" id="904:46">
+                <KeyedProperty property="opacity" id="904:44">
+                    <KeyFrameDouble value="1" id="904:45"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="110:376" id="904:49">
+                <KeyedProperty property="opacity" id="904:47">
+                    <KeyFrameDouble id="904:48"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="110:386" id="904:52">
+                <KeyedProperty property="opacity" id="904:50">
+                    <KeyFrameDouble id="904:51"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+        <LinearAnimation loopValue="loop" name="Variant Warning" id="904:53">
+            <KeyedObject objectId="110:405" id="904:57">
+                <KeyedProperty property="opacity" id="904:55">
+                    <KeyFrameDouble id="904:56"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="110:416" id="904:60">
+                <KeyedProperty property="opacity" id="904:58">
+                    <KeyFrameDouble id="904:59"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="110:435" id="904:63">
+                <KeyedProperty property="opacity" id="904:61">
+                    <KeyFrameDouble value="1" id="904:62"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="110:448" id="904:66">
+                <KeyedProperty property="opacity" id="904:64">
+                    <KeyFrameDouble id="904:65"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="110:356" id="904:69">
+                <KeyedProperty property="opacity" id="904:67">
+                    <KeyFrameDouble id="904:68"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="110:366" id="904:72">
+                <KeyedProperty property="opacity" id="904:70">
+                    <KeyFrameDouble id="904:71"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="110:376" id="904:75">
+                <KeyedProperty property="opacity" id="904:73">
+                    <KeyFrameDouble value="1" id="904:74"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="110:386" id="904:78">
+                <KeyedProperty property="opacity" id="904:76">
+                    <KeyFrameDouble id="904:77"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+        <LinearAnimation loopValue="loop" name="Variant Error" id="904:79">
+            <KeyedObject objectId="110:405" id="904:83">
+                <KeyedProperty property="opacity" id="904:81">
+                    <KeyFrameDouble id="904:82"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="110:416" id="904:86">
+                <KeyedProperty property="opacity" id="904:84">
+                    <KeyFrameDouble id="904:85"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="110:435" id="904:89">
+                <KeyedProperty property="opacity" id="904:87">
+                    <KeyFrameDouble id="904:88"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="110:448" id="904:92">
+                <KeyedProperty property="opacity" id="904:90">
+                    <KeyFrameDouble value="1" id="904:91"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="110:356" id="904:95">
+                <KeyedProperty property="opacity" id="904:93">
+                    <KeyFrameDouble id="904:94"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="110:366" id="904:98">
+                <KeyedProperty property="opacity" id="904:96">
+                    <KeyFrameDouble id="904:97"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="110:376" id="904:101">
+                <KeyedProperty property="opacity" id="904:99">
+                    <KeyFrameDouble id="904:100"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="110:386" id="904:104">
+                <KeyedProperty property="opacity" id="904:102">
+                    <KeyFrameDouble value="1" id="904:103"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
         <StateMachine name="State Machine 1" id="110:339">
             <StateMachineLayer name="Layer 1" id="110:536">
                 <AnimationState animationId="110:352" x="160" id="110:354"/>
@@ -207,7 +371,98 @@
                     <StateTransition stateToId="110:354" id="110:552"/>
                 </EntryState>
             </StateMachineLayer>
-        <StateMachineLayer name="Variant" id="904:153"><AnyState x="400" id="904:154"><StateTransition stateToId="904:2" id="904:129"><TransitionViewModelCondition id="904:130"><TransitionPropertyViewModelComparator id="904:131"><BindablePropertyNumber id="904:132"><DataBindContext sourcePathIds="110:223-110:226" propertyKey="636" id="904:133"/></BindablePropertyNumber></TransitionPropertyViewModelComparator><TransitionValueNumberComparator id="904:134"/></TransitionViewModelCondition></StateTransition><StateTransition stateToId="904:28" id="904:135"><TransitionViewModelCondition id="904:136"><TransitionPropertyViewModelComparator id="904:137"><BindablePropertyNumber id="904:138"><DataBindContext sourcePathIds="110:223-110:226" propertyKey="636" id="904:139"/></BindablePropertyNumber></TransitionPropertyViewModelComparator><TransitionValueNumberComparator value="1" id="904:140"/></TransitionViewModelCondition></StateTransition><StateTransition stateToId="904:54" id="904:141"><TransitionViewModelCondition id="904:142"><TransitionPropertyViewModelComparator id="904:143"><BindablePropertyNumber id="904:144"><DataBindContext sourcePathIds="110:223-110:226" propertyKey="636" id="904:145"/></BindablePropertyNumber></TransitionPropertyViewModelComparator><TransitionValueNumberComparator value="2" id="904:146"/></TransitionViewModelCondition></StateTransition><StateTransition stateToId="904:80" id="904:147"><TransitionViewModelCondition id="904:148"><TransitionPropertyViewModelComparator id="904:149"><BindablePropertyNumber id="904:150"><DataBindContext sourcePathIds="110:223-110:226" propertyKey="636" id="904:151"/></BindablePropertyNumber></TransitionPropertyViewModelComparator><TransitionValueNumberComparator value="3" id="904:152"/></TransitionViewModelCondition></StateTransition></AnyState><ExitState x="480" id="904:155"/><EntryState id="904:156"><StateTransition stateToId="904:2" id="904:105"><TransitionViewModelCondition id="904:106"><TransitionPropertyViewModelComparator id="904:107"><BindablePropertyNumber id="904:108"><DataBindContext sourcePathIds="110:223-110:226" propertyKey="636" id="904:109"/></BindablePropertyNumber></TransitionPropertyViewModelComparator><TransitionValueNumberComparator id="904:110"/></TransitionViewModelCondition></StateTransition><StateTransition stateToId="904:28" id="904:111"><TransitionViewModelCondition id="904:112"><TransitionPropertyViewModelComparator id="904:113"><BindablePropertyNumber id="904:114"><DataBindContext sourcePathIds="110:223-110:226" propertyKey="636" id="904:115"/></BindablePropertyNumber></TransitionPropertyViewModelComparator><TransitionValueNumberComparator value="1" id="904:116"/></TransitionViewModelCondition></StateTransition><StateTransition stateToId="904:54" id="904:117"><TransitionViewModelCondition id="904:118"><TransitionPropertyViewModelComparator id="904:119"><BindablePropertyNumber id="904:120"><DataBindContext sourcePathIds="110:223-110:226" propertyKey="636" id="904:121"/></BindablePropertyNumber></TransitionPropertyViewModelComparator><TransitionValueNumberComparator value="2" id="904:122"/></TransitionViewModelCondition></StateTransition><StateTransition stateToId="904:80" id="904:123"><TransitionViewModelCondition id="904:124"><TransitionPropertyViewModelComparator id="904:125"><BindablePropertyNumber id="904:126"><DataBindContext sourcePathIds="110:223-110:226" propertyKey="636" id="904:127"/></BindablePropertyNumber></TransitionPropertyViewModelComparator><TransitionValueNumberComparator value="3" id="904:128"/></TransitionViewModelCondition></StateTransition></EntryState><AnimationState animationId="904:1" x="160" y="-200" stateName="Info" id="904:2"/><AnimationState animationId="904:27" x="160" y="-100" stateName="Success" id="904:28"/><AnimationState animationId="904:53" x="160" y="0" stateName="Warning" id="904:54"/><AnimationState animationId="904:79" x="160" y="100" stateName="Error" id="904:80"/></StateMachineLayer></StateMachine>
+            <StateMachineLayer name="Variant" id="904:153">
+                <AnimationState animationId="904:1" x="160" y="-200" stateName="Info" id="904:2"/>
+                <AnimationState animationId="904:27" x="160" y="-100" stateName="Success" id="904:28"/>
+                <AnimationState animationId="904:53" x="160" stateName="Warning" id="904:54"/>
+                <AnimationState animationId="904:79" x="160" y="100" stateName="Error" id="904:80"/>
+                <AnyState x="400" id="904:154">
+                    <StateTransition stateToId="904:2" id="904:129">
+                        <TransitionViewModelCondition id="904:130">
+                            <TransitionPropertyViewModelComparator id="904:131">
+                                <BindablePropertyNumber id="904:132">
+                                    <DataBindContext sourcePathIds="110:223-110:226" propertyKey="636" id="904:133"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueNumberComparator id="904:134"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                    <StateTransition stateToId="904:28" id="904:135">
+                        <TransitionViewModelCondition id="904:136">
+                            <TransitionPropertyViewModelComparator id="904:137">
+                                <BindablePropertyNumber id="904:138">
+                                    <DataBindContext sourcePathIds="110:223-110:226" propertyKey="636" id="904:139"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueNumberComparator value="1" id="904:140"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                    <StateTransition stateToId="904:54" id="904:141">
+                        <TransitionViewModelCondition id="904:142">
+                            <TransitionPropertyViewModelComparator id="904:143">
+                                <BindablePropertyNumber id="904:144">
+                                    <DataBindContext sourcePathIds="110:223-110:226" propertyKey="636" id="904:145"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueNumberComparator value="2" id="904:146"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                    <StateTransition stateToId="904:80" id="904:147">
+                        <TransitionViewModelCondition id="904:148">
+                            <TransitionPropertyViewModelComparator id="904:149">
+                                <BindablePropertyNumber id="904:150">
+                                    <DataBindContext sourcePathIds="110:223-110:226" propertyKey="636" id="904:151"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueNumberComparator value="3" id="904:152"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                </AnyState>
+                <ExitState x="480" id="904:155"/>
+                <EntryState id="904:156">
+                    <StateTransition stateToId="904:2" id="904:105">
+                        <TransitionViewModelCondition id="904:106">
+                            <TransitionPropertyViewModelComparator id="904:107">
+                                <BindablePropertyNumber id="904:108">
+                                    <DataBindContext sourcePathIds="110:223-110:226" propertyKey="636" id="904:109"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueNumberComparator id="904:110"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                    <StateTransition stateToId="904:28" id="904:111">
+                        <TransitionViewModelCondition id="904:112">
+                            <TransitionPropertyViewModelComparator id="904:113">
+                                <BindablePropertyNumber id="904:114">
+                                    <DataBindContext sourcePathIds="110:223-110:226" propertyKey="636" id="904:115"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueNumberComparator value="1" id="904:116"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                    <StateTransition stateToId="904:54" id="904:117">
+                        <TransitionViewModelCondition id="904:118">
+                            <TransitionPropertyViewModelComparator id="904:119">
+                                <BindablePropertyNumber id="904:120">
+                                    <DataBindContext sourcePathIds="110:223-110:226" propertyKey="636" id="904:121"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueNumberComparator value="2" id="904:122"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                    <StateTransition stateToId="904:80" id="904:123">
+                        <TransitionViewModelCondition id="904:124">
+                            <TransitionPropertyViewModelComparator id="904:125">
+                                <BindablePropertyNumber id="904:126">
+                                    <DataBindContext sourcePathIds="110:223-110:226" propertyKey="636" id="904:127"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueNumberComparator value="3" id="904:128"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                </EntryState>
+            </StateMachineLayer>
+        </StateMachine>
         <LinearAnimation name="Timeline 1" id="110:352"/>
     </Artboard>
 </Rive>
