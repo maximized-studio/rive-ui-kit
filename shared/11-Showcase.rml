@@ -309,7 +309,7 @@
                             <LayoutComponent width="240" height="240" styleId="113:284" name="Mirror" id="113:283">
                                 <LayoutComponentStyle id="113:284"/>
                             </LayoutComponent>
-                            <LayoutComponentStyle gapHorizontal="4" gapVertical="4" positionLeftUnitsValue="points" positionRightUnitsValue="points" positionTopUnitsValue="points" positionBottomUnitsValue="points" layoutAlignmentType="center" positionTypeValue="absolute" flexDirectionValue="row" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="113:278"/>
+                            <LayoutComponentStyle gapHorizontal="4" gapVertical="4" positionLeftUnitsValue="points" positionRightUnitsValue="points" positionTopUnitsValue="points" positionBottomUnitsValue="points" layoutAlignmentType="center" positionTypeValue="absolute" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="113:278"/>
                         </LayoutComponent>
                         <LayoutComponent width="36" height="30" styleId="42:400" name="Toggle Right" id="42:399">
                             <LayoutComponent styleId="42:617" name="Toggle Right Pad" id="42:616">

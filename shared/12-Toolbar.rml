@@ -63,7 +63,7 @@
                             <LayoutComponent width="240" height="240" styleId="113:40" name="Mirror" id="113:39">
                                 <LayoutComponentStyle id="113:40"/>
                             </LayoutComponent>
-                            <LayoutComponentStyle gapHorizontal="4" gapVertical="4" positionLeftUnitsValue="points" positionRightUnitsValue="points" positionTopUnitsValue="points" positionBottomUnitsValue="points" layoutAlignmentType="center" positionTypeValue="absolute" flexDirectionValue="row" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="113:34"/>
+                            <LayoutComponentStyle gapHorizontal="4" gapVertical="4" positionLeftUnitsValue="points" positionRightUnitsValue="points" positionTopUnitsValue="points" positionBottomUnitsValue="points" layoutAlignmentType="center" positionTypeValue="absolute" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="113:34"/>
                         </LayoutComponent>
                         <LayoutComponent styleId="113:14" name="Label Hit" id="113:13">
                             <Text id="10:7687">
@@ -89,7 +89,7 @@
                                             </SolidColor>
                                         </Stroke>
                                     </Shape>
-                                    <Shape x="6" y="3.9" name="Dot" id="113:23">
+                                    <Shape x="6" y="3.9000001" name="Dot" id="113:23">
                                         <Ellipse width="1.6" height="1.6" id="113:24"/>
                                         <Fill fillRule="clockwise" id="113:25">
                                             <SolidColor colorValue="FFA1A1AA" id="113:26">
@@ -98,7 +98,7 @@
                                         </Fill>
                                     </Shape>
                                     <Shape x="6" y="7" name="Stem" id="113:28">
-                                        <Rectangle width="1.3" height="3.6" cornerRadiusTL="0.65" id="113:29"/>
+                                        <Rectangle cornerRadiusTL="0.64999998" width="1.3" height="3.5999999" id="113:29"/>
                                         <Fill fillRule="clockwise" id="113:30">
                                             <SolidColor colorValue="FFA1A1AA" id="113:31">
                                                 <DataBindContext sourcePathIds="38:815-38:817-10:7426" propertyKey="37" nameBased="true" id="113:32"/>
@@ -142,7 +142,7 @@
                             <LayoutComponent width="240" height="240" styleId="113:89" name="Mirror" id="113:88">
                                 <LayoutComponentStyle id="113:89"/>
                             </LayoutComponent>
-                            <LayoutComponentStyle gapHorizontal="4" gapVertical="4" positionLeftUnitsValue="points" positionRightUnitsValue="points" positionTopUnitsValue="points" positionBottomUnitsValue="points" layoutAlignmentType="center" positionTypeValue="absolute" flexDirectionValue="row" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="113:83"/>
+                            <LayoutComponentStyle gapHorizontal="4" gapVertical="4" positionLeftUnitsValue="points" positionRightUnitsValue="points" positionTopUnitsValue="points" positionBottomUnitsValue="points" layoutAlignmentType="center" positionTypeValue="absolute" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="113:83"/>
                         </LayoutComponent>
                         <LayoutComponent styleId="113:63" name="Label Hit" id="113:62">
                             <Text id="10:2132">
@@ -168,7 +168,7 @@
                                             </SolidColor>
                                         </Stroke>
                                     </Shape>
-                                    <Shape x="6" y="3.9" name="Dot" id="113:72">
+                                    <Shape x="6" y="3.9000001" name="Dot" id="113:72">
                                         <Ellipse width="1.6" height="1.6" id="113:73"/>
                                         <Fill fillRule="clockwise" id="113:74">
                                             <SolidColor colorValue="FFA1A1AA" id="113:75">
@@ -177,7 +177,7 @@
                                         </Fill>
                                     </Shape>
                                     <Shape x="6" y="7" name="Stem" id="113:77">
-                                        <Rectangle width="1.3" height="3.6" cornerRadiusTL="0.65" id="113:78"/>
+                                        <Rectangle cornerRadiusTL="0.64999998" width="1.3" height="3.5999999" id="113:78"/>
                                         <Fill fillRule="clockwise" id="113:79">
                                             <SolidColor colorValue="FFA1A1AA" id="113:80">
                                                 <DataBindContext sourcePathIds="38:815-38:817-10:7426" propertyKey="37" nameBased="true" id="113:81"/>
@@ -444,7 +444,7 @@
                             <LayoutComponent width="240" height="240" styleId="113:138" name="Mirror" id="113:137">
                                 <LayoutComponentStyle id="113:138"/>
                             </LayoutComponent>
-                            <LayoutComponentStyle gapHorizontal="4" gapVertical="4" positionLeftUnitsValue="points" positionRightUnitsValue="points" positionTopUnitsValue="points" positionBottomUnitsValue="points" layoutAlignmentType="center" positionTypeValue="absolute" flexDirectionValue="row" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="113:132"/>
+                            <LayoutComponentStyle gapHorizontal="4" gapVertical="4" positionLeftUnitsValue="points" positionRightUnitsValue="points" positionTopUnitsValue="points" positionBottomUnitsValue="points" layoutAlignmentType="center" positionTypeValue="absolute" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="113:132"/>
                         </LayoutComponent>
                         <LayoutComponent styleId="113:112" name="Label Hit" id="113:111">
                             <Text id="10:2246">
@@ -470,7 +470,7 @@
                                             </SolidColor>
                                         </Stroke>
                                     </Shape>
-                                    <Shape x="6" y="3.9" name="Dot" id="113:121">
+                                    <Shape x="6" y="3.9000001" name="Dot" id="113:121">
                                         <Ellipse width="1.6" height="1.6" id="113:122"/>
                                         <Fill fillRule="clockwise" id="113:123">
                                             <SolidColor colorValue="FFA1A1AA" id="113:124">
@@ -479,7 +479,7 @@
                                         </Fill>
                                     </Shape>
                                     <Shape x="6" y="7" name="Stem" id="113:126">
-                                        <Rectangle width="1.3" height="3.6" cornerRadiusTL="0.65" id="113:127"/>
+                                        <Rectangle cornerRadiusTL="0.64999998" width="1.3" height="3.5999999" id="113:127"/>
                                         <Fill fillRule="clockwise" id="113:128">
                                             <SolidColor colorValue="FFA1A1AA" id="113:129">
                                                 <DataBindContext sourcePathIds="38:815-38:817-10:7426" propertyKey="37" nameBased="true" id="113:130"/>
@@ -522,7 +522,7 @@
                             <LayoutComponent width="240" height="240" styleId="113:187" name="Mirror" id="113:186">
                                 <LayoutComponentStyle id="113:187"/>
                             </LayoutComponent>
-                            <LayoutComponentStyle gapHorizontal="4" gapVertical="4" positionLeftUnitsValue="points" positionRightUnitsValue="points" positionTopUnitsValue="points" positionBottomUnitsValue="points" layoutAlignmentType="center" positionTypeValue="absolute" flexDirectionValue="row" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="113:181"/>
+                            <LayoutComponentStyle gapHorizontal="4" gapVertical="4" positionLeftUnitsValue="points" positionRightUnitsValue="points" positionTopUnitsValue="points" positionBottomUnitsValue="points" layoutAlignmentType="center" positionTypeValue="absolute" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="113:181"/>
                         </LayoutComponent>
                         <LayoutComponent styleId="113:161" name="Label Hit" id="113:160">
                             <Text id="10:2350">
@@ -548,7 +548,7 @@
                                             </SolidColor>
                                         </Stroke>
                                     </Shape>
-                                    <Shape x="6" y="3.9" name="Dot" id="113:170">
+                                    <Shape x="6" y="3.9000001" name="Dot" id="113:170">
                                         <Ellipse width="1.6" height="1.6" id="113:171"/>
                                         <Fill fillRule="clockwise" id="113:172">
                                             <SolidColor colorValue="FFA1A1AA" id="113:173">
@@ -557,7 +557,7 @@
                                         </Fill>
                                     </Shape>
                                     <Shape x="6" y="7" name="Stem" id="113:175">
-                                        <Rectangle width="1.3" height="3.6" cornerRadiusTL="0.65" id="113:176"/>
+                                        <Rectangle cornerRadiusTL="0.64999998" width="1.3" height="3.5999999" id="113:176"/>
                                         <Fill fillRule="clockwise" id="113:177">
                                             <SolidColor colorValue="FFA1A1AA" id="113:178">
                                                 <DataBindContext sourcePathIds="38:815-38:817-10:7426" propertyKey="37" nameBased="true" id="113:179"/>
@@ -624,7 +624,7 @@
                             <LayoutComponent width="240" height="240" styleId="113:236" name="Mirror" id="113:235">
                                 <LayoutComponentStyle id="113:236"/>
                             </LayoutComponent>
-                            <LayoutComponentStyle gapHorizontal="4" gapVertical="4" positionLeftUnitsValue="points" positionRightUnitsValue="points" positionTopUnitsValue="points" positionBottomUnitsValue="points" layoutAlignmentType="center" positionTypeValue="absolute" flexDirectionValue="row" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="113:230"/>
+                            <LayoutComponentStyle gapHorizontal="4" gapVertical="4" positionLeftUnitsValue="points" positionRightUnitsValue="points" positionTopUnitsValue="points" positionBottomUnitsValue="points" layoutAlignmentType="center" positionTypeValue="absolute" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="113:230"/>
                         </LayoutComponent>
                         <LayoutComponent styleId="113:210" name="Label Hit" id="113:209">
                             <Text id="15:451">
@@ -650,7 +650,7 @@
                                             </SolidColor>
                                         </Stroke>
                                     </Shape>
-                                    <Shape x="6" y="3.9" name="Dot" id="113:219">
+                                    <Shape x="6" y="3.9000001" name="Dot" id="113:219">
                                         <Ellipse width="1.6" height="1.6" id="113:220"/>
                                         <Fill fillRule="clockwise" id="113:221">
                                             <SolidColor colorValue="FFA1A1AA" id="113:222">
@@ -659,7 +659,7 @@
                                         </Fill>
                                     </Shape>
                                     <Shape x="6" y="7" name="Stem" id="113:224">
-                                        <Rectangle width="1.3" height="3.6" cornerRadiusTL="0.65" id="113:225"/>
+                                        <Rectangle cornerRadiusTL="0.64999998" width="1.3" height="3.5999999" id="113:225"/>
                                         <Fill fillRule="clockwise" id="113:226">
                                             <SolidColor colorValue="FFA1A1AA" id="113:227">
                                                 <DataBindContext sourcePathIds="38:815-38:817-10:7426" propertyKey="37" nameBased="true" id="113:228"/>
