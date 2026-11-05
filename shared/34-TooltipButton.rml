@@ -1,39 +1,39 @@
 <Rive version="1" kind="fragment">
-    <Artboard defaultStateMachineId="112:305" viewModelId="112:7" viewModelInstanceId="112:17" isComponent="true" clip="false" spaceId="1:5601" width="80" height="40" styleId="112:304" y="2394" name="Tooltip Button" id="112:303">
+    <Artboard defaultStateMachineId="112:305" viewModelId="112:7" viewModelInstanceId="112:17" isComponent="true" spaceId="1:5601" width="80" height="40" styleId="112:304" y="2394" name="Tooltip Button" id="112:303">
         <Fill fillRule="clockwise" id="112:320">
             <SolidColor colorValue="00000000" id="112:321"/>
         </Fill>
         <LayoutComponentStyle layoutAlignmentType="center" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="112:304"/>
-        <LayoutComponent clip="false" styleId="112:307" name="Anchor" id="112:306">
-            <LayoutComponent clip="false" styleId="112:309" name="Overlay" id="112:308">
-                <LayoutComponent clip="false" width="240" height="240" styleId="112:315" name="Bubble Area" id="112:314">
-                <NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="112:188" isStateful="true" name="Tooltip" id="112:322">
-                    <NestedStateMachine animationId="112:190" id="112:323"/>
-                    <ViewModelInstance viewModelId="112:1" exports="true" name="Tooltip" id="112:324">
-                        <ViewModelInstanceString propertyValue="Saves your changes" viewModelPropertyId="112:2" id="112:325">
-                            <DataBindContext sourcePathIds="112:7-112:9" propertyKey="561" nameBased="true" id="112:326"/>
-                        </ViewModelInstanceString>
-                        <ViewModelInstanceNumber viewModelPropertyId="112:3" id="112:327">
-                            <DataBindContext sourcePathIds="112:7-112:10" propertyKey="575" nameBased="true" id="112:328"/>
-                        </ViewModelInstanceNumber>
-                        <ViewModelInstanceBoolean viewModelPropertyId="112:4" id="112:329">
-                            <DataBindContext sourcePathIds="112:7-112:13" propertyKey="593" nameBased="true" id="112:330"/>
-                        </ViewModelInstanceBoolean>
-                        <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="112:5" id="112:331"/>
-                        <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="112:6" id="112:332"/>
-                    </ViewModelInstance>
-                </NestedArtboardLayout>
-                    <LayoutComponentStyle layoutWidthScaleType="fixed" layoutHeightScaleType="fixed" layoutAlignmentType="bottomCenter" id="112:315">
+        <LayoutComponent styleId="112:307" name="Anchor" id="112:306">
+            <LayoutComponent styleId="112:309" name="Overlay" id="112:308">
+                <LayoutComponent width="240" height="240" styleId="112:315" name="Bubble Area" id="112:314">
+                    <NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="112:188" isStateful="true" name="Tooltip" id="112:322">
+                        <NestedStateMachine animationId="112:190" id="112:323"/>
+                        <ViewModelInstance viewModelId="112:1" exports="true" name="Tooltip" id="112:324">
+                            <ViewModelInstanceString propertyValue="Saves your changes" viewModelPropertyId="112:2" id="112:325">
+                                <DataBindContext sourcePathIds="112:7-112:9" propertyKey="561" nameBased="true" id="112:326"/>
+                            </ViewModelInstanceString>
+                            <ViewModelInstanceNumber viewModelPropertyId="112:3" id="112:327">
+                                <DataBindContext sourcePathIds="112:7-112:10" propertyKey="575" nameBased="true" id="112:328"/>
+                            </ViewModelInstanceNumber>
+                            <ViewModelInstanceBoolean viewModelPropertyId="112:4" id="112:329">
+                                <DataBindContext sourcePathIds="112:7-112:13" propertyKey="593" nameBased="true" id="112:330"/>
+                            </ViewModelInstanceBoolean>
+                            <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="112:5" id="112:331"/>
+                            <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="112:6" id="112:332"/>
+                        </ViewModelInstance>
+                    </NestedArtboardLayout>
+                    <LayoutComponentStyle layoutAlignmentType="bottomCenter" id="112:315">
                         <DataBindContext sourcePathIds="112:7-112:10" propertyKey="632" nameBased="true" converterId="112:74" id="112:333"/>
                     </LayoutComponentStyle>
                 </LayoutComponent>
                 <LayoutComponent width="100" height="100" styleId="112:311" name="Spacer" id="112:310">
-                    <LayoutComponentStyle layoutWidthScaleType="fixed" layoutHeightScaleType="fixed" widthUnitsValue="percent" heightUnitsValue="percent" id="112:311"/>
+                    <LayoutComponentStyle widthUnitsValue="percent" heightUnitsValue="percent" id="112:311"/>
                 </LayoutComponent>
                 <LayoutComponent width="240" height="240" styleId="112:317" name="Mirror" id="112:316">
-                    <LayoutComponentStyle layoutWidthScaleType="fixed" layoutHeightScaleType="fixed" id="112:317"/>
+                    <LayoutComponentStyle id="112:317"/>
                 </LayoutComponent>
-                <LayoutComponentStyle positionTypeValue="absolute" positionLeftUnitsValue="points" positionRightUnitsValue="points" positionTopUnitsValue="points" positionBottomUnitsValue="points" gapHorizontal="4" gapHorizontalUnitsValue="points" gapVertical="4" gapVerticalUnitsValue="points" flexDirectionValue="column" layoutAlignmentType="center" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="112:309">
+                <LayoutComponentStyle gapHorizontal="4" gapVertical="4" positionLeftUnitsValue="points" positionRightUnitsValue="points" positionTopUnitsValue="points" positionBottomUnitsValue="points" layoutAlignmentType="center" positionTypeValue="absolute" flexDirectionValue="column" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="112:309">
                     <DataBindContext sourcePathIds="112:7-112:10" propertyKey="598" nameBased="true" id="112:334"/>
                 </LayoutComponentStyle>
             </LayoutComponent>
@@ -61,7 +61,7 @@
                     </ViewModelInstance>
                 </NestedArtboardLayout>
                 <LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="112:313"/>
-                <FocusData canFocus="false" name="Focus" id="112:352"/>
+                <FocusData focusFlags="6" name="Focus" id="112:352"/>
             </LayoutComponent>
             <LayoutComponentStyle layoutAlignmentType="center" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="112:307"/>
         </LayoutComponent>
@@ -85,12 +85,12 @@
                 </ListenerViewModelChange>
             </StateMachineListener>
             <StateMachineLayer name="Layer 1" id="112:365">
+                <AnimationState animationId="112:318" x="160" id="112:319"/>
                 <AnyState x="400" id="112:366"/>
                 <ExitState x="480" id="112:367"/>
                 <EntryState id="112:368">
                     <StateTransition stateToId="112:319" id="112:369"/>
                 </EntryState>
-                <AnimationState animationId="112:318" x="160" id="112:319"/>
             </StateMachineLayer>
         </StateMachine>
         <LinearAnimation name="Timeline 1" id="112:318"/>

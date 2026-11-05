@@ -250,9 +250,9 @@
             </LayoutComponent>
             <SemanticData role="button" traitFlags="32" name="Semantics" id="2:1">
                 <DataBindContext sourcePathIds="1:151-1:549" propertyKey="983" nameBased="true" id="2:8"/>
-                <DataBindContext sourcePathIds="1:151-112:14" propertyKey="985" nameBased="true" id="112:145"/>
                 <DataBindContext sourcePathIds="1:151-7:3" propertyKey="1004" nameBased="true" id="7:75"/>
                 <DataBindContext sourcePathIds="1:151-7:1" propertyKey="1002" nameBased="true" id="7:76"/>
+                <DataBindContext sourcePathIds="1:151-112:14" propertyKey="985" nameBased="true" id="112:145"/>
             </SemanticData>
             <FocusData name="Focus" id="0:15797"/>
         </LayoutComponent>

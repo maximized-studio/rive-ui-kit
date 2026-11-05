@@ -1069,19 +1069,11 @@
         <FormulaTokenInput id="111:29"/>
         <FormulaTokenParenthesisClose id="111:30"/>
     </DataConverterFormula>
-    <DataConverterGroup name="SliderPercentText" id="2:40">
-        <DataConverterGroupItem converterId="2:41" id="2:60"/>
-        <DataConverterGroupItem converterId="2:61" id="2:62"/>
-    </DataConverterGroup>
-    <DataConverterGroup name="DisabledShowShield" id="9:90">
-        <DataConverterGroupItem converterId="9:91" id="9:92"/>
-        <DataConverterGroupItem converterId="9:93" id="9:97"/>
-    </DataConverterGroup>
     <DataConverterFormula name="TooltipArrow0Hide" id="112:18">
         <FormulaTokenFunction id="112:19"/>
         <FormulaTokenValue id="112:20"/>
         <FormulaTokenArgumentSeparator id="112:21"/>
-        <FormulaTokenFunction functionType="1" id="112:22"/>
+        <FormulaTokenFunction functionType="max" id="112:22"/>
         <FormulaTokenInput id="112:23"/>
         <FormulaTokenOperation operationType="subtract" id="112:24"/>
         <FormulaTokenValue operationValue="0" id="112:25"/>
@@ -1096,7 +1088,7 @@
         <FormulaTokenFunction id="112:33"/>
         <FormulaTokenValue id="112:34"/>
         <FormulaTokenArgumentSeparator id="112:35"/>
-        <FormulaTokenFunction functionType="1" id="112:36"/>
+        <FormulaTokenFunction functionType="max" id="112:36"/>
         <FormulaTokenInput id="112:37"/>
         <FormulaTokenOperation operationType="subtract" id="112:38"/>
         <FormulaTokenValue id="112:39"/>
@@ -1111,7 +1103,7 @@
         <FormulaTokenFunction id="112:47"/>
         <FormulaTokenValue id="112:48"/>
         <FormulaTokenArgumentSeparator id="112:49"/>
-        <FormulaTokenFunction functionType="1" id="112:50"/>
+        <FormulaTokenFunction functionType="max" id="112:50"/>
         <FormulaTokenInput id="112:51"/>
         <FormulaTokenOperation operationType="subtract" id="112:52"/>
         <FormulaTokenValue operationValue="2" id="112:53"/>
@@ -1126,7 +1118,7 @@
         <FormulaTokenFunction id="112:61"/>
         <FormulaTokenValue id="112:62"/>
         <FormulaTokenArgumentSeparator id="112:63"/>
-        <FormulaTokenFunction functionType="1" id="112:64"/>
+        <FormulaTokenFunction functionType="max" id="112:64"/>
         <FormulaTokenInput id="112:65"/>
         <FormulaTokenOperation operationType="subtract" id="112:66"/>
         <FormulaTokenValue operationValue="3" id="112:67"/>
@@ -1148,7 +1140,7 @@
         <FormulaTokenFunction id="112:82"/>
         <FormulaTokenValue id="112:83"/>
         <FormulaTokenArgumentSeparator id="112:84"/>
-        <FormulaTokenFunction functionType="1" id="112:85"/>
+        <FormulaTokenFunction functionType="max" id="112:85"/>
         <FormulaTokenInput id="112:86"/>
         <FormulaTokenOperation operationType="subtract" id="112:87"/>
         <FormulaTokenValue id="112:88"/>
@@ -1168,7 +1160,7 @@
         <FormulaTokenFunction id="112:102"/>
         <FormulaTokenValue id="112:103"/>
         <FormulaTokenArgumentSeparator id="112:104"/>
-        <FormulaTokenFunction functionType="1" id="112:105"/>
+        <FormulaTokenFunction functionType="max" id="112:105"/>
         <FormulaTokenInput id="112:106"/>
         <FormulaTokenOperation operationType="subtract" id="112:107"/>
         <FormulaTokenValue operationValue="2" id="112:108"/>
@@ -1188,7 +1180,7 @@
         <FormulaTokenFunction id="112:122"/>
         <FormulaTokenValue id="112:123"/>
         <FormulaTokenArgumentSeparator id="112:124"/>
-        <FormulaTokenFunction functionType="1" id="112:125"/>
+        <FormulaTokenFunction functionType="max" id="112:125"/>
         <FormulaTokenInput id="112:126"/>
         <FormulaTokenOperation operationType="subtract" id="112:127"/>
         <FormulaTokenValue operationValue="3" id="112:128"/>
@@ -1200,6 +1192,14 @@
         <FormulaTokenParenthesisClose id="112:134"/>
         <FormulaTokenParenthesisClose id="112:135"/>
     </DataConverterFormula>
+    <DataConverterGroup name="SliderPercentText" id="2:40">
+        <DataConverterGroupItem converterId="2:41" id="2:60"/>
+        <DataConverterGroupItem converterId="2:61" id="2:62"/>
+    </DataConverterGroup>
+    <DataConverterGroup name="DisabledShowShield" id="9:90">
+        <DataConverterGroupItem converterId="9:91" id="9:92"/>
+        <DataConverterGroupItem converterId="9:93" id="9:97"/>
+    </DataConverterGroup>
     <DataConverterGroup name="DisabledNoShadow" id="9:131">
         <DataConverterGroupItem converterId="9:132" id="9:133"/>
         <DataConverterGroupItem converterId="9:134" id="9:142"/>
@@ -1729,7 +1729,6 @@
                 <ViewModelPropertyString name="hint" id="112:14"/>
                 <ViewModelInstance exports="true" name="BG Copy" id="92:637">
                     <ViewModelInstanceString propertyValue="Copy" viewModelPropertyId="1:549" id="92:638"/>
-                    <ViewModelInstanceString viewModelPropertyId="112:14" id="112:136"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="1:587" id="92:639"/>
                     <ViewModelInstanceTrigger viewModelPropertyId="1:1321" id="92:640"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="7:1" id="92:641"/>
@@ -1739,10 +1738,10 @@
                     <ViewModelInstanceNumber viewModelPropertyId="33:164" id="92:645"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="33:169" id="92:646"/>
                     <ViewModelInstanceNumber propertyValue="1" viewModelPropertyId="99:100" id="99:101"/>
+                    <ViewModelInstanceString viewModelPropertyId="112:14" id="112:136"/>
                 </ViewModelInstance>
                 <ViewModelInstance exports="true" name="BG Cut" id="92:648">
                     <ViewModelInstanceString propertyValue="Cut" viewModelPropertyId="1:549" id="92:649"/>
-                    <ViewModelInstanceString viewModelPropertyId="112:14" id="112:137"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="1:587" id="92:650"/>
                     <ViewModelInstanceTrigger viewModelPropertyId="1:1321" id="92:651"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="7:1" id="92:652"/>
@@ -1752,10 +1751,10 @@
                     <ViewModelInstanceNumber viewModelPropertyId="33:164" id="92:656"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="33:169" id="92:657"/>
                     <ViewModelInstanceNumber propertyValue="2" viewModelPropertyId="99:100" id="99:102"/>
+                    <ViewModelInstanceString viewModelPropertyId="112:14" id="112:137"/>
                 </ViewModelInstance>
                 <ViewModelInstance exports="true" name="BG Paste" id="92:659">
                     <ViewModelInstanceString propertyValue="Paste" viewModelPropertyId="1:549" id="92:660"/>
-                    <ViewModelInstanceString viewModelPropertyId="112:14" id="112:138"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="1:587" id="92:661"/>
                     <ViewModelInstanceTrigger viewModelPropertyId="1:1321" id="92:662"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="7:1" id="92:663"/>
@@ -1765,10 +1764,10 @@
                     <ViewModelInstanceNumber viewModelPropertyId="33:164" id="92:667"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="33:169" id="92:668"/>
                     <ViewModelInstanceNumber propertyValue="3" viewModelPropertyId="99:100" id="99:103"/>
+                    <ViewModelInstanceString viewModelPropertyId="112:14" id="112:138"/>
                 </ViewModelInstance>
                 <ViewModelInstance exports="true" name="Next Button" id="33:101">
                     <ViewModelInstanceString propertyValue="Next" viewModelPropertyId="1:549" id="33:102"/>
-                    <ViewModelInstanceString viewModelPropertyId="112:14" id="112:139"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="1:587" id="33:103"/>
                     <ViewModelInstanceTrigger viewModelPropertyId="1:1321" id="33:104"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="7:1" id="33:105"/>
@@ -1778,10 +1777,10 @@
                     <ViewModelInstanceNumber propertyValue="3" viewModelPropertyId="33:164" id="33:165"/>
                     <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="33:169" id="33:170"/>
                     <ViewModelInstanceNumber viewModelPropertyId="99:100" id="99:104"/>
+                    <ViewModelInstanceString viewModelPropertyId="112:14" id="112:139"/>
                 </ViewModelInstance>
                 <ViewModelInstance exports="true" name="Prev Button" id="33:60">
                     <ViewModelInstanceString propertyValue="Previous" viewModelPropertyId="1:549" id="33:61"/>
-                    <ViewModelInstanceString viewModelPropertyId="112:14" id="112:140"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="1:587" id="33:62"/>
                     <ViewModelInstanceTrigger viewModelPropertyId="1:1321" id="33:63"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="7:1" id="33:64"/>
@@ -1791,10 +1790,10 @@
                     <ViewModelInstanceNumber propertyValue="2" viewModelPropertyId="33:164" id="33:166"/>
                     <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="33:169" id="33:171"/>
                     <ViewModelInstanceNumber viewModelPropertyId="99:100" id="99:105"/>
+                    <ViewModelInstanceString viewModelPropertyId="112:14" id="112:140"/>
                 </ViewModelInstance>
                 <ViewModelInstance exports="true" name="Back Button" id="33:19">
                     <ViewModelInstanceString propertyValue="All components" viewModelPropertyId="1:549" id="33:20"/>
-                    <ViewModelInstanceString viewModelPropertyId="112:14" id="112:141"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="1:587" id="33:21"/>
                     <ViewModelInstanceTrigger viewModelPropertyId="1:1321" id="33:22"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="7:1" id="33:23"/>
@@ -1804,10 +1803,10 @@
                     <ViewModelInstanceNumber propertyValue="1" viewModelPropertyId="33:164" id="33:167"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="33:169" id="33:172"/>
                     <ViewModelInstanceNumber viewModelPropertyId="99:100" id="99:106"/>
+                    <ViewModelInstanceString viewModelPropertyId="112:14" id="112:141"/>
                 </ViewModelInstance>
                 <ViewModelInstance exports="true" id="1:152">
                     <ViewModelInstanceString propertyValue="Button" viewModelPropertyId="1:549" id="1:550"/>
-                    <ViewModelInstanceString viewModelPropertyId="112:14" id="112:142"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="1:587" id="1:588"/>
                     <ViewModelInstanceTrigger viewModelPropertyId="1:1321" id="1:1322"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="7:1" id="7:2"/>
@@ -1817,6 +1816,7 @@
                     <ViewModelInstanceNumber viewModelPropertyId="33:164" id="33:168"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="33:169" id="33:173"/>
                     <ViewModelInstanceNumber viewModelPropertyId="99:100" id="99:107"/>
+                    <ViewModelInstanceString viewModelPropertyId="112:14" id="112:142"/>
                 </ViewModelInstance>
             </ViewModel>
             <ViewModel defaultInstanceId="1:150" name="Checkbox" groupId="1:2673" id="1:149">
@@ -4817,44 +4817,6 @@
             <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="104:12" id="104:41"/>
         </ViewModelInstance>
     </ViewModel>
-    <ViewModel defaultInstanceId="112:15" name="Tooltip" id="112:1">
-        <ViewModelPropertyString name="text" id="112:2"/>
-        <ViewModelPropertyNumber name="placement" id="112:3"/>
-        <ViewModelPropertyBoolean name="open" id="112:4"/>
-        <ViewModelPropertyBoolean name="a11yHidden" id="112:5"/>
-        <ViewModelPropertyViewModel viewModelReferenceId="10:7" name="theme" id="112:6"/>
-        <ViewModelInstance exports="true" name="Tooltip" id="112:15">
-            <ViewModelInstanceString propertyValue="Tooltip" viewModelPropertyId="112:2" id="112:146"/>
-            <ViewModelInstanceNumber viewModelPropertyId="112:3" id="112:147"/>
-            <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="112:4" id="112:148"/>
-            <ViewModelInstanceBoolean viewModelPropertyId="112:5" id="112:149"/>
-            <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="112:6" id="112:150"/>
-        </ViewModelInstance>
-    </ViewModel>
-    <ViewModel defaultInstanceId="112:16" name="TooltipButton" id="112:7">
-        <ViewModelPropertyString name="label" id="112:8"/>
-        <ViewModelPropertyString name="tooltip" id="112:9"/>
-        <ViewModelPropertyNumber name="placement" id="112:10"/>
-        <ViewModelPropertyBoolean name="a11yHidden" id="112:11"/>
-        <ViewModelPropertyViewModel viewModelReferenceId="10:7" name="theme" id="112:12"/>
-        <ViewModelPropertyBoolean name="_open" id="112:13"/>
-        <ViewModelInstance exports="true" name="Tooltip Button" id="112:16">
-            <ViewModelInstanceString propertyValue="Save" viewModelPropertyId="112:8" id="112:151"/>
-            <ViewModelInstanceString propertyValue="Saves your changes" viewModelPropertyId="112:9" id="112:152"/>
-            <ViewModelInstanceNumber viewModelPropertyId="112:10" id="112:153"/>
-            <ViewModelInstanceBoolean viewModelPropertyId="112:11" id="112:154"/>
-            <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="112:12" id="112:155"/>
-            <ViewModelInstanceBoolean viewModelPropertyId="112:13" id="112:156"/>
-        </ViewModelInstance>
-        <ViewModelInstance exports="true" name="Tooltip Button Demo" id="112:17">
-            <ViewModelInstanceString propertyValue="Save" viewModelPropertyId="112:8" id="112:157"/>
-            <ViewModelInstanceString propertyValue="Saves your changes" viewModelPropertyId="112:9" id="112:158"/>
-            <ViewModelInstanceNumber viewModelPropertyId="112:10" id="112:159"/>
-            <ViewModelInstanceBoolean viewModelPropertyId="112:11" id="112:160"/>
-            <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="112:12" id="112:161"/>
-            <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="112:13" id="112:162"/>
-        </ViewModelInstance>
-    </ViewModel>
     <ViewModel defaultInstanceId="110:233" name="Alert" id="110:223">
         <ViewModelPropertyString name="title" id="110:224"/>
         <ViewModelPropertyString name="body" id="110:225"/>
@@ -4981,6 +4943,44 @@
         <ViewModelPropertyNumber name="selected" id="111:17"/>
         <ViewModelInstance exports="true" name="Breadcrumbs" id="111:18">
             <ViewModelInstanceNumber propertyValue="-1" viewModelPropertyId="111:17" id="111:61"/>
+        </ViewModelInstance>
+    </ViewModel>
+    <ViewModel defaultInstanceId="112:15" name="Tooltip" id="112:1">
+        <ViewModelPropertyString name="text" id="112:2"/>
+        <ViewModelPropertyNumber name="placement" id="112:3"/>
+        <ViewModelPropertyBoolean name="open" id="112:4"/>
+        <ViewModelPropertyBoolean name="a11yHidden" id="112:5"/>
+        <ViewModelPropertyViewModel viewModelReferenceId="10:7" name="theme" id="112:6"/>
+        <ViewModelInstance exports="true" name="Tooltip" id="112:15">
+            <ViewModelInstanceString propertyValue="Tooltip" viewModelPropertyId="112:2" id="112:146"/>
+            <ViewModelInstanceNumber viewModelPropertyId="112:3" id="112:147"/>
+            <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="112:4" id="112:148"/>
+            <ViewModelInstanceBoolean viewModelPropertyId="112:5" id="112:149"/>
+            <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="112:6" id="112:150"/>
+        </ViewModelInstance>
+    </ViewModel>
+    <ViewModel defaultInstanceId="112:16" name="TooltipButton" id="112:7">
+        <ViewModelPropertyString name="label" id="112:8"/>
+        <ViewModelPropertyString name="tooltip" id="112:9"/>
+        <ViewModelPropertyNumber name="placement" id="112:10"/>
+        <ViewModelPropertyBoolean name="a11yHidden" id="112:11"/>
+        <ViewModelPropertyViewModel viewModelReferenceId="10:7" name="theme" id="112:12"/>
+        <ViewModelPropertyBoolean name="_open" id="112:13"/>
+        <ViewModelInstance exports="true" name="Tooltip Button" id="112:16">
+            <ViewModelInstanceString propertyValue="Save" viewModelPropertyId="112:8" id="112:151"/>
+            <ViewModelInstanceString propertyValue="Saves your changes" viewModelPropertyId="112:9" id="112:152"/>
+            <ViewModelInstanceNumber viewModelPropertyId="112:10" id="112:153"/>
+            <ViewModelInstanceBoolean viewModelPropertyId="112:11" id="112:154"/>
+            <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="112:12" id="112:155"/>
+            <ViewModelInstanceBoolean viewModelPropertyId="112:13" id="112:156"/>
+        </ViewModelInstance>
+        <ViewModelInstance exports="true" name="Tooltip Button Demo" id="112:17">
+            <ViewModelInstanceString propertyValue="Save" viewModelPropertyId="112:8" id="112:157"/>
+            <ViewModelInstanceString propertyValue="Saves your changes" viewModelPropertyId="112:9" id="112:158"/>
+            <ViewModelInstanceNumber viewModelPropertyId="112:10" id="112:159"/>
+            <ViewModelInstanceBoolean viewModelPropertyId="112:11" id="112:160"/>
+            <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="112:12" id="112:161"/>
+            <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="112:13" id="112:162"/>
         </ViewModelInstance>
     </ViewModel>
 </Rive>
