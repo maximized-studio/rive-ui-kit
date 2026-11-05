@@ -18,6 +18,8 @@ if '--bake' in sys.argv: pos = [a for a in pos if a != sys.argv[sys.argv.index('
 root_src, root_out = (pos + [None, None])[:2]  # optional: also theme the stored Theme instance values
 s = open(src, encoding='utf-8').read()
 pal = json.load(open(palette_path))
+_scales_path = __import__('os').path.join(__import__('os').path.dirname(__import__('os').path.abspath(__file__)), 'scales.json')
+SCALES = {k: v for k, v in json.load(open(_scales_path)).items() if not k.startswith('_')}
 
 # Theme view model property ids (10:7 = Theme)
 PROPS = {'_bg': '10:7402', '_bgClear': '10:7404', '_surface': '10:7406', '_surfaceMuted': '10:7408',
@@ -105,6 +107,14 @@ if root_src:
             return f'<ViewModelInstanceNumber{v}{attrs} viewModelPropertyId="{NUMS[key]}"'
         r, k = re.subn(r'<ViewModelInstanceNumber([^>]*?) viewModelPropertyId="' + NUMS[key] + '"', num, r)
         print(f'{root_out}: default {key} = {val} ({k}x)')
+        # Scale tokens (tools/scales.json) store the value of that step too
+        for tok, spec in SCALES.get(key, {}).items():
+            pid = re.search(r'<ViewModelPropertyNumber name="%s" id="([\d:]+)"' % tok, r)
+            if pid:
+                v = spec['values'][val]
+                r = re.sub(r'<ViewModelInstanceNumber[^>]*viewModelPropertyId="%s"' % pid.group(1),
+                           lambda m: '<ViewModelInstanceNumber%s viewModelPropertyId="%s"' % (
+                               f' propertyValue="{v:g}"' if v else '', pid.group(1)), r)
     open(root_out, 'w', encoding='utf-8').write(r)
     print(f'{root_out}: {n} stored Theme colours themed')
 
@@ -153,6 +163,13 @@ if '--bake' in sys.argv and pal.get('defaults'):
     OPS = {'add': '+', 'subtract': '-', 'multiply': '*', 'divide': '/', 'modulo': '%'}
     rnd = lambda v: math.floor(v + 0.5)
     root_xml = open(os.path.join(bake_dir, '99-_root.rml'), encoding='utf-8').read()
+    # Binds that read a scale token (tools/scales.json) take that token's value at the default step
+    TOKENS = {}
+    for scale, toks in SCALES.items():
+        for tok, spec in toks.items():
+            m = re.search(r'<ViewModelPropertyNumber name="%s" id="([\d:]+)"' % tok, root_xml)
+            if m:
+                TOKENS[m.group(1)] = (scale, spec['values'])
     formulas = {}
     for m in re.finditer(r'<DataConverterFormula [^>]*id="([\d:]+)">(.*?)</DataConverterFormula>', root_xml, re.S):
         expr = ''
@@ -177,9 +194,12 @@ if '--bake' in sys.argv and pal.get('defaults'):
         for b in doc.getElementsByTagName('DataBindContext'):
             src = b.getAttribute('sourcePathIds').split('-')[-1]
             key, conv = b.getAttribute('propertyKey'), b.getAttribute('converterId')
-            if src not in SRC or key not in ATTR or SRC[src] not in pal['defaults']:
+            scale = SRC.get(src) or TOKENS.get(src, (None,))[0]
+            if not scale or key not in ATTR or scale not in pal['defaults']:
                 continue
-            x = pal['defaults'][SRC[src]]
+            x = pal['defaults'][scale]
+            if src in TOKENS:
+                x = TOKENS[src][1][x]
             try:
                 v = eval(formulas[conv], {'math': math, 'rnd': rnd, 'x': x}) if conv else x
             except Exception as e:

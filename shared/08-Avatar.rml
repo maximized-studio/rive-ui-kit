@@ -2,7 +2,7 @@
     <Artboard defaultStateMachineId="1:2053" viewModelId="1:2082" viewModelInstanceId="1:2083" isComponent="true" spaceId="1:5601" width="32" height="32" styleId="1:2051" x="1800" name="Avatar" id="1:2048">
         <Shape x="16" y="16" locked="true" id="1:2077">
             <Rectangle cornerRadiusTL="16" width="32" height="32" id="10:6092">
-                <DataBindContext sourcePathIds="10:7-10:2086" propertyKey="31" converterId="10:6431" id="10:6539"/>
+                <DataBindContext sourcePathIds="10:7-901:1" propertyKey="31" converterId="0:0" id="10:6539"/>
             </Rectangle>
         </Shape>
         <Image assetId="1:2091" x="16" y="16" scaleX="0.25" scaleY="0.25" name="Avatar" id="1:2089">

@@ -1418,6 +1418,7 @@
                 </KeyedProperty>
             </KeyedObject>
         </LinearAnimation>
+        <LinearAnimation name="Scale Hold" id="901:39"/>
         <StateMachine name="Theme Driver" id="10:14626">
             <StateMachineLayer name="Mode" id="10:14627">
                 <AnyState x="400" id="10:14628"/>
@@ -1704,6 +1705,576 @@
                 <AnimationState animationId="10:14728" x="360" y="100" stateName="Brand Rose Dark" id="10:15350"/>
                 <AnimationState animationId="10:14729" x="160" y="200" stateName="Brand Zinc Light" id="10:15351"/>
                 <AnimationState animationId="10:14730" x="360" y="200" stateName="Brand Zinc Dark" id="10:15352"/>
+            </StateMachineLayer>
+            <StateMachineLayer name="Roundness" id="901:40">
+                <AnyState x="400" id="901:41">
+                    <StateTransition stateToId="901:44" id="901:72">
+                        <TransitionViewModelCondition id="901:73">
+                            <TransitionPropertyViewModelComparator id="901:74">
+                                <BindablePropertyNumber id="901:75">
+                                    <DataBindContext sourcePathIds="10:7-10:2086" propertyKey="636" id="901:76"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueNumberComparator id="901:77"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                    <StateTransition stateToId="901:45" id="901:78">
+                        <TransitionViewModelCondition id="901:79">
+                            <TransitionPropertyViewModelComparator id="901:80">
+                                <BindablePropertyNumber id="901:81">
+                                    <DataBindContext sourcePathIds="10:7-10:2086" propertyKey="636" id="901:82"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueNumberComparator value="1" id="901:83"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                    <StateTransition stateToId="901:46" id="901:84">
+                        <TransitionViewModelCondition id="901:85">
+                            <TransitionPropertyViewModelComparator id="901:86">
+                                <BindablePropertyNumber id="901:87">
+                                    <DataBindContext sourcePathIds="10:7-10:2086" propertyKey="636" id="901:88"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueNumberComparator value="2" id="901:89"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                    <StateTransition stateToId="901:47" id="901:90">
+                        <TransitionViewModelCondition id="901:91">
+                            <TransitionPropertyViewModelComparator id="901:92">
+                                <BindablePropertyNumber id="901:93">
+                                    <DataBindContext sourcePathIds="10:7-10:2086" propertyKey="636" id="901:94"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueNumberComparator value="3" id="901:95"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                </AnyState>
+                <ExitState x="480" id="901:42"/>
+                <EntryState id="901:43">
+                    <StateTransition stateToId="901:44" id="901:48">
+                        <TransitionViewModelCondition id="901:49">
+                            <TransitionPropertyViewModelComparator id="901:50">
+                                <BindablePropertyNumber id="901:51">
+                                    <DataBindContext sourcePathIds="10:7-10:2086" propertyKey="636" id="901:52"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueNumberComparator id="901:53"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                    <StateTransition stateToId="901:45" id="901:54">
+                        <TransitionViewModelCondition id="901:55">
+                            <TransitionPropertyViewModelComparator id="901:56">
+                                <BindablePropertyNumber id="901:57">
+                                    <DataBindContext sourcePathIds="10:7-10:2086" propertyKey="636" id="901:58"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueNumberComparator value="1" id="901:59"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                    <StateTransition stateToId="901:46" id="901:60">
+                        <TransitionViewModelCondition id="901:61">
+                            <TransitionPropertyViewModelComparator id="901:62">
+                                <BindablePropertyNumber id="901:63">
+                                    <DataBindContext sourcePathIds="10:7-10:2086" propertyKey="636" id="901:64"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueNumberComparator value="2" id="901:65"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                    <StateTransition stateToId="901:47" id="901:66">
+                        <TransitionViewModelCondition id="901:67">
+                            <TransitionPropertyViewModelComparator id="901:68">
+                                <BindablePropertyNumber id="901:69">
+                                    <DataBindContext sourcePathIds="10:7-10:2086" propertyKey="636" id="901:70"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueNumberComparator value="3" id="901:71"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                </EntryState>
+                <AnimationState animationId="901:39" x="160" y="-150" stateName="Roundness 0" id="901:44">
+                    <ListenerViewModelChange flags="4" id="901:96">
+                        <BindablePropertyNumber id="901:97">
+                            <DataBindContext sourcePathIds="10:7-901:1" propertyKey="636" direction="true" id="901:98"/>
+                        </BindablePropertyNumber>
+                    </ListenerViewModelChange>
+                    <ListenerViewModelChange flags="4" id="901:99">
+                        <BindablePropertyNumber id="901:100">
+                            <DataBindContext sourcePathIds="10:7-901:3" propertyKey="636" direction="true" id="901:101"/>
+                        </BindablePropertyNumber>
+                    </ListenerViewModelChange>
+                    <ListenerViewModelChange flags="4" id="901:102">
+                        <BindablePropertyNumber id="901:103">
+                            <DataBindContext sourcePathIds="10:7-901:5" propertyKey="636" direction="true" id="901:104"/>
+                        </BindablePropertyNumber>
+                    </ListenerViewModelChange>
+                    <ListenerViewModelChange flags="4" id="901:105">
+                        <BindablePropertyNumber id="901:106">
+                            <DataBindContext sourcePathIds="10:7-901:7" propertyKey="636" direction="true" id="901:107"/>
+                        </BindablePropertyNumber>
+                    </ListenerViewModelChange>
+                    <ListenerViewModelChange flags="4" id="901:108">
+                        <BindablePropertyNumber id="901:109">
+                            <DataBindContext sourcePathIds="10:7-901:9" propertyKey="636" direction="true" id="901:110"/>
+                        </BindablePropertyNumber>
+                    </ListenerViewModelChange>
+                    <ListenerViewModelChange flags="4" id="901:111">
+                        <BindablePropertyNumber id="901:112">
+                            <DataBindContext sourcePathIds="10:7-901:11" propertyKey="636" direction="true" id="901:113"/>
+                        </BindablePropertyNumber>
+                    </ListenerViewModelChange>
+                    <ListenerViewModelChange flags="4" id="901:114">
+                        <BindablePropertyNumber id="901:115">
+                            <DataBindContext sourcePathIds="10:7-901:13" propertyKey="636" direction="true" id="901:116"/>
+                        </BindablePropertyNumber>
+                    </ListenerViewModelChange>
+                    <ListenerViewModelChange flags="4" id="901:117">
+                        <BindablePropertyNumber id="901:118">
+                            <DataBindContext sourcePathIds="10:7-901:15" propertyKey="636" direction="true" id="901:119"/>
+                        </BindablePropertyNumber>
+                    </ListenerViewModelChange>
+                    <ListenerViewModelChange flags="4" id="901:120">
+                        <BindablePropertyNumber id="901:121">
+                            <DataBindContext sourcePathIds="10:7-901:17" propertyKey="636" direction="true" id="901:122"/>
+                        </BindablePropertyNumber>
+                    </ListenerViewModelChange>
+                    <ListenerViewModelChange flags="4" id="901:123">
+                        <BindablePropertyNumber id="901:124">
+                            <DataBindContext sourcePathIds="10:7-901:19" propertyKey="636" direction="true" id="901:125"/>
+                        </BindablePropertyNumber>
+                    </ListenerViewModelChange>
+                    <ListenerViewModelChange flags="4" id="901:126">
+                        <BindablePropertyNumber id="901:127">
+                            <DataBindContext sourcePathIds="10:7-901:21" propertyKey="636" direction="true" id="901:128"/>
+                        </BindablePropertyNumber>
+                    </ListenerViewModelChange>
+                    <ListenerViewModelChange flags="4" id="901:129">
+                        <BindablePropertyNumber id="901:130">
+                            <DataBindContext sourcePathIds="10:7-901:23" propertyKey="636" direction="true" id="901:131"/>
+                        </BindablePropertyNumber>
+                    </ListenerViewModelChange>
+                    <ListenerViewModelChange flags="4" id="901:132">
+                        <BindablePropertyNumber id="901:133">
+                            <DataBindContext sourcePathIds="10:7-901:25" propertyKey="636" direction="true" id="901:134"/>
+                        </BindablePropertyNumber>
+                    </ListenerViewModelChange>
+                    <ListenerViewModelChange flags="4" id="901:135">
+                        <BindablePropertyNumber id="901:136">
+                            <DataBindContext sourcePathIds="10:7-901:27" propertyKey="636" direction="true" id="901:137"/>
+                        </BindablePropertyNumber>
+                    </ListenerViewModelChange>
+                </AnimationState>
+                <AnimationState animationId="901:39" x="160" y="-50" stateName="Roundness 1" id="901:45">
+                    <ListenerViewModelChange flags="4" id="901:138">
+                        <BindablePropertyNumber propertyValue="6" id="901:139">
+                            <DataBindContext sourcePathIds="10:7-901:1" propertyKey="636" direction="true" id="901:140"/>
+                        </BindablePropertyNumber>
+                    </ListenerViewModelChange>
+                    <ListenerViewModelChange flags="4" id="901:141">
+                        <BindablePropertyNumber propertyValue="3" id="901:142">
+                            <DataBindContext sourcePathIds="10:7-901:3" propertyKey="636" direction="true" id="901:143"/>
+                        </BindablePropertyNumber>
+                    </ListenerViewModelChange>
+                    <ListenerViewModelChange flags="4" id="901:144">
+                        <BindablePropertyNumber propertyValue="4" id="901:145">
+                            <DataBindContext sourcePathIds="10:7-901:5" propertyKey="636" direction="true" id="901:146"/>
+                        </BindablePropertyNumber>
+                    </ListenerViewModelChange>
+                    <ListenerViewModelChange flags="4" id="901:147">
+                        <BindablePropertyNumber propertyValue="8" id="901:148">
+                            <DataBindContext sourcePathIds="10:7-901:7" propertyKey="636" direction="true" id="901:149"/>
+                        </BindablePropertyNumber>
+                    </ListenerViewModelChange>
+                    <ListenerViewModelChange flags="4" id="901:150">
+                        <BindablePropertyNumber propertyValue="2" id="901:151">
+                            <DataBindContext sourcePathIds="10:7-901:9" propertyKey="636" direction="true" id="901:152"/>
+                        </BindablePropertyNumber>
+                    </ListenerViewModelChange>
+                    <ListenerViewModelChange flags="4" id="901:153">
+                        <BindablePropertyNumber propertyValue="2" id="901:154">
+                            <DataBindContext sourcePathIds="10:7-901:11" propertyKey="636" direction="true" id="901:155"/>
+                        </BindablePropertyNumber>
+                    </ListenerViewModelChange>
+                    <ListenerViewModelChange flags="4" id="901:156">
+                        <BindablePropertyNumber propertyValue="4" id="901:157">
+                            <DataBindContext sourcePathIds="10:7-901:13" propertyKey="636" direction="true" id="901:158"/>
+                        </BindablePropertyNumber>
+                    </ListenerViewModelChange>
+                    <ListenerViewModelChange flags="4" id="901:159">
+                        <BindablePropertyNumber propertyValue="3" id="901:160">
+                            <DataBindContext sourcePathIds="10:7-901:15" propertyKey="636" direction="true" id="901:161"/>
+                        </BindablePropertyNumber>
+                    </ListenerViewModelChange>
+                    <ListenerViewModelChange flags="4" id="901:162">
+                        <BindablePropertyNumber propertyValue="4" id="901:163">
+                            <DataBindContext sourcePathIds="10:7-901:17" propertyKey="636" direction="true" id="901:164"/>
+                        </BindablePropertyNumber>
+                    </ListenerViewModelChange>
+                    <ListenerViewModelChange flags="4" id="901:165">
+                        <BindablePropertyNumber propertyValue="1" id="901:166">
+                            <DataBindContext sourcePathIds="10:7-901:19" propertyKey="636" direction="true" id="901:167"/>
+                        </BindablePropertyNumber>
+                    </ListenerViewModelChange>
+                    <ListenerViewModelChange flags="4" id="901:168">
+                        <BindablePropertyNumber propertyValue="2" id="901:169">
+                            <DataBindContext sourcePathIds="10:7-901:21" propertyKey="636" direction="true" id="901:170"/>
+                        </BindablePropertyNumber>
+                    </ListenerViewModelChange>
+                    <ListenerViewModelChange flags="4" id="901:171">
+                        <BindablePropertyNumber propertyValue="1" id="901:172">
+                            <DataBindContext sourcePathIds="10:7-901:23" propertyKey="636" direction="true" id="901:173"/>
+                        </BindablePropertyNumber>
+                    </ListenerViewModelChange>
+                    <ListenerViewModelChange flags="4" id="901:174">
+                        <BindablePropertyNumber propertyValue="4" id="901:175">
+                            <DataBindContext sourcePathIds="10:7-901:25" propertyKey="636" direction="true" id="901:176"/>
+                        </BindablePropertyNumber>
+                    </ListenerViewModelChange>
+                    <ListenerViewModelChange flags="4" id="901:177">
+                        <BindablePropertyNumber propertyValue="5" id="901:178">
+                            <DataBindContext sourcePathIds="10:7-901:27" propertyKey="636" direction="true" id="901:179"/>
+                        </BindablePropertyNumber>
+                    </ListenerViewModelChange>
+                </AnimationState>
+                <AnimationState animationId="901:39" x="160" y="50" stateName="Roundness 2" id="901:46">
+                    <ListenerViewModelChange flags="4" id="901:180">
+                        <BindablePropertyNumber propertyValue="16" id="901:181">
+                            <DataBindContext sourcePathIds="10:7-901:1" propertyKey="636" direction="true" id="901:182"/>
+                        </BindablePropertyNumber>
+                    </ListenerViewModelChange>
+                    <ListenerViewModelChange flags="4" id="901:183">
+                        <BindablePropertyNumber propertyValue="8" id="901:184">
+                            <DataBindContext sourcePathIds="10:7-901:3" propertyKey="636" direction="true" id="901:185"/>
+                        </BindablePropertyNumber>
+                    </ListenerViewModelChange>
+                    <ListenerViewModelChange flags="4" id="901:186">
+                        <BindablePropertyNumber propertyValue="8" id="901:187">
+                            <DataBindContext sourcePathIds="10:7-901:5" propertyKey="636" direction="true" id="901:188"/>
+                        </BindablePropertyNumber>
+                    </ListenerViewModelChange>
+                    <ListenerViewModelChange flags="4" id="901:189">
+                        <BindablePropertyNumber propertyValue="16" id="901:190">
+                            <DataBindContext sourcePathIds="10:7-901:7" propertyKey="636" direction="true" id="901:191"/>
+                        </BindablePropertyNumber>
+                    </ListenerViewModelChange>
+                    <ListenerViewModelChange flags="4" id="901:192">
+                        <BindablePropertyNumber propertyValue="10" id="901:193">
+                            <DataBindContext sourcePathIds="10:7-901:9" propertyKey="636" direction="true" id="901:194"/>
+                        </BindablePropertyNumber>
+                    </ListenerViewModelChange>
+                    <ListenerViewModelChange flags="4" id="901:195">
+                        <BindablePropertyNumber propertyValue="4" id="901:196">
+                            <DataBindContext sourcePathIds="10:7-901:11" propertyKey="636" direction="true" id="901:197"/>
+                        </BindablePropertyNumber>
+                    </ListenerViewModelChange>
+                    <ListenerViewModelChange flags="4" id="901:198">
+                        <BindablePropertyNumber propertyValue="8" id="901:199">
+                            <DataBindContext sourcePathIds="10:7-901:13" propertyKey="636" direction="true" id="901:200"/>
+                        </BindablePropertyNumber>
+                    </ListenerViewModelChange>
+                    <ListenerViewModelChange flags="4" id="901:201">
+                        <BindablePropertyNumber propertyValue="8" id="901:202">
+                            <DataBindContext sourcePathIds="10:7-901:15" propertyKey="636" direction="true" id="901:203"/>
+                        </BindablePropertyNumber>
+                    </ListenerViewModelChange>
+                    <ListenerViewModelChange flags="4" id="901:204">
+                        <BindablePropertyNumber propertyValue="10" id="901:205">
+                            <DataBindContext sourcePathIds="10:7-901:17" propertyKey="636" direction="true" id="901:206"/>
+                        </BindablePropertyNumber>
+                    </ListenerViewModelChange>
+                    <ListenerViewModelChange flags="4" id="901:207">
+                        <BindablePropertyNumber propertyValue="7" id="901:208">
+                            <DataBindContext sourcePathIds="10:7-901:19" propertyKey="636" direction="true" id="901:209"/>
+                        </BindablePropertyNumber>
+                    </ListenerViewModelChange>
+                    <ListenerViewModelChange flags="4" id="901:210">
+                        <BindablePropertyNumber propertyValue="4" id="901:211">
+                            <DataBindContext sourcePathIds="10:7-901:21" propertyKey="636" direction="true" id="901:212"/>
+                        </BindablePropertyNumber>
+                    </ListenerViewModelChange>
+                    <ListenerViewModelChange flags="4" id="901:213">
+                        <BindablePropertyNumber propertyValue="9" id="901:214">
+                            <DataBindContext sourcePathIds="10:7-901:23" propertyKey="636" direction="true" id="901:215"/>
+                        </BindablePropertyNumber>
+                    </ListenerViewModelChange>
+                    <ListenerViewModelChange flags="4" id="901:216">
+                        <BindablePropertyNumber propertyValue="10" id="901:217">
+                            <DataBindContext sourcePathIds="10:7-901:25" propertyKey="636" direction="true" id="901:218"/>
+                        </BindablePropertyNumber>
+                    </ListenerViewModelChange>
+                    <ListenerViewModelChange flags="4" id="901:219">
+                        <BindablePropertyNumber propertyValue="12" id="901:220">
+                            <DataBindContext sourcePathIds="10:7-901:27" propertyKey="636" direction="true" id="901:221"/>
+                        </BindablePropertyNumber>
+                    </ListenerViewModelChange>
+                </AnimationState>
+                <AnimationState animationId="901:39" x="160" y="150" stateName="Roundness 3" id="901:47">
+                    <ListenerViewModelChange flags="4" id="901:222">
+                        <BindablePropertyNumber propertyValue="16" id="901:223">
+                            <DataBindContext sourcePathIds="10:7-901:1" propertyKey="636" direction="true" id="901:224"/>
+                        </BindablePropertyNumber>
+                    </ListenerViewModelChange>
+                    <ListenerViewModelChange flags="4" id="901:225">
+                        <BindablePropertyNumber propertyValue="8" id="901:226">
+                            <DataBindContext sourcePathIds="10:7-901:3" propertyKey="636" direction="true" id="901:227"/>
+                        </BindablePropertyNumber>
+                    </ListenerViewModelChange>
+                    <ListenerViewModelChange flags="4" id="901:228">
+                        <BindablePropertyNumber propertyValue="20" id="901:229">
+                            <DataBindContext sourcePathIds="10:7-901:5" propertyKey="636" direction="true" id="901:230"/>
+                        </BindablePropertyNumber>
+                    </ListenerViewModelChange>
+                    <ListenerViewModelChange flags="4" id="901:231">
+                        <BindablePropertyNumber propertyValue="24" id="901:232">
+                            <DataBindContext sourcePathIds="10:7-901:7" propertyKey="636" direction="true" id="901:233"/>
+                        </BindablePropertyNumber>
+                    </ListenerViewModelChange>
+                    <ListenerViewModelChange flags="4" id="901:234">
+                        <BindablePropertyNumber propertyValue="18" id="901:235">
+                            <DataBindContext sourcePathIds="10:7-901:9" propertyKey="636" direction="true" id="901:236"/>
+                        </BindablePropertyNumber>
+                    </ListenerViewModelChange>
+                    <ListenerViewModelChange flags="4" id="901:237">
+                        <BindablePropertyNumber propertyValue="6" id="901:238">
+                            <DataBindContext sourcePathIds="10:7-901:11" propertyKey="636" direction="true" id="901:239"/>
+                        </BindablePropertyNumber>
+                    </ListenerViewModelChange>
+                    <ListenerViewModelChange flags="4" id="901:240">
+                        <BindablePropertyNumber propertyValue="12" id="901:241">
+                            <DataBindContext sourcePathIds="10:7-901:13" propertyKey="636" direction="true" id="901:242"/>
+                        </BindablePropertyNumber>
+                    </ListenerViewModelChange>
+                    <ListenerViewModelChange flags="4" id="901:243">
+                        <BindablePropertyNumber propertyValue="8" id="901:244">
+                            <DataBindContext sourcePathIds="10:7-901:15" propertyKey="636" direction="true" id="901:245"/>
+                        </BindablePropertyNumber>
+                    </ListenerViewModelChange>
+                    <ListenerViewModelChange flags="4" id="901:246">
+                        <BindablePropertyNumber propertyValue="16" id="901:247">
+                            <DataBindContext sourcePathIds="10:7-901:17" propertyKey="636" direction="true" id="901:248"/>
+                        </BindablePropertyNumber>
+                    </ListenerViewModelChange>
+                    <ListenerViewModelChange flags="4" id="901:249">
+                        <BindablePropertyNumber propertyValue="13" id="901:250">
+                            <DataBindContext sourcePathIds="10:7-901:19" propertyKey="636" direction="true" id="901:251"/>
+                        </BindablePropertyNumber>
+                    </ListenerViewModelChange>
+                    <ListenerViewModelChange flags="4" id="901:252">
+                        <BindablePropertyNumber propertyValue="8" id="901:253">
+                            <DataBindContext sourcePathIds="10:7-901:21" propertyKey="636" direction="true" id="901:254"/>
+                        </BindablePropertyNumber>
+                    </ListenerViewModelChange>
+                    <ListenerViewModelChange flags="4" id="901:255">
+                        <BindablePropertyNumber propertyValue="9" id="901:256">
+                            <DataBindContext sourcePathIds="10:7-901:23" propertyKey="636" direction="true" id="901:257"/>
+                        </BindablePropertyNumber>
+                    </ListenerViewModelChange>
+                    <ListenerViewModelChange flags="4" id="901:258">
+                        <BindablePropertyNumber propertyValue="10" id="901:259">
+                            <DataBindContext sourcePathIds="10:7-901:25" propertyKey="636" direction="true" id="901:260"/>
+                        </BindablePropertyNumber>
+                    </ListenerViewModelChange>
+                    <ListenerViewModelChange flags="4" id="901:261">
+                        <BindablePropertyNumber propertyValue="12" id="901:262">
+                            <DataBindContext sourcePathIds="10:7-901:27" propertyKey="636" direction="true" id="901:263"/>
+                        </BindablePropertyNumber>
+                    </ListenerViewModelChange>
+                </AnimationState>
+            </StateMachineLayer>
+            <StateMachineLayer name="Shadow" id="901:264">
+                <AnyState x="400" id="901:265">
+                    <StateTransition stateToId="901:268" id="901:296">
+                        <TransitionViewModelCondition id="901:297">
+                            <TransitionPropertyViewModelComparator id="901:298">
+                                <BindablePropertyNumber id="901:299">
+                                    <DataBindContext sourcePathIds="10:7-10:2088" propertyKey="636" id="901:300"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueNumberComparator id="901:301"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                    <StateTransition stateToId="901:269" id="901:302">
+                        <TransitionViewModelCondition id="901:303">
+                            <TransitionPropertyViewModelComparator id="901:304">
+                                <BindablePropertyNumber id="901:305">
+                                    <DataBindContext sourcePathIds="10:7-10:2088" propertyKey="636" id="901:306"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueNumberComparator value="1" id="901:307"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                    <StateTransition stateToId="901:270" id="901:308">
+                        <TransitionViewModelCondition id="901:309">
+                            <TransitionPropertyViewModelComparator id="901:310">
+                                <BindablePropertyNumber id="901:311">
+                                    <DataBindContext sourcePathIds="10:7-10:2088" propertyKey="636" id="901:312"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueNumberComparator value="2" id="901:313"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                    <StateTransition stateToId="901:271" id="901:314">
+                        <TransitionViewModelCondition id="901:315">
+                            <TransitionPropertyViewModelComparator id="901:316">
+                                <BindablePropertyNumber id="901:317">
+                                    <DataBindContext sourcePathIds="10:7-10:2088" propertyKey="636" id="901:318"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueNumberComparator value="3" id="901:319"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                </AnyState>
+                <ExitState x="480" id="901:266"/>
+                <EntryState id="901:267">
+                    <StateTransition stateToId="901:268" id="901:272">
+                        <TransitionViewModelCondition id="901:273">
+                            <TransitionPropertyViewModelComparator id="901:274">
+                                <BindablePropertyNumber id="901:275">
+                                    <DataBindContext sourcePathIds="10:7-10:2088" propertyKey="636" id="901:276"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueNumberComparator id="901:277"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                    <StateTransition stateToId="901:269" id="901:278">
+                        <TransitionViewModelCondition id="901:279">
+                            <TransitionPropertyViewModelComparator id="901:280">
+                                <BindablePropertyNumber id="901:281">
+                                    <DataBindContext sourcePathIds="10:7-10:2088" propertyKey="636" id="901:282"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueNumberComparator value="1" id="901:283"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                    <StateTransition stateToId="901:270" id="901:284">
+                        <TransitionViewModelCondition id="901:285">
+                            <TransitionPropertyViewModelComparator id="901:286">
+                                <BindablePropertyNumber id="901:287">
+                                    <DataBindContext sourcePathIds="10:7-10:2088" propertyKey="636" id="901:288"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueNumberComparator value="2" id="901:289"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                    <StateTransition stateToId="901:271" id="901:290">
+                        <TransitionViewModelCondition id="901:291">
+                            <TransitionPropertyViewModelComparator id="901:292">
+                                <BindablePropertyNumber id="901:293">
+                                    <DataBindContext sourcePathIds="10:7-10:2088" propertyKey="636" id="901:294"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueNumberComparator value="3" id="901:295"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                </EntryState>
+                <AnimationState animationId="901:39" x="160" y="-150" stateName="Shadow 0" id="901:268">
+                    <ListenerViewModelChange flags="4" id="901:320">
+                        <BindablePropertyNumber id="901:321">
+                            <DataBindContext sourcePathIds="10:7-901:29" propertyKey="636" direction="true" id="901:322"/>
+                        </BindablePropertyNumber>
+                    </ListenerViewModelChange>
+                    <ListenerViewModelChange flags="4" id="901:323">
+                        <BindablePropertyNumber id="901:324">
+                            <DataBindContext sourcePathIds="10:7-901:31" propertyKey="636" direction="true" id="901:325"/>
+                        </BindablePropertyNumber>
+                    </ListenerViewModelChange>
+                    <ListenerViewModelChange flags="4" id="901:326">
+                        <BindablePropertyNumber id="901:327">
+                            <DataBindContext sourcePathIds="10:7-901:33" propertyKey="636" direction="true" id="901:328"/>
+                        </BindablePropertyNumber>
+                    </ListenerViewModelChange>
+                    <ListenerViewModelChange flags="4" id="901:329">
+                        <BindablePropertyNumber id="901:330">
+                            <DataBindContext sourcePathIds="10:7-901:35" propertyKey="636" direction="true" id="901:331"/>
+                        </BindablePropertyNumber>
+                    </ListenerViewModelChange>
+                    <ListenerViewModelChange flags="4" id="901:332">
+                        <BindablePropertyNumber id="901:333">
+                            <DataBindContext sourcePathIds="10:7-901:37" propertyKey="636" direction="true" id="901:334"/>
+                        </BindablePropertyNumber>
+                    </ListenerViewModelChange>
+                </AnimationState>
+                <AnimationState animationId="901:39" x="160" y="-50" stateName="Shadow 1" id="901:269">
+                    <ListenerViewModelChange flags="4" id="901:335">
+                        <BindablePropertyNumber propertyValue="8" id="901:336">
+                            <DataBindContext sourcePathIds="10:7-901:29" propertyKey="636" direction="true" id="901:337"/>
+                        </BindablePropertyNumber>
+                    </ListenerViewModelChange>
+                    <ListenerViewModelChange flags="4" id="901:338">
+                        <BindablePropertyNumber propertyValue="4" id="901:339">
+                            <DataBindContext sourcePathIds="10:7-901:31" propertyKey="636" direction="true" id="901:340"/>
+                        </BindablePropertyNumber>
+                    </ListenerViewModelChange>
+                    <ListenerViewModelChange flags="4" id="901:341">
+                        <BindablePropertyNumber propertyValue="3" id="901:342">
+                            <DataBindContext sourcePathIds="10:7-901:33" propertyKey="636" direction="true" id="901:343"/>
+                        </BindablePropertyNumber>
+                    </ListenerViewModelChange>
+                    <ListenerViewModelChange flags="4" id="901:344">
+                        <BindablePropertyNumber propertyValue="3" id="901:345">
+                            <DataBindContext sourcePathIds="10:7-901:35" propertyKey="636" direction="true" id="901:346"/>
+                        </BindablePropertyNumber>
+                    </ListenerViewModelChange>
+                    <ListenerViewModelChange flags="4" id="901:347">
+                        <BindablePropertyNumber propertyValue="2" id="901:348">
+                            <DataBindContext sourcePathIds="10:7-901:37" propertyKey="636" direction="true" id="901:349"/>
+                        </BindablePropertyNumber>
+                    </ListenerViewModelChange>
+                </AnimationState>
+                <AnimationState animationId="901:39" x="160" y="50" stateName="Shadow 2" id="901:270">
+                    <ListenerViewModelChange flags="4" id="901:350">
+                        <BindablePropertyNumber propertyValue="16" id="901:351">
+                            <DataBindContext sourcePathIds="10:7-901:29" propertyKey="636" direction="true" id="901:352"/>
+                        </BindablePropertyNumber>
+                    </ListenerViewModelChange>
+                    <ListenerViewModelChange flags="4" id="901:353">
+                        <BindablePropertyNumber propertyValue="8" id="901:354">
+                            <DataBindContext sourcePathIds="10:7-901:31" propertyKey="636" direction="true" id="901:355"/>
+                        </BindablePropertyNumber>
+                    </ListenerViewModelChange>
+                    <ListenerViewModelChange flags="4" id="901:356">
+                        <BindablePropertyNumber propertyValue="6" id="901:357">
+                            <DataBindContext sourcePathIds="10:7-901:33" propertyKey="636" direction="true" id="901:358"/>
+                        </BindablePropertyNumber>
+                    </ListenerViewModelChange>
+                    <ListenerViewModelChange flags="4" id="901:359">
+                        <BindablePropertyNumber propertyValue="6" id="901:360">
+                            <DataBindContext sourcePathIds="10:7-901:35" propertyKey="636" direction="true" id="901:361"/>
+                        </BindablePropertyNumber>
+                    </ListenerViewModelChange>
+                    <ListenerViewModelChange flags="4" id="901:362">
+                        <BindablePropertyNumber propertyValue="4" id="901:363">
+                            <DataBindContext sourcePathIds="10:7-901:37" propertyKey="636" direction="true" id="901:364"/>
+                        </BindablePropertyNumber>
+                    </ListenerViewModelChange>
+                </AnimationState>
+                <AnimationState animationId="901:39" x="160" y="150" stateName="Shadow 3" id="901:271">
+                    <ListenerViewModelChange flags="4" id="901:365">
+                        <BindablePropertyNumber propertyValue="24" id="901:366">
+                            <DataBindContext sourcePathIds="10:7-901:29" propertyKey="636" direction="true" id="901:367"/>
+                        </BindablePropertyNumber>
+                    </ListenerViewModelChange>
+                    <ListenerViewModelChange flags="4" id="901:368">
+                        <BindablePropertyNumber propertyValue="12" id="901:369">
+                            <DataBindContext sourcePathIds="10:7-901:31" propertyKey="636" direction="true" id="901:370"/>
+                        </BindablePropertyNumber>
+                    </ListenerViewModelChange>
+                    <ListenerViewModelChange flags="4" id="901:371">
+                        <BindablePropertyNumber propertyValue="10" id="901:372">
+                            <DataBindContext sourcePathIds="10:7-901:33" propertyKey="636" direction="true" id="901:373"/>
+                        </BindablePropertyNumber>
+                    </ListenerViewModelChange>
+                    <ListenerViewModelChange flags="4" id="901:374">
+                        <BindablePropertyNumber propertyValue="9" id="901:375">
+                            <DataBindContext sourcePathIds="10:7-901:35" propertyKey="636" direction="true" id="901:376"/>
+                        </BindablePropertyNumber>
+                    </ListenerViewModelChange>
+                    <ListenerViewModelChange flags="4" id="901:377">
+                        <BindablePropertyNumber propertyValue="6" id="901:378">
+                            <DataBindContext sourcePathIds="10:7-901:37" propertyKey="636" direction="true" id="901:379"/>
+                        </BindablePropertyNumber>
+                    </ListenerViewModelChange>
+                </AnimationState>
             </StateMachineLayer>
         </StateMachine>
         <LinearAnimation name="Mode Light" id="10:14625">

@@ -17,7 +17,7 @@
             <LayoutComponent clip="true" height="220" styleId="10:3633" name="Preview" id="10:3632">
                 <LayoutComponent styleId="10:3853" name="Border" id="10:3852">
                     <LayoutComponentStyle positionLeftUnitsValue="points" positionRightUnitsValue="points" positionTopUnitsValue="points" positionBottomUnitsValue="points" edgeConstraints="84" positionTypeValue="absolute" cornerRadiusTL="10" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="10:3853">
-                        <DataBindContext sourcePathIds="10:7-10:2086" propertyKey="640" converterId="10:6632" id="10:6778"/>
+                        <DataBindContext sourcePathIds="10:7-901:9" propertyKey="640" converterId="0:0" id="10:6778"/>
                     </LayoutComponentStyle>
                     <Stroke thickness="2" id="10:3854">
                         <SolidColor colorValue="FF27272A" id="10:3855">
@@ -37,7 +37,7 @@
                         </LinearGradient>
                     </Fill>
                     <LayoutComponentStyle positionRightUnitsValue="points" positionTopUnitsValue="points" positionBottomUnitsValue="points" edgeConstraints="82" positionTypeValue="absolute" cornerRadiusTL="10" layoutHeightScaleType="fill" heightUnitsValue="auto" id="10:3847">
-                        <DataBindContext sourcePathIds="10:7-10:2086" propertyKey="640" converterId="10:6632" id="10:6782"/>
+                        <DataBindContext sourcePathIds="10:7-901:9" propertyKey="640" converterId="0:0" id="10:6782"/>
                     </LayoutComponentStyle>
                 </LayoutComponent>
                 <LayoutComponent width="40" styleId="10:3841" name="Fade Left" id="10:3840">
@@ -52,7 +52,7 @@
                         </LinearGradient>
                     </Fill>
                     <LayoutComponentStyle positionLeftUnitsValue="points" positionTopUnitsValue="points" positionBottomUnitsValue="points" edgeConstraints="80" positionTypeValue="absolute" cornerRadiusTL="10" layoutHeightScaleType="fill" heightUnitsValue="auto" id="10:3841">
-                        <DataBindContext sourcePathIds="10:7-10:2086" propertyKey="640" converterId="10:6632" id="10:6781"/>
+                        <DataBindContext sourcePathIds="10:7-901:9" propertyKey="640" converterId="0:0" id="10:6781"/>
                     </LayoutComponentStyle>
                 </LayoutComponent>
                 <LayoutComponent height="40" styleId="10:3835" name="Fade Bottom" id="10:3834">
@@ -67,7 +67,7 @@
                         </LinearGradient>
                     </Fill>
                     <LayoutComponentStyle positionLeftUnitsValue="points" positionRightUnitsValue="points" positionBottomUnitsValue="points" edgeConstraints="52" positionTypeValue="absolute" cornerRadiusTL="10" layoutWidthScaleType="fill" widthUnitsValue="auto" id="10:3835">
-                        <DataBindContext sourcePathIds="10:7-10:2086" propertyKey="640" converterId="10:6632" id="10:6780"/>
+                        <DataBindContext sourcePathIds="10:7-901:9" propertyKey="640" converterId="0:0" id="10:6780"/>
                     </LayoutComponentStyle>
                 </LayoutComponent>
                 <LayoutComponent height="40" styleId="10:3829" name="Fade Top" id="10:3828">
@@ -82,7 +82,7 @@
                         </LinearGradient>
                     </Fill>
                     <LayoutComponentStyle positionLeftUnitsValue="points" positionRightUnitsValue="points" positionTopUnitsValue="points" edgeConstraints="20" positionTypeValue="absolute" cornerRadiusTL="10" layoutWidthScaleType="fill" widthUnitsValue="auto" id="10:3829">
-                        <DataBindContext sourcePathIds="10:7-10:2086" propertyKey="640" converterId="10:6632" id="10:6779"/>
+                        <DataBindContext sourcePathIds="10:7-901:9" propertyKey="640" converterId="0:0" id="10:6779"/>
                     </LayoutComponentStyle>
                 </LayoutComponent>
                 <Fill fillRule="clockwise" id="10:3634">
@@ -91,7 +91,7 @@
                     </SolidColor>
                 </Fill>
                 <LayoutComponentStyle layoutAlignmentType="center" cornerRadiusTL="10" layoutWidthScaleType="fill" widthUnitsValue="auto" id="10:3633">
-                    <DataBindContext sourcePathIds="10:7-10:2086" propertyKey="640" converterId="10:6632" id="10:6777"/>
+                    <DataBindContext sourcePathIds="10:7-901:9" propertyKey="640" converterId="0:0" id="10:6777"/>
                 </LayoutComponentStyle>
                 <ArtboardComponentList participatesInLayout="true" id="10:3869">
                     <DataBindContext sourcePathIds="10:3612-10:3861" propertyKey="800" id="10:3870"/>
@@ -393,13 +393,13 @@
                 <LayoutComponentStyle paddingLeft="12" paddingRight="12" paddingTop="4" paddingBottom="6" layoutAlignmentType="centerLeft" intrinsicallySizedValue="true" layoutWidthScaleType="fill" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="10:3637"/>
             </LayoutComponent>
             <LayoutComponentStyle gapVertical="10" paddingLeft="8" paddingRight="8" paddingTop="8" paddingBottom="8" flexDirectionValue="column" cornerRadiusTL="16" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="10:3631">
-                <DataBindContext sourcePathIds="10:7-10:2086" propertyKey="640" converterId="10:6584" id="10:6776"/>
+                <DataBindContext sourcePathIds="10:7-901:7" propertyKey="640" converterId="0:0" id="10:6776"/>
             </LayoutComponentStyle>
             <Fill fillRule="clockwise" id="10:3646">
                 <SolidColor colorValue="26000000" id="10:3647"/>
                 <Feather strength="8" offsetY="3" id="10:3648">
-                    <DataBindContext sourcePathIds="10:7-10:2088" propertyKey="749" converterId="10:7232" id="10:7328"/>
-                    <DataBindContext sourcePathIds="10:7-10:2088" propertyKey="751" converterId="10:7280" id="10:7329"/>
+                    <DataBindContext sourcePathIds="10:7-901:29" propertyKey="749" converterId="0:0" id="10:7328"/>
+                    <DataBindContext sourcePathIds="10:7-901:33" propertyKey="751" converterId="0:0" id="10:7329"/>
                 </Feather>
             </Fill>
             <Fill fillRule="clockwise" id="10:3649">
@@ -419,7 +419,7 @@
                     </SolidColor>
                 </Fill>
                 <LayoutComponentStyle positionLeftUnitsValue="points" positionRightUnitsValue="points" positionTopUnitsValue="points" positionBottomUnitsValue="points" edgeConstraints="84" positionTypeValue="absolute" cornerRadiusTL="8" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="70:531">
-                    <DataBindContext sourcePathIds="10:7-10:2086" propertyKey="640" converterId="10:6584" id="70:537"/>
+                    <DataBindContext sourcePathIds="10:7-901:7" propertyKey="640" converterId="0:0" id="70:537"/>
                 </LayoutComponentStyle>
             </LayoutComponent>
         </LayoutComponent>

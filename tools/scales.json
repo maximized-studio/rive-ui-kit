@@ -1,0 +1,26 @@
+{
+  "_comment": "Theme scale tokens: one value per Theme `roundness` / `shadow` step (0, 1, 2, 3). tools/theme_scales.py writes them into the Theme Driver's Roundness and Shadow layers; tools/retheme.py bakes them for a theme's defaults. `replaces` lists the formula converters each token took over.",
+  "roundness": {
+    "_radiusAvatar":        { "values": [0, 6, 16, 16], "replaces": ["RadAvatar"] },
+    "_radiusBadge":         { "values": [0, 3, 8, 8],   "replaces": ["RadBadge"] },
+    "_radiusButton":        { "values": [0, 4, 8, 20],  "replaces": ["RadButton"] },
+    "_radiusCard":          { "values": [0, 8, 16, 24], "replaces": ["RadCard"] },
+    "_radiusCardInner":     { "values": [0, 2, 10, 18], "replaces": ["RadCardInner"] },
+    "_radiusCheckbox":      { "values": [0, 2, 4, 6],   "replaces": ["RadCheckbox"] },
+    "_radiusDropdown":      { "values": [0, 4, 8, 12],  "replaces": ["RadDropdown"] },
+    "_radiusKnob":          { "values": [0, 3, 8, 8],   "replaces": ["RadKnob"] },
+    "_radiusSegment":       { "values": [0, 4, 10, 16], "replaces": ["RadSeg"] },
+    "_radiusSegmentInner":  { "values": [0, 1, 7, 13],  "replaces": ["RadSegInner"] },
+    "_radiusSmall":         { "values": [0, 2, 4, 8],   "replaces": ["RadSmall"] },
+    "_radiusSwatch":        { "values": [0, 1, 9, 9],   "replaces": ["RadSwatchDot"] },
+    "_radiusSwitchThumb":   { "values": [0, 4, 10, 10], "replaces": ["RadSwitchThumb"] },
+    "_radiusSwitchTrack":   { "values": [0, 5, 12, 12], "replaces": ["RadSwitchTrack"] }
+  },
+  "shadow": {
+    "_shadowBlur":          { "values": [0, 8, 16, 24], "replaces": ["ShadowBlur", "ShCardBlur"] },
+    "_shadowBlurSmall":     { "values": [0, 4, 8, 12],  "replaces": ["ShadowBlurSm"] },
+    "_shadowCardY":         { "values": [0, 3, 6, 10],  "replaces": ["ShCardY"] },
+    "_shadowY":             { "values": [0, 3, 6, 9],   "replaces": ["ShadowY"] },
+    "_shadowYSmall":        { "values": [0, 2, 4, 6],   "replaces": ["ShadowYSm"] }
+  }
+}
