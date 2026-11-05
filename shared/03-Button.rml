@@ -322,13 +322,18 @@
                         <DataBindContext sourcePathIds="1:151-10:3108-10:7412" propertyKey="37" nameBased="true" id="118:426"/>
                     </SolidColor>
                 </Stroke>
-                <LayoutComponentStyle positionLeftUnitsValue="points" positionRightUnitsValue="points" positionTopUnitsValue="points" positionBottomUnitsValue="points" edgeConstraints="84" layoutAlignmentType="center" positionTypeValue="absolute" linkCornerRadius="false" cornerRadiusTL="8" cornerRadiusTR="8" cornerRadiusBL="8" cornerRadiusBR="8" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="9:87">
+                <LayoutComponentStyle gapHorizontal="6" positionLeftUnitsValue="points" positionRightUnitsValue="points" positionTopUnitsValue="points" positionBottomUnitsValue="points" edgeConstraints="84" layoutAlignmentType="center" positionTypeValue="absolute" linkCornerRadius="false" cornerRadiusTL="8" cornerRadiusTR="8" cornerRadiusBL="8" cornerRadiusBR="8" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="9:87">
                     <DataBindContext sourcePathIds="1:151-7:1" propertyKey="596" nameBased="true" converterId="9:90" id="9:108"/>
                     <DataBindContext sourcePathIds="1:151-10:3108-10:2086" propertyKey="640" nameBased="true" converterId="99:108" id="9:130"/>
                     <DataBindContext sourcePathIds="1:151-10:3108-10:2086" propertyKey="641" nameBased="true" converterId="99:109" id="99:285"/>
                     <DataBindContext sourcePathIds="1:151-10:3108-10:2086" propertyKey="642" nameBased="true" converterId="99:108" id="99:286"/>
                     <DataBindContext sourcePathIds="1:151-10:3108-10:2086" propertyKey="643" nameBased="true" converterId="99:109" id="99:287"/>
                 </LayoutComponentStyle>
+                <LayoutComponent width="16" height="16" styleId="123:1" name="Icon Space" id="123:2">
+                    <LayoutComponentStyle id="123:1">
+                        <DataBindContext sourcePathIds="1:151-33:164" propertyKey="596" nameBased="true" converterId="33:216" id="123:3"/>
+                    </LayoutComponentStyle>
+                </LayoutComponent>
                 <LayoutComponent styleId="9:117" name="Label" id="9:116">
                     <Text alignValue="center" fitFontSizeResizesBox="false" name="Text" id="9:118">
                         <TextStylePaint fontSize="16" fontAssetId="0:7" familyName="Inter" styleName="Medium" name="Style 1" id="9:119">
