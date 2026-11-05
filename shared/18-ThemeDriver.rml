@@ -231,6 +231,10 @@
                 </SolidColor>
             </Fill>
         </Shape>
+        <LayoutComponent styleId="913:11" name="Viewport (script)" id="913:10">
+            <ScriptedLayout scriptAssetId="913:9" name="Viewport" id="913:12"/>
+            <LayoutComponentStyle positionLeftUnitsValue="points" positionRightUnitsValue="points" positionTopUnitsValue="points" positionBottomUnitsValue="points" positionTypeValue="absolute" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="913:11"/>
+        </LayoutComponent>
         <LayoutComponentStyle id="10:14624"/>
         <LinearAnimation duration="3" name="Mode Dark" id="10:14718">
             <KeyedObject objectId="10:14636" id="10:14770">

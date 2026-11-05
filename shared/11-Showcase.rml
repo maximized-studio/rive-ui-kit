@@ -1,9 +1,12 @@
 <Rive version="1" kind="fragment">
     <Artboard defaultStateMachineId="10:115" viewModelId="10:84" viewModelInstanceId="10:5260" includeInExport="false" spaceId="1:5601" clip="true" width="1440" height="1080" styleId="10:113" x="-1640" name="Showcase" id="10:110">
         <Image assetId="42:629" x="720" y="540" opacity="0" name="Cover (thumbnail only)" id="10:15633"/>
-        <NestedArtboard artboardId="10:14621" name="Theme Driver" id="900:1">
-            <NestedStateMachine animationId="10:14626" id="900:2"/>
-        </NestedArtboard>
+        <LayoutComponent styleId="913:14" name="Theme Driver" id="913:13">
+            <NestedArtboardLayout instanceWidthScaleType="fill" instanceHeightScaleType="fill" artboardId="10:14621" name="Theme Driver" id="913:15">
+                <NestedStateMachine animationId="10:14626" id="913:16"/>
+            </NestedArtboardLayout>
+            <LayoutComponentStyle positionLeftUnitsValue="points" positionRightUnitsValue="points" positionTopUnitsValue="points" positionBottomUnitsValue="points" positionTypeValue="absolute" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="913:14"/>
+        </LayoutComponent>
         <LayoutComponent width="240" styleId="42:466" name="Toolbar Slot" id="42:465">
             <LayoutComponentStyle layoutHeightScaleType="fill" heightUnitsValue="auto" id="42:466"/>
             <LayoutComponent width="240" styleId="114:503" name="Toolbar Panel" id="114:502">

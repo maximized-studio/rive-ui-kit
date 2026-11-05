@@ -25,7 +25,9 @@ Every component is driven by view models (data binding), not by state machine in
 
 `Theme` is a **global view model**: one instance that every component reads, so no component carries a `theme` property of its own. It holds `mode` (`0` light, `1` dark), `brandIndex`, `roundness` and `shadow` (`0`–`3`), `cursorPointer` and the colour tokens (`_bg`, `_text`, `_brand500`, …).
 
-One **Theme Driver** turns `mode` and `brandIndex` into the colour tokens. The Showcase holds it; in your own file, place the Theme Driver component once in the artboard you play (it draws nothing). Without it the tokens keep their stored values.
+One **Theme Driver** turns `mode` and `brandIndex` into the colour tokens. The Showcase holds it; in your own file, place the Theme Driver component once in the artboard you play, as an absolute layout that fills the artboard (it draws nothing and never blocks input). Without it the tokens keep their stored values.
+
+The Theme Driver also carries a small Luau script, **Viewport**, that writes the artboard size and the pointer position into `Theme` (`_viewWidth`, `_viewHeight`, `_pointerX`, `_pointerY`). Tooltip Button uses them to keep its bubble on screen.
 
 ```js
 const theme = rive.globalViewModelInstance("Theme");   // @rive-app/* 2.49+, with autoBind: true
@@ -118,7 +120,8 @@ A small bubble in the inverse theme colours (`_text` background, `_bg` text) wit
 - View model `Tooltip`: `text`, `placement` (`0` top, `1` bottom, `2` left, `3` right: the side of the trigger it sits on; the arrow points back at the trigger), `open`, `a11yHidden`.
 - The Tooltip is the bubble only. Rive has no slots, so the host places it next to its trigger and sets `open`: `enter` and `focus` listeners on the trigger set it, `exit` and `blur` clear it.
 - **Tooltip Button** is that pattern, ready to use: a kit Button with a Tooltip. View model `TooltipButton`: `label`, `tooltip`, `placement`, `a11yHidden`. Hover or keyboard focus on the Button shows the tooltip.
-- In Tooltip Button the bubble sits in an absolute overlay over the trigger, so it never moves the layout. The overlay's direction follows `placement`; an empty mirror box on the far side keeps the trigger in the middle, so all four sides work without measuring anything.
+- In Tooltip Button the bubble sits in an absolute overlay over the trigger, so it never moves the layout. The overlay's direction follows the side shown; an empty mirror box on the far side keeps the trigger in the middle.
+- **Automatic placement.** `placement` is the side you prefer. When the bubble would leave the artboard on that side and fits on the opposite one, it flips there, like a web popover with `position-try-fallbacks: flip-block, flip-inline`. The side shown is `_placement` (read it, don't set it). A small Luau script, **Tooltip Placement**, decides: Rive gives a script no screen position, so it compares the pointer as it sees it with the pointer the Theme Driver's Viewport script reports, which tells it where the trigger is. Until the pointer has moved over the artboard once (keyboard only), and in a file without the Theme Driver, the preferred side stays.
 - Screen readers: the Button gets the tooltip text as its `hint` (Button has a new `hint` property) and the bubble is hidden from the tree, so the text is read once. A Tooltip on its own is a `text` node.
 - Long text wraps at 240 points.
 
@@ -139,7 +142,7 @@ The kit keeps each kind of logic in one place:
 
 - **Look comes from data.** Colours, radii and shadows are tokens on the global `Theme`; components only read them.
 - **Picking one of several is a state.** A number that chooses what shows (a Button's `variant` and `icon`, an Alert's `variant`, a Tooltip's `placement`) drives a state machine layer with one state per value, such as Button › Variant › Primary.
-- **Behaviour is a script, when it is an algorithm.** Pagination is the one so far. Everything else is native.
+- **Behaviour is a script, when it is an algorithm.** Pagination (which pages to show) and Tooltip Button (which side fits) so far. Everything else is native.
 - **Converter names say where they belong:** `<Part> · <what it does>`, for example `Slider · Percent text`. The ones only the Showcase uses start with `Showcase`.
 
 ```
