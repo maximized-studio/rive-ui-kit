@@ -25,7 +25,7 @@
                     <LayoutComponentStyle marginTop="56" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="10:123"/>
                     <LayoutComponent styleId="10:1651" name="Home Content" id="10:1650">
                         <LayoutComponentStyle gapVertical="48" paddingLeft="5" paddingRight="5" paddingTop="5" paddingBottom="5" flexDirectionValue="column" intrinsicallySizedValue="true" paddingLeftUnitsValue="percent" paddingRightUnitsValue="percent" paddingTopUnitsValue="percent" paddingBottomUnitsValue="percent" layoutWidthScaleType="fill" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="10:1651"/>
-                        <ArtboardComponentList participatesInLayout="true" name="Sections" id="100:64">
+                        <ArtboardComponentList name="Sections" participatesInLayout="true" complexDependency="true" id="100:64">
                             <DataBindContext sourcePathIds="10:84-100:31" propertyKey="800" id="100:65"/>
                         </ArtboardComponentList>
                         <ScrollConstraint physicsId="10:1711" id="10:1708"/>

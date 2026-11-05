@@ -56,19 +56,19 @@
         </LayoutComponent>
         <LayoutComponent styleId="100:109" name="Grid" id="100:110">
             <LayoutComponentStyle gapHorizontal="24" gapVertical="32" flexWrapValue="wrap" intrinsicallySizedValue="true" layoutWidthScaleType="fill" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="100:109"/>
-            <ArtboardComponentList participatesInLayout="true" name="Tiles" id="100:111">
+            <ArtboardComponentList name="Tiles" participatesInLayout="true" id="100:111">
                 <DataBindContext sourcePathIds="100:1-100:3" propertyKey="800" nameBased="true" id="100:112"/>
             </ArtboardComponentList>
             <DataBindContext sourcePathIds="100:1-100:5-10:4581" propertyKey="810" direction="true" nameBased="true" id="100:113"/>
         </LayoutComponent>
         <StateMachine name="State Machine 1" id="100:70">
             <StateMachineLayer name="Layer 1" id="100:71">
-                <AnyState x="400" id="100:114"/>
-                <ExitState x="480" id="100:115"/>
                 <EntryState id="100:73">
                     <StateTransition stateToId="100:74" id="100:116"/>
                 </EntryState>
                 <AnimationState animationId="100:72" x="160" id="100:74"/>
+                <AnyState x="400" id="100:114"/>
+                <ExitState x="480" id="100:115"/>
             </StateMachineLayer>
         </StateMachine>
         <LinearAnimation name="Timeline 1" id="100:72"/>

@@ -85,7 +85,7 @@
                     <LayoutComponentStyle layoutWidthScaleType="fill" widthUnitsValue="auto" id="42:207"/>
                 </LayoutComponent>
                 <LayoutComponent styleId="42:211" name="Nav" id="42:210">
-                    <ArtboardComponentList participatesInLayout="true" name="Sections" id="100:66">
+                    <ArtboardComponentList name="Sections" participatesInLayout="true" id="100:66">
                         <DataBindContext sourcePathIds="41:866-100:54" propertyKey="800" id="100:67"/>
                     </ArtboardComponentList>
                     <LayoutComponentStyle gapVertical="12" paddingLeft="12" paddingRight="12" paddingTop="12" paddingBottom="12" flexDirectionValue="column" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="42:211"/>
