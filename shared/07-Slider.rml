@@ -121,7 +121,7 @@
                         <DataBindContext sourcePathIds="1:1932-1:1958" propertyKey="183" direction="true" id="1:1965"/>
                         <DataBindContext sourcePathIds="1:1932-1:1960" propertyKey="184" direction="true" id="1:1966"/>
                     </TranslationConstraint>
-                    <DataBindContext sourcePathIds="1:1932-1:1962" propertyKey="13" direction="true" id="1:1964"/>
+                    <DataBindContext sourcePathIds="1:1932-1:1962" propertyKey="13" twoWay="true" sourceToTargetRunsFirst="true" id="1:1964"/>
                 </Node>
                 <Node x="95.988281" y="8" name="Track" id="1:2183">
                     <Node x="-95.988281" y="-36" name="Disabled" id="15:330">

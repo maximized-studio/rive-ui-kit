@@ -263,6 +263,13 @@
         <FormulaTokenOperation operationType="multiply" id="42:374"/>
         <FormulaTokenInput id="42:375"/>
     </DataConverterFormula>
+    <DataConverterFormula name="CanvasOpacity" id="115:15">
+        <FormulaTokenInput id="115:16"/>
+        <FormulaTokenOperation operationType="multiply" id="115:17"/>
+        <FormulaTokenValue operationValue="0.0054347827" id="115:18"/>
+        <FormulaTokenOperation operationType="subtract" id="115:19"/>
+        <FormulaTokenValue operationValue="0.04347826" id="115:20"/>
+    </DataConverterFormula>
     <DataConverterFormula name="PanelFullTmp" id="42:469">
         <FormulaTokenValue operationValue="240" id="42:470"/>
         <FormulaTokenOperation id="42:471"/>
@@ -1599,6 +1606,17 @@
                     <ViewModelInstanceBoolean viewModelPropertyId="7:37" id="7:38"/>
                     <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="10:3116" id="10:3117"/>
                 </ViewModelInstance>
+                <ViewModelInstance exports="true" name="Canvas" id="115:2">
+                    <ViewModelInstanceNumber propertyValue="8" viewModelPropertyId="1:1958" id="115:6"/>
+                    <ViewModelInstanceNumber propertyValue="192" viewModelPropertyId="1:1960" id="115:7"/>
+                    <ViewModelInstanceNumber propertyValue="100" viewModelPropertyId="1:1962" id="115:8"/>
+                    <ViewModelInstanceTrigger viewModelPropertyId="1:1989" id="115:9"/>
+                    <ViewModelInstanceString propertyValue="Canvas pattern" viewModelPropertyId="1:2188" id="115:10"/>
+                    <ViewModelInstanceBoolean viewModelPropertyId="1:3037" id="115:11"/>
+                    <ViewModelInstanceBoolean viewModelPropertyId="7:35" id="115:12"/>
+                    <ViewModelInstanceBoolean viewModelPropertyId="7:37" id="115:13"/>
+                    <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="10:3116" id="115:14"/>
+                </ViewModelInstance>
             </ViewModel>
             <ViewModel defaultInstanceId="1:950" name="Radio" groupId="1:2673" id="1:949">
                 <ViewModelPropertyBoolean name="disabled" id="7:15"/>
@@ -1725,7 +1743,7 @@
                     <ViewModelInstanceBoolean viewModelPropertyId="7:3" id="92:642"/>
                     <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="10:3108" id="92:643"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="33:159" id="92:644"/>
-                    <ViewModelInstanceNumber viewModelPropertyId="33:164" id="92:645"/>
+                    <ViewModelInstanceNumber propertyValue="4" viewModelPropertyId="33:164" id="92:645"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="33:169" id="92:646"/>
                     <ViewModelInstanceNumber propertyValue="1" viewModelPropertyId="99:100" id="99:101"/>
                     <ViewModelInstanceString viewModelPropertyId="112:14" id="112:136"/>
@@ -1738,7 +1756,7 @@
                     <ViewModelInstanceBoolean viewModelPropertyId="7:3" id="92:653"/>
                     <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="10:3108" id="92:654"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="33:159" id="92:655"/>
-                    <ViewModelInstanceNumber viewModelPropertyId="33:164" id="92:656"/>
+                    <ViewModelInstanceNumber propertyValue="5" viewModelPropertyId="33:164" id="92:656"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="33:169" id="92:657"/>
                     <ViewModelInstanceNumber propertyValue="2" viewModelPropertyId="99:100" id="99:102"/>
                     <ViewModelInstanceString viewModelPropertyId="112:14" id="112:137"/>
@@ -1751,7 +1769,7 @@
                     <ViewModelInstanceBoolean viewModelPropertyId="7:3" id="92:664"/>
                     <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="10:3108" id="92:665"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="33:159" id="92:666"/>
-                    <ViewModelInstanceNumber viewModelPropertyId="33:164" id="92:667"/>
+                    <ViewModelInstanceNumber propertyValue="6" viewModelPropertyId="33:164" id="92:667"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="33:169" id="92:668"/>
                     <ViewModelInstanceNumber propertyValue="3" viewModelPropertyId="99:100" id="99:103"/>
                     <ViewModelInstanceString viewModelPropertyId="112:14" id="112:138"/>
@@ -3531,6 +3549,21 @@
                     <FormulaTokenParenthesisClose id="10:2516"/>
                     <FormulaTokenParenthesisClose id="10:2517"/>
                 </DataConverterFormula>
+                <DataConverterFormula name="Is6" groupId="1:2674" id="116:1">
+                    <FormulaTokenFunction functionType="max" id="116:2"/>
+                    <FormulaTokenValue operationValue="0" id="116:3"/>
+                    <FormulaTokenArgumentSeparator id="116:4"/>
+                    <FormulaTokenValue id="116:5"/>
+                    <FormulaTokenOperation operationType="subtract" id="116:6"/>
+                    <FormulaTokenFunction functionType="pow" id="116:7"/>
+                    <FormulaTokenInput id="116:8"/>
+                    <FormulaTokenOperation operationType="subtract" id="116:9"/>
+                    <FormulaTokenValue operationValue="6" id="116:10"/>
+                    <FormulaTokenArgumentSeparator id="116:11"/>
+                    <FormulaTokenValue operationValue="2" id="116:12"/>
+                    <FormulaTokenParenthesisClose id="116:13"/>
+                    <FormulaTokenParenthesisClose id="116:14"/>
+                </DataConverterFormula>
                 <DataConverterFormula name="Hover1" groupId="1:2674" id="10:4745">
                     <FormulaTokenFunction functionType="max" id="10:4746"/>
                     <FormulaTokenValue operationValue="0" id="10:4747"/>
@@ -4497,6 +4530,8 @@
         <ViewModelPropertyBoolean name="_roundnessTip" id="113:3"/>
         <ViewModelPropertyBoolean name="_shadowTip" id="113:4"/>
         <ViewModelPropertyBoolean name="_stateTip" id="113:5"/>
+        <ViewModelPropertyViewModel viewModelReferenceId="1:1932" name="canvas" id="115:1"/>
+        <ViewModelPropertyBoolean name="_canvasTip" id="115:3"/>
         <ViewModelInstance exports="true" name="Default" id="38:827">
             <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="38:817" id="38:828"/>
             <ViewModelInstanceViewModel propertyValue="38:667" viewModelPropertyId="38:819" id="38:829"/>
@@ -4508,6 +4543,8 @@
             <ViewModelInstanceBoolean viewModelPropertyId="113:3" id="113:8"/>
             <ViewModelInstanceBoolean viewModelPropertyId="113:4" id="113:9"/>
             <ViewModelInstanceBoolean viewModelPropertyId="113:5" id="113:10"/>
+            <ViewModelInstanceViewModel propertyValue="115:2" viewModelPropertyId="115:1" id="115:4"/>
+            <ViewModelInstanceBoolean viewModelPropertyId="115:3" id="115:5"/>
         </ViewModelInstance>
     </ViewModel>
     <ViewModel defaultInstanceId="41:863" name="NavItem" id="41:862">
