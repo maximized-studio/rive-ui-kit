@@ -1,0 +1,76 @@
+<Rive version="1" kind="fragment">
+    <Artboard defaultStateMachineId="100:70" viewModelId="100:1" viewModelInstanceId="100:21" isComponent="true" includeInExport="false" spaceId="1:5601" width="1296" height="320" styleId="100:69" x="4400" name="Showcase Section" id="100:68">
+        <Fill fillRule="clockwise" id="100:75">
+            <SolidColor colorValue="00000000" id="100:76"/>
+        </Fill>
+        <LayoutComponentStyle gapVertical="20" flexDirectionValue="column" intrinsicallySizedValue="true" layoutWidthScaleType="fill" layoutHeightScaleType="hug" id="100:69"/>
+        <LayoutComponent styleId="100:77" name="Title" id="100:78">
+            <Text id="100:79">
+                <TextStylePaint fontSize="24" letterSpacing="-0.30000001" fontAssetId="0:7" familyName="Inter" styleName="Bold" id="100:80">
+                    <Fill fillRule="clockwise" id="100:81">
+                        <SolidColor colorValue="FFFAFAFA" id="100:82">
+                            <DataBindContext sourcePathIds="100:1-100:4-10:7422" propertyKey="37" nameBased="true" id="100:83"/>
+                        </SolidColor>
+                    </Fill>
+                    <TextStyleAxis tag="1869640570" axisValue="14" id="100:84"/>
+                    <TextStyleAxis tag="2003265652" axisValue="700" id="100:85"/>
+                </TextStylePaint>
+                <TextValueRun styleId="100:80" text="Inputs" id="100:86">
+                    <DataBindContext sourcePathIds="100:1-100:2" propertyKey="268" nameBased="true" id="100:87"/>
+                </TextValueRun>
+                <LayoutParticipant layoutWidthScaleType="hug" layoutHeightScaleType="hug" id="100:88"/>
+            </Text>
+            <LayoutComponentStyle gapHorizontal="8" layoutAlignmentType="centerLeft" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="100:77"/>
+            <LayoutComponent styleId="100:89" name="Count" id="100:90">
+                <LayoutComponent styleId="100:91" name="Count Text" id="100:92">
+                    <Text alignValue="center" verticalAlignValue="middle" fitFontSizeResizesBox="false" id="100:93">
+                        <TextStylePaint fontAssetId="0:7" familyName="Inter" styleName="Medium" id="100:94">
+                            <Fill id="100:95">
+                                <SolidColor colorValue="FF1E3A8A" id="100:96">
+                                    <DataBindContext sourcePathIds="100:1-100:4-10:8490" propertyKey="37" nameBased="true" id="100:97"/>
+                                </SolidColor>
+                            </Fill>
+                            <TextStyleAxis tag="1869640570" axisValue="14" id="100:98"/>
+                            <TextStyleAxis tag="2003265652" axisValue="500" id="100:99"/>
+                        </TextStylePaint>
+                        <TextValueRun styleId="100:94" text="5" id="100:100">
+                            <DataBindContext sourcePathIds="100:1-100:3" propertyKey="268" nameBased="true" converterId="100:60" id="100:101"/>
+                        </TextValueRun>
+                    </Text>
+                    <LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="100:91"/>
+                </LayoutComponent>
+                <Fill id="100:102">
+                    <SolidColor colorValue="FFBFDBFE" id="100:103">
+                        <DataBindContext sourcePathIds="100:1-100:4-10:8486" propertyKey="37" nameBased="true" id="100:104"/>
+                    </SolidColor>
+                </Fill>
+                <LayoutComponentStyle paddingLeft="4" paddingRight="4" paddingTop="4" paddingBottom="4" layoutAlignmentType="center" intrinsicallySizedValue="true" cornerRadiusTL="4" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="100:89">
+                    <DataBindContext sourcePathIds="100:1-100:4-10:2086" propertyKey="640" nameBased="true" converterId="10:6191" id="100:105"/>
+                </LayoutComponentStyle>
+                <Stroke id="100:106">
+                    <SolidColor colorValue="FF93C5FD" id="100:107">
+                        <DataBindContext sourcePathIds="100:1-100:4-10:8488" propertyKey="37" nameBased="true" id="100:108"/>
+                    </SolidColor>
+                </Stroke>
+            </LayoutComponent>
+        </LayoutComponent>
+        <LayoutComponent styleId="100:109" name="Grid" id="100:110">
+            <LayoutComponentStyle gapHorizontal="24" gapVertical="32" flexWrapValue="wrap" intrinsicallySizedValue="true" layoutWidthScaleType="fill" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="100:109"/>
+            <ArtboardComponentList participatesInLayout="true" name="Tiles" id="100:111">
+                <DataBindContext sourcePathIds="100:1-100:3" propertyKey="800" nameBased="true" id="100:112"/>
+            </ArtboardComponentList>
+            <DataBindContext sourcePathIds="100:1-100:5-10:4581" propertyKey="810" direction="true" nameBased="true" id="100:113"/>
+        </LayoutComponent>
+        <StateMachine name="State Machine 1" id="100:70">
+            <StateMachineLayer name="Layer 1" id="100:71">
+                <AnyState x="400" id="100:114"/>
+                <ExitState x="480" id="100:115"/>
+                <EntryState id="100:73">
+                    <StateTransition stateToId="100:74" id="100:116"/>
+                </EntryState>
+                <AnimationState animationId="100:72" x="160" id="100:74"/>
+            </StateMachineLayer>
+        </StateMachine>
+        <LinearAnimation name="Timeline 1" id="100:72"/>
+    </Artboard>
+</Rive>

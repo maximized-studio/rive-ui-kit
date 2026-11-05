@@ -10,9 +10,12 @@ The kit is also on the [Rive Community](https://rive.app/community/files/25701-5
 
 ## Components
 
-- **Inputs:** Button · Button Group · Checkbox / Checkbox Group · Dropdown · Radio Option / Radio Group · Slider · Switch / Switch List
+- **Actions:** Button · Button Group
 - **Display:** Avatar · Badge · Label
-- **Building blocks:** Accordion · List Item · Nav Item · Segment · Segmented Control · Sidebar · Slide · Tile · Toolbar
+- **Inputs:** Checkbox / Checkbox Group · Dropdown · Radio Option / Radio Group · Slider · Switch / Switch List
+- **Building blocks:** Accordion · List Item · Nav Item · Segment · Segmented Control · Showcase Section · Sidebar · Slide · Tile · Toolbar
+
+Categories and the components in them are sorted A–Z. In the Showcase a category is data: a `ShowcaseSection` (title, tile list; the count is the list length) in `sections`, and an `Accordion` in the Sidebar's `sections`.
 
 Every component is driven by view models (data binding), not by state machine inputs. The **Theme** panel in the Showcase switches mode (light/dark), brand colour, roundness and shadow at runtime, and previews every component as enabled or disabled.
 
