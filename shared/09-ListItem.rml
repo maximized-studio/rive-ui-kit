@@ -51,12 +51,12 @@
                     </SolidColor>
                 </Fill>
                 <LayoutComponentStyle positionLeftUnitsValue="points" positionRightUnitsValue="points" positionTopUnitsValue="points" positionBottomUnitsValue="points" edgeConstraints="84" positionTypeValue="absolute" cornerRadiusTL="6" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="10:3457">
-                    <DataBindContext sourcePathIds="10:7-10:2086" propertyKey="640" converterId="10:6191" id="10:3482"/>
+                    <DataBindContext sourcePathIds="10:7-901:21" propertyKey="640" id="10:3482"/>
                 </LayoutComponentStyle>
             </LayoutComponent>
             <LayoutComponent styleId="10:3461" opacity="0" name="Ripple" id="10:3460">
                 <LayoutComponentStyle positionLeftUnitsValue="points" positionRightUnitsValue="points" positionTopUnitsValue="points" positionBottomUnitsValue="points" edgeConstraints="84" positionTypeValue="absolute" cornerRadiusTL="6" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="10:3461">
-                    <DataBindContext sourcePathIds="10:7-10:2086" propertyKey="640" converterId="10:6191" id="10:3483"/>
+                    <DataBindContext sourcePathIds="10:7-901:21" propertyKey="640" id="10:3483"/>
                 </LayoutComponentStyle>
                 <Stroke thickness="0" id="10:3462">
                     <SolidColor colorValue="FF93C5FD" id="10:3463">
@@ -65,7 +65,7 @@
                 </Stroke>
             </LayoutComponent>
             <LayoutComponentStyle paddingLeft="16" paddingRight="16" paddingTop="8" paddingBottom="8" layoutAlignmentType="center" intrinsicallySizedValue="true" cornerRadiusTL="4" layoutWidthScaleType="hug" widthUnitsValue="auto" name="Layout Style" id="1:4182">
-                <DataBindContext sourcePathIds="10:7-10:2086" propertyKey="640" converterId="10:6191" id="10:3481"/>
+                <DataBindContext sourcePathIds="10:7-901:21" propertyKey="640" id="10:3481"/>
             </LayoutComponentStyle>
             <SemanticData role="listItem" traitFlags="32" name="Semantics" id="2:15">
                 <DataBindContext sourcePathIds="1:4184-1:4186" propertyKey="983" nameBased="true" id="2:37"/>

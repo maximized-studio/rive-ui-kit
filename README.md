@@ -184,6 +184,10 @@ Do not publish a `PREVIEW` build: an embedded custom font blocks publishing to t
 - `brands`: one ramp of 11 steps (50–950) per brand slot (`Blue`, `Violet`, `Emerald`, `Orange`, `Rose`, `Zinc`). `Zinc` is the Inverse swatch, shown first in the Theme panel; the default brand is `Blue`.
 - `defaults` (optional): starting `roundness` and `shadow` (0–3). They are baked into the written values, so the editor canvas and the Community thumbnail show them too.
 
+### Roundness and shadow scales
+
+Each `roundness` and `shadow` step (0–3) sets a group of Theme tokens such as `_radiusButton`, `_radiusCard` or `_shadowBlur`, and components bind to those tokens directly. The values live in one table, `tools/scales.json` (for example `"_radiusButton": [0, 4, 8, 20]`). The Theme Driver's **Roundness** and **Shadow** layers hold one state per step that writes them, so in the editor you can also read and change them there. `tools/theme_scales.py` builds those layers from the table.
+
 `tools/retheme.py` turns the palette into the theme's Theme Driver. Known gap: the brand swatches in the Theme panel keep their default colours.
 
 ## For maintainers

@@ -1249,7 +1249,7 @@
                                 </Fill>
                                 <GridItemPlacement id="70:478"/>
                                 <LayoutComponentStyle cornerRadiusTL="7" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="70:475">
-                                    <DataBindContext sourcePathIds="10:7-10:2086" propertyKey="640" converterId="10:6840" id="70:485"/>
+                                    <DataBindContext sourcePathIds="10:7-901:19" propertyKey="640" id="70:485"/>
                                 </LayoutComponentStyle>
                                 <DataBindContext sourcePathIds="10:84-70:470" propertyKey="18" nameBased="true" converterId="70:510" id="70:484"/>
                             </LayoutComponent>
@@ -1261,7 +1261,7 @@
                                 </Fill>
                                 <GridItemPlacement id="42:398"/>
                                 <LayoutComponentStyle cornerRadiusTL="7" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="42:395">
-                                    <DataBindContext sourcePathIds="10:7-10:2086" propertyKey="640" converterId="10:6840" id="42:443"/>
+                                    <DataBindContext sourcePathIds="10:7-901:19" propertyKey="640" id="42:443"/>
                                 </LayoutComponentStyle>
                                 <DataBindContext sourcePathIds="10:84-42:366" propertyKey="18" nameBased="true" converterId="9:145" id="42:449"/>
                             </LayoutComponent>
@@ -1343,7 +1343,7 @@
                                 </Fill>
                                 <GridItemPlacement id="70:483"/>
                                 <LayoutComponentStyle cornerRadiusTL="7" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="70:480">
-                                    <DataBindContext sourcePathIds="10:7-10:2086" propertyKey="640" converterId="10:6840" id="70:488"/>
+                                    <DataBindContext sourcePathIds="10:7-901:19" propertyKey="640" id="70:488"/>
                                 </LayoutComponentStyle>
                                 <DataBindContext sourcePathIds="10:84-70:472" propertyKey="18" nameBased="true" converterId="70:510" id="70:487"/>
                             </LayoutComponent>
@@ -1356,7 +1356,7 @@
                                 </Fill>
                                 <GridItemPlacement id="42:408"/>
                                 <LayoutComponentStyle cornerRadiusTL="7" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="42:405">
-                                    <DataBindContext sourcePathIds="10:7-10:2086" propertyKey="640" converterId="10:6840" id="42:444"/>
+                                    <DataBindContext sourcePathIds="10:7-901:19" propertyKey="640" id="42:444"/>
                                 </LayoutComponentStyle>
                                 <DataBindContext sourcePathIds="10:84-42:368" propertyKey="18" nameBased="true" converterId="9:145" id="42:450"/>
                             </LayoutComponent>

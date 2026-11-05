@@ -518,8 +518,8 @@
                     <DataBindContext sourcePathIds="1:151-7:1" propertyKey="218" nameBased="true" converterId="99:113" id="9:143"/>
                 </SolidColor>
                 <Feather strength="8" offsetY="2" id="10:3130">
-                    <DataBindContext sourcePathIds="10:7-10:2088" propertyKey="749" converterId="10:3156" id="10:3171"/>
-                    <DataBindContext sourcePathIds="10:7-10:2088" propertyKey="751" converterId="10:3160" id="10:3172"/>
+                    <DataBindContext sourcePathIds="10:7-901:31" propertyKey="749" id="10:3171"/>
+                    <DataBindContext sourcePathIds="10:7-901:37" propertyKey="751" id="10:3172"/>
                 </Feather>
             </Fill>
             <Fill fillRule="clockwise" id="10:3131">

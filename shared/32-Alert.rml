@@ -144,7 +144,7 @@
                     </SolidColor>
                 </Fill>
                 <LayoutComponentStyle cornerRadiusTL="8" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="110:357">
-                    <DataBindContext sourcePathIds="10:7-10:2086" propertyKey="640" converterId="10:6095" id="110:364"/>
+                    <DataBindContext sourcePathIds="10:7-901:5" propertyKey="640" id="110:364"/>
                 </LayoutComponentStyle>
                 <DataBindContext sourcePathIds="110:223-110:226" propertyKey="18" nameBased="true" converterId="10:2434" id="110:365"/>
             </LayoutComponent>
@@ -160,7 +160,7 @@
                     </SolidColor>
                 </Fill>
                 <LayoutComponentStyle cornerRadiusTL="8" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="110:367">
-                    <DataBindContext sourcePathIds="10:7-10:2086" propertyKey="640" converterId="10:6095" id="110:374"/>
+                    <DataBindContext sourcePathIds="10:7-901:5" propertyKey="640" id="110:374"/>
                 </LayoutComponentStyle>
                 <DataBindContext sourcePathIds="110:223-110:226" propertyKey="18" nameBased="true" converterId="10:2448" id="110:375"/>
             </LayoutComponent>
@@ -176,7 +176,7 @@
                     </SolidColor>
                 </Fill>
                 <LayoutComponentStyle cornerRadiusTL="8" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="110:377">
-                    <DataBindContext sourcePathIds="10:7-10:2086" propertyKey="640" converterId="10:6095" id="110:384"/>
+                    <DataBindContext sourcePathIds="10:7-901:5" propertyKey="640" id="110:384"/>
                 </LayoutComponentStyle>
                 <DataBindContext sourcePathIds="110:223-110:226" propertyKey="18" nameBased="true" converterId="10:2462" id="110:385"/>
             </LayoutComponent>
@@ -192,7 +192,7 @@
                     </SolidColor>
                 </Fill>
                 <LayoutComponentStyle cornerRadiusTL="8" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="110:387">
-                    <DataBindContext sourcePathIds="10:7-10:2086" propertyKey="640" converterId="10:6095" id="110:394"/>
+                    <DataBindContext sourcePathIds="10:7-901:5" propertyKey="640" id="110:394"/>
                 </LayoutComponentStyle>
                 <DataBindContext sourcePathIds="110:223-110:226" propertyKey="18" nameBased="true" converterId="10:2476" id="110:395"/>
             </LayoutComponent>

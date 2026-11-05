@@ -28,7 +28,7 @@
                     <LayoutParticipant layoutWidthScaleType="hug" layoutHeightScaleType="hug" id="112:216"/>
                 </Text>
                 <LayoutComponentStyle paddingLeft="10" paddingRight="10" paddingTop="6" paddingBottom="6" layoutAlignmentType="center" intrinsicallySizedValue="true" cornerRadiusTL="8" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="112:194">
-                    <DataBindContext sourcePathIds="10:7-10:2086" propertyKey="640" converterId="10:6095" id="112:217"/>
+                    <DataBindContext sourcePathIds="10:7-901:5" propertyKey="640" id="112:217"/>
                 </LayoutComponentStyle>
                 <SemanticData role="text" name="Semantics" id="112:218">
                     <DataBindContext sourcePathIds="112:1-112:2" propertyKey="983" nameBased="true" id="112:219"/>

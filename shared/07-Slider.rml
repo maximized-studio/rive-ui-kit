@@ -48,13 +48,13 @@
                 <Node x="8" name="Indicator" complexDependency="true" id="1:1923">
                     <Shape x="-8" y="-8" name="Disabled Thumb" id="15:332">
                         <Rectangle cornerRadiusTL="8" width="16" height="16" originX="0" originY="0" id="15:333">
-                            <DataBindContext sourcePathIds="10:7-10:2086" propertyKey="31" converterId="10:6383" id="15:341"/>
+                            <DataBindContext sourcePathIds="10:7-901:15" propertyKey="31" id="15:341"/>
                         </Rectangle>
                         <Fill fillRule="clockwise" id="15:334">
                             <SolidColor colorValue="40000000" id="15:335"/>
                             <Feather strength="4" offsetY="1" id="15:336">
-                                <DataBindContext sourcePathIds="10:7-10:2088" propertyKey="749" converterId="10:3156" id="15:342"/>
-                                <DataBindContext sourcePathIds="10:7-10:2088" propertyKey="751" converterId="10:3160" id="15:343"/>
+                                <DataBindContext sourcePathIds="10:7-901:31" propertyKey="749" id="15:342"/>
+                                <DataBindContext sourcePathIds="10:7-901:37" propertyKey="751" id="15:343"/>
                             </Feather>
                         </Fill>
                         <Fill fillRule="clockwise" id="15:337">
@@ -71,7 +71,7 @@
                     </Shape>
                     <Shape x="-8" y="-8" opacity="0" name="Ripple" id="10:3365">
                         <Rectangle cornerRadiusTL="8" width="16" height="16" originX="0" originY="0" id="10:6084">
-                            <DataBindContext sourcePathIds="10:7-10:2086" propertyKey="31" converterId="10:6383" id="10:6534"/>
+                            <DataBindContext sourcePathIds="10:7-901:15" propertyKey="31" id="10:6534"/>
                         </Rectangle>
                         <Stroke id="10:3367">
                             <SolidColor colorValue="FF93C5FD" id="10:3368">
@@ -81,7 +81,7 @@
                     </Shape>
                     <Shape x="-8" y="-8" opacity="0" name="Hover" id="10:3373">
                         <Rectangle cornerRadiusTL="8" width="16" height="16" originX="0" originY="0" id="10:6088">
-                            <DataBindContext sourcePathIds="10:7-10:2086" propertyKey="31" converterId="10:6383" id="10:6535"/>
+                            <DataBindContext sourcePathIds="10:7-901:15" propertyKey="31" id="10:6535"/>
                         </Rectangle>
                         <Fill name="Fill 1" id="10:3377">
                             <SolidColor colorValue="FF172554" name="Component" id="10:3378">
@@ -96,13 +96,13 @@
                     </Shape>
                     <Shape x="-8" y="-8" name="Ellipse" id="1:1896">
                         <Rectangle cornerRadiusTL="8" width="16" height="16" originX="0" originY="0" id="10:6080">
-                            <DataBindContext sourcePathIds="10:7-10:2086" propertyKey="31" converterId="10:6383" id="10:6533"/>
+                            <DataBindContext sourcePathIds="10:7-901:15" propertyKey="31" id="10:6533"/>
                         </Rectangle>
                         <Fill fillRule="clockwise" id="10:3381">
                             <SolidColor colorValue="40000000" id="10:3382"/>
                             <Feather strength="4" offsetY="1" id="10:3383">
-                                <DataBindContext sourcePathIds="10:7-10:2088" propertyKey="749" converterId="10:3156" id="10:3406"/>
-                                <DataBindContext sourcePathIds="10:7-10:2088" propertyKey="751" converterId="10:3160" id="10:3407"/>
+                                <DataBindContext sourcePathIds="10:7-901:31" propertyKey="749" id="10:3406"/>
+                                <DataBindContext sourcePathIds="10:7-901:37" propertyKey="751" id="10:3407"/>
                             </Feather>
                         </Fill>
                         <Fill fillRule="clockwise" id="10:3384">

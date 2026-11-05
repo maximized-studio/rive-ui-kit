@@ -24,7 +24,7 @@
                 </SolidColor>
             </Fill>
             <LayoutComponentStyle paddingLeft="4" paddingRight="4" paddingTop="4" paddingBottom="4" edgeConstraints="16" layoutAlignmentType="center" intrinsicallySizedValue="true" cornerRadiusTL="4" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" name="Layout Style" id="1:1735">
-                <DataBindContext sourcePathIds="10:7-10:2086" propertyKey="640" converterId="10:6191" id="10:3487"/>
+                <DataBindContext sourcePathIds="10:7-901:21" propertyKey="640" id="10:3487"/>
             </LayoutComponentStyle>
             <Stroke id="1:1753">
                 <SolidColor colorValue="FF93C5FD" id="1:1754">

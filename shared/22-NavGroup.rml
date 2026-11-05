@@ -66,7 +66,7 @@
                     </Fill>
                     <GridItemPlacement id="42:107"/>
                     <LayoutComponentStyle cornerRadiusTL="6" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="42:104">
-                        <DataBindContext sourcePathIds="10:7-10:2086" propertyKey="640" converterId="10:6840" id="42:120"/>
+                        <DataBindContext sourcePathIds="10:7-901:19" propertyKey="640" id="42:120"/>
                     </LayoutComponentStyle>
                     <DataBindContext sourcePathIds="41:864-41:888" propertyKey="18" nameBased="true" converterId="9:145" id="42:124"/>
                 </LayoutComponent>
