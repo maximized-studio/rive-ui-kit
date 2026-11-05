@@ -513,22 +513,22 @@
             <KeyedObject objectId="42:463" id="114:444">
                 <KeyedProperty property="width" id="114:445">
                     <KeyFrameDouble value="240" interpolationType="cubic" id="114:446">
-                        <CubicEaseInterpolator x1="0.4" y1="0" x2="0.2" y2="1" id="114:447"/>
+                        <CubicEaseInterpolator x1="0.40000001" x2="0.2" id="114:447"/>
                     </KeyFrameDouble>
-                    <KeyFrameDouble frame="18" value="0" id="114:448"/>
+                    <KeyFrameDouble frame="18" id="114:448"/>
                 </KeyedProperty>
             </KeyedObject>
             <KeyedObject objectId="114:433" id="114:451">
                 <KeyedProperty property="displayValue" id="114:452">
                     <KeyFrameUint id="114:449"/>
-                    <KeyFrameUint frame="18" value="1" id="114:450"/>
+                    <KeyFrameUint value="1" frame="18" id="114:450"/>
                 </KeyedProperty>
             </KeyedObject>
         </LinearAnimation>
         <LinearAnimation loopValue="loop" name="Sidebar Closed" id="114:436">
             <KeyedObject objectId="42:463" id="114:453">
                 <KeyedProperty property="width" id="114:454">
-                    <KeyFrameDouble value="0" id="114:455"/>
+                    <KeyFrameDouble id="114:455"/>
                 </KeyedProperty>
             </KeyedObject>
             <KeyedObject objectId="114:433" id="114:457">
@@ -540,10 +540,10 @@
         <LinearAnimation duration="18" name="Sidebar Opening" id="114:437">
             <KeyedObject objectId="42:463" id="114:459">
                 <KeyedProperty property="width" id="114:460">
-                    <KeyFrameDouble value="0" interpolationType="cubic" id="114:461">
-                        <CubicEaseInterpolator x1="0.4" y1="0" x2="0.2" y2="1" id="114:462"/>
+                    <KeyFrameDouble interpolationType="cubic" id="114:461">
+                        <CubicEaseInterpolator x1="0.40000001" x2="0.2" id="114:462"/>
                     </KeyFrameDouble>
-                    <KeyFrameDouble frame="18" value="240" id="114:463"/>
+                    <KeyFrameDouble value="240" frame="18" id="114:463"/>
                 </KeyedProperty>
             </KeyedObject>
             <KeyedObject objectId="114:433" id="114:465">
@@ -568,22 +568,22 @@
             <KeyedObject objectId="42:465" id="114:514">
                 <KeyedProperty property="width" id="114:515">
                     <KeyFrameDouble value="240" interpolationType="cubic" id="114:516">
-                        <CubicEaseInterpolator x1="0.4" y1="0" x2="0.2" y2="1" id="114:517"/>
+                        <CubicEaseInterpolator x1="0.40000001" x2="0.2" id="114:517"/>
                     </KeyFrameDouble>
-                    <KeyFrameDouble frame="18" value="0" id="114:518"/>
+                    <KeyFrameDouble frame="18" id="114:518"/>
                 </KeyedProperty>
             </KeyedObject>
             <KeyedObject objectId="114:503" id="114:521">
                 <KeyedProperty property="displayValue" id="114:522">
                     <KeyFrameUint id="114:519"/>
-                    <KeyFrameUint frame="18" value="1" id="114:520"/>
+                    <KeyFrameUint value="1" frame="18" id="114:520"/>
                 </KeyedProperty>
             </KeyedObject>
         </LinearAnimation>
         <LinearAnimation loopValue="loop" name="Toolbar Closed" id="114:506">
             <KeyedObject objectId="42:465" id="114:523">
                 <KeyedProperty property="width" id="114:524">
-                    <KeyFrameDouble value="0" id="114:525"/>
+                    <KeyFrameDouble id="114:525"/>
                 </KeyedProperty>
             </KeyedObject>
             <KeyedObject objectId="114:503" id="114:527">
@@ -595,10 +595,10 @@
         <LinearAnimation duration="18" name="Toolbar Opening" id="114:507">
             <KeyedObject objectId="42:465" id="114:529">
                 <KeyedProperty property="width" id="114:530">
-                    <KeyFrameDouble value="0" interpolationType="cubic" id="114:531">
-                        <CubicEaseInterpolator x1="0.4" y1="0" x2="0.2" y2="1" id="114:532"/>
+                    <KeyFrameDouble interpolationType="cubic" id="114:531">
+                        <CubicEaseInterpolator x1="0.40000001" x2="0.2" id="114:532"/>
                     </KeyFrameDouble>
-                    <KeyFrameDouble frame="18" value="240" id="114:533"/>
+                    <KeyFrameDouble value="240" frame="18" id="114:533"/>
                 </KeyedProperty>
             </KeyedObject>
             <KeyedObject objectId="114:503" id="114:535">
@@ -788,12 +788,7 @@
                 <AnimationState animationId="10:5881" x="160" y="-140" stateName="Home Idle" id="10:5900"/>
             </StateMachineLayer>
             <StateMachineLayer name="Sidebar" id="114:471">
-                <AnyState x="400" id="114:472"/>
-                <ExitState x="480" id="114:473"/>
-                <EntryState id="114:474">
-                    <StateTransition stateToId="114:467" id="114:475"/>
-                </EntryState>
-                <AnimationState animationId="114:434" x="160" y="0" stateName="Opened" id="114:467">
+                <AnimationState animationId="114:434" x="160" stateName="Opened" id="114:467">
                     <StateTransition stateToId="114:468" id="114:481">
                         <TransitionViewModelCondition id="114:476">
                             <TransitionPropertyViewModelComparator id="114:477">
@@ -830,7 +825,7 @@
                         </TransitionViewModelCondition>
                     </StateTransition>
                 </AnimationState>
-                <AnimationState animationId="114:437" x="0" y="100" stateName="Opening" id="114:470">
+                <AnimationState animationId="114:437" y="100" stateName="Opening" id="114:470">
                     <StateTransition stateToId="114:468" id="114:500">
                         <TransitionViewModelCondition id="114:495">
                             <TransitionPropertyViewModelComparator id="114:496">
@@ -843,14 +838,14 @@
                     </StateTransition>
                     <StateTransition stateToId="114:467" enableExitTime="true" exitTimeIsPercetange="true" exitTime="100" id="114:501"/>
                 </AnimationState>
+                <AnyState x="400" id="114:472"/>
+                <ExitState x="480" id="114:473"/>
+                <EntryState id="114:474">
+                    <StateTransition stateToId="114:467" id="114:475"/>
+                </EntryState>
             </StateMachineLayer>
             <StateMachineLayer name="Toolbar" id="114:541">
-                <AnyState x="400" id="114:542"/>
-                <ExitState x="480" id="114:543"/>
-                <EntryState id="114:544">
-                    <StateTransition stateToId="114:537" id="114:545"/>
-                </EntryState>
-                <AnimationState animationId="114:504" x="160" y="0" stateName="Opened" id="114:537">
+                <AnimationState animationId="114:504" x="160" stateName="Opened" id="114:537">
                     <StateTransition stateToId="114:538" id="114:551">
                         <TransitionViewModelCondition id="114:546">
                             <TransitionPropertyViewModelComparator id="114:547">
@@ -887,7 +882,7 @@
                         </TransitionViewModelCondition>
                     </StateTransition>
                 </AnimationState>
-                <AnimationState animationId="114:507" x="0" y="100" stateName="Opening" id="114:540">
+                <AnimationState animationId="114:507" y="100" stateName="Opening" id="114:540">
                     <StateTransition stateToId="114:538" id="114:570">
                         <TransitionViewModelCondition id="114:565">
                             <TransitionPropertyViewModelComparator id="114:566">
@@ -900,6 +895,11 @@
                     </StateTransition>
                     <StateTransition stateToId="114:537" enableExitTime="true" exitTimeIsPercetange="true" exitTime="100" id="114:571"/>
                 </AnimationState>
+                <AnyState x="400" id="114:542"/>
+                <ExitState x="480" id="114:543"/>
+                <EntryState id="114:544">
+                    <StateTransition stateToId="114:537" id="114:545"/>
+                </EntryState>
             </StateMachineLayer>
             <StateMachineLayer name="Cover" id="10:15645">
                 <AnyState x="400" id="10:15646"/>
