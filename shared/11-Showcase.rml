@@ -25,64 +25,9 @@
                     <LayoutComponentStyle marginTop="56" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="10:123"/>
                     <LayoutComponent styleId="10:1651" name="Home Content" id="10:1650">
                         <LayoutComponentStyle gapVertical="48" paddingLeft="5" paddingRight="5" paddingTop="5" paddingBottom="5" flexDirectionValue="column" intrinsicallySizedValue="true" paddingLeftUnitsValue="percent" paddingRightUnitsValue="percent" paddingTopUnitsValue="percent" paddingBottomUnitsValue="percent" layoutWidthScaleType="fill" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="10:1651"/>
-                        <LayoutComponent styleId="10:143" name="Section Inputs" complexDependency="true" id="10:142">
-                            <LayoutComponent styleId="10:12450" name="Title Inputs" id="10:12449">
-                                <Text id="10:144">
-                                    <TextStylePaint fontSize="24" letterSpacing="-0.30000001" fontAssetId="0:7" familyName="Inter" styleName="Bold" id="10:145">
-                                        <Fill fillRule="clockwise" id="10:146">
-                                            <SolidColor colorValue="FFFAFAFA" id="10:147">
-                                                <DataBindContext sourcePathIds="10:84-10:2850-10:7422" propertyKey="37" id="10:7443"/>
-                                            </SolidColor>
-                                        </Fill>
-                                        <TextStyleAxis tag="1869640570" axisValue="14" id="10:148"/>
-                                        <TextStyleAxis tag="2003265652" axisValue="700" id="10:149"/>
-                                    </TextStylePaint>
-                                    <TextValueRun styleId="10:145" text="Inputs" id="10:150"/>
-                                    <LayoutParticipant layoutWidthScaleType="hug" layoutHeightScaleType="hug" id="10:151"/>
-                                </Text>
-                                <LayoutComponentStyle gapHorizontal="8" layoutAlignmentType="centerLeft" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="10:12450"/>
-                                <NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="1:1722" dataBindPathIds="10:84-10:12538" name="Label" id="10:12534">
-                                    <NestedStateMachine animationId="10:115" id="10:12535"/>
-                                </NestedArtboardLayout>
-                            </LayoutComponent>
-                            <LayoutComponent styleId="10:153" name="Grid Inputs" id="10:152">
-                                <LayoutComponentStyle gapHorizontal="24" gapVertical="32" flexWrapValue="wrap" intrinsicallySizedValue="true" layoutWidthScaleType="fill" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="10:153"/>
-                                <ArtboardComponentList participatesInLayout="true" id="10:4729">
-                                    <DataBindContext sourcePathIds="10:84-10:4573" propertyKey="800" id="10:4730"/>
-                                </ArtboardComponentList>
-                                <DataBindContext sourcePathIds="10:84-10:1652" propertyKey="810" direction="true" id="10:1692"/>
-                            </LayoutComponent>
-                            <LayoutComponentStyle gapVertical="20" flexDirectionValue="column" intrinsicallySizedValue="true" layoutWidthScaleType="fill" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="10:143"/>
-                        </LayoutComponent>
-                        <LayoutComponent styleId="10:287" name="Section Display" complexDependency="true" id="10:286">
-                            <LayoutComponent styleId="10:12452" name="Title Display" id="10:12451">
-                                <Text id="10:288">
-                                    <TextStylePaint fontSize="24" letterSpacing="-0.30000001" fontAssetId="0:7" familyName="Inter" styleName="Bold" id="10:289">
-                                        <Fill fillRule="clockwise" id="10:290">
-                                            <SolidColor colorValue="FFFAFAFA" id="10:291">
-                                                <DataBindContext sourcePathIds="10:84-10:2850-10:7422" propertyKey="37" id="10:7444"/>
-                                            </SolidColor>
-                                        </Fill>
-                                        <TextStyleAxis tag="1869640570" axisValue="14" id="10:292"/>
-                                        <TextStyleAxis tag="2003265652" axisValue="700" id="10:293"/>
-                                    </TextStylePaint>
-                                    <TextValueRun styleId="10:289" text="Display" id="10:294"/>
-                                    <LayoutParticipant layoutWidthScaleType="hug" layoutHeightScaleType="hug" id="10:295"/>
-                                </Text>
-                                <LayoutComponentStyle gapHorizontal="8" layoutAlignmentType="centerLeft" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="10:12452"/>
-                                <NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="1:1722" dataBindPathIds="10:84-10:12576" name="Label" id="10:12536">
-                                    <NestedStateMachine animationId="10:115" id="10:12537"/>
-                                </NestedArtboardLayout>
-                            </LayoutComponent>
-                            <LayoutComponent styleId="10:297" name="Grid Display" id="10:296">
-                                <LayoutComponentStyle gapHorizontal="24" gapVertical="32" flexWrapValue="wrap" intrinsicallySizedValue="true" layoutWidthScaleType="fill" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="10:297"/>
-                                <ArtboardComponentList participatesInLayout="true" id="10:4731">
-                                    <DataBindContext sourcePathIds="10:84-10:4575" propertyKey="800" id="10:4732"/>
-                                </ArtboardComponentList>
-                                <DataBindContext sourcePathIds="10:84-10:4593-10:4581" propertyKey="810" direction="true" id="10:4733"/>
-                            </LayoutComponent>
-                            <LayoutComponentStyle gapVertical="20" flexDirectionValue="column" intrinsicallySizedValue="true" layoutWidthScaleType="fill" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="10:287"/>
-                        </LayoutComponent>
+                        <ArtboardComponentList name="Sections" participatesInLayout="true" complexDependency="true" id="100:64">
+                            <DataBindContext sourcePathIds="10:84-100:31" propertyKey="800" id="100:65"/>
+                        </ArtboardComponentList>
                         <ScrollConstraint physicsId="10:1711" id="10:1708"/>
                         <ForegroundLayoutDrawable name="Fills and Strokes Foreground" id="10:15775">
                             <Fill fillRule="clockwise" id="10:15778">
@@ -458,36 +403,6 @@
                 </KeyedProperty>
             </KeyedObject>
         </LinearAnimation>
-        <LinearAnimation duration="3" name="Inputs Shown" id="10:12614">
-            <KeyedObject objectId="10:143" id="10:12620">
-                <KeyedProperty property="displayValue" id="10:12621">
-                    <KeyFrameUint id="10:12622"/>
-                </KeyedProperty>
-            </KeyedObject>
-        </LinearAnimation>
-        <LinearAnimation duration="3" name="Inputs Hidden" id="10:12615">
-            <KeyedObject objectId="10:143" id="10:12623">
-                <KeyedProperty property="displayValue" id="10:12624">
-                    <KeyFrameUint value="1" id="10:12625"/>
-                </KeyedProperty>
-            </KeyedObject>
-        </LinearAnimation>
-        <LinearAnimation duration="3" name="Display Shown" id="10:12616">
-            <KeyedObject objectId="10:287" id="10:12626">
-                <KeyedProperty property="displayValue" id="10:12627">
-                    <KeyFrameUint id="10:12628"/>
-                </KeyedProperty>
-            </KeyedObject>
-        </LinearAnimation>
-        <LinearAnimation duration="3" name="Display Hidden" id="10:12617">
-            <KeyedObject objectId="10:287" id="10:12629">
-                <KeyedProperty property="displayValue" id="10:12630">
-                    <KeyFrameUint value="1" id="10:12631"/>
-                </KeyedProperty>
-            </KeyedObject>
-        </LinearAnimation>
-        <LinearAnimation duration="3" name="Results Some" id="10:12618"/>
-        <LinearAnimation duration="3" name="Results None" id="10:12619"/>
         <LinearAnimation duration="3" name="Page Home Idle" id="10:5881">
             <KeyedObject objectId="10:123" id="10:5882">
                 <KeyedProperty property="displayValue" id="10:5883">
@@ -714,114 +629,6 @@
                     </StateTransition>
                 </AnimationState>
                 <AnimationState animationId="10:5881" x="160" y="-140" stateName="Home Idle" id="10:5900"/>
-            </StateMachineLayer>
-            <StateMachineLayer name="Filter Inputs" id="10:12638">
-                <AnyState x="400" id="10:12639">
-                    <StateTransition stateToId="10:12642" id="10:12644">
-                        <TransitionViewModelCondition opValue="greaterThan" id="10:12666">
-                            <TransitionPropertyViewModelComparator id="10:12667">
-                                <BindablePropertyNumber id="10:12668">
-                                    <DataBindContext sourcePathIds="10:84-10:12435" propertyKey="636" id="10:12669"/>
-                                </BindablePropertyNumber>
-                            </TransitionPropertyViewModelComparator>
-                            <TransitionValueNumberComparator id="10:12670"/>
-                        </TransitionViewModelCondition>
-                    </StateTransition>
-                    <StateTransition stateToId="10:12643" id="10:12645">
-                        <TransitionViewModelCondition id="10:12671">
-                            <TransitionPropertyViewModelComparator id="10:12672">
-                                <BindablePropertyNumber id="10:12673">
-                                    <DataBindContext sourcePathIds="10:84-10:12435" propertyKey="636" id="10:12674"/>
-                                </BindablePropertyNumber>
-                            </TransitionPropertyViewModelComparator>
-                            <TransitionValueNumberComparator id="10:12675"/>
-                        </TransitionViewModelCondition>
-                    </StateTransition>
-                </AnyState>
-                <ExitState x="480" id="10:12640"/>
-                <EntryState id="10:12641">
-                    <StateTransition stateToId="10:12642" id="10:12646"/>
-                </EntryState>
-                <AnimationState animationId="10:12614" x="160" y="120" stateName="Inputs Shown" id="10:12642"/>
-                <AnimationState animationId="10:12615" x="320" y="120" stateName="Inputs Hidden" id="10:12643"/>
-            </StateMachineLayer>
-            <StateMachineLayer name="Filter Display" id="10:12647">
-                <AnyState x="400" id="10:12648">
-                    <StateTransition stateToId="10:12651" id="10:12653">
-                        <TransitionViewModelCondition opValue="greaterThan" id="10:12676">
-                            <TransitionPropertyViewModelComparator id="10:12677">
-                                <BindablePropertyNumber id="10:12678">
-                                    <DataBindContext sourcePathIds="10:84-10:12437" propertyKey="636" id="10:12679"/>
-                                </BindablePropertyNumber>
-                            </TransitionPropertyViewModelComparator>
-                            <TransitionValueNumberComparator id="10:12680"/>
-                        </TransitionViewModelCondition>
-                    </StateTransition>
-                    <StateTransition stateToId="10:12652" id="10:12654">
-                        <TransitionViewModelCondition id="10:12681">
-                            <TransitionPropertyViewModelComparator id="10:12682">
-                                <BindablePropertyNumber id="10:12683">
-                                    <DataBindContext sourcePathIds="10:84-10:12437" propertyKey="636" id="10:12684"/>
-                                </BindablePropertyNumber>
-                            </TransitionPropertyViewModelComparator>
-                            <TransitionValueNumberComparator id="10:12685"/>
-                        </TransitionViewModelCondition>
-                    </StateTransition>
-                </AnyState>
-                <ExitState x="480" id="10:12649"/>
-                <EntryState id="10:12650">
-                    <StateTransition stateToId="10:12651" id="10:12655"/>
-                </EntryState>
-                <AnimationState animationId="10:12616" x="160" y="120" stateName="Display Shown" id="10:12651"/>
-                <AnimationState animationId="10:12617" x="320" y="120" stateName="Display Hidden" id="10:12652"/>
-            </StateMachineLayer>
-            <StateMachineLayer name="Filter Results" id="10:12656">
-                <AnyState x="400" id="10:12657">
-                    <StateTransition stateToId="10:12661" id="10:12662">
-                        <TransitionViewModelCondition id="10:12686">
-                            <TransitionPropertyViewModelComparator id="10:12687">
-                                <BindablePropertyNumber id="10:12688">
-                                    <DataBindContext sourcePathIds="10:84-10:12435" propertyKey="636" id="10:12689"/>
-                                </BindablePropertyNumber>
-                            </TransitionPropertyViewModelComparator>
-                            <TransitionValueNumberComparator id="10:12690"/>
-                        </TransitionViewModelCondition>
-                        <TransitionViewModelCondition id="10:12691">
-                            <TransitionPropertyViewModelComparator id="10:12692">
-                                <BindablePropertyNumber id="10:12693">
-                                    <DataBindContext sourcePathIds="10:84-10:12437" propertyKey="636" id="10:12694"/>
-                                </BindablePropertyNumber>
-                            </TransitionPropertyViewModelComparator>
-                            <TransitionValueNumberComparator id="10:12695"/>
-                        </TransitionViewModelCondition>
-                    </StateTransition>
-                    <StateTransition stateToId="10:12660" id="10:12663">
-                        <TransitionViewModelCondition opValue="greaterThan" id="10:12696">
-                            <TransitionPropertyViewModelComparator id="10:12697">
-                                <BindablePropertyNumber id="10:12698">
-                                    <DataBindContext sourcePathIds="10:84-10:12435" propertyKey="636" id="10:12699"/>
-                                </BindablePropertyNumber>
-                            </TransitionPropertyViewModelComparator>
-                            <TransitionValueNumberComparator id="10:12700"/>
-                        </TransitionViewModelCondition>
-                    </StateTransition>
-                    <StateTransition stateToId="10:12660" id="10:12665">
-                        <TransitionViewModelCondition opValue="greaterThan" id="10:12701">
-                            <TransitionPropertyViewModelComparator id="10:12702">
-                                <BindablePropertyNumber id="10:12703">
-                                    <DataBindContext sourcePathIds="10:84-10:12437" propertyKey="636" id="10:12704"/>
-                                </BindablePropertyNumber>
-                            </TransitionPropertyViewModelComparator>
-                            <TransitionValueNumberComparator id="10:12705"/>
-                        </TransitionViewModelCondition>
-                    </StateTransition>
-                </AnyState>
-                <ExitState x="480" id="10:12658"/>
-                <EntryState id="10:12659">
-                    <StateTransition stateToId="10:12660" id="10:12664"/>
-                </EntryState>
-                <AnimationState animationId="10:12618" x="160" y="120" stateName="Results Some" id="10:12660"/>
-                <AnimationState animationId="10:12619" x="320" y="120" stateName="Results None" id="10:12661"/>
             </StateMachineLayer>
             <StateMachineLayer name="Cover" id="10:15645">
                 <AnyState x="400" id="10:15646"/>

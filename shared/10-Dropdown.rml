@@ -135,6 +135,7 @@
                 <DataBindContext sourcePathIds="1:4248-7:41" propertyKey="1004" nameBased="true" id="7:69"/>
                 <DataBindContext sourcePathIds="1:4248-7:39" propertyKey="1002" nameBased="true" id="7:70"/>
             </SemanticData>
+            <FocusData name="Focus" id="0:15801"/>
         </LayoutComponent>
         <LayoutComponent width="170.65625" height="116" styleId="1:4276" name="Layout" id="1:4275">
             <LayoutComponentStyle gapHorizontal="4" gapVertical="4" paddingLeft="4" paddingRight="4" paddingTop="4" paddingBottom="4" positionTop="44" positionLeftUnitsValue="points" positionTopUnitsValue="points" edgeConstraints="16" animationStyleType="inherit" positionTypeValue="absolute" flexDirectionValue="column" intrinsicallySizedValue="true" cornerRadiusTL="8" layoutWidthScaleType="fill" layoutHeightScaleType="hug" heightUnitsValue="auto" id="1:4276">

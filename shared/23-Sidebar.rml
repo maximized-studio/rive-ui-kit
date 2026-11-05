@@ -85,12 +85,9 @@
                     <LayoutComponentStyle layoutWidthScaleType="fill" widthUnitsValue="auto" id="42:207"/>
                 </LayoutComponent>
                 <LayoutComponent styleId="42:211" name="Nav" id="42:210">
-                    <NestedArtboardLayout instanceWidthScaleType="fill" instanceHeightScaleType="hug" artboardId="42:64" dataBindPathIds="41:866-41:894" name="Accordion" id="42:263">
-                        <NestedStateMachine animationId="42:169" id="42:264"/>
-                    </NestedArtboardLayout>
-                    <NestedArtboardLayout instanceWidthScaleType="fill" instanceHeightScaleType="hug" artboardId="42:64" dataBindPathIds="41:866-41:896" name="Accordion" id="42:265">
-                        <NestedStateMachine animationId="42:169" id="42:266"/>
-                    </NestedArtboardLayout>
+                    <ArtboardComponentList name="Sections" participatesInLayout="true" id="100:66">
+                        <DataBindContext sourcePathIds="41:866-100:54" propertyKey="800" id="100:67"/>
+                    </ArtboardComponentList>
                     <LayoutComponentStyle gapVertical="12" paddingLeft="12" paddingRight="12" paddingTop="12" paddingBottom="12" flexDirectionValue="column" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="42:211"/>
                 </LayoutComponent>
                 <LayoutComponentStyle flexDirectionValue="column" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="42:181"/>

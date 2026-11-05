@@ -75,6 +75,7 @@
                 <DataBindContext sourcePathIds="1:4184-7:47" propertyKey="1004" nameBased="true" id="7:72"/>
                 <DataBindContext sourcePathIds="1:4184-7:43" propertyKey="1002" nameBased="true" id="7:73"/>
             </SemanticData>
+            <FocusData name="Focus" id="0:15800"/>
         </LayoutComponent>
         <StateMachine name="State Machine 1" id="1:4161">
             <StateMachineListener targetId="1:4168" name="Cursor Off" id="63:307">

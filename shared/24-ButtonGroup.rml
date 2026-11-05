@@ -1,0 +1,38 @@
+<Rive version="1" kind="fragment">
+    <Artboard defaultStateMachineId="92:628" viewModelId="92:606" viewModelInstanceId="92:670" isComponent="true" spaceId="1:5601" width="280" height="40" styleId="92:617" x="3904" name="Button Group" id="92:616">
+        <Fill fillRule="clockwise" id="92:618">
+            <SolidColor colorValue="00000000" id="92:619"/>
+        </Fill>
+        <LayoutComponentStyle layoutAlignmentType="center" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" id="92:617"/>
+        <LayoutComponent styleId="92:740" name="Group" id="92:739">
+            <Fill fillRule="clockwise" id="92:741">
+                <SolidColor colorValue="33000000" id="92:742"/>
+                <Feather strength="8" offsetY="2" id="99:306">
+                    <DataBindContext sourcePathIds="92:606-92:614-10:2088" propertyKey="749" nameBased="true" converterId="10:3156" id="99:307"/>
+                    <DataBindContext sourcePathIds="92:606-92:614-10:2088" propertyKey="751" nameBased="true" converterId="10:3160" id="99:308"/>
+                </Feather>
+            </Fill>
+            <ArtboardComponentList name="Buttons" participatesInLayout="true" id="92:745">
+                <DataBindContext sourcePathIds="92:606-92:610" propertyKey="800" id="92:746"/>
+            </ArtboardComponentList>
+            <LayoutComponentStyle layoutAlignmentType="centerLeft" intrinsicallySizedValue="true" cornerRadiusTL="8" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="92:740">
+                <DataBindContext sourcePathIds="92:606-92:614-10:2086" propertyKey="640" nameBased="true" converterId="10:6095" id="92:748"/>
+            </LayoutComponentStyle>
+            <SemanticData role="group" label="Clipboard" name="Semantics" id="92:750">
+                <DataBindContext sourcePathIds="92:606-92:612" propertyKey="1004" nameBased="true" id="92:751"/>
+                <DataBindContext sourcePathIds="92:606-92:608" propertyKey="983" nameBased="true" id="92:752"/>
+            </SemanticData>
+        </LayoutComponent>
+        <StateMachine name="State Machine 1" id="92:628">
+            <StateMachineLayer name="Layer 1" id="92:629">
+                <AnimationState animationId="92:625" x="160" id="92:626"/>
+                <EntryState id="92:630">
+                    <StateTransition stateToId="92:626" id="92:627"/>
+                </EntryState>
+                <ExitState x="480" id="92:631"/>
+                <AnyState x="400" id="92:632"/>
+            </StateMachineLayer>
+        </StateMachine>
+        <LinearAnimation name="Timeline 1" id="92:625"/>
+    </Artboard>
+</Rive>
