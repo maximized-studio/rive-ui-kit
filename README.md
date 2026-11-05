@@ -57,7 +57,7 @@ A card of collapsible items; several can be open at once.
 A trail of links to the pages above the current one: `Home › Components › Navigation`.
 
 - View model `Breadcrumbs`: `items` (a list of `BreadcrumbItem`), `selected` (written when a link is clicked: the item's position, `0` for the first; `-1` until then), `selection` (a shared `BreadcrumbSelection`), `label` (screen reader name), `a11yHidden`, `theme`.
-- `BreadcrumbItem`: `label`, `current`, `selection`. Set `current` on the last item: it shows in muted text, is not clickable and is read as the current page. The other items are links that get a soft background on hover, like a button. A separator sits between items, never before the first.
+- `BreadcrumbItem`: `label`, `current`, `selection`. Set `current` on the last item: it stands out in semibold text, is not clickable and is read as the current page. The other items are muted links that get a soft background on hover, like a button. A separator sits between items, never before the first.
 - Point `selection` of every item at the same `BreadcrumbSelection` instance as the `Breadcrumbs` (as with Radio Group). Clicks write it and the component copies the value into `selected`.
 - Listen to `selected` in your app to navigate, then replace `items` with the new trail.
 
