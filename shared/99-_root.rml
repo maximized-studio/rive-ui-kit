@@ -3659,6 +3659,7 @@
         <ViewModel defaultInstanceId="10:63" name="Theme" groupId="1:2673" id="10:7">
             <ViewModelPropertyBoolean name="cursorPointer" id="63:244"/>
             <ViewModelPropertyBoolean name="_previewDisabled" id="15:419"/>
+            <ViewModelPropertyNumber name="_canvas" id="117:1"/>
             <ViewModelPropertyColor name="_softBg" id="10:8486"/>
             <ViewModelPropertyColor name="_softBorder" id="10:8488"/>
             <ViewModelPropertyColor name="_softText" id="10:8490"/>
@@ -3737,6 +3738,7 @@
                 <ViewModelInstanceColor propertyValue="FF93C5FD" viewModelPropertyId="10:8488" id="10:8489"/>
                 <ViewModelInstanceColor propertyValue="FF1E3A8A" viewModelPropertyId="10:8490" id="10:8491"/>
                 <ViewModelInstanceBoolean viewModelPropertyId="15:419" id="15:420"/>
+                <ViewModelInstanceNumber propertyValue="100" viewModelPropertyId="117:1" id="117:2"/>
                 <ViewModelInstanceBoolean viewModelPropertyId="63:244" id="63:245"/>
                 <ViewModelInstanceColor propertyValue="FF172554" viewModelPropertyId="110:1" id="110:211"/>
                 <ViewModelInstanceColor propertyValue="FF1E40AF" viewModelPropertyId="110:2" id="110:212"/>
@@ -5443,6 +5445,7 @@
         <ViewModelPropertyBoolean name="a11yHidden" id="112:11"/>
         <ViewModelPropertyViewModel viewModelReferenceId="10:7" name="theme" id="112:12"/>
         <ViewModelPropertyBoolean name="_open" id="112:13"/>
+        <ViewModelPropertyNumber name="icon" id="117:265"/>
         <ViewModelInstance exports="true" name="Tooltip Button" id="112:16">
             <ViewModelInstanceString propertyValue="Save" viewModelPropertyId="112:8" id="112:151"/>
             <ViewModelInstanceString propertyValue="Saves your changes" viewModelPropertyId="112:9" id="112:152"/>
@@ -5450,6 +5453,7 @@
             <ViewModelInstanceBoolean viewModelPropertyId="112:11" id="112:154"/>
             <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="112:12" id="112:155"/>
             <ViewModelInstanceBoolean viewModelPropertyId="112:13" id="112:156"/>
+            <ViewModelInstanceNumber propertyValue="7" viewModelPropertyId="117:265" id="117:266"/>
         </ViewModelInstance>
         <ViewModelInstance exports="true" name="Tooltip Button Demo" id="112:17">
             <ViewModelInstanceString propertyValue="Save" viewModelPropertyId="112:8" id="112:157"/>
@@ -5458,6 +5462,7 @@
             <ViewModelInstanceBoolean viewModelPropertyId="112:11" id="112:160"/>
             <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="112:12" id="112:161"/>
             <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="112:13" id="112:162"/>
+            <ViewModelInstanceNumber propertyValue="7" viewModelPropertyId="117:265" id="117:267"/>
         </ViewModelInstance>
     </ViewModel>
 </Rive>

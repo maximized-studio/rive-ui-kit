@@ -963,6 +963,15 @@
                     </BindablePropertyBoolean>
                 </ListenerViewModelChange>
             </StateMachineListener>
+            <StateMachineListener targetId="10:2114" name="Sync canvas" id="117:3">
+                <ListenerInputTypeViewModel viewModelPathIds="38:815-115:1-1:1962" listenerTypeValue="viewModel" id="117:4"/>
+                <ListenerViewModelChange fromViewModelProperty="true" fromDataBindId="117:5" id="117:6">
+                    <BindablePropertyNumber id="117:7">
+                        <DataBindContext sourcePathIds="38:815-38:817-117:1" propertyKey="636" direction="true" id="117:8"/>
+                        <DataBindContext sourcePathIds="38:815-115:1-1:1962" propertyKey="636" id="117:5"/>
+                    </BindablePropertyNumber>
+                </ListenerViewModelChange>
+            </StateMachineListener>
             <StateMachineListener targetId="10:2114" name="Sync state" id="39:853">
                 <ListenerInputTypeViewModel viewModelPathIds="38:815-38:825-38:356-38:332" listenerTypeValue="viewModel" id="39:854"/>
                 <ListenerViewModelChange fromViewModelProperty="true" fromDataBindId="39:858" id="39:855">

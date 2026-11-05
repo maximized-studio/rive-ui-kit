@@ -114,6 +114,44 @@
                         </Stroke>
                         <DataBindContext sourcePathIds="1:151-33:164" propertyKey="18" nameBased="true" converterId="10:2490" id="116:34"/>
                     </Shape>
+                    <Shape x="8" y="8" opacity="0" name="save" id="117:248">
+                        <PointsPath isClosed="true" id="117:249">
+                            <StraightVertex x="-6.0" y="-6.0" radius="1.333" id="117:250"/>
+                            <StraightVertex x="2.333" y="-6.0" radius="0.667" id="117:251"/>
+                            <StraightVertex x="6.0" y="-2.333" radius="0.667" id="117:252"/>
+                            <StraightVertex x="6.0" y="6.0" radius="1.333" id="117:253"/>
+                            <StraightVertex x="-6.0" y="6.0" radius="1.333" id="117:254"/>
+                        </PointsPath>
+                        <PointsPath id="117:255">
+                            <StraightVertex x="3.333" y="6.0" id="117:256"/>
+                            <StraightVertex x="3.333" y="0.667" radius="0.667" id="117:257"/>
+                            <StraightVertex x="-3.333" y="0.667" radius="0.667" id="117:258"/>
+                            <StraightVertex x="-3.333" y="6.0" id="117:259"/>
+                        </PointsPath>
+                        <PointsPath id="117:260">
+                            <StraightVertex x="-3.333" y="-6.0" id="117:261"/>
+                            <StraightVertex x="-3.333" y="-2.667" radius="0.667" id="117:262"/>
+                            <StraightVertex x="2.0" y="-2.667" id="117:263"/>
+                        </PointsPath>
+                        <Stroke thickness="1.75" cap="round" join="round" id="117:237">
+                            <SolidColor colorValue="FFFFFFFF" id="117:238">
+                                <DataBindContext sourcePathIds="1:151-10:3108-10:2092" propertyKey="37" nameBased="true" id="117:239"/>
+                            </SolidColor>
+                        </Stroke>
+                        <Stroke thickness="1.75" cap="round" join="round" id="117:240">
+                            <SolidColor colorValue="FF000000" id="117:241">
+                                <DataBindContext sourcePathIds="1:151-10:3108-10:7422" propertyKey="37" nameBased="true" id="117:242"/>
+                            </SolidColor>
+                            <DataBindContext sourcePathIds="1:151-33:159" propertyKey="47" nameBased="true" converterId="33:251" id="117:243"/>
+                        </Stroke>
+                        <Stroke thickness="0" cap="round" join="round" id="117:244">
+                            <SolidColor colorValue="FFA1A1AA" id="117:245">
+                                <DataBindContext sourcePathIds="1:151-10:3108-10:7426" propertyKey="37" nameBased="true" id="117:246"/>
+                            </SolidColor>
+                            <DataBindContext sourcePathIds="1:151-7:1" propertyKey="47" nameBased="true" converterId="33:251" id="117:247"/>
+                        </Stroke>
+                        <DataBindContext sourcePathIds="1:151-33:164" propertyKey="18" nameBased="true" converterId="38:407" id="117:264"/>
+                    </Shape>
                     <Shape x="8" y="8" opacity="0" name="scissors" id="116:46">
                         <Ellipse width="4" height="4" x="-4" y="-4" id="116:35"/>
                         <Ellipse width="4" height="4" x="-4" y="4" id="116:36"/>

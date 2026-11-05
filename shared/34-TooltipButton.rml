@@ -55,7 +55,9 @@
                         </ViewModelInstanceBoolean>
                         <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="10:3108" id="112:347"/>
                         <ViewModelInstanceBoolean viewModelPropertyId="33:159" id="112:348"/>
-                        <ViewModelInstanceNumber viewModelPropertyId="33:164" id="112:349"/>
+                        <ViewModelInstanceNumber propertyValue="7" viewModelPropertyId="33:164" id="112:349">
+                            <DataBindContext sourcePathIds="112:7-117:265" propertyKey="575" nameBased="true" id="117:268"/>
+                        </ViewModelInstanceNumber>
                         <ViewModelInstanceBoolean viewModelPropertyId="33:169" id="112:350"/>
                         <ViewModelInstanceNumber viewModelPropertyId="99:100" id="112:351"/>
                     </ViewModelInstance>
