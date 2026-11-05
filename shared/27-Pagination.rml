@@ -1,5 +1,5 @@
 <Rive version="1" kind="fragment">
-    <Artboard defaultStateMachineId="102:776" viewModelId="102:7" viewModelInstanceId="102:20" isComponent="true" spaceId="1:5601" width="440" height="40" x="1200" y="683" styleId="102:775" name="Pagination" id="102:774">
+    <Artboard defaultStateMachineId="102:776" viewModelId="102:7" viewModelInstanceId="102:20" isComponent="true" spaceId="1:5601" width="440" height="40" styleId="102:775" x="1200" y="683" name="Pagination" id="102:774">
         <Fill fillRule="clockwise" id="102:944">
             <SolidColor colorValue="00000000" id="102:945"/>
         </Fill>
@@ -34,7 +34,7 @@
                                 <DataBindContext sourcePathIds="102:7-102:8" propertyKey="575" nameBased="true" converterId="102:21" id="102:859"/>
                             </ViewModelInstanceNumber>
                             <ViewModelInstanceNumber propertyValue="5" viewModelPropertyId="102:3" id="102:860">
-                                <DataBindContext sourcePathIds="102:7-102:8" propertyKey="575" nameBased="true" twoWay="true" id="102:861"/>
+                                <DataBindContext sourcePathIds="102:7-102:8" propertyKey="575" twoWay="true" nameBased="true" id="102:861"/>
                             </ViewModelInstanceNumber>
                             <ViewModelInstanceBoolean viewModelPropertyId="102:4" id="102:862"/>
                             <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="102:5" id="102:863"/>
@@ -53,7 +53,7 @@
                                 <DataBindContext sourcePathIds="102:7-102:8" propertyKey="575" nameBased="true" converterId="102:53" id="102:872"/>
                             </ViewModelInstanceNumber>
                             <ViewModelInstanceNumber propertyValue="5" viewModelPropertyId="102:3" id="102:873">
-                                <DataBindContext sourcePathIds="102:7-102:8" propertyKey="575" nameBased="true" twoWay="true" id="102:874"/>
+                                <DataBindContext sourcePathIds="102:7-102:8" propertyKey="575" twoWay="true" nameBased="true" id="102:874"/>
                             </ViewModelInstanceNumber>
                             <ViewModelInstanceBoolean viewModelPropertyId="102:4" id="102:875"/>
                             <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="102:5" id="102:876"/>
@@ -72,7 +72,7 @@
                                 <DataBindContext sourcePathIds="102:7-102:8" propertyKey="575" nameBased="true" converterId="102:142" id="102:885"/>
                             </ViewModelInstanceNumber>
                             <ViewModelInstanceNumber propertyValue="5" viewModelPropertyId="102:3" id="102:886">
-                                <DataBindContext sourcePathIds="102:7-102:8" propertyKey="575" nameBased="true" twoWay="true" id="102:887"/>
+                                <DataBindContext sourcePathIds="102:7-102:8" propertyKey="575" twoWay="true" nameBased="true" id="102:887"/>
                             </ViewModelInstanceNumber>
                             <ViewModelInstanceBoolean viewModelPropertyId="102:4" id="102:888"/>
                             <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="102:5" id="102:889"/>
@@ -91,7 +91,7 @@
                                 <DataBindContext sourcePathIds="102:7-102:8" propertyKey="575" nameBased="true" converterId="102:219" id="102:898"/>
                             </ViewModelInstanceNumber>
                             <ViewModelInstanceNumber propertyValue="5" viewModelPropertyId="102:3" id="102:899">
-                                <DataBindContext sourcePathIds="102:7-102:8" propertyKey="575" nameBased="true" twoWay="true" id="102:900"/>
+                                <DataBindContext sourcePathIds="102:7-102:8" propertyKey="575" twoWay="true" nameBased="true" id="102:900"/>
                             </ViewModelInstanceNumber>
                             <ViewModelInstanceBoolean viewModelPropertyId="102:4" id="102:901"/>
                             <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="102:5" id="102:902"/>
@@ -110,7 +110,7 @@
                                 <DataBindContext sourcePathIds="102:7-102:8" propertyKey="575" nameBased="true" converterId="102:300" id="102:911"/>
                             </ViewModelInstanceNumber>
                             <ViewModelInstanceNumber propertyValue="5" viewModelPropertyId="102:3" id="102:912">
-                                <DataBindContext sourcePathIds="102:7-102:8" propertyKey="575" nameBased="true" twoWay="true" id="102:913"/>
+                                <DataBindContext sourcePathIds="102:7-102:8" propertyKey="575" twoWay="true" nameBased="true" id="102:913"/>
                             </ViewModelInstanceNumber>
                             <ViewModelInstanceBoolean viewModelPropertyId="102:4" id="102:914"/>
                             <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="102:5" id="102:915"/>
@@ -129,7 +129,7 @@
                                 <DataBindContext sourcePathIds="102:7-102:8" propertyKey="575" nameBased="true" converterId="102:381" id="102:924"/>
                             </ViewModelInstanceNumber>
                             <ViewModelInstanceNumber propertyValue="5" viewModelPropertyId="102:3" id="102:925">
-                                <DataBindContext sourcePathIds="102:7-102:8" propertyKey="575" nameBased="true" twoWay="true" id="102:926"/>
+                                <DataBindContext sourcePathIds="102:7-102:8" propertyKey="575" twoWay="true" nameBased="true" id="102:926"/>
                             </ViewModelInstanceNumber>
                             <ViewModelInstanceBoolean viewModelPropertyId="102:4" id="102:927"/>
                             <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="102:5" id="102:928"/>
@@ -148,7 +148,7 @@
                                 <DataBindContext sourcePathIds="102:7-102:8" propertyKey="575" nameBased="true" converterId="102:478" id="102:937"/>
                             </ViewModelInstanceNumber>
                             <ViewModelInstanceNumber propertyValue="5" viewModelPropertyId="102:3" id="102:938">
-                                <DataBindContext sourcePathIds="102:7-102:8" propertyKey="575" nameBased="true" twoWay="true" id="102:939"/>
+                                <DataBindContext sourcePathIds="102:7-102:8" propertyKey="575" twoWay="true" nameBased="true" id="102:939"/>
                             </ViewModelInstanceNumber>
                             <ViewModelInstanceBoolean viewModelPropertyId="102:4" id="102:940"/>
                             <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="102:5" id="102:941"/>
@@ -192,8 +192,8 @@
                 <ListenerInputType listenerTypeValue="click" id="102:979"/>
                 <ListenerViewModelChange fromViewModelProperty="true" fromDataBindId="102:977" id="102:980">
                     <BindablePropertyNumber id="102:981">
-                        <DataBindContext sourcePathIds="102:7-102:8" propertyKey="636" direction="true" id="102:982"/>
                         <DataBindContext sourcePathIds="102:7-102:8" propertyKey="636" converterId="102:543" id="102:977"/>
+                        <DataBindContext sourcePathIds="102:7-102:8" propertyKey="636" direction="true" id="102:982"/>
                     </BindablePropertyNumber>
                 </ListenerViewModelChange>
             </StateMachineListener>
@@ -201,8 +201,8 @@
                 <ListenerInputType listenerTypeValue="click" id="102:985"/>
                 <ListenerViewModelChange fromViewModelProperty="true" fromDataBindId="102:983" id="102:986">
                     <BindablePropertyNumber id="102:987">
-                        <DataBindContext sourcePathIds="102:7-102:8" propertyKey="636" direction="true" id="102:988"/>
                         <DataBindContext sourcePathIds="102:7-102:8" propertyKey="636" converterId="102:551" id="102:983"/>
+                        <DataBindContext sourcePathIds="102:7-102:8" propertyKey="636" direction="true" id="102:988"/>
                     </BindablePropertyNumber>
                 </ListenerViewModelChange>
             </StateMachineListener>
@@ -239,6 +239,12 @@
                 </ListenerViewModelChange>
             </StateMachineListener>
             <StateMachineLayer name="Previous" id="102:809">
+                <AnimationState animationId="102:785" x="160" stateName="Enabled" id="102:807">
+                    <StateMachineFireTrigger viewModelPathIds="102:7-102:16" id="102:826"/>
+                </AnimationState>
+                <AnimationState animationId="102:785" x="300" y="100" stateName="Disabled" id="102:808">
+                    <StateMachineFireTrigger viewModelPathIds="102:7-102:15" id="102:827"/>
+                </AnimationState>
                 <AnyState x="400" id="102:810">
                     <StateTransition stateToId="102:808" id="102:811">
                         <TransitionViewModelCondition opValue="lessThanOrEqual" id="102:812">
@@ -265,14 +271,14 @@
                 <EntryState id="102:824">
                     <StateTransition stateToId="102:807" id="102:825"/>
                 </EntryState>
-                <AnimationState animationId="102:785" x="160" stateName="Enabled" id="102:807">
-                    <StateMachineFireTrigger viewModelPathIds="102:7-102:16" id="102:826"/>
-                </AnimationState>
-                <AnimationState animationId="102:785" x="300" y="100" stateName="Disabled" id="102:808">
-                    <StateMachineFireTrigger viewModelPathIds="102:7-102:15" id="102:827"/>
-                </AnimationState>
             </StateMachineLayer>
             <StateMachineLayer name="Next" id="102:830">
+                <AnimationState animationId="102:785" x="160" stateName="Enabled" id="102:828">
+                    <StateMachineFireTrigger viewModelPathIds="102:7-102:18" id="102:851"/>
+                </AnimationState>
+                <AnimationState animationId="102:785" x="300" y="100" stateName="Disabled" id="102:829">
+                    <StateMachineFireTrigger viewModelPathIds="102:7-102:17" id="102:852"/>
+                </AnimationState>
                 <AnyState x="400" id="102:831">
                     <StateTransition stateToId="102:829" id="102:832">
                         <TransitionViewModelCondition opValue="greaterThanOrEqual" id="102:833">
@@ -307,20 +313,14 @@
                 <EntryState id="102:849">
                     <StateTransition stateToId="102:828" id="102:850"/>
                 </EntryState>
-                <AnimationState animationId="102:785" x="160" stateName="Enabled" id="102:828">
-                    <StateMachineFireTrigger viewModelPathIds="102:7-102:18" id="102:851"/>
-                </AnimationState>
-                <AnimationState animationId="102:785" x="300" y="100" stateName="Disabled" id="102:829">
-                    <StateMachineFireTrigger viewModelPathIds="102:7-102:17" id="102:852"/>
-                </AnimationState>
             </StateMachineLayer>
             <StateMachineLayer name="Layer 1" id="102:989">
+                <AnimationState animationId="102:785" x="160" id="102:786"/>
                 <AnyState x="400" id="102:990"/>
                 <ExitState x="480" id="102:991"/>
                 <EntryState id="102:992">
                     <StateTransition stateToId="102:786" id="102:993"/>
                 </EntryState>
-                <AnimationState animationId="102:785" x="160" id="102:786"/>
             </StateMachineLayer>
         </StateMachine>
         <LinearAnimation name="Timeline 1" id="102:785"/>

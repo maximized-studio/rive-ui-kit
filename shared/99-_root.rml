@@ -449,14 +449,6 @@
         <FormulaTokenParenthesisClose id="99:274"/>
         <FormulaTokenParenthesisClose id="99:275"/>
     </DataConverterFormula>
-    <DataConverterGroup name="SliderPercentText" id="2:40">
-        <DataConverterGroupItem converterId="2:41" id="2:60"/>
-        <DataConverterGroupItem converterId="2:61" id="2:62"/>
-    </DataConverterGroup>
-    <DataConverterGroup name="DisabledShowShield" id="9:90">
-        <DataConverterGroupItem converterId="9:91" id="9:92"/>
-        <DataConverterGroupItem converterId="9:93" id="9:97"/>
-    </DataConverterGroup>
     <DataConverterFormula name="PageSlot1" id="102:21">
         <FormulaTokenValue id="102:22"/>
     </DataConverterFormula>
@@ -467,7 +459,7 @@
         <FormulaTokenFunction id="102:27"/>
         <FormulaTokenValue id="102:28"/>
         <FormulaTokenArgumentSeparator id="102:29"/>
-        <FormulaTokenFunction functionType="1" id="102:30"/>
+        <FormulaTokenFunction functionType="max" id="102:30"/>
         <FormulaTokenValue operationValue="0" id="102:31"/>
         <FormulaTokenArgumentSeparator id="102:32"/>
         <FormulaTokenValue id="102:33">
@@ -482,7 +474,7 @@
         <FormulaTokenFunction id="102:41"/>
         <FormulaTokenValue id="102:42"/>
         <FormulaTokenArgumentSeparator id="102:43"/>
-        <FormulaTokenFunction functionType="1" id="102:44"/>
+        <FormulaTokenFunction functionType="max" id="102:44"/>
         <FormulaTokenValue operationValue="0" id="102:45"/>
         <FormulaTokenArgumentSeparator id="102:46"/>
         <FormulaTokenValue id="102:47"/>
@@ -502,7 +494,7 @@
         <FormulaTokenFunction id="102:59"/>
         <FormulaTokenValue id="102:60"/>
         <FormulaTokenArgumentSeparator id="102:61"/>
-        <FormulaTokenFunction functionType="1" id="102:62"/>
+        <FormulaTokenFunction functionType="max" id="102:62"/>
         <FormulaTokenValue operationValue="0" id="102:63"/>
         <FormulaTokenArgumentSeparator id="102:64"/>
         <FormulaTokenValue id="102:65">
@@ -522,7 +514,7 @@
         <FormulaTokenFunction id="102:78"/>
         <FormulaTokenValue id="102:79"/>
         <FormulaTokenArgumentSeparator id="102:80"/>
-        <FormulaTokenFunction functionType="1" id="102:81"/>
+        <FormulaTokenFunction functionType="max" id="102:81"/>
         <FormulaTokenValue operationValue="3" id="102:82"/>
         <FormulaTokenArgumentSeparator id="102:83"/>
         <FormulaTokenFunction id="102:84"/>
@@ -545,7 +537,7 @@
         <FormulaTokenFunction id="102:100"/>
         <FormulaTokenValue id="102:101"/>
         <FormulaTokenArgumentSeparator id="102:102"/>
-        <FormulaTokenFunction functionType="1" id="102:103"/>
+        <FormulaTokenFunction functionType="max" id="102:103"/>
         <FormulaTokenValue operationValue="0" id="102:104"/>
         <FormulaTokenArgumentSeparator id="102:105"/>
         <FormulaTokenValue id="102:106">
@@ -563,7 +555,7 @@
         <FormulaTokenFunction id="102:116"/>
         <FormulaTokenValue id="102:117"/>
         <FormulaTokenArgumentSeparator id="102:118"/>
-        <FormulaTokenFunction functionType="1" id="102:119"/>
+        <FormulaTokenFunction functionType="max" id="102:119"/>
         <FormulaTokenValue operationValue="0" id="102:120"/>
         <FormulaTokenArgumentSeparator id="102:121"/>
         <FormulaTokenValue id="102:122">
@@ -578,7 +570,7 @@
         <FormulaTokenFunction id="102:130"/>
         <FormulaTokenValue id="102:131"/>
         <FormulaTokenArgumentSeparator id="102:132"/>
-        <FormulaTokenFunction functionType="1" id="102:133"/>
+        <FormulaTokenFunction functionType="max" id="102:133"/>
         <FormulaTokenValue operationValue="0" id="102:134"/>
         <FormulaTokenArgumentSeparator id="102:135"/>
         <FormulaTokenValue operationValue="2" id="102:136"/>
@@ -598,7 +590,7 @@
         <FormulaTokenFunction id="102:148"/>
         <FormulaTokenValue id="102:149"/>
         <FormulaTokenArgumentSeparator id="102:150"/>
-        <FormulaTokenFunction functionType="1" id="102:151"/>
+        <FormulaTokenFunction functionType="max" id="102:151"/>
         <FormulaTokenValue operationValue="0" id="102:152"/>
         <FormulaTokenArgumentSeparator id="102:153"/>
         <FormulaTokenValue id="102:154">
@@ -610,7 +602,7 @@
         <FormulaTokenParenthesisClose id="102:159"/>
         <FormulaTokenParenthesisClose id="102:160"/>
         <FormulaTokenOperation id="102:161"/>
-        <FormulaTokenFunction functionType="1" id="102:162"/>
+        <FormulaTokenFunction functionType="max" id="102:162"/>
         <FormulaTokenValue operationValue="3" id="102:163"/>
         <FormulaTokenArgumentSeparator id="102:164"/>
         <FormulaTokenFunction id="102:165"/>
@@ -629,7 +621,7 @@
         <FormulaTokenFunction id="102:177"/>
         <FormulaTokenValue id="102:178"/>
         <FormulaTokenArgumentSeparator id="102:179"/>
-        <FormulaTokenFunction functionType="1" id="102:180"/>
+        <FormulaTokenFunction functionType="max" id="102:180"/>
         <FormulaTokenValue operationValue="0" id="102:181"/>
         <FormulaTokenArgumentSeparator id="102:182"/>
         <FormulaTokenValue id="102:183">
@@ -647,7 +639,7 @@
         <FormulaTokenFunction id="102:193"/>
         <FormulaTokenValue id="102:194"/>
         <FormulaTokenArgumentSeparator id="102:195"/>
-        <FormulaTokenFunction functionType="1" id="102:196"/>
+        <FormulaTokenFunction functionType="max" id="102:196"/>
         <FormulaTokenValue operationValue="0" id="102:197"/>
         <FormulaTokenArgumentSeparator id="102:198"/>
         <FormulaTokenValue id="102:199">
@@ -662,7 +654,7 @@
         <FormulaTokenFunction id="102:207"/>
         <FormulaTokenValue id="102:208"/>
         <FormulaTokenArgumentSeparator id="102:209"/>
-        <FormulaTokenFunction functionType="1" id="102:210"/>
+        <FormulaTokenFunction functionType="max" id="102:210"/>
         <FormulaTokenValue operationValue="0" id="102:211"/>
         <FormulaTokenArgumentSeparator id="102:212"/>
         <FormulaTokenValue operationValue="3" id="102:213"/>
@@ -682,7 +674,7 @@
         <FormulaTokenFunction id="102:225"/>
         <FormulaTokenValue id="102:226"/>
         <FormulaTokenArgumentSeparator id="102:227"/>
-        <FormulaTokenFunction functionType="1" id="102:228"/>
+        <FormulaTokenFunction functionType="max" id="102:228"/>
         <FormulaTokenValue operationValue="0" id="102:229"/>
         <FormulaTokenArgumentSeparator id="102:230"/>
         <FormulaTokenValue id="102:231">
@@ -695,7 +687,7 @@
         <FormulaTokenParenthesisClose id="102:237"/>
         <FormulaTokenOperation id="102:238"/>
         <FormulaTokenParenthesisOpen id="102:239"/>
-        <FormulaTokenFunction functionType="1" id="102:240"/>
+        <FormulaTokenFunction functionType="max" id="102:240"/>
         <FormulaTokenValue operationValue="3" id="102:241"/>
         <FormulaTokenArgumentSeparator id="102:242"/>
         <FormulaTokenFunction id="102:243"/>
@@ -717,7 +709,7 @@
         <FormulaTokenFunction id="102:258"/>
         <FormulaTokenValue id="102:259"/>
         <FormulaTokenArgumentSeparator id="102:260"/>
-        <FormulaTokenFunction functionType="1" id="102:261"/>
+        <FormulaTokenFunction functionType="max" id="102:261"/>
         <FormulaTokenValue operationValue="0" id="102:262"/>
         <FormulaTokenArgumentSeparator id="102:263"/>
         <FormulaTokenValue id="102:264">
@@ -735,7 +727,7 @@
         <FormulaTokenFunction id="102:274"/>
         <FormulaTokenValue id="102:275"/>
         <FormulaTokenArgumentSeparator id="102:276"/>
-        <FormulaTokenFunction functionType="1" id="102:277"/>
+        <FormulaTokenFunction functionType="max" id="102:277"/>
         <FormulaTokenValue operationValue="0" id="102:278"/>
         <FormulaTokenArgumentSeparator id="102:279"/>
         <FormulaTokenValue id="102:280">
@@ -750,7 +742,7 @@
         <FormulaTokenFunction id="102:288"/>
         <FormulaTokenValue id="102:289"/>
         <FormulaTokenArgumentSeparator id="102:290"/>
-        <FormulaTokenFunction functionType="1" id="102:291"/>
+        <FormulaTokenFunction functionType="max" id="102:291"/>
         <FormulaTokenValue operationValue="0" id="102:292"/>
         <FormulaTokenArgumentSeparator id="102:293"/>
         <FormulaTokenValue operationValue="4" id="102:294"/>
@@ -770,7 +762,7 @@
         <FormulaTokenFunction id="102:306"/>
         <FormulaTokenValue id="102:307"/>
         <FormulaTokenArgumentSeparator id="102:308"/>
-        <FormulaTokenFunction functionType="1" id="102:309"/>
+        <FormulaTokenFunction functionType="max" id="102:309"/>
         <FormulaTokenValue operationValue="0" id="102:310"/>
         <FormulaTokenArgumentSeparator id="102:311"/>
         <FormulaTokenValue id="102:312">
@@ -783,7 +775,7 @@
         <FormulaTokenParenthesisClose id="102:318"/>
         <FormulaTokenOperation id="102:319"/>
         <FormulaTokenParenthesisOpen id="102:320"/>
-        <FormulaTokenFunction functionType="1" id="102:321"/>
+        <FormulaTokenFunction functionType="max" id="102:321"/>
         <FormulaTokenValue operationValue="3" id="102:322"/>
         <FormulaTokenArgumentSeparator id="102:323"/>
         <FormulaTokenFunction id="102:324"/>
@@ -805,7 +797,7 @@
         <FormulaTokenFunction id="102:339"/>
         <FormulaTokenValue id="102:340"/>
         <FormulaTokenArgumentSeparator id="102:341"/>
-        <FormulaTokenFunction functionType="1" id="102:342"/>
+        <FormulaTokenFunction functionType="max" id="102:342"/>
         <FormulaTokenValue operationValue="0" id="102:343"/>
         <FormulaTokenArgumentSeparator id="102:344"/>
         <FormulaTokenValue id="102:345">
@@ -823,7 +815,7 @@
         <FormulaTokenFunction id="102:355"/>
         <FormulaTokenValue id="102:356"/>
         <FormulaTokenArgumentSeparator id="102:357"/>
-        <FormulaTokenFunction functionType="1" id="102:358"/>
+        <FormulaTokenFunction functionType="max" id="102:358"/>
         <FormulaTokenValue operationValue="0" id="102:359"/>
         <FormulaTokenArgumentSeparator id="102:360"/>
         <FormulaTokenValue id="102:361">
@@ -838,7 +830,7 @@
         <FormulaTokenFunction id="102:369"/>
         <FormulaTokenValue id="102:370"/>
         <FormulaTokenArgumentSeparator id="102:371"/>
-        <FormulaTokenFunction functionType="1" id="102:372"/>
+        <FormulaTokenFunction functionType="max" id="102:372"/>
         <FormulaTokenValue operationValue="0" id="102:373"/>
         <FormulaTokenArgumentSeparator id="102:374"/>
         <FormulaTokenValue operationValue="5" id="102:375"/>
@@ -858,7 +850,7 @@
         <FormulaTokenFunction id="102:387"/>
         <FormulaTokenValue id="102:388"/>
         <FormulaTokenArgumentSeparator id="102:389"/>
-        <FormulaTokenFunction functionType="1" id="102:390"/>
+        <FormulaTokenFunction functionType="max" id="102:390"/>
         <FormulaTokenValue operationValue="0" id="102:391"/>
         <FormulaTokenArgumentSeparator id="102:392"/>
         <FormulaTokenValue id="102:393">
@@ -890,7 +882,7 @@
         <FormulaTokenOperation operationType="subtract" id="102:416"/>
         <FormulaTokenValue operationValue="4" id="102:417"/>
         <FormulaTokenOperation operationType="subtract" id="102:418"/>
-        <FormulaTokenFunction functionType="1" id="102:419"/>
+        <FormulaTokenFunction functionType="max" id="102:419"/>
         <FormulaTokenValue operationValue="3" id="102:420"/>
         <FormulaTokenArgumentSeparator id="102:421"/>
         <FormulaTokenFunction id="102:422"/>
@@ -911,7 +903,7 @@
         <FormulaTokenFunction id="102:436"/>
         <FormulaTokenValue id="102:437"/>
         <FormulaTokenArgumentSeparator id="102:438"/>
-        <FormulaTokenFunction functionType="1" id="102:439"/>
+        <FormulaTokenFunction functionType="max" id="102:439"/>
         <FormulaTokenValue operationValue="0" id="102:440"/>
         <FormulaTokenArgumentSeparator id="102:441"/>
         <FormulaTokenValue id="102:442">
@@ -929,7 +921,7 @@
         <FormulaTokenFunction id="102:452"/>
         <FormulaTokenValue id="102:453"/>
         <FormulaTokenArgumentSeparator id="102:454"/>
-        <FormulaTokenFunction functionType="1" id="102:455"/>
+        <FormulaTokenFunction functionType="max" id="102:455"/>
         <FormulaTokenValue operationValue="0" id="102:456"/>
         <FormulaTokenArgumentSeparator id="102:457"/>
         <FormulaTokenValue id="102:458">
@@ -944,7 +936,7 @@
         <FormulaTokenFunction id="102:466"/>
         <FormulaTokenValue id="102:467"/>
         <FormulaTokenArgumentSeparator id="102:468"/>
-        <FormulaTokenFunction functionType="1" id="102:469"/>
+        <FormulaTokenFunction functionType="max" id="102:469"/>
         <FormulaTokenValue operationValue="0" id="102:470"/>
         <FormulaTokenArgumentSeparator id="102:471"/>
         <FormulaTokenValue operationValue="6" id="102:472"/>
@@ -964,7 +956,7 @@
         <FormulaTokenFunction id="102:484"/>
         <FormulaTokenValue id="102:485"/>
         <FormulaTokenArgumentSeparator id="102:486"/>
-        <FormulaTokenFunction functionType="1" id="102:487"/>
+        <FormulaTokenFunction functionType="max" id="102:487"/>
         <FormulaTokenValue operationValue="0" id="102:488"/>
         <FormulaTokenArgumentSeparator id="102:489"/>
         <FormulaTokenValue id="102:490">
@@ -983,7 +975,7 @@
         <FormulaTokenFunction id="102:501"/>
         <FormulaTokenValue id="102:502"/>
         <FormulaTokenArgumentSeparator id="102:503"/>
-        <FormulaTokenFunction functionType="1" id="102:504"/>
+        <FormulaTokenFunction functionType="max" id="102:504"/>
         <FormulaTokenValue operationValue="0" id="102:505"/>
         <FormulaTokenArgumentSeparator id="102:506"/>
         <FormulaTokenValue id="102:507">
@@ -1001,7 +993,7 @@
         <FormulaTokenFunction id="102:517"/>
         <FormulaTokenValue id="102:518"/>
         <FormulaTokenArgumentSeparator id="102:519"/>
-        <FormulaTokenFunction functionType="1" id="102:520"/>
+        <FormulaTokenFunction functionType="max" id="102:520"/>
         <FormulaTokenValue operationValue="0" id="102:521"/>
         <FormulaTokenArgumentSeparator id="102:522"/>
         <FormulaTokenValue id="102:523">
@@ -1016,7 +1008,7 @@
         <FormulaTokenFunction id="102:531"/>
         <FormulaTokenValue id="102:532"/>
         <FormulaTokenArgumentSeparator id="102:533"/>
-        <FormulaTokenFunction functionType="1" id="102:534"/>
+        <FormulaTokenFunction functionType="max" id="102:534"/>
         <FormulaTokenValue operationValue="0" id="102:535"/>
         <FormulaTokenArgumentSeparator id="102:536"/>
         <FormulaTokenValue operationValue="7" id="102:537"/>
@@ -1028,7 +1020,7 @@
         <FormulaTokenParenthesisClose id="102:542"/>
     </DataConverterFormula>
     <DataConverterFormula name="PagePrev" id="102:543">
-        <FormulaTokenFunction functionType="1" id="102:544"/>
+        <FormulaTokenFunction functionType="max" id="102:544"/>
         <FormulaTokenValue id="102:545"/>
         <FormulaTokenArgumentSeparator id="102:546"/>
         <FormulaTokenInput id="102:547"/>
@@ -1063,6 +1055,14 @@
         <FormulaTokenInput id="102:572"/>
         <FormulaTokenParenthesisClose id="102:573"/>
     </DataConverterFormula>
+    <DataConverterGroup name="SliderPercentText" id="2:40">
+        <DataConverterGroupItem converterId="2:41" id="2:60"/>
+        <DataConverterGroupItem converterId="2:61" id="2:62"/>
+    </DataConverterGroup>
+    <DataConverterGroup name="DisabledShowShield" id="9:90">
+        <DataConverterGroupItem converterId="9:91" id="9:92"/>
+        <DataConverterGroupItem converterId="9:93" id="9:97"/>
+    </DataConverterGroup>
     <DataConverterGroup name="DisabledNoShadow" id="9:131">
         <DataConverterGroupItem converterId="9:132" id="9:133"/>
         <DataConverterGroupItem converterId="9:134" id="9:142"/>

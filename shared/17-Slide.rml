@@ -1,5 +1,5 @@
 <Rive version="1" kind="fragment">
-    <Artboard defaultStateMachineId="10:5405" viewModelId="10:5163" viewModelInstanceId="10:5197" isComponent="true" includeInExport="false" spaceId="1:5601" width="306" height="282" x="-2420" y="1694" styleId="10:5314" name="Slide" id="10:5313">
+    <Artboard defaultStateMachineId="10:5405" viewModelId="10:5163" viewModelInstanceId="10:5197" isComponent="true" includeInExport="false" spaceId="1:5601" width="306" height="282" styleId="10:5314" x="-2420" y="1694" name="Slide" id="10:5313">
         <DataBindContext sourcePathIds="10:5163-10:5179-10:5165" propertyKey="7" id="10:5479"/>
         <DataBindContext sourcePathIds="10:5163-10:5179-10:5167" propertyKey="8" id="10:5480"/>
         <Fill fillRule="clockwise" id="10:5315">
