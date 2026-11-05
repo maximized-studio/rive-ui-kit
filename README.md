@@ -28,7 +28,7 @@ The components carry Rive semantics, so screen readers get a real accessibility 
 | Component | Role | Exposed |
 |---|---|---|
 | Accordion | `group` / `button` per item | label; item title, expanded |
-| Alert | `group` (live region), `button` to dismiss, `text` | title; `label` on the dismiss button; body |
+| Alert | `group` (live region), `text` | title; body |
 | Avatar | `image` | label |
 | Badge, Label | `text` | text |
 | Breadcrumbs | `group` / `link` per item, `text` for the current page | label; item label, "Current page" |
@@ -67,12 +67,12 @@ A trail of links to the pages above the current one: `Home › Components › Na
 
 ## Alert
 
-A message box in four variants, with an optional close button.
+A card that stays in view with a message in one of four variants. It has no close button; for something the user dismisses, use a dialog.
 
-- View model `Alert`: `title`, `body`, `variant` (`0` info, `1` success, `2` warning, `3` error), `dismissible`, `open`, `label` (screen reader name of the close button, default "Dismiss"), `a11yHidden`, `theme`.
-- The close button sets `open` to `false`; the alert fades out and leaves the layout. Set `open` back to `true` to show it again. Listen to `open` in your app to know when it was dismissed.
-- Colours come from semantic Theme tokens: info follows the brand colour, success, warning and error have their own light and dark values (see palette.json).
-- Screen readers get a `group` named by the title and marked as a live region, the body as text and a `button` to dismiss.
+- View model `Alert`: `title`, `body`, `variant` (`0` info, `1` success, `2` warning, `3` error), `a11yHidden`, `theme`.
+- Each variant has its own icon and colours from semantic Theme tokens: info follows the brand colour, success, warning and error have their own light and dark values (see palette.json).
+- Hide or show it from your app like any other part of your layout.
+- Screen readers get a `group` named by the title and marked as a live region, so a changed title is announced, with the body as text.
 
 ## Button Group
 
@@ -104,7 +104,7 @@ A small bubble in the inverse theme colours (`_text` background, `_bg` text) wit
 
 ## Pointer cursor
 
-A canvas can't change the mouse cursor by itself, so the kit tells your app when to. `theme/cursorPointer` (a boolean on the shared Theme view model) is `true` while the pointer is over something clickable: an accordion header, a breadcrumb link, a button, checkbox, dropdown and its items, nav group header, nav item, page item, an alert's close button, radio option, segment, slider, switch or tile. Disabled controls leave it `false`. The path below is the Showcase's; in your own artboard it is wherever your view model holds the Theme.
+A canvas can't change the mouse cursor by itself, so the kit tells your app when to. `theme/cursorPointer` (a boolean on the shared Theme view model) is `true` while the pointer is over something clickable: an accordion header, a breadcrumb link, a button, checkbox, dropdown and its items, nav group header, nav item, page item, radio option, segment, slider, switch or tile. Disabled controls leave it `false`. The path below is the Showcase's; in your own artboard it is wherever your view model holds the Theme.
 
 ```js
 const flag = rive.viewModelInstance.boolean("theme/cursorPointer");

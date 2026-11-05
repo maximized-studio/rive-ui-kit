@@ -1055,11 +1055,6 @@
         <FormulaTokenInput id="102:572"/>
         <FormulaTokenParenthesisClose id="102:573"/>
     </DataConverterFormula>
-    <DataConverterFormula name="AlertHoverTint" id="110:284">
-        <FormulaTokenValue operationValue="0.1" id="110:286"/>
-        <FormulaTokenOperation operationType="multiply" id="110:287"/>
-        <FormulaTokenInput id="110:288"/>
-    </DataConverterFormula>
     <DataConverterFormula name="CrumbSeparatorHide" id="111:23">
         <FormulaTokenValue id="111:24"/>
         <FormulaTokenOperation operationType="subtract" id="111:25"/>
@@ -1233,10 +1228,6 @@
         <DataConverterGroupItem converterId="10:5473" id="100:62"/>
         <DataConverterGroupItem converterId="10:5574" id="100:63"/>
     </DataConverterGroup>
-    <DataConverterGroup name="AlertHover" id="110:285">
-        <DataConverterGroupItem converterId="110:283" id="110:289"/>
-        <DataConverterGroupItem converterId="110:284" id="110:290"/>
-    </DataConverterGroup>
     <DataConverterListToLength name="TileCount" id="100:59"/>
     <DataConverterSystemNormalizer operationValue="2.55" operationType="multiply" name="Percentage to 0-255" id="9:144"/>
     <DataConverterToNumber name="BoolToChecked" id="2:64"/>
@@ -1247,7 +1238,6 @@
     <DataConverterToNumber name="SecondaryNum" id="33:252"/>
     <DataConverterToNumber name="Convert to Number 1" id="70:511"/>
     <DataConverterToNumber name="DisabledNumberG" id="99:111"/>
-    <DataConverterToNumber name="AlertHoverNum" id="110:283"/>
     <DataConverterToString round="true" name="SliderPercentString" id="2:61"/>
     <DataFolder name="UI Kit" id="1:2753">
         <DataFolder name="Utils" id="1:1021">
@@ -2284,7 +2274,7 @@
                     <ViewModelInstanceString propertyValue="Alert" viewModelPropertyId="10:3614" id="110:292"/>
                     <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="10:3657" id="110:293"/>
                     <ViewModelInstanceList viewModelPropertyId="10:3861" id="110:294">
-                        <ViewModelInstanceListItem viewModelId="110:223" viewModelInstanceId="110:237" id="110:295"/>
+                        <ViewModelInstanceListItem viewModelId="110:223" viewModelInstanceId="110:235" id="110:295"/>
                     </ViewModelInstanceList>
                     <ViewModelInstanceBoolean viewModelPropertyId="10:4507" id="110:296"/>
                     <ViewModelInstanceNumber propertyValue="7" viewModelPropertyId="10:4567" id="110:297"/>
@@ -4821,66 +4811,35 @@
         <ViewModelPropertyString name="title" id="110:224"/>
         <ViewModelPropertyString name="body" id="110:225"/>
         <ViewModelPropertyNumber name="variant" id="110:226"/>
-        <ViewModelPropertyBoolean name="dismissible" id="110:227"/>
-        <ViewModelPropertyBoolean name="open" id="110:228"/>
-        <ViewModelPropertyString name="label" id="110:229"/>
         <ViewModelPropertyBoolean name="a11yHidden" id="110:230"/>
         <ViewModelPropertyViewModel viewModelReferenceId="10:7" name="theme" id="110:231"/>
-        <ViewModelPropertyBoolean name="_closeHover" id="110:232"/>
         <ViewModelInstance exports="true" name="Alert" id="110:233">
             <ViewModelInstanceString propertyValue="Heads up" viewModelPropertyId="110:224" id="110:238"/>
             <ViewModelInstanceString propertyValue="A new version of the kit is available. Pull it to get the latest components." viewModelPropertyId="110:225" id="110:239"/>
             <ViewModelInstanceNumber viewModelPropertyId="110:226" id="110:240"/>
-            <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="110:227" id="110:241"/>
-            <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="110:228" id="110:242"/>
-            <ViewModelInstanceString propertyValue="Dismiss" viewModelPropertyId="110:229" id="110:243"/>
             <ViewModelInstanceBoolean viewModelPropertyId="110:230" id="110:244"/>
             <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="110:231" id="110:245"/>
-            <ViewModelInstanceBoolean viewModelPropertyId="110:232" id="110:246"/>
         </ViewModelInstance>
         <ViewModelInstance exports="true" name="Alert Success" id="110:234">
             <ViewModelInstanceString propertyValue="Changes saved" viewModelPropertyId="110:224" id="110:247"/>
             <ViewModelInstanceString propertyValue="Your theme settings were saved and apply to every component." viewModelPropertyId="110:225" id="110:248"/>
             <ViewModelInstanceNumber propertyValue="1" viewModelPropertyId="110:226" id="110:249"/>
-            <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="110:227" id="110:250"/>
-            <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="110:228" id="110:251"/>
-            <ViewModelInstanceString propertyValue="Dismiss" viewModelPropertyId="110:229" id="110:252"/>
             <ViewModelInstanceBoolean viewModelPropertyId="110:230" id="110:253"/>
             <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="110:231" id="110:254"/>
-            <ViewModelInstanceBoolean viewModelPropertyId="110:232" id="110:255"/>
         </ViewModelInstance>
         <ViewModelInstance exports="true" name="Alert Warning" id="110:235">
             <ViewModelInstanceString propertyValue="Your trial ends soon" viewModelPropertyId="110:224" id="110:256"/>
             <ViewModelInstanceString propertyValue="Add a payment method within 3 days to keep your projects." viewModelPropertyId="110:225" id="110:257"/>
             <ViewModelInstanceNumber propertyValue="2" viewModelPropertyId="110:226" id="110:258"/>
-            <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="110:227" id="110:259"/>
-            <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="110:228" id="110:260"/>
-            <ViewModelInstanceString propertyValue="Dismiss" viewModelPropertyId="110:229" id="110:261"/>
             <ViewModelInstanceBoolean viewModelPropertyId="110:230" id="110:262"/>
             <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="110:231" id="110:263"/>
-            <ViewModelInstanceBoolean viewModelPropertyId="110:232" id="110:264"/>
         </ViewModelInstance>
         <ViewModelInstance exports="true" name="Alert Error" id="110:236">
             <ViewModelInstanceString propertyValue="Upload failed" viewModelPropertyId="110:224" id="110:265"/>
             <ViewModelInstanceString propertyValue="The file is larger than 10 MB. Choose a smaller file and try again." viewModelPropertyId="110:225" id="110:266"/>
             <ViewModelInstanceNumber propertyValue="3" viewModelPropertyId="110:226" id="110:267"/>
-            <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="110:227" id="110:268"/>
-            <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="110:228" id="110:269"/>
-            <ViewModelInstanceString propertyValue="Dismiss" viewModelPropertyId="110:229" id="110:270"/>
             <ViewModelInstanceBoolean viewModelPropertyId="110:230" id="110:271"/>
             <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="110:231" id="110:272"/>
-            <ViewModelInstanceBoolean viewModelPropertyId="110:232" id="110:273"/>
-        </ViewModelInstance>
-        <ViewModelInstance exports="true" name="Alert Tile" id="110:237">
-            <ViewModelInstanceString propertyValue="Your trial ends soon" viewModelPropertyId="110:224" id="110:274"/>
-            <ViewModelInstanceString propertyValue="Add a payment method within 3 days to keep your projects." viewModelPropertyId="110:225" id="110:275"/>
-            <ViewModelInstanceNumber propertyValue="2" viewModelPropertyId="110:226" id="110:276"/>
-            <ViewModelInstanceBoolean viewModelPropertyId="110:227" id="110:277"/>
-            <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="110:228" id="110:278"/>
-            <ViewModelInstanceString propertyValue="Dismiss" viewModelPropertyId="110:229" id="110:279"/>
-            <ViewModelInstanceBoolean viewModelPropertyId="110:230" id="110:280"/>
-            <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="110:231" id="110:281"/>
-            <ViewModelInstanceBoolean viewModelPropertyId="110:232" id="110:282"/>
         </ViewModelInstance>
     </ViewModel>
     <ViewModel defaultInstanceId="111:19" name="BreadcrumbItem" id="111:1">

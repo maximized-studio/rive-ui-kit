@@ -130,43 +130,6 @@
                     </Text>
                     <LayoutComponentStyle gapVertical="4" paddingTop="1" flexDirectionValue="column" intrinsicallySizedValue="true" layoutWidthScaleType="fill" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="110:347"/>
                 </LayoutComponent>
-                <LayoutComponent width="24" height="24" styleId="110:349" name="Close" id="110:348">
-                    <Node x="12" y="12" name="Cross" id="110:480">
-                        <Shape name="Cross" id="110:481">
-                            <PointsPath id="110:484">
-                                <StraightVertex x="-4" y="-4" id="110:482"/>
-                                <StraightVertex x="4" y="4" id="110:483"/>
-                            </PointsPath>
-                            <PointsPath id="110:487">
-                                <StraightVertex x="4" y="-4" id="110:485"/>
-                                <StraightVertex x="-4" y="4" id="110:486"/>
-                            </PointsPath>
-                            <Stroke thickness="1.5" cap="round" join="round" id="110:488">
-                                <SolidColor colorValue="FFA1A1AA" id="110:489">
-                                    <DataBindContext sourcePathIds="110:223-110:231-10:7426" propertyKey="37" nameBased="true" id="110:490"/>
-                                </SolidColor>
-                            </Stroke>
-                        </Shape>
-                    </Node>
-                    <LayoutComponent styleId="110:351" opacity="0" name="Hover" id="110:350">
-                        <Fill fillRule="clockwise" id="110:491">
-                            <SolidColor colorValue="FFFAFAFA" id="110:492">
-                                <DataBindContext sourcePathIds="110:223-110:231-10:7422" propertyKey="37" nameBased="true" id="110:493"/>
-                            </SolidColor>
-                        </Fill>
-                        <LayoutComponentStyle cornerRadiusTL="6" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="110:351">
-                            <DataBindContext sourcePathIds="110:223-110:231-10:2086" propertyKey="640" nameBased="true" converterId="10:6095" id="110:494"/>
-                        </LayoutComponentStyle>
-                        <DataBindContext sourcePathIds="110:223-110:232" propertyKey="18" nameBased="true" converterId="110:285" id="110:495"/>
-                    </LayoutComponent>
-                    <LayoutComponentStyle marginRight="-4" marginTop="-2" layoutTypeValue="stack" id="110:349">
-                        <DataBindContext sourcePathIds="110:223-110:227" propertyKey="596" nameBased="true" converterId="9:90" id="110:496"/>
-                    </LayoutComponentStyle>
-                    <SemanticData role="button" label="Dismiss" traitFlags="32" name="Semantics" id="110:497">
-                        <DataBindContext sourcePathIds="110:223-110:229" propertyKey="983" nameBased="true" id="110:498"/>
-                    </SemanticData>
-                    <FocusData name="Focus" id="0:15809"/>
-                </LayoutComponent>
                 <LayoutComponentStyle gapHorizontal="12" paddingLeft="16" paddingRight="16" paddingTop="14" paddingBottom="14" intrinsicallySizedValue="true" layoutWidthScaleType="fill" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="110:343"/>
             </LayoutComponent>
             <LayoutComponent styleId="110:357" name="Skin Info" id="110:356">
@@ -240,117 +203,15 @@
             </SemanticData>
         </LayoutComponent>
         <StateMachine name="State Machine 1" id="110:339">
-            <StateMachineListener targetId="110:348" name="Cursor Off" id="110:506">
-                <ListenerInputType listenerTypeValue="exit" id="110:502"/>
-                <ListenerViewModelChange id="110:503">
-                    <BindablePropertyBoolean id="110:504">
-                        <DataBindContext sourcePathIds="110:223-110:231-63:244" propertyKey="634" direction="true" id="110:505"/>
-                    </BindablePropertyBoolean>
-                </ListenerViewModelChange>
-            </StateMachineListener>
-            <StateMachineListener targetId="110:348" name="Cursor On" id="110:512">
-                <ListenerInputType id="110:507"/>
-                <ListenerInputType listenerTypeValue="move" id="110:508"/>
-                <ListenerViewModelChange id="110:509">
-                    <BindablePropertyBoolean propertyValue="true" id="110:510">
-                        <DataBindContext sourcePathIds="110:223-110:231-63:244" propertyKey="634" direction="true" id="110:511"/>
-                    </BindablePropertyBoolean>
-                </ListenerViewModelChange>
-            </StateMachineListener>
-            <StateMachineListener targetId="110:348" name="Hover Off" id="110:517">
-                <ListenerInputType listenerTypeValue="exit" id="110:513"/>
-                <ListenerViewModelChange id="110:514">
-                    <BindablePropertyBoolean id="110:515">
-                        <DataBindContext sourcePathIds="110:223-110:232" propertyKey="634" direction="true" id="110:516"/>
-                    </BindablePropertyBoolean>
-                </ListenerViewModelChange>
-            </StateMachineListener>
-            <StateMachineListener targetId="110:348" name="Hover On" id="110:522">
-                <ListenerInputType id="110:518"/>
-                <ListenerViewModelChange id="110:519">
-                    <BindablePropertyBoolean propertyValue="true" id="110:520">
-                        <DataBindContext sourcePathIds="110:223-110:232" propertyKey="634" direction="true" id="110:521"/>
-                    </BindablePropertyBoolean>
-                </ListenerViewModelChange>
-            </StateMachineListener>
-            <StateMachineListener targetId="110:348" name="Dismiss" id="110:523">
-                <ListenerInputType listenerTypeValue="click" id="110:524"/>
-                <ListenerInputTypeSemantic listenerTypeValue="semanticAction" id="110:525">
-                    <SemanticInput id="110:526"/>
-                </ListenerInputTypeSemantic>
-                <ListenerViewModelChange id="110:527">
-                    <BindablePropertyBoolean id="110:528">
-                        <DataBindContext sourcePathIds="110:223-110:228" propertyKey="634" direction="true" id="110:529"/>
-                    </BindablePropertyBoolean>
-                </ListenerViewModelChange>
-                <ListenerViewModelChange id="110:530">
-                    <BindablePropertyBoolean id="110:531">
-                        <DataBindContext sourcePathIds="110:223-110:232" propertyKey="634" direction="true" id="110:532"/>
-                    </BindablePropertyBoolean>
-                </ListenerViewModelChange>
-                <ListenerViewModelChange id="110:533">
-                    <BindablePropertyBoolean id="110:534">
-                        <DataBindContext sourcePathIds="110:223-110:231-63:244" propertyKey="634" direction="true" id="110:535"/>
-                    </BindablePropertyBoolean>
-                </ListenerViewModelChange>
-            </StateMachineListener>
-            <StateMachineLayer name="Open" id="110:536">
-                <AnimationState animationId="110:352" x="160" stateName="Shown" id="110:354"/>
-                <AnimationState animationId="110:353" x="300" y="100" stateName="Hidden" id="110:355"/>
-                <AnyState x="400" id="110:537">
-                    <StateTransition stateToId="110:354" id="110:538">
-                        <TransitionViewModelCondition id="110:539">
-                            <TransitionPropertyViewModelComparator id="110:540">
-                                <BindablePropertyBoolean id="110:541">
-                                    <DataBindContext sourcePathIds="110:223-110:228" propertyKey="634" id="110:542"/>
-                                </BindablePropertyBoolean>
-                            </TransitionPropertyViewModelComparator>
-                            <TransitionValueBooleanComparator value="true" id="110:543"/>
-                        </TransitionViewModelCondition>
-                    </StateTransition>
-                    <StateTransition stateToId="110:355" id="110:544">
-                        <TransitionViewModelCondition id="110:545">
-                            <TransitionPropertyViewModelComparator id="110:546">
-                                <BindablePropertyBoolean id="110:547">
-                                    <DataBindContext sourcePathIds="110:223-110:228" propertyKey="634" id="110:548"/>
-                                </BindablePropertyBoolean>
-                            </TransitionPropertyViewModelComparator>
-                            <TransitionValueBooleanComparator id="110:549"/>
-                        </TransitionViewModelCondition>
-                    </StateTransition>
-                </AnyState>
+            <StateMachineLayer name="Layer 1" id="110:536">
+                <AnimationState animationId="110:352" x="160" id="110:354"/>
+                <AnyState x="400" id="110:537"/>
                 <ExitState x="480" id="110:550"/>
                 <EntryState id="110:551">
                     <StateTransition stateToId="110:354" id="110:552"/>
                 </EntryState>
             </StateMachineLayer>
         </StateMachine>
-        <LinearAnimation duration="9" name="Shown" id="110:352">
-            <KeyedObject objectId="110:340" id="110:555">
-                <KeyedProperty property="opacity" id="110:556">
-                    <KeyFrameDouble interpolationType="linear" id="110:553"/>
-                    <KeyFrameDouble value="1" interpolationType="linear" frame="9" id="110:554"/>
-                </KeyedProperty>
-            </KeyedObject>
-            <KeyedObject objectId="110:341" id="110:558">
-                <KeyedProperty property="displayValue" id="110:559">
-                    <KeyFrameUint id="110:557"/>
-                </KeyedProperty>
-            </KeyedObject>
-        </LinearAnimation>
-        <LinearAnimation duration="9" name="Hidden" id="110:353">
-            <KeyedObject objectId="110:340" id="110:562">
-                <KeyedProperty property="opacity" id="110:563">
-                    <KeyFrameDouble value="1" interpolationType="linear" id="110:560"/>
-                    <KeyFrameDouble interpolationType="linear" frame="9" id="110:561"/>
-                </KeyedProperty>
-            </KeyedObject>
-            <KeyedObject objectId="110:341" id="110:566">
-                <KeyedProperty property="displayValue" id="110:567">
-                    <KeyFrameUint id="110:564"/>
-                    <KeyFrameUint value="1" frame="9" id="110:565"/>
-                </KeyedProperty>
-            </KeyedObject>
-        </LinearAnimation>
+        <LinearAnimation name="Timeline 1" id="110:352"/>
     </Artboard>
 </Rive>
