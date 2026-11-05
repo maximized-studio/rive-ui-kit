@@ -9,24 +9,24 @@
                     <TextStylePaint fontAssetId="0:7" familyName="Inter" styleName="Medium" id="1:1198">
                         <Fill id="1:1199">
                             <SolidColor colorValue="FFEFF6FF" id="1:1200">
-                                <DataBindContext sourcePathIds="1:1211-10:3120-10:2092" propertyKey="37" id="10:8473"/>
+                                <DataBindContext sourcePathIds="1:1211-10:3120-10:2092" propertyKey="37" nameBased="true" id="10:8473"/>
                             </SolidColor>
                         </Fill>
                         <TextStyleAxis tag="1869640570" axisValue="14" id="1:1201"/>
                         <TextStyleAxis tag="2003265652" axisValue="500" id="1:1202"/>
                     </TextStylePaint>
                     <TextValueRun styleId="1:1198" text="1" id="1:1203">
-                        <DataBindContext sourcePathIds="1:1211-1:1213" propertyKey="268" id="1:1215"/>
+                        <DataBindContext sourcePathIds="1:1211-1:1213" propertyKey="268" nameBased="true" id="1:1215"/>
                     </TextValueRun>
                 </Text>
                 <LayoutComponentStyle edgeConstraints="16" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="1:1207"/>
             </LayoutComponent>
             <LayoutComponentStyle edgeConstraints="16" layoutAlignmentType="center" cornerRadiusTL="999" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="1:1205">
-                <DataBindContext sourcePathIds="1:1211-10:3120-10:2086" propertyKey="640" converterId="10:6479" id="10:6536"/>
+                <DataBindContext sourcePathIds="1:1211-10:3120-10:2086" propertyKey="640" nameBased="true" converterId="10:6479" id="10:6536"/>
             </LayoutComponentStyle>
             <Fill id="1:1208">
                 <SolidColor colorValue="FF2563EB" id="1:1209">
-                    <DataBindContext sourcePathIds="1:1211-10:3120-10:2104" propertyKey="37" id="10:4"/>
+                    <DataBindContext sourcePathIds="1:1211-10:3120-10:2104" propertyKey="37" nameBased="true" id="10:4"/>
                 </SolidColor>
             </Fill>
             <SemanticData role="text" name="Semantics" id="2:66">
