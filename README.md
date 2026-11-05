@@ -13,8 +13,8 @@ The kit is also on the [Rive Community](https://rive.app/community/files/25701-5
 - **Actions:** Button · Button Group
 - **Display:** Accordion · Avatar · Badge · Label
 - **Inputs:** Checkbox / Checkbox Group · Dropdown · Radio Option / Radio Group · Slider · Switch / Switch List
-- **Navigation:** Pagination
-- **Building blocks:** Accordion Item · List Item · Nav Group · Nav Item · Page Item · Segment · Segmented Control · Showcase Section · Sidebar · Slide · Tile · Toolbar
+- **Navigation:** Breadcrumbs · Pagination
+- **Building blocks:** Accordion Item · Breadcrumb Item · List Item · Nav Group · Nav Item · Page Item · Segment · Segmented Control · Showcase Section · Sidebar · Slide · Tile · Toolbar
 
 Categories and the components in them are sorted A–Z. In the Showcase a category is data: a `ShowcaseSection` (title, tile list; the count is the list length) in `sections`, and a `NavGroup` in the Sidebar's `sections`.
 
@@ -29,6 +29,7 @@ The components carry Rive semantics, so screen readers get a real accessibility 
 | Accordion | `group` / `button` per item | label; item title, expanded |
 | Avatar | `image` | label |
 | Badge, Label | `text` | text |
+| Breadcrumbs | `group` / `link` per item, `text` for the current page | label; item label, "Current page" |
 | Button, Dropdown, Page Item | `button` | label (the page number) |
 | Button Group, Checkbox Group, Pagination, Switch List | `group` | group label |
 | Checkbox | `checkbox` | label, checked |
@@ -51,6 +52,15 @@ A card of collapsible items; several can be open at once.
 - `AccordionItem`: `title`, `body`, `open`. Clicking the header (or a screen reader's activate) toggles `open`; the body grows open with a short layout animation and the chevron turns.
 - Each header is a `button` that reports expanded or collapsed.
 
+## Breadcrumbs
+
+A trail of links to the pages above the current one: `Home › Components › Navigation`.
+
+- View model `Breadcrumbs`: `items` (a list of `BreadcrumbItem`), `selected` (written when a link is clicked: the item's position, `0` for the first; `-1` until then), `selection` (a shared `BreadcrumbSelection`), `label` (screen reader name), `a11yHidden`, `theme`.
+- `BreadcrumbItem`: `label`, `current`, `selection`. Set `current` on the last item: it stands out in semibold text, is not clickable and is read as the current page. The other items are muted links that get a soft background on hover, like a button. A separator sits between items, never before the first.
+- Point `selection` of every item at the same `BreadcrumbSelection` instance as the `Breadcrumbs` (as with Radio Group). Clicks write it and the component copies the value into `selected`.
+- Listen to `selected` in your app to navigate, then replace `items` with the new trail.
+
 ## Button Group
 
 A row of kit Buttons joined into one control: the outer corners follow the theme roundness, the inner corners are square, and the group casts one shadow. Primary and secondary Buttons both work and may be mixed.
@@ -70,7 +80,7 @@ Previous and next Buttons around up to seven page buttons. Set two numbers and t
 
 ## Pointer cursor
 
-A canvas can't change the mouse cursor by itself, so the kit tells your app when to. `theme/cursorPointer` (a boolean on the shared Theme view model) is `true` while the pointer is over something clickable: an accordion header, a button, checkbox, dropdown and its items, nav group header, nav item, page item, radio option, segment, slider, switch or tile. Disabled controls leave it `false`. The path below is the Showcase's; in your own artboard it is wherever your view model holds the Theme.
+A canvas can't change the mouse cursor by itself, so the kit tells your app when to. `theme/cursorPointer` (a boolean on the shared Theme view model) is `true` while the pointer is over something clickable: an accordion header, a breadcrumb link, a button, checkbox, dropdown and its items, nav group header, nav item, page item, radio option, segment, slider, switch or tile. Disabled controls leave it `false`. The path below is the Showcase's; in your own artboard it is wherever your view model holds the Theme.
 
 ```js
 const flag = rive.viewModelInstance.boolean("theme/cursorPointer");
