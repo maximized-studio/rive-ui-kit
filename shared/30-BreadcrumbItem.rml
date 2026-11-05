@@ -1,5 +1,5 @@
 <Rive version="1" kind="fragment">
-    <Artboard defaultStateMachineId="111:89" viewModelId="111:1" viewModelInstanceId="111:20" isComponent="true" includeInExport="false" spaceId="1:5601" width="120" height="24" styleId="111:88" y="550" name="Breadcrumb Item" id="111:87">
+    <Artboard defaultStateMachineId="111:89" viewModelId="111:1" viewModelInstanceId="111:20" isComponent="true" includeInExport="false" spaceId="1:5601" width="120" height="24" styleId="111:88" x="600" y="550" name="Breadcrumb Item" id="111:87">
         <Fill fillRule="clockwise" id="111:103">
             <SolidColor colorValue="00000000" id="111:104"/>
         </Fill>
