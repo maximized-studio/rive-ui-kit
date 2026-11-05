@@ -1,6 +1,6 @@
 <Rive version="1" kind="fragment">
-    <Artboard defaultStateMachineId="10:115" viewModelId="10:84" viewModelInstanceId="10:5260" includeInExport="false" spaceId="1:5601" clip="true" width="1440" height="1024" styleId="10:113" x="-1640" name="Showcase" id="10:110">
-        <Image assetId="42:629" x="720" y="512" opacity="0" name="Cover (thumbnail only)" id="10:15633"/>
+    <Artboard defaultStateMachineId="10:115" viewModelId="10:84" viewModelInstanceId="10:5260" includeInExport="false" spaceId="1:5601" clip="true" width="1440" height="1080" styleId="10:113" x="-1640" name="Showcase" id="10:110">
+        <Image assetId="42:629" x="720" y="540" opacity="0" name="Cover (thumbnail only)" id="10:15633"/>
         <LayoutComponent width="240" styleId="42:466" name="Toolbar Slot" id="42:465">
             <LayoutComponentStyle layoutHeightScaleType="fill" heightUnitsValue="auto" id="42:466"/>
             <LayoutComponent width="240" styleId="114:503" name="Toolbar Panel" id="114:502">
@@ -32,7 +32,7 @@
                         <ScrollConstraint physicsId="10:1711" id="10:1708"/>
                         <ForegroundLayoutDrawable name="Fills and Strokes Foreground" id="10:15775">
                             <Fill fillRule="clockwise" id="10:15778">
-                                <LinearGradient startY="816.37347" endY="948.23114" id="10:15780">
+                                <LinearGradient startY="872.37347" endY="1004.2311" id="10:15780">
                                     <GradientStop colorValue="0009090B" id="10:15781">
                                         <DataBindContext sourcePathIds="10:84-10:2850-10:7404" propertyKey="38" id="10:15786"/>
                                     </GradientStop>
