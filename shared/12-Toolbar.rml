@@ -670,6 +670,90 @@
                     </NestedArtboardLayout>
                     <LayoutComponentStyle gapVertical="8" flexDirectionValue="column" intrinsicallySizedValue="true" layoutWidthScaleType="fill" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="15:450"/>
                 </LayoutComponent>
+                <LayoutComponent styleId="115:72" name="Group Canvas" id="115:21">
+                    <LayoutComponent styleId="115:69" name="Canvas Label" id="115:22">
+                        <LayoutComponent styleId="115:39" name="Tip Overlay" id="115:23">
+                            <LayoutComponent width="240" height="240" styleId="115:34" name="Bubble Area" id="115:24">
+                                <NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="112:188" isStateful="true" name="Tooltip" id="115:25">
+                                    <NestedStateMachine animationId="112:190" id="115:26"/>
+                                    <ViewModelInstance viewModelId="112:1" exports="true" name="Canvas Tooltip" id="115:27">
+                                        <ViewModelInstanceString propertyValue="Checkerboard behind the component" viewModelPropertyId="112:2" id="115:28"/>
+                                        <ViewModelInstanceNumber propertyValue="2" viewModelPropertyId="112:3" id="115:29"/>
+                                        <ViewModelInstanceBoolean viewModelPropertyId="112:4" id="115:30">
+                                            <DataBindContext sourcePathIds="38:815-115:3" propertyKey="593" nameBased="true" id="115:31"/>
+                                        </ViewModelInstanceBoolean>
+                                        <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="112:5" id="115:32"/>
+                                        <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="112:6" id="115:33"/>
+                                    </ViewModelInstance>
+                                </NestedArtboardLayout>
+                                <LayoutComponentStyle layoutAlignmentType="centerRight" id="115:34"/>
+                            </LayoutComponent>
+                            <LayoutComponent width="100" height="100" styleId="115:36" name="Spacer" id="115:35">
+                                <LayoutComponentStyle widthUnitsValue="percent" heightUnitsValue="percent" id="115:36"/>
+                            </LayoutComponent>
+                            <LayoutComponent width="240" height="240" styleId="115:38" name="Mirror" id="115:37">
+                                <LayoutComponentStyle id="115:38"/>
+                            </LayoutComponent>
+                            <LayoutComponentStyle gapHorizontal="4" gapVertical="4" positionLeftUnitsValue="points" positionRightUnitsValue="points" positionTopUnitsValue="points" positionBottomUnitsValue="points" layoutAlignmentType="center" positionTypeValue="absolute" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="115:39"/>
+                        </LayoutComponent>
+                        <LayoutComponent styleId="115:68" name="Label Hit" id="115:40">
+                            <Text id="115:41">
+                                <TextStylePaint fontAssetId="0:7" familyName="Inter" styleName="Bold" id="115:42">
+                                    <Fill fillRule="clockwise" id="115:43">
+                                        <SolidColor colorValue="FFA1A1AA" id="115:44">
+                                            <DataBindContext sourcePathIds="38:815-38:817-10:7426" propertyKey="37" nameBased="true" id="115:45"/>
+                                        </SolidColor>
+                                    </Fill>
+                                    <TextStyleAxis tag="1869640570" axisValue="14" id="115:46"/>
+                                    <TextStyleAxis tag="2003265652" axisValue="700" id="115:47"/>
+                                </TextStylePaint>
+                                <TextValueRun styleId="115:42" text="Canvas" id="115:48"/>
+                                <LayoutParticipant layoutWidthScaleType="hug" layoutHeightScaleType="hug" id="115:49"/>
+                            </Text>
+                            <LayoutComponent width="12" height="12" styleId="115:67" name="Info Icon" id="115:50">
+                                <Node name="Art" id="115:51">
+                                    <Shape x="6" y="6" name="Ring" id="115:52">
+                                        <Ellipse width="10.5" height="10.5" id="115:53"/>
+                                        <Stroke thickness="1.25" id="115:54">
+                                            <SolidColor colorValue="FFA1A1AA" id="115:55">
+                                                <DataBindContext sourcePathIds="38:815-38:817-10:7426" propertyKey="37" nameBased="true" id="115:56"/>
+                                            </SolidColor>
+                                        </Stroke>
+                                    </Shape>
+                                    <Shape x="6" y="3.9000001" name="Dot" id="115:57">
+                                        <Ellipse width="1.6" height="1.6" id="115:58"/>
+                                        <Fill fillRule="clockwise" id="115:59">
+                                            <SolidColor colorValue="FFA1A1AA" id="115:60">
+                                                <DataBindContext sourcePathIds="38:815-38:817-10:7426" propertyKey="37" nameBased="true" id="115:61"/>
+                                            </SolidColor>
+                                        </Fill>
+                                    </Shape>
+                                    <Shape x="6" y="7" name="Stem" id="115:62">
+                                        <Rectangle cornerRadiusTL="0.64999998" width="1.3" height="3.5999999" id="115:63"/>
+                                        <Fill fillRule="clockwise" id="115:64">
+                                            <SolidColor colorValue="FFA1A1AA" id="115:65">
+                                                <DataBindContext sourcePathIds="38:815-38:817-10:7426" propertyKey="37" nameBased="true" id="115:66"/>
+                                            </SolidColor>
+                                        </Fill>
+                                    </Shape>
+                                </Node>
+                                <LayoutComponentStyle id="115:67"/>
+                            </LayoutComponent>
+                            <LayoutComponentStyle gapHorizontal="6" layoutAlignmentType="centerLeft" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="115:68"/>
+                        </LayoutComponent>
+                        <LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="115:69"/>
+                    </LayoutComponent>
+                    <LayoutComponent clip="true" height="32" styleId="115:73" name="Canvas Slider Slot" id="115:76">
+                        <LayoutComponentStyle layoutWidthScaleType="fill" widthUnitsValue="auto" id="115:73"/>
+                        <LayoutComponent styleId="115:75" name="Track Pin" id="115:74">
+                            <LayoutComponentStyle positionBottom="8" positionLeftUnitsValue="points" positionBottomUnitsValue="points" positionTypeValue="absolute" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="115:75"/>
+                            <NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="1:1870" dataBindPathIds="38:815-115:1" name="Slider" id="115:77">
+                                <NestedStateMachine animationId="1:1875" id="115:78"/>
+                            </NestedArtboardLayout>
+                        </LayoutComponent>
+                    </LayoutComponent>
+                    <LayoutComponentStyle gapVertical="8" flexDirectionValue="column" intrinsicallySizedValue="true" layoutWidthScaleType="fill" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="115:72"/>
+                </LayoutComponent>
             </LayoutComponent>
         </LayoutComponent>
         <LayoutComponent width="1" height="1" styleId="10:2853" name="Divider" id="10:2852">
@@ -758,6 +842,22 @@
                 <ListenerViewModelChange id="113:253">
                     <BindablePropertyBoolean propertyValue="true" id="113:254">
                         <DataBindContext sourcePathIds="38:815-113:5" propertyKey="634" direction="true" id="113:255"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListener targetId="115:40" name="Canvas Tip Off" id="115:79">
+                <ListenerInputType listenerTypeValue="exit" id="115:80"/>
+                <ListenerViewModelChange id="115:81">
+                    <BindablePropertyBoolean id="115:82">
+                        <DataBindContext sourcePathIds="38:815-115:3" propertyKey="634" direction="true" id="115:83"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListener targetId="115:40" name="Canvas Tip On" id="115:84">
+                <ListenerInputType id="115:85"/>
+                <ListenerViewModelChange id="115:86">
+                    <BindablePropertyBoolean propertyValue="true" id="115:87">
+                        <DataBindContext sourcePathIds="38:815-115:3" propertyKey="634" direction="true" id="115:88"/>
                     </BindablePropertyBoolean>
                 </ListenerViewModelChange>
             </StateMachineListener>
@@ -861,6 +961,15 @@
                     <BindablePropertyBoolean propertyValue="true" id="63:393">
                         <DataBindContext sourcePathIds="38:815-38:817-63:244" propertyKey="634" direction="true" id="63:394"/>
                     </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListener targetId="10:2114" name="Sync canvas" id="117:3">
+                <ListenerInputTypeViewModel viewModelPathIds="38:815-115:1-1:1962" listenerTypeValue="viewModel" id="117:4"/>
+                <ListenerViewModelChange fromViewModelProperty="true" fromDataBindId="117:5" id="117:6">
+                    <BindablePropertyNumber id="117:7">
+                        <DataBindContext sourcePathIds="38:815-115:1-1:1962" propertyKey="636" id="117:5"/>
+                        <DataBindContext sourcePathIds="38:815-38:817-117:1" propertyKey="636" direction="true" id="117:8"/>
+                    </BindablePropertyNumber>
                 </ListenerViewModelChange>
             </StateMachineListener>
             <StateMachineListener targetId="10:2114" name="Sync state" id="39:853">

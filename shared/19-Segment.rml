@@ -16,7 +16,7 @@
                             <CubicMirroredVertex rotation="-2.8717665e-16" distance="3.0927947" x="-1.0287033e-15" y="-5.5999999" id="38:534"/>
                             <CubicDetachedVertex inRotation="-1.5707964" inDistance="3.0927947" x="5.5999999" y="-1.3716044e-15" id="38:535"/>
                         </PointsPath>
-                        <PointsPath isClosed="true" id="38:536">
+                        <PointsPath id="38:536">
                             <StraightVertex x="-3.9597979" y="-3.9597979" id="38:537"/>
                             <StraightVertex x="3.9597979" y="3.9597979" id="38:538"/>
                         </PointsPath>
@@ -35,7 +35,7 @@
                             <CubicMirroredVertex rotation="-2.8717665e-16" distance="3.0927947" x="-1.0287033e-15" y="-5.5999999" id="38:520"/>
                             <CubicDetachedVertex inRotation="-1.5707964" inDistance="3.0927947" x="5.5999999" y="-1.3716044e-15" id="38:521"/>
                         </PointsPath>
-                        <PointsPath isClosed="true" isClockwise="false" id="38:522">
+                        <PointsPath isClockwise="false" id="38:522">
                             <StraightVertex x="-2.5999999" y="0.2" id="38:523"/>
                             <StraightVertex x="-0.69999999" y="2.0999999" id="38:524"/>
                             <StraightVertex x="2.8" y="-1.6" id="38:525"/>

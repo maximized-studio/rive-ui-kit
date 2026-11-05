@@ -174,4 +174,4 @@ The editor file is the source of truth. After editing in Rive, run `./pull.sh` b
 
 ## License
 
-[MIT](LICENSE) © Maximized Studio. The preview font `preview-assets/Inter.ttf` is licensed under the SIL Open Font License.
+[MIT](LICENSE) © Maximized Studio. The preview font `preview-assets/Inter.ttf` is licensed under the SIL Open Font License. The copy, scissors, clipboard and save icons are redrawn from [Lucide](https://lucide.dev) (ISC License, © Lucide Contributors).
