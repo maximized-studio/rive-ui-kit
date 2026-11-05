@@ -1359,6 +1359,7 @@
                         <ViewModelInstanceListItem viewModelId="10:3612" viewModelInstanceId="10:4622" id="10:5298"/>
                         <ViewModelInstanceListItem viewModelId="10:3612" viewModelInstanceId="10:4631" id="10:5299"/>
                         <ViewModelInstanceListItem viewModelId="10:3612" viewModelInstanceId="10:4640" id="10:5300"/>
+                        <ViewModelInstanceListItem viewModelId="10:3612" viewModelInstanceId="98:753" id="99:1"/>
                     </ViewModelInstanceList>
                     <ViewModelInstanceList viewModelPropertyId="10:4575" id="10:5285">
                         <ViewModelInstanceListItem viewModelId="10:3612" viewModelInstanceId="10:4649" id="10:5301"/>
@@ -1373,6 +1374,7 @@
                         <ViewModelInstanceListItem viewModelId="10:5163" viewModelInstanceId="10:5218" id="10:5307"/>
                         <ViewModelInstanceListItem viewModelId="10:5163" viewModelInstanceId="10:5225" id="10:5308"/>
                         <ViewModelInstanceListItem viewModelId="10:5163" viewModelInstanceId="10:5232" id="10:5309"/>
+                        <ViewModelInstanceListItem viewModelId="10:5163" viewModelInstanceId="98:762" id="99:2"/>
                         <ViewModelInstanceListItem viewModelId="10:5163" viewModelInstanceId="10:5239" id="10:5310"/>
                         <ViewModelInstanceListItem viewModelId="10:5163" viewModelInstanceId="10:5246" id="10:5311"/>
                         <ViewModelInstanceListItem viewModelId="10:5163" viewModelInstanceId="10:5253" id="10:5312"/>
@@ -1408,7 +1410,6 @@
                     <ViewModelInstanceString propertyValue="Button Group" viewModelPropertyId="10:3614" id="98:754"/>
                     <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="10:3657" id="98:755"/>
                     <ViewModelInstanceList viewModelPropertyId="10:3861" id="98:756">
-                        <ViewModelInstanceListItem viewModelId="1:151" viewModelInstanceId="1:152" id="98:757"/>
                         <ViewModelInstanceListItem viewModelId="92:606" viewModelInstanceId="92:670" id="98:761"/>
                     </ViewModelInstanceList>
                     <ViewModelInstanceBoolean viewModelPropertyId="10:4507" id="98:758"/>
@@ -3638,6 +3639,7 @@
                 <ViewModelInstanceListItem name="Nav Dropdown" viewModelId="41:862" viewModelInstanceId="42:285" id="42:314"/>
                 <ViewModelInstanceListItem name="Nav Radio Group" viewModelId="41:862" viewModelInstanceId="42:291" id="42:315"/>
                 <ViewModelInstanceListItem name="Nav Checkbox Group" viewModelId="41:862" viewModelInstanceId="42:297" id="42:316"/>
+                <ViewModelInstanceListItem name="Nav Button Group" viewModelId="41:862" viewModelInstanceId="98:770" id="99:3"/>
             </ViewModelInstanceList>
             <ViewModelInstanceBoolean viewModelPropertyId="41:888" id="42:309"/>
             <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="41:890" id="42:310"/>

@@ -172,6 +172,7 @@
                 <DataBindContext sourcePathIds="1:913-7:30" propertyKey="1004" nameBased="true" id="7:83"/>
                 <DataBindContext sourcePathIds="1:913-7:25" propertyKey="1002" nameBased="true" id="7:84"/>
             </SemanticData>
+            <FocusData name="Focus" id="0:15798"/>
         </LayoutComponent>
         <LayoutComponentStyle layoutAlignmentType="center" intrinsicallySizedValue="true" layoutWidthScaleType="hug" widthUnitsValue="auto" id="1:666"/>
         <StateMachine name="State Machine 1" id="1:668">

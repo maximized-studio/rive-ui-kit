@@ -243,6 +243,7 @@
                     <DataBindContext sourcePathIds="1:1932-7:37" propertyKey="1004" nameBased="true" id="7:81"/>
                     <DataBindContext sourcePathIds="1:1932-7:35" propertyKey="1002" nameBased="true" id="7:82"/>
                 </SemanticData>
+                <FocusData name="Focus" id="0:15799"/>
             </LayoutComponent>
             <LayoutComponentStyle gapVertical="8" flexDirectionValue="column" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="1:2185"/>
         </LayoutComponent>

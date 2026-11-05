@@ -134,6 +134,7 @@
                 <DataBindContext sourcePathIds="1:949-7:20" propertyKey="1004" nameBased="true" id="7:79"/>
                 <DataBindContext sourcePathIds="1:949-7:15" propertyKey="1002" nameBased="true" id="7:80"/>
             </SemanticData>
+            <FocusData name="Focus" id="0:15794"/>
         </LayoutComponent>
         <StateMachine name="State Machine 1" id="1:21">
             <StateMachineListener targetId="1:28" name="Cursor Off" id="63:263">
