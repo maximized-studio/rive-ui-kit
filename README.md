@@ -109,7 +109,7 @@ Previous and next Buttons around up to seven page buttons. Set two numbers and t
 - Up to seven pages are shown as they are. With more, the row keeps the first and last page and three around the current one, with `…` for the gaps: `1 … 4 5 6 … 20`, `1 2 3 4 5 … 20`, `1 … 16 17 18 19 20`.
 - Previous and next step by one and are disabled on the first and last page.
 - Listen to `page` in your app to load that page.
-- The behaviour is a small Luau script, **Pagination Pages**: it fills the `_pages` list of Page Items and sets the disabled flags. Luau runs in the editor and in every Rive runtime; like any script, it needs a signed `.riv` (exports and `--publish` are signed) and does not run in a Community thumbnail.
+- The behaviour is a small Luau script, **Pagination Pages**: it fills the `_pages` list of Page Items and sets the disabled flags. Luau runs in the editor and in the Rive runtimes. Use a `.riv` exported from the editor or built with `rive --publish`: a plain CLI build (`--once`) does not run scripts. Like every script, it does not run in a Community thumbnail.
 
 ## Tooltip
 
