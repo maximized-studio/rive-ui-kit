@@ -54,12 +54,12 @@
                             <DataBindContext sourcePathIds="112:7-112:11" propertyKey="593" nameBased="true" id="112:346"/>
                         </ViewModelInstanceBoolean>
                         <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="10:3108" id="112:347"/>
-                        <ViewModelInstanceNumber viewModelPropertyId="118:1" id="118:230"/>
                         <ViewModelInstanceNumber propertyValue="7" viewModelPropertyId="33:164" id="112:349">
                             <DataBindContext sourcePathIds="112:7-117:265" propertyKey="575" nameBased="true" id="117:268"/>
                         </ViewModelInstanceNumber>
                         <ViewModelInstanceBoolean viewModelPropertyId="33:169" id="112:350"/>
                         <ViewModelInstanceNumber viewModelPropertyId="99:100" id="112:351"/>
+                        <ViewModelInstanceNumber viewModelPropertyId="118:1" id="118:230"/>
                     </ViewModelInstance>
                 </NestedArtboardLayout>
                 <LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="112:313"/>
