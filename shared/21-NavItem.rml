@@ -57,6 +57,23 @@
             </KeyedObject>
         </LinearAnimation>
         <StateMachine name="State Machine 1" id="41:903">
+            <StateMachineListener targetId="41:910" name="Cursor Off" id="63:351">
+                <ListenerInputType listenerTypeValue="exit" id="63:352"/>
+                <ListenerViewModelChange id="63:353">
+                    <BindablePropertyBoolean id="63:354">
+                        <DataBindContext sourcePathIds="41:862-41:876-63:244" propertyKey="634" direction="true" id="63:355"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListener targetId="41:910" name="Cursor On" id="63:345">
+                <ListenerInputType id="63:346"/>
+                <ListenerInputType listenerTypeValue="move" id="63:347"/>
+                <ListenerViewModelChange id="63:348">
+                    <BindablePropertyBoolean propertyValue="true" id="63:349">
+                        <DataBindContext sourcePathIds="41:862-41:876-63:244" propertyKey="634" direction="true" id="63:350"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
             <StateMachineListener targetId="41:910" name="Hover Off" id="42:59">
                 <ListenerInputType listenerTypeValue="exit" id="42:60"/>
                 <ListenerViewModelChange id="42:61">

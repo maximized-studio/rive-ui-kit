@@ -288,6 +288,19 @@
                             </Text>
                             <LayoutComponentStyle gapHorizontal="6" paddingLeft="8" paddingRight="10" paddingTop="4" paddingBottom="4" layoutAlignmentType="center" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="42:606"/>
                         </LayoutComponent>
+                        <LayoutComponentStyle layoutAlignmentType="center" intrinsicallySizedValue="true" layoutTypeValue="stack" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="42:390"/>
+                        <LayoutComponent styleId="70:475" opacity="0" name="Left Hover" id="70:474">
+                            <Fill fillRule="clockwise" id="70:476">
+                                <SolidColor colorValue="FF3F3F46" id="70:477">
+                                    <DataBindContext sourcePathIds="10:84-10:2850-10:7422" propertyKey="37" nameBased="true" id="70:486"/>
+                                </SolidColor>
+                            </Fill>
+                            <GridItemPlacement id="70:478"/>
+                            <LayoutComponentStyle cornerRadiusTL="7" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="70:475">
+                                <DataBindContext sourcePathIds="10:84-10:2850-10:2086" propertyKey="640" nameBased="true" converterId="10:6840" id="70:485"/>
+                            </LayoutComponentStyle>
+                            <DataBindContext sourcePathIds="10:84-70:470" propertyKey="18" nameBased="true" converterId="70:510" id="70:484"/>
+                        </LayoutComponent>
                         <LayoutComponent styleId="42:395" name="Left On" id="42:394">
                             <Fill fillRule="clockwise" id="42:396">
                                 <SolidColor colorValue="FF3F3F46" id="42:397">
@@ -300,7 +313,6 @@
                             </LayoutComponentStyle>
                             <DataBindContext sourcePathIds="10:84-42:366" propertyKey="18" nameBased="true" converterId="9:145" id="42:449"/>
                         </LayoutComponent>
-                        <LayoutComponentStyle layoutAlignmentType="center" intrinsicallySizedValue="true" layoutTypeValue="stack" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="42:390"/>
                     </LayoutComponent>
                     <LayoutComponent width="36" height="30" styleId="42:400" name="Toggle Right" id="42:399">
                         <LayoutComponent styleId="42:617" name="Toggle Right Pad" id="42:616">
@@ -345,6 +357,19 @@
                                 <LayoutComponentStyle id="42:402"/>
                             </LayoutComponent>
                         </LayoutComponent>
+                        <LayoutComponent styleId="70:480" opacity="0" name="Right Hover" id="70:479">
+                            <Fill fillRule="clockwise" id="70:481">
+                                <SolidColor colorValue="FF3F3F46" id="70:482">
+                                    <DataBindContext sourcePathIds="10:84-10:2850-10:7422" propertyKey="37" nameBased="true" id="70:489"/>
+                                </SolidColor>
+                            </Fill>
+                            <GridItemPlacement id="70:483"/>
+                            <LayoutComponentStyle cornerRadiusTL="7" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="70:480">
+                                <DataBindContext sourcePathIds="10:84-10:2850-10:2086" propertyKey="640" nameBased="true" converterId="10:6840" id="70:488"/>
+                            </LayoutComponentStyle>
+                            <DataBindContext sourcePathIds="10:84-70:472" propertyKey="18" nameBased="true" converterId="70:510" id="70:487"/>
+                        </LayoutComponent>
+                        <LayoutComponentStyle layoutAlignmentType="center" intrinsicallySizedValue="true" layoutTypeValue="stack" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="42:400"/>
                         <LayoutComponent styleId="42:405" name="Right On" id="42:404">
                             <Fill fillRule="clockwise" id="42:406">
                                 <SolidColor colorValue="FF3F3F46" id="42:407">
@@ -357,7 +382,6 @@
                             </LayoutComponentStyle>
                             <DataBindContext sourcePathIds="10:84-42:368" propertyKey="18" nameBased="true" converterId="9:145" id="42:450"/>
                         </LayoutComponent>
-                        <LayoutComponentStyle layoutAlignmentType="center" intrinsicallySizedValue="true" layoutTypeValue="stack" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="42:400"/>
                     </LayoutComponent>
                 </LayoutComponent>
                 <LayoutComponentStyle flexDirectionValue="column" intrinsicallySizedValue="true" layoutWidthScaleType="fill" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="42:560"/>
@@ -509,6 +533,80 @@
             </KeyedObject>
         </LinearAnimation>
         <StateMachine name="State Machine 1" id="10:115">
+            <StateMachineListener targetId="42:399" name="Theme Hover Off" id="70:505">
+                <ListenerInputType listenerTypeValue="exit" id="70:506"/>
+                <ListenerViewModelChange id="70:507">
+                    <BindablePropertyBoolean id="70:508">
+                        <DataBindContext sourcePathIds="10:84-70:472" propertyKey="634" direction="true" id="70:509"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListener targetId="42:399" name="Theme Hover On" id="70:500">
+                <ListenerInputType id="70:501"/>
+                <ListenerViewModelChange id="70:502">
+                    <BindablePropertyBoolean propertyValue="true" id="70:503">
+                        <DataBindContext sourcePathIds="10:84-70:472" propertyKey="634" direction="true" id="70:504"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListener targetId="42:389" name="Components Hover Off" id="70:495">
+                <ListenerInputType listenerTypeValue="exit" id="70:496"/>
+                <ListenerViewModelChange id="70:497">
+                    <BindablePropertyBoolean id="70:498">
+                        <DataBindContext sourcePathIds="10:84-70:470" propertyKey="634" direction="true" id="70:499"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListener targetId="42:389" name="Components Hover On" id="70:490">
+                <ListenerInputType id="70:491"/>
+                <ListenerViewModelChange id="70:492">
+                    <BindablePropertyBoolean propertyValue="true" id="70:493">
+                        <DataBindContext sourcePathIds="10:84-70:470" propertyKey="634" direction="true" id="70:494"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListener targetId="33:7" name="Cursor Reset Back" id="63:465">
+                <ListenerInputType listenerTypeValue="click" id="63:466"/>
+                <ListenerViewModelChange id="63:467">
+                    <BindablePropertyBoolean id="63:468">
+                        <DataBindContext sourcePathIds="10:84-10:2850-63:244" propertyKey="634" direction="true" id="63:469"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListener targetId="42:399" name="Cursor Off Right" id="63:384">
+                <ListenerInputType listenerTypeValue="exit" id="63:385"/>
+                <ListenerViewModelChange id="63:386">
+                    <BindablePropertyBoolean id="63:387">
+                        <DataBindContext sourcePathIds="10:84-10:2850-63:244" propertyKey="634" direction="true" id="63:388"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListener targetId="42:399" name="Cursor On Right" id="63:378">
+                <ListenerInputType id="63:379"/>
+                <ListenerInputType listenerTypeValue="move" id="63:380"/>
+                <ListenerViewModelChange id="63:381">
+                    <BindablePropertyBoolean propertyValue="true" id="63:382">
+                        <DataBindContext sourcePathIds="10:84-10:2850-63:244" propertyKey="634" direction="true" id="63:383"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListener targetId="42:389" name="Cursor Off Left" id="63:373">
+                <ListenerInputType listenerTypeValue="exit" id="63:374"/>
+                <ListenerViewModelChange id="63:375">
+                    <BindablePropertyBoolean id="63:376">
+                        <DataBindContext sourcePathIds="10:84-10:2850-63:244" propertyKey="634" direction="true" id="63:377"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListener targetId="42:389" name="Cursor On Left" id="63:367">
+                <ListenerInputType id="63:368"/>
+                <ListenerInputType listenerTypeValue="move" id="63:369"/>
+                <ListenerViewModelChange id="63:370">
+                    <BindablePropertyBoolean propertyValue="true" id="63:371">
+                        <DataBindContext sourcePathIds="10:84-10:2850-63:244" propertyKey="634" direction="true" id="63:372"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
             <StateMachineListener targetId="42:399" name="Toggle toolbar" id="42:457">
                 <ListenerInputType listenerTypeValue="click" id="42:458"/>
                 <ListenerViewModelChange fromViewModelProperty="true" fromDataBindId="42:462" id="42:459">

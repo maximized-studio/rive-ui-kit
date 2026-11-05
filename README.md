@@ -38,6 +38,17 @@ Labels are bound to the same view model properties as the visible text, so they 
 rive build/default --semantics=$PWD/build/default.semantics.json
 ```
 
+## Pointer cursor
+
+A canvas can't change the mouse cursor by itself, so the kit tells your app when to. `theme/cursorPointer` (a boolean on the shared Theme view model) is `true` while the pointer is over something clickable: a button, switch, checkbox, radio option, slider, dropdown and its items, segment, nav item, accordion header or tile. Disabled controls leave it `false`. The path below is the Showcase's; in your own artboard it is wherever your view model holds the Theme.
+
+```js
+const flag = rive.viewModelInstance.boolean("theme/cursorPointer");
+flag.on(() => (canvas.style.cursor = flag.value ? "pointer" : ""));
+```
+
+With `@rive-app/react-*`: `useViewModelInstanceBoolean("theme/cursorPointer", rive?.viewModelInstance)` and toggle a `cursor-pointer` class. Use the same flag for a hover pointer on iPad or desktop apps.
+
 ## How it is organised
 
 ```

@@ -386,6 +386,108 @@
             </LayoutComponent>
         </LayoutComponent>
         <StateMachine name="State Machine 1" id="10:2119">
+            <StateMachineListener targetId="10:2227" name="Cursor Off Zinc" id="63:450">
+                <ListenerInputType listenerTypeValue="exit" id="63:451"/>
+                <ListenerViewModelChange id="63:452">
+                    <BindablePropertyBoolean id="63:453">
+                        <DataBindContext sourcePathIds="38:815-38:817-63:244" propertyKey="634" direction="true" id="63:454"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListener targetId="10:2227" name="Cursor On Zinc" id="63:444">
+                <ListenerInputType id="63:445"/>
+                <ListenerInputType listenerTypeValue="move" id="63:446"/>
+                <ListenerViewModelChange id="63:447">
+                    <BindablePropertyBoolean propertyValue="true" id="63:448">
+                        <DataBindContext sourcePathIds="38:815-38:817-63:244" propertyKey="634" direction="true" id="63:449"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListener targetId="10:2210" name="Cursor Off Rose" id="63:439">
+                <ListenerInputType listenerTypeValue="exit" id="63:440"/>
+                <ListenerViewModelChange id="63:441">
+                    <BindablePropertyBoolean id="63:442">
+                        <DataBindContext sourcePathIds="38:815-38:817-63:244" propertyKey="634" direction="true" id="63:443"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListener targetId="10:2210" name="Cursor On Rose" id="63:433">
+                <ListenerInputType id="63:434"/>
+                <ListenerInputType listenerTypeValue="move" id="63:435"/>
+                <ListenerViewModelChange id="63:436">
+                    <BindablePropertyBoolean propertyValue="true" id="63:437">
+                        <DataBindContext sourcePathIds="38:815-38:817-63:244" propertyKey="634" direction="true" id="63:438"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListener targetId="10:2193" name="Cursor Off Orange" id="63:428">
+                <ListenerInputType listenerTypeValue="exit" id="63:429"/>
+                <ListenerViewModelChange id="63:430">
+                    <BindablePropertyBoolean id="63:431">
+                        <DataBindContext sourcePathIds="38:815-38:817-63:244" propertyKey="634" direction="true" id="63:432"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListener targetId="10:2193" name="Cursor On Orange" id="63:422">
+                <ListenerInputType id="63:423"/>
+                <ListenerInputType listenerTypeValue="move" id="63:424"/>
+                <ListenerViewModelChange id="63:425">
+                    <BindablePropertyBoolean propertyValue="true" id="63:426">
+                        <DataBindContext sourcePathIds="38:815-38:817-63:244" propertyKey="634" direction="true" id="63:427"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListener targetId="10:2176" name="Cursor Off Emerald" id="63:417">
+                <ListenerInputType listenerTypeValue="exit" id="63:418"/>
+                <ListenerViewModelChange id="63:419">
+                    <BindablePropertyBoolean id="63:420">
+                        <DataBindContext sourcePathIds="38:815-38:817-63:244" propertyKey="634" direction="true" id="63:421"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListener targetId="10:2176" name="Cursor On Emerald" id="63:411">
+                <ListenerInputType id="63:412"/>
+                <ListenerInputType listenerTypeValue="move" id="63:413"/>
+                <ListenerViewModelChange id="63:414">
+                    <BindablePropertyBoolean propertyValue="true" id="63:415">
+                        <DataBindContext sourcePathIds="38:815-38:817-63:244" propertyKey="634" direction="true" id="63:416"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListener targetId="10:2159" name="Cursor Off Violet" id="63:406">
+                <ListenerInputType listenerTypeValue="exit" id="63:407"/>
+                <ListenerViewModelChange id="63:408">
+                    <BindablePropertyBoolean id="63:409">
+                        <DataBindContext sourcePathIds="38:815-38:817-63:244" propertyKey="634" direction="true" id="63:410"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListener targetId="10:2159" name="Cursor On Violet" id="63:400">
+                <ListenerInputType id="63:401"/>
+                <ListenerInputType listenerTypeValue="move" id="63:402"/>
+                <ListenerViewModelChange id="63:403">
+                    <BindablePropertyBoolean propertyValue="true" id="63:404">
+                        <DataBindContext sourcePathIds="38:815-38:817-63:244" propertyKey="634" direction="true" id="63:405"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListener targetId="10:2142" name="Cursor Off Blue" id="63:395">
+                <ListenerInputType listenerTypeValue="exit" id="63:396"/>
+                <ListenerViewModelChange id="63:397">
+                    <BindablePropertyBoolean id="63:398">
+                        <DataBindContext sourcePathIds="38:815-38:817-63:244" propertyKey="634" direction="true" id="63:399"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListener targetId="10:2142" name="Cursor On Blue" id="63:389">
+                <ListenerInputType id="63:390"/>
+                <ListenerInputType listenerTypeValue="move" id="63:391"/>
+                <ListenerViewModelChange id="63:392">
+                    <BindablePropertyBoolean propertyValue="true" id="63:393">
+                        <DataBindContext sourcePathIds="38:815-38:817-63:244" propertyKey="634" direction="true" id="63:394"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
             <StateMachineListener targetId="10:2114" name="Sync state" id="39:853">
                 <ListenerInputTypeViewModel viewModelPathIds="38:815-38:825-38:356-38:332" listenerTypeValue="viewModel" id="39:854"/>
                 <ListenerViewModelChange fromViewModelProperty="true" fromDataBindId="39:858" id="39:855">

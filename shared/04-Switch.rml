@@ -175,6 +175,23 @@
         </LayoutComponent>
         <LayoutComponentStyle layoutAlignmentType="center" intrinsicallySizedValue="true" layoutWidthScaleType="hug" widthUnitsValue="auto" id="1:666"/>
         <StateMachine name="State Machine 1" id="1:668">
+            <StateMachineListener targetId="1:2166" name="Cursor Off" id="63:285">
+                <ListenerInputType listenerTypeValue="exit" id="63:286"/>
+                <ListenerViewModelChange id="63:287">
+                    <BindablePropertyBoolean id="63:288">
+                        <DataBindContext sourcePathIds="1:913-10:3114-63:244" propertyKey="634" direction="true" id="63:289"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListener targetId="1:2166" name="Cursor On" id="63:279">
+                <ListenerInputType id="63:280"/>
+                <ListenerInputType listenerTypeValue="move" id="63:281"/>
+                <ListenerViewModelChange id="63:282">
+                    <BindablePropertyBoolean propertyValue="true" id="63:283">
+                        <DataBindContext sourcePathIds="1:913-10:3114-63:244" propertyKey="634" direction="true" id="63:284"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
             <StateMachineListener targetId="1:663" name="Preview Disabled" id="15:586">
                 <ListenerInputTypeViewModel viewModelPathIds="1:913-10:3114-15:419" listenerTypeValue="viewModel" id="15:587"/>
                 <ListenerViewModelChange fromViewModelProperty="true" fromDataBindId="15:591" id="15:588">

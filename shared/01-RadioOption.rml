@@ -136,6 +136,23 @@
             </SemanticData>
         </LayoutComponent>
         <StateMachine name="State Machine 1" id="1:21">
+            <StateMachineListener targetId="1:28" name="Cursor Off" id="63:263">
+                <ListenerInputType listenerTypeValue="exit" id="63:264"/>
+                <ListenerViewModelChange id="63:265">
+                    <BindablePropertyBoolean id="63:266">
+                        <DataBindContext sourcePathIds="1:949-10:3112-63:244" propertyKey="634" direction="true" id="63:267"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListener targetId="1:28" name="Cursor On" id="63:257">
+                <ListenerInputType id="63:258"/>
+                <ListenerInputType listenerTypeValue="move" id="63:259"/>
+                <ListenerViewModelChange id="63:260">
+                    <BindablePropertyBoolean propertyValue="true" id="63:261">
+                        <DataBindContext sourcePathIds="1:949-10:3112-63:244" propertyKey="634" direction="true" id="63:262"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
             <StateMachineListener targetId="1:16" name="Preview Disabled" id="15:580">
                 <ListenerInputTypeViewModel viewModelPathIds="1:949-10:3112-15:419" listenerTypeValue="viewModel" id="15:581"/>
                 <ListenerViewModelChange fromViewModelProperty="true" fromDataBindId="15:585" id="15:582">
