@@ -21,6 +21,17 @@ Categories and the components in them are sorted A–Z. In the Showcase a catego
 
 Every component is driven by view models (data binding), not by state machine inputs. The **Theme** panel in the Showcase switches mode (light/dark), brand colour, roundness and shadow at runtime, and previews every component as enabled or disabled.
 
+## Theme
+
+`Theme` is a **global view model**: one instance that every component reads, so no component carries a `theme` property of its own. It holds `mode` (`0` light, `1` dark), `brandIndex`, `roundness` and `shadow` (`0`–`3`), `cursorPointer` and the colour tokens (`_bg`, `_text`, `_brand500`, …).
+
+One **Theme Driver** turns `mode` and `brandIndex` into the colour tokens. The Showcase holds it; in your own file, place the Theme Driver component once in the artboard you play (it draws nothing). Without it the tokens keep their stored values.
+
+```js
+const theme = rive.globalViewModelInstance("Theme");   // @rive-app/* 2.49+, with autoBind: true
+theme.number("mode").value = 0;                         // light
+```
+
 ## Accessibility
 
 The components carry Rive semantics, so screen readers get a real accessibility tree instead of a canvas:
@@ -52,7 +63,7 @@ rive build/default --semantics=$PWD/build/default.semantics.json
 
 A card of collapsible items; several can be open at once.
 
-- View model `Accordion`: `items` (a list of `AccordionItem`), `label` (screen reader name), `a11yHidden`, `theme`.
+- View model `Accordion`: `items` (a list of `AccordionItem`), `label` (screen reader name), `a11yHidden`.
 - `AccordionItem`: `title`, `body`, `open`. Clicking the header (or a screen reader's activate) toggles `open`; the body grows open with a short layout animation and the chevron turns.
 - Each header is a `button` that reports expanded or collapsed.
 
@@ -60,7 +71,7 @@ A card of collapsible items; several can be open at once.
 
 A trail of links to the pages above the current one: `Home › Components › Navigation`.
 
-- View model `Breadcrumbs`: `items` (a list of `BreadcrumbItem`), `selected` (written when a link is clicked: the item's position, `0` for the first; `-1` until then), `selection` (a shared `BreadcrumbSelection`), `label` (screen reader name), `a11yHidden`, `theme`.
+- View model `Breadcrumbs`: `items` (a list of `BreadcrumbItem`), `selected` (written when a link is clicked: the item's position, `0` for the first; `-1` until then), `selection` (a shared `BreadcrumbSelection`), `label` (screen reader name), `a11yHidden`.
 - `BreadcrumbItem`: `label`, `current`, `selection`. Set `current` on the last item: it stands out in semibold text, is not clickable and is read as the current page. The other items are muted links that get a soft background on hover, like a button. A separator sits between items, never before the first.
 - Point `selection` of every item at the same `BreadcrumbSelection` instance as the `Breadcrumbs` (as with Radio Group). Clicks write it and the component copies the value into `selected`.
 - Listen to `selected` in your app to navigate, then replace `items` with the new trail.
@@ -69,7 +80,7 @@ A trail of links to the pages above the current one: `Home › Components › Na
 
 A card that stays in view with a message in one of four variants. It has no close button; for something the user dismisses, use a dialog.
 
-- View model `Alert`: `title`, `body`, `variant` (`0` info, `1` success, `2` warning, `3` error), `a11yHidden`, `theme`.
+- View model `Alert`: `title`, `body`, `variant` (`0` info, `1` success, `2` warning, `3` error), `a11yHidden`.
 - Each variant has its own icon and colours from semantic Theme tokens: info follows the brand colour, success, warning and error have their own light and dark values (see palette.json).
 - Hide or show it from your app like any other part of your layout.
 - Screen readers get a `group` named by the title and marked as a live region, so a changed title is announced, with the body as text.
@@ -78,7 +89,7 @@ A card that stays in view with a message in one of four variants. It has no clos
 
 A button in one of four variants. The default follows the inverse colours of the mode (light on dark, dark on light), so it never clashes with the brand colour.
 
-- View model `Button`: `text`, `variant` (`0` primary, `1` secondary, `2` brand, `3` destructive), `icon`, `iconOnly`, `disabled`, `hint`, `group` (see Button Group), `a11yHidden`, `theme`. `_pressed` fires on a click.
+- View model `Button`: `text`, `variant` (`0` primary, `1` secondary, `2` brand, `3` destructive), `icon`, `iconOnly`, `disabled`, `hint`, `group` (see Button Group), `a11yHidden`. `_pressed` fires on a click.
 - Primary uses `_primaryBg` / `_primaryHover` / `_primaryText`, destructive `_dangerBg` / `_dangerHover` / `_dangerText`: Theme tokens per mode that ignore the brand. Only the brand variant follows the brand colour. Destructive stays red whatever the brand is.
 - The Dropdown trigger uses the same primary tokens, so the actions look alike; its list keeps the brand accent.
 
@@ -86,7 +97,7 @@ A button in one of four variants. The default follows the inverse colours of the
 
 A row of kit Buttons joined into one control: the outer corners follow the theme roundness, the inner corners are square, and the group casts one shadow. Every Button variant works and they may be mixed.
 
-- View model `ButtonGroup`: `label` (screen reader name), `buttons` (a list of `Button` instances), `a11yHidden`, `theme`.
+- View model `ButtonGroup`: `label` (screen reader name), `buttons` (a list of `Button` instances), `a11yHidden`.
 - Set `group` on every Button in the list: `1` first, `2` middle, `3` last (`0`, the default, is a standalone Button). It rounds only the outer corners and draws a divider before middle and last buttons; secondary borders merge into one line.
 - Each Button keeps its own `_pressed` trigger, hover, press ripple and disabled state, so you handle clicks per button as you would for a single Button.
 
@@ -94,7 +105,7 @@ A row of kit Buttons joined into one control: the outer corners follow the theme
 
 Previous and next Buttons around up to seven page buttons. Set two numbers and the component does the rest.
 
-- View model `Pagination`: `page` (the current page, two-way: clicks write it), `pageCount`, `label` (screen reader name), `a11yHidden`, `theme`.
+- View model `Pagination`: `page` (the current page, two-way: clicks write it), `pageCount`, `label` (screen reader name), `a11yHidden`.
 - Up to seven pages are shown as they are. With more, the row keeps the first and last page and three around the current one, with `…` for the gaps: `1 … 4 5 6 … 20`, `1 2 3 4 5 … 20`, `1 … 16 17 18 19 20`.
 - Previous and next step by one and are disabled on the first and last page.
 - Listen to `page` in your app to load that page.
@@ -103,23 +114,23 @@ Previous and next Buttons around up to seven page buttons. Set two numbers and t
 
 A small bubble in the inverse theme colours (`_text` background, `_bg` text) with a pointer arrow. It fades and scales in when it opens and never blocks pointer input.
 
-- View model `Tooltip`: `text`, `placement` (`0` top, `1` bottom, `2` left, `3` right: the side of the trigger it sits on; the arrow points back at the trigger), `open`, `a11yHidden`, `theme`.
+- View model `Tooltip`: `text`, `placement` (`0` top, `1` bottom, `2` left, `3` right: the side of the trigger it sits on; the arrow points back at the trigger), `open`, `a11yHidden`.
 - The Tooltip is the bubble only. Rive has no slots, so the host places it next to its trigger and sets `open`: `enter` and `focus` listeners on the trigger set it, `exit` and `blur` clear it.
-- **Tooltip Button** is that pattern, ready to use: a kit Button with a Tooltip. View model `TooltipButton`: `label`, `tooltip`, `placement`, `a11yHidden`, `theme`. Hover or keyboard focus on the Button shows the tooltip.
+- **Tooltip Button** is that pattern, ready to use: a kit Button with a Tooltip. View model `TooltipButton`: `label`, `tooltip`, `placement`, `a11yHidden`. Hover or keyboard focus on the Button shows the tooltip.
 - In Tooltip Button the bubble sits in an absolute overlay over the trigger, so it never moves the layout. The overlay's direction follows `placement`; an empty mirror box on the far side keeps the trigger in the middle, so all four sides work without measuring anything.
 - Screen readers: the Button gets the tooltip text as its `hint` (Button has a new `hint` property) and the bubble is hidden from the tree, so the text is read once. A Tooltip on its own is a `text` node.
 - Long text wraps at 240 points.
 
 ## Pointer cursor
 
-A canvas can't change the mouse cursor by itself, so the kit tells your app when to. `theme/cursorPointer` (a boolean on the shared Theme view model) is `true` while the pointer is over something clickable: an accordion header, a breadcrumb link, a button, checkbox, dropdown and its items, nav group header, nav item, page item, radio option, segment, slider, switch or tile. Disabled controls leave it `false`. The path below is the Showcase's; in your own artboard it is wherever your view model holds the Theme.
+A canvas can't change the mouse cursor by itself, so the kit tells your app when to. `cursorPointer` (a boolean on the global Theme view model) is `true` while the pointer is over something clickable: an accordion header, a breadcrumb link, a button, checkbox, dropdown and its items, nav group header, nav item, page item, radio option, segment, slider, switch or tile. Disabled controls leave it `false`.
 
 ```js
-const flag = rive.viewModelInstance.boolean("theme/cursorPointer");
+const flag = rive.globalViewModelInstance("Theme").boolean("cursorPointer");
 flag.on(() => (canvas.style.cursor = flag.value ? "pointer" : ""));
 ```
 
-With `@rive-app/react-*`: `useViewModelInstanceBoolean("theme/cursorPointer", rive?.viewModelInstance)` and toggle a `cursor-pointer` class. Use the same flag for a hover pointer on iPad or desktop apps.
+With `@rive-app/react-*`: pass `rive?.globalViewModelInstance("Theme")` to `useViewModelInstanceBoolean("cursorPointer", …)` and toggle a `cursor-pointer` class. Use the same flag for a hover pointer on iPad or desktop apps.
 
 ## How it is organised
 

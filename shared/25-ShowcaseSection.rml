@@ -9,7 +9,7 @@
                 <TextStylePaint fontSize="24" letterSpacing="-0.30000001" fontAssetId="0:7" familyName="Inter" styleName="Bold" id="100:80">
                     <Fill fillRule="clockwise" id="100:81">
                         <SolidColor colorValue="FFFAFAFA" id="100:82">
-                            <DataBindContext sourcePathIds="100:1-100:4-10:7422" propertyKey="37" nameBased="true" id="100:83"/>
+                            <DataBindContext sourcePathIds="10:7-10:7422" propertyKey="37" id="100:83"/>
                         </SolidColor>
                     </Fill>
                     <TextStyleAxis tag="1869640570" axisValue="14" id="100:84"/>
@@ -28,7 +28,6 @@
                         <DataBindContext sourcePathIds="100:1-100:3" propertyKey="561" nameBased="true" converterId="100:60" id="121:5"/>
                     </ViewModelInstanceString>
                     <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="7:51" id="121:6"/>
-                    <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="10:3120" id="121:7"/>
                 </ViewModelInstance>
             </NestedArtboardLayout>
         </LayoutComponent>

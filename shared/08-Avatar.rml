@@ -1,11 +1,8 @@
 <Rive version="1" kind="fragment">
     <Artboard defaultStateMachineId="1:2053" viewModelId="1:2082" viewModelInstanceId="1:2083" isComponent="true" spaceId="1:5601" width="32" height="32" styleId="1:2051" x="1800" name="Avatar" id="1:2048">
-        <NestedArtboard artboardId="10:14621" dataBindPathIds="1:2082-10:6537" name="Theme Driver" id="10:15504">
-            <NestedStateMachine animationId="1:2053" id="10:15505"/>
-        </NestedArtboard>
         <Shape x="16" y="16" locked="true" id="1:2077">
             <Rectangle cornerRadiusTL="16" width="32" height="32" id="10:6092">
-                <DataBindContext sourcePathIds="1:2082-10:6537-10:2086" propertyKey="31" converterId="10:6431" id="10:6539"/>
+                <DataBindContext sourcePathIds="10:7-10:2086" propertyKey="31" converterId="10:6431" id="10:6539"/>
             </Rectangle>
         </Shape>
         <Image assetId="1:2091" x="16" y="16" scaleX="0.25" scaleY="0.25" name="Avatar" id="1:2089">

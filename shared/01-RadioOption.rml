@@ -1,8 +1,5 @@
 <Rive version="1" kind="fragment">
     <Artboard defaultStateMachineId="1:21" viewModelId="1:949" viewModelInstanceId="1:950" isComponent="true" spaceId="1:5601" width="121" height="119" styleId="1:19" x="600" y="1634" name="Radio Option" id="1:16">
-        <NestedArtboard artboardId="10:14621" dataBindPathIds="1:949-10:3112" name="Theme Driver" id="10:15490">
-            <NestedStateMachine animationId="1:21" id="10:15491"/>
-        </NestedArtboard>
         <LayoutComponentStyle layoutAlignmentType="center" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="1:19"/>
         <LayoutComponent styleId="1:29" name="RadioButton" id="1:28">
             <LayoutComponent styleId="13:186" isTargetOpaque="true" name="Disabled Shield" id="13:185">
@@ -18,7 +15,7 @@
                     <LayoutComponent styleId="13:205" name="Disabled" id="13:204">
                         <Fill fillRule="clockwise" id="13:206">
                             <SolidColor colorValue="FF888888" id="13:207">
-                                <DataBindContext sourcePathIds="1:949-10:3112-10:7426" propertyKey="37" nameBased="true" id="13:208"/>
+                                <DataBindContext sourcePathIds="10:7-10:7426" propertyKey="37" id="13:208"/>
                             </SolidColor>
                         </Fill>
                         <LayoutComponentStyle positionLeftUnitsValue="points" positionRightUnitsValue="points" positionTopUnitsValue="points" positionBottomUnitsValue="points" edgeConstraints="84" positionTypeValue="absolute" cornerRadiusTL="9999" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="13:205"/>
@@ -26,7 +23,7 @@
                     </LayoutComponent>
                     <Fill name="Fill 1" id="1:32">
                         <SolidColor colorValue="FF2563EB" name="Component" id="1:33">
-                            <DataBindContext sourcePathIds="1:949-10:3112-10:2104" propertyKey="37" id="10:3284"/>
+                            <DataBindContext sourcePathIds="10:7-10:2104" propertyKey="37" id="10:3284"/>
                         </SolidColor>
                     </Fill>
                     <LayoutComponentStyle edgeConstraints="16" cornerRadiusTL="9999" name="Layout Style" id="1:31"/>
@@ -34,7 +31,7 @@
                         <Ellipse width="19" height="20" originX="0" originY="0" id="1:946"/>
                         <Fill id="1:973">
                             <SolidColor colorValue="FF2563EB" id="1:977">
-                                <DataBindContext sourcePathIds="1:949-10:3112-10:2104" propertyKey="37" id="10:3283"/>
+                                <DataBindContext sourcePathIds="10:7-10:2104" propertyKey="37" id="10:3283"/>
                             </SolidColor>
                         </Fill>
                     </Shape>
@@ -44,12 +41,12 @@
                         <Ellipse width="19" height="20" originX="0" originY="0" name="Path" id="13:196"/>
                         <Fill name="Fill 1" id="13:197">
                             <SolidColor colorValue="FF18181B" name="Component" id="13:198">
-                                <DataBindContext sourcePathIds="1:949-10:3112-10:7412" propertyKey="37" nameBased="true" id="13:201"/>
+                                <DataBindContext sourcePathIds="10:7-10:7412" propertyKey="37" id="13:201"/>
                             </SolidColor>
                         </Fill>
                         <Stroke name="Stroke 1" id="13:199">
                             <SolidColor colorValue="FF3F3F46" name="Component" id="13:200">
-                                <DataBindContext sourcePathIds="1:949-10:3112-10:7418" propertyKey="37" nameBased="true" id="13:202"/>
+                                <DataBindContext sourcePathIds="10:7-10:7418" propertyKey="37" id="13:202"/>
                             </SolidColor>
                         </Stroke>
                         <DataBindContext sourcePathIds="1:949-7:15" propertyKey="18" nameBased="true" converterId="9:145" id="13:203"/>
@@ -58,12 +55,12 @@
                         <Ellipse width="19" height="20" originX="0" originY="0" name="Path" id="10:3257"/>
                         <Fill name="Fill 1" id="10:3258">
                             <SolidColor colorValue="FF172554" name="Component" id="10:3259">
-                                <DataBindContext sourcePathIds="1:949-10:3112-10:2094" propertyKey="37" id="10:3281"/>
+                                <DataBindContext sourcePathIds="10:7-10:2094" propertyKey="37" id="10:3281"/>
                             </SolidColor>
                         </Fill>
                         <Stroke name="Stroke 1" id="10:3260">
                             <SolidColor colorValue="FF27272A" name="Component" id="10:3261">
-                                <DataBindContext sourcePathIds="1:949-10:3112-10:7418" propertyKey="37" id="10:7530"/>
+                                <DataBindContext sourcePathIds="10:7-10:7418" propertyKey="37" id="10:7530"/>
                             </SolidColor>
                         </Stroke>
                     </Shape>
@@ -72,12 +69,12 @@
                         <Ellipse width="19" height="20" originX="0" originY="0" name="Path" id="1:966"/>
                         <Fill name="Fill 1" id="1:967">
                             <SolidColor colorValue="FF18181B" name="Component" id="1:968">
-                                <DataBindContext sourcePathIds="1:949-10:3112-10:7406" propertyKey="37" id="10:7531"/>
+                                <DataBindContext sourcePathIds="10:7-10:7406" propertyKey="37" id="10:7531"/>
                             </SolidColor>
                         </Fill>
                         <Stroke name="Stroke 1" id="1:969">
                             <SolidColor colorValue="FF3F3F46" name="Component" id="1:970">
-                                <DataBindContext sourcePathIds="1:949-10:3112-10:7420" propertyKey="37" id="10:7532"/>
+                                <DataBindContext sourcePathIds="10:7-10:7420" propertyKey="37" id="10:7532"/>
                             </SolidColor>
                         </Stroke>
                     </Shape>
@@ -85,7 +82,7 @@
                         <LayoutComponentStyle positionLeftUnitsValue="points" positionRightUnitsValue="points" positionTopUnitsValue="points" positionBottomUnitsValue="points" edgeConstraints="84" positionTypeValue="absolute" cornerRadiusTL="9999" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="10:3263"/>
                         <Stroke thickness="0" id="10:3264">
                             <SolidColor colorValue="FF93C5FD" id="10:3265">
-                                <DataBindContext sourcePathIds="1:949-10:3112-10:2098" propertyKey="37" id="10:3282"/>
+                                <DataBindContext sourcePathIds="10:7-10:2098" propertyKey="37" id="10:3282"/>
                             </SolidColor>
                         </Stroke>
                     </LayoutComponent>
@@ -97,7 +94,7 @@
                     <TextStylePaint fontSize="16" fontAssetId="0:7" familyName="Inter" styleName="Regular" name="Style 1" id="13:215">
                         <Fill name="Fill 1" id="13:216">
                             <SolidColor colorValue="FFFAFAFA" name="Component" id="13:217">
-                                <DataBindContext sourcePathIds="1:949-10:3112-10:7426" propertyKey="37" nameBased="true" id="13:221"/>
+                                <DataBindContext sourcePathIds="10:7-10:7426" propertyKey="37" id="13:221"/>
                             </SolidColor>
                         </Fill>
                         <TextStyleAxis tag="1869640570" axisValue="14" name="Style Axis" id="13:218"/>
@@ -112,7 +109,7 @@
                     <TextStylePaint fontSize="16" fontAssetId="0:7" familyName="Inter" styleName="Regular" name="Style 1" id="1:36">
                         <Fill name="Fill 1" id="1:37">
                             <SolidColor colorValue="FFFAFAFA" name="Component" id="1:38">
-                                <DataBindContext sourcePathIds="1:949-10:3112-10:7422" propertyKey="37" id="10:7533"/>
+                                <DataBindContext sourcePathIds="10:7-10:7422" propertyKey="37" id="10:7533"/>
                             </SolidColor>
                         </Fill>
                         <TextStyleAxis tag="1869640570" axisValue="14" name="Style Axis" id="1:39"/>
@@ -141,7 +138,7 @@
                 <ListenerInputType listenerTypeValue="exit" id="63:264"/>
                 <ListenerViewModelChange id="63:265">
                     <BindablePropertyBoolean id="63:266">
-                        <DataBindContext sourcePathIds="1:949-10:3112-63:244" propertyKey="634" direction="true" id="63:267"/>
+                        <DataBindContext sourcePathIds="10:7-63:244" propertyKey="634" direction="true" id="63:267"/>
                     </BindablePropertyBoolean>
                 </ListenerViewModelChange>
             </StateMachineListener>
@@ -150,16 +147,16 @@
                 <ListenerInputType listenerTypeValue="move" id="63:259"/>
                 <ListenerViewModelChange id="63:260">
                     <BindablePropertyBoolean propertyValue="true" id="63:261">
-                        <DataBindContext sourcePathIds="1:949-10:3112-63:244" propertyKey="634" direction="true" id="63:262"/>
+                        <DataBindContext sourcePathIds="10:7-63:244" propertyKey="634" direction="true" id="63:262"/>
                     </BindablePropertyBoolean>
                 </ListenerViewModelChange>
             </StateMachineListener>
             <StateMachineListener targetId="1:16" name="Preview Disabled" id="15:580">
-                <ListenerInputTypeViewModel viewModelPathIds="1:949-10:3112-15:419" listenerTypeValue="viewModel" id="15:581"/>
+                <ListenerInputTypeViewModel viewModelPathIds="10:7-15:419" listenerTypeValue="viewModel" id="15:581"/>
                 <ListenerViewModelChange fromViewModelProperty="true" fromDataBindId="15:585" id="15:582">
                     <BindablePropertyBoolean id="15:583">
                         <DataBindContext sourcePathIds="1:949-7:15" propertyKey="634" direction="true" id="15:584"/>
-                        <DataBindContext sourcePathIds="1:949-10:3112-15:419" propertyKey="634" id="15:585"/>
+                        <DataBindContext sourcePathIds="10:7-15:419" propertyKey="634" id="15:585"/>
                     </BindablePropertyBoolean>
                 </ListenerViewModelChange>
             </StateMachineListener>

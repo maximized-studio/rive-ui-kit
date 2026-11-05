@@ -9,7 +9,7 @@
         <LayoutComponent styleId="104:71" name="Item" id="104:70">
             <Fill fillRule="clockwise" id="104:89">
                 <SolidColor colorValue="FF18181B" id="104:90">
-                    <DataBindContext sourcePathIds="104:1-104:6-10:7406" propertyKey="37" nameBased="true" id="104:91"/>
+                    <DataBindContext sourcePathIds="10:7-10:7406" propertyKey="37" id="104:91"/>
                 </SolidColor>
             </Fill>
             <LayoutComponent styleId="104:73" name="Header" id="104:72">
@@ -18,7 +18,7 @@
                         <TextStylePaint fontSize="15" fontAssetId="0:7" familyName="Inter" styleName="Regular" id="104:92">
                             <Fill fillRule="clockwise" id="104:94">
                                 <SolidColor colorValue="FFFAFAFA" id="104:95">
-                                    <DataBindContext sourcePathIds="104:1-104:6-10:7422" propertyKey="37" nameBased="true" id="104:96"/>
+                                    <DataBindContext sourcePathIds="10:7-10:7422" propertyKey="37" id="104:96"/>
                                 </SolidColor>
                             </Fill>
                             <TextStyleAxis tag="1869640570" axisValue="14" id="104:97"/>
@@ -38,7 +38,7 @@
                             </PointsPath>
                             <Stroke thickness="1.6" cap="round" join="round" id="104:106">
                                 <SolidColor colorValue="FFA1A1AA" id="104:107">
-                                    <DataBindContext sourcePathIds="104:1-104:6-10:7426" propertyKey="37" nameBased="true" id="104:108"/>
+                                    <DataBindContext sourcePathIds="10:7-10:7426" propertyKey="37" id="104:108"/>
                                 </SolidColor>
                             </Stroke>
                         </Shape>
@@ -49,7 +49,7 @@
                 <LayoutComponent styleId="104:80" opacity="0" name="Hover" id="104:79">
                     <Fill fillRule="clockwise" id="104:109">
                         <SolidColor colorValue="FF323238" id="104:110">
-                            <DataBindContext sourcePathIds="104:1-104:6-10:7416" propertyKey="37" nameBased="true" id="104:111"/>
+                            <DataBindContext sourcePathIds="10:7-10:7416" propertyKey="37" id="104:111"/>
                         </SolidColor>
                     </Fill>
                     <LayoutComponentStyle layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="104:80"/>
@@ -68,7 +68,7 @@
                     <TextStylePaint fontSize="14" fontAssetId="0:7" familyName="Inter" styleName="Regular" id="104:117">
                         <Fill fillRule="clockwise" id="104:119">
                             <SolidColor colorValue="FFD4D4D8" id="104:120">
-                                <DataBindContext sourcePathIds="104:1-104:6-10:7424" propertyKey="37" nameBased="true" id="104:121"/>
+                                <DataBindContext sourcePathIds="10:7-10:7424" propertyKey="37" id="104:121"/>
                             </SolidColor>
                         </Fill>
                         <TextStyleAxis tag="1869640570" axisValue="14" id="104:122"/>
@@ -90,7 +90,7 @@
                 <ListenerInputType listenerTypeValue="exit" id="104:129"/>
                 <ListenerViewModelChange id="104:130">
                     <BindablePropertyBoolean id="104:131">
-                        <DataBindContext sourcePathIds="104:1-104:6-63:244" propertyKey="634" direction="true" id="104:132"/>
+                        <DataBindContext sourcePathIds="10:7-63:244" propertyKey="634" direction="true" id="104:132"/>
                     </BindablePropertyBoolean>
                 </ListenerViewModelChange>
             </StateMachineListener>
@@ -99,7 +99,7 @@
                 <ListenerInputType listenerTypeValue="move" id="104:135"/>
                 <ListenerViewModelChange id="104:136">
                     <BindablePropertyBoolean propertyValue="true" id="104:137">
-                        <DataBindContext sourcePathIds="104:1-104:6-63:244" propertyKey="634" direction="true" id="104:138"/>
+                        <DataBindContext sourcePathIds="10:7-63:244" propertyKey="634" direction="true" id="104:138"/>
                     </BindablePropertyBoolean>
                 </ListenerViewModelChange>
             </StateMachineListener>

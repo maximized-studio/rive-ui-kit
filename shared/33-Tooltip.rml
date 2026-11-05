@@ -9,14 +9,14 @@
             <LayoutComponent styleId="112:194" name="Body" id="112:193">
                 <Fill fillRule="clockwise" id="112:205">
                     <SolidColor colorValue="FFFAFAFA" id="112:206">
-                        <DataBindContext sourcePathIds="112:1-112:6-10:7422" propertyKey="37" nameBased="true" id="112:207"/>
+                        <DataBindContext sourcePathIds="10:7-10:7422" propertyKey="37" id="112:207"/>
                     </SolidColor>
                 </Fill>
                 <Text alignValue="center" fitFontSizeResizesBox="false" name="Text" id="112:208">
                     <TextStylePaint fontSize="13" fontAssetId="0:7" familyName="Inter" styleName="Medium" id="112:201">
                         <Fill fillRule="clockwise" id="112:209">
                             <SolidColor colorValue="FF0B0B0F" id="112:210">
-                                <DataBindContext sourcePathIds="112:1-112:6-10:7402" propertyKey="37" nameBased="true" id="112:211"/>
+                                <DataBindContext sourcePathIds="10:7-10:7402" propertyKey="37" id="112:211"/>
                             </SolidColor>
                         </Fill>
                         <TextStyleAxis tag="1869640570" axisValue="14" id="112:212"/>
@@ -28,7 +28,7 @@
                     <LayoutParticipant layoutWidthScaleType="hug" layoutHeightScaleType="hug" id="112:216"/>
                 </Text>
                 <LayoutComponentStyle paddingLeft="10" paddingRight="10" paddingTop="6" paddingBottom="6" layoutAlignmentType="center" intrinsicallySizedValue="true" cornerRadiusTL="8" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="112:194">
-                    <DataBindContext sourcePathIds="112:1-112:6-10:2086" propertyKey="640" nameBased="true" converterId="10:6095" id="112:217"/>
+                    <DataBindContext sourcePathIds="10:7-10:2086" propertyKey="640" converterId="10:6095" id="112:217"/>
                 </LayoutComponentStyle>
                 <SemanticData role="text" name="Semantics" id="112:218">
                     <DataBindContext sourcePathIds="112:1-112:2" propertyKey="983" nameBased="true" id="112:219"/>
@@ -46,7 +46,7 @@
                             </PointsPath>
                             <Fill fillRule="clockwise" id="112:229">
                                 <SolidColor colorValue="FFFAFAFA" id="112:230">
-                                    <DataBindContext sourcePathIds="112:1-112:6-10:7422" propertyKey="37" nameBased="true" id="112:231"/>
+                                    <DataBindContext sourcePathIds="10:7-10:7422" propertyKey="37" id="112:231"/>
                                 </SolidColor>
                             </Fill>
                         </Shape>
@@ -65,7 +65,7 @@
                             </PointsPath>
                             <Fill fillRule="clockwise" id="112:241">
                                 <SolidColor colorValue="FFFAFAFA" id="112:242">
-                                    <DataBindContext sourcePathIds="112:1-112:6-10:7422" propertyKey="37" nameBased="true" id="112:243"/>
+                                    <DataBindContext sourcePathIds="10:7-10:7422" propertyKey="37" id="112:243"/>
                                 </SolidColor>
                             </Fill>
                         </Shape>
@@ -84,7 +84,7 @@
                             </PointsPath>
                             <Fill fillRule="clockwise" id="112:253">
                                 <SolidColor colorValue="FFFAFAFA" id="112:254">
-                                    <DataBindContext sourcePathIds="112:1-112:6-10:7422" propertyKey="37" nameBased="true" id="112:255"/>
+                                    <DataBindContext sourcePathIds="10:7-10:7422" propertyKey="37" id="112:255"/>
                                 </SolidColor>
                             </Fill>
                         </Shape>
@@ -103,7 +103,7 @@
                             </PointsPath>
                             <Fill fillRule="clockwise" id="112:265">
                                 <SolidColor colorValue="FFFAFAFA" id="112:266">
-                                    <DataBindContext sourcePathIds="112:1-112:6-10:7422" propertyKey="37" nameBased="true" id="112:267"/>
+                                    <DataBindContext sourcePathIds="10:7-10:7422" propertyKey="37" id="112:267"/>
                                 </SolidColor>
                             </Fill>
                         </Shape>
