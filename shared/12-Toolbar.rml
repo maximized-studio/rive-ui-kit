@@ -191,7 +191,7 @@
                                         <DataBindContext sourcePathIds="38:815-38:817-10:7422" propertyKey="37" id="10:8474"/>
                                     </SolidColor>
                                 </Fill>
-                                <Stroke thickness="1" id="119:15">
+                                <Stroke id="119:15">
                                     <SolidColor colorValue="FF3F3F46" id="119:16">
                                         <DataBindContext sourcePathIds="38:815-38:817-10:7420" propertyKey="37" id="119:17"/>
                                     </SolidColor>
