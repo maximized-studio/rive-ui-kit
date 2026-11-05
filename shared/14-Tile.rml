@@ -135,11 +135,26 @@
                     <DataBindContext sourcePathIds="10:3612-10:3657-10:7418" propertyKey="37" id="10:7457"/>
                 </SolidColor>
             </Stroke>
+            <LayoutComponent styleId="70:531" opacity="0" name="Hover" id="70:530">
+                <Fill fillRule="clockwise" id="70:532">
+                    <SolidColor colorValue="FF1E40AF" id="70:533">
+                        <DataBindContext sourcePathIds="10:3612-10:3657-10:7422" propertyKey="37" nameBased="true" id="70:536"/>
+                    </SolidColor>
+                </Fill>
+                <LayoutComponentStyle positionLeftUnitsValue="points" positionRightUnitsValue="points" positionTopUnitsValue="points" positionBottomUnitsValue="points" edgeConstraints="84" positionTypeValue="absolute" cornerRadiusTL="8" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="70:531">
+                    <DataBindContext sourcePathIds="10:3612-10:3657-10:2086" propertyKey="640" nameBased="true" converterId="10:6584" id="70:537"/>
+                </LayoutComponentStyle>
+            </LayoutComponent>
         </LayoutComponent>
         <LinearAnimation name="Card Hover" id="10:4511">
             <KeyedObject objectId="10:3647" id="10:4526">
                 <KeyedProperty property="colorValue" id="10:4527">
                     <KeyFrameColor value="38000000" interpolationType="linear" id="10:4528"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="70:530" id="70:541">
+                <KeyedProperty property="opacity" id="70:542">
+                    <KeyFrameDouble value="0.059999999" interpolationType="linear" id="70:543"/>
                 </KeyedProperty>
             </KeyedObject>
         </LinearAnimation>
@@ -236,6 +251,11 @@
             <KeyedObject objectId="10:3647" id="10:4515">
                 <KeyedProperty property="colorValue" id="10:4516">
                     <KeyFrameColor value="26000000" interpolationType="linear" id="10:4517"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="70:530" id="70:538">
+                <KeyedProperty property="opacity" id="70:539">
+                    <KeyFrameDouble interpolationType="linear" id="70:540"/>
                 </KeyedProperty>
             </KeyedObject>
         </LinearAnimation>

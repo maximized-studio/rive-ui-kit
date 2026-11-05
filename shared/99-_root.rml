@@ -269,6 +269,11 @@
         <FormulaTokenOperation operationType="multiply" id="42:473"/>
         <FormulaTokenInput id="42:474"/>
     </DataConverterFormula>
+    <DataConverterFormula name="Formula 1" id="70:513">
+        <FormulaTokenInput id="70:514"/>
+        <FormulaTokenOperation operationType="multiply" id="70:515"/>
+        <FormulaTokenValue operationValue="0.1" id="70:516"/>
+    </DataConverterFormula>
     <DataConverterGroup name="SliderPercentText" id="2:40">
         <DataConverterGroupItem converterId="2:41" id="2:60"/>
         <DataConverterGroupItem converterId="2:61" id="2:62"/>
@@ -297,6 +302,10 @@
         <DataConverterGroupItem converterId="9:91" id="42:482"/>
         <DataConverterGroupItem converterId="42:469" id="42:483"/>
     </DataConverterGroup>
+    <DataConverterGroup name="Hover Tint" id="70:510">
+        <DataConverterGroupItem converterId="70:511" id="70:512"/>
+        <DataConverterGroupItem converterId="70:513" id="70:517"/>
+    </DataConverterGroup>
     <DataConverterSystemNormalizer operationValue="2.55" operationType="multiply" name="Percentage to 0-255" id="9:144"/>
     <DataConverterToNumber name="BoolToChecked" id="2:64"/>
     <DataConverterToNumber name="DisabledNumberA" id="9:91"/>
@@ -304,6 +313,7 @@
     <DataConverterToNumber name="DisabledOn" id="9:145"/>
     <DataConverterToNumber name="IconOnlyNum" id="33:225"/>
     <DataConverterToNumber name="SecondaryNum" id="33:252"/>
+    <DataConverterToNumber name="Convert to Number 1" id="70:511"/>
     <DataConverterToString round="true" name="SliderPercentString" id="2:61"/>
     <DataFolder name="UI Kit" id="1:2753">
         <DataFolder name="Utils" id="1:1021">
@@ -1145,6 +1155,8 @@
                 </ViewModelInstance>
             </ViewModel>
             <ViewModel defaultInstanceId="10:5260" name="_Showcase" groupId="1:2673" id="10:84">
+                <ViewModelPropertyBoolean name="_componentsHover" id="70:470"/>
+                <ViewModelPropertyBoolean name="_themeHover" id="70:472"/>
                 <ViewModelPropertyBoolean name="_sidebarOpen" id="42:366"/>
                 <ViewModelPropertyBoolean name="_toolbarOpen" id="42:368"/>
                 <ViewModelPropertyViewModel viewModelReferenceId="41:866" name="_sidebar" id="42:352"/>
@@ -1215,6 +1227,8 @@
                     <ViewModelInstanceViewModel propertyValue="42:346" viewModelPropertyId="42:352" id="42:353"/>
                     <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="42:366" id="42:367"/>
                     <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="42:368" id="42:369"/>
+                    <ViewModelInstanceBoolean viewModelPropertyId="70:470" id="70:471"/>
+                    <ViewModelInstanceBoolean viewModelPropertyId="70:472" id="70:473"/>
                 </ViewModelInstance>
             </ViewModel>
             <ViewModel defaultInstanceId="0:0" name="Tile" groupId="1:2673" id="10:3612">
