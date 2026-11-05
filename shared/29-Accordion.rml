@@ -14,7 +14,7 @@
                 <DataBindContext sourcePathIds="104:8-104:9" propertyKey="800" nameBased="true" id="104:196"/>
             </ArtboardComponentList>
             <LayoutComponentStyle gapVertical="1" paddingLeft="1" paddingRight="1" paddingTop="1" paddingBottom="1" flexDirectionValue="column" intrinsicallySizedValue="true" cornerRadiusTL="8" layoutWidthScaleType="fill" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="104:187">
-                <DataBindContext sourcePathIds="10:7-901:5" propertyKey="640" id="104:197"/>
+                <DataBindContext sourcePathIds="10:7-901:5" propertyKey="640" converterId="0:0" id="104:197"/>
             </LayoutComponentStyle>
             <SemanticData role="group" label="FAQ" name="Semantics" id="104:198">
                 <DataBindContext sourcePathIds="104:8-104:10" propertyKey="983" nameBased="true" id="104:199"/>

@@ -8,15 +8,15 @@
             <Fill fillRule="clockwise" id="92:741">
                 <SolidColor colorValue="33000000" id="92:742"/>
                 <Feather strength="8" offsetY="2" id="99:306">
-                    <DataBindContext sourcePathIds="10:7-901:31" propertyKey="749" id="99:307"/>
-                    <DataBindContext sourcePathIds="10:7-901:37" propertyKey="751" id="99:308"/>
+                    <DataBindContext sourcePathIds="10:7-901:31" propertyKey="749" converterId="0:0" id="99:307"/>
+                    <DataBindContext sourcePathIds="10:7-901:37" propertyKey="751" converterId="0:0" id="99:308"/>
                 </Feather>
             </Fill>
             <ArtboardComponentList name="Buttons" participatesInLayout="true" id="92:745">
                 <DataBindContext sourcePathIds="92:606-92:610" propertyKey="800" id="92:746"/>
             </ArtboardComponentList>
             <LayoutComponentStyle layoutAlignmentType="centerLeft" intrinsicallySizedValue="true" cornerRadiusTL="8" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="92:740">
-                <DataBindContext sourcePathIds="10:7-901:5" propertyKey="640" id="92:748"/>
+                <DataBindContext sourcePathIds="10:7-901:5" propertyKey="640" converterId="0:0" id="92:748"/>
             </LayoutComponentStyle>
             <SemanticData role="group" label="Clipboard" name="Semantics" id="92:750">
                 <DataBindContext sourcePathIds="92:606-92:612" propertyKey="1004" nameBased="true" id="92:751"/>

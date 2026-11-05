@@ -32,7 +32,7 @@
                 </Fill>
                 <GridItemPlacement id="41:927"/>
                 <LayoutComponentStyle cornerRadiusTL="6" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="41:924">
-                    <DataBindContext sourcePathIds="10:7-901:19" propertyKey="640" id="42:4"/>
+                    <DataBindContext sourcePathIds="10:7-901:19" propertyKey="640" converterId="0:0" id="42:4"/>
                 </LayoutComponentStyle>
             </LayoutComponent>
             <LayoutComponent styleId="41:929" opacity="0" name="Hover" id="41:928">
@@ -43,7 +43,7 @@
                 </Fill>
                 <GridItemPlacement id="41:932"/>
                 <LayoutComponentStyle cornerRadiusTL="6" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="41:929">
-                    <DataBindContext sourcePathIds="10:7-901:19" propertyKey="640" id="42:5"/>
+                    <DataBindContext sourcePathIds="10:7-901:19" propertyKey="640" converterId="0:0" id="42:5"/>
                 </LayoutComponentStyle>
                 <DataBindContext sourcePathIds="41:862-41:874" propertyKey="18" nameBased="true" converterId="9:145" id="42:6"/>
             </LayoutComponent>

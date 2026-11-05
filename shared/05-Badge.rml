@@ -19,7 +19,7 @@
                 <LayoutComponentStyle edgeConstraints="16" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="1:1207"/>
             </LayoutComponent>
             <LayoutComponentStyle edgeConstraints="16" layoutAlignmentType="center" cornerRadiusTL="999" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="1:1205">
-                <DataBindContext sourcePathIds="10:7-901:3" propertyKey="640" id="10:6536"/>
+                <DataBindContext sourcePathIds="10:7-901:3" propertyKey="640" converterId="0:0" id="10:6536"/>
             </LayoutComponentStyle>
             <Fill id="1:1208">
                 <SolidColor colorValue="FF2563EB" id="1:1209">

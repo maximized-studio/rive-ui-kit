@@ -90,7 +90,7 @@
                                 </SolidColor>
                             </Fill>
                             <LayoutComponentStyle cornerRadiusTL="6" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="122:22">
-                                <DataBindContext sourcePathIds="10:7-901:19" propertyKey="640" id="122:29"/>
+                                <DataBindContext sourcePathIds="10:7-901:19" propertyKey="640" converterId="0:0" id="122:29"/>
                             </LayoutComponentStyle>
                             <DataBindContext sourcePathIds="41:866-122:6" propertyKey="18" nameBased="true" converterId="9:145" id="122:30"/>
                         </LayoutComponent>
