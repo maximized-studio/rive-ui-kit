@@ -8,7 +8,7 @@ RIVE=${RIVE:-$HOME/.rive/bin/rive}
 t=$1; label=${2:-"build.sh push"}
 [[ -n $t && -d themes/$t ]] || { echo "usage: ./push.sh <theme>"; exit 1; }
 [[ -z $PREVIEW ]] || { echo "refusing to push a PREVIEW build (custom font blocks Community)"; exit 1; }
-PROJECT=1615016   # project of the original "UI starter kit" (workspace Maxmized Studio 663208)
+PROJECT=1615016   # project of the original "UI Kit" file (workspace Maxmized Studio 663208)
 ORIGINAL=1975569  # never push here
 grep -q "fileId: $ORIGINAL" themes/$t/push.yaml 2>/dev/null && { echo "themes/$t/push.yaml points at the original file"; exit 1; }
 ./build.sh $t

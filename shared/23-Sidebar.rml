@@ -56,7 +56,7 @@
                                 <TextStyleAxis tag="1869640570" axisValue="14" id="42:194"/>
                                 <TextStyleAxis tag="2003265652" axisValue="700" id="42:195"/>
                             </TextStylePaint>
-                            <TextValueRun styleId="42:191" text="UI Starter Kit" id="42:196"/>
+                            <TextValueRun styleId="42:191" text="UI Kit" id="42:196"/>
                             <LayoutParticipant layoutWidthScaleType="hug" layoutHeightScaleType="hug" id="42:197"/>
                         </Text>
                         <Text id="42:198">
