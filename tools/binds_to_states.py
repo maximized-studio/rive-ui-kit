@@ -11,17 +11,22 @@ option and hide the rest. For each job below this script:
 """
 import glob, math, os, re, sys
 
-JOBS = [  # file, number it reads (bind path), layer name, id block, state names by value (None = "<layer> <n>")
-    ('03-Button.rml', '1:151-118:1', 'Variant', 902, ['Primary', 'Secondary', 'Brand', 'Destructive']),
-    ('03-Button.rml', '1:151-33:164', 'Icon', 903, None),
-    ('32-Alert.rml', '110:223-110:226', 'Variant', 904, ['Info', 'Success', 'Warning', 'Error']),
-    ('19-Segment.rml', '38:328-38:340', 'Icon', 905, None),
-    ('12-Toolbar.rml', '10:7-10:2090', 'Brand Highlight', 906, ['Blue', 'Violet', 'Emerald', 'Orange', 'Rose', 'Inverse']),
-    ('12-Toolbar.rml', '10:7-10:4743', 'Swatch Hover', 907, ['None', 'Blue', 'Violet', 'Emerald', 'Orange', 'Rose', 'Inverse']),
+JOBS = [  # file, number it reads (bind path), layer name, id block, state names by value (None = "<layer> <n>"), options
+    ('03-Button.rml', '1:151-118:1', 'Variant', 902, ['Primary', 'Secondary', 'Brand', 'Destructive'], {}),
+    ('03-Button.rml', '1:151-33:164', 'Icon', 903, None, {}),
+    ('32-Alert.rml', '110:223-110:226', 'Variant', 904, ['Info', 'Success', 'Warning', 'Error'], {}),
+    ('19-Segment.rml', '38:328-38:340', 'Icon', 905, None, {}),
+    ('12-Toolbar.rml', '10:7-10:2090', 'Brand Highlight', 906, ['Blue', 'Violet', 'Emerald', 'Orange', 'Rose', 'Inverse'], {}),
+    ('12-Toolbar.rml', '10:7-10:4743', 'Swatch Hover', 907, ['None', 'Blue', 'Violet', 'Emerald', 'Orange', 'Rose', 'Inverse'], {}),
+    ('33-Tooltip.rml', '112:1-112:3', 'Placement', 908, ['Top', 'Bottom', 'Left', 'Right'], {}),
+    ('34-TooltipButton.rml', '112:7-112:10', 'Placement', 909, ['Top', 'Bottom', 'Left', 'Right'], {}),
+    # Options: cond_path (the number the layer follows, when the binds read it through a formula token named
+    # var_token instead of their input) and overflow (the last state covers every value from there up).
 ]
 KEYS = {'18': ('opacity', 'KeyFrameDouble', 1.0), '47': ('thickness', 'KeyFrameDouble', 1.0),
-        '596': ('displayValue', 'KeyFrameUint', 0)}
-LOOKUP = re.compile(r'^(Is\d+|Hover\d+|VariantIs\d+|VariantStroke\d+|VariantHide\d+)$')
+        '596': ('displayValue', 'KeyFrameUint', 0), '632': ('layoutAlignmentType', 'KeyFrameUint', None)}
+ALIGN = ['topLeft', 'topCenter', 'topRight', 'centerLeft', 'center', 'centerRight', 'bottomLeft', 'bottomCenter', 'bottomRight']
+LOOKUP = re.compile(r'^(Is\d+|Hover\d+|VariantIs\d+|VariantStroke\d+|VariantHide\d+|TooltipArrow\dHide|TooltipAlign)$')
 
 d = sys.argv[1]
 root_p = os.path.join(d, '99-_root.rml')
@@ -30,11 +35,15 @@ OPS = {'add': '+', 'subtract': '-', 'multiply': '*', 'divide': '/', 'modulo': '%
 FNS = {'min': 'min', 'max': 'max', 'pow': 'pow', 'round': 'round', 'floor': 'math.floor', 'ceil': 'math.ceil', 'abs': 'abs'}
 
 
-def formula(body):
+def formula(body, var_token=None):
     e = ''
-    for k, a in re.findall(r'<FormulaToken(\w+)([^>]*?)/?>', body):
+    for k, a, src in re.findall(r'<FormulaToken(\w+)([^>]*?)/?>(?:\s*<DataBindContext sourcePathIds="([^"]+)")?', body):
         g = lambda n, dflt: (re.search(n + r'="([^"]*)"', a) or [None, dflt])[1]
-        if k == 'Input': e += 'x'
+        if k == 'Input': e += 'x' if var_token is None else 'INPUT'
+        elif k == 'Value' and src:
+            if var_token is None or src.split('-')[-1] != var_token:
+                return None  # reads another property: not a pure lookup
+            e += 'x'
         elif k == 'Value': e += g('operationValue', '1')
         elif k == 'Operation': e += OPS[g('operationType', 'add')]
         elif k == 'Function': e += FNS[g('functionType', 'min')] + '('
@@ -45,12 +54,17 @@ def formula(body):
     return e
 
 
-conv = {}  # id -> (name, expression)
-for m in re.finditer(r'<DataConverterFormula name="([^"]*)"[^>]*?\bid="([^"]+)">(.*?)</DataConverterFormula>', root, re.S):
-    if LOOKUP.match(m.group(1)):
-        e = formula(m.group(3))
-        if e:
-            conv[m.group(2)] = (m.group(1), e)
+def lookups(var_token=None):
+    out = {}  # id -> (name, expression in x)
+    for m in re.finditer(r'<DataConverterFormula name="([^"]*)"[^>]*?\bid="([^"]+)">(.*?)</DataConverterFormula>', root, re.S):
+        if LOOKUP.match(m.group(1)):
+            e = formula(m.group(3), var_token)
+            if e and 'INPUT' not in e:
+                out[m.group(2)] = (m.group(1), e)
+    return out
+conv = {}
+for *_, opts in JOBS:
+    conv.update(lookups(opts.get('var_token')))
 f_of = lambda e, x: eval(e, {'math': math, 'min': min, 'max': max, 'pow': pow, 'abs': abs, 'round': round, 'x': x})
 TAG = re.compile(r'<(/?)(\w+)([^>]*?)(/?)>')
 
@@ -66,7 +80,9 @@ def default_value(path):
 
 
 report = []
-for fname, path, layer, block, labels in JOBS:
+for fname, path, layer, block, labels, opts in JOBS:
+    jconv = lookups(opts.get('var_token'))
+    cond_path = opts.get('cond_path', path)
     fp = os.path.join(d, fname)
     s = open(fp, encoding='utf-8').read()
     sm_id = re.search(r'<Artboard [^>]*defaultStateMachineId="([^"]+)"', s).group(1)
@@ -84,8 +100,8 @@ for fname, path, layer, block, labels in JOBS:
             src = re.search(r'sourcePathIds="([^"]+)"', attrs)
             cv = re.search(r'converterId="([^"]+)"', attrs)
             key = re.search(r'propertyKey="(\d+)"', attrs).group(1)
-            if src and cv and src.group(1) == path and cv.group(1) in conv and key in KEYS:
-                found.append((t.start(), t.end(), stack[-1], key, conv[cv.group(1)][1], conv[cv.group(1)][0]))
+            if src and cv and src.group(1) == path and cv.group(1) in jconv and key in KEYS:
+                found.append((t.start(), t.end(), stack[-1], key, jconv[cv.group(1)][1], jconv[cv.group(1)][0]))
         if not selfc:
             stack.append((tag, (re.search(r'\bid="([^"]+)"', attrs) or [None, None])[1], t.start()))
     if not found:
@@ -125,11 +141,12 @@ for fname, path, layer, block, labels in JOBS:
         states += '<AnimationState animationId="%s" x="%d" y="%d" stateName="%s" id="%s"/>' % (aid, 160, -100 * len(values) // 2 + 100 * k, name, sid)
     def cond(k):
         val = ' value="%d"' % k if k else ''
-        return ('<StateTransition stateToId="%s" id="%s"><TransitionViewModelCondition id="%s">'
+        op = ' opValue="greaterThanOrEqual"' if opts.get('overflow') and k == values[-1] else ''
+        return ('<StateTransition stateToId="%s" id="%s"><TransitionViewModelCondition%s id="%s">'
                 '<TransitionPropertyViewModelComparator id="%s"><BindablePropertyNumber id="%s">'
                 '<DataBindContext sourcePathIds="%s" propertyKey="636" id="%s"/></BindablePropertyNumber>'
                 '</TransitionPropertyViewModelComparator><TransitionValueNumberComparator%s id="%s"/>'
-                '</TransitionViewModelCondition></StateTransition>') % (state_ids[k], nid(), nid(), nid(), nid(), path, nid(), val, nid())
+                '</TransitionViewModelCondition></StateTransition>') % (state_ids[k], nid(), op, nid(), nid(), nid(), cond_path, nid(), val, nid())
     for k in values:
         entry += cond(k)
     for k in values:
@@ -138,7 +155,7 @@ for fname, path, layer, block, labels in JOBS:
                  '<EntryState id="%s">%s</EntryState>%s</StateMachineLayer>') % (layer, nid(), nid(), anyt, nid(), nid(), entry, states)
 
     # remove the binds (back to front) and set each object's design value to the default state
-    dflt = default_value(path)
+    dflt = default_value(cond_path)
     for start, end, (tag, oid, ostart), key, e, _ in sorted(found, reverse=True):
         ls = s.rfind('\n', 0, start)
         s = s[:ls] + s[end:]
@@ -151,6 +168,8 @@ for fname, path, layer, block, labels in JOBS:
             attrs = re.sub(r'\s?\b%s="[^"]*"' % pname, '', attrs)
             if pname == 'displayValue':
                 attrs += ('displayValue="none" ' if round(v) == 1 else '')
+            elif pname == 'layoutAlignmentType':
+                attrs += 'layoutAlignmentType="%s" ' % ALIGN[int(round(v))] if round(v) else ''
             elif v != base:
                 attrs += '%s="%g" ' % (pname, v)
         s = s[:m.start(2)] + attrs + s[m.end(2):]

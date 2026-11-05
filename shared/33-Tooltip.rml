@@ -52,7 +52,6 @@
                         </Shape>
                     </Node>
                     <LayoutComponentStyle id="112:221">
-                        <DataBindContext sourcePathIds="112:1-112:3" propertyKey="596" nameBased="true" converterId="112:18" id="112:232"/>
                     </LayoutComponentStyle>
                 </LayoutComponent>
                 <LayoutComponent width="12" height="6" styleId="112:233" name="Arrow Up" id="112:237">
@@ -70,8 +69,7 @@
                             </Fill>
                         </Shape>
                     </Node>
-                    <LayoutComponentStyle displayValue="none" id="112:233">
-                        <DataBindContext sourcePathIds="112:1-112:3" propertyKey="596" nameBased="true" converterId="112:32" id="112:244"/>
+                    <LayoutComponentStyle  displayValue="none" id="112:233">
                     </LayoutComponentStyle>
                 </LayoutComponent>
                 <LayoutComponent width="6" height="12" styleId="112:245" name="Arrow Right" id="112:249">
@@ -89,8 +87,7 @@
                             </Fill>
                         </Shape>
                     </Node>
-                    <LayoutComponentStyle displayValue="none" id="112:245">
-                        <DataBindContext sourcePathIds="112:1-112:3" propertyKey="596" nameBased="true" converterId="112:46" id="112:256"/>
+                    <LayoutComponentStyle  displayValue="none" id="112:245">
                     </LayoutComponentStyle>
                 </LayoutComponent>
                 <LayoutComponent width="6" height="12" styleId="112:257" name="Arrow Left" id="112:261">
@@ -108,8 +105,7 @@
                             </Fill>
                         </Shape>
                     </Node>
-                    <LayoutComponentStyle displayValue="none" id="112:257">
-                        <DataBindContext sourcePathIds="112:1-112:3" propertyKey="596" nameBased="true" converterId="112:60" id="112:268"/>
+                    <LayoutComponentStyle  displayValue="none" id="112:257">
                     </LayoutComponentStyle>
                 </LayoutComponent>
                 <LayoutComponentStyle layoutAlignmentType="center" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="112:196"/>
@@ -118,6 +114,10 @@
                 <DataBindContext sourcePathIds="112:1-112:3" propertyKey="598" nameBased="true" id="112:269"/>
             </LayoutComponentStyle>
         </LayoutComponent>
+        <LinearAnimation loopValue="loop" name="Placement Top" id="908:1"><KeyedObject objectId="112:221" id="908:5"><KeyedProperty property="displayValue" id="908:3"><KeyFrameUint value="0" id="908:4"/></KeyedProperty></KeyedObject><KeyedObject objectId="112:233" id="908:8"><KeyedProperty property="displayValue" id="908:6"><KeyFrameUint value="1" id="908:7"/></KeyedProperty></KeyedObject><KeyedObject objectId="112:245" id="908:11"><KeyedProperty property="displayValue" id="908:9"><KeyFrameUint value="1" id="908:10"/></KeyedProperty></KeyedObject><KeyedObject objectId="112:257" id="908:14"><KeyedProperty property="displayValue" id="908:12"><KeyFrameUint value="1" id="908:13"/></KeyedProperty></KeyedObject></LinearAnimation>
+        <LinearAnimation loopValue="loop" name="Placement Bottom" id="908:15"><KeyedObject objectId="112:221" id="908:19"><KeyedProperty property="displayValue" id="908:17"><KeyFrameUint value="1" id="908:18"/></KeyedProperty></KeyedObject><KeyedObject objectId="112:233" id="908:22"><KeyedProperty property="displayValue" id="908:20"><KeyFrameUint value="0" id="908:21"/></KeyedProperty></KeyedObject><KeyedObject objectId="112:245" id="908:25"><KeyedProperty property="displayValue" id="908:23"><KeyFrameUint value="1" id="908:24"/></KeyedProperty></KeyedObject><KeyedObject objectId="112:257" id="908:28"><KeyedProperty property="displayValue" id="908:26"><KeyFrameUint value="1" id="908:27"/></KeyedProperty></KeyedObject></LinearAnimation>
+        <LinearAnimation loopValue="loop" name="Placement Left" id="908:29"><KeyedObject objectId="112:221" id="908:33"><KeyedProperty property="displayValue" id="908:31"><KeyFrameUint value="1" id="908:32"/></KeyedProperty></KeyedObject><KeyedObject objectId="112:233" id="908:36"><KeyedProperty property="displayValue" id="908:34"><KeyFrameUint value="1" id="908:35"/></KeyedProperty></KeyedObject><KeyedObject objectId="112:245" id="908:39"><KeyedProperty property="displayValue" id="908:37"><KeyFrameUint value="0" id="908:38"/></KeyedProperty></KeyedObject><KeyedObject objectId="112:257" id="908:42"><KeyedProperty property="displayValue" id="908:40"><KeyFrameUint value="1" id="908:41"/></KeyedProperty></KeyedObject></LinearAnimation>
+        <LinearAnimation loopValue="loop" name="Placement Right" id="908:43"><KeyedObject objectId="112:221" id="908:47"><KeyedProperty property="displayValue" id="908:45"><KeyFrameUint value="1" id="908:46"/></KeyedProperty></KeyedObject><KeyedObject objectId="112:233" id="908:50"><KeyedProperty property="displayValue" id="908:48"><KeyFrameUint value="1" id="908:49"/></KeyedProperty></KeyedObject><KeyedObject objectId="112:245" id="908:53"><KeyedProperty property="displayValue" id="908:51"><KeyFrameUint value="1" id="908:52"/></KeyedProperty></KeyedObject><KeyedObject objectId="112:257" id="908:56"><KeyedProperty property="displayValue" id="908:54"><KeyFrameUint value="0" id="908:55"/></KeyedProperty></KeyedObject></LinearAnimation>
         <StateMachine name="State Machine 1" id="112:190">
             <StateMachineLayer name="Open" id="112:270">
                 <AnimationState animationId="112:197" x="300" y="100" stateName="Open" id="112:199"/>
@@ -151,7 +151,7 @@
                     <StateTransition stateToId="112:200" id="112:288"/>
                 </EntryState>
             </StateMachineLayer>
-        </StateMachine>
+        <StateMachineLayer name="Placement" id="908:105"><AnyState x="400" id="908:106"><StateTransition stateToId="908:2" id="908:81"><TransitionViewModelCondition id="908:82"><TransitionPropertyViewModelComparator id="908:83"><BindablePropertyNumber id="908:84"><DataBindContext sourcePathIds="112:1-112:3" propertyKey="636" id="908:85"/></BindablePropertyNumber></TransitionPropertyViewModelComparator><TransitionValueNumberComparator id="908:86"/></TransitionViewModelCondition></StateTransition><StateTransition stateToId="908:16" id="908:87"><TransitionViewModelCondition id="908:88"><TransitionPropertyViewModelComparator id="908:89"><BindablePropertyNumber id="908:90"><DataBindContext sourcePathIds="112:1-112:3" propertyKey="636" id="908:91"/></BindablePropertyNumber></TransitionPropertyViewModelComparator><TransitionValueNumberComparator value="1" id="908:92"/></TransitionViewModelCondition></StateTransition><StateTransition stateToId="908:30" id="908:93"><TransitionViewModelCondition id="908:94"><TransitionPropertyViewModelComparator id="908:95"><BindablePropertyNumber id="908:96"><DataBindContext sourcePathIds="112:1-112:3" propertyKey="636" id="908:97"/></BindablePropertyNumber></TransitionPropertyViewModelComparator><TransitionValueNumberComparator value="2" id="908:98"/></TransitionViewModelCondition></StateTransition><StateTransition stateToId="908:44" id="908:99"><TransitionViewModelCondition id="908:100"><TransitionPropertyViewModelComparator id="908:101"><BindablePropertyNumber id="908:102"><DataBindContext sourcePathIds="112:1-112:3" propertyKey="636" id="908:103"/></BindablePropertyNumber></TransitionPropertyViewModelComparator><TransitionValueNumberComparator value="3" id="908:104"/></TransitionViewModelCondition></StateTransition></AnyState><ExitState x="480" id="908:107"/><EntryState id="908:108"><StateTransition stateToId="908:2" id="908:57"><TransitionViewModelCondition id="908:58"><TransitionPropertyViewModelComparator id="908:59"><BindablePropertyNumber id="908:60"><DataBindContext sourcePathIds="112:1-112:3" propertyKey="636" id="908:61"/></BindablePropertyNumber></TransitionPropertyViewModelComparator><TransitionValueNumberComparator id="908:62"/></TransitionViewModelCondition></StateTransition><StateTransition stateToId="908:16" id="908:63"><TransitionViewModelCondition id="908:64"><TransitionPropertyViewModelComparator id="908:65"><BindablePropertyNumber id="908:66"><DataBindContext sourcePathIds="112:1-112:3" propertyKey="636" id="908:67"/></BindablePropertyNumber></TransitionPropertyViewModelComparator><TransitionValueNumberComparator value="1" id="908:68"/></TransitionViewModelCondition></StateTransition><StateTransition stateToId="908:30" id="908:69"><TransitionViewModelCondition id="908:70"><TransitionPropertyViewModelComparator id="908:71"><BindablePropertyNumber id="908:72"><DataBindContext sourcePathIds="112:1-112:3" propertyKey="636" id="908:73"/></BindablePropertyNumber></TransitionPropertyViewModelComparator><TransitionValueNumberComparator value="2" id="908:74"/></TransitionViewModelCondition></StateTransition><StateTransition stateToId="908:44" id="908:75"><TransitionViewModelCondition id="908:76"><TransitionPropertyViewModelComparator id="908:77"><BindablePropertyNumber id="908:78"><DataBindContext sourcePathIds="112:1-112:3" propertyKey="636" id="908:79"/></BindablePropertyNumber></TransitionPropertyViewModelComparator><TransitionValueNumberComparator value="3" id="908:80"/></TransitionViewModelCondition></StateTransition></EntryState><AnimationState animationId="908:1" x="160" y="-200" stateName="Top" id="908:2"/><AnimationState animationId="908:15" x="160" y="-100" stateName="Bottom" id="908:16"/><AnimationState animationId="908:29" x="160" y="0" stateName="Left" id="908:30"/><AnimationState animationId="908:43" x="160" y="100" stateName="Right" id="908:44"/></StateMachineLayer></StateMachine>
         <LinearAnimation name="Closed" id="112:198">
             <KeyedObject objectId="112:191" id="112:295">
                 <KeyedProperty property="opacity" id="112:289">

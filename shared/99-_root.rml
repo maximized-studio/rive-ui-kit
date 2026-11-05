@@ -169,7 +169,7 @@
     <CubicEaseInterpolator id="1:5472"/>
     <DataBindContext sourcePathIds="1:1932-1:1958" propertyKey="718" id="1:1970"/>
     <DataBindContext sourcePathIds="1:1932-1:1960" propertyKey="719" id="1:1971"/>
-    <DataConverterFormula name="SliderPercent" groupId="1:2674" id="2:41">
+    <DataConverterFormula name="Slider · Percent" groupId="1:2674" id="2:41">
         <FormulaTokenFunction functionType="round" id="2:42"/>
         <FormulaTokenParenthesisOpen id="2:43"/>
         <FormulaTokenInput id="2:44"/>
@@ -192,12 +192,12 @@
         <FormulaTokenValue operationValue="100" id="2:58"/>
         <FormulaTokenParenthesisClose id="2:59"/>
     </DataConverterFormula>
-    <DataConverterFormula name="DisabledToDisplay" groupId="1:2674" id="9:93">
+    <DataConverterFormula name="Disabled · Shield (formula)" groupId="1:2674" id="9:93">
         <FormulaTokenValue id="9:94"/>
         <FormulaTokenOperation operationType="subtract" id="9:95"/>
         <FormulaTokenInput id="9:96"/>
     </DataConverterFormula>
-    <DataConverterFormula name="ShadowAlpha" groupId="1:2674" id="9:134">
+    <DataConverterFormula name="Disabled · No shadow (formula)" groupId="1:2674" id="9:134">
         <FormulaTokenValue operationValue="51" id="9:135"/>
         <FormulaTokenOperation operationType="multiply" id="9:136"/>
         <FormulaTokenParenthesisOpen id="9:137"/>
@@ -206,7 +206,7 @@
         <FormulaTokenInput id="9:140"/>
         <FormulaTokenParenthesisClose id="9:141"/>
     </DataConverterFormula>
-    <DataConverterFormula name="IconNoneHide" groupId="1:2674" id="33:216">
+    <DataConverterFormula name="Icon · Hide when none" groupId="1:2674" id="33:216">
         <FormulaTokenValue id="33:217"/>
         <FormulaTokenOperation operationType="subtract" id="33:218"/>
         <FormulaTokenFunction id="33:219"/>
@@ -215,80 +215,32 @@
         <FormulaTokenInput id="33:222"/>
         <FormulaTokenParenthesisClose id="33:223"/>
     </DataConverterFormula>
-    <DataConverterFormula name="IconOnlyPadF" groupId="1:2674" id="33:227">
+    <DataConverterFormula name="Button · Icon-only padding (formula)" groupId="1:2674" id="33:227">
         <FormulaTokenValue operationValue="16" id="33:228"/>
         <FormulaTokenOperation operationType="subtract" id="33:229"/>
         <FormulaTokenValue operationValue="4" id="33:230"/>
         <FormulaTokenOperation operationType="multiply" id="33:231"/>
         <FormulaTokenInput id="33:232"/>
     </DataConverterFormula>
-    <DataConverterFormula name="SecondaryStrokeF" groupId="1:2674" id="33:254">
+    <DataConverterFormula name="Button · Secondary border (formula)" groupId="1:2674" id="33:254">
         <FormulaTokenValue operationValue="1.75" id="33:255"/>
         <FormulaTokenOperation operationType="multiply" id="33:256"/>
         <FormulaTokenInput id="33:257"/>
     </DataConverterFormula>
-    <DataConverterFormula name="PanelFullTmp" groupId="1:2674" id="42:469">
+    <DataConverterFormula name="Showcase · Panel width (formula)" groupId="1:2674" id="42:469">
         <FormulaTokenValue operationValue="240" id="42:470"/>
         <FormulaTokenOperation id="42:471"/>
         <FormulaTokenValue operationValue="0" id="42:472"/>
         <FormulaTokenOperation operationType="multiply" id="42:473"/>
         <FormulaTokenInput id="42:474"/>
     </DataConverterFormula>
-    <DataConverterFormula name="Formula 1" groupId="1:2674" id="70:513">
+    <DataConverterFormula name="Showcase · Hover tint (formula)" groupId="1:2674" id="70:513">
         <FormulaTokenInput id="70:514"/>
         <FormulaTokenOperation operationType="multiply" id="70:515"/>
         <FormulaTokenValue operationValue="0.1" id="70:516"/>
     </DataConverterFormula>
-    <DataConverterFormula name="RadButtonLeft" groupId="1:2674" id="99:108">
-        <FormulaTokenParenthesisOpen id="99:114"/>
-        <FormulaTokenValue operationValue="4" id="99:115"/>
-        <FormulaTokenOperation operationType="multiply" id="99:116"/>
-        <FormulaTokenFunction functionType="max" id="99:117"/>
-        <FormulaTokenValue operationValue="0" id="99:118"/>
-        <FormulaTokenArgumentSeparator id="99:119"/>
-        <FormulaTokenValue id="99:120"/>
-        <FormulaTokenOperation operationType="subtract" id="99:121"/>
-        <FormulaTokenFunction functionType="pow" id="99:122"/>
-        <FormulaTokenInput id="99:123"/>
-        <FormulaTokenOperation operationType="subtract" id="99:124"/>
-        <FormulaTokenValue id="99:125"/>
-        <FormulaTokenArgumentSeparator id="99:126"/>
-        <FormulaTokenValue operationValue="2" id="99:127"/>
-        <FormulaTokenParenthesisClose id="99:128"/>
-        <FormulaTokenParenthesisClose id="99:129"/>
-        <FormulaTokenOperation id="99:130"/>
-        <FormulaTokenValue operationValue="8" id="99:131"/>
-        <FormulaTokenOperation operationType="multiply" id="99:132"/>
-        <FormulaTokenFunction functionType="max" id="99:133"/>
-        <FormulaTokenValue operationValue="0" id="99:134"/>
-        <FormulaTokenArgumentSeparator id="99:135"/>
-        <FormulaTokenValue id="99:136"/>
-        <FormulaTokenOperation operationType="subtract" id="99:137"/>
-        <FormulaTokenFunction functionType="pow" id="99:138"/>
-        <FormulaTokenInput id="99:139"/>
-        <FormulaTokenOperation operationType="subtract" id="99:140"/>
-        <FormulaTokenValue operationValue="2" id="99:141"/>
-        <FormulaTokenArgumentSeparator id="99:142"/>
-        <FormulaTokenValue operationValue="2" id="99:143"/>
-        <FormulaTokenParenthesisClose id="99:144"/>
-        <FormulaTokenParenthesisClose id="99:145"/>
-        <FormulaTokenOperation id="99:146"/>
-        <FormulaTokenValue operationValue="20" id="99:147"/>
-        <FormulaTokenOperation operationType="multiply" id="99:148"/>
-        <FormulaTokenFunction functionType="max" id="99:149"/>
-        <FormulaTokenValue operationValue="0" id="99:150"/>
-        <FormulaTokenArgumentSeparator id="99:151"/>
-        <FormulaTokenValue id="99:152"/>
-        <FormulaTokenOperation operationType="subtract" id="99:153"/>
-        <FormulaTokenFunction functionType="pow" id="99:154"/>
-        <FormulaTokenInput id="99:155"/>
-        <FormulaTokenOperation operationType="subtract" id="99:156"/>
-        <FormulaTokenValue operationValue="3" id="99:157"/>
-        <FormulaTokenArgumentSeparator id="99:158"/>
-        <FormulaTokenValue operationValue="2" id="99:159"/>
-        <FormulaTokenParenthesisClose id="99:160"/>
-        <FormulaTokenParenthesisClose id="99:161"/>
-        <FormulaTokenParenthesisClose id="99:162"/>
+    <DataConverterFormula name="Button · Group corner left" groupId="1:2674" id="99:108">
+        <FormulaTokenInput id="911:1"/>
         <FormulaTokenOperation operationType="multiply" id="99:163"/>
         <FormulaTokenFunction id="99:164"/>
         <FormulaTokenValue id="99:165"/>
@@ -304,56 +256,8 @@
         <FormulaTokenParenthesisClose id="99:174"/>
         <FormulaTokenParenthesisClose id="99:175"/>
     </DataConverterFormula>
-    <DataConverterFormula name="RadButtonRight" groupId="1:2674" id="99:109">
-        <FormulaTokenParenthesisOpen id="99:176"/>
-        <FormulaTokenValue operationValue="4" id="99:177"/>
-        <FormulaTokenOperation operationType="multiply" id="99:178"/>
-        <FormulaTokenFunction functionType="max" id="99:179"/>
-        <FormulaTokenValue operationValue="0" id="99:180"/>
-        <FormulaTokenArgumentSeparator id="99:181"/>
-        <FormulaTokenValue id="99:182"/>
-        <FormulaTokenOperation operationType="subtract" id="99:183"/>
-        <FormulaTokenFunction functionType="pow" id="99:184"/>
-        <FormulaTokenInput id="99:185"/>
-        <FormulaTokenOperation operationType="subtract" id="99:186"/>
-        <FormulaTokenValue id="99:187"/>
-        <FormulaTokenArgumentSeparator id="99:188"/>
-        <FormulaTokenValue operationValue="2" id="99:189"/>
-        <FormulaTokenParenthesisClose id="99:190"/>
-        <FormulaTokenParenthesisClose id="99:191"/>
-        <FormulaTokenOperation id="99:192"/>
-        <FormulaTokenValue operationValue="8" id="99:193"/>
-        <FormulaTokenOperation operationType="multiply" id="99:194"/>
-        <FormulaTokenFunction functionType="max" id="99:195"/>
-        <FormulaTokenValue operationValue="0" id="99:196"/>
-        <FormulaTokenArgumentSeparator id="99:197"/>
-        <FormulaTokenValue id="99:198"/>
-        <FormulaTokenOperation operationType="subtract" id="99:199"/>
-        <FormulaTokenFunction functionType="pow" id="99:200"/>
-        <FormulaTokenInput id="99:201"/>
-        <FormulaTokenOperation operationType="subtract" id="99:202"/>
-        <FormulaTokenValue operationValue="2" id="99:203"/>
-        <FormulaTokenArgumentSeparator id="99:204"/>
-        <FormulaTokenValue operationValue="2" id="99:205"/>
-        <FormulaTokenParenthesisClose id="99:206"/>
-        <FormulaTokenParenthesisClose id="99:207"/>
-        <FormulaTokenOperation id="99:208"/>
-        <FormulaTokenValue operationValue="20" id="99:209"/>
-        <FormulaTokenOperation operationType="multiply" id="99:210"/>
-        <FormulaTokenFunction functionType="max" id="99:211"/>
-        <FormulaTokenValue operationValue="0" id="99:212"/>
-        <FormulaTokenArgumentSeparator id="99:213"/>
-        <FormulaTokenValue id="99:214"/>
-        <FormulaTokenOperation operationType="subtract" id="99:215"/>
-        <FormulaTokenFunction functionType="pow" id="99:216"/>
-        <FormulaTokenInput id="99:217"/>
-        <FormulaTokenOperation operationType="subtract" id="99:218"/>
-        <FormulaTokenValue operationValue="3" id="99:219"/>
-        <FormulaTokenArgumentSeparator id="99:220"/>
-        <FormulaTokenValue operationValue="2" id="99:221"/>
-        <FormulaTokenParenthesisClose id="99:222"/>
-        <FormulaTokenParenthesisClose id="99:223"/>
-        <FormulaTokenParenthesisClose id="99:224"/>
+    <DataConverterFormula name="Button · Group corner right" groupId="1:2674" id="99:109">
+        <FormulaTokenInput id="911:2"/>
         <FormulaTokenOperation operationType="multiply" id="99:225"/>
         <FormulaTokenParenthesisOpen id="99:226"/>
         <FormulaTokenValue id="99:227"/>
@@ -377,7 +281,7 @@
         <FormulaTokenParenthesisClose id="99:243"/>
         <FormulaTokenParenthesisClose id="99:244"/>
     </DataConverterFormula>
-    <DataConverterFormula name="GroupDividerHide" groupId="1:2674" id="99:110">
+    <DataConverterFormula name="Button · Group divider" groupId="1:2674" id="99:110">
         <FormulaTokenValue id="99:245"/>
         <FormulaTokenOperation operationType="subtract" id="99:246"/>
         <FormulaTokenFunction id="99:247"/>
@@ -392,7 +296,7 @@
         <FormulaTokenParenthesisClose id="99:256"/>
         <FormulaTokenParenthesisClose id="99:257"/>
     </DataConverterFormula>
-    <DataConverterFormula name="ShadowAlphaGrouped" groupId="1:2674" id="99:112">
+    <DataConverterFormula name="Button · No shadow in a group (formula)" groupId="1:2674" id="99:112">
         <FormulaTokenValue operationValue="51" id="99:258"/>
         <FormulaTokenOperation operationType="multiply" id="99:259"/>
         <FormulaTokenParenthesisOpen id="99:260"/>
@@ -1028,188 +932,65 @@
         <FormulaTokenInput id="111:29"/>
         <FormulaTokenParenthesisClose id="111:30"/>
     </DataConverterFormula>
-    <DataConverterFormula name="TooltipArrow0Hide" groupId="1:2674" id="112:18">
-        <FormulaTokenFunction id="112:19"/>
-        <FormulaTokenValue id="112:20"/>
-        <FormulaTokenArgumentSeparator id="112:21"/>
-        <FormulaTokenFunction functionType="max" id="112:22"/>
-        <FormulaTokenInput id="112:23"/>
-        <FormulaTokenOperation operationType="subtract" id="112:24"/>
-        <FormulaTokenValue operationValue="0" id="112:25"/>
-        <FormulaTokenArgumentSeparator id="112:26"/>
-        <FormulaTokenValue operationValue="0" id="112:27"/>
-        <FormulaTokenOperation operationType="subtract" id="112:28"/>
-        <FormulaTokenInput id="112:29"/>
-        <FormulaTokenParenthesisClose id="112:30"/>
-        <FormulaTokenParenthesisClose id="112:31"/>
-    </DataConverterFormula>
-    <DataConverterFormula name="TooltipArrow1Hide" groupId="1:2674" id="112:32">
-        <FormulaTokenFunction id="112:33"/>
-        <FormulaTokenValue id="112:34"/>
-        <FormulaTokenArgumentSeparator id="112:35"/>
-        <FormulaTokenFunction functionType="max" id="112:36"/>
-        <FormulaTokenInput id="112:37"/>
-        <FormulaTokenOperation operationType="subtract" id="112:38"/>
-        <FormulaTokenValue id="112:39"/>
-        <FormulaTokenArgumentSeparator id="112:40"/>
-        <FormulaTokenValue id="112:41"/>
-        <FormulaTokenOperation operationType="subtract" id="112:42"/>
-        <FormulaTokenInput id="112:43"/>
-        <FormulaTokenParenthesisClose id="112:44"/>
-        <FormulaTokenParenthesisClose id="112:45"/>
-    </DataConverterFormula>
-    <DataConverterFormula name="TooltipArrow2Hide" groupId="1:2674" id="112:46">
-        <FormulaTokenFunction id="112:47"/>
-        <FormulaTokenValue id="112:48"/>
-        <FormulaTokenArgumentSeparator id="112:49"/>
-        <FormulaTokenFunction functionType="max" id="112:50"/>
-        <FormulaTokenInput id="112:51"/>
-        <FormulaTokenOperation operationType="subtract" id="112:52"/>
-        <FormulaTokenValue operationValue="2" id="112:53"/>
-        <FormulaTokenArgumentSeparator id="112:54"/>
-        <FormulaTokenValue operationValue="2" id="112:55"/>
-        <FormulaTokenOperation operationType="subtract" id="112:56"/>
-        <FormulaTokenInput id="112:57"/>
-        <FormulaTokenParenthesisClose id="112:58"/>
-        <FormulaTokenParenthesisClose id="112:59"/>
-    </DataConverterFormula>
-    <DataConverterFormula name="TooltipArrow3Hide" groupId="1:2674" id="112:60">
-        <FormulaTokenFunction id="112:61"/>
-        <FormulaTokenValue id="112:62"/>
-        <FormulaTokenArgumentSeparator id="112:63"/>
-        <FormulaTokenFunction functionType="max" id="112:64"/>
-        <FormulaTokenInput id="112:65"/>
-        <FormulaTokenOperation operationType="subtract" id="112:66"/>
-        <FormulaTokenValue operationValue="3" id="112:67"/>
-        <FormulaTokenArgumentSeparator id="112:68"/>
-        <FormulaTokenValue operationValue="3" id="112:69"/>
-        <FormulaTokenOperation operationType="subtract" id="112:70"/>
-        <FormulaTokenInput id="112:71"/>
-        <FormulaTokenParenthesisClose id="112:72"/>
-        <FormulaTokenParenthesisClose id="112:73"/>
-    </DataConverterFormula>
-    <DataConverterFormula name="TooltipAlign" groupId="1:2674" id="112:74">
-        <FormulaTokenValue operationValue="7" id="112:75"/>
-        <FormulaTokenOperation operationType="subtract" id="112:76"/>
-        <FormulaTokenValue operationValue="6" id="112:77"/>
-        <FormulaTokenOperation operationType="multiply" id="112:78"/>
-        <FormulaTokenParenthesisOpen id="112:79"/>
-        <FormulaTokenValue id="112:80"/>
-        <FormulaTokenOperation operationType="subtract" id="112:81"/>
-        <FormulaTokenFunction id="112:82"/>
-        <FormulaTokenValue id="112:83"/>
-        <FormulaTokenArgumentSeparator id="112:84"/>
-        <FormulaTokenFunction functionType="max" id="112:85"/>
-        <FormulaTokenInput id="112:86"/>
-        <FormulaTokenOperation operationType="subtract" id="112:87"/>
-        <FormulaTokenValue id="112:88"/>
-        <FormulaTokenArgumentSeparator id="112:89"/>
-        <FormulaTokenValue id="112:90"/>
-        <FormulaTokenOperation operationType="subtract" id="112:91"/>
-        <FormulaTokenInput id="112:92"/>
-        <FormulaTokenParenthesisClose id="112:93"/>
-        <FormulaTokenParenthesisClose id="112:94"/>
-        <FormulaTokenParenthesisClose id="112:95"/>
-        <FormulaTokenOperation operationType="subtract" id="112:96"/>
-        <FormulaTokenValue operationValue="2" id="112:97"/>
-        <FormulaTokenOperation operationType="multiply" id="112:98"/>
-        <FormulaTokenParenthesisOpen id="112:99"/>
-        <FormulaTokenValue id="112:100"/>
-        <FormulaTokenOperation operationType="subtract" id="112:101"/>
-        <FormulaTokenFunction id="112:102"/>
-        <FormulaTokenValue id="112:103"/>
-        <FormulaTokenArgumentSeparator id="112:104"/>
-        <FormulaTokenFunction functionType="max" id="112:105"/>
-        <FormulaTokenInput id="112:106"/>
-        <FormulaTokenOperation operationType="subtract" id="112:107"/>
-        <FormulaTokenValue operationValue="2" id="112:108"/>
-        <FormulaTokenArgumentSeparator id="112:109"/>
-        <FormulaTokenValue operationValue="2" id="112:110"/>
-        <FormulaTokenOperation operationType="subtract" id="112:111"/>
-        <FormulaTokenInput id="112:112"/>
-        <FormulaTokenParenthesisClose id="112:113"/>
-        <FormulaTokenParenthesisClose id="112:114"/>
-        <FormulaTokenParenthesisClose id="112:115"/>
-        <FormulaTokenOperation operationType="subtract" id="112:116"/>
-        <FormulaTokenValue operationValue="4" id="112:117"/>
-        <FormulaTokenOperation operationType="multiply" id="112:118"/>
-        <FormulaTokenParenthesisOpen id="112:119"/>
-        <FormulaTokenValue id="112:120"/>
-        <FormulaTokenOperation operationType="subtract" id="112:121"/>
-        <FormulaTokenFunction id="112:122"/>
-        <FormulaTokenValue id="112:123"/>
-        <FormulaTokenArgumentSeparator id="112:124"/>
-        <FormulaTokenFunction functionType="max" id="112:125"/>
-        <FormulaTokenInput id="112:126"/>
-        <FormulaTokenOperation operationType="subtract" id="112:127"/>
-        <FormulaTokenValue operationValue="3" id="112:128"/>
-        <FormulaTokenArgumentSeparator id="112:129"/>
-        <FormulaTokenValue operationValue="3" id="112:130"/>
-        <FormulaTokenOperation operationType="subtract" id="112:131"/>
-        <FormulaTokenInput id="112:132"/>
-        <FormulaTokenParenthesisClose id="112:133"/>
-        <FormulaTokenParenthesisClose id="112:134"/>
-        <FormulaTokenParenthesisClose id="112:135"/>
-    </DataConverterFormula>
-    <DataConverterFormula name="CanvasOpacity" groupId="1:2674" id="115:15">
+    <DataConverterFormula name="Showcase · Canvas opacity" groupId="1:2674" id="115:15">
         <FormulaTokenInput id="115:16"/>
         <FormulaTokenOperation operationType="multiply" id="115:17"/>
         <FormulaTokenValue operationValue="0.0054347827" id="115:18"/>
         <FormulaTokenOperation operationType="subtract" id="115:19"/>
         <FormulaTokenValue operationValue="0.043478262" id="115:20"/>
     </DataConverterFormula>
-    <DataConverterGroup name="SliderPercentText" groupId="1:2674" id="2:40">
+    <DataConverterGroup name="Slider · Percent text" groupId="1:2674" id="2:40">
         <DataConverterGroupItem converterId="2:41" id="2:60"/>
         <DataConverterGroupItem converterId="2:61" id="2:62"/>
     </DataConverterGroup>
-    <DataConverterGroup name="DisabledShowShield" groupId="1:2674" id="9:90">
+    <DataConverterGroup name="Disabled · Shield" groupId="1:2674" id="9:90">
         <DataConverterGroupItem converterId="9:91" id="9:92"/>
         <DataConverterGroupItem converterId="9:93" id="9:97"/>
     </DataConverterGroup>
-    <DataConverterGroup name="DisabledNoShadow" groupId="1:2674" id="9:131">
+    <DataConverterGroup name="Disabled · No shadow" groupId="1:2674" id="9:131">
         <DataConverterGroupItem converterId="9:132" id="9:133"/>
         <DataConverterGroupItem converterId="9:134" id="9:142"/>
     </DataConverterGroup>
-    <DataConverterGroup name="IconOnlyPad" groupId="1:2674" id="33:224">
+    <DataConverterGroup name="Button · Icon-only padding" groupId="1:2674" id="33:224">
         <DataConverterGroupItem converterId="33:225" id="33:226"/>
         <DataConverterGroupItem converterId="33:227" id="33:233"/>
     </DataConverterGroup>
-    <DataConverterGroup name="SecondaryStroke" groupId="1:2674" id="33:251">
+    <DataConverterGroup name="Button · Secondary border" groupId="1:2674" id="33:251">
         <DataConverterGroupItem converterId="33:252" id="33:253"/>
         <DataConverterGroupItem converterId="33:254" id="33:258"/>
     </DataConverterGroup>
-    <DataConverterGroup name="PanelFullWidth" groupId="1:2674" id="42:481">
+    <DataConverterGroup name="Showcase · Panel width" groupId="1:2674" id="42:481">
         <DataConverterGroupItem converterId="9:91" id="42:482"/>
         <DataConverterGroupItem converterId="42:469" id="42:483"/>
     </DataConverterGroup>
-    <DataConverterGroup name="Hover Tint" groupId="1:2674" id="70:510">
+    <DataConverterGroup name="Showcase · Hover tint" groupId="1:2674" id="70:510">
         <DataConverterGroupItem converterId="70:511" id="70:512"/>
         <DataConverterGroupItem converterId="70:513" id="70:517"/>
     </DataConverterGroup>
-    <DataConverterGroup name="DisabledNoShadowGrouped" groupId="1:2674" id="99:113">
+    <DataConverterGroup name="Button · No shadow in a group" groupId="1:2674" id="99:113">
         <DataConverterGroupItem converterId="99:111" id="99:280"/>
         <DataConverterGroupItem converterId="99:112" id="99:281"/>
     </DataConverterGroup>
-    <DataConverterGroup name="TileCountText" groupId="1:2674" id="100:60">
+    <DataConverterGroup name="Showcase · Tile count text" groupId="1:2674" id="100:60">
         <DataConverterGroupItem converterId="100:59" id="100:61"/>
         <DataConverterGroupItem converterId="10:5473" id="100:62"/>
         <DataConverterGroupItem converterId="10:5574" id="100:63"/>
     </DataConverterGroup>
-    <DataConverterListToLength name="TileCount" groupId="1:2674" id="100:59"/>
-    <DataConverterToNumber name="BoolToChecked" groupId="1:2674" id="2:64"/>
-    <DataConverterToNumber name="DisabledNumberA" groupId="1:2674" id="9:91"/>
-    <DataConverterToNumber name="DisabledNumberC" groupId="1:2674" id="9:132"/>
-    <DataConverterToNumber name="DisabledOn" groupId="1:2674" id="9:145"/>
-    <DataConverterToNumber name="IconOnlyNum" groupId="1:2674" id="33:225"/>
-    <DataConverterToNumber name="SecondaryNum" groupId="1:2674" id="33:252"/>
-    <DataConverterToNumber name="Convert to Number 1" groupId="1:2674" id="70:511"/>
-    <DataConverterToNumber name="DisabledNumberG" groupId="1:2674" id="99:111"/>
+    <DataConverterListToLength name="Showcase · Tile count" groupId="1:2674" id="100:59"/>
+    <DataConverterToNumber name="Checkbox · Checked (to number)" groupId="1:2674" id="2:64"/>
+    <DataConverterToNumber name="Showcase · Panel width / Disabled · Shield (to number)" groupId="1:2674" id="9:91"/>
+    <DataConverterToNumber name="Disabled · No shadow (to number)" groupId="1:2674" id="9:132"/>
+    <DataConverterToNumber name="Disabled · On (to number)" groupId="1:2674" id="9:145"/>
+    <DataConverterToNumber name="Button · Icon-only padding (to number)" groupId="1:2674" id="33:225"/>
+    <DataConverterToNumber name="Button · Secondary border (to number)" groupId="1:2674" id="33:252"/>
+    <DataConverterToNumber name="Showcase · Hover tint (to number)" groupId="1:2674" id="70:511"/>
+    <DataConverterToNumber name="Button · No shadow in a group (to number)" groupId="1:2674" id="99:111"/>
     <DataConverterToString round="true" name="SliderPercentString" groupId="1:2674" id="2:61"/>
     <DataFolder name="UI Kit" id="1:2753">
         <DataFolder name="Utils" id="1:1021">
-            <DataConverterBooleanNegate name="Toggle" groupId="1:2674" id="1:1018"/>
-            <DataConverterTrigger name="Trigger 1" groupId="1:2674" id="1:1332"/>
-            <DataConverterFormula name="SliderPositionToPercentage" groupId="1:2674" id="1:1957">
+            <DataConverterBooleanNegate name="Utils · Toggle" groupId="1:2674" id="1:1018"/>
+            <DataConverterTrigger name="Utils · Fire trigger" groupId="1:2674" id="1:1332"/>
+            <DataConverterFormula name="Slider · Position (0–1)" groupId="1:2674" id="1:1957">
                 <FormulaTokenParenthesisOpen id="1:2011"/>
                 <FormulaTokenValue id="1:2012">
                     <DataBindContext sourcePathIds="1:1932-1:1962" propertyKey="777" id="1:2024"/>
@@ -1863,7 +1644,7 @@
             </ViewModel>
         </DataFolder>
         <DataFolder name="Showcase" id="1:2750">
-            <DataConverterFormula name="GridTileWidth" groupId="1:2674" id="10:1654">
+            <DataConverterFormula name="Showcase · Grid tile width" groupId="1:2674" id="10:1654">
                 <FormulaTokenParenthesisOpen id="10:1655"/>
                 <FormulaTokenInput id="10:1656"/>
                 <FormulaTokenOperation operationType="subtract" id="10:1657"/>
@@ -1902,32 +1683,32 @@
                 <FormulaTokenParenthesisClose id="10:1690"/>
                 <FormulaTokenParenthesisClose id="10:1691"/>
             </DataConverterFormula>
-            <DataConverterFormula name="PlusOne" groupId="1:2674" id="10:5466">
+            <DataConverterFormula name="Showcase · Slide number (+1)" groupId="1:2674" id="10:5466">
                 <FormulaTokenInput id="10:5467"/>
                 <FormulaTokenOperation id="10:5468"/>
                 <FormulaTokenValue id="10:5469"/>
             </DataConverterFormula>
-            <DataConverterToString name="ToText" groupId="1:2674" id="10:5471"/>
-            <DataConverterToString name="CountText" groupId="1:2674" id="10:5473"/>
-            <DataConverterFormula name="TrackOffsetPct" groupId="1:2674" id="10:5518">
+            <DataConverterToString name="Showcase · Slide number (to text)" groupId="1:2674" id="10:5471"/>
+            <DataConverterToString name="Text · Count (to text)" groupId="1:2674" id="10:5473"/>
+            <DataConverterFormula name="Showcase · Slide track offset" groupId="1:2674" id="10:5518">
                 <FormulaTokenValue operationValue="0" id="10:5519"/>
                 <FormulaTokenOperation operationType="subtract" id="10:5520"/>
                 <FormulaTokenInput id="10:5521"/>
                 <FormulaTokenOperation operationType="multiply" id="10:5522"/>
                 <FormulaTokenValue operationValue="100" id="10:5523"/>
             </DataConverterFormula>
-            <DataConverterGroup name="IndexLabelClean" groupId="1:2674" id="10:5567">
+            <DataConverterGroup name="Showcase · Slide number text" groupId="1:2674" id="10:5567">
                 <DataConverterGroupItem converterId="10:5466" id="10:5568"/>
                 <DataConverterGroupItem converterId="10:5471" id="10:5569"/>
                 <DataConverterGroupItem converterId="10:5570" id="10:5571"/>
             </DataConverterGroup>
-            <DataConverterStringRemoveZeros name="NoZeros" groupId="1:2674" id="10:5570"/>
-            <DataConverterGroup name="CountTextClean" groupId="1:2674" id="10:5572">
+            <DataConverterStringRemoveZeros name="Showcase · Slide number (no decimals)" groupId="1:2674" id="10:5570"/>
+            <DataConverterGroup name="Text · Count" groupId="1:2674" id="10:5572">
                 <DataConverterGroupItem converterId="10:5473" id="10:5573"/>
                 <DataConverterGroupItem converterId="10:5574" id="10:5575"/>
             </DataConverterGroup>
-            <DataConverterStringRemoveZeros name="NoZeros2" groupId="1:2674" id="10:5574"/>
-            <DataConverterFormula name="NextIdx" groupId="1:2674" id="10:5580">
+            <DataConverterStringRemoveZeros name="Text · Count (no decimals)" groupId="1:2674" id="10:5574"/>
+            <DataConverterFormula name="Showcase · Next slide" groupId="1:2674" id="10:5580">
                 <FormulaTokenParenthesisOpen id="10:5581"/>
                 <FormulaTokenInput id="10:5582"/>
                 <FormulaTokenOperation id="10:5583"/>
@@ -1938,7 +1719,7 @@
                     <DataBindContext sourcePathIds="10:84-10:5576" propertyKey="777" id="10:5588"/>
                 </FormulaTokenValue>
             </DataConverterFormula>
-            <DataConverterFormula name="PrevIdx" groupId="1:2674" id="10:5589">
+            <DataConverterFormula name="Showcase · Previous slide" groupId="1:2674" id="10:5589">
                 <FormulaTokenParenthesisOpen id="10:5590"/>
                 <FormulaTokenInput id="10:5591"/>
                 <FormulaTokenOperation id="10:5592"/>
@@ -2471,14 +2252,14 @@
         </DataFolder>
         <DataFolder name="Theme tokens" id="10:8611">
             <DataFolder name="Roundness" id="10:8612">
-                <DataConverterFormula name="RadOn" groupId="1:2674" id="10:6555">
+                <DataConverterFormula name="Slider · Rounded" groupId="1:2674" id="10:6555">
                     <FormulaTokenFunction id="10:6556"/>
                     <FormulaTokenValue id="10:6557"/>
                     <FormulaTokenArgumentSeparator id="10:6558"/>
                     <FormulaTokenInput id="10:6559"/>
                     <FormulaTokenParenthesisClose id="10:6560"/>
                 </DataConverterFormula>
-                <DataConverterFormula name="RadOff" groupId="1:2674" id="10:6561">
+                <DataConverterFormula name="Slider · Square" groupId="1:2674" id="10:6561">
                     <FormulaTokenValue id="10:6562"/>
                     <FormulaTokenOperation operationType="subtract" id="10:6563"/>
                     <FormulaTokenFunction id="10:6564"/>
