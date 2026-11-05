@@ -1780,10 +1780,6 @@
             <ViewModelPropertyColor name="_errorBorder" id="110:11"/>
             <ViewModelPropertyColor name="_errorText" id="110:12"/>
             <ViewModelInstance exports="true" name="Default" id="10:63">
-                <ViewModelInstanceNumber viewModelPropertyId="913:1" id="913:5"/>
-                <ViewModelInstanceNumber viewModelPropertyId="913:2" id="913:6"/>
-                <ViewModelInstanceNumber viewModelPropertyId="913:3" id="913:7"/>
-                <ViewModelInstanceNumber viewModelPropertyId="913:4" id="913:8"/>
                 <ViewModelInstanceNumber propertyValue="2" viewModelPropertyId="10:2086" id="10:2087"/>
                 <ViewModelInstanceNumber propertyValue="1" viewModelPropertyId="10:2088" id="10:2089"/>
                 <ViewModelInstanceNumber viewModelPropertyId="10:2090" id="10:2091"/>
@@ -1856,6 +1852,10 @@
                 <ViewModelInstanceNumber propertyValue="3" viewModelPropertyId="901:33" id="901:34"/>
                 <ViewModelInstanceNumber propertyValue="3" viewModelPropertyId="901:35" id="901:36"/>
                 <ViewModelInstanceNumber propertyValue="2" viewModelPropertyId="901:37" id="901:38"/>
+                <ViewModelInstanceNumber viewModelPropertyId="913:1" id="913:5"/>
+                <ViewModelInstanceNumber viewModelPropertyId="913:2" id="913:6"/>
+                <ViewModelInstanceNumber viewModelPropertyId="913:3" id="913:7"/>
+                <ViewModelInstanceNumber viewModelPropertyId="913:4" id="913:8"/>
             </ViewModelInstance>
         </ViewModel>
     </DataFolder>
@@ -1883,8 +1883,8 @@
     <ImageAsset file="Showcase Cover.webp" format="webp" height="1080" width="1440" assetId="7319575" name="Showcase Cover" id="42:629"/>
     <RenderPreset name="Preset 1" artboardId="10:110" format="png_sequence" width="1440" height="1080" id="57:1"/>
     <ScriptAsset file="Pagination Pages.luau" serializedImplementedMethods="769" scriptProtocolValue="layout" codeFileId="0:15811" name="Pagination Pages" id="912:3"/>
-    <ScriptAsset file="Tooltip Placement.luau" name="Tooltip Placement" id="914:10"/>
-    <ScriptAsset file="Viewport.luau" name="Viewport" id="913:9"/>
+    <ScriptAsset file="Viewport.luau" compilationOrder="1" serializedImplementedMethods="4921" scriptProtocolValue="layout" codeFileId="0:27924" name="Viewport" id="913:9"/>
+    <ScriptAsset file="Tooltip Placement.luau" compilationOrder="2" serializedImplementedMethods="4881" scriptProtocolValue="layout" codeFileId="0:20578" name="Tooltip Placement" id="914:10"/>
     <Space name="Space 1" colorValue="FF2F2F2F" id="1:5601"/>
     <TransitionPropertyViewModelComparator id="1:2359"/>
     <TransitionPropertyViewModelComparator id="1:2363"/>
@@ -3438,26 +3438,26 @@
         <ViewModelPropertyNumber name="_bubbleWidth" id="914:2"/>
         <ViewModelPropertyNumber name="_bubbleHeight" id="914:3"/>
         <ViewModelInstance exports="true" name="Tooltip Button" id="112:16">
-            <ViewModelInstanceNumber viewModelPropertyId="914:1" id="914:4"/>
-            <ViewModelInstanceNumber viewModelPropertyId="914:2" id="914:5"/>
-            <ViewModelInstanceNumber viewModelPropertyId="914:3" id="914:6"/>
             <ViewModelInstanceString propertyValue="Save" viewModelPropertyId="112:8" id="112:151"/>
             <ViewModelInstanceString propertyValue="Saves your changes" viewModelPropertyId="112:9" id="112:152"/>
             <ViewModelInstanceNumber viewModelPropertyId="112:10" id="112:153"/>
             <ViewModelInstanceBoolean viewModelPropertyId="112:11" id="112:154"/>
             <ViewModelInstanceBoolean viewModelPropertyId="112:13" id="112:156"/>
             <ViewModelInstanceNumber propertyValue="7" viewModelPropertyId="117:265" id="117:266"/>
+            <ViewModelInstanceNumber viewModelPropertyId="914:1" id="914:4"/>
+            <ViewModelInstanceNumber viewModelPropertyId="914:2" id="914:5"/>
+            <ViewModelInstanceNumber viewModelPropertyId="914:3" id="914:6"/>
         </ViewModelInstance>
         <ViewModelInstance exports="true" name="Tooltip Button Demo" id="112:17">
-            <ViewModelInstanceNumber viewModelPropertyId="914:1" id="914:7"/>
-            <ViewModelInstanceNumber viewModelPropertyId="914:2" id="914:8"/>
-            <ViewModelInstanceNumber viewModelPropertyId="914:3" id="914:9"/>
             <ViewModelInstanceString propertyValue="Save" viewModelPropertyId="112:8" id="112:157"/>
             <ViewModelInstanceString propertyValue="Saves your changes" viewModelPropertyId="112:9" id="112:158"/>
             <ViewModelInstanceNumber viewModelPropertyId="112:10" id="112:159"/>
             <ViewModelInstanceBoolean viewModelPropertyId="112:11" id="112:160"/>
             <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="112:13" id="112:162"/>
             <ViewModelInstanceNumber propertyValue="7" viewModelPropertyId="117:265" id="117:267"/>
+            <ViewModelInstanceNumber viewModelPropertyId="914:1" id="914:7"/>
+            <ViewModelInstanceNumber viewModelPropertyId="914:2" id="914:8"/>
+            <ViewModelInstanceNumber viewModelPropertyId="914:3" id="914:9"/>
         </ViewModelInstance>
     </ViewModel>
     <ViewModel defaultInstanceId="122:3" name="NavExpansion" groupId="1:2673" id="122:1">

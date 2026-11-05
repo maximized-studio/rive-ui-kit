@@ -71,7 +71,9 @@
                 <FocusData focusFlags="6" name="Focus" id="112:352"/>
             </LayoutComponent>
             <LayoutComponent styleId="914:12" name="Placement (script)" id="914:11">
-                <ScriptedLayout scriptAssetId="914:10" name="Tooltip Placement" id="914:13"/>
+                <ScriptedLayout scriptAssetId="914:10" name="Tooltip Placement" id="914:13">
+                    <ScriptInputBoolean name="bubble" id="313:4"/>
+                </ScriptedLayout>
                 <LayoutComponentStyle positionLeftUnitsValue="points" positionRightUnitsValue="points" positionTopUnitsValue="points" positionBottomUnitsValue="points" positionTypeValue="absolute" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="914:12"/>
             </LayoutComponent>
             <LayoutComponentStyle layoutAlignmentType="center" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="112:307"/>
