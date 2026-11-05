@@ -3798,7 +3798,7 @@
                 </DataConverterFormula>
             </DataFolder>
         </DataFolder>
-        <ViewModel viewModelType="global" defaultInstanceId="10:63" name="Theme" groupId="1:2673" id="10:7">
+        <ViewModel defaultInstanceId="10:63" viewModelType="global" name="Theme" groupId="1:2673" id="10:7">
             <ViewModelPropertyBoolean name="cursorPointer" id="63:244"/>
             <ViewModelPropertyBoolean name="_previewDisabled" id="15:419"/>
             <ViewModelPropertyNumber name="_canvas" id="117:1"/>
