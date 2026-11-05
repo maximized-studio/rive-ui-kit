@@ -1,5 +1,5 @@
 <Rive version="1" kind="fragment">
-    <Artboard defaultStateMachineId="10:115" viewModelId="10:84" viewModelInstanceId="10:5260" includeInExport="false" spaceId="1:5601" width="1440" height="1024" styleId="10:113" x="-2030" name="Showcase" id="10:110">
+    <Artboard defaultStateMachineId="10:115" viewModelId="10:84" viewModelInstanceId="10:5260" includeInExport="false" spaceId="1:5601" width="1440" height="1024" x="-1640" styleId="10:113" name="Showcase" id="10:110">
         <Image assetId="42:629" x="720" y="512" opacity="0" name="Cover (thumbnail only)" id="10:15633"/>
         <LayoutComponent styleId="42:464" name="Sidebar Slot" id="42:463">
             <LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="42:464">

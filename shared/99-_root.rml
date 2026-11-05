@@ -4327,7 +4327,7 @@
             <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="41:876" id="41:877"/>
         </ViewModelInstance>
     </ViewModel>
-    <ViewModel defaultInstanceId="42:303" name="Accordion" id="41:864">
+    <ViewModel defaultInstanceId="42:303" name="NavGroup" id="41:864">
         <ViewModelPropertyBoolean name="a11yHidden" id="41:878"/>
         <ViewModelPropertyString name="title" id="41:880"/>
         <ViewModelPropertyNumber name="count" id="41:882"/>
