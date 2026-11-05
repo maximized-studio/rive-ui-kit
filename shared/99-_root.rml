@@ -457,6 +457,26 @@
         <DataConverterGroupItem converterId="9:91" id="9:92"/>
         <DataConverterGroupItem converterId="9:93" id="9:97"/>
     </DataConverterGroup>
+    <DataConverterFormula name="PagePrev" id="101:98">
+        <FormulaTokenFunction functionType="1" id="101:100"/>
+        <FormulaTokenValue id="101:101"/>
+        <FormulaTokenArgumentSeparator id="101:102"/>
+        <FormulaTokenInput id="101:103"/>
+        <FormulaTokenOperation operationType="subtract" id="101:104"/>
+        <FormulaTokenValue id="101:105"/>
+        <FormulaTokenParenthesisClose id="101:106"/>
+    </DataConverterFormula>
+    <DataConverterFormula name="PageNext" id="101:99">
+        <FormulaTokenFunction id="101:107"/>
+        <FormulaTokenValue id="101:108">
+            <DataBindContext sourcePathIds="101:11-101:13" propertyKey="777" nameBased="true" id="101:109"/>
+        </FormulaTokenValue>
+        <FormulaTokenArgumentSeparator id="101:110"/>
+        <FormulaTokenInput id="101:111"/>
+        <FormulaTokenOperation id="101:112"/>
+        <FormulaTokenValue id="101:113"/>
+        <FormulaTokenParenthesisClose id="101:114"/>
+    </DataConverterFormula>
     <DataConverterGroup name="DisabledNoShadow" id="9:131">
         <DataConverterGroupItem converterId="9:132" id="9:133"/>
         <DataConverterGroupItem converterId="9:134" id="9:142"/>
@@ -1038,6 +1058,30 @@
                     <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="33:169" id="33:171"/>
                     <ViewModelInstanceNumber viewModelPropertyId="99:100" id="99:105"/>
                 </ViewModelInstance>
+                <ViewModelInstance exports="true" name="Pagination Prev" id="101:63">
+                    <ViewModelInstanceString propertyValue="Previous" viewModelPropertyId="1:549" id="101:64"/>
+                    <ViewModelInstanceBoolean viewModelPropertyId="1:587" id="101:65"/>
+                    <ViewModelInstanceTrigger viewModelPropertyId="1:1321" id="101:66"/>
+                    <ViewModelInstanceBoolean viewModelPropertyId="7:1" id="101:67"/>
+                    <ViewModelInstanceBoolean viewModelPropertyId="7:3" id="101:68"/>
+                    <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="10:3108" id="101:69"/>
+                    <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="33:159" id="101:70"/>
+                    <ViewModelInstanceNumber propertyValue="2" viewModelPropertyId="33:164" id="101:71"/>
+                    <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="33:169" id="101:72"/>
+                    <ViewModelInstanceNumber viewModelPropertyId="99:100" id="101:73"/>
+                </ViewModelInstance>
+                <ViewModelInstance exports="true" name="Pagination Next" id="101:74">
+                    <ViewModelInstanceString propertyValue="Next" viewModelPropertyId="1:549" id="101:75"/>
+                    <ViewModelInstanceBoolean viewModelPropertyId="1:587" id="101:76"/>
+                    <ViewModelInstanceTrigger viewModelPropertyId="1:1321" id="101:77"/>
+                    <ViewModelInstanceBoolean viewModelPropertyId="7:1" id="101:78"/>
+                    <ViewModelInstanceBoolean viewModelPropertyId="7:3" id="101:79"/>
+                    <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="10:3108" id="101:80"/>
+                    <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="33:159" id="101:81"/>
+                    <ViewModelInstanceNumber propertyValue="3" viewModelPropertyId="33:164" id="101:82"/>
+                    <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="33:169" id="101:83"/>
+                    <ViewModelInstanceNumber viewModelPropertyId="99:100" id="101:84"/>
+                </ViewModelInstance>
                 <ViewModelInstance exports="true" name="Back Button" id="33:19">
                     <ViewModelInstanceString propertyValue="All components" viewModelPropertyId="1:549" id="33:20"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="1:587" id="33:21"/>
@@ -1282,6 +1326,16 @@
                     <ViewModelInstanceViewModel propertyValue="10:5193" viewModelPropertyId="10:5179" id="98:767"/>
                     <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="10:6573" id="98:768"/>
                 </ViewModelInstance>
+                <ViewModelInstance exports="true" name="S Pagination" id="101:123">
+                    <ViewModelInstanceString propertyValue="Pagination" viewModelPropertyId="10:5171" id="101:124"/>
+                    <ViewModelInstanceList viewModelPropertyId="10:5173" id="101:125">
+                        <ViewModelInstanceListItem viewModelId="101:11" viewModelInstanceId="101:26" id="101:126"/>
+                    </ViewModelInstanceList>
+                    <ViewModelInstanceNumber propertyValue="10" viewModelPropertyId="10:5175" id="101:127"/>
+                    <ViewModelInstanceNumber propertyValue="2.2" viewModelPropertyId="10:5177" id="101:128"/>
+                    <ViewModelInstanceViewModel propertyValue="10:5193" viewModelPropertyId="10:5179" id="101:129"/>
+                    <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="10:6573" id="101:130"/>
+                </ViewModelInstance>
                 <ViewModelInstance exports="true" name="S Button" id="10:5197">
                     <ViewModelInstanceString propertyValue="Button" viewModelPropertyId="10:5171" id="10:5198"/>
                     <ViewModelInstanceList viewModelPropertyId="10:5173" id="10:5199">
@@ -1418,11 +1472,12 @@
                         <ViewModelInstanceListItem viewModelId="10:5163" viewModelInstanceId="10:5225" id="10:5308"/>
                         <ViewModelInstanceListItem viewModelId="10:5163" viewModelInstanceId="10:5211" id="10:5306"/>
                         <ViewModelInstanceListItem viewModelId="10:5163" viewModelInstanceId="10:5204" id="10:5305"/>
+                        <ViewModelInstanceListItem viewModelId="10:5163" viewModelInstanceId="101:123" id="101:158"/>
                     </ViewModelInstanceList>
                     <ViewModelInstanceViewModel propertyValue="10:5193" viewModelPropertyId="10:5184" id="10:5292"/>
                     <ViewModelInstanceNumber propertyValue="1" viewModelPropertyId="10:5187" id="10:5293"/>
                     <ViewModelInstanceNumber propertyValue="9" viewModelPropertyId="10:5190" id="10:5294"/>
-                    <ViewModelInstanceNumber propertyValue="10" viewModelPropertyId="10:5576" id="10:5577"/>
+                    <ViewModelInstanceNumber propertyValue="11" viewModelPropertyId="10:5576" id="10:5577"/>
                     <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="10:15635" id="10:15636"/>
                     <ViewModelInstanceViewModel propertyValue="33:19" viewModelPropertyId="33:1" id="33:2"/>
                     <ViewModelInstanceViewModel propertyValue="33:60" viewModelPropertyId="33:3" id="33:4"/>
@@ -1437,6 +1492,7 @@
                         <ViewModelInstanceListItem viewModelId="100:1" viewModelInstanceId="100:6" id="100:32"/>
                         <ViewModelInstanceListItem viewModelId="100:1" viewModelInstanceId="100:13" id="100:33"/>
                         <ViewModelInstanceListItem viewModelId="100:1" viewModelInstanceId="100:21" id="100:34"/>
+                        <ViewModelInstanceListItem viewModelId="100:1" viewModelInstanceId="101:137" id="101:156"/>
                     </ViewModelInstanceList>
                 </ViewModelInstance>
             </ViewModel>
@@ -1456,6 +1512,16 @@
                     <ViewModelInstanceBoolean viewModelPropertyId="10:4507" id="98:758"/>
                     <ViewModelInstanceNumber propertyValue="1" viewModelPropertyId="10:4567" id="98:759"/>
                     <ViewModelInstanceViewModel propertyValue="10:4585" viewModelPropertyId="10:4589" id="98:760"/>
+                </ViewModelInstance>
+                <ViewModelInstance exports="true" name="T Pagination" id="101:115">
+                    <ViewModelInstanceString propertyValue="Pagination" viewModelPropertyId="10:3614" id="101:116"/>
+                    <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="10:3657" id="101:117"/>
+                    <ViewModelInstanceList viewModelPropertyId="10:3861" id="101:118">
+                        <ViewModelInstanceListItem viewModelId="101:11" viewModelInstanceId="101:26" id="101:119"/>
+                    </ViewModelInstanceList>
+                    <ViewModelInstanceBoolean viewModelPropertyId="10:4507" id="101:120"/>
+                    <ViewModelInstanceNumber propertyValue="10" viewModelPropertyId="10:4567" id="101:121"/>
+                    <ViewModelInstanceViewModel propertyValue="10:4585" viewModelPropertyId="10:4589" id="101:122"/>
                 </ViewModelInstance>
                 <ViewModelInstance exports="true" name="T Button" id="10:4595">
                     <ViewModelInstanceString propertyValue="Button" viewModelPropertyId="10:3614" id="10:4596"/>
@@ -1561,6 +1627,14 @@
                     </ViewModelInstanceList>
                     <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="100:4" id="100:11"/>
                     <ViewModelInstanceViewModel propertyValue="10:4585" viewModelPropertyId="100:5" id="100:12"/>
+                </ViewModelInstance>
+                <ViewModelInstance exports="true" name="Sec Navigation" id="101:137">
+                    <ViewModelInstanceString propertyValue="Navigation" viewModelPropertyId="100:2" id="101:138"/>
+                    <ViewModelInstanceList viewModelPropertyId="100:3" id="101:139">
+                        <ViewModelInstanceListItem viewModelId="10:3612" viewModelInstanceId="101:115" id="101:144"/>
+                    </ViewModelInstanceList>
+                    <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="100:4" id="101:142"/>
+                    <ViewModelInstanceViewModel propertyValue="10:4585" viewModelPropertyId="100:5" id="101:143"/>
                 </ViewModelInstance>
                 <ViewModelInstance exports="true" name="Sec Display" id="100:13">
                     <ViewModelInstanceString propertyValue="Display" viewModelPropertyId="100:2" id="100:17"/>
@@ -3613,6 +3687,13 @@
             <ViewModelInstanceBoolean viewModelPropertyId="41:874" id="98:774"/>
             <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="41:876" id="98:775"/>
         </ViewModelInstance>
+        <ViewModelInstance exports="true" name="Nav Pagination" id="101:131">
+            <ViewModelInstanceString propertyValue="Pagination" viewModelPropertyId="41:868" id="101:132"/>
+            <ViewModelInstanceNumber propertyValue="10" viewModelPropertyId="41:870" id="101:133"/>
+            <ViewModelInstanceViewModel propertyValue="10:4585" viewModelPropertyId="41:872" id="101:134"/>
+            <ViewModelInstanceBoolean viewModelPropertyId="41:874" id="101:135"/>
+            <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="41:876" id="101:136"/>
+        </ViewModelInstance>
         <ViewModelInstance exports="true" name="Nav Avatar" id="42:329">
             <ViewModelInstanceString propertyValue="Avatar" viewModelPropertyId="41:868" id="42:330"/>
             <ViewModelInstanceNumber propertyValue="2" viewModelPropertyId="41:870" id="42:331"/>
@@ -3717,6 +3798,17 @@
             <ViewModelInstanceBoolean viewModelPropertyId="41:888" id="100:50"/>
             <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="41:890" id="100:51"/>
         </ViewModelInstance>
+        <ViewModelInstance exports="true" name="Navigation" id="101:145">
+            <ViewModelInstanceBoolean viewModelPropertyId="41:878" id="101:146"/>
+            <ViewModelInstanceString propertyValue="Navigation" viewModelPropertyId="41:880" id="101:147"/>
+            <ViewModelInstanceNumber propertyValue="1" viewModelPropertyId="41:882" id="101:148"/>
+            <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="41:884" id="101:149"/>
+            <ViewModelInstanceList viewModelPropertyId="41:886" id="101:150">
+                <ViewModelInstanceListItem name="Nav Pagination" viewModelId="41:862" viewModelInstanceId="101:131" id="101:155"/>
+            </ViewModelInstanceList>
+            <ViewModelInstanceBoolean viewModelPropertyId="41:888" id="101:153"/>
+            <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="41:890" id="101:154"/>
+        </ViewModelInstance>
         <ViewModelInstance exports="true" name="Inputs" id="42:303">
             <ViewModelInstanceBoolean viewModelPropertyId="41:878" id="42:304"/>
             <ViewModelInstanceString propertyValue="Inputs" viewModelPropertyId="41:880" id="42:305"/>
@@ -3742,6 +3834,7 @@
                 <ViewModelInstanceListItem name="Actions" viewModelId="41:864" viewModelInstanceId="100:36" id="100:55"/>
                 <ViewModelInstanceListItem name="Display" viewModelId="41:864" viewModelInstanceId="42:335" id="100:56"/>
                 <ViewModelInstanceListItem name="Inputs" viewModelId="41:864" viewModelInstanceId="42:303" id="100:57"/>
+                <ViewModelInstanceListItem name="Navigation" viewModelId="41:864" viewModelInstanceId="101:145" id="101:157"/>
             </ViewModelInstanceList>
         </ViewModelInstance>
     </ViewModel>
@@ -3759,6 +3852,92 @@
             </ViewModelInstanceList>
             <ViewModelInstanceBoolean viewModelPropertyId="92:612" id="92:673"/>
             <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="92:614" id="92:674"/>
+        </ViewModelInstance>
+    </ViewModel>
+    <ViewModel defaultInstanceId="101:20" name="PageSelection" id="101:1">
+        <ViewModelPropertyNumber name="page" id="101:2"/>
+        <ViewModelInstance exports="true" name="Pagination Selection" id="101:20">
+            <ViewModelInstanceNumber propertyValue="2" viewModelPropertyId="101:2" id="101:27"/>
+        </ViewModelInstance>
+    </ViewModel>
+    <ViewModel defaultInstanceId="101:21" name="PageItem" id="101:3">
+        <ViewModelPropertyString name="label" id="101:4"/>
+        <ViewModelPropertyNumber name="value" id="101:5"/>
+        <ViewModelPropertyViewModel viewModelReferenceId="101:1" name="group" id="101:6"/>
+        <ViewModelPropertyBoolean name="disabled" id="101:7"/>
+        <ViewModelPropertyBoolean name="a11yHidden" id="101:10"/>
+        <ViewModelPropertyViewModel viewModelReferenceId="10:7" name="theme" id="101:8"/>
+        <ViewModelPropertyBoolean name="_hover" id="101:9"/>
+        <ViewModelInstance exports="true" name="Page 1" id="101:21">
+            <ViewModelInstanceString propertyValue="1" viewModelPropertyId="101:4" id="101:28"/>
+            <ViewModelInstanceNumber propertyValue="1" viewModelPropertyId="101:5" id="101:29"/>
+            <ViewModelInstanceViewModel propertyValue="101:20" viewModelPropertyId="101:6" id="101:30"/>
+            <ViewModelInstanceBoolean viewModelPropertyId="101:7" id="101:31"/>
+            <ViewModelInstanceBoolean viewModelPropertyId="101:10" id="101:32"/>
+            <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="101:8" id="101:33"/>
+            <ViewModelInstanceBoolean viewModelPropertyId="101:9" id="101:34"/>
+        </ViewModelInstance>
+        <ViewModelInstance exports="true" name="Page 2" id="101:22">
+            <ViewModelInstanceString propertyValue="2" viewModelPropertyId="101:4" id="101:35"/>
+            <ViewModelInstanceNumber propertyValue="2" viewModelPropertyId="101:5" id="101:36"/>
+            <ViewModelInstanceViewModel propertyValue="101:20" viewModelPropertyId="101:6" id="101:37"/>
+            <ViewModelInstanceBoolean viewModelPropertyId="101:7" id="101:38"/>
+            <ViewModelInstanceBoolean viewModelPropertyId="101:10" id="101:39"/>
+            <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="101:8" id="101:40"/>
+            <ViewModelInstanceBoolean viewModelPropertyId="101:9" id="101:41"/>
+        </ViewModelInstance>
+        <ViewModelInstance exports="true" name="Page 3" id="101:23">
+            <ViewModelInstanceString propertyValue="3" viewModelPropertyId="101:4" id="101:42"/>
+            <ViewModelInstanceNumber propertyValue="3" viewModelPropertyId="101:5" id="101:43"/>
+            <ViewModelInstanceViewModel propertyValue="101:20" viewModelPropertyId="101:6" id="101:44"/>
+            <ViewModelInstanceBoolean viewModelPropertyId="101:7" id="101:45"/>
+            <ViewModelInstanceBoolean viewModelPropertyId="101:10" id="101:46"/>
+            <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="101:8" id="101:47"/>
+            <ViewModelInstanceBoolean viewModelPropertyId="101:9" id="101:48"/>
+        </ViewModelInstance>
+        <ViewModelInstance exports="true" name="Page 4" id="101:24">
+            <ViewModelInstanceString propertyValue="4" viewModelPropertyId="101:4" id="101:49"/>
+            <ViewModelInstanceNumber propertyValue="4" viewModelPropertyId="101:5" id="101:50"/>
+            <ViewModelInstanceViewModel propertyValue="101:20" viewModelPropertyId="101:6" id="101:51"/>
+            <ViewModelInstanceBoolean viewModelPropertyId="101:7" id="101:52"/>
+            <ViewModelInstanceBoolean viewModelPropertyId="101:10" id="101:53"/>
+            <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="101:8" id="101:54"/>
+            <ViewModelInstanceBoolean viewModelPropertyId="101:9" id="101:55"/>
+        </ViewModelInstance>
+        <ViewModelInstance exports="true" name="Page 5" id="101:25">
+            <ViewModelInstanceString propertyValue="5" viewModelPropertyId="101:4" id="101:56"/>
+            <ViewModelInstanceNumber propertyValue="5" viewModelPropertyId="101:5" id="101:57"/>
+            <ViewModelInstanceViewModel propertyValue="101:20" viewModelPropertyId="101:6" id="101:58"/>
+            <ViewModelInstanceBoolean viewModelPropertyId="101:7" id="101:59"/>
+            <ViewModelInstanceBoolean viewModelPropertyId="101:10" id="101:60"/>
+            <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="101:8" id="101:61"/>
+            <ViewModelInstanceBoolean viewModelPropertyId="101:9" id="101:62"/>
+        </ViewModelInstance>
+    </ViewModel>
+    <ViewModel defaultInstanceId="101:26" name="Pagination" id="101:11">
+        <ViewModelPropertyString name="label" id="101:12"/>
+        <ViewModelPropertyNumber name="pageCount" id="101:13"/>
+        <ViewModelPropertyList name="pages" id="101:14"/>
+        <ViewModelPropertyViewModel viewModelReferenceId="101:1" name="selection" id="101:15"/>
+        <ViewModelPropertyBoolean name="a11yHidden" id="101:17"/>
+        <ViewModelPropertyViewModel viewModelReferenceId="10:7" name="theme" id="101:16"/>
+        <ViewModelPropertyViewModel viewModelReferenceId="1:151" name="_prev" id="101:18"/>
+        <ViewModelPropertyViewModel viewModelReferenceId="1:151" name="_next" id="101:19"/>
+        <ViewModelInstance exports="true" name="Pagination" id="101:26">
+            <ViewModelInstanceString propertyValue="Pages" viewModelPropertyId="101:12" id="101:90"/>
+            <ViewModelInstanceNumber propertyValue="5" viewModelPropertyId="101:13" id="101:91"/>
+            <ViewModelInstanceList viewModelPropertyId="101:14" id="101:92">
+                <ViewModelInstanceListItem viewModelId="101:3" viewModelInstanceId="101:21" id="101:85"/>
+                <ViewModelInstanceListItem viewModelId="101:3" viewModelInstanceId="101:22" id="101:86"/>
+                <ViewModelInstanceListItem viewModelId="101:3" viewModelInstanceId="101:23" id="101:87"/>
+                <ViewModelInstanceListItem viewModelId="101:3" viewModelInstanceId="101:24" id="101:88"/>
+                <ViewModelInstanceListItem viewModelId="101:3" viewModelInstanceId="101:25" id="101:89"/>
+            </ViewModelInstanceList>
+            <ViewModelInstanceViewModel propertyValue="101:20" viewModelPropertyId="101:15" id="101:93"/>
+            <ViewModelInstanceBoolean viewModelPropertyId="101:17" id="101:94"/>
+            <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="101:16" id="101:95"/>
+            <ViewModelInstanceViewModel propertyValue="101:63" viewModelPropertyId="101:18" id="101:96"/>
+            <ViewModelInstanceViewModel propertyValue="101:74" viewModelPropertyId="101:19" id="101:97"/>
         </ViewModelInstance>
     </ViewModel>
 </Rive>
