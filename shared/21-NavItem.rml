@@ -11,7 +11,7 @@
                     <TextStylePaint fontSize="13" fontAssetId="0:7" familyName="Inter" styleName="Regular" id="41:916">
                         <Fill fillRule="clockwise" id="41:917">
                             <SolidColor colorValue="FFFAFAFA" id="41:918">
-                                <DataBindContext sourcePathIds="41:862-41:876-10:7422" propertyKey="37" nameBased="true" id="42:1"/>
+                                <DataBindContext sourcePathIds="10:7-10:7422" propertyKey="37" id="42:1"/>
                             </SolidColor>
                         </Fill>
                         <TextStyleAxis tag="1869640570" axisValue="14" id="41:919"/>
@@ -27,23 +27,23 @@
             <LayoutComponent styleId="41:924" opacity="0" name="Selected" id="41:923">
                 <Fill fillRule="clockwise" id="41:925">
                     <SolidColor colorValue="FF3F3F46" id="41:926">
-                        <DataBindContext sourcePathIds="41:862-41:876-10:7414" propertyKey="37" nameBased="true" id="42:2"/>
+                        <DataBindContext sourcePathIds="10:7-10:7414" propertyKey="37" id="42:2"/>
                     </SolidColor>
                 </Fill>
                 <GridItemPlacement id="41:927"/>
                 <LayoutComponentStyle cornerRadiusTL="6" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="41:924">
-                    <DataBindContext sourcePathIds="41:862-41:876-10:2086" propertyKey="640" nameBased="true" converterId="10:6840" id="42:4"/>
+                    <DataBindContext sourcePathIds="10:7-10:2086" propertyKey="640" converterId="10:6840" id="42:4"/>
                 </LayoutComponentStyle>
             </LayoutComponent>
             <LayoutComponent styleId="41:929" opacity="0" name="Hover" id="41:928">
                 <Fill fillRule="clockwise" id="41:930">
                     <SolidColor colorValue="FF323238" id="41:931">
-                        <DataBindContext sourcePathIds="41:862-41:876-10:7416" propertyKey="37" nameBased="true" id="42:3"/>
+                        <DataBindContext sourcePathIds="10:7-10:7416" propertyKey="37" id="42:3"/>
                     </SolidColor>
                 </Fill>
                 <GridItemPlacement id="41:932"/>
                 <LayoutComponentStyle cornerRadiusTL="6" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="41:929">
-                    <DataBindContext sourcePathIds="41:862-41:876-10:2086" propertyKey="640" nameBased="true" converterId="10:6840" id="42:5"/>
+                    <DataBindContext sourcePathIds="10:7-10:2086" propertyKey="640" converterId="10:6840" id="42:5"/>
                 </LayoutComponentStyle>
                 <DataBindContext sourcePathIds="41:862-41:874" propertyKey="18" nameBased="true" converterId="9:145" id="42:6"/>
             </LayoutComponent>
@@ -61,7 +61,7 @@
                 <ListenerInputType listenerTypeValue="exit" id="63:352"/>
                 <ListenerViewModelChange id="63:353">
                     <BindablePropertyBoolean id="63:354">
-                        <DataBindContext sourcePathIds="41:862-41:876-63:244" propertyKey="634" direction="true" id="63:355"/>
+                        <DataBindContext sourcePathIds="10:7-63:244" propertyKey="634" direction="true" id="63:355"/>
                     </BindablePropertyBoolean>
                 </ListenerViewModelChange>
             </StateMachineListener>
@@ -70,7 +70,7 @@
                 <ListenerInputType listenerTypeValue="move" id="63:347"/>
                 <ListenerViewModelChange id="63:348">
                     <BindablePropertyBoolean propertyValue="true" id="63:349">
-                        <DataBindContext sourcePathIds="41:862-41:876-63:244" propertyKey="634" direction="true" id="63:350"/>
+                        <DataBindContext sourcePathIds="10:7-63:244" propertyKey="634" direction="true" id="63:350"/>
                     </BindablePropertyBoolean>
                 </ListenerViewModelChange>
             </StateMachineListener>

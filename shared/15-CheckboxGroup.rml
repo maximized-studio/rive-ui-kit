@@ -5,7 +5,7 @@
                 <TextStylePaint fontSize="13" fontAssetId="0:7" familyName="Inter" styleName="Bold" id="10:4186">
                     <Fill fillRule="clockwise" id="10:4187">
                         <SolidColor colorValue="FFA1A1AA" id="10:4188">
-                            <DataBindContext sourcePathIds="10:4154-10:7434-10:7426" propertyKey="37" id="10:7543"/>
+                            <DataBindContext sourcePathIds="10:7-10:7426" propertyKey="37" id="10:7543"/>
                         </SolidColor>
                     </Fill>
                     <TextStyleAxis tag="1869640570" axisValue="14" id="10:4189"/>

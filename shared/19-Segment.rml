@@ -22,7 +22,7 @@
                         </PointsPath>
                         <Stroke thickness="1.4" id="38:539">
                             <SolidColor colorValue="FFFAFAFA" id="38:540">
-                                <DataBindContext sourcePathIds="38:328-38:344-10:7422" propertyKey="37" nameBased="true" id="38:639"/>
+                                <DataBindContext sourcePathIds="10:7-10:7422" propertyKey="37" id="38:639"/>
                             </SolidColor>
                         </Stroke>
                         <DataBindContext sourcePathIds="38:328-38:340" propertyKey="18" nameBased="true" converterId="38:421" id="38:541"/>
@@ -42,7 +42,7 @@
                         </PointsPath>
                         <Stroke thickness="1.4" id="38:526">
                             <SolidColor colorValue="FFFAFAFA" id="38:527">
-                                <DataBindContext sourcePathIds="38:328-38:344-10:7422" propertyKey="37" nameBased="true" id="38:638"/>
+                                <DataBindContext sourcePathIds="10:7-10:7422" propertyKey="37" id="38:638"/>
                             </SolidColor>
                         </Stroke>
                         <DataBindContext sourcePathIds="38:328-38:340" propertyKey="18" nameBased="true" converterId="38:407" id="38:528"/>
@@ -56,7 +56,7 @@
                         </PointsPath>
                         <Stroke thickness="1.4" id="38:512">
                             <SolidColor colorValue="FFFAFAFA" id="38:513">
-                                <DataBindContext sourcePathIds="38:328-38:344-10:7422" propertyKey="37" nameBased="true" id="38:637"/>
+                                <DataBindContext sourcePathIds="10:7-10:7422" propertyKey="37" id="38:637"/>
                             </SolidColor>
                         </Stroke>
                         <DataBindContext sourcePathIds="38:328-38:340" propertyKey="18" nameBased="true" converterId="10:4815" id="38:514"/>
@@ -70,7 +70,7 @@
                         </PointsPath>
                         <Stroke thickness="1.4" id="38:503">
                             <SolidColor colorValue="FFFAFAFA" id="38:504">
-                                <DataBindContext sourcePathIds="38:328-38:344-10:7422" propertyKey="37" nameBased="true" id="38:636"/>
+                                <DataBindContext sourcePathIds="10:7-10:7422" propertyKey="37" id="38:636"/>
                             </SolidColor>
                         </Stroke>
                         <DataBindContext sourcePathIds="38:328-38:340" propertyKey="18" nameBased="true" converterId="10:2504" id="38:505"/>
@@ -84,7 +84,7 @@
                         </PointsPath>
                         <Stroke thickness="1.4" id="38:494">
                             <SolidColor colorValue="FFFAFAFA" id="38:495">
-                                <DataBindContext sourcePathIds="38:328-38:344-10:7422" propertyKey="37" nameBased="true" id="38:635"/>
+                                <DataBindContext sourcePathIds="10:7-10:7422" propertyKey="37" id="38:635"/>
                             </SolidColor>
                         </Stroke>
                         <DataBindContext sourcePathIds="38:328-38:340" propertyKey="18" nameBased="true" converterId="10:2490" id="38:496"/>
@@ -97,7 +97,7 @@
                         </PointsPath>
                         <Stroke thickness="1.4" id="38:485">
                             <SolidColor colorValue="FFFAFAFA" id="38:486">
-                                <DataBindContext sourcePathIds="38:328-38:344-10:7422" propertyKey="37" nameBased="true" id="38:634"/>
+                                <DataBindContext sourcePathIds="10:7-10:7422" propertyKey="37" id="38:634"/>
                             </SolidColor>
                         </Stroke>
                         <DataBindContext sourcePathIds="38:328-38:340" propertyKey="18" nameBased="true" converterId="10:2476" id="38:487"/>
@@ -113,7 +113,7 @@
                         </PointsPath>
                         <Stroke thickness="1.4" id="38:477">
                             <SolidColor colorValue="FFFAFAFA" id="38:478">
-                                <DataBindContext sourcePathIds="38:328-38:344-10:7422" propertyKey="37" nameBased="true" id="38:633"/>
+                                <DataBindContext sourcePathIds="10:7-10:7422" propertyKey="37" id="38:633"/>
                             </SolidColor>
                         </Stroke>
                         <DataBindContext sourcePathIds="38:328-38:340" propertyKey="18" nameBased="true" converterId="10:2462" id="38:479"/>
@@ -160,7 +160,7 @@
                         </PointsPath>
                         <Stroke thickness="1.4" id="38:466">
                             <SolidColor colorValue="FFFAFAFA" id="38:467">
-                                <DataBindContext sourcePathIds="38:328-38:344-10:7422" propertyKey="37" nameBased="true" id="38:632"/>
+                                <DataBindContext sourcePathIds="10:7-10:7422" propertyKey="37" id="38:632"/>
                             </SolidColor>
                         </Stroke>
                         <DataBindContext sourcePathIds="38:328-38:340" propertyKey="18" nameBased="true" converterId="10:2448" id="38:468"/>
@@ -173,7 +173,7 @@
                     <TextStylePaint fontSize="13" fontAssetId="0:7" familyName="Inter" styleName="Regular" id="38:390">
                         <Fill fillRule="clockwise" id="38:391">
                             <SolidColor colorValue="FFFAFAFA" id="38:392">
-                                <DataBindContext sourcePathIds="38:328-38:344-10:7422" propertyKey="37" nameBased="true" id="38:640"/>
+                                <DataBindContext sourcePathIds="10:7-10:7422" propertyKey="37" id="38:640"/>
                             </SolidColor>
                         </Fill>
                         <TextStyleAxis tag="1869640570" axisValue="14" id="38:393"/>
@@ -189,23 +189,23 @@
             <LayoutComponent styleId="38:398" opacity="0" name="Selected" id="38:397">
                 <Fill fillRule="clockwise" id="38:399">
                     <SolidColor colorValue="FF3F3F46" id="38:400">
-                        <DataBindContext sourcePathIds="38:328-38:344-10:7414" propertyKey="37" nameBased="true" id="38:641"/>
+                        <DataBindContext sourcePathIds="10:7-10:7414" propertyKey="37" id="38:641"/>
                     </SolidColor>
                 </Fill>
                 <GridItemPlacement id="38:401"/>
                 <LayoutComponentStyle cornerRadiusTL="7" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="38:398">
-                    <DataBindContext sourcePathIds="38:328-38:344-10:2086" propertyKey="640" nameBased="true" converterId="10:6840" id="38:643"/>
+                    <DataBindContext sourcePathIds="10:7-10:2086" propertyKey="640" converterId="10:6840" id="38:643"/>
                 </LayoutComponentStyle>
             </LayoutComponent>
             <LayoutComponent styleId="38:403" opacity="0" name="Hover" id="38:402">
                 <Fill fillRule="clockwise" id="38:404">
                     <SolidColor colorValue="FF323238" id="38:405">
-                        <DataBindContext sourcePathIds="38:328-38:344-10:7416" propertyKey="37" nameBased="true" id="38:642"/>
+                        <DataBindContext sourcePathIds="10:7-10:7416" propertyKey="37" id="38:642"/>
                     </SolidColor>
                 </Fill>
                 <GridItemPlacement id="38:406"/>
                 <LayoutComponentStyle cornerRadiusTL="7" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="38:403">
-                    <DataBindContext sourcePathIds="38:328-38:344-10:2086" propertyKey="640" nameBased="true" converterId="10:6840" id="38:644"/>
+                    <DataBindContext sourcePathIds="10:7-10:2086" propertyKey="640" converterId="10:6840" id="38:644"/>
                 </LayoutComponentStyle>
                 <DataBindContext sourcePathIds="38:328-38:346" propertyKey="18" nameBased="true" converterId="9:145" id="38:544"/>
             </LayoutComponent>
@@ -223,7 +223,7 @@
                 <ListenerInputType listenerTypeValue="exit" id="63:341"/>
                 <ListenerViewModelChange id="63:342">
                     <BindablePropertyBoolean id="63:343">
-                        <DataBindContext sourcePathIds="38:328-38:344-63:244" propertyKey="634" direction="true" id="63:344"/>
+                        <DataBindContext sourcePathIds="10:7-63:244" propertyKey="634" direction="true" id="63:344"/>
                     </BindablePropertyBoolean>
                 </ListenerViewModelChange>
             </StateMachineListener>
@@ -232,7 +232,7 @@
                 <ListenerInputType listenerTypeValue="move" id="63:336"/>
                 <ListenerViewModelChange id="63:337">
                     <BindablePropertyBoolean propertyValue="true" id="63:338">
-                        <DataBindContext sourcePathIds="38:328-38:344-63:244" propertyKey="634" direction="true" id="63:339"/>
+                        <DataBindContext sourcePathIds="10:7-63:244" propertyKey="634" direction="true" id="63:339"/>
                     </BindablePropertyBoolean>
                 </ListenerViewModelChange>
             </StateMachineListener>

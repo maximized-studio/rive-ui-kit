@@ -20,7 +20,6 @@
                                 <DataBindContext sourcePathIds="112:7-112:13" propertyKey="593" nameBased="true" id="112:330"/>
                             </ViewModelInstanceBoolean>
                             <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="112:5" id="112:331"/>
-                            <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="112:6" id="112:332"/>
                         </ViewModelInstance>
                     </NestedArtboardLayout>
                     <LayoutComponentStyle layoutAlignmentType="bottomCenter" id="112:315">
@@ -53,7 +52,6 @@
                         <ViewModelInstanceBoolean viewModelPropertyId="7:3" id="112:345">
                             <DataBindContext sourcePathIds="112:7-112:11" propertyKey="593" nameBased="true" id="112:346"/>
                         </ViewModelInstanceBoolean>
-                        <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="10:3108" id="112:347"/>
                         <ViewModelInstanceNumber propertyValue="7" viewModelPropertyId="33:164" id="112:349">
                             <DataBindContext sourcePathIds="112:7-117:265" propertyKey="575" nameBased="true" id="117:268"/>
                         </ViewModelInstanceNumber>

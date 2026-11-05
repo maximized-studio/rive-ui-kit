@@ -7,7 +7,7 @@
         <LayoutComponent styleId="42:177" name="Panel" id="42:176">
             <Fill fillRule="clockwise" id="42:178">
                 <SolidColor colorValue="FF18181B" id="42:179">
-                    <DataBindContext sourcePathIds="41:866-41:892-10:7406" propertyKey="37" nameBased="true" id="42:255"/>
+                    <DataBindContext sourcePathIds="10:7-10:7406" propertyKey="37" id="42:255"/>
                 </SolidColor>
             </Fill>
             <LayoutComponent styleId="42:181" name="Column" id="42:180">
@@ -17,7 +17,7 @@
                             <TextStylePaint fontSize="15" fontAssetId="0:7" familyName="Inter" styleName="Regular" id="42:191">
                                 <Fill fillRule="clockwise" id="42:192">
                                     <SolidColor colorValue="FFFAFAFA" id="42:193">
-                                        <DataBindContext sourcePathIds="41:866-41:892-10:7422" propertyKey="37" nameBased="true" id="42:260"/>
+                                        <DataBindContext sourcePathIds="10:7-10:7422" propertyKey="37" id="42:260"/>
                                     </SolidColor>
                                 </Fill>
                                 <TextStyleAxis tag="1869640570" axisValue="14" id="42:194"/>
@@ -30,7 +30,7 @@
                             <TextStylePaint fontAssetId="0:7" familyName="Inter" styleName="Regular" id="42:199">
                                 <Fill fillRule="clockwise" id="42:200">
                                     <SolidColor colorValue="FFA1A1AA" id="42:201">
-                                        <DataBindContext sourcePathIds="41:866-41:892-10:7426" propertyKey="37" nameBased="true" id="42:261"/>
+                                        <DataBindContext sourcePathIds="10:7-10:7426" propertyKey="37" id="42:261"/>
                                     </SolidColor>
                                 </Fill>
                                 <TextStyleAxis tag="1869640570" axisValue="14" id="42:202"/>
@@ -57,7 +57,7 @@
                                     </PointsPath>
                                     <Stroke thickness="1.5" cap="round" join="round" id="122:42">
                                         <SolidColor colorValue="FFA1A1AA" id="122:43">
-                                            <DataBindContext sourcePathIds="41:866-41:892-10:7426" propertyKey="37" nameBased="true" id="122:44"/>
+                                            <DataBindContext sourcePathIds="10:7-10:7426" propertyKey="37" id="122:44"/>
                                         </SolidColor>
                                     </Stroke>
                                     <DataBindContext sourcePathIds="41:866-122:4-122:2" propertyKey="18" nameBased="true" converterId="9:145" id="122:45"/>
@@ -75,7 +75,7 @@
                                     </PointsPath>
                                     <Stroke thickness="1.5" cap="round" join="round" id="122:55">
                                         <SolidColor colorValue="FFA1A1AA" id="122:56">
-                                            <DataBindContext sourcePathIds="41:866-41:892-10:7426" propertyKey="37" nameBased="true" id="122:57"/>
+                                            <DataBindContext sourcePathIds="10:7-10:7426" propertyKey="37" id="122:57"/>
                                         </SolidColor>
                                     </Stroke>
                                     <DataBindContext sourcePathIds="41:866-122:4-122:2" propertyKey="18" nameBased="true" converterId="9:90" id="122:58"/>
@@ -86,11 +86,11 @@
                         <LayoutComponent styleId="122:22" opacity="0" name="Toggle Hover" id="122:25">
                             <Fill fillRule="clockwise" id="122:26">
                                 <SolidColor colorValue="FF323238" id="122:27">
-                                    <DataBindContext sourcePathIds="41:866-41:892-10:7416" propertyKey="37" nameBased="true" id="122:28"/>
+                                    <DataBindContext sourcePathIds="10:7-10:7416" propertyKey="37" id="122:28"/>
                                 </SolidColor>
                             </Fill>
                             <LayoutComponentStyle cornerRadiusTL="6" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="122:22">
-                                <DataBindContext sourcePathIds="41:866-41:892-10:2086" propertyKey="640" nameBased="true" converterId="10:6840" id="122:29"/>
+                                <DataBindContext sourcePathIds="10:7-10:2086" propertyKey="640" converterId="10:6840" id="122:29"/>
                             </LayoutComponentStyle>
                             <DataBindContext sourcePathIds="41:866-122:6" propertyKey="18" nameBased="true" converterId="9:145" id="122:30"/>
                         </LayoutComponent>
@@ -103,7 +103,7 @@
                 <LayoutComponent height="1" styleId="42:207" name="Brand Divider" id="42:206">
                     <Fill fillRule="clockwise" id="42:208">
                         <SolidColor colorValue="FF27272A" id="42:209">
-                            <DataBindContext sourcePathIds="41:866-41:892-10:7418" propertyKey="37" nameBased="true" id="42:256"/>
+                            <DataBindContext sourcePathIds="10:7-10:7418" propertyKey="37" id="42:256"/>
                         </SolidColor>
                     </Fill>
                     <LayoutComponentStyle layoutWidthScaleType="fill" widthUnitsValue="auto" id="42:207"/>
@@ -130,7 +130,7 @@
                                     <TextStylePaint fontAssetId="0:7" familyName="Inter" styleName="Medium" id="28:1278">
                                         <Fill fillRule="clockwise" isVisible="false" id="28:1279">
                                             <SolidColor colorValue="FFD4D4D8" id="28:1280">
-                                                <DataBindContext sourcePathIds="41:866-41:892-10:7426" propertyKey="37" id="28:1285"/>
+                                                <DataBindContext sourcePathIds="10:7-10:7426" propertyKey="37" id="28:1285"/>
                                             </SolidColor>
                                         </Fill>
                                         <TextStyleAxis tag="1869640570" axisValue="14" id="28:1281"/>
@@ -169,7 +169,7 @@
                                         </PointsPath>
                                         <Fill fillRule="clockwise" isVisible="false" id="28:1272">
                                             <SolidColor colorValue="FFFAFAFA" id="28:1273">
-                                                <DataBindContext sourcePathIds="41:866-41:892-10:7422" propertyKey="37" id="28:1274"/>
+                                                <DataBindContext sourcePathIds="10:7-10:7422" propertyKey="37" id="28:1274"/>
                                             </SolidColor>
                                         </Fill>
                                         <Fill fillRule="clockwise" id="28:1275">
@@ -181,7 +181,7 @@
                                     <TextStylePaint fontAssetId="0:7" familyName="Inter" styleName="Medium" id="28:1318">
                                         <Fill fillRule="clockwise" isVisible="false" id="28:1319">
                                             <SolidColor colorValue="FFD4D4D8" id="28:1320">
-                                                <DataBindContext sourcePathIds="41:866-41:892-10:7426" propertyKey="37" id="28:1325"/>
+                                                <DataBindContext sourcePathIds="10:7-10:7426" propertyKey="37" id="28:1325"/>
                                             </SolidColor>
                                         </Fill>
                                         <TextStyleAxis tag="1869640570" axisValue="14" id="28:1321"/>
@@ -201,7 +201,7 @@
             <LayoutComponent width="1" styleId="42:213" name="Edge" id="42:212">
                 <Fill fillRule="clockwise" id="42:214">
                     <SolidColor colorValue="FF27272A" id="42:215">
-                        <DataBindContext sourcePathIds="41:866-41:892-10:7418" propertyKey="37" nameBased="true" id="42:257"/>
+                        <DataBindContext sourcePathIds="10:7-10:7418" propertyKey="37" id="42:257"/>
                     </SolidColor>
                 </Fill>
                 <LayoutComponentStyle layoutHeightScaleType="fill" heightUnitsValue="auto" id="42:213"/>
@@ -230,7 +230,7 @@
                 <ListenerInputType listenerTypeValue="move" id="122:71"/>
                 <ListenerViewModelChange id="122:73">
                     <BindablePropertyBoolean propertyValue="true" id="122:74">
-                        <DataBindContext sourcePathIds="41:866-41:892-63:244" propertyKey="634" direction="true" id="122:75"/>
+                        <DataBindContext sourcePathIds="10:7-63:244" propertyKey="634" direction="true" id="122:75"/>
                     </BindablePropertyBoolean>
                 </ListenerViewModelChange>
             </StateMachineListener>
@@ -238,7 +238,7 @@
                 <ListenerInputType listenerTypeValue="exit" id="122:76"/>
                 <ListenerViewModelChange id="122:78">
                     <BindablePropertyBoolean id="122:79">
-                        <DataBindContext sourcePathIds="41:866-41:892-63:244" propertyKey="634" direction="true" id="122:80"/>
+                        <DataBindContext sourcePathIds="10:7-63:244" propertyKey="634" direction="true" id="122:80"/>
                     </BindablePropertyBoolean>
                 </ListenerViewModelChange>
             </StateMachineListener>

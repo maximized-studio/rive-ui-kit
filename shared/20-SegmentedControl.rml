@@ -7,11 +7,11 @@
         <LayoutComponent styleId="38:590" name="Track" id="38:589">
             <Fill fillRule="clockwise" id="38:591">
                 <SolidColor colorValue="FF27272A" id="38:592">
-                    <DataBindContext sourcePathIds="38:330-38:352-10:7412" propertyKey="37" nameBased="true" id="38:645"/>
+                    <DataBindContext sourcePathIds="10:7-10:7412" propertyKey="37" id="38:645"/>
                 </SolidColor>
             </Fill>
             <LayoutComponentStyle gapHorizontal="2" paddingLeft="3" paddingRight="3" paddingTop="3" paddingBottom="3" layoutAlignmentType="center" intrinsicallySizedValue="true" cornerRadiusTL="10" layoutWidthScaleType="fill" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="38:590">
-                <DataBindContext sourcePathIds="38:330-38:352-10:2086" propertyKey="640" nameBased="true" converterId="10:6792" id="38:646"/>
+                <DataBindContext sourcePathIds="10:7-10:2086" propertyKey="640" converterId="10:6792" id="38:646"/>
             </LayoutComponentStyle>
             <ArtboardComponentList participatesInLayout="true" id="38:593">
                 <DataBindContext sourcePathIds="38:330-38:354" propertyKey="800" id="38:594"/>
