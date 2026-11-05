@@ -7,7 +7,7 @@
         <LayoutComponent styleId="111:92" name="Crumb" id="111:91">
             <LayoutComponent width="16" height="16" styleId="111:94" name="Separator" id="111:93">
                 <Shape x="8" y="8" name="Chevron" id="111:103">
-                    <PointsPath isClockwise="false" id="111:104">
+                    <PointsPath id="111:104">
                         <StraightVertex x="-2" y="-4" id="111:105"/>
                         <StraightVertex x="2" id="111:106"/>
                         <StraightVertex x="-2" y="4" id="111:107"/>
@@ -27,20 +27,20 @@
                     <SolidColor colorValue="00000000" id="111:113"/>
                 </Fill>
                 <Text name="Text" id="111:114">
-                        <TextStylePaint fontSize="14" fontAssetId="0:7" familyName="Inter" styleName="Regular" id="111:115">
-                            <Fill fillRule="clockwise" id="111:116">
-                                <SolidColor colorValue="FFFAFAFA" id="111:117">
-                                    <DataBindContext sourcePathIds="111:1-111:7-10:7422" propertyKey="37" nameBased="true" id="111:118"/>
-                                </SolidColor>
-                            </Fill>
-                            <TextStyleAxis tag="1869640570" axisValue="14" id="111:119"/>
-                            <TextStyleAxis tag="2003265652" axisValue="400" id="111:120"/>
-                        </TextStylePaint>
-                        <TextValueRun styleId="111:115" text="Home" id="111:121">
-                            <DataBindContext sourcePathIds="111:1-111:2" propertyKey="268" nameBased="true" id="111:122"/>
-                        </TextValueRun>
-                        <LayoutParticipant layoutWidthScaleType="hug" layoutHeightScaleType="hug" id="111:123"/>
-                    </Text>
+                    <TextStylePaint fontSize="14" fontAssetId="0:7" familyName="Inter" styleName="Regular" id="111:115">
+                        <Fill fillRule="clockwise" id="111:116">
+                            <SolidColor colorValue="FFFAFAFA" id="111:117">
+                                <DataBindContext sourcePathIds="111:1-111:7-10:7422" propertyKey="37" nameBased="true" id="111:118"/>
+                            </SolidColor>
+                        </Fill>
+                        <TextStyleAxis tag="1869640570" axisValue="14" id="111:119"/>
+                        <TextStyleAxis tag="2003265652" axisValue="400" id="111:120"/>
+                    </TextStylePaint>
+                    <TextValueRun styleId="111:115" text="Home" id="111:121">
+                        <DataBindContext sourcePathIds="111:1-111:2" propertyKey="268" nameBased="true" id="111:122"/>
+                    </TextValueRun>
+                    <LayoutParticipant layoutWidthScaleType="hug" layoutHeightScaleType="hug" id="111:123"/>
+                </Text>
                 <LayoutComponent height="1" styleId="111:98" opacity="0" name="Underline" id="111:97">
                     <Fill fillRule="clockwise" id="111:124">
                         <SolidColor colorValue="FF2563EB" id="111:125">
@@ -53,27 +53,28 @@
                 <LayoutComponentStyle paddingTop="2" paddingBottom="1" flexDirectionValue="column" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="111:96">
                     <DataBindContext sourcePathIds="111:1-111:3" propertyKey="596" nameBased="true" converterId="9:145" id="111:128"/>
                 </LayoutComponentStyle>
-                <SemanticData role="link" name="Semantics" id="111:129">
+                <SemanticData role="link" traitFlags="32" name="Semantics" id="111:129">
                     <DataBindContext sourcePathIds="111:1-111:2" propertyKey="983" nameBased="true" id="111:130"/>
                     <DataBindContext sourcePathIds="111:1-111:6" propertyKey="1004" nameBased="true" id="111:131"/>
                 </SemanticData>
+                <FocusData name="Focus" id="0:15807"/>
             </LayoutComponent>
             <LayoutComponent styleId="111:100" name="Current" id="111:99">
                 <Text name="Text Current" id="111:132">
-                        <TextStylePaint fontSize="14" fontAssetId="0:7" familyName="Inter" styleName="Regular" id="111:133">
-                            <Fill fillRule="clockwise" id="111:134">
-                                <SolidColor colorValue="FFA1A1AA" id="111:135">
-                                    <DataBindContext sourcePathIds="111:1-111:7-10:7426" propertyKey="37" nameBased="true" id="111:136"/>
-                                </SolidColor>
-                            </Fill>
-                            <TextStyleAxis tag="1869640570" axisValue="14" id="111:137"/>
-                            <TextStyleAxis tag="2003265652" axisValue="400" id="111:138"/>
-                        </TextStylePaint>
-                        <TextValueRun styleId="111:133" text="Home" id="111:139">
-                            <DataBindContext sourcePathIds="111:1-111:2" propertyKey="268" nameBased="true" id="111:140"/>
-                        </TextValueRun>
-                        <LayoutParticipant layoutWidthScaleType="hug" layoutHeightScaleType="hug" id="111:141"/>
-                    </Text>
+                    <TextStylePaint fontSize="14" fontAssetId="0:7" familyName="Inter" styleName="Regular" id="111:133">
+                        <Fill fillRule="clockwise" id="111:134">
+                            <SolidColor colorValue="FFA1A1AA" id="111:135">
+                                <DataBindContext sourcePathIds="111:1-111:7-10:7426" propertyKey="37" nameBased="true" id="111:136"/>
+                            </SolidColor>
+                        </Fill>
+                        <TextStyleAxis tag="1869640570" axisValue="14" id="111:137"/>
+                        <TextStyleAxis tag="2003265652" axisValue="400" id="111:138"/>
+                    </TextStylePaint>
+                    <TextValueRun styleId="111:133" text="Home" id="111:139">
+                        <DataBindContext sourcePathIds="111:1-111:2" propertyKey="268" nameBased="true" id="111:140"/>
+                    </TextValueRun>
+                    <LayoutParticipant layoutWidthScaleType="hug" layoutHeightScaleType="hug" id="111:141"/>
+                </Text>
                 <LayoutComponentStyle paddingTop="2" paddingBottom="2" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" displayValue="none" id="111:100">
                     <DataBindContext sourcePathIds="111:1-111:3" propertyKey="596" nameBased="true" converterId="9:90" id="111:142"/>
                 </LayoutComponentStyle>
@@ -121,12 +122,12 @@
             <StateMachineListener targetId="111:95" name="Select" id="111:167">
                 <ListenerInputType listenerTypeValue="click" id="111:168"/>
                 <ListenerInputTypeSemantic listenerTypeValue="semanticAction" id="111:169">
-                    <SemanticInput actionType="tap" id="111:170"/>
+                    <SemanticInput id="111:170"/>
                 </ListenerInputTypeSemantic>
                 <ListenerViewModelChange fromViewModelProperty="true" fromDataBindId="111:171" id="111:172">
                     <BindablePropertyNumber id="111:173">
-                        <DataBindContext sourcePathIds="111:1-111:5-111:17" propertyKey="636" direction="true" id="111:174"/>
                         <DataBindContext sourcePathIds="111:1-111:4" propertyKey="636" id="111:171"/>
+                        <DataBindContext sourcePathIds="111:1-111:5-111:17" propertyKey="636" direction="true" id="111:174"/>
                     </BindablePropertyNumber>
                 </ListenerViewModelChange>
                 <ListenerViewModelChange id="111:175">
@@ -141,12 +142,12 @@
                 </ListenerViewModelChange>
             </StateMachineListener>
             <StateMachineLayer name="Layer 1" id="111:182">
+                <AnimationState animationId="111:90" x="160" id="111:181"/>
                 <AnyState x="400" id="111:183"/>
                 <ExitState x="480" id="111:184"/>
                 <EntryState id="111:185">
                     <StateTransition stateToId="111:181" id="111:186"/>
                 </EntryState>
-                <AnimationState animationId="111:90" x="160" id="111:181"/>
             </StateMachineLayer>
         </StateMachine>
         <LinearAnimation name="Timeline 1" id="111:90"/>

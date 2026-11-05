@@ -5,7 +5,7 @@
         </Fill>
         <LayoutComponentStyle layoutAlignmentType="center" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="111:188"/>
         <LayoutComponent styleId="111:192" name="Trail" id="111:191">
-            <ArtboardComponentList participatesInLayout="true" name="Items" id="111:195">
+            <ArtboardComponentList name="Items" participatesInLayout="true" id="111:195">
                 <DataBindContext sourcePathIds="111:9-111:10" propertyKey="800" nameBased="true" id="111:196"/>
             </ArtboardComponentList>
             <LayoutComponentStyle gapHorizontal="8" layoutAlignmentType="center" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="111:192"/>
@@ -19,18 +19,18 @@
                 <ListenerInputTypeViewModel viewModelPathIds="111:9-111:15-111:17" listenerTypeValue="viewModel" id="111:201"/>
                 <ListenerViewModelChange fromViewModelProperty="true" fromDataBindId="111:202" id="111:203">
                     <BindablePropertyNumber id="111:204">
-                        <DataBindContext sourcePathIds="111:9-111:11" propertyKey="636" direction="true" id="111:205"/>
                         <DataBindContext sourcePathIds="111:9-111:15-111:17" propertyKey="636" id="111:202"/>
+                        <DataBindContext sourcePathIds="111:9-111:11" propertyKey="636" direction="true" id="111:205"/>
                     </BindablePropertyNumber>
                 </ListenerViewModelChange>
             </StateMachineListener>
             <StateMachineLayer name="Layer 1" id="111:207">
+                <AnimationState animationId="111:190" x="160" id="111:206"/>
                 <AnyState x="400" id="111:208"/>
                 <ExitState x="480" id="111:209"/>
                 <EntryState id="111:210">
                     <StateTransition stateToId="111:206" id="111:211"/>
                 </EntryState>
-                <AnimationState animationId="111:190" x="160" id="111:206"/>
             </StateMachineLayer>
         </StateMachine>
         <LinearAnimation name="Timeline 1" id="111:190"/>
