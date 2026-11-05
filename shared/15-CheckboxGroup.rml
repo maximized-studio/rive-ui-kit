@@ -1,0 +1,41 @@
+<Rive version="1" kind="fragment">
+    <Artboard defaultStateMachineId="10:4199" viewModelId="10:4154" viewModelInstanceId="10:4176" isComponent="true" includeInExport="false" spaceId="1:5601" width="220" height="130" styleId="10:4182" x="300" y="2050" name="Checkbox Group" id="10:4181">
+        <LayoutComponent styleId="10:4184" name="Group" id="10:4183">
+            <Text id="10:4185">
+                <TextStylePaint fontSize="13" fontAssetId="0:7" familyName="Inter" styleName="Bold" id="10:4186">
+                    <Fill fillRule="clockwise" id="10:4187">
+                        <SolidColor colorValue="FFA1A1AA" id="10:4188">
+                            <DataBindContext sourcePathIds="10:4154-10:7434-10:7426" propertyKey="37" id="10:7543"/>
+                        </SolidColor>
+                    </Fill>
+                    <TextStyleAxis tag="1869640570" axisValue="14" id="10:4189"/>
+                    <TextStyleAxis tag="2003265652" axisValue="700" id="10:4190"/>
+                </TextStylePaint>
+                <TextValueRun styleId="10:4186" text="Email preferences" id="10:4191"/>
+                <LayoutParticipant layoutWidthScaleType="hug" layoutHeightScaleType="hug" id="10:4192"/>
+            </Text>
+            <LayoutComponent styleId="10:4194" name="Options" id="10:4193">
+                <LayoutComponentStyle gapVertical="8" flexDirectionValue="column" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="10:4194"/>
+                <ArtboardComponentList participatesInLayout="true" id="10:4206">
+                    <DataBindContext sourcePathIds="10:4154-10:4156" propertyKey="800" id="10:4207"/>
+                </ArtboardComponentList>
+            </LayoutComponent>
+            <SemanticData role="group" label="Email preferences" name="Semantics" id="2:23">
+                <DataBindContext sourcePathIds="10:4154-7:61" propertyKey="1004" nameBased="true" id="7:65"/>
+            </SemanticData>
+            <LayoutComponentStyle gapVertical="10" flexDirectionValue="column" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="10:4184"/>
+        </LayoutComponent>
+        <LayoutComponentStyle flexDirectionValue="column" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" id="10:4182"/>
+        <StateMachine name="State Machine 1" id="10:4199">
+            <StateMachineLayer name="Layer 1" id="10:4200">
+                <AnimationState animationId="10:4196" x="160" id="10:4197"/>
+                <AnyState x="400" id="10:4201"/>
+                <EntryState id="10:4202">
+                    <StateTransition stateToId="10:4197" id="10:4198"/>
+                </EntryState>
+                <ExitState x="480" id="10:4203"/>
+            </StateMachineLayer>
+        </StateMachine>
+        <LinearAnimation name="Timeline 1" id="10:4196"/>
+    </Artboard>
+</Rive>

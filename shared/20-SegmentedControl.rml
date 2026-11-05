@@ -1,0 +1,32 @@
+<Rive version="1" kind="fragment">
+    <Artboard defaultStateMachineId="38:375" viewModelId="38:330" viewModelInstanceId="38:624" isComponent="true" includeInExport="false" spaceId="1:5601" width="280" height="40" styleId="38:373" x="2552" name="Segmented Control" id="38:370">
+        <Fill fillRule="clockwise" id="38:371">
+            <SolidColor colorValue="00000000" id="38:372"/>
+        </Fill>
+        <LayoutComponentStyle layoutAlignmentType="center" intrinsicallySizedValue="true" layoutHeightScaleType="hug" id="38:373"/>
+        <LayoutComponent styleId="38:590" name="Track" id="38:589">
+            <Fill fillRule="clockwise" id="38:591">
+                <SolidColor colorValue="FF27272A" id="38:592">
+                    <DataBindContext sourcePathIds="38:330-38:352-10:7412" propertyKey="37" nameBased="true" id="38:645"/>
+                </SolidColor>
+            </Fill>
+            <LayoutComponentStyle gapHorizontal="2" paddingLeft="3" paddingRight="3" paddingTop="3" paddingBottom="3" layoutAlignmentType="center" intrinsicallySizedValue="true" cornerRadiusTL="10" layoutWidthScaleType="fill" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="38:590">
+                <DataBindContext sourcePathIds="38:330-38:352-10:2086" propertyKey="640" nameBased="true" converterId="10:6792" id="38:646"/>
+            </LayoutComponentStyle>
+            <ArtboardComponentList participatesInLayout="true" id="38:593">
+                <DataBindContext sourcePathIds="38:330-38:354" propertyKey="800" id="38:594"/>
+            </ArtboardComponentList>
+        </LayoutComponent>
+        <StateMachine name="State Machine 1" id="38:375">
+            <StateMachineLayer name="Layer 1" id="38:376">
+                <AnyState x="400" id="38:377"/>
+                <ExitState x="480" id="38:378"/>
+                <EntryState id="38:379">
+                    <StateTransition stateToId="38:380" id="38:381"/>
+                </EntryState>
+                <AnimationState animationId="38:374" x="160" id="38:380"/>
+            </StateMachineLayer>
+        </StateMachine>
+        <LinearAnimation name="Timeline 1" id="38:374"/>
+    </Artboard>
+</Rive>

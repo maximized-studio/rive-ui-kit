@@ -1,0 +1,41 @@
+<Rive version="1" kind="fragment">
+    <Artboard defaultStateMachineId="10:3591" viewModelId="10:3548" viewModelInstanceId="10:3580" isComponent="true" includeInExport="false" spaceId="1:5601" width="220" height="130" styleId="10:3589" y="2050" name="Radio Group" id="10:3586">
+        <LayoutComponentStyle flexDirectionValue="column" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" id="10:3589"/>
+        <LayoutComponent styleId="10:3599" name="Group" id="10:3598">
+            <Text id="10:3600">
+                <TextStylePaint fontSize="13" fontAssetId="0:7" familyName="Inter" styleName="Bold" id="10:3601">
+                    <Fill fillRule="clockwise" id="10:3602">
+                        <SolidColor colorValue="FFA1A1AA" id="10:3603">
+                            <DataBindContext sourcePathIds="10:3548-10:7431-10:7426" propertyKey="37" id="10:7542"/>
+                        </SolidColor>
+                    </Fill>
+                    <TextStyleAxis tag="1869640570" axisValue="14" id="10:3604"/>
+                    <TextStyleAxis tag="2003265652" axisValue="700" id="10:3605"/>
+                </TextStylePaint>
+                <TextValueRun styleId="10:3601" text="Notifications" id="10:3606"/>
+                <LayoutParticipant layoutWidthScaleType="hug" layoutHeightScaleType="hug" id="10:3607"/>
+            </Text>
+            <LayoutComponent styleId="10:3609" name="Options" id="10:3608">
+                <LayoutComponentStyle gapVertical="8" flexDirectionValue="column" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="10:3609"/>
+                <ArtboardComponentList participatesInLayout="true" id="10:3610">
+                    <DataBindContext sourcePathIds="10:3548-10:3550" propertyKey="800" id="10:3611"/>
+                </ArtboardComponentList>
+            </LayoutComponent>
+            <SemanticData role="radioGroup" label="Notifications" traitFlags="32" name="Semantics" id="2:18">
+                <DataBindContext sourcePathIds="10:3548-7:59" propertyKey="1004" nameBased="true" id="7:85"/>
+            </SemanticData>
+            <LayoutComponentStyle gapVertical="10" flexDirectionValue="column" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="10:3599"/>
+        </LayoutComponent>
+        <StateMachine name="State Machine 1" id="10:3591">
+            <StateMachineLayer name="Layer 1" id="10:3592">
+                <AnyState x="400" id="10:3593"/>
+                <ExitState x="480" id="10:3594"/>
+                <EntryState id="10:3595">
+                    <StateTransition stateToId="10:3596" id="10:3597"/>
+                </EntryState>
+                <AnimationState animationId="10:3590" x="160" id="10:3596"/>
+            </StateMachineLayer>
+        </StateMachine>
+        <LinearAnimation name="Timeline 1" id="10:3590"/>
+    </Artboard>
+</Rive>

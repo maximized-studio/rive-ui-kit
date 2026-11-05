@@ -1,0 +1,294 @@
+<Rive version="1" kind="fragment">
+    <Artboard defaultStateMachineId="38:363" viewModelId="38:328" viewModelInstanceId="38:329" isComponent="true" includeInExport="false" spaceId="1:5601" width="100" height="32" styleId="38:361" x="2352" name="Segment" id="38:358">
+        <Fill fillRule="clockwise" id="38:359">
+            <SolidColor colorValue="00000000" id="38:360"/>
+        </Fill>
+        <LayoutComponentStyle layoutAlignmentType="center" intrinsicallySizedValue="true" layoutWidthScaleType="fill" layoutHeightScaleType="hug" id="38:361"/>
+        <LayoutComponent styleId="38:383" name="Segment" id="38:382">
+            <LayoutComponent styleId="38:385" name="Pad" id="38:384">
+                <GridItemPlacement id="38:386"/>
+                <LayoutComponent width="14" height="14" styleId="38:388" name="Icon" id="38:387">
+                    <Shape x="7" y="7" name="Blocked" id="38:529">
+                        <PointsPath isClosed="true" id="38:530">
+                            <CubicDetachedVertex outRotation="1.5707964" outDistance="3.0927947" x="5.5999999" id="38:531"/>
+                            <CubicMirroredVertex rotation="3.1415927" distance="3.0927947" x="3.4290109e-16" y="5.5999999" id="38:532"/>
+                            <CubicMirroredVertex rotation="-1.5707964" distance="3.0927947" x="-5.5999999" y="6.8580218e-16" id="38:533"/>
+                            <CubicMirroredVertex rotation="-2.8717665e-16" distance="3.0927947" x="-1.0287033e-15" y="-5.5999999" id="38:534"/>
+                            <CubicDetachedVertex inRotation="-1.5707964" inDistance="3.0927947" x="5.5999999" y="-1.3716044e-15" id="38:535"/>
+                        </PointsPath>
+                        <PointsPath isClosed="true" id="38:536">
+                            <StraightVertex x="-3.9597979" y="-3.9597979" id="38:537"/>
+                            <StraightVertex x="3.9597979" y="3.9597979" id="38:538"/>
+                        </PointsPath>
+                        <Stroke thickness="1.4" id="38:539">
+                            <SolidColor colorValue="FFFAFAFA" id="38:540">
+                                <DataBindContext sourcePathIds="38:328-38:344-10:7422" propertyKey="37" nameBased="true" id="38:639"/>
+                            </SolidColor>
+                        </Stroke>
+                        <DataBindContext sourcePathIds="38:328-38:340" propertyKey="18" nameBased="true" converterId="38:421" id="38:541"/>
+                    </Shape>
+                    <Shape x="7" y="7" name="Check" id="38:515">
+                        <PointsPath isClosed="true" id="38:516">
+                            <CubicDetachedVertex outRotation="1.5707964" outDistance="3.0927947" x="5.5999999" id="38:517"/>
+                            <CubicMirroredVertex rotation="3.1415927" distance="3.0927947" x="3.4290109e-16" y="5.5999999" id="38:518"/>
+                            <CubicMirroredVertex rotation="-1.5707964" distance="3.0927947" x="-5.5999999" y="6.8580218e-16" id="38:519"/>
+                            <CubicMirroredVertex rotation="-2.8717665e-16" distance="3.0927947" x="-1.0287033e-15" y="-5.5999999" id="38:520"/>
+                            <CubicDetachedVertex inRotation="-1.5707964" inDistance="3.0927947" x="5.5999999" y="-1.3716044e-15" id="38:521"/>
+                        </PointsPath>
+                        <PointsPath isClosed="true" isClockwise="false" id="38:522">
+                            <StraightVertex x="-2.5999999" y="0.2" id="38:523"/>
+                            <StraightVertex x="-0.69999999" y="2.0999999" id="38:524"/>
+                            <StraightVertex x="2.8" y="-1.6" id="38:525"/>
+                        </PointsPath>
+                        <Stroke thickness="1.4" id="38:526">
+                            <SolidColor colorValue="FFFAFAFA" id="38:527">
+                                <DataBindContext sourcePathIds="38:328-38:344-10:7422" propertyKey="37" nameBased="true" id="38:638"/>
+                            </SolidColor>
+                        </Stroke>
+                        <DataBindContext sourcePathIds="38:328-38:340" propertyKey="18" nameBased="true" converterId="38:407" id="38:528"/>
+                    </Shape>
+                    <Shape x="7" y="7" name="Corner L" id="38:506">
+                        <PointsPath id="38:507">
+                            <StraightVertex x="-5" y="5" id="38:508"/>
+                            <CubicDetachedVertex outRotation="-1.5707964" outDistance="4.69455" x="-5" y="3.5" id="38:509"/>
+                            <CubicDetachedVertex inRotation="3.1415927" inDistance="4.69455" x="3.5" y="-5" id="38:510"/>
+                            <StraightVertex x="5" y="-5" id="38:511"/>
+                        </PointsPath>
+                        <Stroke thickness="1.4" id="38:512">
+                            <SolidColor colorValue="FFFAFAFA" id="38:513">
+                                <DataBindContext sourcePathIds="38:328-38:344-10:7422" propertyKey="37" nameBased="true" id="38:637"/>
+                            </SolidColor>
+                        </Stroke>
+                        <DataBindContext sourcePathIds="38:328-38:340" propertyKey="18" nameBased="true" converterId="10:4815" id="38:514"/>
+                    </Shape>
+                    <Shape x="7" y="7" name="Corner M" id="38:497">
+                        <PointsPath id="38:498">
+                            <StraightVertex x="-5" y="5" id="38:499"/>
+                            <CubicDetachedVertex outRotation="-1.5707964" outDistance="2.7614999" x="-5" id="38:500"/>
+                            <CubicDetachedVertex inRotation="3.1415927" inDistance="2.7614999" y="-5" id="38:501"/>
+                            <StraightVertex x="5" y="-5" id="38:502"/>
+                        </PointsPath>
+                        <Stroke thickness="1.4" id="38:503">
+                            <SolidColor colorValue="FFFAFAFA" id="38:504">
+                                <DataBindContext sourcePathIds="38:328-38:344-10:7422" propertyKey="37" nameBased="true" id="38:636"/>
+                            </SolidColor>
+                        </Stroke>
+                        <DataBindContext sourcePathIds="38:328-38:340" propertyKey="18" nameBased="true" converterId="10:2504" id="38:505"/>
+                    </Shape>
+                    <Shape x="7" y="7" name="Corner S" id="38:488">
+                        <PointsPath id="38:489">
+                            <StraightVertex x="-5" y="5" id="38:490"/>
+                            <CubicDetachedVertex outRotation="-1.5707964" outDistance="1.3807499" x="-5" y="-2.5" id="38:491"/>
+                            <CubicDetachedVertex inRotation="3.1415927" inDistance="1.3807499" x="-2.5" y="-5" id="38:492"/>
+                            <StraightVertex x="5" y="-5" id="38:493"/>
+                        </PointsPath>
+                        <Stroke thickness="1.4" id="38:494">
+                            <SolidColor colorValue="FFFAFAFA" id="38:495">
+                                <DataBindContext sourcePathIds="38:328-38:344-10:7422" propertyKey="37" nameBased="true" id="38:635"/>
+                            </SolidColor>
+                        </Stroke>
+                        <DataBindContext sourcePathIds="38:328-38:340" propertyKey="18" nameBased="true" converterId="10:2490" id="38:496"/>
+                    </Shape>
+                    <Shape x="7" y="7" name="Corner None" id="38:480">
+                        <PointsPath id="38:481">
+                            <StraightVertex x="-5" y="5" id="38:482"/>
+                            <StraightVertex x="-5" y="-5" id="38:483"/>
+                            <StraightVertex x="5" y="-5" id="38:484"/>
+                        </PointsPath>
+                        <Stroke thickness="1.4" id="38:485">
+                            <SolidColor colorValue="FFFAFAFA" id="38:486">
+                                <DataBindContext sourcePathIds="38:328-38:344-10:7422" propertyKey="37" nameBased="true" id="38:634"/>
+                            </SolidColor>
+                        </Stroke>
+                        <DataBindContext sourcePathIds="38:328-38:340" propertyKey="18" nameBased="true" converterId="10:2476" id="38:487"/>
+                    </Shape>
+                    <Shape x="7" y="7" name="Moon" id="38:469">
+                        <PointsPath isClosed="true" id="38:470">
+                            <CubicDetachedVertex outRotation="1.6583498" outDistance="2.7912259" x="5.25" y="0.46083334" id="38:471"/>
+                            <CubicMirroredVertex rotation="-3.1124082" distance="2.7912259" x="-0.15378571" y="5.2679424" id="38:472"/>
+                            <CubicMirroredVertex rotation="-1.5999808" distance="2.7912259" x="-5.2679424" y="0.15378571" id="38:473"/>
+                            <CubicDetachedVertex inRotation="3.0540392" inDistance="2.7912259" outRotation="2.2073247" outDistance="2.0212667" x="-0.46083334" y="-5.25" id="38:474"/>
+                            <CubicMirroredVertex rotation="0.78539819" distance="2.0212667" x="-0.064515673" y="0.064515673" id="38:475"/>
+                            <CubicDetachedVertex inRotation="2.5050642" inDistance="2.0212667" x="5.25" y="0.46083334" id="38:476"/>
+                        </PointsPath>
+                        <Stroke thickness="1.4" id="38:477">
+                            <SolidColor colorValue="FFFAFAFA" id="38:478">
+                                <DataBindContext sourcePathIds="38:328-38:344-10:7422" propertyKey="37" nameBased="true" id="38:633"/>
+                            </SolidColor>
+                        </Stroke>
+                        <DataBindContext sourcePathIds="38:328-38:340" propertyKey="18" nameBased="true" converterId="10:2462" id="38:479"/>
+                    </Shape>
+                    <Shape x="7" y="7" name="Sun" id="38:435">
+                        <PointsPath id="38:436">
+                            <CubicDetachedVertex outRotation="1.5707964" outDistance="1.4359404" x="2.5999999" id="38:437"/>
+                            <CubicMirroredVertex rotation="3.1415927" distance="1.4359404" x="1.5920408e-16" y="2.5999999" id="38:438"/>
+                            <CubicMirroredVertex rotation="-1.5707964" distance="1.4359404" x="-2.5999999" y="3.1840816e-16" id="38:439"/>
+                            <CubicMirroredVertex rotation="-3.0926716e-16" distance="1.4359404" x="-4.7761223e-16" y="-2.5999999" id="38:440"/>
+                            <CubicDetachedVertex inRotation="-1.5707964" inDistance="1.4359404" x="2.5999999" y="-6.3681631e-16" id="38:441"/>
+                        </PointsPath>
+                        <PointsPath id="38:442">
+                            <StraightVertex x="4.4000001" id="38:443"/>
+                            <StraightVertex x="6.1999998" id="38:444"/>
+                        </PointsPath>
+                        <PointsPath id="38:445">
+                            <StraightVertex x="3.11127" y="3.11127" id="38:446"/>
+                            <StraightVertex x="4.3840618" y="4.3840618" id="38:447"/>
+                        </PointsPath>
+                        <PointsPath isClockwise="false" id="38:448">
+                            <StraightVertex x="2.6942231e-16" y="4.4000001" id="38:449"/>
+                            <StraightVertex x="3.7964051e-16" y="6.1999998" id="38:450"/>
+                        </PointsPath>
+                        <PointsPath isClockwise="false" id="38:451">
+                            <StraightVertex x="-3.11127" y="3.11127" id="38:452"/>
+                            <StraightVertex x="-4.3840618" y="4.3840618" id="38:453"/>
+                        </PointsPath>
+                        <PointsPath id="38:454">
+                            <StraightVertex x="-4.4000001" y="5.3884462e-16" id="38:455"/>
+                            <StraightVertex x="-6.1999998" y="7.5928102e-16" id="38:456"/>
+                        </PointsPath>
+                        <PointsPath id="38:457">
+                            <StraightVertex x="-3.11127" y="-3.11127" id="38:458"/>
+                            <StraightVertex x="-4.3840618" y="-4.3840618" id="38:459"/>
+                        </PointsPath>
+                        <PointsPath id="38:460">
+                            <StraightVertex x="-8.082669e-16" y="-4.4000001" id="38:461"/>
+                            <StraightVertex x="-1.1389216e-15" y="-6.1999998" id="38:462"/>
+                        </PointsPath>
+                        <PointsPath isClockwise="false" id="38:463">
+                            <StraightVertex x="3.11127" y="-3.11127" id="38:464"/>
+                            <StraightVertex x="4.3840618" y="-4.3840618" id="38:465"/>
+                        </PointsPath>
+                        <Stroke thickness="1.4" id="38:466">
+                            <SolidColor colorValue="FFFAFAFA" id="38:467">
+                                <DataBindContext sourcePathIds="38:328-38:344-10:7422" propertyKey="37" nameBased="true" id="38:632"/>
+                            </SolidColor>
+                        </Stroke>
+                        <DataBindContext sourcePathIds="38:328-38:340" propertyKey="18" nameBased="true" converterId="10:2448" id="38:468"/>
+                    </Shape>
+                    <LayoutComponentStyle id="38:388">
+                        <DataBindContext sourcePathIds="38:328-38:340" propertyKey="596" nameBased="true" converterId="33:216" id="38:542"/>
+                    </LayoutComponentStyle>
+                </LayoutComponent>
+                <Text id="38:389">
+                    <TextStylePaint fontSize="13" fontAssetId="0:7" familyName="Inter" styleName="Regular" id="38:390">
+                        <Fill fillRule="clockwise" id="38:391">
+                            <SolidColor colorValue="FFFAFAFA" id="38:392">
+                                <DataBindContext sourcePathIds="38:328-38:344-10:7422" propertyKey="37" nameBased="true" id="38:640"/>
+                            </SolidColor>
+                        </Fill>
+                        <TextStyleAxis tag="1869640570" axisValue="14" id="38:393"/>
+                        <TextStyleAxis tag="2003265652" axisValue="600" id="38:394"/>
+                    </TextStylePaint>
+                    <TextValueRun styleId="38:390" text="Option" id="38:395">
+                        <DataBindContext sourcePathIds="38:328-38:348" propertyKey="268" nameBased="true" id="38:543"/>
+                    </TextValueRun>
+                    <LayoutParticipant layoutWidthScaleType="hug" layoutHeightScaleType="hug" id="38:396"/>
+                </Text>
+                <LayoutComponentStyle gapHorizontal="6" paddingLeft="12" paddingRight="12" paddingTop="6" paddingBottom="6" layoutAlignmentType="center" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="38:385"/>
+            </LayoutComponent>
+            <LayoutComponent styleId="38:398" opacity="0" name="Selected" id="38:397">
+                <Fill fillRule="clockwise" id="38:399">
+                    <SolidColor colorValue="FF3F3F46" id="38:400">
+                        <DataBindContext sourcePathIds="38:328-38:344-10:7414" propertyKey="37" nameBased="true" id="38:641"/>
+                    </SolidColor>
+                </Fill>
+                <GridItemPlacement id="38:401"/>
+                <LayoutComponentStyle cornerRadiusTL="7" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="38:398">
+                    <DataBindContext sourcePathIds="38:328-38:344-10:2086" propertyKey="640" nameBased="true" converterId="10:6840" id="38:643"/>
+                </LayoutComponentStyle>
+            </LayoutComponent>
+            <LayoutComponent styleId="38:403" opacity="0" name="Hover" id="38:402">
+                <Fill fillRule="clockwise" id="38:404">
+                    <SolidColor colorValue="FF323238" id="38:405">
+                        <DataBindContext sourcePathIds="38:328-38:344-10:7416" propertyKey="37" nameBased="true" id="38:642"/>
+                    </SolidColor>
+                </Fill>
+                <GridItemPlacement id="38:406"/>
+                <LayoutComponentStyle cornerRadiusTL="7" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="38:403">
+                    <DataBindContext sourcePathIds="38:328-38:344-10:2086" propertyKey="640" nameBased="true" converterId="10:6840" id="38:644"/>
+                </LayoutComponentStyle>
+                <DataBindContext sourcePathIds="38:328-38:346" propertyKey="18" nameBased="true" converterId="9:145" id="38:544"/>
+            </LayoutComponent>
+            <LayoutComponentStyle layoutAlignmentType="center" intrinsicallySizedValue="true" layoutTypeValue="stack" layoutWidthScaleType="fill" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="38:383"/>
+        </LayoutComponent>
+        <LinearAnimation name="Selected" id="38:547">
+            <KeyedObject objectId="38:397" id="38:551">
+                <KeyedProperty property="opacity" id="38:552">
+                    <KeyFrameDouble value="1" interpolationType="linear" id="38:553"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+        <StateMachine name="State Machine 1" id="38:363">
+            <StateMachineListener targetId="38:382" name="Hover Off" id="38:584">
+                <ListenerInputType listenerTypeValue="exit" id="38:585"/>
+                <ListenerViewModelChange id="38:586">
+                    <BindablePropertyBoolean id="38:587">
+                        <DataBindContext sourcePathIds="38:328-38:346" propertyKey="634" direction="true" id="38:588"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListener targetId="38:382" name="Hover On" id="38:579">
+                <ListenerInputType id="38:580"/>
+                <ListenerViewModelChange id="38:581">
+                    <BindablePropertyBoolean propertyValue="true" id="38:582">
+                        <DataBindContext sourcePathIds="38:328-38:346" propertyKey="634" direction="true" id="38:583"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineLayer name="Layer 1" id="38:364">
+                <AnyState x="400" id="38:365">
+                    <StateTransition stateToId="38:554" duration="150" interpolationType="cubic" id="38:555">
+                        <TransitionViewModelCondition id="38:557">
+                            <TransitionPropertyViewModelComparator id="38:558">
+                                <BindablePropertyNumber id="38:559">
+                                    <DataBindContext sourcePathIds="38:328-38:338" propertyKey="636" id="38:560"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionPropertyViewModelComparator id="38:562">
+                                <BindablePropertyNumber id="38:563">
+                                    <DataBindContext sourcePathIds="38:328-38:342-38:332" propertyKey="636" id="38:564"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                    <StateTransition stateToId="38:368" duration="150" interpolationType="cubic" id="38:556">
+                        <TransitionViewModelCondition opValue="notEqual" id="38:565">
+                            <TransitionPropertyViewModelComparator id="38:566">
+                                <BindablePropertyNumber id="38:567">
+                                    <DataBindContext sourcePathIds="38:328-38:338" propertyKey="636" id="38:568"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionPropertyViewModelComparator id="38:570">
+                                <BindablePropertyNumber id="38:571">
+                                    <DataBindContext sourcePathIds="38:328-38:342-38:332" propertyKey="636" id="38:572"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                </AnyState>
+                <ExitState x="480" id="38:366"/>
+                <EntryState id="38:367">
+                    <StateTransition stateToId="38:368" id="38:369"/>
+                </EntryState>
+                <AnimationState animationId="38:362" x="160" id="38:368"/>
+                <AnimationState animationId="38:547" x="300" y="100" stateName="Selected" id="38:554"/>
+            </StateMachineLayer>
+            <StateMachineListener targetId="38:382" name="Select" id="38:573">
+                <ListenerInputType listenerTypeValue="click" id="38:574"/>
+                <ListenerViewModelChange fromViewModelProperty="true" fromDataBindId="38:578" id="38:575">
+                    <BindablePropertyNumber id="38:576">
+                        <DataBindContext sourcePathIds="38:328-38:342-38:332" propertyKey="636" direction="true" id="38:577"/>
+                        <DataBindContext sourcePathIds="38:328-38:338" propertyKey="636" id="38:578"/>
+                    </BindablePropertyNumber>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+        </StateMachine>
+        <LinearAnimation name="Unselected" id="38:362">
+            <KeyedObject objectId="38:397" id="38:548">
+                <KeyedProperty property="opacity" id="38:549">
+                    <KeyFrameDouble interpolationType="linear" id="38:550"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+    </Artboard>
+</Rive>

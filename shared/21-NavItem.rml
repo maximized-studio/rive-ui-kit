@@ -1,0 +1,156 @@
+<Rive version="1" kind="fragment">
+    <Artboard defaultStateMachineId="41:903" viewModelId="41:862" viewModelInstanceId="41:863" isComponent="true" includeInExport="false" spaceId="1:5601" width="216" height="32" styleId="41:901" x="2932" name="Nav Item" id="41:898">
+        <Fill fillRule="clockwise" id="41:899">
+            <SolidColor colorValue="00000000" id="41:900"/>
+        </Fill>
+        <LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="fill" layoutHeightScaleType="hug" id="41:901"/>
+        <LayoutComponent styleId="41:911" name="Row" id="41:910">
+            <LayoutComponent styleId="41:913" name="Pad" id="41:912">
+                <GridItemPlacement id="41:914"/>
+                <Text id="41:915">
+                    <TextStylePaint fontSize="13" fontAssetId="0:7" familyName="Inter" styleName="Regular" id="41:916">
+                        <Fill fillRule="clockwise" id="41:917">
+                            <SolidColor colorValue="FFFAFAFA" id="41:918">
+                                <DataBindContext sourcePathIds="41:862-41:876-10:7422" propertyKey="37" nameBased="true" id="42:1"/>
+                            </SolidColor>
+                        </Fill>
+                        <TextStyleAxis tag="1869640570" axisValue="14" id="41:919"/>
+                        <TextStyleAxis tag="2003265652" axisValue="500" id="41:920"/>
+                    </TextStylePaint>
+                    <TextValueRun styleId="41:916" text="Component" id="41:921">
+                        <DataBindContext sourcePathIds="41:862-41:868" propertyKey="268" nameBased="true" id="41:933"/>
+                    </TextValueRun>
+                    <LayoutParticipant layoutWidthScaleType="hug" layoutHeightScaleType="hug" id="41:922"/>
+                </Text>
+                <LayoutComponentStyle paddingLeft="12" paddingRight="12" paddingTop="7" paddingBottom="7" layoutAlignmentType="centerLeft" intrinsicallySizedValue="true" layoutWidthScaleType="fill" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="41:913"/>
+            </LayoutComponent>
+            <LayoutComponent styleId="41:924" opacity="0" name="Selected" id="41:923">
+                <Fill fillRule="clockwise" id="41:925">
+                    <SolidColor colorValue="FF3F3F46" id="41:926">
+                        <DataBindContext sourcePathIds="41:862-41:876-10:7414" propertyKey="37" nameBased="true" id="42:2"/>
+                    </SolidColor>
+                </Fill>
+                <GridItemPlacement id="41:927"/>
+                <LayoutComponentStyle cornerRadiusTL="6" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="41:924">
+                    <DataBindContext sourcePathIds="41:862-41:876-10:2086" propertyKey="640" nameBased="true" converterId="10:6840" id="42:4"/>
+                </LayoutComponentStyle>
+            </LayoutComponent>
+            <LayoutComponent styleId="41:929" opacity="0" name="Hover" id="41:928">
+                <Fill fillRule="clockwise" id="41:930">
+                    <SolidColor colorValue="FF323238" id="41:931">
+                        <DataBindContext sourcePathIds="41:862-41:876-10:7416" propertyKey="37" nameBased="true" id="42:3"/>
+                    </SolidColor>
+                </Fill>
+                <GridItemPlacement id="41:932"/>
+                <LayoutComponentStyle cornerRadiusTL="6" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="41:929">
+                    <DataBindContext sourcePathIds="41:862-41:876-10:2086" propertyKey="640" nameBased="true" converterId="10:6840" id="42:5"/>
+                </LayoutComponentStyle>
+                <DataBindContext sourcePathIds="41:862-41:874" propertyKey="18" nameBased="true" converterId="9:145" id="42:6"/>
+            </LayoutComponent>
+            <LayoutComponentStyle layoutAlignmentType="centerLeft" intrinsicallySizedValue="true" layoutTypeValue="stack" layoutWidthScaleType="fill" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="41:911"/>
+        </LayoutComponent>
+        <LinearAnimation name="Selected" id="42:7">
+            <KeyedObject objectId="41:923" id="42:11">
+                <KeyedProperty property="opacity" id="42:12">
+                    <KeyFrameDouble value="1" interpolationType="linear" id="42:13"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+        <StateMachine name="State Machine 1" id="41:903">
+            <StateMachineListener targetId="41:910" name="Hover Off" id="42:59">
+                <ListenerInputType listenerTypeValue="exit" id="42:60"/>
+                <ListenerViewModelChange id="42:61">
+                    <BindablePropertyBoolean id="42:62">
+                        <DataBindContext sourcePathIds="41:862-41:874" propertyKey="634" direction="true" id="42:63"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListener targetId="41:910" name="Hover On" id="42:54">
+                <ListenerInputType id="42:55"/>
+                <ListenerViewModelChange id="42:56">
+                    <BindablePropertyBoolean propertyValue="true" id="42:57">
+                        <DataBindContext sourcePathIds="41:862-41:874" propertyKey="634" direction="true" id="42:58"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineLayer name="Layer 1" id="41:904">
+                <AnyState x="400" id="41:905">
+                    <StateTransition stateToId="42:14" duration="120" interpolationType="cubic" id="42:15">
+                        <TransitionViewModelCondition id="42:18">
+                            <TransitionPropertyViewModelComparator id="42:19">
+                                <BindablePropertyNumber id="42:20">
+                                    <DataBindContext sourcePathIds="41:862-41:870" propertyKey="636" id="42:21"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionPropertyViewModelComparator id="42:23">
+                                <BindablePropertyNumber id="42:24">
+                                    <DataBindContext sourcePathIds="41:862-41:872-10:4579" propertyKey="636" id="42:25"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                        </TransitionViewModelCondition>
+                        <TransitionViewModelCondition id="42:26">
+                            <TransitionPropertyViewModelComparator id="42:27">
+                                <BindablePropertyBoolean id="42:28">
+                                    <DataBindContext sourcePathIds="41:862-41:872-41:859" propertyKey="634" id="42:29"/>
+                                </BindablePropertyBoolean>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueBooleanComparator value="true" id="42:30"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                    <StateTransition stateToId="41:908" duration="120" interpolationType="cubic" id="42:16">
+                        <TransitionViewModelCondition opValue="notEqual" id="42:31">
+                            <TransitionPropertyViewModelComparator id="42:32">
+                                <BindablePropertyNumber id="42:33">
+                                    <DataBindContext sourcePathIds="41:862-41:870" propertyKey="636" id="42:34"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionPropertyViewModelComparator id="42:36">
+                                <BindablePropertyNumber id="42:37">
+                                    <DataBindContext sourcePathIds="41:862-41:872-10:4579" propertyKey="636" id="42:38"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                    <StateTransition stateToId="41:908" duration="120" interpolationType="cubic" id="42:17">
+                        <TransitionViewModelCondition id="42:39">
+                            <TransitionPropertyViewModelComparator id="42:40">
+                                <BindablePropertyBoolean id="42:41">
+                                    <DataBindContext sourcePathIds="41:862-41:872-41:859" propertyKey="634" id="42:42"/>
+                                </BindablePropertyBoolean>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueBooleanComparator id="42:43"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                </AnyState>
+                <ExitState x="480" id="41:906"/>
+                <EntryState id="41:907">
+                    <StateTransition stateToId="41:908" id="41:909"/>
+                </EntryState>
+                <AnimationState animationId="41:902" x="160" id="41:908"/>
+                <AnimationState animationId="42:7" x="300" y="100" stateName="Selected" id="42:14"/>
+            </StateMachineLayer>
+            <StateMachineListener targetId="41:910" name="Open" id="42:44">
+                <ListenerInputType listenerTypeValue="click" id="42:45"/>
+                <ListenerViewModelChange fromViewModelProperty="true" fromDataBindId="42:49" id="42:46">
+                    <BindablePropertyNumber id="42:47">
+                        <DataBindContext sourcePathIds="41:862-41:872-10:4579" propertyKey="636" direction="true" id="42:48"/>
+                        <DataBindContext sourcePathIds="41:862-41:870" propertyKey="636" id="42:49"/>
+                    </BindablePropertyNumber>
+                </ListenerViewModelChange>
+                <ListenerViewModelChange fromViewModelProperty="true" fromDataBindId="42:53" id="42:50">
+                    <BindablePropertyTrigger id="42:51">
+                        <DataBindContext sourcePathIds="41:862-41:872-10:4583" propertyKey="686" direction="true" converterId="1:1332" id="42:52"/>
+                        <DataBindContext sourcePathIds="41:862-41:872-10:4583" propertyKey="686" id="42:53"/>
+                    </BindablePropertyTrigger>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+        </StateMachine>
+        <LinearAnimation name="Unselected" id="41:902">
+            <KeyedObject objectId="41:923" id="42:8">
+                <KeyedProperty property="opacity" id="42:9">
+                    <KeyFrameDouble interpolationType="linear" id="42:10"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+    </Artboard>
+</Rive>

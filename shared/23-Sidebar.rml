@@ -1,0 +1,202 @@
+<Rive version="1" kind="fragment">
+    <Artboard defaultStateMachineId="42:169" viewModelId="41:866" viewModelInstanceId="42:346" isComponent="true" includeInExport="false" spaceId="1:5601" width="240" height="1024" styleId="42:167" x="3564" name="Sidebar" id="42:164">
+        <Fill fillRule="clockwise" id="42:165">
+            <SolidColor colorValue="00000000" id="42:166"/>
+        </Fill>
+        <LayoutComponentStyle id="42:167"/>
+        <LayoutComponent styleId="42:177" name="Panel" id="42:176">
+            <Fill fillRule="clockwise" id="42:178">
+                <SolidColor colorValue="FF18181B" id="42:179">
+                    <DataBindContext sourcePathIds="41:866-41:892-10:7406" propertyKey="37" nameBased="true" id="42:255"/>
+                </SolidColor>
+            </Fill>
+            <LayoutComponent styleId="42:181" name="Column" id="42:180">
+                <LayoutComponent styleId="42:183" name="Brand" id="42:182">
+                    <LayoutComponent width="32" height="32" styleId="42:526" name="Maximized Tile" id="42:525">
+                        <Shape x="7" y="7" scaleX="0.81800002" scaleY="0.81800002" name="Maximized Logo" id="42:529">
+                            <PointsPath isClosed="true" isClockwise="false" id="42:530">
+                                <CubicDetachedVertex outRotation="2.0354056" outDistance="0.405" x="7.3330002" y="6.5999999" id="42:531"/>
+                                <CubicDetachedVertex inDistance="0.405" x="6.5999999" y="7.3330002" id="42:532"/>
+                                <CubicDetachedVertex outRotation="-2.212374" outDistance="0.405" x="0.73299998" y="7.3330002" id="42:533"/>
+                                <CubicDetachedVertex inRotation="-2.0354056" inDistance="0.405" y="8.0670004" id="42:534"/>
+                                <CubicDetachedVertex outRotation="2.0354056" outDistance="0.405" y="21.267" id="42:535"/>
+                                <CubicDetachedVertex inRotation="-2.212374" inDistance="0.405" x="0.73299998" y="22" id="42:536"/>
+                                <CubicDetachedVertex outDistance="0.405" x="6.5999999" y="22" id="42:537"/>
+                                <CubicDetachedVertex inRotation="2.0354056" inDistance="0.405" x="7.3330002" y="21.267" id="42:538"/>
+                                <CubicDetachedVertex outRotation="-2.0354056" outDistance="0.405" x="7.3330002" y="15.4" id="42:539"/>
+                                <CubicDetachedVertex inRotation="-2.212374" inDistance="0.405" x="8.0670004" y="14.667" id="42:540"/>
+                                <CubicDetachedVertex outDistance="0.405" x="13.933" y="14.667" id="42:541"/>
+                                <CubicDetachedVertex inRotation="2.0354056" inDistance="0.405" x="14.667" y="13.933" id="42:542"/>
+                                <CubicDetachedVertex outRotation="-2.0354056" outDistance="0.405" x="14.667" y="8.0670004" id="42:543"/>
+                                <CubicDetachedVertex inRotation="-2.212374" inDistance="0.405" x="15.4" y="7.3330002" id="42:544"/>
+                                <CubicDetachedVertex outDistance="0.405" x="21.267" y="7.3330002" id="42:545"/>
+                                <CubicDetachedVertex inRotation="2.0354056" inDistance="0.405" x="22" y="6.5999999" id="42:546"/>
+                                <CubicDetachedVertex outRotation="-2.0354056" outDistance="0.405" x="22" y="0.73299998" id="42:547"/>
+                                <CubicDetachedVertex inDistance="0.405" x="21.267" id="42:548"/>
+                                <CubicDetachedVertex outRotation="-2.212374" outDistance="0.405" x="8.0670004" id="42:549"/>
+                                <CubicDetachedVertex inRotation="-2.0354056" inDistance="0.405" x="7.3330002" y="0.73299998" id="42:550"/>
+                            </PointsPath>
+                            <Fill fillRule="clockwise" id="42:551">
+                                <SolidColor colorValue="FF0B0B0B" id="42:552"/>
+                            </Fill>
+                        </Shape>
+                        <Fill fillRule="clockwise" id="42:527">
+                            <SolidColor colorValue="FF62C03A" id="42:528"/>
+                        </Fill>
+                        <LayoutComponentStyle cornerRadiusTL="8" id="42:526"/>
+                    </LayoutComponent>
+                    <LayoutComponent styleId="42:189" name="Wordmark" id="42:188">
+                        <Text id="42:190">
+                            <TextStylePaint fontSize="15" fontAssetId="0:7" familyName="Inter" styleName="Regular" id="42:191">
+                                <Fill fillRule="clockwise" id="42:192">
+                                    <SolidColor colorValue="FFFAFAFA" id="42:193">
+                                        <DataBindContext sourcePathIds="41:866-41:892-10:7422" propertyKey="37" nameBased="true" id="42:260"/>
+                                    </SolidColor>
+                                </Fill>
+                                <TextStyleAxis tag="1869640570" axisValue="14" id="42:194"/>
+                                <TextStyleAxis tag="2003265652" axisValue="700" id="42:195"/>
+                            </TextStylePaint>
+                            <TextValueRun styleId="42:191" text="UI Starter Kit" id="42:196"/>
+                            <LayoutParticipant layoutWidthScaleType="hug" layoutHeightScaleType="hug" id="42:197"/>
+                        </Text>
+                        <Text id="42:198">
+                            <TextStylePaint fontAssetId="0:7" familyName="Inter" styleName="Regular" id="42:199">
+                                <Fill fillRule="clockwise" id="42:200">
+                                    <SolidColor colorValue="FFA1A1AA" id="42:201">
+                                        <DataBindContext sourcePathIds="41:866-41:892-10:7426" propertyKey="37" nameBased="true" id="42:261"/>
+                                    </SolidColor>
+                                </Fill>
+                                <TextStyleAxis tag="1869640570" axisValue="14" id="42:202"/>
+                                <TextStyleAxis tag="2003265652" axisValue="500" id="42:203"/>
+                            </TextStylePaint>
+                            <TextValueRun styleId="42:199" text="Native Rive components" id="42:204"/>
+                            <LayoutParticipant layoutWidthScaleType="hug" layoutHeightScaleType="hug" id="42:205"/>
+                        </Text>
+                        <LayoutComponentStyle gapVertical="1" flexDirectionValue="column" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="42:189"/>
+                    </LayoutComponent>
+                    <LayoutComponentStyle gapHorizontal="10" paddingLeft="16" paddingRight="16" paddingTop="18" paddingBottom="18" layoutAlignmentType="centerLeft" intrinsicallySizedValue="true" layoutWidthScaleType="fill" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="42:183"/>
+                </LayoutComponent>
+                <LayoutComponent height="1" styleId="42:207" name="Brand Divider" id="42:206">
+                    <Fill fillRule="clockwise" id="42:208">
+                        <SolidColor colorValue="FF27272A" id="42:209">
+                            <DataBindContext sourcePathIds="41:866-41:892-10:7418" propertyKey="37" nameBased="true" id="42:256"/>
+                        </SolidColor>
+                    </Fill>
+                    <LayoutComponentStyle layoutWidthScaleType="fill" widthUnitsValue="auto" id="42:207"/>
+                </LayoutComponent>
+                <LayoutComponent styleId="42:211" name="Nav" id="42:210">
+                    <NestedArtboardLayout instanceWidthScaleType="fill" instanceHeightScaleType="hug" artboardId="42:64" dataBindPathIds="41:866-41:894" name="Accordion" id="42:263">
+                        <NestedStateMachine animationId="42:169" id="42:264"/>
+                    </NestedArtboardLayout>
+                    <NestedArtboardLayout instanceWidthScaleType="fill" instanceHeightScaleType="hug" artboardId="42:64" dataBindPathIds="41:866-41:896" name="Accordion" id="42:265">
+                        <NestedStateMachine animationId="42:169" id="42:266"/>
+                    </NestedArtboardLayout>
+                    <LayoutComponentStyle gapVertical="12" paddingLeft="12" paddingRight="12" paddingTop="12" paddingBottom="12" flexDirectionValue="column" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="42:211"/>
+                </LayoutComponent>
+                <LayoutComponentStyle flexDirectionValue="column" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="42:181"/>
+                <LayoutComponent styleId="28:1239" name="Footer" id="28:1238">
+                    <LayoutComponentStyle layoutAlignmentType="bottomLeft" flexDirectionValue="column" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="28:1239"/>
+                    <LayoutComponent clip="true" height="30" styleId="28:1241" name="Ribbon" id="28:1240">
+                        <Fill fillRule="clockwise" id="28:1242">
+                            <SolidColor colorValue="FF62C03A" id="28:1243"/>
+                        </Fill>
+                        <LayoutComponentStyle layoutAlignmentType="center" layoutWidthScaleType="fill" widthUnitsValue="auto" id="28:1241"/>
+                        <LayoutComponent styleId="28:1245" name="Track" id="28:1244">
+                            <LayoutComponentStyle layoutAlignmentType="centerLeft" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" flexShrink="0" id="28:1245"/>
+                            <LayoutComponent styleId="28:1247" name="Set 1" id="28:1246">
+                                <LayoutComponentStyle gapHorizontal="6" layoutAlignmentType="centerLeft" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" flexShrink="0" id="28:1247"/>
+                                <Text opacity="0.64999998" name="Text 6" id="28:1277">
+                                    <TextStylePaint fontAssetId="0:7" familyName="Inter" styleName="Medium" id="28:1278">
+                                        <Fill fillRule="clockwise" isVisible="false" id="28:1279">
+                                            <SolidColor colorValue="FFD4D4D8" id="28:1280">
+                                                <DataBindContext sourcePathIds="41:866-41:892-10:7426" propertyKey="37" id="28:1285"/>
+                                            </SolidColor>
+                                        </Fill>
+                                        <TextStyleAxis tag="1869640570" axisValue="14" id="28:1281"/>
+                                        <TextStyleAxis tag="2003265652" axisValue="450" id="28:1282"/>
+                                        <Fill fillRule="clockwise" id="28:1286">
+                                            <SolidColor colorValue="FF0B0B0B" id="28:1287"/>
+                                        </Fill>
+                                    </TextStylePaint>
+                                    <TextValueRun styleId="28:1278" text="Made by" id="28:1283"/>
+                                    <LayoutParticipant layoutWidthScaleType="hug" layoutHeightScaleType="hug" id="28:1284"/>
+                                </Text>
+                                <LayoutComponent width="12" height="12" styleId="28:1249" name="Logo" id="28:1248">
+                                    <LayoutComponentStyle id="28:1249"/>
+                                    <Shape scaleX="0.54545456" scaleY="0.54545456" name="Maximized Logo" id="28:1250">
+                                        <PointsPath isClosed="true" isClockwise="false" id="28:1251">
+                                            <CubicDetachedVertex outRotation="1.5707964" outDistance="0.405" x="7.3330002" y="6.5999999" id="28:1252"/>
+                                            <CubicDetachedVertex inDistance="0.405" x="6.5999999" y="7.3330002" id="28:1253"/>
+                                            <CubicDetachedVertex outRotation="3.1415927" outDistance="0.405" x="0.73299998" y="7.3330002" id="28:1254"/>
+                                            <CubicDetachedVertex inRotation="-1.5707964" inDistance="0.405" y="8.0670004" id="28:1255"/>
+                                            <CubicDetachedVertex outRotation="1.5707964" outDistance="0.405" y="21.267" id="28:1256"/>
+                                            <CubicDetachedVertex inRotation="3.1415927" inDistance="0.405" x="0.73299998" y="22" id="28:1257"/>
+                                            <CubicDetachedVertex outDistance="0.405" x="6.5999999" y="22" id="28:1258"/>
+                                            <CubicDetachedVertex inRotation="1.5707964" inDistance="0.405" x="7.3330002" y="21.267" id="28:1259"/>
+                                            <CubicDetachedVertex outRotation="-1.5707964" outDistance="0.405" x="7.3330002" y="15.4" id="28:1260"/>
+                                            <CubicDetachedVertex inRotation="3.1415927" inDistance="0.405" x="8.0670004" y="14.667" id="28:1261"/>
+                                            <CubicDetachedVertex outDistance="0.405" x="13.933" y="14.667" id="28:1262"/>
+                                            <CubicDetachedVertex inRotation="1.5707964" inDistance="0.405" x="14.667" y="13.933" id="28:1263"/>
+                                            <CubicDetachedVertex outRotation="-1.5707964" outDistance="0.405" x="14.667" y="8.0670004" id="28:1264"/>
+                                            <CubicDetachedVertex inRotation="3.1415927" inDistance="0.405" x="15.4" y="7.3330002" id="28:1265"/>
+                                            <CubicDetachedVertex outDistance="0.405" x="21.267" y="7.3330002" id="28:1266"/>
+                                            <CubicDetachedVertex inRotation="1.5707964" inDistance="0.405" x="22" y="6.5999999" id="28:1267"/>
+                                            <CubicDetachedVertex outRotation="-1.5707964" outDistance="0.405" x="22" y="0.73299998" id="28:1268"/>
+                                            <CubicDetachedVertex inDistance="0.405" x="21.267" id="28:1269"/>
+                                            <CubicDetachedVertex outRotation="3.1415927" outDistance="0.405" x="8.0670004" id="28:1270"/>
+                                            <CubicDetachedVertex inRotation="-1.5707964" inDistance="0.405" x="7.3330002" y="0.73299998" id="28:1271"/>
+                                        </PointsPath>
+                                        <Fill fillRule="clockwise" isVisible="false" id="28:1272">
+                                            <SolidColor colorValue="FFFAFAFA" id="28:1273">
+                                                <DataBindContext sourcePathIds="41:866-41:892-10:7422" propertyKey="37" id="28:1274"/>
+                                            </SolidColor>
+                                        </Fill>
+                                        <Fill fillRule="clockwise" id="28:1275">
+                                            <SolidColor colorValue="FF0B0B0B" id="28:1276"/>
+                                        </Fill>
+                                    </Shape>
+                                </LayoutComponent>
+                                <Text name="Text 7" id="28:1317">
+                                    <TextStylePaint fontAssetId="0:7" familyName="Inter" styleName="Medium" id="28:1318">
+                                        <Fill fillRule="clockwise" isVisible="false" id="28:1319">
+                                            <SolidColor colorValue="FFD4D4D8" id="28:1320">
+                                                <DataBindContext sourcePathIds="41:866-41:892-10:7426" propertyKey="37" id="28:1325"/>
+                                            </SolidColor>
+                                        </Fill>
+                                        <TextStyleAxis tag="1869640570" axisValue="14" id="28:1321"/>
+                                        <TextStyleAxis tag="2003265652" axisValue="700" id="28:1322"/>
+                                        <Fill fillRule="clockwise" id="28:1326">
+                                            <SolidColor colorValue="FF0B0B0B" id="28:1327"/>
+                                        </Fill>
+                                    </TextStylePaint>
+                                    <TextValueRun styleId="28:1318" text="Maximized.studio" id="28:1323"/>
+                                    <LayoutParticipant layoutWidthScaleType="hug" layoutHeightScaleType="hug" id="28:1324"/>
+                                </Text>
+                            </LayoutComponent>
+                        </LayoutComponent>
+                    </LayoutComponent>
+                </LayoutComponent>
+            </LayoutComponent>
+            <LayoutComponent width="1" styleId="42:213" name="Edge" id="42:212">
+                <Fill fillRule="clockwise" id="42:214">
+                    <SolidColor colorValue="FF27272A" id="42:215">
+                        <DataBindContext sourcePathIds="41:866-41:892-10:7418" propertyKey="37" nameBased="true" id="42:257"/>
+                    </SolidColor>
+                </Fill>
+                <LayoutComponentStyle layoutHeightScaleType="fill" heightUnitsValue="auto" id="42:213"/>
+            </LayoutComponent>
+            <LayoutComponentStyle layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="42:177"/>
+        </LayoutComponent>
+        <StateMachine name="State Machine 1" id="42:169">
+            <StateMachineLayer name="Layer 1" id="42:170">
+                <AnyState x="400" id="42:171"/>
+                <ExitState x="480" id="42:172"/>
+                <EntryState id="42:173">
+                    <StateTransition stateToId="42:174" id="42:175"/>
+                </EntryState>
+                <AnimationState animationId="42:168" x="160" id="42:174"/>
+            </StateMachineLayer>
+        </StateMachine>
+        <LinearAnimation name="Timeline 1" id="42:168"/>
+    </Artboard>
+</Rive>

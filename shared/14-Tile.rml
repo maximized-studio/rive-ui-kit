@@ -1,0 +1,218 @@
+<Rive version="1" kind="fragment">
+    <Artboard defaultStateMachineId="10:3623" viewModelId="10:3612" viewModelInstanceId="0:0" isComponent="true" includeInExport="false" spaceId="1:5601" width="306" height="282" styleId="10:3621" x="1540" name="Tile" id="10:3618">
+        <DataBindContext sourcePathIds="10:3612-10:4589-10:4581" propertyKey="7" converterId="10:1654" id="10:4728"/>
+        <Shape isTargetOpaque="true" name="Hit Shield" id="10:6070">
+            <Rectangle width="291" height="282" originX="0" originY="0" id="10:6071">
+                <DataBindContext sourcePathIds="10:3612-10:4589-10:4581" propertyKey="20" converterId="10:1654" id="10:6074"/>
+            </Rectangle>
+            <Fill fillRule="clockwise" id="10:6072">
+                <SolidColor colorValue="00FFFFFF" id="10:6073"/>
+            </Fill>
+        </Shape>
+        <Fill fillRule="clockwise" id="10:3619">
+            <SolidColor colorValue="00FFFFFF" id="10:3620"/>
+        </Fill>
+        <LayoutComponentStyle flexDirectionValue="column" id="10:3621"/>
+        <LayoutComponent styleId="10:3631" name="Card" id="10:3630">
+            <LayoutComponent clip="true" height="220" styleId="10:3633" name="Preview" id="10:3632">
+                <LayoutComponent styleId="10:3853" name="Border" id="10:3852">
+                    <LayoutComponentStyle positionLeftUnitsValue="points" positionRightUnitsValue="points" positionTopUnitsValue="points" positionBottomUnitsValue="points" edgeConstraints="84" positionTypeValue="absolute" cornerRadiusTL="10" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="10:3853">
+                        <DataBindContext sourcePathIds="10:3612-10:3657-10:2086" propertyKey="640" converterId="10:6632" id="10:6778"/>
+                    </LayoutComponentStyle>
+                    <Stroke thickness="2" id="10:3854">
+                        <SolidColor colorValue="FF27272A" id="10:3855">
+                            <DataBindContext sourcePathIds="10:3612-10:3657-10:7418" propertyKey="37" id="10:7453"/>
+                        </SolidColor>
+                    </Stroke>
+                </LayoutComponent>
+                <LayoutComponent width="40" styleId="10:3847" name="Fade Right" id="10:3846">
+                    <Fill fillRule="clockwise" id="10:3848">
+                        <LinearGradient endX="40" id="10:3849">
+                            <GradientStop colorValue="00111113" id="10:3850">
+                                <DataBindContext sourcePathIds="10:3612-10:3657-10:7410" propertyKey="38" id="10:7458"/>
+                            </GradientStop>
+                            <GradientStop colorValue="FF111113" position="1" id="10:3851">
+                                <DataBindContext sourcePathIds="10:3612-10:3657-10:7408" propertyKey="38" id="10:7459"/>
+                            </GradientStop>
+                        </LinearGradient>
+                    </Fill>
+                    <LayoutComponentStyle positionRightUnitsValue="points" positionTopUnitsValue="points" positionBottomUnitsValue="points" edgeConstraints="82" positionTypeValue="absolute" cornerRadiusTL="10" layoutHeightScaleType="fill" heightUnitsValue="auto" id="10:3847">
+                        <DataBindContext sourcePathIds="10:3612-10:3657-10:2086" propertyKey="640" converterId="10:6632" id="10:6782"/>
+                    </LayoutComponentStyle>
+                </LayoutComponent>
+                <LayoutComponent width="40" styleId="10:3841" name="Fade Left" id="10:3840">
+                    <Fill fillRule="clockwise" id="10:3842">
+                        <LinearGradient endX="40" id="10:3843">
+                            <GradientStop colorValue="FF111113" id="10:3844">
+                                <DataBindContext sourcePathIds="10:3612-10:3657-10:7408" propertyKey="38" id="10:7460"/>
+                            </GradientStop>
+                            <GradientStop colorValue="00111113" position="1" id="10:3845">
+                                <DataBindContext sourcePathIds="10:3612-10:3657-10:7410" propertyKey="38" id="10:7461"/>
+                            </GradientStop>
+                        </LinearGradient>
+                    </Fill>
+                    <LayoutComponentStyle positionLeftUnitsValue="points" positionTopUnitsValue="points" positionBottomUnitsValue="points" edgeConstraints="80" positionTypeValue="absolute" cornerRadiusTL="10" layoutHeightScaleType="fill" heightUnitsValue="auto" id="10:3841">
+                        <DataBindContext sourcePathIds="10:3612-10:3657-10:2086" propertyKey="640" converterId="10:6632" id="10:6781"/>
+                    </LayoutComponentStyle>
+                </LayoutComponent>
+                <LayoutComponent height="40" styleId="10:3835" name="Fade Bottom" id="10:3834">
+                    <Fill fillRule="clockwise" id="10:3836">
+                        <LinearGradient endY="40" id="10:3837">
+                            <GradientStop colorValue="00111113" id="10:3838">
+                                <DataBindContext sourcePathIds="10:3612-10:3657-10:7410" propertyKey="38" id="10:7462"/>
+                            </GradientStop>
+                            <GradientStop colorValue="FF111113" position="1" id="10:3839">
+                                <DataBindContext sourcePathIds="10:3612-10:3657-10:7408" propertyKey="38" id="10:7463"/>
+                            </GradientStop>
+                        </LinearGradient>
+                    </Fill>
+                    <LayoutComponentStyle positionLeftUnitsValue="points" positionRightUnitsValue="points" positionBottomUnitsValue="points" edgeConstraints="52" positionTypeValue="absolute" cornerRadiusTL="10" layoutWidthScaleType="fill" widthUnitsValue="auto" id="10:3835">
+                        <DataBindContext sourcePathIds="10:3612-10:3657-10:2086" propertyKey="640" converterId="10:6632" id="10:6780"/>
+                    </LayoutComponentStyle>
+                </LayoutComponent>
+                <LayoutComponent height="40" styleId="10:3829" name="Fade Top" id="10:3828">
+                    <Fill fillRule="clockwise" id="10:3830">
+                        <LinearGradient endY="40" id="10:3831">
+                            <GradientStop colorValue="FF111113" id="10:3832">
+                                <DataBindContext sourcePathIds="10:3612-10:3657-10:7408" propertyKey="38" id="10:7464"/>
+                            </GradientStop>
+                            <GradientStop colorValue="00111113" position="1" id="10:3833">
+                                <DataBindContext sourcePathIds="10:3612-10:3657-10:7410" propertyKey="38" id="10:7465"/>
+                            </GradientStop>
+                        </LinearGradient>
+                    </Fill>
+                    <LayoutComponentStyle positionLeftUnitsValue="points" positionRightUnitsValue="points" positionTopUnitsValue="points" edgeConstraints="20" positionTypeValue="absolute" cornerRadiusTL="10" layoutWidthScaleType="fill" widthUnitsValue="auto" id="10:3829">
+                        <DataBindContext sourcePathIds="10:3612-10:3657-10:2086" propertyKey="640" converterId="10:6632" id="10:6779"/>
+                    </LayoutComponentStyle>
+                </LayoutComponent>
+                <Fill fillRule="clockwise" id="10:3634">
+                    <SolidColor colorValue="FF111113" id="10:3635">
+                        <DataBindContext sourcePathIds="10:3612-10:3657-10:7408" propertyKey="37" id="10:7454"/>
+                    </SolidColor>
+                </Fill>
+                <LayoutComponentStyle layoutAlignmentType="center" cornerRadiusTL="10" layoutWidthScaleType="fill" widthUnitsValue="auto" id="10:3633">
+                    <DataBindContext sourcePathIds="10:3612-10:3657-10:2086" propertyKey="640" converterId="10:6632" id="10:6777"/>
+                </LayoutComponentStyle>
+                <ArtboardComponentList participatesInLayout="true" id="10:3869">
+                    <DataBindContext sourcePathIds="10:3612-10:3861" propertyKey="800" id="10:3870"/>
+                </ArtboardComponentList>
+            </LayoutComponent>
+            <LayoutComponent styleId="10:3637" name="Name" id="10:3636">
+                <Text id="10:3638">
+                    <TextStylePaint fontSize="20" fontAssetId="0:7" familyName="Inter" styleName="Bold" id="10:3639">
+                        <Fill fillRule="clockwise" id="10:3640">
+                            <SolidColor colorValue="FFFAFAFA" id="10:3641">
+                                <DataBindContext sourcePathIds="10:3612-10:3657-10:7422" propertyKey="37" id="10:7455"/>
+                            </SolidColor>
+                        </Fill>
+                        <TextStyleAxis tag="1869640570" axisValue="14" id="10:3642"/>
+                        <TextStyleAxis tag="2003265652" axisValue="700" id="10:3643"/>
+                    </TextStylePaint>
+                    <TextValueRun styleId="10:3639" text="Radio Group" id="10:3644">
+                        <DataBindContext sourcePathIds="10:3612-10:3614" propertyKey="268" id="10:3827"/>
+                    </TextValueRun>
+                    <LayoutParticipant layoutWidthScaleType="hug" layoutHeightScaleType="hug" id="10:3645"/>
+                </Text>
+                <LayoutComponentStyle paddingLeft="12" paddingRight="12" paddingTop="4" paddingBottom="6" layoutAlignmentType="centerLeft" intrinsicallySizedValue="true" layoutWidthScaleType="fill" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="10:3637"/>
+            </LayoutComponent>
+            <LayoutComponentStyle gapVertical="10" paddingLeft="8" paddingRight="8" paddingTop="8" paddingBottom="8" flexDirectionValue="column" cornerRadiusTL="16" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="10:3631">
+                <DataBindContext sourcePathIds="10:3612-10:3657-10:2086" propertyKey="640" converterId="10:6584" id="10:6776"/>
+            </LayoutComponentStyle>
+            <Fill fillRule="clockwise" id="10:3646">
+                <SolidColor colorValue="26000000" id="10:3647"/>
+                <Feather strength="8" offsetY="3" id="10:3648">
+                    <DataBindContext sourcePathIds="10:3612-10:3657-10:2088" propertyKey="749" converterId="10:7232" id="10:7328"/>
+                    <DataBindContext sourcePathIds="10:3612-10:3657-10:2088" propertyKey="751" converterId="10:7280" id="10:7329"/>
+                </Feather>
+            </Fill>
+            <Fill fillRule="clockwise" id="10:3649">
+                <SolidColor colorValue="FF18181B" id="10:3650">
+                    <DataBindContext sourcePathIds="10:3612-10:3657-10:7406" propertyKey="37" id="10:7456"/>
+                </SolidColor>
+            </Fill>
+            <Stroke id="10:3651">
+                <SolidColor colorValue="FF27272A" id="10:3652">
+                    <DataBindContext sourcePathIds="10:3612-10:3657-10:7418" propertyKey="37" id="10:7457"/>
+                </SolidColor>
+            </Stroke>
+        </LayoutComponent>
+        <LinearAnimation name="Card Hover" id="10:4511">
+            <KeyedObject objectId="10:3647" id="10:4526">
+                <KeyedProperty property="colorValue" id="10:4527">
+                    <KeyFrameColor value="38000000" interpolationType="linear" id="10:4528"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+        <StateMachine name="State Machine 1" id="10:3623">
+            <StateMachineListener targetId="10:6070" name="Open Tile" id="10:5793">
+                <ListenerInputType listenerTypeValue="click" id="10:5794"/>
+                <ListenerViewModelChange fromViewModelProperty="true" fromDataBindId="10:5814" id="10:5811">
+                    <BindablePropertyNumber id="10:5812">
+                        <DataBindContext sourcePathIds="10:3612-10:4589-10:4579" propertyKey="636" direction="true" id="10:5813"/>
+                        <DataBindContext sourcePathIds="10:3612-10:4567" propertyKey="636" id="10:5814"/>
+                    </BindablePropertyNumber>
+                </ListenerViewModelChange>
+                <ListenerViewModelChange fromViewModelProperty="true" fromDataBindId="10:5818" id="10:5815">
+                    <BindablePropertyTrigger id="10:5816">
+                        <DataBindContext sourcePathIds="10:3612-10:4589-10:4583" propertyKey="686" direction="true" converterId="1:1332" id="10:5817"/>
+                        <DataBindContext sourcePathIds="10:3612-10:4589-10:4583" propertyKey="686" id="10:5818"/>
+                    </BindablePropertyTrigger>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListener targetId="10:6070" name="Card Hover Off" id="10:4552">
+                <ListenerInputType listenerTypeValue="exit" id="10:4553"/>
+                <ListenerViewModelChange id="10:4554">
+                    <BindablePropertyBoolean id="10:4555">
+                        <DataBindContext sourcePathIds="10:3612-10:4507" propertyKey="634" direction="true" id="10:4556"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineLayer name="Layer 1" id="10:3624">
+                <AnyState x="400" id="10:3625"/>
+                <ExitState x="480" id="10:3626"/>
+                <EntryState id="10:3627">
+                    <StateTransition stateToId="10:3628" id="10:3629"/>
+                </EntryState>
+                <AnimationState animationId="10:3622" x="160" id="10:3628">
+                    <StateTransition stateToId="10:4534" duration="180" id="10:4535">
+                        <TransitionViewModelCondition id="10:4537">
+                            <TransitionPropertyViewModelComparator id="10:4538">
+                                <BindablePropertyBoolean id="10:4539">
+                                    <DataBindContext sourcePathIds="10:3612-10:4507" propertyKey="634" id="10:4540"/>
+                                </BindablePropertyBoolean>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueBooleanComparator value="true" id="10:4541"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                </AnimationState>
+                <AnimationState animationId="10:4511" x="160" y="140" stateName="Card Hover" id="10:4534">
+                    <StateTransition stateToId="10:3628" duration="180" id="10:4536">
+                        <TransitionViewModelCondition id="10:4542">
+                            <TransitionPropertyViewModelComparator id="10:4543">
+                                <BindablePropertyBoolean id="10:4544">
+                                    <DataBindContext sourcePathIds="10:3612-10:4507" propertyKey="634" id="10:4545"/>
+                                </BindablePropertyBoolean>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueBooleanComparator id="10:4546"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                </AnimationState>
+            </StateMachineLayer>
+            <StateMachineListener targetId="10:6070" name="Card Hover On" id="10:4547">
+                <ListenerInputType id="10:4548"/>
+                <ListenerViewModelChange id="10:4549">
+                    <BindablePropertyBoolean propertyValue="true" id="10:4550">
+                        <DataBindContext sourcePathIds="10:3612-10:4507" propertyKey="634" direction="true" id="10:4551"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+        </StateMachine>
+        <LinearAnimation name="Card Idle" id="10:3622">
+            <KeyedObject objectId="10:3647" id="10:4515">
+                <KeyedProperty property="colorValue" id="10:4516">
+                    <KeyFrameColor value="26000000" interpolationType="linear" id="10:4517"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+    </Artboard>
+</Rive>
