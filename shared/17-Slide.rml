@@ -7,22 +7,10 @@
         </Fill>
         <LayoutComponent styleId="10:5318" name="Card" id="10:5317">
             <LayoutComponent height="40" styleId="10:5353" name="Title" id="10:5352">
-                <Text id="10:5354">
-                    <TextStylePaint fontSize="20" letterSpacing="-0.80000001" fontAssetId="0:7" familyName="Inter" styleName="ExtraBold" id="10:5355">
-                        <Fill fillRule="clockwise" id="10:5356">
-                            <SolidColor colorValue="FFFAFAFA" id="10:5357">
-                                <DataBindContext sourcePathIds="10:5163-10:6573-10:7422" propertyKey="37" id="10:7466"/>
-                            </SolidColor>
-                        </Fill>
-                        <TextStyleAxis tag="1869640570" axisValue="14" id="10:5358"/>
-                        <TextStyleAxis tag="2003265652" axisValue="800" id="10:5359"/>
-                    </TextStylePaint>
-                    <TextValueRun styleId="10:5355" text="Radio Group" id="10:5360">
-                        <DataBindContext sourcePathIds="10:5163-10:5171" propertyKey="268" id="10:5474"/>
-                    </TextValueRun>
-                    <LayoutParticipant layoutWidthScaleType="hug" layoutHeightScaleType="hug" id="10:5361"/>
-                </Text>
-                <LayoutComponentStyle gapHorizontal="8" layoutAlignmentType="center" layoutWidthScaleType="fill" widthUnitsValue="auto" id="10:5353"/>
+                <NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="111:190" dataBindPathIds="10:5163-114:1" name="Breadcrumbs" id="114:422">
+                    <NestedStateMachine animationId="111:192" id="114:423"/>
+                </NestedArtboardLayout>
+                <LayoutComponentStyle marginLeft="-6" layoutAlignmentType="centerLeft" layoutWidthScaleType="fill" widthUnitsValue="auto" id="10:5353"/>
             </LayoutComponent>
             <LayoutComponent height="220" styleId="10:5348" name="Stage" id="10:5319">
                 <LayoutComponent styleId="10:5321" name="Border" id="10:5320">
