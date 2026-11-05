@@ -30,8 +30,8 @@
                     <Text name="Text" id="111:116">
                         <TextStylePaint fontSize="14" fontAssetId="0:7" familyName="Inter" styleName="Regular" id="111:117">
                             <Fill fillRule="clockwise" id="111:118">
-                                <SolidColor colorValue="FFFAFAFA" id="111:119">
-                                    <DataBindContext sourcePathIds="111:1-111:7-10:7422" propertyKey="37" nameBased="true" id="111:120"/>
+                                <SolidColor colorValue="FFA1A1AA" id="111:119">
+                                    <DataBindContext sourcePathIds="111:1-111:7-10:7426" propertyKey="37" nameBased="true" id="111:120"/>
                                 </SolidColor>
                             </Fill>
                             <TextStyleAxis tag="1869640570" axisValue="14" id="111:121"/>
@@ -68,8 +68,8 @@
                 <Text name="Text Current" id="111:135">
                     <TextStylePaint fontSize="14" fontAssetId="0:7" familyName="Inter" styleName="SemiBold" id="111:136">
                         <Fill fillRule="clockwise" id="111:137">
-                            <SolidColor colorValue="FFA1A1AA" id="111:138">
-                                <DataBindContext sourcePathIds="111:1-111:7-10:7426" propertyKey="37" nameBased="true" id="111:139"/>
+                            <SolidColor colorValue="FFFAFAFA" id="111:138">
+                                <DataBindContext sourcePathIds="111:1-111:7-10:7422" propertyKey="37" nameBased="true" id="111:139"/>
                             </SolidColor>
                         </Fill>
                         <TextStyleAxis tag="1869640570" axisValue="14" id="111:140"/>
