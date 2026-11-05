@@ -7,21 +7,30 @@
         <LayoutComponent styleId="112:307" name="Anchor" id="112:306">
             <LayoutComponent styleId="112:309" name="Overlay" id="112:308">
                 <LayoutComponent width="240" height="240" styleId="112:315" name="Bubble Area" id="112:314">
-                    <NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="112:188" isStateful="true" name="Tooltip" id="112:322">
-                        <NestedStateMachine animationId="112:190" id="112:323"/>
-                        <ViewModelInstance viewModelId="112:1" exports="true" name="Tooltip" id="112:324">
-                            <ViewModelInstanceString propertyValue="Saves your changes" viewModelPropertyId="112:2" id="112:325">
-                                <DataBindContext sourcePathIds="112:7-112:9" propertyKey="561" nameBased="true" id="112:326"/>
-                            </ViewModelInstanceString>
-                            <ViewModelInstanceNumber viewModelPropertyId="112:3" id="112:327">
-                                <DataBindContext sourcePathIds="112:7-112:10" propertyKey="575" nameBased="true" id="112:328"/>
-                            </ViewModelInstanceNumber>
-                            <ViewModelInstanceBoolean viewModelPropertyId="112:4" id="112:329">
-                                <DataBindContext sourcePathIds="112:7-112:13" propertyKey="593" nameBased="true" id="112:330"/>
-                            </ViewModelInstanceBoolean>
-                            <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="112:5" id="112:331"/>
-                        </ViewModelInstance>
-                    </NestedArtboardLayout>
+                    <LayoutComponent styleId="914:15" name="Bubble" id="914:14">
+                        <NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="112:188" isStateful="true" name="Tooltip" id="112:322">
+                            <NestedStateMachine animationId="112:190" id="112:323"/>
+                            <ViewModelInstance viewModelId="112:1" exports="true" name="Tooltip" id="112:324">
+                                <ViewModelInstanceString propertyValue="Saves your changes" viewModelPropertyId="112:2" id="112:325">
+                                    <DataBindContext sourcePathIds="112:7-112:9" propertyKey="561" nameBased="true" id="112:326"/>
+                                </ViewModelInstanceString>
+                                <ViewModelInstanceNumber viewModelPropertyId="112:3" id="112:327">
+                                    <DataBindContext sourcePathIds="112:7-914:1" propertyKey="575" nameBased="true" id="112:328"/>
+                                </ViewModelInstanceNumber>
+                                <ViewModelInstanceBoolean viewModelPropertyId="112:4" id="112:329">
+                                    <DataBindContext sourcePathIds="112:7-112:13" propertyKey="593" nameBased="true" id="112:330"/>
+                                </ViewModelInstanceBoolean>
+                                <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="112:5" id="112:331"/>
+                            </ViewModelInstance>
+                        </NestedArtboardLayout>
+                        <LayoutComponent styleId="914:17" name="Bubble Size (script)" id="914:16">
+                            <ScriptedLayout scriptAssetId="914:10" name="Tooltip Placement" id="914:18">
+                                <ScriptInputBoolean propertyValue="true" name="bubble" id="914:19"/>
+                            </ScriptedLayout>
+                            <LayoutComponentStyle positionLeftUnitsValue="points" positionRightUnitsValue="points" positionTopUnitsValue="points" positionBottomUnitsValue="points" positionTypeValue="absolute" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="914:17"/>
+                        </LayoutComponent>
+                        <LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="914:15"/>
+                    </LayoutComponent>
                     <LayoutComponentStyle layoutAlignmentType="bottomCenter" id="112:315"/>
                 </LayoutComponent>
                 <LayoutComponent width="100" height="100" styleId="112:311" name="Spacer" id="112:310">
@@ -31,7 +40,7 @@
                     <LayoutComponentStyle id="112:317"/>
                 </LayoutComponent>
                 <LayoutComponentStyle gapHorizontal="4" gapVertical="4" positionLeftUnitsValue="points" positionRightUnitsValue="points" positionTopUnitsValue="points" positionBottomUnitsValue="points" layoutAlignmentType="center" positionTypeValue="absolute" flexDirectionValue="column" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="112:309">
-                    <DataBindContext sourcePathIds="112:7-112:10" propertyKey="598" nameBased="true" id="112:334"/>
+                    <DataBindContext sourcePathIds="112:7-914:1" propertyKey="598" nameBased="true" id="112:334"/>
                 </LayoutComponentStyle>
             </LayoutComponent>
             <LayoutComponent styleId="112:313" name="Trigger" id="112:312">
@@ -60,6 +69,12 @@
                 </NestedArtboardLayout>
                 <LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="112:313"/>
                 <FocusData focusFlags="6" name="Focus" id="112:352"/>
+            </LayoutComponent>
+            <LayoutComponent styleId="914:12" name="Placement (script)" id="914:11">
+                <ScriptedLayout scriptAssetId="914:10" name="Tooltip Placement" id="914:13">
+                    <ScriptInputBoolean name="bubble" id="313:4"/>
+                </ScriptedLayout>
+                <LayoutComponentStyle positionLeftUnitsValue="points" positionRightUnitsValue="points" positionTopUnitsValue="points" positionBottomUnitsValue="points" positionTypeValue="absolute" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="914:12"/>
             </LayoutComponent>
             <LayoutComponentStyle layoutAlignmentType="center" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="112:307"/>
         </LayoutComponent>
@@ -128,7 +143,7 @@
                         <TransitionViewModelCondition id="909:46">
                             <TransitionPropertyViewModelComparator id="909:47">
                                 <BindablePropertyNumber id="909:48">
-                                    <DataBindContext sourcePathIds="112:7-112:10" propertyKey="636" id="909:49"/>
+                                    <DataBindContext sourcePathIds="112:7-914:1" propertyKey="636" id="909:49"/>
                                 </BindablePropertyNumber>
                             </TransitionPropertyViewModelComparator>
                             <TransitionValueNumberComparator id="909:50"/>
@@ -138,7 +153,7 @@
                         <TransitionViewModelCondition id="909:52">
                             <TransitionPropertyViewModelComparator id="909:53">
                                 <BindablePropertyNumber id="909:54">
-                                    <DataBindContext sourcePathIds="112:7-112:10" propertyKey="636" id="909:55"/>
+                                    <DataBindContext sourcePathIds="112:7-914:1" propertyKey="636" id="909:55"/>
                                 </BindablePropertyNumber>
                             </TransitionPropertyViewModelComparator>
                             <TransitionValueNumberComparator value="1" id="909:56"/>
@@ -148,7 +163,7 @@
                         <TransitionViewModelCondition id="909:58">
                             <TransitionPropertyViewModelComparator id="909:59">
                                 <BindablePropertyNumber id="909:60">
-                                    <DataBindContext sourcePathIds="112:7-112:10" propertyKey="636" id="909:61"/>
+                                    <DataBindContext sourcePathIds="112:7-914:1" propertyKey="636" id="909:61"/>
                                 </BindablePropertyNumber>
                             </TransitionPropertyViewModelComparator>
                             <TransitionValueNumberComparator value="2" id="909:62"/>
@@ -158,7 +173,7 @@
                         <TransitionViewModelCondition id="909:64">
                             <TransitionPropertyViewModelComparator id="909:65">
                                 <BindablePropertyNumber id="909:66">
-                                    <DataBindContext sourcePathIds="112:7-112:10" propertyKey="636" id="909:67"/>
+                                    <DataBindContext sourcePathIds="112:7-914:1" propertyKey="636" id="909:67"/>
                                 </BindablePropertyNumber>
                             </TransitionPropertyViewModelComparator>
                             <TransitionValueNumberComparator value="3" id="909:68"/>
@@ -171,7 +186,7 @@
                         <TransitionViewModelCondition id="909:22">
                             <TransitionPropertyViewModelComparator id="909:23">
                                 <BindablePropertyNumber id="909:24">
-                                    <DataBindContext sourcePathIds="112:7-112:10" propertyKey="636" id="909:25"/>
+                                    <DataBindContext sourcePathIds="112:7-914:1" propertyKey="636" id="909:25"/>
                                 </BindablePropertyNumber>
                             </TransitionPropertyViewModelComparator>
                             <TransitionValueNumberComparator id="909:26"/>
@@ -181,7 +196,7 @@
                         <TransitionViewModelCondition id="909:28">
                             <TransitionPropertyViewModelComparator id="909:29">
                                 <BindablePropertyNumber id="909:30">
-                                    <DataBindContext sourcePathIds="112:7-112:10" propertyKey="636" id="909:31"/>
+                                    <DataBindContext sourcePathIds="112:7-914:1" propertyKey="636" id="909:31"/>
                                 </BindablePropertyNumber>
                             </TransitionPropertyViewModelComparator>
                             <TransitionValueNumberComparator value="1" id="909:32"/>
@@ -191,7 +206,7 @@
                         <TransitionViewModelCondition id="909:34">
                             <TransitionPropertyViewModelComparator id="909:35">
                                 <BindablePropertyNumber id="909:36">
-                                    <DataBindContext sourcePathIds="112:7-112:10" propertyKey="636" id="909:37"/>
+                                    <DataBindContext sourcePathIds="112:7-914:1" propertyKey="636" id="909:37"/>
                                 </BindablePropertyNumber>
                             </TransitionPropertyViewModelComparator>
                             <TransitionValueNumberComparator value="2" id="909:38"/>
@@ -201,7 +216,7 @@
                         <TransitionViewModelCondition id="909:40">
                             <TransitionPropertyViewModelComparator id="909:41">
                                 <BindablePropertyNumber id="909:42">
-                                    <DataBindContext sourcePathIds="112:7-112:10" propertyKey="636" id="909:43"/>
+                                    <DataBindContext sourcePathIds="112:7-914:1" propertyKey="636" id="909:43"/>
                                 </BindablePropertyNumber>
                             </TransitionPropertyViewModelComparator>
                             <TransitionValueNumberComparator value="3" id="909:44"/>
