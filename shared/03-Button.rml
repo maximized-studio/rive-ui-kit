@@ -12,16 +12,29 @@
                         <StraightVertex x="3" id="33:277"/>
                         <StraightVertex x="-2" y="5" id="33:278"/>
                     </PointsPath>
-                    <Stroke thickness="1.75" cap="round" join="round" id="33:279">
+                    <Stroke thickness="0" cap="round" join="round" id="33:279">
                         <SolidColor colorValue="FFFFFFFF" id="33:280">
                             <DataBindContext sourcePathIds="1:151-10:3108-10:2092" propertyKey="37" nameBased="true" id="33:283"/>
                         </SolidColor>
+                        <DataBindContext sourcePathIds="1:151-118:1" propertyKey="47" nameBased="true" converterId="118:82" id="118:285"/>
                     </Stroke>
-                    <Stroke thickness="1.75" cap="round" join="round" id="33:281">
+                    <Stroke thickness="0" cap="round" join="round" id="33:281">
                         <SolidColor colorValue="FF000000" id="33:282">
                             <DataBindContext sourcePathIds="1:151-10:3108-10:7422" propertyKey="37" nameBased="true" id="33:284"/>
                         </SolidColor>
-                        <DataBindContext sourcePathIds="1:151-33:159" propertyKey="47" nameBased="true" converterId="33:251" id="33:285"/>
+                        <DataBindContext sourcePathIds="1:151-118:1" propertyKey="47" nameBased="true" converterId="118:52" id="118:286"/>
+                    </Stroke>
+                    <Stroke thickness="1.75" cap="round" join="round" id="118:287">
+                        <SolidColor colorValue="FF18181B" id="118:288">
+                            <DataBindContext sourcePathIds="1:151-10:3108-118:4" propertyKey="37" nameBased="true" id="118:289"/>
+                        </SolidColor>
+                        <DataBindContext sourcePathIds="1:151-118:1" propertyKey="47" nameBased="true" converterId="118:22" id="118:290"/>
+                    </Stroke>
+                    <Stroke thickness="0" cap="round" join="round" id="118:291">
+                        <SolidColor colorValue="FFFFFFFF" id="118:292">
+                            <DataBindContext sourcePathIds="1:151-10:3108-118:7" propertyKey="37" nameBased="true" id="118:293"/>
+                        </SolidColor>
+                        <DataBindContext sourcePathIds="1:151-118:1" propertyKey="47" nameBased="true" converterId="118:112" id="118:294"/>
                     </Stroke>
                     <Stroke thickness="0" cap="round" join="round" id="103:1">
                         <SolidColor colorValue="FFA1A1AA" id="103:2">
@@ -37,16 +50,29 @@
                         <StraightVertex x="-3" id="33:264"/>
                         <StraightVertex x="2" y="5" id="33:265"/>
                     </PointsPath>
-                    <Stroke thickness="1.75" cap="round" join="round" id="33:266">
+                    <Stroke thickness="0" cap="round" join="round" id="33:266">
                         <SolidColor colorValue="FFFFFFFF" id="33:267">
                             <DataBindContext sourcePathIds="1:151-10:3108-10:2092" propertyKey="37" nameBased="true" id="33:270"/>
                         </SolidColor>
+                        <DataBindContext sourcePathIds="1:151-118:1" propertyKey="47" nameBased="true" converterId="118:82" id="118:295"/>
                     </Stroke>
-                    <Stroke thickness="1.75" cap="round" join="round" id="33:268">
+                    <Stroke thickness="0" cap="round" join="round" id="33:268">
                         <SolidColor colorValue="FF000000" id="33:269">
                             <DataBindContext sourcePathIds="1:151-10:3108-10:7422" propertyKey="37" nameBased="true" id="33:271"/>
                         </SolidColor>
-                        <DataBindContext sourcePathIds="1:151-33:159" propertyKey="47" nameBased="true" converterId="33:251" id="33:272"/>
+                        <DataBindContext sourcePathIds="1:151-118:1" propertyKey="47" nameBased="true" converterId="118:52" id="118:296"/>
+                    </Stroke>
+                    <Stroke thickness="1.75" cap="round" join="round" id="118:297">
+                        <SolidColor colorValue="FF18181B" id="118:298">
+                            <DataBindContext sourcePathIds="1:151-10:3108-118:4" propertyKey="37" nameBased="true" id="118:299"/>
+                        </SolidColor>
+                        <DataBindContext sourcePathIds="1:151-118:1" propertyKey="47" nameBased="true" converterId="118:22" id="118:300"/>
+                    </Stroke>
+                    <Stroke thickness="0" cap="round" join="round" id="118:301">
+                        <SolidColor colorValue="FFFFFFFF" id="118:302">
+                            <DataBindContext sourcePathIds="1:151-10:3108-118:7" propertyKey="37" nameBased="true" id="118:303"/>
+                        </SolidColor>
+                        <DataBindContext sourcePathIds="1:151-118:1" propertyKey="47" nameBased="true" converterId="118:112" id="118:304"/>
                     </Stroke>
                     <Stroke thickness="0" cap="round" join="round" id="103:5">
                         <SolidColor colorValue="FFA1A1AA" id="103:6">
@@ -66,16 +92,29 @@
                         <StraightVertex x="-5" id="33:243"/>
                         <StraightVertex x="-1" y="4" id="33:244"/>
                     </PointsPath>
-                    <Stroke thickness="1.75" cap="round" join="round" id="33:245">
+                    <Stroke thickness="0" cap="round" join="round" id="33:245">
                         <SolidColor colorValue="FFFFFFFF" id="33:246">
                             <DataBindContext sourcePathIds="1:151-10:3108-10:2092" propertyKey="37" nameBased="true" id="33:249"/>
                         </SolidColor>
+                        <DataBindContext sourcePathIds="1:151-118:1" propertyKey="47" nameBased="true" converterId="118:82" id="118:305"/>
                     </Stroke>
-                    <Stroke thickness="1.75" cap="round" join="round" id="33:247">
+                    <Stroke thickness="0" cap="round" join="round" id="33:247">
                         <SolidColor colorValue="FF000000" id="33:248">
                             <DataBindContext sourcePathIds="1:151-10:3108-10:7422" propertyKey="37" nameBased="true" id="33:250"/>
                         </SolidColor>
-                        <DataBindContext sourcePathIds="1:151-33:159" propertyKey="47" nameBased="true" converterId="33:251" id="33:259"/>
+                        <DataBindContext sourcePathIds="1:151-118:1" propertyKey="47" nameBased="true" converterId="118:52" id="118:306"/>
+                    </Stroke>
+                    <Stroke thickness="1.75" cap="round" join="round" id="118:307">
+                        <SolidColor colorValue="FF18181B" id="118:308">
+                            <DataBindContext sourcePathIds="1:151-10:3108-118:4" propertyKey="37" nameBased="true" id="118:309"/>
+                        </SolidColor>
+                        <DataBindContext sourcePathIds="1:151-118:1" propertyKey="47" nameBased="true" converterId="118:22" id="118:310"/>
+                    </Stroke>
+                    <Stroke thickness="0" cap="round" join="round" id="118:311">
+                        <SolidColor colorValue="FFFFFFFF" id="118:312">
+                            <DataBindContext sourcePathIds="1:151-10:3108-118:7" propertyKey="37" nameBased="true" id="118:313"/>
+                        </SolidColor>
+                        <DataBindContext sourcePathIds="1:151-118:1" propertyKey="47" nameBased="true" converterId="118:112" id="118:314"/>
                     </Stroke>
                     <Stroke thickness="0" cap="round" join="round" id="103:9">
                         <SolidColor colorValue="FFA1A1AA" id="103:10">
@@ -95,16 +134,29 @@
                             <StraightVertex radius="1.3329999" x="2.6670001" y="-6.6669998" id="116:20"/>
                             <StraightVertex x="2.6670001" y="-5.3330002" id="116:21"/>
                         </PointsPath>
-                        <Stroke thickness="1.75" cap="round" join="round" id="116:23">
+                        <Stroke thickness="0" cap="round" join="round" id="116:23">
                             <SolidColor colorValue="FFFFFFFF" id="116:24">
                                 <DataBindContext sourcePathIds="1:151-10:3108-10:2092" propertyKey="37" nameBased="true" id="116:25"/>
                             </SolidColor>
+                            <DataBindContext sourcePathIds="1:151-118:1" propertyKey="47" nameBased="true" converterId="118:82" id="118:315"/>
                         </Stroke>
-                        <Stroke thickness="1.75" cap="round" join="round" id="116:26">
+                        <Stroke thickness="0" cap="round" join="round" id="116:26">
                             <SolidColor colorValue="FF000000" id="116:27">
                                 <DataBindContext sourcePathIds="1:151-10:3108-10:7422" propertyKey="37" nameBased="true" id="116:28"/>
                             </SolidColor>
-                            <DataBindContext sourcePathIds="1:151-33:159" propertyKey="47" nameBased="true" converterId="33:251" id="116:29"/>
+                            <DataBindContext sourcePathIds="1:151-118:1" propertyKey="47" nameBased="true" converterId="118:52" id="118:316"/>
+                        </Stroke>
+                        <Stroke thickness="1.75" cap="round" join="round" id="118:317">
+                            <SolidColor colorValue="FF18181B" id="118:318">
+                                <DataBindContext sourcePathIds="1:151-10:3108-118:4" propertyKey="37" nameBased="true" id="118:319"/>
+                            </SolidColor>
+                            <DataBindContext sourcePathIds="1:151-118:1" propertyKey="47" nameBased="true" converterId="118:22" id="118:320"/>
+                        </Stroke>
+                        <Stroke thickness="0" cap="round" join="round" id="118:321">
+                            <SolidColor colorValue="FFFFFFFF" id="118:322">
+                                <DataBindContext sourcePathIds="1:151-10:3108-118:7" propertyKey="37" nameBased="true" id="118:323"/>
+                            </SolidColor>
+                            <DataBindContext sourcePathIds="1:151-118:1" propertyKey="47" nameBased="true" converterId="118:112" id="118:324"/>
                         </Stroke>
                         <Stroke thickness="0" cap="round" join="round" id="116:30">
                             <SolidColor colorValue="FFA1A1AA" id="116:31">
@@ -133,16 +185,29 @@
                             <StraightVertex radius="0.667" x="-3.3329999" y="-2.6670001" id="117:262"/>
                             <StraightVertex x="2" y="-2.6670001" id="117:263"/>
                         </PointsPath>
-                        <Stroke thickness="1.75" cap="round" join="round" id="117:237">
+                        <Stroke thickness="0" cap="round" join="round" id="117:237">
                             <SolidColor colorValue="FFFFFFFF" id="117:238">
                                 <DataBindContext sourcePathIds="1:151-10:3108-10:2092" propertyKey="37" nameBased="true" id="117:239"/>
                             </SolidColor>
+                            <DataBindContext sourcePathIds="1:151-118:1" propertyKey="47" nameBased="true" converterId="118:82" id="118:325"/>
                         </Stroke>
-                        <Stroke thickness="1.75" cap="round" join="round" id="117:240">
+                        <Stroke thickness="0" cap="round" join="round" id="117:240">
                             <SolidColor colorValue="FF000000" id="117:241">
                                 <DataBindContext sourcePathIds="1:151-10:3108-10:7422" propertyKey="37" nameBased="true" id="117:242"/>
                             </SolidColor>
-                            <DataBindContext sourcePathIds="1:151-33:159" propertyKey="47" nameBased="true" converterId="33:251" id="117:243"/>
+                            <DataBindContext sourcePathIds="1:151-118:1" propertyKey="47" nameBased="true" converterId="118:52" id="118:326"/>
+                        </Stroke>
+                        <Stroke thickness="1.75" cap="round" join="round" id="118:327">
+                            <SolidColor colorValue="FF18181B" id="118:328">
+                                <DataBindContext sourcePathIds="1:151-10:3108-118:4" propertyKey="37" nameBased="true" id="118:329"/>
+                            </SolidColor>
+                            <DataBindContext sourcePathIds="1:151-118:1" propertyKey="47" nameBased="true" converterId="118:22" id="118:330"/>
+                        </Stroke>
+                        <Stroke thickness="0" cap="round" join="round" id="118:331">
+                            <SolidColor colorValue="FFFFFFFF" id="118:332">
+                                <DataBindContext sourcePathIds="1:151-10:3108-118:7" propertyKey="37" nameBased="true" id="118:333"/>
+                            </SolidColor>
+                            <DataBindContext sourcePathIds="1:151-118:1" propertyKey="47" nameBased="true" converterId="118:112" id="118:334"/>
                         </Stroke>
                         <Stroke thickness="0" cap="round" join="round" id="117:244">
                             <SolidColor colorValue="FFA1A1AA" id="117:245">
@@ -167,16 +232,29 @@
                             <StraightVertex x="-2.5869999" y="-2.5869999" id="116:44"/>
                             <StraightVertex id="116:45"/>
                         </PointsPath>
-                        <Stroke thickness="1.75" cap="round" join="round" id="116:47">
+                        <Stroke thickness="0" cap="round" join="round" id="116:47">
                             <SolidColor colorValue="FFFFFFFF" id="116:48">
                                 <DataBindContext sourcePathIds="1:151-10:3108-10:2092" propertyKey="37" nameBased="true" id="116:49"/>
                             </SolidColor>
+                            <DataBindContext sourcePathIds="1:151-118:1" propertyKey="47" nameBased="true" converterId="118:82" id="118:335"/>
                         </Stroke>
-                        <Stroke thickness="1.75" cap="round" join="round" id="116:50">
+                        <Stroke thickness="0" cap="round" join="round" id="116:50">
                             <SolidColor colorValue="FF000000" id="116:51">
                                 <DataBindContext sourcePathIds="1:151-10:3108-10:7422" propertyKey="37" nameBased="true" id="116:52"/>
                             </SolidColor>
-                            <DataBindContext sourcePathIds="1:151-33:159" propertyKey="47" nameBased="true" converterId="33:251" id="116:53"/>
+                            <DataBindContext sourcePathIds="1:151-118:1" propertyKey="47" nameBased="true" converterId="118:52" id="118:336"/>
+                        </Stroke>
+                        <Stroke thickness="1.75" cap="round" join="round" id="118:337">
+                            <SolidColor colorValue="FF18181B" id="118:338">
+                                <DataBindContext sourcePathIds="1:151-10:3108-118:4" propertyKey="37" nameBased="true" id="118:339"/>
+                            </SolidColor>
+                            <DataBindContext sourcePathIds="1:151-118:1" propertyKey="47" nameBased="true" converterId="118:22" id="118:340"/>
+                        </Stroke>
+                        <Stroke thickness="0" cap="round" join="round" id="118:341">
+                            <SolidColor colorValue="FFFFFFFF" id="118:342">
+                                <DataBindContext sourcePathIds="1:151-10:3108-118:7" propertyKey="37" nameBased="true" id="118:343"/>
+                            </SolidColor>
+                            <DataBindContext sourcePathIds="1:151-118:1" propertyKey="47" nameBased="true" converterId="118:112" id="118:344"/>
                         </Stroke>
                         <Stroke thickness="0" cap="round" join="round" id="116:54">
                             <SolidColor colorValue="FFA1A1AA" id="116:55">
@@ -196,16 +274,29 @@
                             <StraightVertex radius="1.3329999" x="-5.3330002" y="-5.3330002" id="116:65"/>
                             <StraightVertex x="-2.6670001" y="-5.3330002" id="116:66"/>
                         </PointsPath>
-                        <Stroke thickness="1.75" cap="round" join="round" id="116:68">
+                        <Stroke thickness="0" cap="round" join="round" id="116:68">
                             <SolidColor colorValue="FFFFFFFF" id="116:69">
                                 <DataBindContext sourcePathIds="1:151-10:3108-10:2092" propertyKey="37" nameBased="true" id="116:70"/>
                             </SolidColor>
+                            <DataBindContext sourcePathIds="1:151-118:1" propertyKey="47" nameBased="true" converterId="118:82" id="118:345"/>
                         </Stroke>
-                        <Stroke thickness="1.75" cap="round" join="round" id="116:71">
+                        <Stroke thickness="0" cap="round" join="round" id="116:71">
                             <SolidColor colorValue="FF000000" id="116:72">
                                 <DataBindContext sourcePathIds="1:151-10:3108-10:7422" propertyKey="37" nameBased="true" id="116:73"/>
                             </SolidColor>
-                            <DataBindContext sourcePathIds="1:151-33:159" propertyKey="47" nameBased="true" converterId="33:251" id="116:74"/>
+                            <DataBindContext sourcePathIds="1:151-118:1" propertyKey="47" nameBased="true" converterId="118:52" id="118:346"/>
+                        </Stroke>
+                        <Stroke thickness="1.75" cap="round" join="round" id="118:347">
+                            <SolidColor colorValue="FF18181B" id="118:348">
+                                <DataBindContext sourcePathIds="1:151-10:3108-118:4" propertyKey="37" nameBased="true" id="118:349"/>
+                            </SolidColor>
+                            <DataBindContext sourcePathIds="1:151-118:1" propertyKey="47" nameBased="true" converterId="118:22" id="118:350"/>
+                        </Stroke>
+                        <Stroke thickness="0" cap="round" join="round" id="118:351">
+                            <SolidColor colorValue="FFFFFFFF" id="118:352">
+                                <DataBindContext sourcePathIds="1:151-10:3108-118:7" propertyKey="37" nameBased="true" id="118:353"/>
+                            </SolidColor>
+                            <DataBindContext sourcePathIds="1:151-118:1" propertyKey="47" nameBased="true" converterId="118:112" id="118:354"/>
                         </Stroke>
                         <Stroke thickness="0" cap="round" join="round" id="116:75">
                             <SolidColor colorValue="FFA1A1AA" id="116:76">
@@ -226,6 +317,11 @@
                         <DataBindContext sourcePathIds="1:151-10:3108-10:7412" propertyKey="37" nameBased="true" id="9:129"/>
                     </SolidColor>
                 </Fill>
+                <Stroke thickness="1.5" id="118:424">
+                    <SolidColor colorValue="00000000" id="118:425">
+                        <DataBindContext sourcePathIds="1:151-10:3108-10:7412" propertyKey="37" nameBased="true" id="118:426"/>
+                    </SolidColor>
+                </Stroke>
                 <LayoutComponentStyle positionLeftUnitsValue="points" positionRightUnitsValue="points" positionTopUnitsValue="points" positionBottomUnitsValue="points" edgeConstraints="84" layoutAlignmentType="center" positionTypeValue="absolute" linkCornerRadius="false" cornerRadiusTL="8" cornerRadiusTR="8" cornerRadiusBL="8" cornerRadiusBR="8" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="9:87">
                     <DataBindContext sourcePathIds="1:151-7:1" propertyKey="596" nameBased="true" converterId="9:90" id="9:108"/>
                     <DataBindContext sourcePathIds="1:151-10:3108-10:2086" propertyKey="640" nameBased="true" converterId="99:108" id="9:130"/>
@@ -262,7 +358,37 @@
                 <DataBindContext sourcePathIds="1:151-10:3108-10:2086" propertyKey="643" converterId="99:109" id="99:284"/>
             </LayoutComponentStyle>
             <LayoutComponent styleId="1:145" name="Label" id="1:137">
-                <Text alignValue="center" fitFontSizeResizesBox="false" name="Text Secondary" id="33:287">
+                <Text alignValue="center" fitFontSizeResizesBox="false" name="Text Primary" id="118:359">
+                    <TextStylePaint fontSize="16" fontAssetId="0:7" familyName="Inter" styleName="Medium" name="Style 1" id="118:360">
+                        <Fill name="Fill 1" id="118:361">
+                            <SolidColor colorValue="FFEFF6FF" name="Component" id="118:362">
+                                <DataBindContext sourcePathIds="1:151-10:3108-118:4" propertyKey="37" nameBased="true" id="118:363"/>
+                            </SolidColor>
+                        </Fill>
+                        <TextStyleAxis tag="1869640570" axisValue="14" id="118:364"/>
+                        <TextStyleAxis tag="2003265652" axisValue="500" id="118:365"/>
+                    </TextStylePaint>
+                    <TextValueRun styleId="118:360" text="Button" name="Run 1" id="118:366">
+                        <DataBindContext sourcePathIds="1:151-1:549" propertyKey="268" nameBased="true" id="118:367"/>
+                    </TextValueRun>
+                    <DataBindContext sourcePathIds="1:151-118:1" propertyKey="18" nameBased="true" converterId="118:8" id="118:368"/>
+                </Text>
+                <Text alignValue="center" fitFontSizeResizesBox="false" opacity="0" name="Text Destructive" id="118:371">
+                    <TextStylePaint fontSize="16" fontAssetId="0:7" familyName="Inter" styleName="Medium" name="Style 1" id="118:372">
+                        <Fill name="Fill 1" id="118:373">
+                            <SolidColor colorValue="FFEFF6FF" name="Component" id="118:374">
+                                <DataBindContext sourcePathIds="1:151-10:3108-118:7" propertyKey="37" nameBased="true" id="118:375"/>
+                            </SolidColor>
+                        </Fill>
+                        <TextStyleAxis tag="1869640570" axisValue="14" id="118:376"/>
+                        <TextStyleAxis tag="2003265652" axisValue="500" id="118:377"/>
+                    </TextStylePaint>
+                    <TextValueRun styleId="118:372" text="Button" name="Run 1" id="118:378">
+                        <DataBindContext sourcePathIds="1:151-1:549" propertyKey="268" nameBased="true" id="118:379"/>
+                    </TextValueRun>
+                    <DataBindContext sourcePathIds="1:151-118:1" propertyKey="18" nameBased="true" converterId="118:98" id="118:380"/>
+                </Text>
+                <Text alignValue="center" fitFontSizeResizesBox="false" opacity="0" name="Text Secondary" id="33:287">
                     <TextStylePaint fontSize="16" fontAssetId="0:7" familyName="Inter" styleName="Medium" name="Style 1" id="33:288">
                         <Fill name="Fill 1" id="33:289">
                             <SolidColor colorValue="FFEFF6FF" name="Component" id="33:290">
@@ -275,9 +401,9 @@
                     <TextValueRun styleId="33:288" text="Button" name="Run 1" id="33:293">
                         <DataBindContext sourcePathIds="1:151-1:549" propertyKey="268" nameBased="true" id="33:322"/>
                     </TextValueRun>
-                    <DataBindContext sourcePathIds="1:151-33:159" propertyKey="18" nameBased="true" converterId="9:145" id="33:297"/>
+                    <DataBindContext sourcePathIds="1:151-118:1" propertyKey="18" nameBased="true" converterId="118:38" id="118:355"/>
                 </Text>
-                <Text alignValue="center" fitFontSizeResizesBox="false" name="Text" id="1:138">
+                <Text alignValue="center" fitFontSizeResizesBox="false" opacity="0" name="Text" id="1:138">
                     <TextStylePaint fontSize="16" fontAssetId="0:7" familyName="Inter" styleName="Medium" name="Style 1" id="1:139">
                         <Fill name="Fill 1" id="1:140">
                             <SolidColor colorValue="FFEFF6FF" name="Component" id="1:141">
@@ -290,7 +416,7 @@
                     <TextValueRun styleId="1:139" text="Button" name="Run 1" id="1:144">
                         <DataBindContext sourcePathIds="1:151-1:549" propertyKey="268" id="1:3891"/>
                     </TextValueRun>
-                    <DataBindContext sourcePathIds="1:151-33:159" propertyKey="18" nameBased="true" converterId="9:90" id="33:298"/>
+                    <DataBindContext sourcePathIds="1:151-118:1" propertyKey="18" nameBased="true" converterId="118:68" id="118:356"/>
                 </Text>
                 <LayoutComponentStyle intrinsicallySizedValue="true" layoutTypeValue="stack" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" name="Layout Style" id="1:145">
                     <DataBindContext sourcePathIds="1:151-33:169" propertyKey="596" nameBased="true" converterId="9:145" id="33:299"/>
@@ -316,9 +442,9 @@
                         <DataBindContext sourcePathIds="1:151-10:3108-10:7414" propertyKey="37" nameBased="true" id="33:307"/>
                     </SolidColor>
                 </Fill>
-                <LayoutComponentStyle positionLeftUnitsValue="points" positionRightUnitsValue="points" positionTopUnitsValue="points" positionBottomUnitsValue="points" edgeConstraints="84" positionTypeValue="absolute" linkCornerRadius="false" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="33:304">
+                <LayoutComponentStyle displayValue="none" positionLeftUnitsValue="points" positionRightUnitsValue="points" positionTopUnitsValue="points" positionBottomUnitsValue="points" edgeConstraints="84" positionTypeValue="absolute" linkCornerRadius="false" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="33:304">
                     <DataBindContext sourcePathIds="1:151-10:3108-10:2086" propertyKey="640" nameBased="true" converterId="99:108" id="33:308"/>
-                    <DataBindContext sourcePathIds="1:151-33:159" propertyKey="596" nameBased="true" converterId="9:90" id="33:312"/>
+                    <DataBindContext sourcePathIds="1:151-118:1" propertyKey="596" nameBased="true" converterId="118:140" id="118:381"/>
                     <DataBindContext sourcePathIds="1:151-10:3108-10:2086" propertyKey="641" nameBased="true" converterId="99:109" id="99:291"/>
                     <DataBindContext sourcePathIds="1:151-10:3108-10:2086" propertyKey="642" nameBased="true" converterId="99:108" id="99:292"/>
                     <DataBindContext sourcePathIds="1:151-10:3108-10:2086" propertyKey="643" nameBased="true" converterId="99:109" id="99:293"/>
@@ -328,6 +454,62 @@
                         <DataBindContext sourcePathIds="1:151-10:3108-10:7418" propertyKey="37" nameBased="true" id="33:311"/>
                     </SolidColor>
                 </Stroke>
+            </LayoutComponent>
+            <LayoutComponent styleId="118:397" name="Primary" id="118:383">
+                <LayoutComponent styleId="118:388" name="Primary Hover" id="118:384">
+                    <Fill fillRule="clockwise" id="118:385">
+                        <SolidColor colorValue="FFFAFAFA" id="118:386">
+                            <DataBindContext sourcePathIds="1:151-10:3108-118:3" propertyKey="37" nameBased="true" id="118:387"/>
+                        </SolidColor>
+                    </Fill>
+                    <LayoutComponentStyle positionLeftUnitsValue="points" positionRightUnitsValue="points" positionTopUnitsValue="points" positionBottomUnitsValue="points" edgeConstraints="84" positionTypeValue="absolute" linkCornerRadius="false" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="118:388">
+                        <DataBindContext sourcePathIds="1:151-10:3108-10:2086" propertyKey="640" nameBased="true" converterId="99:108" id="118:389"/>
+                        <DataBindContext sourcePathIds="1:151-10:3108-10:2086" propertyKey="641" nameBased="true" converterId="99:109" id="118:390"/>
+                        <DataBindContext sourcePathIds="1:151-10:3108-10:2086" propertyKey="642" nameBased="true" converterId="99:108" id="118:391"/>
+                        <DataBindContext sourcePathIds="1:151-10:3108-10:2086" propertyKey="643" nameBased="true" converterId="99:109" id="118:392"/>
+                    </LayoutComponentStyle>
+                    <DataBindContext sourcePathIds="1:151-1:587" propertyKey="18" nameBased="true" converterId="9:145" id="118:393"/>
+                </LayoutComponent>
+                <Fill fillRule="clockwise" id="118:394">
+                    <SolidColor colorValue="FFFAFAFA" id="118:395">
+                        <DataBindContext sourcePathIds="1:151-10:3108-118:2" propertyKey="37" nameBased="true" id="118:396"/>
+                    </SolidColor>
+                </Fill>
+                <LayoutComponentStyle positionLeftUnitsValue="points" positionRightUnitsValue="points" positionTopUnitsValue="points" positionBottomUnitsValue="points" edgeConstraints="84" positionTypeValue="absolute" linkCornerRadius="false" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="118:397">
+                    <DataBindContext sourcePathIds="1:151-10:3108-10:2086" propertyKey="640" nameBased="true" converterId="99:108" id="118:398"/>
+                    <DataBindContext sourcePathIds="1:151-118:1" propertyKey="596" nameBased="true" converterId="118:128" id="118:399"/>
+                    <DataBindContext sourcePathIds="1:151-10:3108-10:2086" propertyKey="641" nameBased="true" converterId="99:109" id="118:400"/>
+                    <DataBindContext sourcePathIds="1:151-10:3108-10:2086" propertyKey="642" nameBased="true" converterId="99:108" id="118:401"/>
+                    <DataBindContext sourcePathIds="1:151-10:3108-10:2086" propertyKey="643" nameBased="true" converterId="99:109" id="118:402"/>
+                </LayoutComponentStyle>
+            </LayoutComponent>
+            <LayoutComponent styleId="118:418" name="Destructive" id="118:404">
+                <LayoutComponent styleId="118:409" name="Destructive Hover" id="118:405">
+                    <Fill fillRule="clockwise" id="118:406">
+                        <SolidColor colorValue="FFDC2626" id="118:407">
+                            <DataBindContext sourcePathIds="1:151-10:3108-118:6" propertyKey="37" nameBased="true" id="118:408"/>
+                        </SolidColor>
+                    </Fill>
+                    <LayoutComponentStyle positionLeftUnitsValue="points" positionRightUnitsValue="points" positionTopUnitsValue="points" positionBottomUnitsValue="points" edgeConstraints="84" positionTypeValue="absolute" linkCornerRadius="false" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="118:409">
+                        <DataBindContext sourcePathIds="1:151-10:3108-10:2086" propertyKey="640" nameBased="true" converterId="99:108" id="118:410"/>
+                        <DataBindContext sourcePathIds="1:151-10:3108-10:2086" propertyKey="641" nameBased="true" converterId="99:109" id="118:411"/>
+                        <DataBindContext sourcePathIds="1:151-10:3108-10:2086" propertyKey="642" nameBased="true" converterId="99:108" id="118:412"/>
+                        <DataBindContext sourcePathIds="1:151-10:3108-10:2086" propertyKey="643" nameBased="true" converterId="99:109" id="118:413"/>
+                    </LayoutComponentStyle>
+                    <DataBindContext sourcePathIds="1:151-1:587" propertyKey="18" nameBased="true" converterId="9:145" id="118:414"/>
+                </LayoutComponent>
+                <Fill fillRule="clockwise" id="118:415">
+                    <SolidColor colorValue="FFDC2626" id="118:416">
+                        <DataBindContext sourcePathIds="1:151-10:3108-118:5" propertyKey="37" nameBased="true" id="118:417"/>
+                    </SolidColor>
+                </Fill>
+                <LayoutComponentStyle displayValue="none" positionLeftUnitsValue="points" positionRightUnitsValue="points" positionTopUnitsValue="points" positionBottomUnitsValue="points" edgeConstraints="84" positionTypeValue="absolute" linkCornerRadius="false" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="118:418">
+                    <DataBindContext sourcePathIds="1:151-10:3108-10:2086" propertyKey="640" nameBased="true" converterId="99:108" id="118:419"/>
+                    <DataBindContext sourcePathIds="1:151-118:1" propertyKey="596" nameBased="true" converterId="118:152" id="118:420"/>
+                    <DataBindContext sourcePathIds="1:151-10:3108-10:2086" propertyKey="641" nameBased="true" converterId="99:109" id="118:421"/>
+                    <DataBindContext sourcePathIds="1:151-10:3108-10:2086" propertyKey="642" nameBased="true" converterId="99:108" id="118:422"/>
+                    <DataBindContext sourcePathIds="1:151-10:3108-10:2086" propertyKey="643" nameBased="true" converterId="99:109" id="118:423"/>
+                </LayoutComponentStyle>
             </LayoutComponent>
             <Fill fillRule="clockwise" id="10:3128">
                 <SolidColor colorValue="33000000" id="10:3129">

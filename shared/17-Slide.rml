@@ -16,7 +16,7 @@
                 <LayoutComponentStyle layoutAlignmentType="center" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" id="10:5348"/>
                 <LayoutComponent styleId="10:5602" name="Zoom Center" id="10:5601">
                     <ComponentOrigin originX="0.5" originY="0.5" id="10:5603"/>
-                    <LayoutComponentStyle layoutAlignmentType="center" flexDirectionValue="column" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="10:5602"/>
+                    <LayoutComponentStyle gapVertical="12" layoutAlignmentType="center" flexDirectionValue="column" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="10:5602"/>
                     <ArtboardComponentList participatesInLayout="true" id="10:5463">
                         <DataBindContext sourcePathIds="10:5163-10:5173" propertyKey="800" id="10:5464"/>
                     </ArtboardComponentList>

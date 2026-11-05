@@ -228,6 +228,173 @@
         <FormulaTokenOperation operationType="multiply" id="33:256"/>
         <FormulaTokenInput id="33:257"/>
     </DataConverterFormula>
+    <DataConverterFormula name="VariantIs0" id="118:8">
+        <FormulaTokenFunction functionType="max" id="118:9"/>
+        <FormulaTokenValue operationValue="0" id="118:10"/>
+        <FormulaTokenArgumentSeparator id="118:11"/>
+        <FormulaTokenValue id="118:12"/>
+        <FormulaTokenOperation operationType="subtract" id="118:13"/>
+        <FormulaTokenFunction functionType="pow" id="118:14"/>
+        <FormulaTokenInput id="118:15"/>
+        <FormulaTokenOperation operationType="subtract" id="118:16"/>
+        <FormulaTokenValue operationValue="0" id="118:17"/>
+        <FormulaTokenArgumentSeparator id="118:18"/>
+        <FormulaTokenValue operationValue="2" id="118:19"/>
+        <FormulaTokenParenthesisClose id="118:20"/>
+        <FormulaTokenParenthesisClose id="118:21"/>
+    </DataConverterFormula>
+    <DataConverterFormula name="VariantStroke0" id="118:22">
+        <FormulaTokenValue operationValue="1.75" id="118:23"/>
+        <FormulaTokenOperation operationType="multiply" id="118:24"/>
+        <FormulaTokenFunction functionType="max" id="118:25"/>
+        <FormulaTokenValue operationValue="0" id="118:26"/>
+        <FormulaTokenArgumentSeparator id="118:27"/>
+        <FormulaTokenValue id="118:28"/>
+        <FormulaTokenOperation operationType="subtract" id="118:29"/>
+        <FormulaTokenFunction functionType="pow" id="118:30"/>
+        <FormulaTokenInput id="118:31"/>
+        <FormulaTokenOperation operationType="subtract" id="118:32"/>
+        <FormulaTokenValue operationValue="0" id="118:33"/>
+        <FormulaTokenArgumentSeparator id="118:34"/>
+        <FormulaTokenValue operationValue="2" id="118:35"/>
+        <FormulaTokenParenthesisClose id="118:36"/>
+        <FormulaTokenParenthesisClose id="118:37"/>
+    </DataConverterFormula>
+    <DataConverterFormula name="VariantIs1" id="118:38">
+        <FormulaTokenFunction functionType="max" id="118:39"/>
+        <FormulaTokenValue operationValue="0" id="118:40"/>
+        <FormulaTokenArgumentSeparator id="118:41"/>
+        <FormulaTokenValue id="118:42"/>
+        <FormulaTokenOperation operationType="subtract" id="118:43"/>
+        <FormulaTokenFunction functionType="pow" id="118:44"/>
+        <FormulaTokenInput id="118:45"/>
+        <FormulaTokenOperation operationType="subtract" id="118:46"/>
+        <FormulaTokenValue operationValue="1" id="118:47"/>
+        <FormulaTokenArgumentSeparator id="118:48"/>
+        <FormulaTokenValue operationValue="2" id="118:49"/>
+        <FormulaTokenParenthesisClose id="118:50"/>
+        <FormulaTokenParenthesisClose id="118:51"/>
+    </DataConverterFormula>
+    <DataConverterFormula name="VariantStroke1" id="118:52">
+        <FormulaTokenValue operationValue="1.75" id="118:53"/>
+        <FormulaTokenOperation operationType="multiply" id="118:54"/>
+        <FormulaTokenFunction functionType="max" id="118:55"/>
+        <FormulaTokenValue operationValue="0" id="118:56"/>
+        <FormulaTokenArgumentSeparator id="118:57"/>
+        <FormulaTokenValue id="118:58"/>
+        <FormulaTokenOperation operationType="subtract" id="118:59"/>
+        <FormulaTokenFunction functionType="pow" id="118:60"/>
+        <FormulaTokenInput id="118:61"/>
+        <FormulaTokenOperation operationType="subtract" id="118:62"/>
+        <FormulaTokenValue operationValue="1" id="118:63"/>
+        <FormulaTokenArgumentSeparator id="118:64"/>
+        <FormulaTokenValue operationValue="2" id="118:65"/>
+        <FormulaTokenParenthesisClose id="118:66"/>
+        <FormulaTokenParenthesisClose id="118:67"/>
+    </DataConverterFormula>
+    <DataConverterFormula name="VariantIs2" id="118:68">
+        <FormulaTokenFunction functionType="max" id="118:69"/>
+        <FormulaTokenValue operationValue="0" id="118:70"/>
+        <FormulaTokenArgumentSeparator id="118:71"/>
+        <FormulaTokenValue id="118:72"/>
+        <FormulaTokenOperation operationType="subtract" id="118:73"/>
+        <FormulaTokenFunction functionType="pow" id="118:74"/>
+        <FormulaTokenInput id="118:75"/>
+        <FormulaTokenOperation operationType="subtract" id="118:76"/>
+        <FormulaTokenValue operationValue="2" id="118:77"/>
+        <FormulaTokenArgumentSeparator id="118:78"/>
+        <FormulaTokenValue operationValue="2" id="118:79"/>
+        <FormulaTokenParenthesisClose id="118:80"/>
+        <FormulaTokenParenthesisClose id="118:81"/>
+    </DataConverterFormula>
+    <DataConverterFormula name="VariantStroke2" id="118:82">
+        <FormulaTokenValue operationValue="1.75" id="118:83"/>
+        <FormulaTokenOperation operationType="multiply" id="118:84"/>
+        <FormulaTokenFunction functionType="max" id="118:85"/>
+        <FormulaTokenValue operationValue="0" id="118:86"/>
+        <FormulaTokenArgumentSeparator id="118:87"/>
+        <FormulaTokenValue id="118:88"/>
+        <FormulaTokenOperation operationType="subtract" id="118:89"/>
+        <FormulaTokenFunction functionType="pow" id="118:90"/>
+        <FormulaTokenInput id="118:91"/>
+        <FormulaTokenOperation operationType="subtract" id="118:92"/>
+        <FormulaTokenValue operationValue="2" id="118:93"/>
+        <FormulaTokenArgumentSeparator id="118:94"/>
+        <FormulaTokenValue operationValue="2" id="118:95"/>
+        <FormulaTokenParenthesisClose id="118:96"/>
+        <FormulaTokenParenthesisClose id="118:97"/>
+    </DataConverterFormula>
+    <DataConverterFormula name="VariantIs3" id="118:98">
+        <FormulaTokenFunction functionType="max" id="118:99"/>
+        <FormulaTokenValue operationValue="0" id="118:100"/>
+        <FormulaTokenArgumentSeparator id="118:101"/>
+        <FormulaTokenValue id="118:102"/>
+        <FormulaTokenOperation operationType="subtract" id="118:103"/>
+        <FormulaTokenFunction functionType="pow" id="118:104"/>
+        <FormulaTokenInput id="118:105"/>
+        <FormulaTokenOperation operationType="subtract" id="118:106"/>
+        <FormulaTokenValue operationValue="3" id="118:107"/>
+        <FormulaTokenArgumentSeparator id="118:108"/>
+        <FormulaTokenValue operationValue="2" id="118:109"/>
+        <FormulaTokenParenthesisClose id="118:110"/>
+        <FormulaTokenParenthesisClose id="118:111"/>
+    </DataConverterFormula>
+    <DataConverterFormula name="VariantStroke3" id="118:112">
+        <FormulaTokenValue operationValue="1.75" id="118:113"/>
+        <FormulaTokenOperation operationType="multiply" id="118:114"/>
+        <FormulaTokenFunction functionType="max" id="118:115"/>
+        <FormulaTokenValue operationValue="0" id="118:116"/>
+        <FormulaTokenArgumentSeparator id="118:117"/>
+        <FormulaTokenValue id="118:118"/>
+        <FormulaTokenOperation operationType="subtract" id="118:119"/>
+        <FormulaTokenFunction functionType="pow" id="118:120"/>
+        <FormulaTokenInput id="118:121"/>
+        <FormulaTokenOperation operationType="subtract" id="118:122"/>
+        <FormulaTokenValue operationValue="3" id="118:123"/>
+        <FormulaTokenArgumentSeparator id="118:124"/>
+        <FormulaTokenValue operationValue="2" id="118:125"/>
+        <FormulaTokenParenthesisClose id="118:126"/>
+        <FormulaTokenParenthesisClose id="118:127"/>
+    </DataConverterFormula>
+    <DataConverterFormula name="VariantHide0" id="118:128">
+        <FormulaTokenFunction id="118:129"/>
+        <FormulaTokenValue id="118:130"/>
+        <FormulaTokenArgumentSeparator id="118:131"/>
+        <FormulaTokenFunction functionType="pow" id="118:132"/>
+        <FormulaTokenInput id="118:133"/>
+        <FormulaTokenOperation operationType="subtract" id="118:134"/>
+        <FormulaTokenValue operationValue="0" id="118:135"/>
+        <FormulaTokenArgumentSeparator id="118:136"/>
+        <FormulaTokenValue operationValue="2" id="118:137"/>
+        <FormulaTokenParenthesisClose id="118:138"/>
+        <FormulaTokenParenthesisClose id="118:139"/>
+    </DataConverterFormula>
+    <DataConverterFormula name="VariantHide1" id="118:140">
+        <FormulaTokenFunction id="118:141"/>
+        <FormulaTokenValue id="118:142"/>
+        <FormulaTokenArgumentSeparator id="118:143"/>
+        <FormulaTokenFunction functionType="pow" id="118:144"/>
+        <FormulaTokenInput id="118:145"/>
+        <FormulaTokenOperation operationType="subtract" id="118:146"/>
+        <FormulaTokenValue operationValue="1" id="118:147"/>
+        <FormulaTokenArgumentSeparator id="118:148"/>
+        <FormulaTokenValue operationValue="2" id="118:149"/>
+        <FormulaTokenParenthesisClose id="118:150"/>
+        <FormulaTokenParenthesisClose id="118:151"/>
+    </DataConverterFormula>
+    <DataConverterFormula name="VariantHide3" id="118:152">
+        <FormulaTokenFunction id="118:153"/>
+        <FormulaTokenValue id="118:154"/>
+        <FormulaTokenArgumentSeparator id="118:155"/>
+        <FormulaTokenFunction functionType="pow" id="118:156"/>
+        <FormulaTokenInput id="118:157"/>
+        <FormulaTokenOperation operationType="subtract" id="118:158"/>
+        <FormulaTokenValue operationValue="3" id="118:159"/>
+        <FormulaTokenArgumentSeparator id="118:160"/>
+        <FormulaTokenValue operationValue="2" id="118:161"/>
+        <FormulaTokenParenthesisClose id="118:162"/>
+        <FormulaTokenParenthesisClose id="118:163"/>
+    </DataConverterFormula>
     <DataConverterFormula name="Is7" id="38:407">
         <FormulaTokenFunction functionType="max" id="38:408"/>
         <FormulaTokenValue operationValue="0" id="38:409"/>
@@ -1725,7 +1892,7 @@
             </ViewModel>
             <ViewModel defaultInstanceId="1:152" name="Button" groupId="1:2673" id="1:151">
                 <ViewModelPropertyNumber name="group" id="99:100"/>
-                <ViewModelPropertyBoolean name="secondary" id="33:159"/>
+                <ViewModelPropertyNumber name="variant" id="118:1"/>
                 <ViewModelPropertyNumber name="icon" id="33:164"/>
                 <ViewModelPropertyBoolean name="iconOnly" id="33:169"/>
                 <ViewModelPropertyBoolean name="disabled" id="7:1"/>
@@ -1742,7 +1909,7 @@
                     <ViewModelInstanceBoolean viewModelPropertyId="7:1" id="92:641"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="7:3" id="92:642"/>
                     <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="10:3108" id="92:643"/>
-                    <ViewModelInstanceBoolean viewModelPropertyId="33:159" id="92:644"/>
+                    <ViewModelInstanceNumber viewModelPropertyId="118:1" id="118:170"/>
                     <ViewModelInstanceNumber propertyValue="4" viewModelPropertyId="33:164" id="92:645"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="33:169" id="92:646"/>
                     <ViewModelInstanceNumber propertyValue="1" viewModelPropertyId="99:100" id="99:101"/>
@@ -1755,7 +1922,7 @@
                     <ViewModelInstanceBoolean viewModelPropertyId="7:1" id="92:652"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="7:3" id="92:653"/>
                     <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="10:3108" id="92:654"/>
-                    <ViewModelInstanceBoolean viewModelPropertyId="33:159" id="92:655"/>
+                    <ViewModelInstanceNumber viewModelPropertyId="118:1" id="118:171"/>
                     <ViewModelInstanceNumber propertyValue="5" viewModelPropertyId="33:164" id="92:656"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="33:169" id="92:657"/>
                     <ViewModelInstanceNumber propertyValue="2" viewModelPropertyId="99:100" id="99:102"/>
@@ -1768,7 +1935,7 @@
                     <ViewModelInstanceBoolean viewModelPropertyId="7:1" id="92:663"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="7:3" id="92:664"/>
                     <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="10:3108" id="92:665"/>
-                    <ViewModelInstanceBoolean viewModelPropertyId="33:159" id="92:666"/>
+                    <ViewModelInstanceNumber viewModelPropertyId="118:1" id="118:172"/>
                     <ViewModelInstanceNumber propertyValue="6" viewModelPropertyId="33:164" id="92:667"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="33:169" id="92:668"/>
                     <ViewModelInstanceNumber propertyValue="3" viewModelPropertyId="99:100" id="99:103"/>
@@ -1781,7 +1948,7 @@
                     <ViewModelInstanceBoolean viewModelPropertyId="7:1" id="33:105"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="7:3" id="33:106"/>
                     <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="10:3108" id="33:107"/>
-                    <ViewModelInstanceBoolean viewModelPropertyId="33:159" id="33:160"/>
+                    <ViewModelInstanceNumber viewModelPropertyId="118:1" id="118:173"/>
                     <ViewModelInstanceNumber propertyValue="3" viewModelPropertyId="33:164" id="33:165"/>
                     <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="33:169" id="33:170"/>
                     <ViewModelInstanceNumber viewModelPropertyId="99:100" id="99:104"/>
@@ -1794,11 +1961,63 @@
                     <ViewModelInstanceBoolean viewModelPropertyId="7:1" id="33:64"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="7:3" id="33:65"/>
                     <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="10:3108" id="33:66"/>
-                    <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="33:159" id="33:161"/>
+                    <ViewModelInstanceNumber propertyValue="1" viewModelPropertyId="118:1" id="118:174"/>
                     <ViewModelInstanceNumber propertyValue="2" viewModelPropertyId="33:164" id="33:166"/>
                     <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="33:169" id="33:171"/>
                     <ViewModelInstanceNumber viewModelPropertyId="99:100" id="99:105"/>
                     <ViewModelInstanceString viewModelPropertyId="112:14" id="112:140"/>
+                </ViewModelInstance>
+                <ViewModelInstance exports="true" name="Variant Primary" id="118:176">
+                    <ViewModelInstanceString propertyValue="Primary" viewModelPropertyId="1:549" id="118:177"/>
+                    <ViewModelInstanceBoolean viewModelPropertyId="1:587" id="118:178"/>
+                    <ViewModelInstanceTrigger viewModelPropertyId="1:1321" id="118:179"/>
+                    <ViewModelInstanceBoolean viewModelPropertyId="7:1" id="118:180"/>
+                    <ViewModelInstanceBoolean viewModelPropertyId="7:3" id="118:181"/>
+                    <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="10:3108" id="118:182"/>
+                    <ViewModelInstanceNumber viewModelPropertyId="118:1" id="118:183"/>
+                    <ViewModelInstanceNumber viewModelPropertyId="33:164" id="118:184"/>
+                    <ViewModelInstanceBoolean viewModelPropertyId="33:169" id="118:185"/>
+                    <ViewModelInstanceNumber viewModelPropertyId="99:100" id="118:186"/>
+                    <ViewModelInstanceString viewModelPropertyId="112:14" id="118:187"/>
+                </ViewModelInstance>
+                <ViewModelInstance exports="true" name="Variant Secondary" id="118:188">
+                    <ViewModelInstanceString propertyValue="Secondary" viewModelPropertyId="1:549" id="118:189"/>
+                    <ViewModelInstanceBoolean viewModelPropertyId="1:587" id="118:190"/>
+                    <ViewModelInstanceTrigger viewModelPropertyId="1:1321" id="118:191"/>
+                    <ViewModelInstanceBoolean viewModelPropertyId="7:1" id="118:192"/>
+                    <ViewModelInstanceBoolean viewModelPropertyId="7:3" id="118:193"/>
+                    <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="10:3108" id="118:194"/>
+                    <ViewModelInstanceNumber propertyValue="1" viewModelPropertyId="118:1" id="118:195"/>
+                    <ViewModelInstanceNumber viewModelPropertyId="33:164" id="118:196"/>
+                    <ViewModelInstanceBoolean viewModelPropertyId="33:169" id="118:197"/>
+                    <ViewModelInstanceNumber viewModelPropertyId="99:100" id="118:198"/>
+                    <ViewModelInstanceString viewModelPropertyId="112:14" id="118:199"/>
+                </ViewModelInstance>
+                <ViewModelInstance exports="true" name="Variant Brand" id="118:200">
+                    <ViewModelInstanceString propertyValue="Brand" viewModelPropertyId="1:549" id="118:201"/>
+                    <ViewModelInstanceBoolean viewModelPropertyId="1:587" id="118:202"/>
+                    <ViewModelInstanceTrigger viewModelPropertyId="1:1321" id="118:203"/>
+                    <ViewModelInstanceBoolean viewModelPropertyId="7:1" id="118:204"/>
+                    <ViewModelInstanceBoolean viewModelPropertyId="7:3" id="118:205"/>
+                    <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="10:3108" id="118:206"/>
+                    <ViewModelInstanceNumber propertyValue="2" viewModelPropertyId="118:1" id="118:207"/>
+                    <ViewModelInstanceNumber viewModelPropertyId="33:164" id="118:208"/>
+                    <ViewModelInstanceBoolean viewModelPropertyId="33:169" id="118:209"/>
+                    <ViewModelInstanceNumber viewModelPropertyId="99:100" id="118:210"/>
+                    <ViewModelInstanceString viewModelPropertyId="112:14" id="118:211"/>
+                </ViewModelInstance>
+                <ViewModelInstance exports="true" name="Variant Destructive" id="118:212">
+                    <ViewModelInstanceString propertyValue="Delete" viewModelPropertyId="1:549" id="118:213"/>
+                    <ViewModelInstanceBoolean viewModelPropertyId="1:587" id="118:214"/>
+                    <ViewModelInstanceTrigger viewModelPropertyId="1:1321" id="118:215"/>
+                    <ViewModelInstanceBoolean viewModelPropertyId="7:1" id="118:216"/>
+                    <ViewModelInstanceBoolean viewModelPropertyId="7:3" id="118:217"/>
+                    <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="10:3108" id="118:218"/>
+                    <ViewModelInstanceNumber propertyValue="3" viewModelPropertyId="118:1" id="118:219"/>
+                    <ViewModelInstanceNumber viewModelPropertyId="33:164" id="118:220"/>
+                    <ViewModelInstanceBoolean viewModelPropertyId="33:169" id="118:221"/>
+                    <ViewModelInstanceNumber viewModelPropertyId="99:100" id="118:222"/>
+                    <ViewModelInstanceString viewModelPropertyId="112:14" id="118:223"/>
                 </ViewModelInstance>
                 <ViewModelInstance exports="true" id="1:152">
                     <ViewModelInstanceString propertyValue="Button" viewModelPropertyId="1:549" id="1:550"/>
@@ -1807,7 +2026,7 @@
                     <ViewModelInstanceBoolean viewModelPropertyId="7:1" id="7:2"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="7:3" id="7:4"/>
                     <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="10:3108" id="10:3109"/>
-                    <ViewModelInstanceBoolean viewModelPropertyId="33:159" id="33:163"/>
+                    <ViewModelInstanceNumber viewModelPropertyId="118:1" id="118:175"/>
                     <ViewModelInstanceNumber viewModelPropertyId="33:164" id="33:168"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="33:169" id="33:173"/>
                     <ViewModelInstanceNumber viewModelPropertyId="99:100" id="99:107"/>
@@ -2093,10 +2312,13 @@
                 <ViewModelInstance exports="true" name="S Button" id="10:5197">
                     <ViewModelInstanceString propertyValue="Button" viewModelPropertyId="10:5171" id="10:5198"/>
                     <ViewModelInstanceList viewModelPropertyId="10:5173" id="10:5199">
-                        <ViewModelInstanceListItem viewModelId="1:151" viewModelInstanceId="1:152" id="10:5203"/>
+                        <ViewModelInstanceListItem viewModelId="1:151" viewModelInstanceId="118:176" id="118:224"/>
+                        <ViewModelInstanceListItem viewModelId="1:151" viewModelInstanceId="118:188" id="118:225"/>
+                        <ViewModelInstanceListItem viewModelId="1:151" viewModelInstanceId="118:200" id="118:226"/>
+                        <ViewModelInstanceListItem viewModelId="1:151" viewModelInstanceId="118:212" id="118:227"/>
                     </ViewModelInstanceList>
                     <ViewModelInstanceNumber viewModelPropertyId="10:5175" id="10:5200"/>
-                    <ViewModelInstanceNumber propertyValue="2.5" viewModelPropertyId="10:5177" id="10:5201"/>
+                    <ViewModelInstanceNumber propertyValue="1.8" viewModelPropertyId="10:5177" id="10:5201"/>
                     <ViewModelInstanceViewModel propertyValue="10:5193" viewModelPropertyId="10:5179" id="10:5202"/>
                     <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="10:6573" id="10:6574"/>
                     <ViewModelInstanceViewModel propertyValue="114:161" viewModelPropertyId="114:1" id="114:186"/>
@@ -3678,6 +3900,12 @@
             <ViewModelPropertyColor name="_textSecondary" id="10:7424"/>
             <ViewModelPropertyColor name="_textMuted" id="10:7426"/>
             <ViewModelPropertyNumber name="_hover" id="10:4743"/>
+            <ViewModelPropertyColor name="_primaryBg" id="118:2"/>
+            <ViewModelPropertyColor name="_primaryHover" id="118:3"/>
+            <ViewModelPropertyColor name="_primaryText" id="118:4"/>
+            <ViewModelPropertyColor name="_dangerBg" id="118:5"/>
+            <ViewModelPropertyColor name="_dangerHover" id="118:6"/>
+            <ViewModelPropertyColor name="_dangerText" id="118:7"/>
             <ViewModelPropertyNumber name="roundness" id="10:2086"/>
             <ViewModelPropertyNumber name="shadow" id="10:2088"/>
             <ViewModelPropertyNumber name="brandIndex" id="10:2090"/>
@@ -3707,18 +3935,24 @@
             <ViewModelInstance exports="true" name="Default" id="10:63">
                 <ViewModelInstanceNumber propertyValue="2" viewModelPropertyId="10:2086" id="10:2087"/>
                 <ViewModelInstanceNumber propertyValue="1" viewModelPropertyId="10:2088" id="10:2089"/>
-                <ViewModelInstanceNumber viewModelPropertyId="10:2090" id="10:2091"/>
-                <ViewModelInstanceColor propertyValue="FFEFF6FF" viewModelPropertyId="10:2092" id="10:2093"/>
-                <ViewModelInstanceColor propertyValue="FF172554" viewModelPropertyId="10:2094" id="10:2095"/>
-                <ViewModelInstanceColor propertyValue="FF1E3A8A" viewModelPropertyId="10:2096" id="10:2097"/>
-                <ViewModelInstanceColor propertyValue="FF93C5FD" viewModelPropertyId="10:2098" id="10:2099"/>
-                <ViewModelInstanceColor propertyValue="FF60A5FA" viewModelPropertyId="10:2100" id="10:2101"/>
-                <ViewModelInstanceColor propertyValue="FF3B82F6" viewModelPropertyId="10:2102" id="10:2103"/>
-                <ViewModelInstanceColor propertyValue="FF2563EB" viewModelPropertyId="10:2104" id="10:2105"/>
-                <ViewModelInstanceColor propertyValue="FF1D4ED8" viewModelPropertyId="10:2106" id="10:2107"/>
-                <ViewModelInstanceColor propertyValue="FF1E40AF" viewModelPropertyId="10:2108" id="10:2109"/>
-                <ViewModelInstanceColor propertyValue="FF1E3A8A" viewModelPropertyId="10:2110" id="10:2111"/>
-                <ViewModelInstanceColor propertyValue="FF172554" viewModelPropertyId="10:2112" id="10:2113"/>
+                <ViewModelInstanceNumber propertyValue="5" viewModelPropertyId="10:2090" id="10:2091"/>
+                <ViewModelInstanceColor propertyValue="FFFAFAFA" viewModelPropertyId="118:2" id="118:164"/>
+                <ViewModelInstanceColor propertyValue="FFE4E4E7" viewModelPropertyId="118:3" id="118:165"/>
+                <ViewModelInstanceColor propertyValue="FF18181B" viewModelPropertyId="118:4" id="118:166"/>
+                <ViewModelInstanceColor propertyValue="FFDC2626" viewModelPropertyId="118:5" id="118:167"/>
+                <ViewModelInstanceColor propertyValue="FFB91C1C" viewModelPropertyId="118:6" id="118:168"/>
+                <ViewModelInstanceColor propertyValue="FFFFFFFF" viewModelPropertyId="118:7" id="118:169"/>
+                <ViewModelInstanceColor propertyValue="FF18181B" viewModelPropertyId="10:2092" id="10:2093"/>
+                <ViewModelInstanceColor propertyValue="FF27272A" viewModelPropertyId="10:2094" id="10:2095"/>
+                <ViewModelInstanceColor propertyValue="FF3F3F46" viewModelPropertyId="10:2096" id="10:2097"/>
+                <ViewModelInstanceColor propertyValue="FF52525B" viewModelPropertyId="10:2098" id="10:2099"/>
+                <ViewModelInstanceColor propertyValue="FF71717A" viewModelPropertyId="10:2100" id="10:2101"/>
+                <ViewModelInstanceColor propertyValue="FFA1A1AA" viewModelPropertyId="10:2102" id="10:2103"/>
+                <ViewModelInstanceColor propertyValue="FFFAFAFA" viewModelPropertyId="10:2104" id="10:2105"/>
+                <ViewModelInstanceColor propertyValue="FFE4E4E7" viewModelPropertyId="10:2106" id="10:2107"/>
+                <ViewModelInstanceColor propertyValue="FFD4D4D8" viewModelPropertyId="10:2108" id="10:2109"/>
+                <ViewModelInstanceColor propertyValue="FFF4F4F5" viewModelPropertyId="10:2110" id="10:2111"/>
+                <ViewModelInstanceColor propertyValue="FFFFFFFF" viewModelPropertyId="10:2112" id="10:2113"/>
                 <ViewModelInstanceNumber viewModelPropertyId="10:4743" id="10:4744"/>
                 <ViewModelInstanceNumber propertyValue="1" viewModelPropertyId="10:7400" id="10:7401"/>
                 <ViewModelInstanceColor propertyValue="FF09090B" viewModelPropertyId="10:7402" id="10:7403"/>

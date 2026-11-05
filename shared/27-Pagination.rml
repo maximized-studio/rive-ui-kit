@@ -17,7 +17,7 @@
                         </ViewModelInstanceBoolean>
                         <ViewModelInstanceBoolean viewModelPropertyId="7:3" id="102:954"/>
                         <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="10:3108" id="102:955"/>
-                        <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="33:159" id="102:956"/>
+                        <ViewModelInstanceNumber propertyValue="1" viewModelPropertyId="118:1" id="118:228"/>
                         <ViewModelInstanceNumber propertyValue="2" viewModelPropertyId="33:164" id="102:957"/>
                         <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="33:169" id="102:958"/>
                         <ViewModelInstanceNumber viewModelPropertyId="99:100" id="102:959"/>
@@ -174,7 +174,7 @@
                         </ViewModelInstanceBoolean>
                         <ViewModelInstanceBoolean viewModelPropertyId="7:3" id="102:968"/>
                         <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="10:3108" id="102:969"/>
-                        <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="33:159" id="102:970"/>
+                        <ViewModelInstanceNumber propertyValue="1" viewModelPropertyId="118:1" id="118:229"/>
                         <ViewModelInstanceNumber propertyValue="3" viewModelPropertyId="33:164" id="102:971"/>
                         <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="33:169" id="102:972"/>
                         <ViewModelInstanceNumber viewModelPropertyId="99:100" id="102:973"/>

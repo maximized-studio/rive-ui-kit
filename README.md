@@ -74,9 +74,16 @@ A card that stays in view with a message in one of four variants. It has no clos
 - Hide or show it from your app like any other part of your layout.
 - Screen readers get a `group` named by the title and marked as a live region, so a changed title is announced, with the body as text.
 
+## Button
+
+A button in one of four variants. The default follows the inverse colours of the mode (light on dark, dark on light), so it never clashes with the brand colour.
+
+- View model `Button`: `text`, `variant` (`0` primary, `1` secondary, `2` brand, `3` destructive), `icon`, `iconOnly`, `disabled`, `hint`, `group` (see Button Group), `a11yHidden`, `theme`. `_pressed` fires on a click.
+- Primary uses `_primaryBg` / `_primaryHover` / `_primaryText`, destructive `_dangerBg` / `_dangerHover` / `_dangerText`: Theme tokens per mode that ignore the brand. Only the brand variant follows the brand colour. Destructive stays red whatever the brand is.
+
 ## Button Group
 
-A row of kit Buttons joined into one control: the outer corners follow the theme roundness, the inner corners are square, and the group casts one shadow. Primary and secondary Buttons both work and may be mixed.
+A row of kit Buttons joined into one control: the outer corners follow the theme roundness, the inner corners are square, and the group casts one shadow. Every Button variant works and they may be mixed.
 
 - View model `ButtonGroup`: `label` (screen reader name), `buttons` (a list of `Button` instances), `a11yHidden`, `theme`.
 - Set `group` on every Button in the list: `1` first, `2` middle, `3` last (`0`, the default, is a standalone Button). It rounds only the outer corners and draws a divider before middle and last buttons; secondary borders merge into one line.
@@ -160,8 +167,9 @@ Do not publish a `PREVIEW` build: an embedded custom font blocks publishing to t
 ```
 
 - `mode.Light` / `mode.Dark`: surface, border and text tokens (`_bg`, `_surface`, `_surfaceMuted`, `_border`, `_text`, `_textMuted`, …). Any token may be left out.
+- Button tokens: `_primaryBg`, `_primaryHover`, `_primaryText`, `_dangerBg`, `_dangerHover`, `_dangerText` in `mode.Light` / `mode.Dark`.
 - Semantic tokens for the Alert: `_successBg`, `_successBorder`, `_successText` and the same for `_warning…` and `_error…` go in `mode.Light` / `mode.Dark`. The `_info…` tokens follow the brand ramp (Light 50/200/700, Dark 950/800/400).
-- `brands`: one ramp of 11 steps (50–950) per brand slot (`Blue`, `Violet`, `Emerald`, `Orange`, `Rose`, `Zinc`).
+- `brands`: one ramp of 11 steps (50–950) per brand slot (`Blue`, `Violet`, `Emerald`, `Orange`, `Rose`, `Zinc`). `Zinc` is the Inverse swatch, the first one in the Theme panel and the default brand.
 - `defaults` (optional): starting `roundness` and `shadow` (0–3). They are baked into the written values, so the editor canvas and the Community thumbnail show them too.
 
 `tools/retheme.py` turns the palette into the theme's Theme Driver. Known gap: the brand swatches in the Theme panel keep their default colours.
