@@ -1,7 +1,7 @@
 <Rive version="1" kind="fragment">
-    <Artboard defaultStateMachineId="10:115" viewModelId="10:84" viewModelInstanceId="10:5260" includeInExport="false" spaceId="1:5601" width="1440" height="1024" styleId="10:113" x="-1640" name="Showcase" id="10:110">
+    <Artboard defaultStateMachineId="10:115" viewModelId="10:84" viewModelInstanceId="10:5260" includeInExport="false" spaceId="1:5601" clip="true" width="1440" height="1024" styleId="10:113" x="-1640" name="Showcase" id="10:110">
         <Image assetId="42:629" x="720" y="512" opacity="0" name="Cover (thumbnail only)" id="10:15633"/>
-        <LayoutComponent clip="true" width="240" styleId="42:466" name="Toolbar Slot" id="42:465">
+        <LayoutComponent width="240" styleId="42:466" name="Toolbar Slot" id="42:465">
             <LayoutComponentStyle layoutHeightScaleType="fill" heightUnitsValue="auto" id="42:466"/>
             <LayoutComponent width="240" styleId="114:503" name="Toolbar Panel" id="114:502">
                 <LayoutComponentStyle positionLeftUnitsValue="points" positionTopUnitsValue="points" positionBottomUnitsValue="points" edgeConstraints="80" positionTypeValue="absolute" layoutHeightScaleType="fill" heightUnitsValue="auto" id="114:503"/>
