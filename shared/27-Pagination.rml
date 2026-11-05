@@ -10,6 +10,7 @@
                     <NestedStateMachine animationId="1:127" id="102:947"/>
                     <ViewModelInstance viewModelId="1:151" exports="true" name="Previous Button" id="102:948">
                         <ViewModelInstanceString propertyValue="Previous" viewModelPropertyId="1:549" id="102:949"/>
+                        <ViewModelInstanceString viewModelPropertyId="112:14" id="112:143"/>
                         <ViewModelInstanceBoolean viewModelPropertyId="1:587" id="102:950"/>
                         <ViewModelInstanceTrigger viewModelPropertyId="1:1321" id="102:951"/>
                         <ViewModelInstanceBoolean viewModelPropertyId="7:1" id="102:952">
@@ -166,6 +167,7 @@
                     <NestedStateMachine animationId="1:127" id="102:961"/>
                     <ViewModelInstance viewModelId="1:151" exports="true" name="Next Button" id="102:962">
                         <ViewModelInstanceString propertyValue="Next" viewModelPropertyId="1:549" id="102:963"/>
+                        <ViewModelInstanceString viewModelPropertyId="112:14" id="112:144"/>
                         <ViewModelInstanceBoolean viewModelPropertyId="1:587" id="102:964"/>
                         <ViewModelInstanceTrigger viewModelPropertyId="1:1321" id="102:965"/>
                         <ViewModelInstanceBoolean viewModelPropertyId="7:1" id="102:966">

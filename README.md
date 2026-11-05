@@ -12,10 +12,10 @@ The kit is also on the [Rive Community](https://rive.app/community/files/25701-5
 
 - **Actions:** Button · Button Group · Dropdown
 - **Display:** Accordion · Avatar · Badge · Label
-- **Feedback:** Alert
+- **Feedback:** Alert · Tooltip
 - **Inputs:** Checkbox / Checkbox Group · Radio Option / Radio Group · Slider · Switch / Switch Group
 - **Navigation:** Breadcrumbs · Pagination
-- **Building blocks:** Accordion Item · Breadcrumb Item · List Item · Nav Group · Nav Item · Page Item · Segment · Segmented Control · Showcase Section · Sidebar · Slide · Tile · Toolbar
+- **Building blocks:** Accordion Item · Breadcrumb Item · List Item · Nav Group · Nav Item · Page Item · Segment · Segmented Control · Showcase Section · Sidebar · Slide · Tile · Toolbar · Tooltip Button
 
 Categories and the components in them are sorted A–Z. In the Showcase a category is data: a `ShowcaseSection` (title, tile list; the count is the list length) in `sections`, and a `NavGroup` in the Sidebar's `sections`.
 
@@ -32,13 +32,15 @@ The components carry Rive semantics, so screen readers get a real accessibility 
 | Avatar | `image` | label |
 | Badge, Label | `text` | text |
 | Breadcrumbs | `group` / `link` per item, `text` for the current page | label; item label, "Current page" |
-| Button, Dropdown, Page Item | `button` | label (the page number) |
+| Button, Dropdown, Page Item | `button` | label (the page number); Button also a hint |
 | Button Group, Checkbox Group, Pagination, Switch Group | `group` | group label |
 | Checkbox | `checkbox` | label, checked |
 | List Item | `list` / `listItem` | label |
 | Radio Option / Radio Group | `radioButton` / `radioGroup` | label, selected |
 | Slider | `slider` | label, value |
 | Switch | `switchControl` | label, on/off |
+| Tooltip | `text` | text (left out when its trigger carries it as a hint) |
+| Tooltip Button | `button` | label, hint (the tooltip text) |
 
 Labels are bound to the same view model properties as the visible text, so they stay correct when you change the copy. Check the tree headless:
 
@@ -88,6 +90,17 @@ Previous and next Buttons around up to seven page buttons. Set two numbers and t
 - Up to seven pages are shown as they are. With more, the row keeps the first and last page and three around the current one, with `…` for the gaps: `1 … 4 5 6 … 20`, `1 2 3 4 5 … 20`, `1 … 16 17 18 19 20`.
 - Previous and next step by one and are disabled on the first and last page.
 - Listen to `page` in your app to load that page.
+
+## Tooltip
+
+A small bubble in the inverse theme colours (`_text` background, `_bg` text) with a pointer arrow. It fades and scales in when it opens and never blocks pointer input.
+
+- View model `Tooltip`: `text`, `placement` (`0` top, `1` bottom, `2` left, `3` right: the side of the trigger it sits on; the arrow points back at the trigger), `open`, `a11yHidden`, `theme`.
+- The Tooltip is the bubble only. Rive has no slots, so the host places it next to its trigger and sets `open`: `enter` and `focus` listeners on the trigger set it, `exit` and `blur` clear it.
+- **Tooltip Button** is that pattern, ready to use: a kit Button with a Tooltip. View model `TooltipButton`: `label`, `tooltip`, `placement`, `a11yHidden`, `theme`. Hover or keyboard focus on the Button shows the tooltip.
+- In Tooltip Button the bubble sits in an absolute overlay over the trigger, so it never moves the layout. The overlay's direction follows `placement`; an empty mirror box on the far side keeps the trigger in the middle, so all four sides work without measuring anything.
+- Screen readers: the Button gets the tooltip text as its `hint` (Button has a new `hint` property) and the bubble is hidden from the tree, so the text is read once. A Tooltip on its own is a `text` node.
+- Long text wraps at 240 points.
 
 ## Pointer cursor
 
