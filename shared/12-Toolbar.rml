@@ -3,20 +3,12 @@
         <NestedArtboard artboardId="10:14621" dataBindPathIds="38:815-38:817" name="Theme Driver" id="10:15626">
             <NestedStateMachine animationId="10:2119" id="10:15627"/>
         </NestedArtboard>
-        <LayoutComponent width="1" height="1" styleId="10:2853" name="Divider" id="10:2852">
-            <Fill fillRule="clockwise" id="10:2854">
-                <SolidColor colorValue="FF27272A" id="10:2855">
-                    <DataBindContext sourcePathIds="38:815-38:817-10:7418" propertyKey="37" id="10:7480"/>
-                </SolidColor>
-            </Fill>
-            <LayoutComponentStyle layoutHeightScaleType="fill" widthUnitsValue="auto" id="10:2853"/>
-        </LayoutComponent>
         <Fill fillRule="clockwise" id="10:2115">
             <SolidColor colorValue="FF18181B" id="10:2116">
                 <DataBindContext sourcePathIds="38:815-38:817-10:7406" propertyKey="37" id="10:7481"/>
             </SolidColor>
         </Fill>
-        <LayoutComponentStyle id="10:2117"/>
+        <LayoutComponentStyle flexDirectionValue="rowReverse" id="10:2117"/>
         <LayoutComponent styleId="10:2127" name="Panel" id="10:2126">
             <Fill fillRule="clockwise" id="10:2128">
                 <SolidColor colorValue="FF18181B" id="10:2129">
@@ -40,19 +32,78 @@
                 </Text>
                 <LayoutComponentStyle gapVertical="16" paddingLeft="16" paddingRight="16" paddingTop="16" paddingBottom="20" flexDirectionValue="column" intrinsicallySizedValue="true" layoutWidthScaleType="fill" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="26:615"/>
                 <LayoutComponent styleId="10:7686" name="Group Mode" id="10:7685">
-                    <Text id="10:7687">
-                        <TextStylePaint fontAssetId="0:7" familyName="Inter" styleName="Bold" id="10:7688">
-                            <Fill fillRule="clockwise" id="10:7689">
-                                <SolidColor colorValue="FFA1A1AA" id="10:7690">
-                                    <DataBindContext sourcePathIds="38:815-38:817-10:7426" propertyKey="37" id="10:7791"/>
-                                </SolidColor>
-                            </Fill>
-                            <TextStyleAxis tag="1869640570" axisValue="14" id="10:7691"/>
-                            <TextStyleAxis tag="2003265652" axisValue="700" id="10:7692"/>
-                        </TextStylePaint>
-                        <TextValueRun styleId="10:7688" text="Mode" id="10:7693"/>
-                        <LayoutParticipant layoutWidthScaleType="hug" layoutHeightScaleType="hug" id="10:7694"/>
-                    </Text>
+                    <LayoutComponent styleId="113:12" name="Mode Label" id="113:11">
+                        <LayoutComponent styleId="113:34" name="Tip Overlay" id="113:33">
+                            <LayoutComponent width="240" height="240" styleId="113:36" name="Bubble Area" id="113:35">
+                                <NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="112:188" isStateful="true" name="Tooltip" id="113:41">
+                                    <NestedStateMachine animationId="112:190" id="113:42"/>
+                                    <ViewModelInstance viewModelId="112:1" exports="true" name="Mode Tooltip" id="113:43">
+                                        <ViewModelInstanceString propertyValue="Light or dark surfaces" viewModelPropertyId="112:2" id="113:44"/>
+                                        <ViewModelInstanceNumber propertyValue="2" viewModelPropertyId="112:3" id="113:45"/>
+                                        <ViewModelInstanceBoolean viewModelPropertyId="112:4" id="113:46">
+                                            <DataBindContext sourcePathIds="38:815-113:1" propertyKey="593" nameBased="true" id="113:47"/>
+                                        </ViewModelInstanceBoolean>
+                                        <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="112:5" id="113:48"/>
+                                        <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="112:6" id="113:49"/>
+                                    </ViewModelInstance>
+                                </NestedArtboardLayout>
+                                <LayoutComponentStyle layoutAlignmentType="centerRight" id="113:36"/>
+                            </LayoutComponent>
+                            <LayoutComponent width="100" height="100" styleId="113:38" name="Spacer" id="113:37">
+                                <LayoutComponentStyle widthUnitsValue="percent" heightUnitsValue="percent" id="113:38"/>
+                            </LayoutComponent>
+                            <LayoutComponent width="240" height="240" styleId="113:40" name="Mirror" id="113:39">
+                                <LayoutComponentStyle id="113:40"/>
+                            </LayoutComponent>
+                            <LayoutComponentStyle gapHorizontal="4" gapVertical="4" positionLeftUnitsValue="points" positionRightUnitsValue="points" positionTopUnitsValue="points" positionBottomUnitsValue="points" layoutAlignmentType="center" positionTypeValue="absolute" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="113:34"/>
+                        </LayoutComponent>
+                        <LayoutComponent styleId="113:14" name="Label Hit" id="113:13">
+                            <Text id="10:7687">
+                                <TextStylePaint fontAssetId="0:7" familyName="Inter" styleName="Bold" id="10:7688">
+                                    <Fill fillRule="clockwise" id="10:7689">
+                                        <SolidColor colorValue="FFA1A1AA" id="10:7690">
+                                            <DataBindContext sourcePathIds="38:815-38:817-10:7426" propertyKey="37" id="10:7791"/>
+                                        </SolidColor>
+                                    </Fill>
+                                    <TextStyleAxis tag="1869640570" axisValue="14" id="10:7691"/>
+                                    <TextStyleAxis tag="2003265652" axisValue="700" id="10:7692"/>
+                                </TextStylePaint>
+                                <TextValueRun styleId="10:7688" text="Mode" id="10:7693"/>
+                                <LayoutParticipant layoutWidthScaleType="hug" layoutHeightScaleType="hug" id="10:7694"/>
+                            </Text>
+                            <LayoutComponent width="12" height="12" styleId="113:16" name="Info Icon" id="113:15">
+                                <Node name="Art" id="113:17">
+                                    <Shape x="6" y="6" name="Ring" id="113:18">
+                                        <Ellipse width="10.5" height="10.5" id="113:19"/>
+                                        <Stroke thickness="1.25" id="113:20">
+                                            <SolidColor colorValue="FFA1A1AA" id="113:21">
+                                                <DataBindContext sourcePathIds="38:815-38:817-10:7426" propertyKey="37" nameBased="true" id="113:22"/>
+                                            </SolidColor>
+                                        </Stroke>
+                                    </Shape>
+                                    <Shape x="6" y="3.9000001" name="Dot" id="113:23">
+                                        <Ellipse width="1.6" height="1.6" id="113:24"/>
+                                        <Fill fillRule="clockwise" id="113:25">
+                                            <SolidColor colorValue="FFA1A1AA" id="113:26">
+                                                <DataBindContext sourcePathIds="38:815-38:817-10:7426" propertyKey="37" nameBased="true" id="113:27"/>
+                                            </SolidColor>
+                                        </Fill>
+                                    </Shape>
+                                    <Shape x="6" y="7" name="Stem" id="113:28">
+                                        <Rectangle cornerRadiusTL="0.64999998" width="1.3" height="3.5999999" id="113:29"/>
+                                        <Fill fillRule="clockwise" id="113:30">
+                                            <SolidColor colorValue="FFA1A1AA" id="113:31">
+                                                <DataBindContext sourcePathIds="38:815-38:817-10:7426" propertyKey="37" nameBased="true" id="113:32"/>
+                                            </SolidColor>
+                                        </Fill>
+                                    </Shape>
+                                </Node>
+                                <LayoutComponentStyle id="113:16"/>
+                            </LayoutComponent>
+                            <LayoutComponentStyle gapHorizontal="6" layoutAlignmentType="centerLeft" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="113:14"/>
+                        </LayoutComponent>
+                        <LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="113:12"/>
+                    </LayoutComponent>
                     <NestedArtboardLayout instanceWidthScaleType="fill" instanceHeightScaleType="hug" artboardId="38:370" dataBindPathIds="38:815-38:819" name="Segmented Control" id="38:807">
                         <NestedStateMachine animationId="10:2119" id="38:808"/>
                     </NestedArtboardLayout>
@@ -60,19 +111,78 @@
                 </LayoutComponent>
                 <LayoutComponent styleId="10:2131" name="Group Brand" id="10:2130">
                     <LayoutComponentStyle gapVertical="8" flexDirectionValue="column" intrinsicallySizedValue="true" layoutWidthScaleType="fill" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="10:2131"/>
-                    <Text id="10:2132">
-                        <TextStylePaint fontAssetId="0:7" familyName="Inter" styleName="Bold" id="10:2133">
-                            <Fill fillRule="clockwise" id="10:2134">
-                                <SolidColor colorValue="FFA1A1AA" id="10:2135">
-                                    <DataBindContext sourcePathIds="38:815-38:817-10:7426" propertyKey="37" id="10:7483"/>
-                                </SolidColor>
-                            </Fill>
-                            <TextStyleAxis tag="1869640570" axisValue="14" id="10:2136"/>
-                            <TextStyleAxis tag="2003265652" axisValue="700" id="10:2137"/>
-                        </TextStylePaint>
-                        <TextValueRun styleId="10:2133" text="Brand" id="10:2138"/>
-                        <LayoutParticipant layoutWidthScaleType="hug" layoutHeightScaleType="hug" id="10:2139"/>
-                    </Text>
+                    <LayoutComponent styleId="113:61" name="Brand Label" id="113:60">
+                        <LayoutComponent styleId="113:83" name="Tip Overlay" id="113:82">
+                            <LayoutComponent width="240" height="240" styleId="113:85" name="Bubble Area" id="113:84">
+                                <NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="112:188" isStateful="true" name="Tooltip" id="113:90">
+                                    <NestedStateMachine animationId="112:190" id="113:91"/>
+                                    <ViewModelInstance viewModelId="112:1" exports="true" name="Brand Tooltip" id="113:92">
+                                        <ViewModelInstanceString propertyValue="Accent for every component" viewModelPropertyId="112:2" id="113:93"/>
+                                        <ViewModelInstanceNumber propertyValue="2" viewModelPropertyId="112:3" id="113:94"/>
+                                        <ViewModelInstanceBoolean viewModelPropertyId="112:4" id="113:95">
+                                            <DataBindContext sourcePathIds="38:815-113:2" propertyKey="593" nameBased="true" id="113:96"/>
+                                        </ViewModelInstanceBoolean>
+                                        <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="112:5" id="113:97"/>
+                                        <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="112:6" id="113:98"/>
+                                    </ViewModelInstance>
+                                </NestedArtboardLayout>
+                                <LayoutComponentStyle layoutAlignmentType="centerRight" id="113:85"/>
+                            </LayoutComponent>
+                            <LayoutComponent width="100" height="100" styleId="113:87" name="Spacer" id="113:86">
+                                <LayoutComponentStyle widthUnitsValue="percent" heightUnitsValue="percent" id="113:87"/>
+                            </LayoutComponent>
+                            <LayoutComponent width="240" height="240" styleId="113:89" name="Mirror" id="113:88">
+                                <LayoutComponentStyle id="113:89"/>
+                            </LayoutComponent>
+                            <LayoutComponentStyle gapHorizontal="4" gapVertical="4" positionLeftUnitsValue="points" positionRightUnitsValue="points" positionTopUnitsValue="points" positionBottomUnitsValue="points" layoutAlignmentType="center" positionTypeValue="absolute" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="113:83"/>
+                        </LayoutComponent>
+                        <LayoutComponent styleId="113:63" name="Label Hit" id="113:62">
+                            <Text id="10:2132">
+                                <TextStylePaint fontAssetId="0:7" familyName="Inter" styleName="Bold" id="10:2133">
+                                    <Fill fillRule="clockwise" id="10:2134">
+                                        <SolidColor colorValue="FFA1A1AA" id="10:2135">
+                                            <DataBindContext sourcePathIds="38:815-38:817-10:7426" propertyKey="37" id="10:7483"/>
+                                        </SolidColor>
+                                    </Fill>
+                                    <TextStyleAxis tag="1869640570" axisValue="14" id="10:2136"/>
+                                    <TextStyleAxis tag="2003265652" axisValue="700" id="10:2137"/>
+                                </TextStylePaint>
+                                <TextValueRun styleId="10:2133" text="Brand" id="10:2138"/>
+                                <LayoutParticipant layoutWidthScaleType="hug" layoutHeightScaleType="hug" id="10:2139"/>
+                            </Text>
+                            <LayoutComponent width="12" height="12" styleId="113:65" name="Info Icon" id="113:64">
+                                <Node name="Art" id="113:66">
+                                    <Shape x="6" y="6" name="Ring" id="113:67">
+                                        <Ellipse width="10.5" height="10.5" id="113:68"/>
+                                        <Stroke thickness="1.25" id="113:69">
+                                            <SolidColor colorValue="FFA1A1AA" id="113:70">
+                                                <DataBindContext sourcePathIds="38:815-38:817-10:7426" propertyKey="37" nameBased="true" id="113:71"/>
+                                            </SolidColor>
+                                        </Stroke>
+                                    </Shape>
+                                    <Shape x="6" y="3.9000001" name="Dot" id="113:72">
+                                        <Ellipse width="1.6" height="1.6" id="113:73"/>
+                                        <Fill fillRule="clockwise" id="113:74">
+                                            <SolidColor colorValue="FFA1A1AA" id="113:75">
+                                                <DataBindContext sourcePathIds="38:815-38:817-10:7426" propertyKey="37" nameBased="true" id="113:76"/>
+                                            </SolidColor>
+                                        </Fill>
+                                    </Shape>
+                                    <Shape x="6" y="7" name="Stem" id="113:77">
+                                        <Rectangle cornerRadiusTL="0.64999998" width="1.3" height="3.5999999" id="113:78"/>
+                                        <Fill fillRule="clockwise" id="113:79">
+                                            <SolidColor colorValue="FFA1A1AA" id="113:80">
+                                                <DataBindContext sourcePathIds="38:815-38:817-10:7426" propertyKey="37" nameBased="true" id="113:81"/>
+                                            </SolidColor>
+                                        </Fill>
+                                    </Shape>
+                                </Node>
+                                <LayoutComponentStyle id="113:65"/>
+                            </LayoutComponent>
+                            <LayoutComponentStyle gapHorizontal="6" layoutAlignmentType="centerLeft" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="113:63"/>
+                        </LayoutComponent>
+                        <LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="113:61"/>
+                    </LayoutComponent>
                     <LayoutComponent styleId="10:2141" name="Swatches" id="10:2140">
                         <LayoutComponent width="28" height="28" styleId="10:2143" name="Swatch Blue" id="10:2142">
                             <LayoutComponent width="18" height="18" styleId="10:2155" name="Dot Blue" id="10:2154">
@@ -303,38 +413,156 @@
                     </LayoutComponent>
                 </LayoutComponent>
                 <LayoutComponent styleId="10:2245" name="Group Roundness" id="10:2244">
-                    <Text id="10:2246">
-                        <TextStylePaint fontAssetId="0:7" familyName="Inter" styleName="Bold" id="10:2247">
-                            <Fill fillRule="clockwise" id="10:2248">
-                                <SolidColor colorValue="FFA1A1AA" id="10:2249">
-                                    <DataBindContext sourcePathIds="38:815-38:817-10:7426" propertyKey="37" id="10:7484"/>
-                                </SolidColor>
-                            </Fill>
-                            <TextStyleAxis tag="1869640570" axisValue="14" id="10:2250"/>
-                            <TextStyleAxis tag="2003265652" axisValue="700" id="10:2251"/>
-                        </TextStylePaint>
-                        <TextValueRun styleId="10:2247" text="Roundness" id="10:2252"/>
-                        <LayoutParticipant layoutWidthScaleType="hug" layoutHeightScaleType="hug" id="10:2253"/>
-                    </Text>
+                    <LayoutComponent styleId="113:110" name="Roundness Label" id="113:109">
+                        <LayoutComponent styleId="113:132" name="Tip Overlay" id="113:131">
+                            <LayoutComponent width="240" height="240" styleId="113:134" name="Bubble Area" id="113:133">
+                                <NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="112:188" isStateful="true" name="Tooltip" id="113:139">
+                                    <NestedStateMachine animationId="112:190" id="113:140"/>
+                                    <ViewModelInstance viewModelId="112:1" exports="true" name="Roundness Tooltip" id="113:141">
+                                        <ViewModelInstanceString propertyValue="Corner radius of the kit" viewModelPropertyId="112:2" id="113:142"/>
+                                        <ViewModelInstanceNumber propertyValue="2" viewModelPropertyId="112:3" id="113:143"/>
+                                        <ViewModelInstanceBoolean viewModelPropertyId="112:4" id="113:144">
+                                            <DataBindContext sourcePathIds="38:815-113:3" propertyKey="593" nameBased="true" id="113:145"/>
+                                        </ViewModelInstanceBoolean>
+                                        <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="112:5" id="113:146"/>
+                                        <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="112:6" id="113:147"/>
+                                    </ViewModelInstance>
+                                </NestedArtboardLayout>
+                                <LayoutComponentStyle layoutAlignmentType="centerRight" id="113:134"/>
+                            </LayoutComponent>
+                            <LayoutComponent width="100" height="100" styleId="113:136" name="Spacer" id="113:135">
+                                <LayoutComponentStyle widthUnitsValue="percent" heightUnitsValue="percent" id="113:136"/>
+                            </LayoutComponent>
+                            <LayoutComponent width="240" height="240" styleId="113:138" name="Mirror" id="113:137">
+                                <LayoutComponentStyle id="113:138"/>
+                            </LayoutComponent>
+                            <LayoutComponentStyle gapHorizontal="4" gapVertical="4" positionLeftUnitsValue="points" positionRightUnitsValue="points" positionTopUnitsValue="points" positionBottomUnitsValue="points" layoutAlignmentType="center" positionTypeValue="absolute" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="113:132"/>
+                        </LayoutComponent>
+                        <LayoutComponent styleId="113:112" name="Label Hit" id="113:111">
+                            <Text id="10:2246">
+                                <TextStylePaint fontAssetId="0:7" familyName="Inter" styleName="Bold" id="10:2247">
+                                    <Fill fillRule="clockwise" id="10:2248">
+                                        <SolidColor colorValue="FFA1A1AA" id="10:2249">
+                                            <DataBindContext sourcePathIds="38:815-38:817-10:7426" propertyKey="37" id="10:7484"/>
+                                        </SolidColor>
+                                    </Fill>
+                                    <TextStyleAxis tag="1869640570" axisValue="14" id="10:2250"/>
+                                    <TextStyleAxis tag="2003265652" axisValue="700" id="10:2251"/>
+                                </TextStylePaint>
+                                <TextValueRun styleId="10:2247" text="Roundness" id="10:2252"/>
+                                <LayoutParticipant layoutWidthScaleType="hug" layoutHeightScaleType="hug" id="10:2253"/>
+                            </Text>
+                            <LayoutComponent width="12" height="12" styleId="113:114" name="Info Icon" id="113:113">
+                                <Node name="Art" id="113:115">
+                                    <Shape x="6" y="6" name="Ring" id="113:116">
+                                        <Ellipse width="10.5" height="10.5" id="113:117"/>
+                                        <Stroke thickness="1.25" id="113:118">
+                                            <SolidColor colorValue="FFA1A1AA" id="113:119">
+                                                <DataBindContext sourcePathIds="38:815-38:817-10:7426" propertyKey="37" nameBased="true" id="113:120"/>
+                                            </SolidColor>
+                                        </Stroke>
+                                    </Shape>
+                                    <Shape x="6" y="3.9000001" name="Dot" id="113:121">
+                                        <Ellipse width="1.6" height="1.6" id="113:122"/>
+                                        <Fill fillRule="clockwise" id="113:123">
+                                            <SolidColor colorValue="FFA1A1AA" id="113:124">
+                                                <DataBindContext sourcePathIds="38:815-38:817-10:7426" propertyKey="37" nameBased="true" id="113:125"/>
+                                            </SolidColor>
+                                        </Fill>
+                                    </Shape>
+                                    <Shape x="6" y="7" name="Stem" id="113:126">
+                                        <Rectangle cornerRadiusTL="0.64999998" width="1.3" height="3.5999999" id="113:127"/>
+                                        <Fill fillRule="clockwise" id="113:128">
+                                            <SolidColor colorValue="FFA1A1AA" id="113:129">
+                                                <DataBindContext sourcePathIds="38:815-38:817-10:7426" propertyKey="37" nameBased="true" id="113:130"/>
+                                            </SolidColor>
+                                        </Fill>
+                                    </Shape>
+                                </Node>
+                                <LayoutComponentStyle id="113:114"/>
+                            </LayoutComponent>
+                            <LayoutComponentStyle gapHorizontal="6" layoutAlignmentType="centerLeft" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="113:112"/>
+                        </LayoutComponent>
+                        <LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="113:110"/>
+                    </LayoutComponent>
                     <NestedArtboardLayout instanceWidthScaleType="fill" instanceHeightScaleType="hug" artboardId="38:370" dataBindPathIds="38:815-38:821" name="Segmented Control" id="38:809">
                         <NestedStateMachine animationId="10:2119" id="38:810"/>
                     </NestedArtboardLayout>
                     <LayoutComponentStyle gapVertical="8" flexDirectionValue="column" intrinsicallySizedValue="true" layoutWidthScaleType="fill" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="10:2245"/>
                 </LayoutComponent>
                 <LayoutComponent styleId="10:2349" name="Group Shadow" id="10:2348">
-                    <Text id="10:2350">
-                        <TextStylePaint fontAssetId="0:7" familyName="Inter" styleName="Bold" id="10:2351">
-                            <Fill fillRule="clockwise" id="10:2352">
-                                <SolidColor colorValue="FFA1A1AA" id="10:2353">
-                                    <DataBindContext sourcePathIds="38:815-38:817-10:7426" propertyKey="37" id="10:7485"/>
-                                </SolidColor>
-                            </Fill>
-                            <TextStyleAxis tag="1869640570" axisValue="14" id="10:2354"/>
-                            <TextStyleAxis tag="2003265652" axisValue="700" id="10:2355"/>
-                        </TextStylePaint>
-                        <TextValueRun styleId="10:2351" text="Shadow" id="10:2356"/>
-                        <LayoutParticipant layoutWidthScaleType="hug" layoutHeightScaleType="hug" id="10:2357"/>
-                    </Text>
+                    <LayoutComponent styleId="113:159" name="Shadow Label" id="113:158">
+                        <LayoutComponent styleId="113:181" name="Tip Overlay" id="113:180">
+                            <LayoutComponent width="240" height="240" styleId="113:183" name="Bubble Area" id="113:182">
+                                <NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="112:188" isStateful="true" name="Tooltip" id="113:188">
+                                    <NestedStateMachine animationId="112:190" id="113:189"/>
+                                    <ViewModelInstance viewModelId="112:1" exports="true" name="Shadow Tooltip" id="113:190">
+                                        <ViewModelInstanceString propertyValue="Depth of cards and menus" viewModelPropertyId="112:2" id="113:191"/>
+                                        <ViewModelInstanceNumber propertyValue="2" viewModelPropertyId="112:3" id="113:192"/>
+                                        <ViewModelInstanceBoolean viewModelPropertyId="112:4" id="113:193">
+                                            <DataBindContext sourcePathIds="38:815-113:4" propertyKey="593" nameBased="true" id="113:194"/>
+                                        </ViewModelInstanceBoolean>
+                                        <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="112:5" id="113:195"/>
+                                        <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="112:6" id="113:196"/>
+                                    </ViewModelInstance>
+                                </NestedArtboardLayout>
+                                <LayoutComponentStyle layoutAlignmentType="centerRight" id="113:183"/>
+                            </LayoutComponent>
+                            <LayoutComponent width="100" height="100" styleId="113:185" name="Spacer" id="113:184">
+                                <LayoutComponentStyle widthUnitsValue="percent" heightUnitsValue="percent" id="113:185"/>
+                            </LayoutComponent>
+                            <LayoutComponent width="240" height="240" styleId="113:187" name="Mirror" id="113:186">
+                                <LayoutComponentStyle id="113:187"/>
+                            </LayoutComponent>
+                            <LayoutComponentStyle gapHorizontal="4" gapVertical="4" positionLeftUnitsValue="points" positionRightUnitsValue="points" positionTopUnitsValue="points" positionBottomUnitsValue="points" layoutAlignmentType="center" positionTypeValue="absolute" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="113:181"/>
+                        </LayoutComponent>
+                        <LayoutComponent styleId="113:161" name="Label Hit" id="113:160">
+                            <Text id="10:2350">
+                                <TextStylePaint fontAssetId="0:7" familyName="Inter" styleName="Bold" id="10:2351">
+                                    <Fill fillRule="clockwise" id="10:2352">
+                                        <SolidColor colorValue="FFA1A1AA" id="10:2353">
+                                            <DataBindContext sourcePathIds="38:815-38:817-10:7426" propertyKey="37" id="10:7485"/>
+                                        </SolidColor>
+                                    </Fill>
+                                    <TextStyleAxis tag="1869640570" axisValue="14" id="10:2354"/>
+                                    <TextStyleAxis tag="2003265652" axisValue="700" id="10:2355"/>
+                                </TextStylePaint>
+                                <TextValueRun styleId="10:2351" text="Shadow" id="10:2356"/>
+                                <LayoutParticipant layoutWidthScaleType="hug" layoutHeightScaleType="hug" id="10:2357"/>
+                            </Text>
+                            <LayoutComponent width="12" height="12" styleId="113:163" name="Info Icon" id="113:162">
+                                <Node name="Art" id="113:164">
+                                    <Shape x="6" y="6" name="Ring" id="113:165">
+                                        <Ellipse width="10.5" height="10.5" id="113:166"/>
+                                        <Stroke thickness="1.25" id="113:167">
+                                            <SolidColor colorValue="FFA1A1AA" id="113:168">
+                                                <DataBindContext sourcePathIds="38:815-38:817-10:7426" propertyKey="37" nameBased="true" id="113:169"/>
+                                            </SolidColor>
+                                        </Stroke>
+                                    </Shape>
+                                    <Shape x="6" y="3.9000001" name="Dot" id="113:170">
+                                        <Ellipse width="1.6" height="1.6" id="113:171"/>
+                                        <Fill fillRule="clockwise" id="113:172">
+                                            <SolidColor colorValue="FFA1A1AA" id="113:173">
+                                                <DataBindContext sourcePathIds="38:815-38:817-10:7426" propertyKey="37" nameBased="true" id="113:174"/>
+                                            </SolidColor>
+                                        </Fill>
+                                    </Shape>
+                                    <Shape x="6" y="7" name="Stem" id="113:175">
+                                        <Rectangle cornerRadiusTL="0.64999998" width="1.3" height="3.5999999" id="113:176"/>
+                                        <Fill fillRule="clockwise" id="113:177">
+                                            <SolidColor colorValue="FFA1A1AA" id="113:178">
+                                                <DataBindContext sourcePathIds="38:815-38:817-10:7426" propertyKey="37" nameBased="true" id="113:179"/>
+                                            </SolidColor>
+                                        </Fill>
+                                    </Shape>
+                                </Node>
+                                <LayoutComponentStyle id="113:163"/>
+                            </LayoutComponent>
+                            <LayoutComponentStyle gapHorizontal="6" layoutAlignmentType="centerLeft" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="113:161"/>
+                        </LayoutComponent>
+                        <LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="113:159"/>
+                    </LayoutComponent>
                     <NestedArtboardLayout instanceWidthScaleType="fill" instanceHeightScaleType="hug" artboardId="38:370" dataBindPathIds="38:815-38:823" name="Segmented Control" id="38:811">
                         <NestedStateMachine animationId="10:2119" id="38:812"/>
                     </NestedArtboardLayout>
@@ -365,19 +593,78 @@
                 </Text>
                 <LayoutComponentStyle gapVertical="16" paddingLeft="16" paddingRight="16" paddingTop="16" paddingBottom="20" flexDirectionValue="column" intrinsicallySizedValue="true" layoutWidthScaleType="fill" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="26:621"/>
                 <LayoutComponent styleId="15:450" name="Group State" id="15:449">
-                    <Text id="15:451">
-                        <TextStylePaint fontAssetId="0:7" familyName="Inter" styleName="Bold" id="15:452">
-                            <Fill fillRule="clockwise" id="15:453">
-                                <SolidColor colorValue="FFA1A1AA" id="15:454">
-                                    <DataBindContext sourcePathIds="38:815-38:817-10:7426" propertyKey="37" nameBased="true" id="15:542"/>
-                                </SolidColor>
-                            </Fill>
-                            <TextStyleAxis tag="1869640570" axisValue="14" id="15:455"/>
-                            <TextStyleAxis tag="2003265652" axisValue="700" id="15:456"/>
-                        </TextStylePaint>
-                        <TextValueRun styleId="15:452" text="State" id="15:457"/>
-                        <LayoutParticipant layoutWidthScaleType="hug" layoutHeightScaleType="hug" id="15:458"/>
-                    </Text>
+                    <LayoutComponent styleId="113:208" name="State Label" id="113:207">
+                        <LayoutComponent styleId="113:230" name="Tip Overlay" id="113:229">
+                            <LayoutComponent width="240" height="240" styleId="113:232" name="Bubble Area" id="113:231">
+                                <NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="112:188" isStateful="true" name="Tooltip" id="113:237">
+                                    <NestedStateMachine animationId="112:190" id="113:238"/>
+                                    <ViewModelInstance viewModelId="112:1" exports="true" name="State Tooltip" id="113:239">
+                                        <ViewModelInstanceString propertyValue="Preview controls disabled" viewModelPropertyId="112:2" id="113:240"/>
+                                        <ViewModelInstanceNumber propertyValue="2" viewModelPropertyId="112:3" id="113:241"/>
+                                        <ViewModelInstanceBoolean viewModelPropertyId="112:4" id="113:242">
+                                            <DataBindContext sourcePathIds="38:815-113:5" propertyKey="593" nameBased="true" id="113:243"/>
+                                        </ViewModelInstanceBoolean>
+                                        <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="112:5" id="113:244"/>
+                                        <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="112:6" id="113:245"/>
+                                    </ViewModelInstance>
+                                </NestedArtboardLayout>
+                                <LayoutComponentStyle layoutAlignmentType="centerRight" id="113:232"/>
+                            </LayoutComponent>
+                            <LayoutComponent width="100" height="100" styleId="113:234" name="Spacer" id="113:233">
+                                <LayoutComponentStyle widthUnitsValue="percent" heightUnitsValue="percent" id="113:234"/>
+                            </LayoutComponent>
+                            <LayoutComponent width="240" height="240" styleId="113:236" name="Mirror" id="113:235">
+                                <LayoutComponentStyle id="113:236"/>
+                            </LayoutComponent>
+                            <LayoutComponentStyle gapHorizontal="4" gapVertical="4" positionLeftUnitsValue="points" positionRightUnitsValue="points" positionTopUnitsValue="points" positionBottomUnitsValue="points" layoutAlignmentType="center" positionTypeValue="absolute" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="113:230"/>
+                        </LayoutComponent>
+                        <LayoutComponent styleId="113:210" name="Label Hit" id="113:209">
+                            <Text id="15:451">
+                                <TextStylePaint fontAssetId="0:7" familyName="Inter" styleName="Bold" id="15:452">
+                                    <Fill fillRule="clockwise" id="15:453">
+                                        <SolidColor colorValue="FFA1A1AA" id="15:454">
+                                            <DataBindContext sourcePathIds="38:815-38:817-10:7426" propertyKey="37" nameBased="true" id="15:542"/>
+                                        </SolidColor>
+                                    </Fill>
+                                    <TextStyleAxis tag="1869640570" axisValue="14" id="15:455"/>
+                                    <TextStyleAxis tag="2003265652" axisValue="700" id="15:456"/>
+                                </TextStylePaint>
+                                <TextValueRun styleId="15:452" text="State" id="15:457"/>
+                                <LayoutParticipant layoutWidthScaleType="hug" layoutHeightScaleType="hug" id="15:458"/>
+                            </Text>
+                            <LayoutComponent width="12" height="12" styleId="113:212" name="Info Icon" id="113:211">
+                                <Node name="Art" id="113:213">
+                                    <Shape x="6" y="6" name="Ring" id="113:214">
+                                        <Ellipse width="10.5" height="10.5" id="113:215"/>
+                                        <Stroke thickness="1.25" id="113:216">
+                                            <SolidColor colorValue="FFA1A1AA" id="113:217">
+                                                <DataBindContext sourcePathIds="38:815-38:817-10:7426" propertyKey="37" nameBased="true" id="113:218"/>
+                                            </SolidColor>
+                                        </Stroke>
+                                    </Shape>
+                                    <Shape x="6" y="3.9000001" name="Dot" id="113:219">
+                                        <Ellipse width="1.6" height="1.6" id="113:220"/>
+                                        <Fill fillRule="clockwise" id="113:221">
+                                            <SolidColor colorValue="FFA1A1AA" id="113:222">
+                                                <DataBindContext sourcePathIds="38:815-38:817-10:7426" propertyKey="37" nameBased="true" id="113:223"/>
+                                            </SolidColor>
+                                        </Fill>
+                                    </Shape>
+                                    <Shape x="6" y="7" name="Stem" id="113:224">
+                                        <Rectangle cornerRadiusTL="0.64999998" width="1.3" height="3.5999999" id="113:225"/>
+                                        <Fill fillRule="clockwise" id="113:226">
+                                            <SolidColor colorValue="FFA1A1AA" id="113:227">
+                                                <DataBindContext sourcePathIds="38:815-38:817-10:7426" propertyKey="37" nameBased="true" id="113:228"/>
+                                            </SolidColor>
+                                        </Fill>
+                                    </Shape>
+                                </Node>
+                                <LayoutComponentStyle id="113:212"/>
+                            </LayoutComponent>
+                            <LayoutComponentStyle gapHorizontal="6" layoutAlignmentType="centerLeft" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="113:210"/>
+                        </LayoutComponent>
+                        <LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="113:208"/>
+                    </LayoutComponent>
                     <NestedArtboardLayout instanceWidthScaleType="fill" instanceHeightScaleType="hug" artboardId="38:370" dataBindPathIds="38:815-38:825" name="Segmented Control" id="38:813">
                         <NestedStateMachine animationId="10:2119" id="38:814"/>
                     </NestedArtboardLayout>
@@ -385,7 +672,95 @@
                 </LayoutComponent>
             </LayoutComponent>
         </LayoutComponent>
+        <LayoutComponent width="1" height="1" styleId="10:2853" name="Divider" id="10:2852">
+            <Fill fillRule="clockwise" id="10:2854">
+                <SolidColor colorValue="FF27272A" id="10:2855">
+                    <DataBindContext sourcePathIds="38:815-38:817-10:7418" propertyKey="37" id="10:7480"/>
+                </SolidColor>
+            </Fill>
+            <LayoutComponentStyle layoutHeightScaleType="fill" widthUnitsValue="auto" id="10:2853"/>
+        </LayoutComponent>
         <StateMachine name="State Machine 1" id="10:2119">
+            <StateMachineListener targetId="113:13" name="Mode Tip Off" id="113:50">
+                <ListenerInputType listenerTypeValue="exit" id="113:51"/>
+                <ListenerViewModelChange id="113:52">
+                    <BindablePropertyBoolean id="113:53">
+                        <DataBindContext sourcePathIds="38:815-113:1" propertyKey="634" direction="true" id="113:54"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListener targetId="113:13" name="Mode Tip On" id="113:55">
+                <ListenerInputType id="113:56"/>
+                <ListenerViewModelChange id="113:57">
+                    <BindablePropertyBoolean propertyValue="true" id="113:58">
+                        <DataBindContext sourcePathIds="38:815-113:1" propertyKey="634" direction="true" id="113:59"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListener targetId="113:62" name="Brand Tip Off" id="113:99">
+                <ListenerInputType listenerTypeValue="exit" id="113:100"/>
+                <ListenerViewModelChange id="113:101">
+                    <BindablePropertyBoolean id="113:102">
+                        <DataBindContext sourcePathIds="38:815-113:2" propertyKey="634" direction="true" id="113:103"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListener targetId="113:62" name="Brand Tip On" id="113:104">
+                <ListenerInputType id="113:105"/>
+                <ListenerViewModelChange id="113:106">
+                    <BindablePropertyBoolean propertyValue="true" id="113:107">
+                        <DataBindContext sourcePathIds="38:815-113:2" propertyKey="634" direction="true" id="113:108"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListener targetId="113:111" name="Roundness Tip Off" id="113:148">
+                <ListenerInputType listenerTypeValue="exit" id="113:149"/>
+                <ListenerViewModelChange id="113:150">
+                    <BindablePropertyBoolean id="113:151">
+                        <DataBindContext sourcePathIds="38:815-113:3" propertyKey="634" direction="true" id="113:152"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListener targetId="113:111" name="Roundness Tip On" id="113:153">
+                <ListenerInputType id="113:154"/>
+                <ListenerViewModelChange id="113:155">
+                    <BindablePropertyBoolean propertyValue="true" id="113:156">
+                        <DataBindContext sourcePathIds="38:815-113:3" propertyKey="634" direction="true" id="113:157"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListener targetId="113:160" name="Shadow Tip Off" id="113:197">
+                <ListenerInputType listenerTypeValue="exit" id="113:198"/>
+                <ListenerViewModelChange id="113:199">
+                    <BindablePropertyBoolean id="113:200">
+                        <DataBindContext sourcePathIds="38:815-113:4" propertyKey="634" direction="true" id="113:201"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListener targetId="113:160" name="Shadow Tip On" id="113:202">
+                <ListenerInputType id="113:203"/>
+                <ListenerViewModelChange id="113:204">
+                    <BindablePropertyBoolean propertyValue="true" id="113:205">
+                        <DataBindContext sourcePathIds="38:815-113:4" propertyKey="634" direction="true" id="113:206"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListener targetId="113:209" name="State Tip Off" id="113:246">
+                <ListenerInputType listenerTypeValue="exit" id="113:247"/>
+                <ListenerViewModelChange id="113:248">
+                    <BindablePropertyBoolean id="113:249">
+                        <DataBindContext sourcePathIds="38:815-113:5" propertyKey="634" direction="true" id="113:250"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListener targetId="113:209" name="State Tip On" id="113:251">
+                <ListenerInputType id="113:252"/>
+                <ListenerViewModelChange id="113:253">
+                    <BindablePropertyBoolean propertyValue="true" id="113:254">
+                        <DataBindContext sourcePathIds="38:815-113:5" propertyKey="634" direction="true" id="113:255"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
             <StateMachineListener targetId="10:2227" name="Cursor Off Zinc" id="63:450">
                 <ListenerInputType listenerTypeValue="exit" id="63:451"/>
                 <ListenerViewModelChange id="63:452">

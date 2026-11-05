@@ -1,13 +1,13 @@
 <Rive version="1" kind="fragment">
     <Artboard defaultStateMachineId="10:115" viewModelId="10:84" viewModelInstanceId="10:5260" includeInExport="false" spaceId="1:5601" width="1440" height="1024" styleId="10:113" x="-1640" name="Showcase" id="10:110">
         <Image assetId="42:629" x="720" y="512" opacity="0" name="Cover (thumbnail only)" id="10:15633"/>
-        <LayoutComponent styleId="42:464" name="Sidebar Slot" id="42:463">
-            <LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="42:464">
-                <DataBindContext sourcePathIds="10:84-42:366" propertyKey="596" nameBased="true" converterId="9:90" id="42:467"/>
+        <LayoutComponent styleId="42:466" name="Toolbar Slot" id="42:465">
+            <LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="42:466">
+                <DataBindContext sourcePathIds="10:84-42:368" propertyKey="596" nameBased="true" converterId="9:90" id="42:468"/>
             </LayoutComponentStyle>
-            <NestedArtboardLayout instanceWidth="240" instanceHeightScaleType="fill" artboardId="42:164" dataBindPathIds="10:84-42:352" name="Sidebar" id="42:350">
-                <NestedStateMachine animationId="10:115" id="42:351"/>
-                <DataBindContext sourcePathIds="10:84-42:366" propertyKey="663" nameBased="true" converterId="42:481" id="42:377"/>
+            <NestedArtboardLayout instanceWidth="240" instanceHeightScaleType="fill" artboardId="10:2114" dataBindPathIds="10:84-39:833" name="Toolbar" id="10:2848">
+                <NestedStateMachine animationId="10:115" id="10:2849"/>
+                <DataBindContext sourcePathIds="10:84-42:368" propertyKey="663" nameBased="true" converterId="42:481" id="42:378"/>
             </NestedArtboardLayout>
         </LayoutComponent>
         <LayoutComponent styleId="42:556" name="Main" id="42:555">
@@ -190,143 +190,197 @@
                 </LayoutComponent>
                 <LayoutComponent styleId="42:568" name="Bottom Row" id="42:567">
                     <LayoutComponentStyle paddingLeft="8" paddingRight="8" paddingTop="5" paddingBottom="5" layoutAlignmentType="spaceBetweenCenter" intrinsicallySizedValue="true" layoutWidthScaleType="fill" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="42:568"/>
-                    <LayoutComponent width="36" height="30" styleId="42:390" name="Toggle Left" id="42:389">
-                        <LayoutComponent styleId="42:606" name="Toggle Left Pad" id="42:605">
-                            <LayoutComponent width="16" height="16" styleId="42:392" name="Left Icon" id="42:391">
-                                <Shape x="8" y="8" name="Panel Left" id="42:409">
-                                    <PointsPath isClosed="true" id="42:410">
-                                        <CubicDetachedVertex inRotation="3.1415927" inDistance="1.3807499" x="-4" y="-5.5" id="42:411"/>
-                                        <CubicDetachedVertex outDistance="1.3807499" x="4" y="-5.5" id="42:412"/>
-                                        <CubicDetachedVertex inRotation="-1.5707964" inDistance="1.3807499" x="6.5" y="-3" id="42:413"/>
-                                        <CubicDetachedVertex outRotation="1.5707964" outDistance="1.3807499" x="6.5" y="3" id="42:414"/>
-                                        <CubicDetachedVertex inDistance="1.3807499" x="4" y="5.5" id="42:415"/>
-                                        <CubicDetachedVertex outRotation="3.1415927" outDistance="1.3807499" x="-4" y="5.5" id="42:416"/>
-                                        <CubicDetachedVertex inRotation="1.5707964" inDistance="1.3807499" x="-6.5" y="3" id="42:417"/>
-                                        <CubicDetachedVertex outRotation="-1.5707964" outDistance="1.3807499" x="-6.5" y="-3" id="42:418"/>
-                                    </PointsPath>
-                                    <PointsPath id="42:419">
-                                        <StraightVertex x="-2.2" y="-5.5" id="42:420"/>
-                                        <StraightVertex x="-2.2" y="5.5" id="42:421"/>
-                                    </PointsPath>
-                                    <Stroke thickness="1.4" id="42:422">
-                                        <SolidColor colorValue="FFFAFAFA" id="42:423">
-                                            <DataBindContext sourcePathIds="10:84-10:2850-10:7422" propertyKey="37" nameBased="true" id="42:447"/>
-                                        </SolidColor>
-                                    </Stroke>
-                                </Shape>
-                                <GridItemPlacement id="42:393"/>
-                                <LayoutComponentStyle id="42:392"/>
+                    <LayoutComponent styleId="113:257" name="Components Anchor" id="113:256">
+                        <LayoutComponent styleId="113:259" name="Tip Overlay" id="113:258">
+                            <LayoutComponent width="240" height="240" styleId="113:261" name="Bubble Area" id="113:260">
+                                <NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="112:188" isStateful="true" name="Tooltip" id="113:266">
+                                    <NestedStateMachine animationId="112:190" id="113:267"/>
+                                    <ViewModelInstance viewModelId="112:1" exports="true" name="Components Tooltip" id="113:268">
+                                        <ViewModelInstanceString propertyValue="Show or hide the component list" viewModelPropertyId="112:2" id="113:269"/>
+                                        <ViewModelInstanceNumber propertyValue="3" viewModelPropertyId="112:3" id="113:270"/>
+                                        <ViewModelInstanceBoolean viewModelPropertyId="112:4" id="113:271">
+                                            <DataBindContext sourcePathIds="10:84-70:470" propertyKey="593" nameBased="true" id="113:272"/>
+                                        </ViewModelInstanceBoolean>
+                                        <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="112:5" id="113:273"/>
+                                        <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="112:6" id="113:274"/>
+                                    </ViewModelInstance>
+                                </NestedArtboardLayout>
+                                <LayoutComponentStyle layoutAlignmentType="centerLeft" id="113:261"/>
                             </LayoutComponent>
-                            <GridItemPlacement id="42:607"/>
-                            <Text id="42:608">
-                                <TextStylePaint fontAssetId="0:7" familyName="Inter" styleName="Regular" id="42:609">
-                                    <Fill fillRule="clockwise" id="42:610">
-                                        <SolidColor colorValue="FFA1A1AA" id="42:611">
-                                            <DataBindContext sourcePathIds="10:84-10:2850-10:7424" propertyKey="37" nameBased="true" id="42:627"/>
-                                        </SolidColor>
-                                    </Fill>
-                                    <TextStyleAxis tag="1869640570" axisValue="14" id="42:612"/>
-                                    <TextStyleAxis tag="2003265652" axisValue="500" id="42:613"/>
-                                </TextStylePaint>
-                                <TextValueRun styleId="42:609" text="Components" id="42:614"/>
-                                <LayoutParticipant layoutWidthScaleType="hug" layoutHeightScaleType="hug" id="42:615"/>
-                            </Text>
-                            <LayoutComponentStyle gapHorizontal="6" paddingLeft="8" paddingRight="10" paddingTop="4" paddingBottom="4" layoutAlignmentType="center" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="42:606"/>
+                            <LayoutComponent width="100" height="100" styleId="113:263" name="Spacer" id="113:262">
+                                <LayoutComponentStyle widthUnitsValue="percent" heightUnitsValue="percent" id="113:263"/>
+                            </LayoutComponent>
+                            <LayoutComponent width="240" height="240" styleId="113:265" name="Mirror" id="113:264">
+                                <LayoutComponentStyle id="113:265"/>
+                            </LayoutComponent>
+                            <LayoutComponentStyle gapHorizontal="4" gapVertical="4" positionLeftUnitsValue="points" positionRightUnitsValue="points" positionTopUnitsValue="points" positionBottomUnitsValue="points" layoutAlignmentType="center" positionTypeValue="absolute" flexDirectionValue="rowReverse" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="113:259"/>
                         </LayoutComponent>
-                        <LayoutComponentStyle layoutAlignmentType="center" intrinsicallySizedValue="true" layoutTypeValue="stack" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="42:390"/>
-                        <LayoutComponent styleId="70:475" opacity="0" name="Left Hover" id="70:474">
-                            <Fill fillRule="clockwise" id="70:476">
-                                <SolidColor colorValue="FF3F3F46" id="70:477">
-                                    <DataBindContext sourcePathIds="10:84-10:2850-10:7422" propertyKey="37" nameBased="true" id="70:486"/>
-                                </SolidColor>
-                            </Fill>
-                            <GridItemPlacement id="70:478"/>
-                            <LayoutComponentStyle cornerRadiusTL="7" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="70:475">
-                                <DataBindContext sourcePathIds="10:84-10:2850-10:2086" propertyKey="640" nameBased="true" converterId="10:6840" id="70:485"/>
-                            </LayoutComponentStyle>
-                            <DataBindContext sourcePathIds="10:84-70:470" propertyKey="18" nameBased="true" converterId="70:510" id="70:484"/>
+                        <LayoutComponent width="36" height="30" styleId="42:390" name="Toggle Left" id="42:389">
+                            <LayoutComponent styleId="42:606" name="Toggle Left Pad" id="42:605">
+                                <LayoutComponent width="16" height="16" styleId="42:392" name="Left Icon" id="42:391">
+                                    <Shape x="8" y="8" name="Panel Left" id="42:409">
+                                        <PointsPath isClosed="true" id="42:410">
+                                            <CubicDetachedVertex inRotation="3.1415927" inDistance="1.3807499" x="-4" y="-5.5" id="42:411"/>
+                                            <CubicDetachedVertex outDistance="1.3807499" x="4" y="-5.5" id="42:412"/>
+                                            <CubicDetachedVertex inRotation="-1.5707964" inDistance="1.3807499" x="6.5" y="-3" id="42:413"/>
+                                            <CubicDetachedVertex outRotation="1.5707964" outDistance="1.3807499" x="6.5" y="3" id="42:414"/>
+                                            <CubicDetachedVertex inDistance="1.3807499" x="4" y="5.5" id="42:415"/>
+                                            <CubicDetachedVertex outRotation="3.1415927" outDistance="1.3807499" x="-4" y="5.5" id="42:416"/>
+                                            <CubicDetachedVertex inRotation="1.5707964" inDistance="1.3807499" x="-6.5" y="3" id="42:417"/>
+                                            <CubicDetachedVertex outRotation="-1.5707964" outDistance="1.3807499" x="-6.5" y="-3" id="42:418"/>
+                                        </PointsPath>
+                                        <PointsPath id="42:419">
+                                            <StraightVertex x="-2.2" y="-5.5" id="42:420"/>
+                                            <StraightVertex x="-2.2" y="5.5" id="42:421"/>
+                                        </PointsPath>
+                                        <Stroke thickness="1.4" id="42:422">
+                                            <SolidColor colorValue="FFFAFAFA" id="42:423">
+                                                <DataBindContext sourcePathIds="10:84-10:2850-10:7422" propertyKey="37" nameBased="true" id="42:447"/>
+                                            </SolidColor>
+                                        </Stroke>
+                                    </Shape>
+                                    <GridItemPlacement id="42:393"/>
+                                    <LayoutComponentStyle id="42:392"/>
+                                </LayoutComponent>
+                                <GridItemPlacement id="42:607"/>
+                                <Text id="42:608">
+                                    <TextStylePaint fontAssetId="0:7" familyName="Inter" styleName="Regular" id="42:609">
+                                        <Fill fillRule="clockwise" id="42:610">
+                                            <SolidColor colorValue="FFA1A1AA" id="42:611">
+                                                <DataBindContext sourcePathIds="10:84-10:2850-10:7424" propertyKey="37" nameBased="true" id="42:627"/>
+                                            </SolidColor>
+                                        </Fill>
+                                        <TextStyleAxis tag="1869640570" axisValue="14" id="42:612"/>
+                                        <TextStyleAxis tag="2003265652" axisValue="500" id="42:613"/>
+                                    </TextStylePaint>
+                                    <TextValueRun styleId="42:609" text="Components" id="42:614"/>
+                                    <LayoutParticipant layoutWidthScaleType="hug" layoutHeightScaleType="hug" id="42:615"/>
+                                </Text>
+                                <LayoutComponentStyle gapHorizontal="6" paddingLeft="8" paddingRight="10" paddingTop="4" paddingBottom="4" layoutAlignmentType="center" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="42:606"/>
+                            </LayoutComponent>
+                            <LayoutComponentStyle layoutAlignmentType="center" intrinsicallySizedValue="true" layoutTypeValue="stack" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="42:390"/>
+                            <LayoutComponent styleId="70:475" opacity="0" name="Left Hover" id="70:474">
+                                <Fill fillRule="clockwise" id="70:476">
+                                    <SolidColor colorValue="FF3F3F46" id="70:477">
+                                        <DataBindContext sourcePathIds="10:84-10:2850-10:7422" propertyKey="37" nameBased="true" id="70:486"/>
+                                    </SolidColor>
+                                </Fill>
+                                <GridItemPlacement id="70:478"/>
+                                <LayoutComponentStyle cornerRadiusTL="7" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="70:475">
+                                    <DataBindContext sourcePathIds="10:84-10:2850-10:2086" propertyKey="640" nameBased="true" converterId="10:6840" id="70:485"/>
+                                </LayoutComponentStyle>
+                                <DataBindContext sourcePathIds="10:84-70:470" propertyKey="18" nameBased="true" converterId="70:510" id="70:484"/>
+                            </LayoutComponent>
+                            <LayoutComponent styleId="42:395" name="Left On" id="42:394">
+                                <Fill fillRule="clockwise" id="42:396">
+                                    <SolidColor colorValue="FF3F3F46" id="42:397">
+                                        <DataBindContext sourcePathIds="10:84-10:2850-10:7414" propertyKey="37" nameBased="true" id="42:441"/>
+                                    </SolidColor>
+                                </Fill>
+                                <GridItemPlacement id="42:398"/>
+                                <LayoutComponentStyle cornerRadiusTL="7" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="42:395">
+                                    <DataBindContext sourcePathIds="10:84-10:2850-10:2086" propertyKey="640" nameBased="true" converterId="10:6840" id="42:443"/>
+                                </LayoutComponentStyle>
+                                <DataBindContext sourcePathIds="10:84-42:366" propertyKey="18" nameBased="true" converterId="9:145" id="42:449"/>
+                            </LayoutComponent>
                         </LayoutComponent>
-                        <LayoutComponent styleId="42:395" name="Left On" id="42:394">
-                            <Fill fillRule="clockwise" id="42:396">
-                                <SolidColor colorValue="FF3F3F46" id="42:397">
-                                    <DataBindContext sourcePathIds="10:84-10:2850-10:7414" propertyKey="37" nameBased="true" id="42:441"/>
-                                </SolidColor>
-                            </Fill>
-                            <GridItemPlacement id="42:398"/>
-                            <LayoutComponentStyle cornerRadiusTL="7" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="42:395">
-                                <DataBindContext sourcePathIds="10:84-10:2850-10:2086" propertyKey="640" nameBased="true" converterId="10:6840" id="42:443"/>
-                            </LayoutComponentStyle>
-                            <DataBindContext sourcePathIds="10:84-42:366" propertyKey="18" nameBased="true" converterId="9:145" id="42:449"/>
-                        </LayoutComponent>
+                        <LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="113:257"/>
                     </LayoutComponent>
-                    <LayoutComponent width="36" height="30" styleId="42:400" name="Toggle Right" id="42:399">
-                        <LayoutComponent styleId="42:617" name="Toggle Right Pad" id="42:616">
-                            <GridItemPlacement id="42:618"/>
-                            <Text id="42:619">
-                                <TextStylePaint fontAssetId="0:7" familyName="Inter" styleName="Regular" id="42:620">
-                                    <Fill fillRule="clockwise" id="42:621">
-                                        <SolidColor colorValue="FFA1A1AA" id="42:622">
-                                            <DataBindContext sourcePathIds="10:84-10:2850-10:7424" propertyKey="37" nameBased="true" id="42:628"/>
-                                        </SolidColor>
-                                    </Fill>
-                                    <TextStyleAxis tag="1869640570" axisValue="14" id="42:623"/>
-                                    <TextStyleAxis tag="2003265652" axisValue="500" id="42:624"/>
-                                </TextStylePaint>
-                                <TextValueRun styleId="42:620" text="Theme" id="42:625"/>
-                                <LayoutParticipant layoutWidthScaleType="hug" layoutHeightScaleType="hug" id="42:626"/>
-                            </Text>
-                            <LayoutComponentStyle gapHorizontal="6" paddingLeft="10" paddingRight="8" paddingTop="4" paddingBottom="4" layoutAlignmentType="center" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="42:617"/>
-                            <LayoutComponent width="16" height="16" styleId="42:402" name="Right Icon" id="42:401">
-                                <Shape x="8" y="8" name="Panel Right" id="42:424">
-                                    <PointsPath isClosed="true" id="42:425">
-                                        <CubicDetachedVertex inRotation="3.1415927" inDistance="1.3807499" x="-4" y="-5.5" id="42:426"/>
-                                        <CubicDetachedVertex outDistance="1.3807499" x="4" y="-5.5" id="42:427"/>
-                                        <CubicDetachedVertex inRotation="-1.5707964" inDistance="1.3807499" x="6.5" y="-3" id="42:428"/>
-                                        <CubicDetachedVertex outRotation="1.5707964" outDistance="1.3807499" x="6.5" y="3" id="42:429"/>
-                                        <CubicDetachedVertex inDistance="1.3807499" x="4" y="5.5" id="42:430"/>
-                                        <CubicDetachedVertex outRotation="3.1415927" outDistance="1.3807499" x="-4" y="5.5" id="42:431"/>
-                                        <CubicDetachedVertex inRotation="1.5707964" inDistance="1.3807499" x="-6.5" y="3" id="42:432"/>
-                                        <CubicDetachedVertex outRotation="-1.5707964" outDistance="1.3807499" x="-6.5" y="-3" id="42:433"/>
-                                    </PointsPath>
-                                    <PointsPath id="42:434">
-                                        <StraightVertex x="2.2" y="-5.5" id="42:435"/>
-                                        <StraightVertex x="2.2" y="5.5" id="42:436"/>
-                                    </PointsPath>
-                                    <Stroke thickness="1.4" id="42:437">
-                                        <SolidColor colorValue="FFFAFAFA" id="42:438">
-                                            <DataBindContext sourcePathIds="10:84-10:2850-10:7422" propertyKey="37" nameBased="true" id="42:448"/>
-                                        </SolidColor>
-                                    </Stroke>
-                                </Shape>
-                                <GridItemPlacement id="42:403"/>
-                                <LayoutComponentStyle id="42:402"/>
+                    <LayoutComponent styleId="113:276" name="Theme Anchor" id="113:275">
+                        <LayoutComponent styleId="113:278" name="Tip Overlay" id="113:277">
+                            <LayoutComponent width="240" height="240" styleId="113:280" name="Bubble Area" id="113:279">
+                                <NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="112:188" isStateful="true" name="Tooltip" id="113:285">
+                                    <NestedStateMachine animationId="112:190" id="113:286"/>
+                                    <ViewModelInstance viewModelId="112:1" exports="true" name="Theme Tooltip" id="113:287">
+                                        <ViewModelInstanceString propertyValue="Show or hide the theme panel" viewModelPropertyId="112:2" id="113:288"/>
+                                        <ViewModelInstanceNumber propertyValue="2" viewModelPropertyId="112:3" id="113:289"/>
+                                        <ViewModelInstanceBoolean viewModelPropertyId="112:4" id="113:290">
+                                            <DataBindContext sourcePathIds="10:84-70:472" propertyKey="593" nameBased="true" id="113:291"/>
+                                        </ViewModelInstanceBoolean>
+                                        <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="112:5" id="113:292"/>
+                                        <ViewModelInstanceViewModel propertyValue="10:63" viewModelPropertyId="112:6" id="113:293"/>
+                                    </ViewModelInstance>
+                                </NestedArtboardLayout>
+                                <LayoutComponentStyle layoutAlignmentType="centerRight" id="113:280"/>
+                            </LayoutComponent>
+                            <LayoutComponent width="100" height="100" styleId="113:282" name="Spacer" id="113:281">
+                                <LayoutComponentStyle widthUnitsValue="percent" heightUnitsValue="percent" id="113:282"/>
+                            </LayoutComponent>
+                            <LayoutComponent width="240" height="240" styleId="113:284" name="Mirror" id="113:283">
+                                <LayoutComponentStyle id="113:284"/>
+                            </LayoutComponent>
+                            <LayoutComponentStyle gapHorizontal="4" gapVertical="4" positionLeftUnitsValue="points" positionRightUnitsValue="points" positionTopUnitsValue="points" positionBottomUnitsValue="points" layoutAlignmentType="center" positionTypeValue="absolute" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="113:278"/>
+                        </LayoutComponent>
+                        <LayoutComponent width="36" height="30" styleId="42:400" name="Toggle Right" id="42:399">
+                            <LayoutComponent styleId="42:617" name="Toggle Right Pad" id="42:616">
+                                <GridItemPlacement id="42:618"/>
+                                <Text id="42:619">
+                                    <TextStylePaint fontAssetId="0:7" familyName="Inter" styleName="Regular" id="42:620">
+                                        <Fill fillRule="clockwise" id="42:621">
+                                            <SolidColor colorValue="FFA1A1AA" id="42:622">
+                                                <DataBindContext sourcePathIds="10:84-10:2850-10:7424" propertyKey="37" nameBased="true" id="42:628"/>
+                                            </SolidColor>
+                                        </Fill>
+                                        <TextStyleAxis tag="1869640570" axisValue="14" id="42:623"/>
+                                        <TextStyleAxis tag="2003265652" axisValue="500" id="42:624"/>
+                                    </TextStylePaint>
+                                    <TextValueRun styleId="42:620" text="Theme" id="42:625"/>
+                                    <LayoutParticipant layoutWidthScaleType="hug" layoutHeightScaleType="hug" id="42:626"/>
+                                </Text>
+                                <LayoutComponentStyle gapHorizontal="6" paddingLeft="10" paddingRight="8" paddingTop="4" paddingBottom="4" layoutAlignmentType="center" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="42:617"/>
+                                <LayoutComponent width="16" height="16" styleId="42:402" name="Right Icon" id="42:401">
+                                    <Shape x="8" y="8" name="Panel Right" id="42:424">
+                                        <PointsPath isClosed="true" id="42:425">
+                                            <CubicDetachedVertex inRotation="3.1415927" inDistance="1.3807499" x="-4" y="-5.5" id="42:426"/>
+                                            <CubicDetachedVertex outDistance="1.3807499" x="4" y="-5.5" id="42:427"/>
+                                            <CubicDetachedVertex inRotation="-1.5707964" inDistance="1.3807499" x="6.5" y="-3" id="42:428"/>
+                                            <CubicDetachedVertex outRotation="1.5707964" outDistance="1.3807499" x="6.5" y="3" id="42:429"/>
+                                            <CubicDetachedVertex inDistance="1.3807499" x="4" y="5.5" id="42:430"/>
+                                            <CubicDetachedVertex outRotation="3.1415927" outDistance="1.3807499" x="-4" y="5.5" id="42:431"/>
+                                            <CubicDetachedVertex inRotation="1.5707964" inDistance="1.3807499" x="-6.5" y="3" id="42:432"/>
+                                            <CubicDetachedVertex outRotation="-1.5707964" outDistance="1.3807499" x="-6.5" y="-3" id="42:433"/>
+                                        </PointsPath>
+                                        <PointsPath id="42:434">
+                                            <StraightVertex x="2.2" y="-5.5" id="42:435"/>
+                                            <StraightVertex x="2.2" y="5.5" id="42:436"/>
+                                        </PointsPath>
+                                        <Stroke thickness="1.4" id="42:437">
+                                            <SolidColor colorValue="FFFAFAFA" id="42:438">
+                                                <DataBindContext sourcePathIds="10:84-10:2850-10:7422" propertyKey="37" nameBased="true" id="42:448"/>
+                                            </SolidColor>
+                                        </Stroke>
+                                    </Shape>
+                                    <GridItemPlacement id="42:403"/>
+                                    <LayoutComponentStyle id="42:402"/>
+                                </LayoutComponent>
+                            </LayoutComponent>
+                            <LayoutComponent styleId="70:480" opacity="0" name="Right Hover" id="70:479">
+                                <Fill fillRule="clockwise" id="70:481">
+                                    <SolidColor colorValue="FF3F3F46" id="70:482">
+                                        <DataBindContext sourcePathIds="10:84-10:2850-10:7422" propertyKey="37" nameBased="true" id="70:489"/>
+                                    </SolidColor>
+                                </Fill>
+                                <GridItemPlacement id="70:483"/>
+                                <LayoutComponentStyle cornerRadiusTL="7" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="70:480">
+                                    <DataBindContext sourcePathIds="10:84-10:2850-10:2086" propertyKey="640" nameBased="true" converterId="10:6840" id="70:488"/>
+                                </LayoutComponentStyle>
+                                <DataBindContext sourcePathIds="10:84-70:472" propertyKey="18" nameBased="true" converterId="70:510" id="70:487"/>
+                            </LayoutComponent>
+                            <LayoutComponentStyle layoutAlignmentType="center" intrinsicallySizedValue="true" layoutTypeValue="stack" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="42:400"/>
+                            <LayoutComponent styleId="42:405" name="Right On" id="42:404">
+                                <Fill fillRule="clockwise" id="42:406">
+                                    <SolidColor colorValue="FF3F3F46" id="42:407">
+                                        <DataBindContext sourcePathIds="10:84-10:2850-10:7414" propertyKey="37" nameBased="true" id="42:442"/>
+                                    </SolidColor>
+                                </Fill>
+                                <GridItemPlacement id="42:408"/>
+                                <LayoutComponentStyle cornerRadiusTL="7" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="42:405">
+                                    <DataBindContext sourcePathIds="10:84-10:2850-10:2086" propertyKey="640" nameBased="true" converterId="10:6840" id="42:444"/>
+                                </LayoutComponentStyle>
+                                <DataBindContext sourcePathIds="10:84-42:368" propertyKey="18" nameBased="true" converterId="9:145" id="42:450"/>
                             </LayoutComponent>
                         </LayoutComponent>
-                        <LayoutComponent styleId="70:480" opacity="0" name="Right Hover" id="70:479">
-                            <Fill fillRule="clockwise" id="70:481">
-                                <SolidColor colorValue="FF3F3F46" id="70:482">
-                                    <DataBindContext sourcePathIds="10:84-10:2850-10:7422" propertyKey="37" nameBased="true" id="70:489"/>
-                                </SolidColor>
-                            </Fill>
-                            <GridItemPlacement id="70:483"/>
-                            <LayoutComponentStyle cornerRadiusTL="7" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="70:480">
-                                <DataBindContext sourcePathIds="10:84-10:2850-10:2086" propertyKey="640" nameBased="true" converterId="10:6840" id="70:488"/>
-                            </LayoutComponentStyle>
-                            <DataBindContext sourcePathIds="10:84-70:472" propertyKey="18" nameBased="true" converterId="70:510" id="70:487"/>
-                        </LayoutComponent>
-                        <LayoutComponentStyle layoutAlignmentType="center" intrinsicallySizedValue="true" layoutTypeValue="stack" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="42:400"/>
-                        <LayoutComponent styleId="42:405" name="Right On" id="42:404">
-                            <Fill fillRule="clockwise" id="42:406">
-                                <SolidColor colorValue="FF3F3F46" id="42:407">
-                                    <DataBindContext sourcePathIds="10:84-10:2850-10:7414" propertyKey="37" nameBased="true" id="42:442"/>
-                                </SolidColor>
-                            </Fill>
-                            <GridItemPlacement id="42:408"/>
-                            <LayoutComponentStyle cornerRadiusTL="7" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="42:405">
-                                <DataBindContext sourcePathIds="10:84-10:2850-10:2086" propertyKey="640" nameBased="true" converterId="10:6840" id="42:444"/>
-                            </LayoutComponentStyle>
-                            <DataBindContext sourcePathIds="10:84-42:368" propertyKey="18" nameBased="true" converterId="9:145" id="42:450"/>
-                        </LayoutComponent>
+                        <LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="113:276"/>
                     </LayoutComponent>
                 </LayoutComponent>
                 <LayoutComponentStyle flexDirectionValue="column" intrinsicallySizedValue="true" layoutWidthScaleType="fill" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="42:560"/>
@@ -374,21 +428,21 @@
             </LayoutComponent>
             <LayoutComponentStyle flexDirectionValue="column" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="42:556"/>
         </LayoutComponent>
+        <LayoutComponent styleId="42:464" name="Sidebar Slot" id="42:463">
+            <LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="42:464">
+                <DataBindContext sourcePathIds="10:84-42:366" propertyKey="596" nameBased="true" converterId="9:90" id="42:467"/>
+            </LayoutComponentStyle>
+            <NestedArtboardLayout instanceWidth="240" instanceHeightScaleType="fill" artboardId="42:164" dataBindPathIds="10:84-42:352" name="Sidebar" id="42:350">
+                <NestedStateMachine animationId="10:115" id="42:351"/>
+                <DataBindContext sourcePathIds="10:84-42:366" propertyKey="663" nameBased="true" converterId="42:481" id="42:377"/>
+            </NestedArtboardLayout>
+        </LayoutComponent>
         <Fill fillRule="clockwise" id="10:111">
             <SolidColor colorValue="FF09090B" id="10:112">
                 <DataBindContext sourcePathIds="10:84-10:2850-10:7402" propertyKey="37" id="10:7437"/>
             </SolidColor>
         </Fill>
-        <LayoutComponentStyle id="10:113"/>
-        <LayoutComponent styleId="42:466" name="Toolbar Slot" id="42:465">
-            <LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="42:466">
-                <DataBindContext sourcePathIds="10:84-42:368" propertyKey="596" nameBased="true" converterId="9:90" id="42:468"/>
-            </LayoutComponentStyle>
-            <NestedArtboardLayout instanceWidth="240" instanceHeightScaleType="fill" artboardId="10:2114" dataBindPathIds="10:84-39:833" name="Toolbar" id="10:2848">
-                <NestedStateMachine animationId="10:115" id="10:2849"/>
-                <DataBindContext sourcePathIds="10:84-42:368" propertyKey="663" nameBased="true" converterId="42:481" id="42:378"/>
-            </NestedArtboardLayout>
-        </LayoutComponent>
+        <LayoutComponentStyle flexDirectionValue="rowReverse" id="10:113"/>
         <LinearAnimation name="Cover On" id="10:15637">
             <KeyedObject objectId="10:15633" id="10:15639">
                 <KeyedProperty property="opacity" id="10:15640">
