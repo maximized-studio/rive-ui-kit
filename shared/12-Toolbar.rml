@@ -3,20 +3,12 @@
         <NestedArtboard artboardId="10:14621" dataBindPathIds="38:815-38:817" name="Theme Driver" id="10:15626">
             <NestedStateMachine animationId="10:2119" id="10:15627"/>
         </NestedArtboard>
-        <LayoutComponent width="1" height="1" styleId="10:2853" name="Divider" id="10:2852">
-            <Fill fillRule="clockwise" id="10:2854">
-                <SolidColor colorValue="FF27272A" id="10:2855">
-                    <DataBindContext sourcePathIds="38:815-38:817-10:7418" propertyKey="37" id="10:7480"/>
-                </SolidColor>
-            </Fill>
-            <LayoutComponentStyle layoutHeightScaleType="fill" widthUnitsValue="auto" id="10:2853"/>
-        </LayoutComponent>
         <Fill fillRule="clockwise" id="10:2115">
             <SolidColor colorValue="FF18181B" id="10:2116">
                 <DataBindContext sourcePathIds="38:815-38:817-10:7406" propertyKey="37" id="10:7481"/>
             </SolidColor>
         </Fill>
-        <LayoutComponentStyle id="10:2117"/>
+        <LayoutComponentStyle flexDirectionValue="rowReverse" id="10:2117"/>
         <LayoutComponent styleId="10:2127" name="Panel" id="10:2126">
             <Fill fillRule="clockwise" id="10:2128">
                 <SolidColor colorValue="FF18181B" id="10:2129">
@@ -679,6 +671,14 @@
                     <LayoutComponentStyle gapVertical="8" flexDirectionValue="column" intrinsicallySizedValue="true" layoutWidthScaleType="fill" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="15:450"/>
                 </LayoutComponent>
             </LayoutComponent>
+        </LayoutComponent>
+        <LayoutComponent width="1" height="1" styleId="10:2853" name="Divider" id="10:2852">
+            <Fill fillRule="clockwise" id="10:2854">
+                <SolidColor colorValue="FF27272A" id="10:2855">
+                    <DataBindContext sourcePathIds="38:815-38:817-10:7418" propertyKey="37" id="10:7480"/>
+                </SolidColor>
+            </Fill>
+            <LayoutComponentStyle layoutHeightScaleType="fill" widthUnitsValue="auto" id="10:2853"/>
         </LayoutComponent>
         <StateMachine name="State Machine 1" id="10:2119">
             <StateMachineListener targetId="113:13" name="Mode Tip Off" id="113:50">
