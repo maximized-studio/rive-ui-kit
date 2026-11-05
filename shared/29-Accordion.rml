@@ -1,5 +1,5 @@
 <Rive version="1" kind="fragment">
-    <Artboard defaultStateMachineId="104:185" viewModelId="104:8" viewModelInstanceId="104:16" isComponent="true" spaceId="1:5601" width="360" height="300" x="0" y="0" styleId="104:184" name="Accordion" id="104:183">
+    <Artboard defaultStateMachineId="104:185" viewModelId="104:8" viewModelInstanceId="104:16" isComponent="true" spaceId="1:5601" width="360" height="300" styleId="104:184" name="Accordion" id="104:183">
         <Fill fillRule="clockwise" id="104:190">
             <SolidColor colorValue="00000000" id="104:191"/>
         </Fill>
@@ -10,7 +10,7 @@
                     <DataBindContext sourcePathIds="104:8-104:12-10:7418" propertyKey="37" nameBased="true" id="104:194"/>
                 </SolidColor>
             </Fill>
-            <ArtboardComponentList participatesInLayout="true" name="Items" id="104:195">
+            <ArtboardComponentList name="Items" participatesInLayout="true" id="104:195">
                 <DataBindContext sourcePathIds="104:8-104:9" propertyKey="800" nameBased="true" id="104:196"/>
             </ArtboardComponentList>
             <LayoutComponentStyle gapVertical="1" paddingLeft="1" paddingRight="1" paddingTop="1" paddingBottom="1" flexDirectionValue="column" intrinsicallySizedValue="true" cornerRadiusTL="8" layoutWidthScaleType="fill" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="104:187">
@@ -23,12 +23,12 @@
         </LayoutComponent>
         <StateMachine name="State Machine 1" id="104:185">
             <StateMachineLayer name="Layer 1" id="104:201">
+                <AnimationState animationId="104:188" x="160" id="104:189"/>
                 <AnyState x="400" id="104:202"/>
                 <ExitState x="480" id="104:203"/>
                 <EntryState id="104:204">
                     <StateTransition stateToId="104:189" id="104:205"/>
                 </EntryState>
-                <AnimationState animationId="104:188" x="160" id="104:189"/>
             </StateMachineLayer>
         </StateMachine>
         <LinearAnimation name="Timeline 1" id="104:188"/>

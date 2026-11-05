@@ -1,5 +1,5 @@
 <Rive version="1" kind="fragment">
-    <Artboard defaultStateMachineId="10:4199" viewModelId="10:4154" viewModelInstanceId="10:4176" isComponent="true" includeInExport="false" spaceId="1:5601" width="220" height="130" x="1800" y="550" styleId="10:4182" name="Checkbox Group" id="10:4181">
+    <Artboard defaultStateMachineId="10:4199" viewModelId="10:4154" viewModelInstanceId="10:4176" isComponent="true" includeInExport="false" spaceId="1:5601" width="220" height="130" styleId="10:4182" x="1800" y="550" name="Checkbox Group" id="10:4181">
         <LayoutComponent styleId="10:4184" name="Group" id="10:4183">
             <Text id="10:4185">
                 <TextStylePaint fontSize="13" fontAssetId="0:7" familyName="Inter" styleName="Bold" id="10:4186">
