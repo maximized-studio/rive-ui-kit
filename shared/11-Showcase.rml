@@ -1677,6 +1677,33 @@
                     </BindablePropertyBoolean>
                 </ListenerViewModelChange>
             </StateMachineListener>
+            <StateMachineListener targetId="10:110" name="Preview Disabled Variants" id="120:25">
+                <ListenerInputTypeViewModel viewModelPathIds="10:84-10:2850-15:419" listenerTypeValue="viewModel" id="120:26"/>
+                <ListenerViewModelChange fromViewModelProperty="true" fromDataBindId="120:9" id="120:10">
+                    <BindablePropertyBoolean id="120:11">
+                        <DataBindContext sourcePathIds="10:84-10:2850-15:419" propertyKey="634" id="120:9"/>
+                        <DataBindContext sourcePathIds="10:84-120:1-7:1" propertyKey="634" direction="true" id="120:12"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+                <ListenerViewModelChange fromViewModelProperty="true" fromDataBindId="120:13" id="120:14">
+                    <BindablePropertyBoolean id="120:15">
+                        <DataBindContext sourcePathIds="10:84-10:2850-15:419" propertyKey="634" id="120:13"/>
+                        <DataBindContext sourcePathIds="10:84-120:2-7:1" propertyKey="634" direction="true" id="120:16"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+                <ListenerViewModelChange fromViewModelProperty="true" fromDataBindId="120:17" id="120:18">
+                    <BindablePropertyBoolean id="120:19">
+                        <DataBindContext sourcePathIds="10:84-10:2850-15:419" propertyKey="634" id="120:17"/>
+                        <DataBindContext sourcePathIds="10:84-120:3-7:1" propertyKey="634" direction="true" id="120:20"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+                <ListenerViewModelChange fromViewModelProperty="true" fromDataBindId="120:21" id="120:22">
+                    <BindablePropertyBoolean id="120:23">
+                        <DataBindContext sourcePathIds="10:84-10:2850-15:419" propertyKey="634" id="120:21"/>
+                        <DataBindContext sourcePathIds="10:84-120:4-7:1" propertyKey="634" direction="true" id="120:24"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
             <StateMachineListener targetId="10:110" name="Sync nav selected" id="42:360">
                 <ListenerInputTypeViewModel viewModelPathIds="10:84-10:86" listenerTypeValue="viewModel" id="42:361"/>
                 <ListenerViewModelChange fromViewModelProperty="true" fromDataBindId="42:365" id="42:362">

@@ -2431,6 +2431,10 @@
                 <ViewModelPropertyViewModel viewModelReferenceId="111:16" name="_crumbs" id="114:2"/>
                 <ViewModelPropertyViewModel viewModelReferenceId="1:151" name="_prevButton" id="33:3"/>
                 <ViewModelPropertyViewModel viewModelReferenceId="1:151" name="_nextButton" id="33:5"/>
+                <ViewModelPropertyViewModel viewModelReferenceId="1:151" name="_variantPrimary" id="120:1"/>
+                <ViewModelPropertyViewModel viewModelReferenceId="1:151" name="_variantSecondary" id="120:2"/>
+                <ViewModelPropertyViewModel viewModelReferenceId="1:151" name="_variantBrand" id="120:3"/>
+                <ViewModelPropertyViewModel viewModelReferenceId="1:151" name="_variantDestructive" id="120:4"/>
                 <ViewModelPropertyBoolean name="_bound" id="10:15635"/>
                 <ViewModelPropertyNumber name="_count" id="10:5576"/>
                 <ViewModelPropertyList name="details" id="10:5181"/>
@@ -2485,6 +2489,10 @@
                         <ViewModelInstanceListItem viewModelId="100:1" viewModelInstanceId="102:612" id="102:631"/>
                     </ViewModelInstanceList>
                     <ViewModelInstanceViewModel propertyValue="114:3" viewModelPropertyId="114:2" id="114:421"/>
+                    <ViewModelInstanceViewModel propertyValue="118:176" viewModelPropertyId="120:1" id="120:5"/>
+                    <ViewModelInstanceViewModel propertyValue="118:188" viewModelPropertyId="120:2" id="120:6"/>
+                    <ViewModelInstanceViewModel propertyValue="118:200" viewModelPropertyId="120:3" id="120:7"/>
+                    <ViewModelInstanceViewModel propertyValue="118:212" viewModelPropertyId="120:4" id="120:8"/>
                 </ViewModelInstance>
             </ViewModel>
             <ViewModel defaultInstanceId="0:0" name="Tile" groupId="1:2673" id="10:3612">
