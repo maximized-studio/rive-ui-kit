@@ -109,6 +109,7 @@ Previous and next Buttons around up to seven page buttons. Set two numbers and t
 - Up to seven pages are shown as they are. With more, the row keeps the first and last page and three around the current one, with `…` for the gaps: `1 … 4 5 6 … 20`, `1 2 3 4 5 … 20`, `1 … 16 17 18 19 20`.
 - Previous and next step by one and are disabled on the first and last page.
 - Listen to `page` in your app to load that page.
+- The behaviour is a small Luau script, **Pagination Pages**: it fills the `_pages` list of Page Items and sets the disabled flags. Luau runs in the editor and in every Rive runtime; like any script, it needs a signed `.riv` (exports and `--publish` are signed) and does not run in a Community thumbnail.
 
 ## Tooltip
 
@@ -134,9 +135,16 @@ With `@rive-app/react-*`: pass `rive?.globalViewModelInstance("Theme")` to `useV
 
 ## How it is organised
 
+The kit keeps each kind of logic in one place:
+
+- **Look comes from data.** Colours, radii and shadows are tokens on the global `Theme`; components only read them.
+- **Picking one of several is a state.** A number that chooses what shows (a Button's `variant` and `icon`, an Alert's `variant`, a Tooltip's `placement`) drives a state machine layer with one state per value, such as Button › Variant › Primary.
+- **Behaviour is a script, when it is an algorithm.** Pagination is the one so far. Everything else is native.
+- **Converter names say where they belong:** `<Part> · <what it does>`, for example `Slider · Percent text`. The ones only the Showcase uses start with `Showcase`.
+
 ```
 shared/            the kit: one .rml file per artboard, 99-_root.rml
-                   (view models, assets, interpolators) and image assets
+                   (view models, assets, interpolators), image assets and Luau scripts
 themes/<name>/     only what that theme changes (Default changes nothing)
 tools/             Python helpers: retheming, RML generation, splitting
 build.sh           assembles and verifies every theme into build/<name>/
