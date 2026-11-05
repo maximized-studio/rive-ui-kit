@@ -10,9 +10,9 @@ The kit is also on the [Rive Community](https://rive.app/community/files/25701-5
 
 ## Components
 
-- **Actions:** Button · Button Group
+- **Actions:** Button · Button Group · Dropdown
 - **Display:** Accordion · Avatar · Badge · Label
-- **Inputs:** Checkbox / Checkbox Group · Dropdown · Radio Option / Radio Group · Slider · Switch / Switch List
+- **Inputs:** Checkbox / Checkbox Group · Radio Option / Radio Group · Slider · Switch / Switch Group
 - **Navigation:** Breadcrumbs · Pagination
 - **Building blocks:** Accordion Item · Breadcrumb Item · List Item · Nav Group · Nav Item · Page Item · Segment · Segmented Control · Showcase Section · Sidebar · Slide · Tile · Toolbar
 
@@ -31,7 +31,7 @@ The components carry Rive semantics, so screen readers get a real accessibility 
 | Badge, Label | `text` | text |
 | Breadcrumbs | `group` / `link` per item, `text` for the current page | label; item label, "Current page" |
 | Button, Dropdown, Page Item | `button` | label (the page number) |
-| Button Group, Checkbox Group, Pagination, Switch List | `group` | group label |
+| Button Group, Checkbox Group, Pagination, Switch Group | `group` | group label |
 | Checkbox | `checkbox` | label, checked |
 | List Item | `list` / `listItem` | label |
 | Radio Option / Radio Group | `radioButton` / `radioGroup` | label, selected |
