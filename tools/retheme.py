@@ -8,7 +8,8 @@ Optional 4th/5th args (99-_root.rml in/out) also set the Theme view model instan
 captures and Community thumbnails show (they render without the state machine).
 Brand Light/Dark variants follow the base kit's rule: Dark puts 950/900 in the 100/200 slots;
 soft tokens are 100/300/600 (Light) and 200/300/900 (Dark); info tokens are 50/200/700 (Light) and 950/800/400 (Dark).
-Semantic mode tokens (_successBg/_successBorder/_successText, _warning…, _error…) go in "mode" like the others.
+Semantic mode tokens (_successBg/_successBorder/_successText, _warning…, _error…) and the Button tokens
+(_primaryBg/_primaryHover/_primaryText, _danger…) go in "mode" like the others.
 """
 import json, re, sys
 src, palette_path, out = sys.argv[1:4]
@@ -27,7 +28,9 @@ PROPS = {'_bg': '10:7402', '_bgClear': '10:7404', '_surface': '10:7406', '_surfa
          '_infoBg': '110:1', '_infoBorder': '110:2', '_infoText': '110:3',
          '_successBg': '110:4', '_successBorder': '110:5', '_successText': '110:6',
          '_warningBg': '110:7', '_warningBorder': '110:8', '_warningText': '110:9',
-         '_errorBg': '110:10', '_errorBorder': '110:11', '_errorText': '110:12'}
+         '_errorBg': '110:10', '_errorBorder': '110:11', '_errorText': '110:12',
+         '_primaryBg': '118:2', '_primaryHover': '118:3', '_primaryText': '118:4',
+         '_dangerBg': '118:5', '_dangerHover': '118:6', '_dangerText': '118:7'}
 STOPS = ['50', '100', '200', '300', '400', '500', '600', '700', '800', '900', '950']
 for i, st in enumerate(STOPS):
     PROPS['_brand' + st] = f'10:{2092 + 2 * i}'
