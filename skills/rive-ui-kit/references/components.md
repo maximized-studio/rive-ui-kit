@@ -795,6 +795,46 @@ Two thumbs on one track for a minimum and a maximum, like a price filter. The br
 </NestedArtboardLayout>
 ```
 
+## Rating
+
+Source: `shared/48-Rating.rml` · artboard `155:2000` · state machine `155:2001` · view model `Rating` `155:20`
+Contains: Star
+
+| Property | Type | Id |
+|---|---|---|
+| `stars` | list of `Star` | `155:21` |
+| `state` | `RatingState` | `155:22` |
+| `label` | string | `155:23` |
+| `a11yHidden` | boolean | `155:24` |
+| `_increase` | trigger | `155:25` |
+| `_decrease` | trigger | `155:26` |
+| `_doIncrease` | trigger | `155:27` |
+| `_doDecrease` | trigger | `155:28` |
+
+Five stars for a score from 0 to 5.
+
+- View model `Rating`: `stars` (a list of five `Star` instances), `state` (a shared `RatingState`), `label` (screen reader name), `a11yHidden`.
+- `Star`: `value` (`1`–`5`), `group` (the rating's `RatingState`). `RatingState`: `value` (the score), `disabled`.
+- Click a star to set the score; hovering previews it in `_brand500`. Filled stars use `_brand600`, empty ones a `_borderStrong` outline; disabled turns the filled stars `_textMuted` and blocks the pointer.
+- With keyboard focus the arrow keys step the score (right / up +1, left / down −1, held keys repeat); a screen reader's increase and decrease do the same. Both go through a gate, so a disabled rating ignores them.
+- Screen readers get a `slider` named by `label` with the value "3 of 5".
+
+```xml
+<NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="155:2000" isStateful="true" name="Rating" id="X:1">
+    <NestedStateMachine animationId="155:2001" id="X:2"/>
+    <ViewModelInstance viewModelId="155:20" exports="true" name="My Rating" id="X:3">
+        <ViewModelInstanceList viewModelPropertyId="155:21" id="X:4"/>  <!-- stars: add ViewModelInstanceListItem children -->
+        <ViewModelInstanceViewModel viewModelPropertyId="155:22" id="X:5"/>  <!-- state: set propertyValue to the id of a shared instance -->
+        <ViewModelInstanceString viewModelPropertyId="155:23" id="X:6"/>  <!-- label -->
+        <ViewModelInstanceBoolean viewModelPropertyId="155:24" id="X:7"/>  <!-- a11yHidden -->
+        <ViewModelInstanceTrigger viewModelPropertyId="155:25" id="X:8"/>  <!-- _increase -->
+        <ViewModelInstanceTrigger viewModelPropertyId="155:26" id="X:9"/>  <!-- _decrease -->
+        <ViewModelInstanceTrigger viewModelPropertyId="155:27" id="X:10"/>  <!-- _doIncrease -->
+        <ViewModelInstanceTrigger viewModelPropertyId="155:28" id="X:11"/>  <!-- _doDecrease -->
+    </ViewModelInstance>
+</NestedArtboardLayout>
+```
+
 ## Select
 
 Source: `shared/44-Select.rml` · artboard `147:1000` · state machine `147:1001` · view model `Select` `147:1`
@@ -884,6 +924,25 @@ Contains: Button, Menu
         <ViewModelInstanceTrigger viewModelPropertyId="148:8" id="X:10"/>  <!-- pressed -->
         <ViewModelInstanceTrigger viewModelPropertyId="148:9" id="X:11"/>  <!-- _menuPressed -->
         <ViewModelInstanceString viewModelPropertyId="148:10" id="X:12"/>  <!-- menuLabel -->
+    </ViewModelInstance>
+</NestedArtboardLayout>
+```
+
+## Star
+
+Source: `shared/47-Star.rml` · artboard `155:1000` · state machine `155:1001` · view model `Star` `155:10`
+
+| Property | Type | Id |
+|---|---|---|
+| `value` | number | `155:11` |
+| `group` | `RatingState` | `155:12` |
+
+```xml
+<NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="155:1000" isStateful="true" name="Star" id="X:1">
+    <NestedStateMachine animationId="155:1001" id="X:2"/>
+    <ViewModelInstance viewModelId="155:10" exports="true" name="My Star" id="X:3">
+        <ViewModelInstanceNumber viewModelPropertyId="155:11" id="X:4"/>  <!-- value -->
+        <ViewModelInstanceViewModel viewModelPropertyId="155:12" id="X:5"/>  <!-- group: set propertyValue to the id of a shared instance -->
     </ViewModelInstance>
 </NestedArtboardLayout>
 ```
@@ -1182,22 +1241,22 @@ Contains: Nav Group
 ## Slide  (Showcase demo)
 
 Source: `shared/17-Slide.rml` · artboard `10:5313` · state machine `10:5405` · view model `Slide` `10:5163`
-Contains: Accordion, Alert, Avatar, Badge, Breadcrumbs, Button Group, Button Row, Checkbox Group, Chip Group, Dialog Demo, Label, Menu, Pagination, Progress Bar, Radio Group, Range Slider, Select, Slider, Split Button, Switch Group, Tabs, Toggle Button Group, Tooltip Button
+Contains: Accordion, Alert, Avatar, Badge, Breadcrumbs, Button Group, Button Row, Checkbox Group, Chip Group, Dialog Demo, Label, Menu, Pagination, Progress Bar, Radio Group, Range Slider, Rating, Select, Slider, Split Button, Switch Group, Tabs, Toggle Button Group, Tooltip Button
 
 | Property | Type | Id |
 |---|---|---|
 | `name` | string | `10:5171` |
-| `content` | list of `Pagination` / `Accordion` / `RadioGroup` / `CheckboxGroup` / `SwitchGroup` / `Alert` / `Breadcrumbs` / `TooltipButton` / `ProgressBar` / `DialogDemo` / `ButtonRow` / `Tabs` / `ChipGroup` / `Menu` / `Select` / `SplitButton` / `RangeSlider` / `Badge` / `Label` / `Slider` / `Avatar` / `ToggleButtonGroup` / `ButtonGroup` | `10:5173` |
+| `content` | list of `Pagination` / `Accordion` / `RadioGroup` / `CheckboxGroup` / `SwitchGroup` / `Alert` / `Breadcrumbs` / `TooltipButton` / `ProgressBar` / `DialogDemo` / `ButtonRow` / `Tabs` / `ChipGroup` / `Menu` / `Select` / `SplitButton` / `RangeSlider` / `Rating` / `Badge` / `Label` / `Slider` / `Avatar` / `ToggleButtonGroup` / `ButtonGroup` | `10:5173` |
 | `crumbs` | `Breadcrumbs` | `114:1` |
 
 ## Tile  (Showcase demo)
 
 Source: `shared/14-Tile.rml` · artboard `10:3618` · state machine `10:3623` · view model `Tile` `10:3612`
-Contains: Accordion, Alert, Avatar, Badge, Breadcrumbs, Button, Button Group, Checkbox Group, Chip Group, Dialog Demo, Label, Menu, Pagination, Progress Bar, Radio Group, Range Slider, Select, Slider, Split Button, Switch Group, Tabs, Toggle Button Group, Tooltip Button
+Contains: Accordion, Alert, Avatar, Badge, Breadcrumbs, Button, Button Group, Checkbox Group, Chip Group, Dialog Demo, Label, Menu, Pagination, Progress Bar, Radio Group, Range Slider, Rating, Select, Slider, Split Button, Switch Group, Tabs, Toggle Button Group, Tooltip Button
 
 | Property | Type | Id |
 |---|---|---|
-| `content` | list of `Pagination` / `Accordion` / `RadioGroup` / `CheckboxGroup` / `SwitchGroup` / `Alert` / `Breadcrumbs` / `TooltipButton` / `ProgressBar` / `DialogDemo` / `Tabs` / `ChipGroup` / `Menu` / `Select` / `SplitButton` / `RangeSlider` / `Badge` / `Button` / `Label` / `Slider` / `Avatar` / `ToggleButtonGroup` / `ButtonGroup` | `10:3861` |
+| `content` | list of `Pagination` / `Accordion` / `RadioGroup` / `CheckboxGroup` / `SwitchGroup` / `Alert` / `Breadcrumbs` / `TooltipButton` / `ProgressBar` / `DialogDemo` / `Tabs` / `ChipGroup` / `Menu` / `Select` / `SplitButton` / `RangeSlider` / `Rating` / `Badge` / `Button` / `Label` / `Slider` / `Avatar` / `ToggleButtonGroup` / `ButtonGroup` | `10:3861` |
 | `name` | string | `10:3614` |
 
 ## Toolbar  (Showcase demo)

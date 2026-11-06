@@ -13,9 +13,9 @@ The kit is also on the [Rive Community](https://rive.app/community/files/25701-5
 - **Actions:** Button · Button Group · Split Button · Toggle Button / Toggle Button Group
 - **Display:** Accordion · Avatar · Badge · Label
 - **Feedback:** Alert · Dialog · Progress Bar · Tooltip
-- **Inputs:** Checkbox / Checkbox Group · Chip / Chip Group · Radio Option / Radio Group · Range Slider · Select · Slider · Switch / Switch Group
+- **Inputs:** Checkbox / Checkbox Group · Chip / Chip Group · Radio Option / Radio Group · Range Slider · Rating · Select · Slider · Switch / Switch Group
 - **Navigation:** Breadcrumbs · Menu · Pagination · Tabs
-- **Building blocks:** Accordion Item · Breadcrumb Item · Button Row · Dialog Demo · Menu Item · Nav Group · Nav Item · Page Item · Showcase Section · Sidebar · Slide · Tab · Tile · Toolbar · Tooltip Button
+- **Building blocks:** Accordion Item · Breadcrumb Item · Button Row · Dialog Demo · Menu Item · Nav Group · Nav Item · Page Item · Showcase Section · Sidebar · Slide · Star · Tab · Tile · Toolbar · Tooltip Button
 
 Categories and the components in them are sorted A–Z. In the Showcase a category is data: a `ShowcaseSection` (title, tile list; the count is the list length) in `sections`, and a `NavGroup` in the Sidebar's `sections`.
 
@@ -54,6 +54,7 @@ The components carry Rive semantics, so screen readers get a real accessibility 
 | Radio Option / Radio Group | `radioButton` / `radioGroup` | label, selected |
 | Slider | `slider` | label, value |
 | Range Slider | `group` with two `slider`s | label; Minimum / Maximum with their percentage |
+| Rating | `slider` | label, value ("3 of 5"), disabled; increase / decrease |
 | Switch | `switchControl` | label, on/off |
 | Tabs / Tab | `tabList` / `tab` | label; tab label, selected, disabled |
 | Toggle Button Group / Toggle Button | `radioGroup` / `radioButton` | group label; label, checked, disabled |
@@ -145,6 +146,16 @@ Two thumbs on one track for a minimum and a maximum, like a price filter. The br
 - Drag either thumb. `low` never passes `high` and the other way round: each thumb follows a private raw value, and a listener writes it into `low` or `high` through a clamp formula with the other value as its limit. Write `low` or `high` from your app and the thumb follows.
 - Track `_borderStrong`, range `_brand600`, thumbs white with the small theme shadow; disabled uses `_textMuted` and `_surfaceSubtle`.
 - Screen readers get a `group` named by `label` with a `slider` per thumb (Minimum, Maximum) and its percentage.
+
+## Rating
+
+Five stars for a score from 0 to 5.
+
+- View model `Rating`: `stars` (a list of five `Star` instances), `state` (a shared `RatingState`), `label` (screen reader name), `a11yHidden`.
+- `Star`: `value` (`1`–`5`), `group` (the rating's `RatingState`). `RatingState`: `value` (the score), `disabled`.
+- Click a star to set the score; hovering previews it in `_brand500`. Filled stars use `_brand600`, empty ones a `_borderStrong` outline; disabled turns the filled stars `_textMuted` and blocks the pointer.
+- With keyboard focus the arrow keys step the score (right / up +1, left / down −1, held keys repeat); a screen reader's increase and decrease do the same. Both go through a gate, so a disabled rating ignores them.
+- Screen readers get a `slider` named by `label` with the value "3 of 5".
 
 ## Menu, Select and Split Button
 

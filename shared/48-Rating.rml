@@ -1,0 +1,162 @@
+<Rive version="1" kind="fragment">
+    <Artboard defaultStateMachineId="155:2001" viewModelId="155:20" viewModelInstanceId="155:60" isComponent="true" spaceId="1:5601" width="140" height="24" styleId="155:2002" x="3600" y="1400" name="Rating" id="155:2000">
+        <Fill fillRule="clockwise" id="155:2009">
+            <SolidColor colorValue="00000000" id="155:2010"/>
+        </Fill>
+        <LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="155:2002"/>
+        <LayoutComponent styleId="155:2004" name="Stars" id="155:2003">
+            <LayoutComponent styleId="155:2006" isTargetOpaque="true" name="Disabled Shield" id="155:2005">
+                <Fill fillRule="clockwise" id="155:2011">
+                    <SolidColor colorValue="00000000" id="155:2012"/>
+                </Fill>
+                <LayoutComponentStyle positionLeftUnitsValue="points" positionRightUnitsValue="points" positionTopUnitsValue="points" positionBottomUnitsValue="points" edgeConstraints="84" positionTypeValue="absolute" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="155:2006">
+                    <DataBindContext sourcePathIds="155:20-155:22-155:4" propertyKey="596" converterId="9:90" nameBased="true" id="155:2013"/>
+                </LayoutComponentStyle>
+            </LayoutComponent>
+            <ArtboardComponentList participatesInLayout="true" id="155:2014">
+                <DataBindContext sourcePathIds="155:20-155:21" propertyKey="800" id="155:2015"/>
+            </ArtboardComponentList>
+            <LayoutComponentStyle gapHorizontal="4" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="155:2004"/>
+            <SemanticData role="slider" traitFlags="32" name="Semantics" id="155:2016">
+                <DataBindContext sourcePathIds="155:20-155:23" propertyKey="983" nameBased="true" id="155:2017"/>
+                <DataBindContext sourcePathIds="155:20-155:22-155:2" propertyKey="984" converterId="155:80" nameBased="true" id="155:2018"/>
+                <DataBindContext sourcePathIds="155:20-155:24" propertyKey="1004" nameBased="true" id="155:2019"/>
+                <DataBindContext sourcePathIds="155:20-155:22-155:4" propertyKey="1002" nameBased="true" id="155:2020"/>
+            </SemanticData>
+            <FocusData name="Focus" id="155:2021">
+                <DataBindContext sourcePathIds="155:20-155:22-155:4" propertyKey="953" converterId="1:1018" nameBased="true" id="155:2022"/>
+            </FocusData>
+        </LayoutComponent>
+        <StateMachine name="State Machine 1" id="155:2001">
+            <StateMachineListener targetId="155:2000" name="Preview Disabled" id="155:2027">
+                <ListenerInputTypeViewModel viewModelPathIds="10:7-15:419" listenerTypeValue="viewModel" id="155:2028"/>
+                <ListenerViewModelChange fromViewModelProperty="true" fromDataBindId="155:2023" id="155:2024">
+                    <BindablePropertyBoolean id="155:2025">
+                        <DataBindContext sourcePathIds="155:20-155:22-155:4" propertyKey="634" direction="true" id="155:2026"/>
+                        <DataBindContext sourcePathIds="10:7-15:419" propertyKey="634" id="155:2023"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListener targetId="155:2005" name="Disabled Block" id="155:2029">
+                <ListenerInputType id="155:2030"/>
+                <ListenerViewModelChange id="155:2031">
+                    <BindablePropertyNumber id="155:2032">
+                        <DataBindContext sourcePathIds="155:20-155:22-155:3" propertyKey="636" direction="true" id="155:2033"/>
+                    </BindablePropertyNumber>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListener targetId="155:2003" name="Step Up" id="155:2036">
+                <ListenerInputTypeSemantic listenerTypeValue="semanticAction" id="155:2037">
+                    <SemanticInput actionType="increase" id="155:2038"/>
+                </ListenerInputTypeSemantic>
+                <ListenerInputTypeKeyboard listenerTypeValue="keyboard" id="155:2039">
+                    <KeyboardInput keyType="arrowRight" keyPhase="3" id="155:2034"/>
+                    <KeyboardInput keyType="arrowUp" keyPhase="3" id="155:2035"/>
+                </ListenerInputTypeKeyboard>
+                <ListenerViewModelChange fromViewModelProperty="true" fromDataBindId="155:2040" id="155:2041">
+                    <BindablePropertyTrigger id="155:2042">
+                        <DataBindContext sourcePathIds="155:20-155:25" propertyKey="686" id="155:2040"/>
+                        <DataBindContext sourcePathIds="155:20-155:25" propertyKey="686" direction="true" converterId="1:1332" id="155:2043"/>
+                    </BindablePropertyTrigger>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListener targetId="155:2003" name="Step Down" id="155:2046">
+                <ListenerInputTypeSemantic listenerTypeValue="semanticAction" id="155:2047">
+                    <SemanticInput actionType="decrease" id="155:2048"/>
+                </ListenerInputTypeSemantic>
+                <ListenerInputTypeKeyboard listenerTypeValue="keyboard" id="155:2049">
+                    <KeyboardInput keyType="arrowLeft" keyPhase="3" id="155:2044"/>
+                    <KeyboardInput keyType="arrowDown" keyPhase="3" id="155:2045"/>
+                </ListenerInputTypeKeyboard>
+                <ListenerViewModelChange fromViewModelProperty="true" fromDataBindId="155:2050" id="155:2051">
+                    <BindablePropertyTrigger id="155:2052">
+                        <DataBindContext sourcePathIds="155:20-155:26" propertyKey="686" id="155:2050"/>
+                        <DataBindContext sourcePathIds="155:20-155:26" propertyKey="686" direction="true" converterId="1:1332" id="155:2053"/>
+                    </BindablePropertyTrigger>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListener targetId="155:2000" name="Increase" id="155:2058">
+                <ListenerInputTypeViewModel viewModelPathIds="155:20-155:27" listenerTypeValue="viewModel" id="155:2059"/>
+                <ListenerViewModelChange fromViewModelProperty="true" fromDataBindId="155:2054" id="155:2055">
+                    <BindablePropertyNumber id="155:2056">
+                        <DataBindContext sourcePathIds="155:20-155:22-155:2" propertyKey="636" direction="true" id="155:2057"/>
+                        <DataBindContext sourcePathIds="155:20-155:22-155:2" propertyKey="636" converterId="155:90" id="155:2054"/>
+                    </BindablePropertyNumber>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListener targetId="155:2000" name="Decrease" id="155:2064">
+                <ListenerInputTypeViewModel viewModelPathIds="155:20-155:28" listenerTypeValue="viewModel" id="155:2065"/>
+                <ListenerViewModelChange fromViewModelProperty="true" fromDataBindId="155:2060" id="155:2061">
+                    <BindablePropertyNumber id="155:2062">
+                        <DataBindContext sourcePathIds="155:20-155:22-155:2" propertyKey="636" direction="true" id="155:2063"/>
+                        <DataBindContext sourcePathIds="155:20-155:22-155:2" propertyKey="636" converterId="155:100" id="155:2060"/>
+                    </BindablePropertyNumber>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineLayer name="Increase Gate" id="155:2068">
+                <AnimationState animationId="155:2007" x="160" stateName="Idle" id="155:2066">
+                    <StateTransition stateToId="155:2067" id="155:2069">
+                        <TransitionViewModelCondition opValue="notEqual" id="155:2070">
+                            <TransitionPropertyViewModelComparator id="155:2071">
+                                <BindablePropertyTrigger id="155:2072">
+                                    <DataBindContext sourcePathIds="155:20-155:25" propertyKey="686" id="155:2073"/>
+                                </BindablePropertyTrigger>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueTriggerComparator id="155:2074"/>
+                        </TransitionViewModelCondition>
+                        <TransitionViewModelCondition id="155:2075">
+                            <TransitionPropertyViewModelComparator id="155:2076">
+                                <BindablePropertyBoolean id="155:2077">
+                                    <DataBindContext sourcePathIds="155:20-155:22-155:4" propertyKey="634" id="155:2078"/>
+                                </BindablePropertyBoolean>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueBooleanComparator id="155:2079"/>
+                        </TransitionViewModelCondition>
+                        <StateMachineFireTrigger viewModelPathIds="155:20-155:27" id="155:2080"/>
+                    </StateTransition>
+                </AnimationState>
+                <AnimationState animationId="155:2007" x="400" stateName="Fire" id="155:2067">
+                    <StateTransition stateToId="155:2066" id="155:2081"/>
+                </AnimationState>
+                <AnyState x="560" id="155:2082"/>
+                <ExitState x="640" id="155:2083"/>
+                <EntryState id="155:2084">
+                    <StateTransition stateToId="155:2066" id="155:2085"/>
+                </EntryState>
+            </StateMachineLayer>
+            <StateMachineLayer name="Decrease Gate" id="155:2088">
+                <AnimationState animationId="155:2008" x="160" stateName="Idle" id="155:2086">
+                    <StateTransition stateToId="155:2087" id="155:2089">
+                        <TransitionViewModelCondition opValue="notEqual" id="155:2090">
+                            <TransitionPropertyViewModelComparator id="155:2091">
+                                <BindablePropertyTrigger id="155:2092">
+                                    <DataBindContext sourcePathIds="155:20-155:26" propertyKey="686" id="155:2093"/>
+                                </BindablePropertyTrigger>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueTriggerComparator id="155:2094"/>
+                        </TransitionViewModelCondition>
+                        <TransitionViewModelCondition id="155:2095">
+                            <TransitionPropertyViewModelComparator id="155:2096">
+                                <BindablePropertyBoolean id="155:2097">
+                                    <DataBindContext sourcePathIds="155:20-155:22-155:4" propertyKey="634" id="155:2098"/>
+                                </BindablePropertyBoolean>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueBooleanComparator id="155:2099"/>
+                        </TransitionViewModelCondition>
+                        <StateMachineFireTrigger viewModelPathIds="155:20-155:28" id="155:2100"/>
+                    </StateTransition>
+                </AnimationState>
+                <AnimationState animationId="155:2008" x="400" stateName="Fire" id="155:2087">
+                    <StateTransition stateToId="155:2086" id="155:2101"/>
+                </AnimationState>
+                <AnyState x="560" id="155:2102"/>
+                <ExitState x="640" id="155:2103"/>
+                <EntryState id="155:2104">
+                    <StateTransition stateToId="155:2086" id="155:2105"/>
+                </EntryState>
+            </StateMachineLayer>
+        </StateMachine>
+        <LinearAnimation name="Idle Up" id="155:2007"/>
+        <LinearAnimation name="Idle Down" id="155:2008"/>
+    </Artboard>
+</Rive>
