@@ -1,7 +1,8 @@
 <Rive version="1" kind="fragment">
     <AssetGroup type="images" name="Images" id="1:2093"/>
     <AssetGroup type="fonts" name="Fonts" id="1:2106"/>
-    <ComponentAsset artboardId="92:616" name="Segmented Control 2" id="92:636"/>
+    <AssetGroup type="scripts" name="Scripts" id="327:1"/>
+    <ComponentAsset artboardId="92:616" name="Segmented Control 2" groupId="1:2112" id="92:636"/>
     <ComponentGroup id="1:2112"/>
     <CubicEaseInterpolator id="1:1357"/>
     <CubicEaseInterpolator id="1:1358"/>
@@ -369,6 +370,17 @@
         <FormulaTokenOperation operationType="subtract" id="115:19"/>
         <FormulaTokenValue operationValue="0.043478262" id="115:20"/>
     </DataConverterFormula>
+    <DataConverterFormula name="Progress · Clamp 0-100" groupId="1:2674" id="130:9">
+        <FormulaTokenFunction id="130:10"/>
+        <FormulaTokenValue operationValue="100" id="130:11"/>
+        <FormulaTokenArgumentSeparator id="130:12"/>
+        <FormulaTokenFunction functionType="max" id="130:13"/>
+        <FormulaTokenValue operationValue="0" id="130:14"/>
+        <FormulaTokenArgumentSeparator id="130:15"/>
+        <FormulaTokenInput id="130:16"/>
+        <FormulaTokenParenthesisClose id="130:17"/>
+        <FormulaTokenParenthesisClose id="130:18"/>
+    </DataConverterFormula>
     <DataConverterGroup name="Slider · Percent text" groupId="1:2674" id="2:40">
         <DataConverterGroupItem converterId="2:41" id="2:60"/>
         <DataConverterGroupItem converterId="2:61" id="2:62"/>
@@ -406,7 +418,17 @@
         <DataConverterGroupItem converterId="10:5473" id="100:62"/>
         <DataConverterGroupItem converterId="10:5574" id="100:63"/>
     </DataConverterGroup>
+    <DataConverterGroup name="Progress · Percent text" groupId="1:2674" id="130:100">
+        <DataConverterGroupItem converterId="130:9" id="130:101"/>
+        <DataConverterGroupItem converterId="130:19" id="130:102"/>
+        <DataConverterGroupItem converterId="130:103" id="130:106"/>
+        <DataConverterGroupItem converterId="130:104" id="130:107"/>
+        <DataConverterGroupItem converterId="130:105" id="130:108"/>
+    </DataConverterGroup>
     <DataConverterListToLength name="Showcase · Tile count" groupId="1:2674" id="100:59"/>
+    <DataConverterStringPad length="3" text=" " name="Progress · Pad to 3" groupId="1:2674" id="130:103"/>
+    <DataConverterStringPad length="4" text="%" padType="end" name="Progress · Percent sign" groupId="1:2674" id="130:104"/>
+    <DataConverterStringTrim name="Progress · Trim start" groupId="1:2674" id="130:105"/>
     <DataConverterToNumber name="Checkbox · Checked (to number)" groupId="1:2674" id="2:64"/>
     <DataConverterToNumber name="Showcase · Panel width / Disabled · Shield (to number)" groupId="1:2674" id="9:91"/>
     <DataConverterToNumber name="Disabled · No shadow (to number)" groupId="1:2674" id="9:132"/>
@@ -416,6 +438,7 @@
     <DataConverterToNumber name="Showcase · Hover tint (to number)" groupId="1:2674" id="70:511"/>
     <DataConverterToNumber name="Button · No shadow in a group (to number)" groupId="1:2674" id="99:111"/>
     <DataConverterToString round="true" name="SliderPercentString" groupId="1:2674" id="2:61"/>
+    <DataConverterToString round="true" name="Progress · Percent (to text)" groupId="1:2674" id="130:19"/>
     <DataFolder name="UI Kit" id="1:2753">
         <DataFolder name="Utils" id="1:1021">
             <DataConverterBooleanNegate name="Utils · Toggle" groupId="1:2674" id="1:1018"/>
@@ -1901,11 +1924,11 @@
     </Folder>
     <FontAsset isCustom="false" includeTypeValue="custom" includedUnicodes="U+0020-007E,U+00A0-00FF,U+2018-201D,U+2026,U+20AC" assetId="4228759" name="Inter" groupId="1:2106" id="0:7"/>
     <ImageAsset file="Avatar.png" height="128" width="128" assetId="5251943" name="Avatar" groupId="1:2093" id="1:2091"/>
-    <ImageAsset file="Showcase Cover.webp" format="webp" height="1080" width="1440" assetId="7319575" name="Showcase Cover" id="42:629"/>
+    <ImageAsset file="Showcase Cover.webp" format="webp" height="1080" width="1440" assetId="7319575" name="Showcase Cover" groupId="1:2093" id="42:629"/>
     <RenderPreset name="Preset 1" artboardId="10:110" format="png_sequence" width="1440" height="1080" id="57:1"/>
-    <ScriptAsset file="Pagination Pages.luau" serializedImplementedMethods="769" scriptProtocolValue="layout" codeFileId="0:15811" name="Pagination Pages" id="912:3"/>
-    <ScriptAsset file="Viewport.luau" compilationOrder="1" serializedImplementedMethods="4921" scriptProtocolValue="layout" codeFileId="0:27924" name="Viewport" id="913:9"/>
-    <ScriptAsset file="Tooltip Placement.luau" compilationOrder="2" serializedImplementedMethods="4881" scriptProtocolValue="layout" codeFileId="0:20578" name="Tooltip Placement" id="914:10"/>
+    <ScriptAsset file="Pagination Pages.luau" serializedImplementedMethods="769" scriptProtocolValue="layout" codeFileId="0:15811" name="Pagination Pages" groupId="327:1" id="912:3"/>
+    <ScriptAsset file="Viewport.luau" compilationOrder="1" serializedImplementedMethods="4921" scriptProtocolValue="layout" codeFileId="0:27924" name="Viewport" groupId="327:1" id="913:9"/>
+    <ScriptAsset file="Tooltip Placement.luau" compilationOrder="2" serializedImplementedMethods="4881" scriptProtocolValue="layout" codeFileId="0:20578" name="Tooltip Placement" groupId="327:1" id="914:10"/>
     <Space name="Space 1" colorValue="FF2F2F2F" id="1:5601"/>
     <TransitionPropertyViewModelComparator id="1:2359"/>
     <TransitionPropertyViewModelComparator id="1:2363"/>
@@ -3514,28 +3537,12 @@
             <ViewModelInstanceNumber viewModelPropertyId="914:3" id="914:9"/>
         </ViewModelInstance>
     </ViewModel>
-    <DataConverterFormula name="Progress · Clamp 0-100" groupId="1:2674" id="130:9">
-        <FormulaTokenFunction id="130:10"/>
-        <FormulaTokenValue operationValue="100" id="130:11"/>
-        <FormulaTokenArgumentSeparator id="130:12"/>
-        <FormulaTokenFunction functionType="1" id="130:13"/>
-        <FormulaTokenValue operationValue="0" id="130:14"/>
-        <FormulaTokenArgumentSeparator id="130:15"/>
-        <FormulaTokenInput id="130:16"/>
-        <FormulaTokenParenthesisClose id="130:17"/>
-        <FormulaTokenParenthesisClose id="130:18"/>
-    </DataConverterFormula>
-    <DataConverterToString decimals="0" round="true" name="Progress · Percent (to text)" groupId="1:2674" id="130:19"/>
-    <DataConverterStringPad length="3" text=" " name="Progress · Pad to 3" groupId="1:2674" id="130:103"/>
-    <DataConverterStringPad length="4" text="%" padType="end" name="Progress · Percent sign" groupId="1:2674" id="130:104"/>
-    <DataConverterStringTrim trimType="1" name="Progress · Trim start" groupId="1:2674" id="130:105"/>
-    <DataConverterGroup name="Progress · Percent text" groupId="1:2674" id="130:100">
-        <DataConverterGroupItem converterId="130:9" id="130:101"/>
-        <DataConverterGroupItem converterId="130:19" id="130:102"/>
-        <DataConverterGroupItem converterId="130:103" id="130:106"/>
-        <DataConverterGroupItem converterId="130:104" id="130:107"/>
-        <DataConverterGroupItem converterId="130:105" id="130:108"/>
-    </DataConverterGroup>
+    <ViewModel defaultInstanceId="122:3" name="NavExpansion" groupId="1:2673" id="122:1">
+        <ViewModelPropertyBoolean name="allOpen" id="122:2"/>
+        <ViewModelInstance exports="true" name="Default" id="122:3">
+            <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="122:2" id="122:7"/>
+        </ViewModelInstance>
+    </ViewModel>
     <ViewModel defaultInstanceId="130:5" name="ProgressBar" groupId="1:2673" id="130:1">
         <ViewModelPropertyString name="label" id="130:2"/>
         <ViewModelPropertyNumber name="value" id="130:3"/>
@@ -3544,12 +3551,6 @@
             <ViewModelInstanceString propertyValue="Uploading" viewModelPropertyId="130:2" id="130:6"/>
             <ViewModelInstanceNumber propertyValue="64" viewModelPropertyId="130:3" id="130:7"/>
             <ViewModelInstanceBoolean viewModelPropertyId="130:4" id="130:8"/>
-        </ViewModelInstance>
-    </ViewModel>
-    <ViewModel defaultInstanceId="122:3" name="NavExpansion" groupId="1:2673" id="122:1">
-        <ViewModelPropertyBoolean name="allOpen" id="122:2"/>
-        <ViewModelInstance exports="true" name="Default" id="122:3">
-            <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="122:2" id="122:7"/>
         </ViewModelInstance>
     </ViewModel>
 </Rive>
