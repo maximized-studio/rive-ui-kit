@@ -956,6 +956,7 @@ Contains: Button, Menu
 | `pressed` | trigger | `148:8` |
 | `_menuPressed` | trigger | `148:9` |
 | `menuLabel` | string | `148:10` |
+| `_menuToggle` | trigger | `148:11` |
 
 ```xml
 <NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="148:1000" isStateful="true" name="Split Button" id="X:1">
@@ -970,6 +971,7 @@ Contains: Button, Menu
         <ViewModelInstanceTrigger viewModelPropertyId="148:8" id="X:10"/>  <!-- pressed -->
         <ViewModelInstanceTrigger viewModelPropertyId="148:9" id="X:11"/>  <!-- _menuPressed -->
         <ViewModelInstanceString viewModelPropertyId="148:10" id="X:12"/>  <!-- menuLabel -->
+        <ViewModelInstanceTrigger viewModelPropertyId="148:11" id="X:13"/>  <!-- _menuToggle -->
     </ViewModelInstance>
 </NestedArtboardLayout>
 ```

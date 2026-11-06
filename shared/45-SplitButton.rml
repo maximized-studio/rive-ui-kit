@@ -45,15 +45,11 @@
                             <DataBindContext sourcePathIds="148:1-148:10" propertyKey="561" nameBased="true" id="148:1040"/>
                         </ViewModelInstanceString>
                         <ViewModelInstanceBoolean viewModelPropertyId="1:587" id="148:1041"/>
-                        <ViewModelInstanceTrigger viewModelPropertyId="1:1321" id="148:1042">
-                            <DataBindContext sourcePathIds="148:1-148:9" propertyKey="687" twoWay="true" nameBased="true" id="148:1043"/>
-                        </ViewModelInstanceTrigger>
+                        <ViewModelInstanceTrigger viewModelPropertyId="1:1321" id="148:1042"/>
                         <ViewModelInstanceBoolean viewModelPropertyId="7:1" id="148:1045">
                             <DataBindContext sourcePathIds="148:1-148:5" propertyKey="593" nameBased="true" id="148:1044"/>
                         </ViewModelInstanceBoolean>
-                        <ViewModelInstanceBoolean viewModelPropertyId="7:3" id="148:1047">
-                            <DataBindContext sourcePathIds="148:1-148:6" propertyKey="593" nameBased="true" id="148:1046"/>
-                        </ViewModelInstanceBoolean>
+                        <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="7:3" id="148:1047"/>
                         <ViewModelInstanceNumber propertyValue="10" viewModelPropertyId="33:164" id="148:1048"/>
                         <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="33:169" id="148:1049"/>
                         <ViewModelInstanceNumber propertyValue="3" viewModelPropertyId="99:100" id="148:1050"/>
@@ -68,6 +64,15 @@
                     </ViewModelInstance>
                 </NestedArtboardLayout>
                 <LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="148:1034"/>
+                <SemanticData role="button" traitFlags="33" name="Semantics" id="148:2000">
+                    <DataBindContext sourcePathIds="148:1-148:10" propertyKey="983" nameBased="true" id="148:2001"/>
+                    <DataBindContext sourcePathIds="148:1-148:7-146:12-146:4" propertyKey="996" nameBased="true" id="148:2002"/>
+                    <DataBindContext sourcePathIds="148:1-148:6" propertyKey="1004" nameBased="true" id="148:2003"/>
+                    <DataBindContext sourcePathIds="148:1-148:5" propertyKey="1002" nameBased="true" id="148:2004"/>
+                </SemanticData>
+                <FocusData name="Focus" id="148:2005">
+                    <DataBindContext sourcePathIds="148:1-148:5" propertyKey="953" nameBased="true" converterId="1:1018" id="148:2006"/>
+                </FocusData>
             </LayoutComponent>
             <LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="148:1003"/>
             <SemanticData role="group" name="Semantics" id="148:1057">
@@ -92,7 +97,7 @@
                 </ListenerViewModelChange>
             </StateMachineListener>
             <StateMachineListener targetId="148:1000" name="Toggle Menu" id="148:1064">
-                <ListenerInputTypeViewModel viewModelPathIds="148:1-148:9" listenerTypeValue="viewModel" id="148:1065"/>
+                <ListenerInputTypeViewModel viewModelPathIds="148:1-148:11" listenerTypeValue="viewModel" id="148:1065"/>
                 <ListenerViewModelChange fromViewModelProperty="true" fromDataBindId="148:1060" id="148:1061">
                     <BindablePropertyBoolean id="148:1062">
                         <DataBindContext sourcePathIds="148:1-148:7-146:12-146:4" propertyKey="634" converterId="1:1018" id="148:1060"/>
@@ -100,6 +105,54 @@
                     </BindablePropertyBoolean>
                 </ListenerViewModelChange>
             </StateMachineListener>
+            <StateMachineListener targetId="148:1035" name="Menu Activate" id="148:2011">
+                <ListenerInputType listenerTypeValue="click" id="148:2012"/>
+                <ListenerInputTypeSemantic listenerTypeValue="semanticAction" id="148:2013">
+                    <SemanticInput id="148:2014"/>
+                </ListenerInputTypeSemantic>
+                <ListenerInputTypeKeyboard listenerTypeValue="keyboard" id="148:2015">
+                    <KeyboardInput keyType="enter" keyPhase="1" id="148:2008"/>
+                    <KeyboardInput keyType="kpEnter" keyPhase="1" id="148:2009"/>
+                    <KeyboardInput keyType="space" keyPhase="1" id="148:2010"/>
+                </ListenerInputTypeKeyboard>
+                <ListenerViewModelChange fromViewModelProperty="true" fromDataBindId="148:2016" id="148:2017">
+                    <BindablePropertyTrigger id="148:2018">
+                        <DataBindContext sourcePathIds="148:1-148:9" propertyKey="686" id="148:2016"/>
+                        <DataBindContext sourcePathIds="148:1-148:9" propertyKey="686" direction="true" converterId="1:1332" id="148:2019"/>
+                    </BindablePropertyTrigger>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineLayer name="Menu Gate" id="148:2022">
+                <AnimationState animationId="148:2007" x="160" stateName="Idle" id="148:2020">
+                    <StateTransition stateToId="148:2021" id="148:2023">
+                        <TransitionViewModelCondition opValue="notEqual" id="148:2024">
+                            <TransitionPropertyViewModelComparator id="148:2025">
+                                <BindablePropertyTrigger id="148:2026">
+                                    <DataBindContext sourcePathIds="148:1-148:9" propertyKey="686" id="148:2027"/>
+                                </BindablePropertyTrigger>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueTriggerComparator id="148:2028"/>
+                        </TransitionViewModelCondition>
+                        <TransitionViewModelCondition id="148:2029">
+                            <TransitionPropertyViewModelComparator id="148:2030">
+                                <BindablePropertyBoolean id="148:2031">
+                                    <DataBindContext sourcePathIds="148:1-148:5" propertyKey="634" id="148:2032"/>
+                                </BindablePropertyBoolean>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueBooleanComparator id="148:2033"/>
+                        </TransitionViewModelCondition>
+                        <StateMachineFireTrigger viewModelPathIds="148:1-148:11" id="148:2034"/>
+                    </StateTransition>
+                </AnimationState>
+                <AnimationState animationId="148:2007" x="400" stateName="Fire" id="148:2021">
+                    <StateTransition stateToId="148:2020" id="148:2035"/>
+                </AnimationState>
+                <AnyState x="560" id="148:2036"/>
+                <ExitState x="640" id="148:2037"/>
+                <EntryState id="148:2038">
+                    <StateTransition stateToId="148:2020" id="148:2039"/>
+                </EntryState>
+            </StateMachineLayer>
             <StateMachineLayer name="Open" id="148:1070">
                 <AnimationState animationId="148:1066" x="160" y="100" stateName="Closed" id="148:1068"/>
                 <AnimationState animationId="148:1067" x="320" y="100" stateName="Open" id="148:1069"/>
@@ -131,6 +184,7 @@
                 </EntryState>
             </StateMachineLayer>
         </StateMachine>
+        <LinearAnimation name="Idle" id="148:2007"/>
         <LinearAnimation loopValue="loop" name="Closed" id="148:1066">
             <KeyedObject objectId="148:1005" id="148:1087">
                 <KeyedProperty property="opacity" id="148:1088">
