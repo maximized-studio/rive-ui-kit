@@ -12,7 +12,7 @@ The kit is also on the [Rive Community](https://rive.app/community/files/25701-5
 
 - **Actions:** Button · Button Group · Dropdown
 - **Display:** Accordion · Avatar · Badge · Label
-- **Feedback:** Alert · Tooltip
+- **Feedback:** Alert · Progress Bar · Tooltip
 - **Inputs:** Checkbox / Checkbox Group · Radio Option / Radio Group · Slider · Switch / Switch Group
 - **Navigation:** Breadcrumbs · Pagination
 - **Building blocks:** Accordion Item · Breadcrumb Item · List Item · Nav Group · Nav Item · Page Item · Segment · Segmented Control · Showcase Section · Sidebar · Slide · Tile · Toolbar · Tooltip Button
@@ -52,6 +52,7 @@ The components carry Rive semantics, so screen readers get a real accessibility 
 | Radio Option / Radio Group | `radioButton` / `radioGroup` | label, selected |
 | Slider | `slider` | label, value |
 | Switch | `switchControl` | label, on/off |
+| Progress Bar | `group` / `text` | label; percentage ("64%") |
 | Tooltip | `text` | text (left out when its trigger carries it as a hint) |
 | Tooltip Button | `button` | label, hint (the tooltip text) |
 
@@ -112,6 +113,16 @@ Previous and next Buttons around up to seven page buttons. Set two numbers and t
 - Previous and next step by one and are disabled on the first and last page.
 - Listen to `page` in your app to load that page.
 - The behaviour is a small Luau script, **Pagination Pages**: it fills the `_pages` list of Page Items and sets the disabled flags. Luau runs in the editor and in the Rive runtimes. Use a `.riv` exported from the editor or built with `rive --publish`: a plain CLI build (`--once`) does not run scripts. Like every script, it does not run in a Community thumbnail.
+
+## Progress Bar
+
+A label, a percentage and a bar that fills from the left.
+
+- View model `ProgressBar`: `label`, `value` (`0`–`100`), `a11yHidden`.
+- Values outside `0`–`100` are clamped; the percentage is rounded to a whole number.
+- The bar eases to a new value with a short layout animation.
+- Track and fill use the same tokens as the Slider (`_borderStrong`, `_brand600`); the corners follow `_radiusSmall`, so the theme roundness applies.
+- Screen readers get a `group` named by the label with the percentage as text. A chain of built-in converters makes that text (clamp, round, pad, add `%`, trim), so no script is involved.
 
 ## Tooltip
 
