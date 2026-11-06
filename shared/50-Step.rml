@@ -1,0 +1,313 @@
+<Rive version="1" kind="fragment">
+    <Artboard defaultStateMachineId="159:1001" viewModelId="159:1" viewModelInstanceId="159:30" isComponent="true" includeInExport="false" spaceId="1:5601" width="140" height="24" styleId="159:1002" x="3600" y="1800" name="Step" id="159:1000">
+        <Fill fillRule="clockwise" id="159:1058">
+            <SolidColor colorValue="00000000" id="159:1059"/>
+        </Fill>
+        <LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="159:1002"/>
+        <LayoutComponent styleId="159:1003" name="Step" id="159:1060">
+            <LayoutComponent width="24" height="24" styleId="159:1004" name="Circle" id="159:1061">
+                <LayoutComponent width="24" height="24" styleId="159:1006" opacity="0" name="Check" id="159:1012">
+                    <Shape x="12" y="12" name="Mark" id="159:1062">
+                        <PointsPath isClockwise="false" id="159:1066">
+                            <StraightVertex x="-4" y="0.5" id="159:1063"/>
+                            <StraightVertex x="-1.25" y="3.25" id="159:1064"/>
+                            <StraightVertex x="4.25" y="-2.75" id="159:1065"/>
+                        </PointsPath>
+                        <Stroke thickness="2" cap="round" join="round" id="159:1067">
+                            <SolidColor colorValue="FF18181B" id="159:1068">
+                                <DataBindContext sourcePathIds="10:7-118:4" propertyKey="37" id="159:1069"/>
+                            </SolidColor>
+                        </Stroke>
+                    </Shape>
+                    <LayoutComponentStyle id="159:1006"/>
+                </LayoutComponent>
+                <Text opacity="0" name="Number" id="159:1015">
+                    <TextStylePaint fontSize="13" fontAssetId="0:7" familyName="Inter" styleName="SemiBold" id="159:1014">
+                        <Fill fillRule="clockwise" id="159:1016">
+                            <SolidColor colorValue="FF18181B" id="159:1017">
+                                <DataBindContext sourcePathIds="10:7-118:4" propertyKey="37" id="159:1018"/>
+                            </SolidColor>
+                        </Fill>
+                        <TextStyleAxis tag="1869640570" axisValue="14" id="159:1019"/>
+                        <TextStyleAxis tag="2003265652" axisValue="600" id="159:1020"/>
+                    </TextStylePaint>
+                    <TextValueRun styleId="159:1014" text="1" id="159:1021">
+                        <DataBindContext sourcePathIds="159:1-159:3" propertyKey="268" nameBased="true" converterId="159:60" id="159:1023"/>
+                    </TextValueRun>
+                    <LayoutParticipant layoutWidthScaleType="hug" layoutHeightScaleType="hug" id="159:1022"/>
+                </Text>
+                <Text name="Muted Number" id="159:1025">
+                    <TextStylePaint fontSize="13" fontAssetId="0:7" familyName="Inter" styleName="SemiBold" id="159:1024">
+                        <Fill fillRule="clockwise" id="159:1026">
+                            <SolidColor colorValue="FFA1A1AA" id="159:1027">
+                                <DataBindContext sourcePathIds="10:7-10:7426" propertyKey="37" id="159:1028"/>
+                            </SolidColor>
+                        </Fill>
+                        <TextStyleAxis tag="1869640570" axisValue="14" id="159:1029"/>
+                        <TextStyleAxis tag="2003265652" axisValue="600" id="159:1030"/>
+                    </TextStylePaint>
+                    <TextValueRun styleId="159:1024" text="1" id="159:1031">
+                        <DataBindContext sourcePathIds="159:1-159:3" propertyKey="268" nameBased="true" converterId="159:60" id="159:1033"/>
+                    </TextValueRun>
+                    <LayoutParticipant layoutWidthScaleType="hug" layoutHeightScaleType="hug" id="159:1032"/>
+                </Text>
+                <LayoutComponent styleId="159:1005" opacity="0" name="Fill" id="159:1011">
+                    <Fill fillRule="clockwise" id="159:1070">
+                        <SolidColor colorValue="FFFAFAFA" id="159:1071">
+                            <DataBindContext sourcePathIds="10:7-118:2" propertyKey="37" id="159:1072"/>
+                        </SolidColor>
+                    </Fill>
+                    <LayoutComponentStyle cornerRadiusTL="999" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="159:1005"/>
+                </LayoutComponent>
+                <Fill fillRule="clockwise" id="159:1073">
+                    <SolidColor colorValue="FF18181B" id="159:1074">
+                        <DataBindContext sourcePathIds="10:7-10:7406" propertyKey="37" id="159:1075"/>
+                    </SolidColor>
+                </Fill>
+                <Stroke thickness="1.5" id="159:1076">
+                    <SolidColor colorValue="FF3F3F46" id="159:1077">
+                        <DataBindContext sourcePathIds="10:7-10:7420" propertyKey="37" id="159:1078"/>
+                    </SolidColor>
+                </Stroke>
+                <LayoutComponentStyle layoutAlignmentType="center" layoutTypeValue="stack" cornerRadiusTL="999" id="159:1004"/>
+            </LayoutComponent>
+            <LayoutComponent styleId="159:1008" name="Label" id="159:1079">
+                <Text opacity="0" name="Label" id="159:1036">
+                    <TextStylePaint fontSize="14" fontAssetId="0:7" familyName="Inter" styleName="SemiBold" id="159:1034">
+                        <Fill fillRule="clockwise" id="159:1037">
+                            <SolidColor colorValue="FFFAFAFA" id="159:1038">
+                                <DataBindContext sourcePathIds="10:7-10:7422" propertyKey="37" id="159:1039"/>
+                            </SolidColor>
+                        </Fill>
+                        <TextStyleAxis tag="1869640570" axisValue="14" id="159:1040"/>
+                        <TextStyleAxis tag="2003265652" axisValue="600" id="159:1041"/>
+                    </TextStylePaint>
+                    <TextValueRun styleId="159:1034" text="Details" id="159:1042">
+                        <DataBindContext sourcePathIds="159:1-159:2" propertyKey="268" nameBased="true" id="159:1035"/>
+                    </TextValueRun>
+                    <LayoutParticipant layoutWidthScaleType="hug" layoutHeightScaleType="hug" id="159:1043"/>
+                </Text>
+                <Text name="Muted Label" id="159:1046">
+                    <TextStylePaint fontSize="14" fontAssetId="0:7" familyName="Inter" styleName="SemiBold" id="159:1044">
+                        <Fill fillRule="clockwise" id="159:1047">
+                            <SolidColor colorValue="FFA1A1AA" id="159:1048">
+                                <DataBindContext sourcePathIds="10:7-10:7426" propertyKey="37" id="159:1049"/>
+                            </SolidColor>
+                        </Fill>
+                        <TextStyleAxis tag="1869640570" axisValue="14" id="159:1050"/>
+                        <TextStyleAxis tag="2003265652" axisValue="600" id="159:1051"/>
+                    </TextStylePaint>
+                    <TextValueRun styleId="159:1044" text="Details" id="159:1052">
+                        <DataBindContext sourcePathIds="159:1-159:2" propertyKey="268" nameBased="true" id="159:1045"/>
+                    </TextValueRun>
+                    <LayoutParticipant layoutWidthScaleType="hug" layoutHeightScaleType="hug" id="159:1053"/>
+                </Text>
+                <LayoutComponentStyle layoutAlignmentType="centerLeft" intrinsicallySizedValue="true" layoutTypeValue="stack" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="159:1008"/>
+            </LayoutComponent>
+            <LayoutComponent width="32" height="2" styleId="159:1009" name="Connector" id="159:1080">
+                <LayoutComponent styleId="159:1010" opacity="0" name="Done" id="159:1013">
+                    <Fill fillRule="clockwise" id="159:1081">
+                        <SolidColor colorValue="FFFAFAFA" id="159:1082">
+                            <DataBindContext sourcePathIds="10:7-118:2" propertyKey="37" id="159:1083"/>
+                        </SolidColor>
+                    </Fill>
+                    <LayoutComponentStyle layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="159:1010"/>
+                </LayoutComponent>
+                <Fill fillRule="clockwise" id="159:1084">
+                    <SolidColor colorValue="FF27272A" id="159:1085">
+                        <DataBindContext sourcePathIds="10:7-10:7418" propertyKey="37" id="159:1086"/>
+                    </SolidColor>
+                </Fill>
+                <LayoutComponentStyle id="159:1009">
+                    <DataBindContext sourcePathIds="159:1-159:5" propertyKey="596" nameBased="true" converterId="9:145" id="159:1087"/>
+                </LayoutComponentStyle>
+            </LayoutComponent>
+            <LayoutComponentStyle gapHorizontal="8" layoutAlignmentType="center" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="159:1003"/>
+            <SemanticData role="listItem" traitFlags="2" name="Semantics" id="159:1057">
+                <DataBindContext sourcePathIds="159:1-159:2" propertyKey="983" nameBased="true" id="159:1088"/>
+            </SemanticData>
+            <FocusData name="Focus" id="0:27928"/>
+        </LayoutComponent>
+        <StateMachine name="State Machine 1" id="159:1001">
+            <StateMachineLayer name="Progress" id="159:1092">
+                <AnimationState animationId="159:1054" x="160" y="100" stateName="Upcoming" id="159:1089"/>
+                <AnimationState animationId="159:1055" x="320" y="100" stateName="Active" id="159:1090"/>
+                <AnimationState animationId="159:1056" x="480" y="100" stateName="Completed" id="159:1091"/>
+                <AnyState x="500" id="159:1093">
+                    <StateTransition stateToId="159:1089" duration="200" interpolationType="cubic" id="159:1094">
+                        <TransitionViewModelCondition opValue="greaterThan" id="159:1095">
+                            <TransitionPropertyViewModelComparator id="159:1096">
+                                <BindablePropertyNumber id="159:1097">
+                                    <DataBindContext sourcePathIds="159:1-159:3" propertyKey="636" id="159:1098"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionPropertyViewModelComparator id="159:1099">
+                                <BindablePropertyNumber id="159:1100">
+                                    <DataBindContext sourcePathIds="159:1-159:4-159:11" propertyKey="636" id="159:1101"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                    <StateTransition stateToId="159:1090" duration="200" interpolationType="cubic" id="159:1102">
+                        <TransitionViewModelCondition id="159:1103">
+                            <TransitionPropertyViewModelComparator id="159:1104">
+                                <BindablePropertyNumber id="159:1105">
+                                    <DataBindContext sourcePathIds="159:1-159:3" propertyKey="636" id="159:1106"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionPropertyViewModelComparator id="159:1107">
+                                <BindablePropertyNumber id="159:1108">
+                                    <DataBindContext sourcePathIds="159:1-159:4-159:11" propertyKey="636" id="159:1109"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                    <StateTransition stateToId="159:1091" duration="200" interpolationType="cubic" id="159:1110">
+                        <TransitionViewModelCondition opValue="lessThan" id="159:1111">
+                            <TransitionPropertyViewModelComparator id="159:1112">
+                                <BindablePropertyNumber id="159:1113">
+                                    <DataBindContext sourcePathIds="159:1-159:3" propertyKey="636" id="159:1114"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionPropertyViewModelComparator id="159:1115">
+                                <BindablePropertyNumber id="159:1116">
+                                    <DataBindContext sourcePathIds="159:1-159:4-159:11" propertyKey="636" id="159:1117"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                </AnyState>
+                <ExitState x="600" id="159:1118"/>
+                <EntryState id="159:1119">
+                    <StateTransition stateToId="159:1089" id="159:1120"/>
+                </EntryState>
+            </StateMachineLayer>
+        </StateMachine>
+        <LinearAnimation loopValue="loop" name="Upcoming" id="159:1054">
+            <KeyedObject objectId="159:1011" id="159:1121">
+                <KeyedProperty property="opacity" id="159:1122">
+                    <KeyFrameDouble interpolationType="linear" id="159:1123"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="159:1015" id="159:1124">
+                <KeyedProperty property="opacity" id="159:1125">
+                    <KeyFrameDouble interpolationType="linear" id="159:1126"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="159:1025" id="159:1127">
+                <KeyedProperty property="opacity" id="159:1128">
+                    <KeyFrameDouble value="1" interpolationType="linear" id="159:1129"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="159:1012" id="159:1130">
+                <KeyedProperty property="opacity" id="159:1131">
+                    <KeyFrameDouble interpolationType="linear" id="159:1132"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="159:1036" id="159:1133">
+                <KeyedProperty property="opacity" id="159:1134">
+                    <KeyFrameDouble interpolationType="linear" id="159:1135"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="159:1046" id="159:1136">
+                <KeyedProperty property="opacity" id="159:1137">
+                    <KeyFrameDouble value="1" interpolationType="linear" id="159:1138"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="159:1013" id="159:1139">
+                <KeyedProperty property="opacity" id="159:1140">
+                    <KeyFrameDouble interpolationType="linear" id="159:1141"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="159:1057" id="159:1142">
+                <KeyedProperty property="isSelected" id="159:1143">
+                    <KeyFrameBool id="159:1144"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+        <LinearAnimation loopValue="loop" name="Active" id="159:1055">
+            <KeyedObject objectId="159:1011" id="159:1145">
+                <KeyedProperty property="opacity" id="159:1146">
+                    <KeyFrameDouble value="1" interpolationType="linear" id="159:1147"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="159:1015" id="159:1148">
+                <KeyedProperty property="opacity" id="159:1149">
+                    <KeyFrameDouble value="1" interpolationType="linear" id="159:1150"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="159:1025" id="159:1151">
+                <KeyedProperty property="opacity" id="159:1152">
+                    <KeyFrameDouble interpolationType="linear" id="159:1153"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="159:1012" id="159:1154">
+                <KeyedProperty property="opacity" id="159:1155">
+                    <KeyFrameDouble interpolationType="linear" id="159:1156"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="159:1036" id="159:1157">
+                <KeyedProperty property="opacity" id="159:1158">
+                    <KeyFrameDouble value="1" interpolationType="linear" id="159:1159"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="159:1046" id="159:1160">
+                <KeyedProperty property="opacity" id="159:1161">
+                    <KeyFrameDouble interpolationType="linear" id="159:1162"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="159:1013" id="159:1163">
+                <KeyedProperty property="opacity" id="159:1164">
+                    <KeyFrameDouble interpolationType="linear" id="159:1165"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="159:1057" id="159:1166">
+                <KeyedProperty property="isSelected" id="159:1167">
+                    <KeyFrameBool value="true" id="159:1168"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+        <LinearAnimation loopValue="loop" name="Completed" id="159:1056">
+            <KeyedObject objectId="159:1011" id="159:1169">
+                <KeyedProperty property="opacity" id="159:1170">
+                    <KeyFrameDouble value="1" interpolationType="linear" id="159:1171"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="159:1015" id="159:1172">
+                <KeyedProperty property="opacity" id="159:1173">
+                    <KeyFrameDouble interpolationType="linear" id="159:1174"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="159:1025" id="159:1175">
+                <KeyedProperty property="opacity" id="159:1176">
+                    <KeyFrameDouble interpolationType="linear" id="159:1177"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="159:1012" id="159:1178">
+                <KeyedProperty property="opacity" id="159:1179">
+                    <KeyFrameDouble value="1" interpolationType="linear" id="159:1180"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="159:1036" id="159:1181">
+                <KeyedProperty property="opacity" id="159:1182">
+                    <KeyFrameDouble value="1" interpolationType="linear" id="159:1183"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="159:1046" id="159:1184">
+                <KeyedProperty property="opacity" id="159:1185">
+                    <KeyFrameDouble interpolationType="linear" id="159:1186"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="159:1013" id="159:1187">
+                <KeyedProperty property="opacity" id="159:1188">
+                    <KeyFrameDouble value="1" interpolationType="linear" id="159:1189"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="159:1057" id="159:1190">
+                <KeyedProperty property="isSelected" id="159:1191">
+                    <KeyFrameBool id="159:1192"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+    </Artboard>
+</Rive>

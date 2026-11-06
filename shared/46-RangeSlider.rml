@@ -1,0 +1,351 @@
+<Rive version="1" kind="fragment">
+    <Artboard defaultStateMachineId="153:1001" viewModelId="153:1" viewModelInstanceId="153:20" isComponent="true" spaceId="1:5601" width="200" height="48" styleId="153:1002" x="3600" y="1100" name="Range Slider" id="153:1000">
+        <Fill fillRule="clockwise" id="153:1094">
+            <SolidColor colorValue="00000000" id="153:1095"/>
+        </Fill>
+        <LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="153:1002"/>
+        <LayoutComponent styleId="153:1003" name="Range Slider" id="153:1096">
+            <LayoutComponent styleId="153:1004" name="Header" id="153:1097">
+                <Text name="Label" id="153:1100">
+                    <TextStylePaint fontSize="14" fontAssetId="0:7" familyName="Inter" styleName="Medium" id="153:1098">
+                        <Fill fillRule="clockwise" id="153:1101">
+                            <SolidColor colorValue="FFFAFAFA" id="153:1102">
+                                <DataBindContext sourcePathIds="10:7-10:7422" propertyKey="37" id="153:1103"/>
+                            </SolidColor>
+                        </Fill>
+                        <TextStyleAxis tag="1869640570" axisValue="14" id="153:1104"/>
+                        <TextStyleAxis tag="2003265652" axisValue="500" id="153:1105"/>
+                    </TextStylePaint>
+                    <TextValueRun styleId="153:1098" text="Price" id="153:1106">
+                        <DataBindContext sourcePathIds="153:1-153:2" propertyKey="268" nameBased="true" id="153:1099"/>
+                    </TextValueRun>
+                    <LayoutParticipant layoutWidthScaleType="fill" layoutHeightScaleType="hug" id="153:1107"/>
+                </Text>
+                <Text name="Value" id="153:1081">
+                    <TextStylePaint fontSize="14" fontAssetId="0:7" familyName="Inter" styleName="Regular" id="153:1080">
+                        <Fill fillRule="clockwise" id="153:1082">
+                            <SolidColor colorValue="FFD4D4D8" id="153:1083">
+                                <DataBindContext sourcePathIds="10:7-10:7424" propertyKey="37" id="153:1084"/>
+                            </SolidColor>
+                        </Fill>
+                        <TextStyleAxis tag="1869640570" axisValue="14" id="153:1085"/>
+                        <TextStyleAxis tag="2003265652" axisValue="400" id="153:1086"/>
+                    </TextStylePaint>
+                    <TextValueRun styleId="153:1080" text="20" id="153:1087">
+                        <DataBindContext sourcePathIds="153:1-153:3" propertyKey="268" nameBased="true" converterId="153:70" id="153:1088"/>
+                    </TextValueRun>
+                    <TextValueRun styleId="153:1080" text=" – " id="153:1089"/>
+                    <TextValueRun styleId="153:1080" text="80" id="153:1090">
+                        <DataBindContext sourcePathIds="153:1-153:4" propertyKey="268" nameBased="true" converterId="153:70" id="153:1091"/>
+                    </TextValueRun>
+                    <LayoutParticipant layoutWidthScaleType="hug" layoutHeightScaleType="hug" id="153:1092"/>
+                </Text>
+                <LayoutComponentStyle gapHorizontal="12" intrinsicallySizedValue="true" layoutWidthScaleType="fill" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="153:1004"/>
+            </LayoutComponent>
+            <LayoutComponent width="200" height="16" styleId="153:1005" name="Track Area" id="153:1108">
+                <LayoutComponent styleId="153:1007" isTargetOpaque="true" name="Disabled Shield" id="153:1006">
+                    <Fill fillRule="clockwise" id="153:1109">
+                        <SolidColor colorValue="00000000" id="153:1110"/>
+                    </Fill>
+                    <LayoutComponentStyle positionLeftUnitsValue="points" positionRightUnitsValue="points" positionTopUnitsValue="points" positionBottomUnitsValue="points" edgeConstraints="84" positionTypeValue="absolute" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="153:1007">
+                        <DataBindContext sourcePathIds="153:1-153:7" propertyKey="596" nameBased="true" converterId="9:90" id="153:1111"/>
+                    </LayoutComponentStyle>
+                </LayoutComponent>
+                <Node name="Art" id="153:1112">
+                    <Node x="8" y="8" name="High" id="153:1044">
+                        <Shape opacity="0" name="Disabled Thumb" id="153:1063">
+                            <Ellipse width="16" height="16" id="153:1064"/>
+                            <Fill fillRule="clockwise" id="153:1065">
+                                <SolidColor colorValue="FF27272A" id="153:1066">
+                                    <DataBindContext sourcePathIds="10:7-10:7412" propertyKey="37" id="153:1067"/>
+                                </SolidColor>
+                            </Fill>
+                            <Stroke id="153:1068">
+                                <SolidColor colorValue="FF3F3F46" id="153:1069">
+                                    <DataBindContext sourcePathIds="10:7-10:7420" propertyKey="37" id="153:1070"/>
+                                </SolidColor>
+                            </Stroke>
+                            <DataBindContext sourcePathIds="153:1-153:7" propertyKey="18" nameBased="true" converterId="9:145" id="153:1071"/>
+                        </Shape>
+                        <Shape name="Thumb" id="153:1051">
+                            <Ellipse width="16" height="16" id="153:1052"/>
+                            <Fill fillRule="clockwise" id="153:1053">
+                                <SolidColor colorValue="33000000" id="153:1054"/>
+                                <Feather strength="16" offsetY="6" id="153:1055">
+                                    <DataBindContext sourcePathIds="10:7-901:31" propertyKey="749" converterId="0:0" id="153:1056"/>
+                                    <DataBindContext sourcePathIds="10:7-901:37" propertyKey="751" converterId="0:0" id="153:1057"/>
+                                </Feather>
+                            </Fill>
+                            <Fill fillRule="clockwise" id="153:1058">
+                                <SolidColor colorValue="FFFFFFFF" id="153:1059"/>
+                            </Fill>
+                            <Stroke id="153:1060">
+                                <SolidColor colorValue="FF27272A" id="153:1061">
+                                    <DataBindContext sourcePathIds="10:7-10:7418" propertyKey="37" id="153:1062"/>
+                                </SolidColor>
+                            </Stroke>
+                        </Shape>
+                        <Shape opacity="0" name="Hover" id="153:1045">
+                            <Ellipse width="28" height="28" id="153:1046"/>
+                            <Fill fillRule="clockwise" id="153:1047">
+                                <SolidColor colorValue="FF172554" id="153:1048">
+                                    <DataBindContext sourcePathIds="10:7-10:2094" propertyKey="37" id="153:1049"/>
+                                </SolidColor>
+                            </Fill>
+                            <DataBindContext sourcePathIds="153:1-153:10" propertyKey="18" nameBased="true" converterId="9:145" id="153:1050"/>
+                        </Shape>
+                        <TranslationConstraint minValueY="8" maxValueY="8" doesCopyY="false" minY="true" maxY="true" minMaxSpaceValue="local" minValue="8" maxValue="192" min="true" max="true" id="153:1072">
+                            <DataBindContext sourcePathIds="153:1-153:3" propertyKey="183" id="153:1073"/>
+                            <DataBindContext sourcePathIds="153:1-153:6" propertyKey="184" id="153:1074"/>
+                        </TranslationConstraint>
+                        <SemanticData role="slider" label="Maximum" traitFlags="32" name="Semantics" id="153:1076">
+                            <DataBindContext sourcePathIds="153:1-153:4" propertyKey="984" nameBased="true" converterId="153:70" id="153:1077"/>
+                            <DataBindContext sourcePathIds="153:1-153:8" propertyKey="1004" nameBased="true" id="153:1078"/>
+                            <DataBindContext sourcePathIds="153:1-153:7" propertyKey="1002" nameBased="true" id="153:1079"/>
+                        </SemanticData>
+                        <FocusData name="Focus" id="0:27926"/>
+                        <DataBindContext sourcePathIds="153:1-153:12" propertyKey="13" twoWay="true" sourceToTargetRunsFirst="true" id="153:1075"/>
+                    </Node>
+                    <Node x="8" y="8" name="Low" id="153:1008">
+                        <Shape opacity="0" name="Disabled Thumb" id="153:1027">
+                            <Ellipse width="16" height="16" id="153:1028"/>
+                            <Fill fillRule="clockwise" id="153:1029">
+                                <SolidColor colorValue="FF27272A" id="153:1030">
+                                    <DataBindContext sourcePathIds="10:7-10:7412" propertyKey="37" id="153:1031"/>
+                                </SolidColor>
+                            </Fill>
+                            <Stroke id="153:1032">
+                                <SolidColor colorValue="FF3F3F46" id="153:1033">
+                                    <DataBindContext sourcePathIds="10:7-10:7420" propertyKey="37" id="153:1034"/>
+                                </SolidColor>
+                            </Stroke>
+                            <DataBindContext sourcePathIds="153:1-153:7" propertyKey="18" nameBased="true" converterId="9:145" id="153:1035"/>
+                        </Shape>
+                        <Shape name="Thumb" id="153:1015">
+                            <Ellipse width="16" height="16" id="153:1016"/>
+                            <Fill fillRule="clockwise" id="153:1017">
+                                <SolidColor colorValue="33000000" id="153:1018"/>
+                                <Feather strength="16" offsetY="6" id="153:1019">
+                                    <DataBindContext sourcePathIds="10:7-901:31" propertyKey="749" converterId="0:0" id="153:1020"/>
+                                    <DataBindContext sourcePathIds="10:7-901:37" propertyKey="751" converterId="0:0" id="153:1021"/>
+                                </Feather>
+                            </Fill>
+                            <Fill fillRule="clockwise" id="153:1022">
+                                <SolidColor colorValue="FFFFFFFF" id="153:1023"/>
+                            </Fill>
+                            <Stroke id="153:1024">
+                                <SolidColor colorValue="FF27272A" id="153:1025">
+                                    <DataBindContext sourcePathIds="10:7-10:7418" propertyKey="37" id="153:1026"/>
+                                </SolidColor>
+                            </Stroke>
+                        </Shape>
+                        <Shape opacity="0" name="Hover" id="153:1009">
+                            <Ellipse width="28" height="28" id="153:1010"/>
+                            <Fill fillRule="clockwise" id="153:1011">
+                                <SolidColor colorValue="FF172554" id="153:1012">
+                                    <DataBindContext sourcePathIds="10:7-10:2094" propertyKey="37" id="153:1013"/>
+                                </SolidColor>
+                            </Fill>
+                            <DataBindContext sourcePathIds="153:1-153:9" propertyKey="18" nameBased="true" converterId="9:145" id="153:1014"/>
+                        </Shape>
+                        <TranslationConstraint minValueY="8" maxValueY="8" doesCopyY="false" minY="true" maxY="true" minMaxSpaceValue="local" minValue="8" maxValue="192" min="true" max="true" id="153:1036">
+                            <DataBindContext sourcePathIds="153:1-153:5" propertyKey="183" id="153:1037"/>
+                            <DataBindContext sourcePathIds="153:1-153:4" propertyKey="184" id="153:1038"/>
+                        </TranslationConstraint>
+                        <SemanticData role="slider" label="Minimum" traitFlags="32" name="Semantics" id="153:1040">
+                            <DataBindContext sourcePathIds="153:1-153:3" propertyKey="984" nameBased="true" converterId="153:70" id="153:1041"/>
+                            <DataBindContext sourcePathIds="153:1-153:8" propertyKey="1004" nameBased="true" id="153:1042"/>
+                            <DataBindContext sourcePathIds="153:1-153:7" propertyKey="1002" nameBased="true" id="153:1043"/>
+                        </SemanticData>
+                        <FocusData name="Focus" id="0:27927"/>
+                        <DataBindContext sourcePathIds="153:1-153:11" propertyKey="13" twoWay="true" sourceToTargetRunsFirst="true" id="153:1039"/>
+                    </Node>
+                    <Shape y="8" name="Disabled Range" id="153:1130">
+                        <PointsPath id="153:1131">
+                            <StraightVertex x="8" id="153:1132"/>
+                            <StraightVertex x="192" id="153:1133"/>
+                        </PointsPath>
+                        <Stroke thickness="4" cap="round" join="round" id="153:1137">
+                            <SolidColor colorValue="FFA1A1AA" id="153:1138">
+                                <DataBindContext sourcePathIds="10:7-10:7426" propertyKey="37" id="153:1139"/>
+                            </SolidColor>
+                            <TrimPath modeValue="sequential" id="153:1134">
+                                <DataBindContext sourcePathIds="153:1-153:3" propertyKey="114" nameBased="true" converterId="153:60" id="153:1135"/>
+                                <DataBindContext sourcePathIds="153:1-153:4" propertyKey="115" nameBased="true" converterId="153:60" id="153:1136"/>
+                            </TrimPath>
+                        </Stroke>
+                        <DataBindContext sourcePathIds="153:1-153:7" propertyKey="18" nameBased="true" converterId="9:145" id="153:1140"/>
+                    </Shape>
+                    <Shape y="8" name="Range" id="153:1123">
+                        <PointsPath id="153:1124">
+                            <StraightVertex x="8" id="153:1125"/>
+                            <StraightVertex x="192" id="153:1126"/>
+                        </PointsPath>
+                        <Stroke thickness="4" cap="round" join="round" id="153:1127">
+                            <SolidColor colorValue="FF2563EB" id="153:1128">
+                                <DataBindContext sourcePathIds="10:7-10:2104" propertyKey="37" id="153:1129"/>
+                            </SolidColor>
+                            <TrimPath modeValue="sequential" id="153:1120">
+                                <DataBindContext sourcePathIds="153:1-153:3" propertyKey="114" nameBased="true" converterId="153:60" id="153:1121"/>
+                                <DataBindContext sourcePathIds="153:1-153:4" propertyKey="115" nameBased="true" converterId="153:60" id="153:1122"/>
+                            </TrimPath>
+                        </Stroke>
+                    </Shape>
+                    <Shape y="8" name="Track" id="153:1113">
+                        <PointsPath id="153:1114">
+                            <StraightVertex x="8" id="153:1115"/>
+                            <StraightVertex x="192" id="153:1116"/>
+                        </PointsPath>
+                        <Stroke thickness="4" cap="round" join="round" id="153:1117">
+                            <SolidColor colorValue="FF3F3F46" id="153:1118">
+                                <DataBindContext sourcePathIds="10:7-10:7420" propertyKey="37" id="153:1119"/>
+                            </SolidColor>
+                        </Stroke>
+                    </Shape>
+                </Node>
+                <LayoutComponentStyle id="153:1005"/>
+            </LayoutComponent>
+            <LayoutComponentStyle gapVertical="8" flexDirectionValue="column" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="153:1003"/>
+            <SemanticData role="group" name="Semantics" id="153:1141">
+                <DataBindContext sourcePathIds="153:1-153:2" propertyKey="983" nameBased="true" id="153:1142"/>
+                <DataBindContext sourcePathIds="153:1-153:8" propertyKey="1004" nameBased="true" id="153:1143"/>
+            </SemanticData>
+        </LayoutComponent>
+        <StateMachine name="State Machine 1" id="153:1001">
+            <StateMachineListener targetId="153:1008" name="Low Cursor Off" id="153:1144">
+                <ListenerInputType listenerTypeValue="exit" id="153:1145"/>
+                <ListenerViewModelChange id="153:1146">
+                    <BindablePropertyBoolean id="153:1147">
+                        <DataBindContext sourcePathIds="10:7-63:244" propertyKey="634" direction="true" id="153:1148"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListener targetId="153:1008" name="Low Cursor On" id="153:1149">
+                <ListenerInputType id="153:1150"/>
+                <ListenerInputType listenerTypeValue="move" id="153:1151"/>
+                <ListenerViewModelChange id="153:1152">
+                    <BindablePropertyBoolean propertyValue="true" id="153:1153">
+                        <DataBindContext sourcePathIds="10:7-63:244" propertyKey="634" direction="true" id="153:1154"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListener targetId="153:1008" name="Low Hover Off" id="153:1155">
+                <ListenerInputType listenerTypeValue="exit" id="153:1156"/>
+                <ListenerViewModelChange id="153:1157">
+                    <BindablePropertyBoolean id="153:1158">
+                        <DataBindContext sourcePathIds="153:1-153:9" propertyKey="634" direction="true" id="153:1159"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListener targetId="153:1008" name="Low Hover On" id="153:1160">
+                <ListenerInputType id="153:1161"/>
+                <ListenerViewModelChange id="153:1162">
+                    <BindablePropertyBoolean propertyValue="true" id="153:1163">
+                        <DataBindContext sourcePathIds="153:1-153:9" propertyKey="634" direction="true" id="153:1164"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListener targetId="153:1044" name="High Cursor Off" id="153:1165">
+                <ListenerInputType listenerTypeValue="exit" id="153:1166"/>
+                <ListenerViewModelChange id="153:1167">
+                    <BindablePropertyBoolean id="153:1168">
+                        <DataBindContext sourcePathIds="10:7-63:244" propertyKey="634" direction="true" id="153:1169"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListener targetId="153:1044" name="High Cursor On" id="153:1170">
+                <ListenerInputType id="153:1171"/>
+                <ListenerInputType listenerTypeValue="move" id="153:1172"/>
+                <ListenerViewModelChange id="153:1173">
+                    <BindablePropertyBoolean propertyValue="true" id="153:1174">
+                        <DataBindContext sourcePathIds="10:7-63:244" propertyKey="634" direction="true" id="153:1175"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListener targetId="153:1044" name="High Hover Off" id="153:1176">
+                <ListenerInputType listenerTypeValue="exit" id="153:1177"/>
+                <ListenerViewModelChange id="153:1178">
+                    <BindablePropertyBoolean id="153:1179">
+                        <DataBindContext sourcePathIds="153:1-153:10" propertyKey="634" direction="true" id="153:1180"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListener targetId="153:1044" name="High Hover On" id="153:1181">
+                <ListenerInputType id="153:1182"/>
+                <ListenerViewModelChange id="153:1183">
+                    <BindablePropertyBoolean propertyValue="true" id="153:1184">
+                        <DataBindContext sourcePathIds="153:1-153:10" propertyKey="634" direction="true" id="153:1185"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListener targetId="153:1000" name="Preview Disabled" id="153:1190">
+                <ListenerInputTypeViewModel viewModelPathIds="10:7-15:419" listenerTypeValue="viewModel" id="153:1191"/>
+                <ListenerViewModelChange fromViewModelProperty="true" fromDataBindId="153:1186" id="153:1187">
+                    <BindablePropertyBoolean id="153:1188">
+                        <DataBindContext sourcePathIds="10:7-15:419" propertyKey="634" id="153:1186"/>
+                        <DataBindContext sourcePathIds="153:1-153:7" propertyKey="634" direction="true" id="153:1189"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListener targetId="153:1000" name="Low From Thumb" id="153:1196">
+                <ListenerInputTypeViewModel viewModelPathIds="153:1-153:11" listenerTypeValue="viewModel" id="153:1197"/>
+                <ListenerViewModelChange fromViewModelProperty="true" fromDataBindId="153:1192" id="153:1193">
+                    <BindablePropertyNumber id="153:1194">
+                        <DataBindContext sourcePathIds="153:1-153:11" propertyKey="636" converterId="153:90" id="153:1192"/>
+                        <DataBindContext sourcePathIds="153:1-153:3" propertyKey="636" direction="true" id="153:1195"/>
+                    </BindablePropertyNumber>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListener targetId="153:1000" name="Low To Thumb" id="153:1202">
+                <ListenerInputTypeViewModel viewModelPathIds="153:1-153:3" listenerTypeValue="viewModel" id="153:1203"/>
+                <ListenerViewModelChange fromViewModelProperty="true" fromDataBindId="153:1198" id="153:1199">
+                    <BindablePropertyNumber id="153:1200">
+                        <DataBindContext sourcePathIds="153:1-153:3" propertyKey="636" id="153:1198"/>
+                        <DataBindContext sourcePathIds="153:1-153:11" propertyKey="636" direction="true" id="153:1201"/>
+                    </BindablePropertyNumber>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListener targetId="153:1000" name="High From Thumb" id="153:1208">
+                <ListenerInputTypeViewModel viewModelPathIds="153:1-153:12" listenerTypeValue="viewModel" id="153:1209"/>
+                <ListenerViewModelChange fromViewModelProperty="true" fromDataBindId="153:1204" id="153:1205">
+                    <BindablePropertyNumber id="153:1206">
+                        <DataBindContext sourcePathIds="153:1-153:12" propertyKey="636" converterId="153:100" id="153:1204"/>
+                        <DataBindContext sourcePathIds="153:1-153:4" propertyKey="636" direction="true" id="153:1207"/>
+                    </BindablePropertyNumber>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListener targetId="153:1000" name="High To Thumb" id="153:1214">
+                <ListenerInputTypeViewModel viewModelPathIds="153:1-153:4" listenerTypeValue="viewModel" id="153:1215"/>
+                <ListenerViewModelChange fromViewModelProperty="true" fromDataBindId="153:1210" id="153:1211">
+                    <BindablePropertyNumber id="153:1212">
+                        <DataBindContext sourcePathIds="153:1-153:4" propertyKey="636" id="153:1210"/>
+                        <DataBindContext sourcePathIds="153:1-153:12" propertyKey="636" direction="true" id="153:1213"/>
+                    </BindablePropertyNumber>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListener targetId="153:1006" name="Disabled Block" id="153:1216">
+                <ListenerInputType id="153:1217"/>
+                <ListenerViewModelChange id="153:1218">
+                    <BindablePropertyBoolean id="153:1219">
+                        <DataBindContext sourcePathIds="153:1-153:9" propertyKey="634" direction="true" id="153:1220"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListenerSingle listenerTypeValue="drag" targetId="153:1008" name="Drag Low" id="153:1221">
+                <ListenerAlignTarget targetId="153:1008" id="153:1222"/>
+            </StateMachineListenerSingle>
+            <StateMachineListenerSingle listenerTypeValue="drag" targetId="153:1044" name="Drag High" id="153:1223">
+                <ListenerAlignTarget targetId="153:1044" id="153:1224"/>
+            </StateMachineListenerSingle>
+            <StateMachineLayer name="Layer 1" id="153:1225">
+                <AnyState x="400" id="153:1226"/>
+                <ExitState x="480" id="153:1227"/>
+                <EntryState id="153:1228">
+                    <StateTransition stateToId="153:1229" id="153:1230"/>
+                </EntryState>
+                <AnimationState animationId="153:1093" x="160" id="153:1229"/>
+            </StateMachineLayer>
+        </StateMachine>
+        <LinearAnimation name="Timeline 1" id="153:1093"/>
+    </Artboard>
+</Rive>

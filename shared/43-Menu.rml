@@ -1,0 +1,48 @@
+<Rive version="1" kind="fragment">
+    <Artboard defaultStateMachineId="146:1001" viewModelId="146:10" viewModelInstanceId="146:32" isComponent="true" spaceId="1:5601" width="200" height="160" styleId="146:1002" x="3600" name="Menu" id="146:1000">
+        <Fill fillRule="clockwise" id="146:1004">
+            <SolidColor colorValue="00000000" id="146:1005"/>
+        </Fill>
+        <LayoutComponentStyle intrinsicallySizedValue="true" layoutHeightScaleType="hug" id="146:1002"/>
+        <LayoutComponent styleId="146:1003" name="Panel" id="146:1006">
+            <ArtboardComponentList participatesInLayout="true" id="146:1007">
+                <DataBindContext sourcePathIds="146:10-146:11" propertyKey="800" id="146:1008"/>
+            </ArtboardComponentList>
+            <Fill fillRule="clockwise" id="146:1009">
+                <SolidColor colorValue="26000000" id="146:1010"/>
+                <Feather strength="16" offsetY="6" id="146:1011">
+                    <DataBindContext sourcePathIds="10:7-901:29" propertyKey="749" converterId="0:0" id="146:1012"/>
+                    <DataBindContext sourcePathIds="10:7-901:35" propertyKey="751" converterId="0:0" id="146:1013"/>
+                </Feather>
+            </Fill>
+            <Fill fillRule="clockwise" id="146:1014">
+                <SolidColor colorValue="FF18181B" id="146:1015">
+                    <DataBindContext sourcePathIds="10:7-10:7406" propertyKey="37" id="146:1016"/>
+                </SolidColor>
+            </Fill>
+            <Stroke id="146:1017">
+                <SolidColor colorValue="FF27272A" id="146:1018">
+                    <DataBindContext sourcePathIds="10:7-10:7418" propertyKey="37" id="146:1019"/>
+                </SolidColor>
+            </Stroke>
+            <LayoutComponentStyle paddingLeft="4" paddingRight="4" paddingTop="4" paddingBottom="4" flexDirectionValue="column" intrinsicallySizedValue="true" cornerRadiusTL="8" layoutWidthScaleType="fill" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="146:1003">
+                <DataBindContext sourcePathIds="10:7-901:13" propertyKey="640" converterId="0:0" id="146:1020"/>
+            </LayoutComponentStyle>
+            <SemanticData role="list" name="Semantics" id="146:1021">
+                <DataBindContext sourcePathIds="146:10-146:13" propertyKey="983" nameBased="true" id="146:1022"/>
+                <DataBindContext sourcePathIds="146:10-146:14" propertyKey="1004" nameBased="true" id="146:1023"/>
+            </SemanticData>
+        </LayoutComponent>
+        <StateMachine name="State Machine 1" id="146:1001">
+            <StateMachineLayer name="Layer 1" id="146:1026">
+                <AnimationState animationId="146:1025" x="160" id="146:1024"/>
+                <AnyState x="400" id="146:1027"/>
+                <ExitState x="480" id="146:1028"/>
+                <EntryState id="146:1029">
+                    <StateTransition stateToId="146:1024" id="146:1030"/>
+                </EntryState>
+            </StateMachineLayer>
+        </StateMachine>
+        <LinearAnimation name="Timeline 1" id="146:1025"/>
+    </Artboard>
+</Rive>

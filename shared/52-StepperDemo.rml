@@ -1,0 +1,90 @@
+<Rive version="1" kind="fragment">
+    <Artboard defaultStateMachineId="160:1001" viewModelId="160:1" viewModelInstanceId="160:20" isComponent="true" includeInExport="false" spaceId="1:5601" width="420" height="100" styleId="160:1002" x="3600" y="2000" name="Stepper Demo" id="160:1000">
+        <Fill fillRule="clockwise" id="160:1005">
+            <SolidColor colorValue="00000000" id="160:1006"/>
+        </Fill>
+        <LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="160:1002"/>
+        <LayoutComponent styleId="160:1003" name="Demo" id="160:1007">
+            <NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="159:2000" dataBindPathIds="160:1-160:2" name="Stepper" id="160:1008">
+                <NestedStateMachine animationId="159:2001" id="160:1009"/>
+            </NestedArtboardLayout>
+            <LayoutComponent styleId="160:1004" name="Buttons" id="160:1010">
+                <LayoutComponent styleId="160:1011" name="Back" id="160:1012">
+                    <NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="1:122" isStateful="true" name="Button" id="160:1013">
+                        <NestedStateMachine animationId="1:127" id="160:1014"/>
+                        <ViewModelInstance viewModelId="1:151" exports="true" name="Back Button" id="160:1015">
+                            <ViewModelInstanceString propertyValue="Back" viewModelPropertyId="1:549" id="160:1016"/>
+                            <ViewModelInstanceBoolean viewModelPropertyId="1:587" id="160:1017"/>
+                            <ViewModelInstanceTrigger viewModelPropertyId="1:1321" id="160:1018">
+                                <DataBindContext sourcePathIds="160:1-160:3" propertyKey="687" twoWay="true" nameBased="true" id="160:1019"/>
+                            </ViewModelInstanceTrigger>
+                            <ViewModelInstanceBoolean viewModelPropertyId="7:1" id="160:1020"/>
+                            <ViewModelInstanceBoolean viewModelPropertyId="7:3" id="160:1021"/>
+                            <ViewModelInstanceNumber propertyValue="2" viewModelPropertyId="33:164" id="160:1022"/>
+                            <ViewModelInstanceBoolean viewModelPropertyId="33:169" id="160:1023"/>
+                            <ViewModelInstanceNumber viewModelPropertyId="99:100" id="160:1024"/>
+                            <ViewModelInstanceString viewModelPropertyId="112:14" id="160:1025"/>
+                            <ViewModelInstanceNumber propertyValue="1" viewModelPropertyId="118:1" id="160:1026"/>
+                            <ViewModelInstanceNumber viewModelPropertyId="136:1" id="160:1027"/>
+                            <ViewModelInstanceTrigger viewModelPropertyId="134:10" id="160:1028"/>
+                        </ViewModelInstance>
+                    </NestedArtboardLayout>
+                    <LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="160:1011"/>
+                </LayoutComponent>
+                <LayoutComponent styleId="160:1029" name="Next" id="160:1030">
+                    <NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="1:122" isStateful="true" name="Button" id="160:1031">
+                        <NestedStateMachine animationId="1:127" id="160:1032"/>
+                        <ViewModelInstance viewModelId="1:151" exports="true" name="Next Button" id="160:1033">
+                            <ViewModelInstanceString propertyValue="Next" viewModelPropertyId="1:549" id="160:1034"/>
+                            <ViewModelInstanceBoolean viewModelPropertyId="1:587" id="160:1035"/>
+                            <ViewModelInstanceTrigger viewModelPropertyId="1:1321" id="160:1036">
+                                <DataBindContext sourcePathIds="160:1-160:4" propertyKey="687" twoWay="true" nameBased="true" id="160:1037"/>
+                            </ViewModelInstanceTrigger>
+                            <ViewModelInstanceBoolean viewModelPropertyId="7:1" id="160:1038"/>
+                            <ViewModelInstanceBoolean viewModelPropertyId="7:3" id="160:1039"/>
+                            <ViewModelInstanceNumber propertyValue="3" viewModelPropertyId="33:164" id="160:1040"/>
+                            <ViewModelInstanceBoolean viewModelPropertyId="33:169" id="160:1041"/>
+                            <ViewModelInstanceNumber viewModelPropertyId="99:100" id="160:1042"/>
+                            <ViewModelInstanceString viewModelPropertyId="112:14" id="160:1043"/>
+                            <ViewModelInstanceNumber viewModelPropertyId="118:1" id="160:1044"/>
+                            <ViewModelInstanceNumber propertyValue="1" viewModelPropertyId="136:1" id="160:1045"/>
+                            <ViewModelInstanceTrigger viewModelPropertyId="134:10" id="160:1046"/>
+                        </ViewModelInstance>
+                    </NestedArtboardLayout>
+                    <LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="160:1029"/>
+                </LayoutComponent>
+                <LayoutComponentStyle gapHorizontal="8" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="160:1004"/>
+            </LayoutComponent>
+            <LayoutComponentStyle gapVertical="24" layoutAlignmentType="center" flexDirectionValue="column" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="160:1003"/>
+        </LayoutComponent>
+        <StateMachine name="State Machine 1" id="160:1001">
+            <StateMachineListener targetId="160:1000" name="Back" id="160:1051">
+                <ListenerInputTypeViewModel viewModelPathIds="160:1-160:3" listenerTypeValue="viewModel" id="160:1052"/>
+                <ListenerViewModelChange fromViewModelProperty="true" fromDataBindId="160:1047" id="160:1048">
+                    <BindablePropertyNumber id="160:1049">
+                        <DataBindContext sourcePathIds="160:1-160:2-159:22-159:11" propertyKey="636" converterId="160:70" id="160:1047"/>
+                        <DataBindContext sourcePathIds="160:1-160:2-159:22-159:11" propertyKey="636" direction="true" id="160:1050"/>
+                    </BindablePropertyNumber>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListener targetId="160:1000" name="Next" id="160:1057">
+                <ListenerInputTypeViewModel viewModelPathIds="160:1-160:4" listenerTypeValue="viewModel" id="160:1058"/>
+                <ListenerViewModelChange fromViewModelProperty="true" fromDataBindId="160:1053" id="160:1054">
+                    <BindablePropertyNumber id="160:1055">
+                        <DataBindContext sourcePathIds="160:1-160:2-159:22-159:11" propertyKey="636" converterId="160:80" id="160:1053"/>
+                        <DataBindContext sourcePathIds="160:1-160:2-159:22-159:11" propertyKey="636" direction="true" id="160:1056"/>
+                    </BindablePropertyNumber>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineLayer name="Layer 1" id="160:1061">
+                <AnimationState animationId="160:1060" x="160" id="160:1059"/>
+                <AnyState x="400" id="160:1062"/>
+                <ExitState x="480" id="160:1063"/>
+                <EntryState id="160:1064">
+                    <StateTransition stateToId="160:1059" id="160:1065"/>
+                </EntryState>
+            </StateMachineLayer>
+        </StateMachine>
+        <LinearAnimation name="Timeline 1" id="160:1060"/>
+    </Artboard>
+</Rive>

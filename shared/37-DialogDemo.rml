@@ -11,7 +11,7 @@
                 <ViewModelInstanceString propertyValue="This removes the project and its files. You can&apos;t undo this." viewModelPropertyId="131:3" id="132:114"/>
                 <ViewModelInstanceString propertyValue="Delete" viewModelPropertyId="131:4" id="132:115"/>
                 <ViewModelInstanceString propertyValue="Cancel" viewModelPropertyId="131:5" id="132:116"/>
-                <ViewModelInstanceNumber propertyValue="3" viewModelPropertyId="131:6" id="132:117"/>
+                <ViewModelInstanceNumber propertyValue="2" viewModelPropertyId="131:6" id="132:117"/>
                 <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="131:7" id="132:118">
                     <DataBindContext sourcePathIds="132:1-132:2" propertyKey="593" twoWay="true" nameBased="true" id="132:119"/>
                 </ViewModelInstanceBoolean>
@@ -40,6 +40,7 @@
                     <ViewModelInstanceString viewModelPropertyId="112:14" id="132:144"/>
                     <ViewModelInstanceNumber viewModelPropertyId="118:1" id="132:145"/>
                     <ViewModelInstanceTrigger viewModelPropertyId="134:10" id="134:15"/>
+                    <ViewModelInstanceNumber viewModelPropertyId="136:1" id="136:7"/>
                 </ViewModelInstance>
             </NestedArtboardLayout>
             <LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="132:131"/>

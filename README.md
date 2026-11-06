@@ -10,12 +10,12 @@ The kit is also on the [Rive Community](https://rive.app/community/files/25701-5
 
 ## Components
 
-- **Actions:** Button · Button Group · Dropdown
+- **Actions:** Button · Button Group · Split Button · Toggle Button / Toggle Button Group
 - **Display:** Accordion · Avatar · Badge · Label
 - **Feedback:** Alert · Dialog · Progress Bar · Tooltip
-- **Inputs:** Checkbox / Checkbox Group · Chip / Chip Group · Radio Option / Radio Group · Slider · Switch / Switch Group
-- **Navigation:** Breadcrumbs · Pagination · Tabs
-- **Building blocks:** Accordion Item · Breadcrumb Item · Dialog Demo · List Item · Nav Group · Nav Item · Page Item · Segment · Segmented Control · Showcase Section · Sidebar · Slide · Tab · Tile · Toolbar · Tooltip Button
+- **Inputs:** Checkbox / Checkbox Group · Chip / Chip Group · Number Field · Radio Option / Radio Group · Range Slider · Rating · Select · Slider · Switch / Switch Group
+- **Navigation:** Breadcrumbs · Menu · Pagination · Stepper · Tabs
+- **Building blocks:** Accordion Item · Breadcrumb Item · Button Row · Dialog Demo · Menu Item · Nav Group · Nav Item · Page Item · Showcase Section · Sidebar · Slide · Star · Step · Stepper Demo · Tab · Tile · Toolbar · Tooltip Button
 
 Categories and the components in them are sorted A–Z. In the Showcase a category is data: a `ShowcaseSection` (title, tile list; the count is the list length) in `sections`, and a `NavGroup` in the Sidebar's `sections`.
 
@@ -45,15 +45,21 @@ The components carry Rive semantics, so screen readers get a real accessibility 
 | Avatar | `image` | label |
 | Badge, Label | `text` | text |
 | Breadcrumbs | `group` / `link` per item, `text` for the current page | label; item label, "Current page" |
-| Button, Dropdown, Page Item | `button` | label (the page number); Button also a hint |
+| Button, Page Item | `button` | label (the page number); Button also a hint |
 | Button Group, Checkbox Group, Chip Group, Pagination, Switch Group | `group` | group label |
 | Checkbox | `checkbox` | label, checked |
 | Chip | `button` (toggle) | label, on/off, disabled |
-| List Item | `list` / `listItem` | label |
+| Menu / Menu Item | `list` / `listItem` | label; item label, selected (in a Select), disabled |
+| Select | `button` (expandable) | label, the chosen value, expanded, disabled |
 | Radio Option / Radio Group | `radioButton` / `radioGroup` | label, selected |
 | Slider | `slider` | label, value |
+| Range Slider | `group` with two `slider`s | label; Minimum / Maximum with their percentage |
+| Rating | `slider` | label, value ("3 of 5"), disabled; increase / decrease |
+| Number Field | `button` / `slider` / `button` | Decrease, label with the value, Increase; increase / decrease |
 | Switch | `switchControl` | label, on/off |
+| Stepper / Step | `list` / `listItem` | label; step label, selected for the active step |
 | Tabs / Tab | `tabList` / `tab` | label; tab label, selected, disabled |
+| Toggle Button Group / Toggle Button | `radioGroup` / `radioButton` | group label; label, checked, disabled |
 | Dialog | `dialog`, `text`, `button` ×2 | title; body; the two Buttons |
 | Progress Bar | `group` / `text` | label; percentage ("64%") |
 | Tooltip | `text` | text (left out when its trigger carries it as a hint) |
@@ -93,16 +99,21 @@ A card that stays in view with a message in one of four variants. It has no clos
 
 ## Button
 
-A button in one of four variants. The default follows the inverse colours of the mode (light on dark, dark on light), so it never clashes with the brand colour.
+A button in three variants and three colours, like MUI: `variant` sets the shape, `color` the meaning. The default (contained, neutral) follows the inverse colours of the mode (light on dark, dark on light), so it never clashes with the brand colour.
 
-- View model `Button`: `text`, `variant` (`0` primary, `1` secondary, `2` brand, `3` destructive), `icon` (`0` none, `1` arrow, `2` chevron left, `3` chevron right, `4` copy, `5` scissors, `6` clipboard, `7` save, `8` trash, `9` close), `iconOnly`, `disabled`, `hint`, `group` (see Button Group), `a11yHidden`. `_pressed` fires on a click, a screen reader's activate, or Enter/Space while the Button has keyboard focus.
+- View model `Button`: `text`, `variant` (`0` contained, `1` outlined, `2` text), `color` (`0` neutral, `1` brand, `2` destructive), `icon` (`0` none, `1` arrow, `2` chevron left, `3` chevron right, `4` copy, `5` scissors, `6` clipboard, `7` save, `8` trash, `9` close, `10` chevron down, `11` minus, `12` plus, `13` send, `14` eye), `iconOnly`, `disabled`, `hint`, `group` (see Button Group), `a11yHidden`. `_pressed` fires on a click, a screen reader's activate, or Enter/Space while the Button has keyboard focus.
 - A disabled Button ignores all three, and it cannot take keyboard focus. Taps and keys go through a small gate (`_activate` → the Activate layer fires `_pressed` only when `disabled` is false), because the disabled shield only stops the pointer.
-- Primary uses `_primaryBg` / `_primaryHover` / `_primaryText`, destructive `_dangerBg` / `_dangerHover` / `_dangerText`: Theme tokens per mode that ignore the brand. Only the brand variant follows the brand colour. Destructive stays red whatever the brand is.
-- The Dropdown trigger uses the same primary tokens, so the actions look alike; its list keeps the brand accent.
+- **Contained** is a filled button with the theme shadow. Neutral uses `_primaryBg` / `_primaryHover` / `_primaryText`, destructive `_dangerBg` / `_dangerHover` / `_dangerText`: Theme tokens per mode that ignore the brand. Brand uses `_brand600` with `_brand800` on hover.
+- **Outlined** sits on `_surfaceRaised` with a border: `_border` for neutral, `_infoBorder` for brand, `_errorBorder` for destructive, and text in `_text`, `_infoText` or `_errorText`.
+- **Text** has no surface and no border, only the coloured text; hover adds a soft background (`_surfaceHover`, `_infoBg`, `_errorBg`).
+- Only the brand colour follows the brand. Destructive stays red whatever the brand is.
+- Disabled looks the same in every colour: `_textMuted` on `_surfaceSubtle`, or without the surface for the text variant.
+- One state machine layer, **Look**, holds one state per combination (Contained Neutral … Text Destructive).
+- Breaking change from the four old variants: `1` secondary is now `variant` 1 (outlined, neutral); the old `2` brand and `3` destructive are now `variant` 0 with `color` 1 or 2.
 
 ## Button Group
 
-A row of kit Buttons joined into one control: the outer corners follow the theme roundness, the inner corners are square, and the group casts one shadow. Every Button variant works and they may be mixed.
+A row of kit Buttons joined into one control: the outer corners follow the theme roundness, the inner corners are square, and the group casts one shadow. Every Button variant and colour works and they may be mixed; set the same `variant` on each Button for an outlined or text group (a group cannot reach into its list).
 
 - View model `ButtonGroup`: `label` (screen reader name), `buttons` (a list of `Button` instances), `a11yHidden`.
 - Set `group` on every Button in the list: `1` first, `2` middle, `3` last (`0`, the default, is a standalone Button). It rounds only the outer corners and draws a divider before middle and last buttons; secondary borders merge into one line.
@@ -112,11 +123,64 @@ A row of kit Buttons joined into one control: the outer corners follow the theme
 
 A pill you switch on and off, for filters and topics. On, it gets a check and the soft brand colours of the Label.
 
-- View model `Chip`: `label`, `selected` (two-way: a click, a screen reader's activate, or Enter/Space while it has keyboard focus toggles it), `disabled`, `a11yHidden`.
+- View model `Chip`: `label`, `icon` (`0` none, `1` play, `2` panels, `3` link, `4` code; a leading icon that the check replaces while the chip is selected, so the chip keeps its width), `selected` (two-way: a click, a screen reader's activate, or Enter/Space while it has keyboard focus toggles it), `disabled`, `a11yHidden`.
 - **Chip Group** wraps chips over as many rows as they need: view model `ChipGroup`: `chips` (a list of `Chip` instances), `label` (screen reader name), `a11yHidden`. Every chip keeps its own `selected`, so any number can be on. Read them from the list in your app.
 - Off: `_surface` with a `_border` line and `_text`. On: `_softBg`, `_softBorder` and `_softText`, the colours of the Label. Hover: `_surfaceHover`. Disabled: `_surfaceSubtle` and `_textMuted`. The corners follow `_radiusButton`.
 - Input goes through the same gate as the Button: every input fires `_activate`, and the Activate layer toggles only when `disabled` is false. A disabled chip also leaves keyboard focus.
 - Screen readers get a toggle `button` with the label that reports on or off.
+
+## Toggle Button Group
+
+A row of toggle buttons on a track where exactly one is on, like the Mode and Roundness choices in the Theme panel (which are this component).
+
+- View model `ToggleButtonGroup`: `options` (a list of `ToggleButton` instances), `selection` (a shared `ToggleSelection`), `label` (screen reader name), `a11yHidden`.
+- `ToggleButton`: `label`, `value` (its position), `icon` (`0` none, `1` sun, `2` moon, `3`–`6` corner sizes, `7` check, `8` blocked, `9` align left, `10` align center, `11` align right), `iconOnly` (hides the label but keeps it for screen readers), `disabled`, `group` (a `ToggleSelection`), `a11yHidden`. Point `group` of every option at the group's `ToggleSelection`.
+- `ToggleSelection`: `selected`, the value of the option that is on. A click, a screen reader's activate, or Enter/Space on a focused option writes it.
+- Input goes through the same Activate gate as the Button, so a disabled option ignores every input. Disabled options turn `_textMuted`.
+- The selected option sits on `_surfaceRaised`, the track on `_surfaceSubtle`; corners follow `_radiusSegment` / `_radiusSegmentInner`.
+- Screen readers get a `radioGroup` with a `radioButton` per option that reports checked. For several independent on/off choices, use Chips.
+
+## Range Slider
+
+Two thumbs on one track for a minimum and a maximum, like a price filter. The brand line runs between them.
+
+- View model `RangeSlider`: `label`, `low`, `high`, `minPos`, `maxPos`, `disabled`, `a11yHidden`. Like the Slider, the values are positions on the 200-point track (`minPos` 8 to `maxPos` 192); the header shows them as percentages ("20 – 80").
+- Drag either thumb. `low` never passes `high` and the other way round: each thumb follows a private raw value, and a listener writes it into `low` or `high` through a clamp formula with the other value as its limit. Write `low` or `high` from your app and the thumb follows.
+- Track `_borderStrong`, range `_brand600`, thumbs white with the small theme shadow; disabled uses `_textMuted` and `_surfaceSubtle`.
+- Screen readers get a `group` named by `label` with a `slider` per thumb (Minimum, Maximum) and its percentage.
+
+## Number Field
+
+A number between a minus and a plus Button, for quantities.
+
+- View model `NumberField`: `value`, `min`, `max`, `step`, `label` (screen reader name), `disabled`, `a11yHidden`.
+- The minus and plus are kit Buttons (outlined, icon only), so they hover, press, focus and disable like every Button. Their `_pressed` fires the field's private triggers; a view model listener steps `value` through a formula that keeps it between `min` and `max`.
+- With keyboard focus on the value, the arrow keys step it (up / right +, down / left −, held keys repeat), and a screen reader's increase and decrease do the same, through a gate that ignores them while disabled.
+- The value sits on `_surface` with a `_border` line and `_radiusButton` corners; disabled turns it `_textMuted`.
+- Screen readers get the two Buttons and a `slider` named by `label` with the value.
+
+## Rating
+
+Five stars for a score from 0 to 5.
+
+- View model `Rating`: `stars` (a list of five `Star` instances), `state` (a shared `RatingState`), `label` (screen reader name), `a11yHidden`.
+- `Star`: `value` (`1`–`5`), `group` (the rating's `RatingState`). `RatingState`: `value` (the score), `disabled`.
+- Click a star to set the score; hovering previews it in `_brand500`. Filled stars use `_brand600`, empty ones a `_borderStrong` outline; disabled turns the filled stars `_textMuted` and blocks the pointer.
+- With keyboard focus the arrow keys step the score (right / up +1, left / down −1, held keys repeat); a screen reader's increase and decrease do the same. Both go through a gate, so a disabled rating ignores them.
+- Screen readers get a `slider` named by `label` with the value "3 of 5".
+
+## Menu, Select and Split Button
+
+One **Menu** serves all three: a floating panel of **Menu Items**. On its own it is a context menu; Select and Split Button place it under their trigger.
+
+- View model `Menu`: `items` (a list of `MenuItem` instances), `state` (a `MenuState`), `label` (screen reader name), `a11yHidden`.
+- `MenuItem`: `text`, `icon` (`0` none, `1` new file, `2` folder, `3` save, `4` export, `5` pencil, `6` clock, `7` copy; a leading icon in the text colour, muted when disabled), `disabled`, `group` (point it at the menu's `MenuState`), `a11yHidden`. A click, a screen reader's activate or Enter/Space chooses it: it writes `state.selected` (its position), `state.label` (its text) and `state.open = false`, and fires its own `_pressed`. A disabled item ignores every input.
+- `MenuState`: `selected` (`-1` for none), `label`, `open`, `showSelection` (a check on the chosen item; on for a Select, off for menus of actions).
+- **Select** (Inputs): a field that shows `menu.state.label` and opens the menu below it. View model `Select`: `menu`, `label` (screen reader name), `disabled`, `a11yHidden`. Read `menu.state.selected` in your app; set `menu.state.label` to the first value or a placeholder. Screen readers get an expandable `button` with the chosen value.
+- **Split Button** (Actions): a kit Button and a chevron Button joined like a Button Group, with the menu under the chevron. View model `SplitButton`: `text`, `variant`, `color` (as on the Button), `disabled`, `menu`, `menuLabel` (screen reader name of the chevron), `a11yHidden`, and the trigger `pressed` for the main action. Listen to the items' `_pressed` or to `menu.state.selected` for the menu actions.
+- The menu closes when an item is chosen or the trigger is pressed again. Rive has no "click outside" for a nested component: close it from your app (`menu.state.open = false`) when you need that.
+- The panel uses `_surface`, `_border`, `_radiusDropdown` and the theme shadow; items get a soft brand hover.
+- Breaking change: Dropdown is gone. Its list became the Menu; for a value use Select, for actions use Split Button or a Menu.
 
 ## Pagination
 
@@ -127,6 +191,17 @@ Previous and next Buttons around up to seven page buttons. Set two numbers and t
 - Previous and next step by one and are disabled on the first and last page.
 - Listen to `page` in your app to load that page.
 - The behaviour is a small Luau script, **Pagination Pages**: it fills the `_pages` list of Page Items and sets the disabled flags. Luau runs in the editor and in the Rive runtimes. Use a `.riv` exported from the editor or built with `rive --publish`: a plain CLI build (`--once`) does not run scripts. Like every script, it does not run in a Community thumbnail.
+
+## Stepper
+
+The steps of a wizard in a row: done steps get a check, the active one is filled, the rest wait in muted colours, with lines between them that fill as you go.
+
+- View model `Stepper`: `steps` (a list of `Step` instances), `state` (a shared `StepperState`), `label` (screen reader name), `a11yHidden`.
+- `Step`: `label`, `value` (its position: `0` for the first), `group` (the stepper's `StepperState`), `isLast` (hides the line after it). `StepperState`: `active`, the value of the current step.
+- Each Step compares its `value` with `active` in one layer (Upcoming, Active, Completed), so moving `active` is all your app does. The circle shows `value + 1` or a check.
+- Done and active circles use the primary tokens (`_primaryBg`, `_primaryText`), like the default Button; upcoming ones a `_borderStrong` ring with `_textMuted`.
+- **Stepper Demo** is the Showcase's building block: the Stepper with Back and Next Buttons that step `active` between the first and the last step.
+- Screen readers get a `list` named by `label` with a `listItem` per step; the active one is selected.
 
 ## Tabs
 
@@ -143,7 +218,7 @@ A row of tabs over a divider; the selected tab has full-strength text and a bran
 
 A modal card over a dimmed scrim, with a title, a body and two kit Buttons. It is the dismissible counterpart of Alert.
 
-- View model `Dialog`: `title`, `body`, `confirmText`, `cancelText`, `confirmVariant` (a Button `variant`: `0` primary, `2` brand, `3` destructive), `confirmIcon` and `cancelIcon` (Button `icon` numbers; trash and close by default), `dim` (the 50% scrim, on by default), `open`, `a11yHidden`, and the triggers `confirmed` and `cancelled`.
+- View model `Dialog`: `title`, `body`, `confirmText`, `cancelText`, `confirmColor` (a Button `color`: `0` neutral, `1` brand, `2` destructive; was `confirmVariant`), `confirmIcon` and `cancelIcon` (Button `icon` numbers; trash and close by default), `dim` (the 50% scrim, on by default), `open`, `a11yHidden`, and the triggers `confirmed` and `cancelled`.
 - Place it once over your screen as a layout that fills the artboard, and set `open` to show it. It fades and scales in, and leaves the layout when closed, so it never blocks input while hidden.
 - The confirm Button fires `confirmed`, the cancel Button and a click on the scrim fire `cancelled`; each one also sets `open` back to false. Listen to the triggers in your app.
 - The Buttons' `_pressed` triggers are bound to `confirmed` and `cancelled`, so the Dialog reacts to whatever makes a Button fire: a click, a screen reader's activate, or Enter/Space.
@@ -176,7 +251,7 @@ A small bubble in the inverse theme colours (`_text` background, `_bg` text) wit
 
 ## Pointer cursor
 
-A canvas can't change the mouse cursor by itself, so the kit tells your app when to. `cursorPointer` (a boolean on the global Theme view model) is `true` while the pointer is over something clickable: an accordion header, a breadcrumb link, a button, checkbox, chip, dropdown and its items, nav group header, nav item, page item, radio option, segment, slider, switch, tab or tile. Disabled controls leave it `false`.
+A canvas can't change the mouse cursor by itself, so the kit tells your app when to. `cursorPointer` (a boolean on the global Theme view model) is `true` while the pointer is over something clickable: an accordion header, a breadcrumb link, a button, checkbox, chip, menu item, select, nav group header, nav item, page item, radio option, slider, switch, tab, tile or toggle button. Disabled controls leave it `false`.
 
 ```js
 const flag = rive.globalViewModelInstance("Theme").boolean("cursorPointer");
@@ -215,7 +290,7 @@ then ask your agent for the screen you want. The component reference is generate
 The kit keeps each kind of logic in one place:
 
 - **Look comes from data.** Colours, radii and shadows are tokens on the global `Theme`; components only read them.
-- **Picking one of several is a state.** A number that chooses what shows (a Button's `variant` and `icon`, an Alert's `variant`, a Tooltip's `placement`) drives a state machine layer with one state per value, such as Button › Variant › Primary.
+- **Picking one of several is a state.** A number that chooses what shows (a Button's `variant`, `color` and `icon`, an Alert's `variant`, a Tooltip's `placement`) drives a state machine layer with one state per value, such as Button › Look › Outlined Brand.
 - **Behaviour is a script, when it is an algorithm.** Pagination (which pages to show) and Tooltip Button (which side fits) so far. Everything else is native.
 - **Converter names say where they belong:** `<Part> · <what it does>`, for example `Slider · Percent text`. The ones only the Showcase uses start with `Showcase`.
 
@@ -284,4 +359,4 @@ The editor file is the source of truth. After editing in Rive, run `./pull.sh` b
 
 ## License
 
-[MIT](LICENSE) © Maximized Studio. The preview font `preview-assets/Inter.ttf` is licensed under the SIL Open Font License. The copy, scissors, clipboard and save icons are redrawn from [Lucide](https://lucide.dev) (ISC License, © Lucide Contributors).
+[MIT](LICENSE) © Maximized Studio. The preview font `preview-assets/Inter.ttf` is licensed under the SIL Open Font License. The copy, scissors, clipboard, save, send, eye, align, file, folder, upload, pencil, clock, play, panels, link and code icons are redrawn from [Lucide](https://lucide.dev) (ISC License, © Lucide Contributors).
