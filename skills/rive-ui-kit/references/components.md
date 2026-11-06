@@ -400,16 +400,18 @@ Contains: Button
 | `a11yHidden` | boolean | `131:10` |
 | `confirmIcon` | number | `131:21` |
 | `cancelIcon` | number | `131:22` |
+| `dim` | boolean | `131:25` |
 
 A modal card over a dimmed scrim, with a title, a body and two kit Buttons. It is the dismissible counterpart of Alert.
 
-- View model `Dialog`: `title`, `body`, `confirmText`, `cancelText`, `confirmVariant` (a Button `variant`: `0` primary, `2` brand, `3` destructive), `confirmIcon` and `cancelIcon` (Button `icon` numbers; trash and close by default), `open`, `a11yHidden`, and the triggers `confirmed` and `cancelled`.
+- View model `Dialog`: `title`, `body`, `confirmText`, `cancelText`, `confirmVariant` (a Button `variant`: `0` primary, `2` brand, `3` destructive), `confirmIcon` and `cancelIcon` (Button `icon` numbers; trash and close by default), `dim` (the 50% scrim, on by default), `open`, `a11yHidden`, and the triggers `confirmed` and `cancelled`.
 - Place it once over your screen as a layout that fills the artboard, and set `open` to show it. It fades and scales in, and leaves the layout when closed, so it never blocks input while hidden.
 - The confirm Button fires `confirmed`, the cancel Button and a click on the scrim fire `cancelled`; each one also sets `open` back to false. Listen to the triggers in your app.
 - The Buttons' `_pressed` triggers are bound to `confirmed` and `cancelled`, so the Dialog reacts to whatever makes a Button fire.
 - The card uses `_surface`, `_border`, `_radiusCard` and the theme shadow; the scrim is black at 50%.
 - Screen readers get a `dialog` named by the title, the body as text and the two Buttons.
-- **Dialog Demo** is the Showcase's building block: a small screen with an "Open dialog" Button and a Dialog over it; the screen clips the scrim, as the edges of a real app would.
+- A click outside the card closes it too, also with `dim` off.
+- **Dialog Demo** is the Showcase's building block: an "Open dialog" Button with a Dialog over it, `dim` off so the card and its shadow sit on the canvas.
 
 ```xml
 <NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="131:100" isStateful="true" name="Dialog" id="X:1">
@@ -426,6 +428,7 @@ A modal card over a dimmed scrim, with a title, a body and two kit Buttons. It i
         <ViewModelInstanceBoolean viewModelPropertyId="131:10" id="X:12"/>  <!-- a11yHidden -->
         <ViewModelInstanceNumber viewModelPropertyId="131:21" id="X:13"/>  <!-- confirmIcon -->
         <ViewModelInstanceNumber viewModelPropertyId="131:22" id="X:14"/>  <!-- cancelIcon -->
+        <ViewModelInstanceBoolean viewModelPropertyId="131:25" id="X:15"/>  <!-- dim -->
     </ViewModelInstance>
 </NestedArtboardLayout>
 ```

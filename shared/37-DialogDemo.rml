@@ -3,7 +3,7 @@
         <Fill fillRule="clockwise" id="132:103">
             <SolidColor colorValue="00000000" id="132:104"/>
         </Fill>
-        <LayoutComponentStyle layoutTypeValue="stack" layoutAlignmentType="center" id="132:101"/>
+        <LayoutComponentStyle layoutAlignmentType="center" layoutTypeValue="stack" id="132:101"/>
         <NestedArtboardLayout instanceWidthScaleType="fill" instanceHeightScaleType="fill" artboardId="131:100" isStateful="true" name="Dialog" id="132:110">
             <NestedStateMachine animationId="131:102" id="132:111"/>
             <ViewModelInstance viewModelId="131:1" exports="true" name="Demo Dialog" id="132:112">
