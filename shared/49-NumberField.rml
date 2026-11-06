@@ -12,7 +12,7 @@
                         <ViewModelInstanceString propertyValue="Decrease" viewModelPropertyId="1:549" id="157:1017"/>
                         <ViewModelInstanceBoolean viewModelPropertyId="1:587" id="157:1018"/>
                         <ViewModelInstanceTrigger viewModelPropertyId="1:1321" id="157:1019">
-                            <DataBindContext sourcePathIds="157:1-157:9" propertyKey="687" nameBased="true" twoWay="true" id="157:1020"/>
+                            <DataBindContext sourcePathIds="157:1-157:9" propertyKey="687" twoWay="true" nameBased="true" id="157:1020"/>
                         </ViewModelInstanceTrigger>
                         <ViewModelInstanceBoolean viewModelPropertyId="7:1" id="157:1022">
                             <DataBindContext sourcePathIds="157:1-157:7" propertyKey="593" nameBased="true" id="157:1021"/>
@@ -45,7 +45,7 @@
                             <DataBindContext sourcePathIds="157:1-157:2" propertyKey="268" nameBased="true" converterId="157:80" id="157:1166"/>
                         </TextValueRun>
                         <LayoutParticipant layoutWidthScaleType="hug" layoutHeightScaleType="hug" id="157:1041"/>
-                        <DataBindContext sourcePathIds="157:1-157:7" propertyKey="18" converterId="9:145" nameBased="true" id="157:1032"/>
+                        <DataBindContext sourcePathIds="157:1-157:7" propertyKey="18" nameBased="true" converterId="9:145" id="157:1032"/>
                     </Text>
                     <Text name="Text" id="157:1044">
                         <TextStylePaint fontSize="16" fontAssetId="0:7" familyName="Inter" styleName="Medium" id="157:1043">
@@ -61,16 +61,16 @@
                             <DataBindContext sourcePathIds="157:1-157:2" propertyKey="268" nameBased="true" converterId="157:80" id="157:1167"/>
                         </TextValueRun>
                         <LayoutParticipant layoutWidthScaleType="hug" layoutHeightScaleType="hug" id="157:1051"/>
-                        <DataBindContext sourcePathIds="157:1-157:7" propertyKey="18" converterId="9:90" nameBased="true" id="157:1042"/>
+                        <DataBindContext sourcePathIds="157:1-157:7" propertyKey="18" nameBased="true" converterId="9:90" id="157:1042"/>
                     </Text>
-                    <LayoutComponentStyle layoutTypeValue="stack" layoutAlignmentType="center" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="157:1006"/>
+                    <LayoutComponentStyle layoutAlignmentType="center" intrinsicallySizedValue="true" layoutTypeValue="stack" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="157:1006"/>
                 </LayoutComponent>
                 <Fill fillRule="clockwise" id="157:1052">
                     <SolidColor colorValue="FF18181B" id="157:1053">
                         <DataBindContext sourcePathIds="10:7-10:7406" propertyKey="37" id="157:1054"/>
                     </SolidColor>
                 </Fill>
-                <Stroke thickness="1" id="157:1055">
+                <Stroke id="157:1055">
                     <SolidColor colorValue="FF27272A" id="157:1056">
                         <DataBindContext sourcePathIds="10:7-10:7418" propertyKey="37" id="157:1057"/>
                     </SolidColor>
@@ -80,12 +80,12 @@
                 </LayoutComponentStyle>
                 <SemanticData role="slider" traitFlags="32" name="Semantics" id="157:1059">
                     <DataBindContext sourcePathIds="157:1-157:6" propertyKey="983" nameBased="true" id="157:1060"/>
-                    <DataBindContext sourcePathIds="157:1-157:2" propertyKey="984" converterId="157:80" nameBased="true" id="157:1061"/>
+                    <DataBindContext sourcePathIds="157:1-157:2" propertyKey="984" nameBased="true" converterId="157:80" id="157:1061"/>
                     <DataBindContext sourcePathIds="157:1-157:8" propertyKey="1004" nameBased="true" id="157:1062"/>
                     <DataBindContext sourcePathIds="157:1-157:7" propertyKey="1002" nameBased="true" id="157:1063"/>
                 </SemanticData>
                 <FocusData name="Focus" id="157:1064">
-                    <DataBindContext sourcePathIds="157:1-157:7" propertyKey="953" converterId="1:1018" nameBased="true" id="157:1065"/>
+                    <DataBindContext sourcePathIds="157:1-157:7" propertyKey="953" nameBased="true" converterId="1:1018" id="157:1065"/>
                 </FocusData>
             </LayoutComponent>
             <LayoutComponent styleId="157:1066" name="Increase" id="157:1067">
@@ -95,7 +95,7 @@
                         <ViewModelInstanceString propertyValue="Increase" viewModelPropertyId="1:549" id="157:1071"/>
                         <ViewModelInstanceBoolean viewModelPropertyId="1:587" id="157:1072"/>
                         <ViewModelInstanceTrigger viewModelPropertyId="1:1321" id="157:1073">
-                            <DataBindContext sourcePathIds="157:1-157:10" propertyKey="687" nameBased="true" twoWay="true" id="157:1074"/>
+                            <DataBindContext sourcePathIds="157:1-157:10" propertyKey="687" twoWay="true" nameBased="true" id="157:1074"/>
                         </ViewModelInstanceTrigger>
                         <ViewModelInstanceBoolean viewModelPropertyId="7:1" id="157:1076">
                             <DataBindContext sourcePathIds="157:1-157:7" propertyKey="593" nameBased="true" id="157:1075"/>
@@ -119,8 +119,8 @@
                 <ListenerInputTypeViewModel viewModelPathIds="10:7-15:419" listenerTypeValue="viewModel" id="157:1093"/>
                 <ListenerViewModelChange fromViewModelProperty="true" fromDataBindId="157:1088" id="157:1089">
                     <BindablePropertyBoolean id="157:1090">
-                        <DataBindContext sourcePathIds="157:1-157:7" propertyKey="634" direction="true" id="157:1091"/>
                         <DataBindContext sourcePathIds="10:7-15:419" propertyKey="634" id="157:1088"/>
+                        <DataBindContext sourcePathIds="157:1-157:7" propertyKey="634" direction="true" id="157:1091"/>
                     </BindablePropertyBoolean>
                 </ListenerViewModelChange>
             </StateMachineListener>
@@ -128,8 +128,8 @@
                 <ListenerInputTypeViewModel viewModelPathIds="157:1-157:9" listenerTypeValue="viewModel" id="157:1099"/>
                 <ListenerViewModelChange fromViewModelProperty="true" fromDataBindId="157:1094" id="157:1095">
                     <BindablePropertyNumber id="157:1096">
-                        <DataBindContext sourcePathIds="157:1-157:2" propertyKey="636" direction="true" id="157:1097"/>
                         <DataBindContext sourcePathIds="157:1-157:2" propertyKey="636" converterId="157:70" id="157:1094"/>
+                        <DataBindContext sourcePathIds="157:1-157:2" propertyKey="636" direction="true" id="157:1097"/>
                     </BindablePropertyNumber>
                 </ListenerViewModelChange>
             </StateMachineListener>
@@ -137,8 +137,8 @@
                 <ListenerInputTypeViewModel viewModelPathIds="157:1-157:10" listenerTypeValue="viewModel" id="157:1105"/>
                 <ListenerViewModelChange fromViewModelProperty="true" fromDataBindId="157:1100" id="157:1101">
                     <BindablePropertyNumber id="157:1102">
-                        <DataBindContext sourcePathIds="157:1-157:2" propertyKey="636" direction="true" id="157:1103"/>
                         <DataBindContext sourcePathIds="157:1-157:2" propertyKey="636" converterId="157:60" id="157:1100"/>
+                        <DataBindContext sourcePathIds="157:1-157:2" propertyKey="636" direction="true" id="157:1103"/>
                     </BindablePropertyNumber>
                 </ListenerViewModelChange>
             </StateMachineListener>
@@ -147,8 +147,8 @@
                     <SemanticInput actionType="increase" id="157:1108"/>
                 </ListenerInputTypeSemantic>
                 <ListenerInputTypeKeyboard listenerTypeValue="keyboard" id="157:1109">
-                    <KeyboardInput keyType="arrowUp" keyPhase="3" id="157:1110"/>
-                    <KeyboardInput keyType="arrowRight" keyPhase="3" id="157:1111"/>
+                    <KeyboardInput keyType="up" keyPhase="3" id="157:1110"/>
+                    <KeyboardInput keyType="right" keyPhase="3" id="157:1111"/>
                 </ListenerInputTypeKeyboard>
                 <ListenerViewModelChange fromViewModelProperty="true" fromDataBindId="157:1112" id="157:1113">
                     <BindablePropertyTrigger id="157:1114">
@@ -162,8 +162,8 @@
                     <SemanticInput actionType="decrease" id="157:1118"/>
                 </ListenerInputTypeSemantic>
                 <ListenerInputTypeKeyboard listenerTypeValue="keyboard" id="157:1119">
-                    <KeyboardInput keyType="arrowDown" keyPhase="3" id="157:1120"/>
-                    <KeyboardInput keyType="arrowLeft" keyPhase="3" id="157:1121"/>
+                    <KeyboardInput keyType="down" keyPhase="3" id="157:1120"/>
+                    <KeyboardInput keyType="left" keyPhase="3" id="157:1121"/>
                 </ListenerInputTypeKeyboard>
                 <ListenerViewModelChange fromViewModelProperty="true" fromDataBindId="157:1122" id="157:1123">
                     <BindablePropertyTrigger id="157:1124">

@@ -20,7 +20,7 @@
                     <DataBindContext sourcePathIds="10:7-10:7406" propertyKey="37" id="146:1016"/>
                 </SolidColor>
             </Fill>
-            <Stroke thickness="1" id="146:1017">
+            <Stroke id="146:1017">
                 <SolidColor colorValue="FF27272A" id="146:1018">
                     <DataBindContext sourcePathIds="10:7-10:7418" propertyKey="37" id="146:1019"/>
                 </SolidColor>
@@ -35,12 +35,12 @@
         </LayoutComponent>
         <StateMachine name="State Machine 1" id="146:1001">
             <StateMachineLayer name="Layer 1" id="146:1026">
+                <AnimationState animationId="146:1025" x="160" id="146:1024"/>
                 <AnyState x="400" id="146:1027"/>
                 <ExitState x="480" id="146:1028"/>
                 <EntryState id="146:1029">
                     <StateTransition stateToId="146:1024" id="146:1030"/>
                 </EntryState>
-                <AnimationState animationId="146:1025" x="160" id="146:1024"/>
             </StateMachineLayer>
         </StateMachine>
         <LinearAnimation name="Timeline 1" id="146:1025"/>

@@ -16,7 +16,7 @@
             <ArtboardComponentList participatesInLayout="true" id="38:593">
                 <DataBindContext sourcePathIds="38:330-38:354" propertyKey="800" id="38:594"/>
             </ArtboardComponentList>
-            <SemanticData role="radioGroup" name="Semantics" id="138:114">
+            <SemanticData role="radioGroup" traitFlags="32" name="Semantics" id="138:114">
                 <DataBindContext sourcePathIds="38:330-138:903" propertyKey="983" nameBased="true" id="138:115"/>
                 <DataBindContext sourcePathIds="38:330-38:350" propertyKey="1004" nameBased="true" id="138:116"/>
             </SemanticData>

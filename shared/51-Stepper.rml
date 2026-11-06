@@ -16,12 +16,12 @@
         </LayoutComponent>
         <StateMachine name="State Machine 1" id="159:2001">
             <StateMachineLayer name="Layer 1" id="159:2014">
+                <AnimationState animationId="159:2013" x="160" id="159:2012"/>
                 <AnyState x="400" id="159:2015"/>
                 <ExitState x="480" id="159:2016"/>
                 <EntryState id="159:2017">
                     <StateTransition stateToId="159:2012" id="159:2018"/>
                 </EntryState>
-                <AnimationState animationId="159:2013" x="160" id="159:2012"/>
             </StateMachineLayer>
         </StateMachine>
         <LinearAnimation name="Timeline 1" id="159:2013"/>

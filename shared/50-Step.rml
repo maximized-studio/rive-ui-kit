@@ -8,7 +8,7 @@
             <LayoutComponent width="24" height="24" styleId="159:1004" name="Circle" id="159:1061">
                 <LayoutComponent width="24" height="24" styleId="159:1006" opacity="0" name="Check" id="159:1012">
                     <Shape x="12" y="12" name="Mark" id="159:1062">
-                        <PointsPath isClosed="false" id="159:1066">
+                        <PointsPath isClockwise="false" id="159:1066">
                             <StraightVertex x="-4" y="0.5" id="159:1063"/>
                             <StraightVertex x="-1.25" y="3.25" id="159:1064"/>
                             <StraightVertex x="4.25" y="-2.75" id="159:1065"/>
@@ -32,7 +32,7 @@
                         <TextStyleAxis tag="2003265652" axisValue="600" id="159:1020"/>
                     </TextStylePaint>
                     <TextValueRun styleId="159:1014" text="1" id="159:1021">
-                        <DataBindContext sourcePathIds="159:1-159:3" propertyKey="268" converterId="159:60" nameBased="true" id="159:1023"/>
+                        <DataBindContext sourcePathIds="159:1-159:3" propertyKey="268" nameBased="true" converterId="159:60" id="159:1023"/>
                     </TextValueRun>
                     <LayoutParticipant layoutWidthScaleType="hug" layoutHeightScaleType="hug" id="159:1022"/>
                 </Text>
@@ -47,7 +47,7 @@
                         <TextStyleAxis tag="2003265652" axisValue="600" id="159:1030"/>
                     </TextStylePaint>
                     <TextValueRun styleId="159:1024" text="1" id="159:1031">
-                        <DataBindContext sourcePathIds="159:1-159:3" propertyKey="268" converterId="159:60" nameBased="true" id="159:1033"/>
+                        <DataBindContext sourcePathIds="159:1-159:3" propertyKey="268" nameBased="true" converterId="159:60" id="159:1033"/>
                     </TextValueRun>
                     <LayoutParticipant layoutWidthScaleType="hug" layoutHeightScaleType="hug" id="159:1032"/>
                 </Text>
@@ -69,7 +69,7 @@
                         <DataBindContext sourcePathIds="10:7-10:7420" propertyKey="37" id="159:1078"/>
                     </SolidColor>
                 </Stroke>
-                <LayoutComponentStyle layoutTypeValue="stack" layoutAlignmentType="center" cornerRadiusTL="999" id="159:1004"/>
+                <LayoutComponentStyle layoutAlignmentType="center" layoutTypeValue="stack" cornerRadiusTL="999" id="159:1004"/>
             </LayoutComponent>
             <LayoutComponent styleId="159:1008" name="Label" id="159:1079">
                 <Text opacity="0" name="Label" id="159:1036">
@@ -102,7 +102,7 @@
                     </TextValueRun>
                     <LayoutParticipant layoutWidthScaleType="hug" layoutHeightScaleType="hug" id="159:1053"/>
                 </Text>
-                <LayoutComponentStyle layoutTypeValue="stack" layoutAlignmentType="centerLeft" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="159:1008"/>
+                <LayoutComponentStyle layoutAlignmentType="centerLeft" intrinsicallySizedValue="true" layoutTypeValue="stack" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="159:1008"/>
             </LayoutComponent>
             <LayoutComponent width="32" height="2" styleId="159:1009" name="Connector" id="159:1080">
                 <LayoutComponent styleId="159:1010" opacity="0" name="Done" id="159:1013">
@@ -119,16 +119,20 @@
                     </SolidColor>
                 </Fill>
                 <LayoutComponentStyle id="159:1009">
-                    <DataBindContext sourcePathIds="159:1-159:5" propertyKey="596" converterId="9:145" nameBased="true" id="159:1087"/>
+                    <DataBindContext sourcePathIds="159:1-159:5" propertyKey="596" nameBased="true" converterId="9:145" id="159:1087"/>
                 </LayoutComponentStyle>
             </LayoutComponent>
             <LayoutComponentStyle gapHorizontal="8" layoutAlignmentType="center" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="159:1003"/>
             <SemanticData role="listItem" traitFlags="2" name="Semantics" id="159:1057">
                 <DataBindContext sourcePathIds="159:1-159:2" propertyKey="983" nameBased="true" id="159:1088"/>
             </SemanticData>
+            <FocusData name="Focus" id="0:27928"/>
         </LayoutComponent>
         <StateMachine name="State Machine 1" id="159:1001">
             <StateMachineLayer name="Progress" id="159:1092">
+                <AnimationState animationId="159:1054" x="160" y="100" stateName="Upcoming" id="159:1089"/>
+                <AnimationState animationId="159:1055" x="320" y="100" stateName="Active" id="159:1090"/>
+                <AnimationState animationId="159:1056" x="480" y="100" stateName="Completed" id="159:1091"/>
                 <AnyState x="500" id="159:1093">
                     <StateTransition stateToId="159:1089" duration="200" interpolationType="cubic" id="159:1094">
                         <TransitionViewModelCondition opValue="greaterThan" id="159:1095">
@@ -177,12 +181,9 @@
                 <EntryState id="159:1119">
                     <StateTransition stateToId="159:1089" id="159:1120"/>
                 </EntryState>
-                <AnimationState animationId="159:1054" x="160" y="100" stateName="Upcoming" id="159:1089"/>
-                <AnimationState animationId="159:1055" x="320" y="100" stateName="Active" id="159:1090"/>
-                <AnimationState animationId="159:1056" x="480" y="100" stateName="Completed" id="159:1091"/>
             </StateMachineLayer>
         </StateMachine>
-        <LinearAnimation name="Upcoming" loopValue="loop" id="159:1054">
+        <LinearAnimation loopValue="loop" name="Upcoming" id="159:1054">
             <KeyedObject objectId="159:1011" id="159:1121">
                 <KeyedProperty property="opacity" id="159:1122">
                     <KeyFrameDouble interpolationType="linear" id="159:1123"/>
@@ -224,7 +225,7 @@
                 </KeyedProperty>
             </KeyedObject>
         </LinearAnimation>
-        <LinearAnimation name="Active" loopValue="loop" id="159:1055">
+        <LinearAnimation loopValue="loop" name="Active" id="159:1055">
             <KeyedObject objectId="159:1011" id="159:1145">
                 <KeyedProperty property="opacity" id="159:1146">
                     <KeyFrameDouble value="1" interpolationType="linear" id="159:1147"/>
@@ -266,7 +267,7 @@
                 </KeyedProperty>
             </KeyedObject>
         </LinearAnimation>
-        <LinearAnimation name="Completed" loopValue="loop" id="159:1056">
+        <LinearAnimation loopValue="loop" name="Completed" id="159:1056">
             <KeyedObject objectId="159:1011" id="159:1169">
                 <KeyedProperty property="opacity" id="159:1170">
                     <KeyFrameDouble value="1" interpolationType="linear" id="159:1171"/>

@@ -46,7 +46,7 @@
             </LayoutComponent>
             <LayoutComponent width="16" height="16" styleId="145:100" name="Check" id="145:102">
                 <Shape x="8" y="8" opacity="0" name="Mark" id="145:101">
-                    <PointsPath isClosed="false" id="145:106">
+                    <PointsPath isClockwise="false" id="145:106">
                         <StraightVertex x="-4" y="0.5" id="145:103"/>
                         <StraightVertex x="-1.25" y="3.25" id="145:104"/>
                         <StraightVertex x="4.25" y="-2.75" id="145:105"/>
@@ -80,7 +80,7 @@
                     </SolidColor>
                 </Stroke>
             </LayoutComponent>
-            <LayoutComponentStyle paddingLeft="12" paddingRight="12" paddingTop="8" paddingBottom="8" layoutAlignmentType="centerLeft" intrinsicallySizedValue="true" cornerRadiusTL="4" layoutWidthScaleType="fill" widthUnitsValue="auto" name="Layout Style" id="1:4182" gapHorizontal="8">
+            <LayoutComponentStyle gapHorizontal="8" paddingLeft="12" paddingRight="12" paddingTop="8" paddingBottom="8" layoutAlignmentType="centerLeft" intrinsicallySizedValue="true" cornerRadiusTL="4" layoutWidthScaleType="fill" widthUnitsValue="auto" name="Layout Style" id="1:4182">
                 <DataBindContext sourcePathIds="10:7-901:21" propertyKey="640" converterId="0:0" id="10:3481"/>
             </LayoutComponentStyle>
             <SemanticData role="listItem" traitFlags="34" name="Semantics" id="2:15">
@@ -89,7 +89,7 @@
                 <DataBindContext sourcePathIds="1:4184-7:43" propertyKey="1002" nameBased="true" id="7:73"/>
             </SemanticData>
             <FocusData name="Focus" id="0:15800">
-                <DataBindContext sourcePathIds="1:4184-7:43" propertyKey="953" converterId="1:1018" nameBased="true" id="145:111"/>
+                <DataBindContext sourcePathIds="1:4184-7:43" propertyKey="953" nameBased="true" converterId="1:1018" id="145:111"/>
             </FocusData>
         </LayoutComponent>
         <StateMachine name="State Machine 1" id="1:4161">
@@ -131,14 +131,14 @@
                 <ListenerInputTypeViewModel viewModelPathIds="1:4184-145:3" listenerTypeValue="viewModel" id="145:141"/>
                 <ListenerViewModelChange fromViewModelProperty="true" fromDataBindId="145:113" id="145:114">
                     <BindablePropertyNumber id="145:115">
-                        <DataBindContext sourcePathIds="1:4184-145:1-146:2" propertyKey="636" direction="true" id="145:116"/>
                         <DataBindContext sourcePathIds="1:4184-1:4327" propertyKey="636" id="145:113"/>
+                        <DataBindContext sourcePathIds="1:4184-145:1-146:2" propertyKey="636" direction="true" id="145:116"/>
                     </BindablePropertyNumber>
                 </ListenerViewModelChange>
                 <ListenerViewModelChange fromViewModelProperty="true" fromDataBindId="145:117" id="145:118">
                     <BindablePropertyString id="145:119">
-                        <DataBindContext sourcePathIds="1:4184-145:1-146:3" propertyKey="635" direction="true" id="145:120"/>
                         <DataBindContext sourcePathIds="1:4184-1:4186" propertyKey="635" id="145:117"/>
+                        <DataBindContext sourcePathIds="1:4184-145:1-146:3" propertyKey="635" direction="true" id="145:120"/>
                     </BindablePropertyString>
                 </ListenerViewModelChange>
                 <ListenerViewModelChange id="145:121">
@@ -278,6 +278,8 @@
                 </EntryState>
             </StateMachineLayer>
             <StateMachineLayer name="Selected" id="145:166">
+                <AnimationState animationId="145:162" x="160" y="100" stateName="Unselected" id="145:164"/>
+                <AnimationState animationId="145:163" x="320" y="100" stateName="Selected" id="145:165"/>
                 <AnyState x="500" id="145:167">
                     <StateTransition stateToId="145:164" duration="150" interpolationType="cubic" id="145:168">
                         <TransitionViewModelCondition opValue="notEqual" id="145:169">
@@ -312,8 +314,6 @@
                 <EntryState id="145:185">
                     <StateTransition stateToId="145:164" id="145:186"/>
                 </EntryState>
-                <AnimationState animationId="145:162" x="160" y="100" stateName="Unselected" id="145:164"/>
-                <AnimationState animationId="145:163" x="320" y="100" stateName="Selected" id="145:165"/>
             </StateMachineLayer>
         </StateMachine>
         <LinearAnimation name="Pressed" id="1:4546">
@@ -347,7 +347,7 @@
             </KeyedObject>
         </LinearAnimation>
         <LinearAnimation name="Activate Idle" id="145:112"/>
-        <LinearAnimation name="Unselected" loopValue="loop" id="145:162">
+        <LinearAnimation loopValue="loop" name="Unselected" id="145:162">
             <KeyedObject objectId="145:101" id="145:187">
                 <KeyedProperty property="opacity" id="145:188">
                     <KeyFrameDouble interpolationType="linear" id="145:189"/>
@@ -359,7 +359,7 @@
                 </KeyedProperty>
             </KeyedObject>
         </LinearAnimation>
-        <LinearAnimation name="Selected" loopValue="loop" id="145:163">
+        <LinearAnimation loopValue="loop" name="Selected" id="145:163">
             <KeyedObject objectId="145:101" id="145:193">
                 <KeyedProperty property="opacity" id="145:194">
                     <KeyFrameDouble value="1" interpolationType="linear" id="145:195"/>

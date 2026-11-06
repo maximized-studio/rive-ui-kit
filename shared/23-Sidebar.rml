@@ -108,9 +108,9 @@
                     </Fill>
                     <LayoutComponentStyle layoutWidthScaleType="fill" widthUnitsValue="auto" id="42:207"/>
                 </LayoutComponent>
-                <LayoutComponent styleId="42:211" name="Nav" id="42:210" clip="true">
+                <LayoutComponent clip="true" styleId="42:211" name="Nav" id="42:210">
                     <LayoutComponent styleId="162:1" name="Nav Content" id="162:4">
-                        <ArtboardComponentList name="Sections" participatesInLayout="true" id="100:66">
+                        <ArtboardComponentList name="Sections" participatesInLayout="true" complexDependency="true" id="100:66">
                             <DataBindContext sourcePathIds="41:866-100:54" propertyKey="800" id="100:67"/>
                         </ArtboardComponentList>
                         <LayoutComponentStyle gapVertical="12" paddingLeft="12" paddingRight="12" paddingTop="12" paddingBottom="48" flexDirectionValue="column" intrinsicallySizedValue="true" layoutWidthScaleType="fill" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="162:1"/>

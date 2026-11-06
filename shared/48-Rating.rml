@@ -10,7 +10,7 @@
                     <SolidColor colorValue="00000000" id="155:2012"/>
                 </Fill>
                 <LayoutComponentStyle positionLeftUnitsValue="points" positionRightUnitsValue="points" positionTopUnitsValue="points" positionBottomUnitsValue="points" edgeConstraints="84" positionTypeValue="absolute" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="155:2006">
-                    <DataBindContext sourcePathIds="155:20-155:22-155:4" propertyKey="596" converterId="9:90" nameBased="true" id="155:2013"/>
+                    <DataBindContext sourcePathIds="155:20-155:22-155:4" propertyKey="596" nameBased="true" converterId="9:90" id="155:2013"/>
                 </LayoutComponentStyle>
             </LayoutComponent>
             <ArtboardComponentList participatesInLayout="true" id="155:2014">
@@ -19,12 +19,12 @@
             <LayoutComponentStyle gapHorizontal="4" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="155:2004"/>
             <SemanticData role="slider" traitFlags="32" name="Semantics" id="155:2016">
                 <DataBindContext sourcePathIds="155:20-155:23" propertyKey="983" nameBased="true" id="155:2017"/>
-                <DataBindContext sourcePathIds="155:20-155:22-155:2" propertyKey="984" converterId="155:80" nameBased="true" id="155:2018"/>
+                <DataBindContext sourcePathIds="155:20-155:22-155:2" propertyKey="984" nameBased="true" converterId="155:80" id="155:2018"/>
                 <DataBindContext sourcePathIds="155:20-155:24" propertyKey="1004" nameBased="true" id="155:2019"/>
                 <DataBindContext sourcePathIds="155:20-155:22-155:4" propertyKey="1002" nameBased="true" id="155:2020"/>
             </SemanticData>
             <FocusData name="Focus" id="155:2021">
-                <DataBindContext sourcePathIds="155:20-155:22-155:4" propertyKey="953" converterId="1:1018" nameBased="true" id="155:2022"/>
+                <DataBindContext sourcePathIds="155:20-155:22-155:4" propertyKey="953" nameBased="true" converterId="1:1018" id="155:2022"/>
             </FocusData>
         </LayoutComponent>
         <StateMachine name="State Machine 1" id="155:2001">
@@ -32,8 +32,8 @@
                 <ListenerInputTypeViewModel viewModelPathIds="10:7-15:419" listenerTypeValue="viewModel" id="155:2028"/>
                 <ListenerViewModelChange fromViewModelProperty="true" fromDataBindId="155:2023" id="155:2024">
                     <BindablePropertyBoolean id="155:2025">
-                        <DataBindContext sourcePathIds="155:20-155:22-155:4" propertyKey="634" direction="true" id="155:2026"/>
                         <DataBindContext sourcePathIds="10:7-15:419" propertyKey="634" id="155:2023"/>
+                        <DataBindContext sourcePathIds="155:20-155:22-155:4" propertyKey="634" direction="true" id="155:2026"/>
                     </BindablePropertyBoolean>
                 </ListenerViewModelChange>
             </StateMachineListener>
@@ -50,8 +50,8 @@
                     <SemanticInput actionType="increase" id="155:2038"/>
                 </ListenerInputTypeSemantic>
                 <ListenerInputTypeKeyboard listenerTypeValue="keyboard" id="155:2039">
-                    <KeyboardInput keyType="arrowRight" keyPhase="3" id="155:2034"/>
-                    <KeyboardInput keyType="arrowUp" keyPhase="3" id="155:2035"/>
+                    <KeyboardInput keyType="right" keyPhase="3" id="155:2034"/>
+                    <KeyboardInput keyType="up" keyPhase="3" id="155:2035"/>
                 </ListenerInputTypeKeyboard>
                 <ListenerViewModelChange fromViewModelProperty="true" fromDataBindId="155:2040" id="155:2041">
                     <BindablePropertyTrigger id="155:2042">
@@ -65,8 +65,8 @@
                     <SemanticInput actionType="decrease" id="155:2048"/>
                 </ListenerInputTypeSemantic>
                 <ListenerInputTypeKeyboard listenerTypeValue="keyboard" id="155:2049">
-                    <KeyboardInput keyType="arrowLeft" keyPhase="3" id="155:2044"/>
-                    <KeyboardInput keyType="arrowDown" keyPhase="3" id="155:2045"/>
+                    <KeyboardInput keyType="left" keyPhase="3" id="155:2044"/>
+                    <KeyboardInput keyType="down" keyPhase="3" id="155:2045"/>
                 </ListenerInputTypeKeyboard>
                 <ListenerViewModelChange fromViewModelProperty="true" fromDataBindId="155:2050" id="155:2051">
                     <BindablePropertyTrigger id="155:2052">
@@ -79,8 +79,8 @@
                 <ListenerInputTypeViewModel viewModelPathIds="155:20-155:27" listenerTypeValue="viewModel" id="155:2059"/>
                 <ListenerViewModelChange fromViewModelProperty="true" fromDataBindId="155:2054" id="155:2055">
                     <BindablePropertyNumber id="155:2056">
-                        <DataBindContext sourcePathIds="155:20-155:22-155:2" propertyKey="636" direction="true" id="155:2057"/>
                         <DataBindContext sourcePathIds="155:20-155:22-155:2" propertyKey="636" converterId="155:90" id="155:2054"/>
+                        <DataBindContext sourcePathIds="155:20-155:22-155:2" propertyKey="636" direction="true" id="155:2057"/>
                     </BindablePropertyNumber>
                 </ListenerViewModelChange>
             </StateMachineListener>
@@ -88,8 +88,8 @@
                 <ListenerInputTypeViewModel viewModelPathIds="155:20-155:28" listenerTypeValue="viewModel" id="155:2065"/>
                 <ListenerViewModelChange fromViewModelProperty="true" fromDataBindId="155:2060" id="155:2061">
                     <BindablePropertyNumber id="155:2062">
-                        <DataBindContext sourcePathIds="155:20-155:22-155:2" propertyKey="636" direction="true" id="155:2063"/>
                         <DataBindContext sourcePathIds="155:20-155:22-155:2" propertyKey="636" converterId="155:100" id="155:2060"/>
+                        <DataBindContext sourcePathIds="155:20-155:22-155:2" propertyKey="636" direction="true" id="155:2063"/>
                     </BindablePropertyNumber>
                 </ListenerViewModelChange>
             </StateMachineListener>

@@ -381,10 +381,130 @@
         <FormulaTokenParenthesisClose id="130:17"/>
         <FormulaTokenParenthesisClose id="130:18"/>
     </DataConverterFormula>
+    <DataConverterFormula name="Toggle · Disabled icon (stroke)" groupId="1:2674" id="138:951">
+        <FormulaTokenInput id="138:953"/>
+        <FormulaTokenOperation operationType="multiply" id="138:954"/>
+        <FormulaTokenValue operationValue="1.4" id="138:955"/>
+    </DataConverterFormula>
     <DataConverterFormula name="Chip · Check (formula)" groupId="1:2674" id="141:51">
         <FormulaTokenValue id="141:53"/>
         <FormulaTokenOperation operationType="subtract" id="141:54"/>
         <FormulaTokenInput id="141:55"/>
+    </DataConverterFormula>
+    <DataConverterFormula name="Range · Position (0–1)" groupId="1:2674" id="153:60">
+        <FormulaTokenParenthesisOpen id="153:61"/>
+        <FormulaTokenInput id="153:62"/>
+        <FormulaTokenOperation operationType="subtract" id="153:63"/>
+        <FormulaTokenValue operationValue="8" id="153:64"/>
+        <FormulaTokenParenthesisClose id="153:65"/>
+        <FormulaTokenOperation operationType="divide" id="153:66"/>
+        <FormulaTokenValue operationValue="184" id="153:67"/>
+    </DataConverterFormula>
+    <DataConverterFormula name="Range · Percent" groupId="1:2674" id="153:71">
+        <FormulaTokenParenthesisOpen id="153:72"/>
+        <FormulaTokenInput id="153:73"/>
+        <FormulaTokenOperation operationType="subtract" id="153:74"/>
+        <FormulaTokenValue operationValue="8" id="153:75"/>
+        <FormulaTokenParenthesisClose id="153:76"/>
+        <FormulaTokenOperation operationType="divide" id="153:77"/>
+        <FormulaTokenValue operationValue="1.84" id="153:78"/>
+    </DataConverterFormula>
+    <DataConverterFormula name="Range · Clamp low" groupId="1:2674" id="153:90">
+        <FormulaTokenFunction id="153:91"/>
+        <FormulaTokenValue id="153:92">
+            <DataBindContext sourcePathIds="153:1-153:4" propertyKey="777" nameBased="true" id="153:93"/>
+        </FormulaTokenValue>
+        <FormulaTokenArgumentSeparator id="153:94"/>
+        <FormulaTokenFunction functionType="max" id="153:95"/>
+        <FormulaTokenValue id="153:96">
+            <DataBindContext sourcePathIds="153:1-153:5" propertyKey="777" nameBased="true" id="153:97"/>
+        </FormulaTokenValue>
+        <FormulaTokenArgumentSeparator id="153:98"/>
+        <FormulaTokenInput id="153:99"/>
+        <FormulaTokenParenthesisClose id="153:110"/>
+        <FormulaTokenParenthesisClose id="153:111"/>
+    </DataConverterFormula>
+    <DataConverterFormula name="Range · Clamp high" groupId="1:2674" id="153:100">
+        <FormulaTokenFunction functionType="max" id="153:101"/>
+        <FormulaTokenValue id="153:102">
+            <DataBindContext sourcePathIds="153:1-153:3" propertyKey="777" nameBased="true" id="153:103"/>
+        </FormulaTokenValue>
+        <FormulaTokenArgumentSeparator id="153:104"/>
+        <FormulaTokenFunction id="153:105"/>
+        <FormulaTokenValue id="153:106">
+            <DataBindContext sourcePathIds="153:1-153:6" propertyKey="777" nameBased="true" id="153:107"/>
+        </FormulaTokenValue>
+        <FormulaTokenArgumentSeparator id="153:108"/>
+        <FormulaTokenInput id="153:109"/>
+        <FormulaTokenParenthesisClose id="153:112"/>
+        <FormulaTokenParenthesisClose id="153:113"/>
+    </DataConverterFormula>
+    <DataConverterFormula name="Rating · Step up" groupId="1:2674" id="155:90">
+        <FormulaTokenFunction id="155:91"/>
+        <FormulaTokenValue operationValue="5" id="155:92"/>
+        <FormulaTokenArgumentSeparator id="155:93"/>
+        <FormulaTokenInput id="155:94"/>
+        <FormulaTokenOperation id="155:95"/>
+        <FormulaTokenValue id="155:96"/>
+        <FormulaTokenParenthesisClose id="155:97"/>
+    </DataConverterFormula>
+    <DataConverterFormula name="Rating · Step down" groupId="1:2674" id="155:100">
+        <FormulaTokenFunction functionType="max" id="155:101"/>
+        <FormulaTokenValue id="155:102"/>
+        <FormulaTokenArgumentSeparator id="155:103"/>
+        <FormulaTokenInput id="155:104"/>
+        <FormulaTokenOperation operationType="subtract" id="155:105"/>
+        <FormulaTokenValue id="155:106"/>
+        <FormulaTokenParenthesisClose id="155:107"/>
+    </DataConverterFormula>
+    <DataConverterFormula name="Number · Step up" groupId="1:2674" id="157:60">
+        <FormulaTokenFunction id="157:30"/>
+        <FormulaTokenValue id="157:31">
+            <DataBindContext sourcePathIds="157:1-157:4" propertyKey="777" nameBased="true" id="157:32"/>
+        </FormulaTokenValue>
+        <FormulaTokenArgumentSeparator id="157:33"/>
+        <FormulaTokenInput id="157:34"/>
+        <FormulaTokenOperation id="157:35"/>
+        <FormulaTokenValue id="157:36">
+            <DataBindContext sourcePathIds="157:1-157:5" propertyKey="777" nameBased="true" id="157:37"/>
+        </FormulaTokenValue>
+        <FormulaTokenParenthesisClose id="157:38"/>
+    </DataConverterFormula>
+    <DataConverterFormula name="Number · Step down" groupId="1:2674" id="157:70">
+        <FormulaTokenFunction functionType="max" id="157:39"/>
+        <FormulaTokenValue id="157:40">
+            <DataBindContext sourcePathIds="157:1-157:3" propertyKey="777" nameBased="true" id="157:41"/>
+        </FormulaTokenValue>
+        <FormulaTokenArgumentSeparator id="157:42"/>
+        <FormulaTokenInput id="157:43"/>
+        <FormulaTokenOperation operationType="subtract" id="157:44"/>
+        <FormulaTokenValue id="157:45">
+            <DataBindContext sourcePathIds="157:1-157:5" propertyKey="777" nameBased="true" id="157:46"/>
+        </FormulaTokenValue>
+        <FormulaTokenParenthesisClose id="157:47"/>
+    </DataConverterFormula>
+    <DataConverterFormula name="Stepper · Number" groupId="1:2674" id="159:61">
+        <FormulaTokenInput id="159:62"/>
+        <FormulaTokenOperation id="159:63"/>
+        <FormulaTokenValue id="159:64"/>
+    </DataConverterFormula>
+    <DataConverterFormula name="Showcase · Stepper back" groupId="1:2674" id="160:70">
+        <FormulaTokenFunction functionType="max" id="160:71"/>
+        <FormulaTokenValue id="160:72"/>
+        <FormulaTokenArgumentSeparator id="160:73"/>
+        <FormulaTokenInput id="160:74"/>
+        <FormulaTokenOperation operationType="subtract" id="160:75"/>
+        <FormulaTokenValue id="160:76"/>
+        <FormulaTokenParenthesisClose id="160:77"/>
+    </DataConverterFormula>
+    <DataConverterFormula name="Showcase · Stepper next" groupId="1:2674" id="160:80">
+        <FormulaTokenFunction id="160:81"/>
+        <FormulaTokenValue operationValue="2" id="160:82"/>
+        <FormulaTokenArgumentSeparator id="160:83"/>
+        <FormulaTokenInput id="160:84"/>
+        <FormulaTokenOperation id="160:85"/>
+        <FormulaTokenValue id="160:86"/>
+        <FormulaTokenParenthesisClose id="160:87"/>
     </DataConverterFormula>
     <DataConverterGroup name="Slider · Percent text" groupId="1:2674" id="2:40">
         <DataConverterGroupItem converterId="2:41" id="2:60"/>
@@ -430,13 +550,30 @@
         <DataConverterGroupItem converterId="130:104" id="130:107"/>
         <DataConverterGroupItem converterId="130:105" id="130:108"/>
     </DataConverterGroup>
+    <DataConverterGroup name="Toggle · Disabled icon" groupId="1:2674" id="138:952">
+        <DataConverterGroupItem converterId="138:950" id="138:956"/>
+        <DataConverterGroupItem converterId="138:951" id="138:957"/>
+    </DataConverterGroup>
     <DataConverterGroup name="Chip · Show check" groupId="1:2674" id="141:52">
         <DataConverterGroupItem converterId="141:50" id="141:56"/>
         <DataConverterGroupItem converterId="141:51" id="141:57"/>
     </DataConverterGroup>
+    <DataConverterGroup name="Range · Percent text" groupId="1:2674" id="153:70">
+        <DataConverterGroupItem converterId="153:71" id="153:80"/>
+        <DataConverterGroupItem converterId="153:79" id="153:81"/>
+    </DataConverterGroup>
+    <DataConverterGroup name="Rating · Value text" groupId="1:2674" id="155:80">
+        <DataConverterGroupItem converterId="155:81" id="155:83"/>
+        <DataConverterGroupItem converterId="155:82" id="155:84"/>
+    </DataConverterGroup>
+    <DataConverterGroup name="Stepper · Step number" groupId="1:2674" id="159:60">
+        <DataConverterGroupItem converterId="159:61" id="159:66"/>
+        <DataConverterGroupItem converterId="159:65" id="159:67"/>
+    </DataConverterGroup>
     <DataConverterListToLength name="Showcase · Tile count" groupId="1:2674" id="100:59"/>
     <DataConverterStringPad length="3" text=" " name="Progress · Pad to 3" groupId="1:2674" id="130:103"/>
     <DataConverterStringPad length="4" text="%" padType="end" name="Progress · Percent sign" groupId="1:2674" id="130:104"/>
+    <DataConverterStringPad length="6" text=" of 5" padType="end" name="Rating · Of five" groupId="1:2674" id="155:82"/>
     <DataConverterStringTrim name="Progress · Trim start" groupId="1:2674" id="130:105"/>
     <DataConverterToNumber name="Checkbox · Checked (to number)" groupId="1:2674" id="2:64"/>
     <DataConverterToNumber name="Showcase · Panel width / Disabled · Shield (to number)" groupId="1:2674" id="9:91"/>
@@ -446,9 +583,14 @@
     <DataConverterToNumber name="Button · Secondary border (to number)" groupId="1:2674" id="33:252"/>
     <DataConverterToNumber name="Showcase · Hover tint (to number)" groupId="1:2674" id="70:511"/>
     <DataConverterToNumber name="Button · No shadow in a group (to number)" groupId="1:2674" id="99:111"/>
+    <DataConverterToNumber name="Toggle · Disabled icon (to number)" groupId="1:2674" id="138:950"/>
     <DataConverterToNumber name="Chip · Check (to number)" groupId="1:2674" id="141:50"/>
     <DataConverterToString round="true" name="SliderPercentString" groupId="1:2674" id="2:61"/>
     <DataConverterToString round="true" name="Progress · Percent (to text)" groupId="1:2674" id="130:19"/>
+    <DataConverterToString round="true" name="Range · Percent (to text)" groupId="1:2674" id="153:79"/>
+    <DataConverterToString round="true" name="Rating · Value (to text)" groupId="1:2674" id="155:81"/>
+    <DataConverterToString round="true" name="Number · Value (to text)" groupId="1:2674" id="157:80"/>
+    <DataConverterToString round="true" name="Stepper · Number (to text)" groupId="1:2674" id="159:65"/>
     <DataFolder name="UI Kit" id="1:2753">
         <DataFolder name="Utils" id="1:1021">
             <DataConverterBooleanNegate name="Utils · Toggle" groupId="1:2674" id="1:1018"/>
@@ -1020,8 +1162,8 @@
                     <ViewModelInstanceNumber propertyValue="1" viewModelPropertyId="99:100" id="99:101"/>
                     <ViewModelInstanceString viewModelPropertyId="112:14" id="112:136"/>
                     <ViewModelInstanceNumber viewModelPropertyId="118:1" id="118:170"/>
-                    <ViewModelInstanceNumber viewModelPropertyId="136:1" id="136:8"/>
                     <ViewModelInstanceTrigger viewModelPropertyId="134:10" id="134:17"/>
+                    <ViewModelInstanceNumber viewModelPropertyId="136:1" id="136:8"/>
                 </ViewModelInstance>
                 <ViewModelInstance exports="true" name="BG Cut" id="92:648">
                     <ViewModelInstanceString propertyValue="Cut" viewModelPropertyId="1:549" id="92:649"/>
@@ -1034,8 +1176,8 @@
                     <ViewModelInstanceNumber propertyValue="2" viewModelPropertyId="99:100" id="99:102"/>
                     <ViewModelInstanceString viewModelPropertyId="112:14" id="112:137"/>
                     <ViewModelInstanceNumber viewModelPropertyId="118:1" id="118:171"/>
-                    <ViewModelInstanceNumber viewModelPropertyId="136:1" id="136:9"/>
                     <ViewModelInstanceTrigger viewModelPropertyId="134:10" id="134:18"/>
+                    <ViewModelInstanceNumber viewModelPropertyId="136:1" id="136:9"/>
                 </ViewModelInstance>
                 <ViewModelInstance exports="true" name="BG Paste" id="92:659">
                     <ViewModelInstanceString propertyValue="Paste" viewModelPropertyId="1:549" id="92:660"/>
@@ -1048,8 +1190,8 @@
                     <ViewModelInstanceNumber propertyValue="3" viewModelPropertyId="99:100" id="99:103"/>
                     <ViewModelInstanceString viewModelPropertyId="112:14" id="112:138"/>
                     <ViewModelInstanceNumber viewModelPropertyId="118:1" id="118:172"/>
-                    <ViewModelInstanceNumber viewModelPropertyId="136:1" id="136:10"/>
                     <ViewModelInstanceTrigger viewModelPropertyId="134:10" id="134:19"/>
+                    <ViewModelInstanceNumber viewModelPropertyId="136:1" id="136:10"/>
                 </ViewModelInstance>
                 <ViewModelInstance exports="true" name="Next Button" id="33:101">
                     <ViewModelInstanceString propertyValue="Next" viewModelPropertyId="1:549" id="33:102"/>
@@ -1062,8 +1204,8 @@
                     <ViewModelInstanceNumber viewModelPropertyId="99:100" id="99:104"/>
                     <ViewModelInstanceString viewModelPropertyId="112:14" id="112:139"/>
                     <ViewModelInstanceNumber viewModelPropertyId="118:1" id="118:173"/>
-                    <ViewModelInstanceNumber viewModelPropertyId="136:1" id="136:11"/>
                     <ViewModelInstanceTrigger viewModelPropertyId="134:10" id="134:20"/>
+                    <ViewModelInstanceNumber viewModelPropertyId="136:1" id="136:11"/>
                 </ViewModelInstance>
                 <ViewModelInstance exports="true" name="Prev Button" id="33:60">
                     <ViewModelInstanceString propertyValue="Previous" viewModelPropertyId="1:549" id="33:61"/>
@@ -1076,8 +1218,8 @@
                     <ViewModelInstanceNumber viewModelPropertyId="99:100" id="99:105"/>
                     <ViewModelInstanceString viewModelPropertyId="112:14" id="112:140"/>
                     <ViewModelInstanceNumber propertyValue="1" viewModelPropertyId="118:1" id="118:174"/>
-                    <ViewModelInstanceNumber viewModelPropertyId="136:1" id="136:12"/>
                     <ViewModelInstanceTrigger viewModelPropertyId="134:10" id="134:21"/>
+                    <ViewModelInstanceNumber viewModelPropertyId="136:1" id="136:12"/>
                 </ViewModelInstance>
                 <ViewModelInstance exports="true" name="Contained Neutral" id="118:176">
                     <ViewModelInstanceString propertyValue="Save" viewModelPropertyId="1:549" id="118:177"/>
@@ -1086,12 +1228,12 @@
                     <ViewModelInstanceBoolean viewModelPropertyId="7:1" id="118:180"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="7:3" id="118:181"/>
                     <ViewModelInstanceNumber viewModelPropertyId="118:1" id="118:183"/>
-                    <ViewModelInstanceNumber viewModelPropertyId="136:1" id="136:13"/>
                     <ViewModelInstanceNumber viewModelPropertyId="33:164" id="118:184"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="33:169" id="118:185"/>
                     <ViewModelInstanceNumber viewModelPropertyId="99:100" id="118:186"/>
                     <ViewModelInstanceString viewModelPropertyId="112:14" id="118:187"/>
                     <ViewModelInstanceTrigger viewModelPropertyId="134:10" id="134:22"/>
+                    <ViewModelInstanceNumber viewModelPropertyId="136:1" id="136:13"/>
                 </ViewModelInstance>
                 <ViewModelInstance exports="true" name="Outlined Neutral" id="118:188">
                     <ViewModelInstanceString propertyValue="Save" viewModelPropertyId="1:549" id="118:189"/>
@@ -1100,12 +1242,12 @@
                     <ViewModelInstanceBoolean viewModelPropertyId="7:1" id="118:192"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="7:3" id="118:193"/>
                     <ViewModelInstanceNumber propertyValue="1" viewModelPropertyId="118:1" id="118:195"/>
-                    <ViewModelInstanceNumber viewModelPropertyId="136:1" id="136:14"/>
                     <ViewModelInstanceNumber viewModelPropertyId="33:164" id="118:196"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="33:169" id="118:197"/>
                     <ViewModelInstanceNumber viewModelPropertyId="99:100" id="118:198"/>
                     <ViewModelInstanceString viewModelPropertyId="112:14" id="118:199"/>
                     <ViewModelInstanceTrigger viewModelPropertyId="134:10" id="134:23"/>
+                    <ViewModelInstanceNumber viewModelPropertyId="136:1" id="136:14"/>
                 </ViewModelInstance>
                 <ViewModelInstance exports="true" name="Contained Brand" id="118:200">
                     <ViewModelInstanceString propertyValue="Publish" viewModelPropertyId="1:549" id="118:201"/>
@@ -1114,12 +1256,12 @@
                     <ViewModelInstanceBoolean viewModelPropertyId="7:1" id="118:204"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="7:3" id="118:205"/>
                     <ViewModelInstanceNumber viewModelPropertyId="118:1" id="118:207"/>
-                    <ViewModelInstanceNumber propertyValue="1" viewModelPropertyId="136:1" id="136:15"/>
                     <ViewModelInstanceNumber viewModelPropertyId="33:164" id="118:208"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="33:169" id="118:209"/>
                     <ViewModelInstanceNumber viewModelPropertyId="99:100" id="118:210"/>
                     <ViewModelInstanceString viewModelPropertyId="112:14" id="118:211"/>
                     <ViewModelInstanceTrigger viewModelPropertyId="134:10" id="134:24"/>
+                    <ViewModelInstanceNumber propertyValue="1" viewModelPropertyId="136:1" id="136:15"/>
                 </ViewModelInstance>
                 <ViewModelInstance exports="true" name="Contained Destructive" id="118:212">
                     <ViewModelInstanceString propertyValue="Delete" viewModelPropertyId="1:549" id="118:213"/>
@@ -1128,12 +1270,12 @@
                     <ViewModelInstanceBoolean viewModelPropertyId="7:1" id="118:216"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="7:3" id="118:217"/>
                     <ViewModelInstanceNumber viewModelPropertyId="118:1" id="118:219"/>
-                    <ViewModelInstanceNumber propertyValue="2" viewModelPropertyId="136:1" id="136:16"/>
                     <ViewModelInstanceNumber viewModelPropertyId="33:164" id="118:220"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="33:169" id="118:221"/>
                     <ViewModelInstanceNumber viewModelPropertyId="99:100" id="118:222"/>
                     <ViewModelInstanceString viewModelPropertyId="112:14" id="118:223"/>
                     <ViewModelInstanceTrigger viewModelPropertyId="134:10" id="134:25"/>
+                    <ViewModelInstanceNumber propertyValue="2" viewModelPropertyId="136:1" id="136:16"/>
                 </ViewModelInstance>
                 <ViewModelInstance exports="true" name="Outlined Brand" id="136:500">
                     <ViewModelInstanceString propertyValue="Publish" viewModelPropertyId="1:549" id="136:18"/>
@@ -1216,8 +1358,8 @@
                     <ViewModelInstanceNumber viewModelPropertyId="99:100" id="99:107"/>
                     <ViewModelInstanceString viewModelPropertyId="112:14" id="112:142"/>
                     <ViewModelInstanceNumber viewModelPropertyId="118:1" id="118:175"/>
-                    <ViewModelInstanceNumber viewModelPropertyId="136:1" id="136:17"/>
                     <ViewModelInstanceTrigger viewModelPropertyId="134:10" id="134:26"/>
+                    <ViewModelInstanceNumber viewModelPropertyId="136:1" id="136:17"/>
                 </ViewModelInstance>
             </ViewModel>
             <ViewModel defaultInstanceId="1:150" name="Checkbox" groupId="1:2673" id="1:149">
@@ -3073,16 +3215,15 @@
         <ViewModelPropertyString name="label" id="138:903"/>
         <ViewModelPropertyViewModel viewModelReferenceId="38:326" name="selection" id="38:356"/>
         <ViewModelInstance exports="true" name="State" id="38:797">
-            <ViewModelInstanceString propertyValue="Preview state" viewModelPropertyId="138:903" id="138:165"/>
             <ViewModelInstanceBoolean viewModelPropertyId="38:350" id="38:798"/>
             <ViewModelInstanceList viewModelPropertyId="38:354" id="38:800">
                 <ViewModelInstanceListItem name="State Enabled" viewModelId="38:328" viewModelInstanceId="38:779" id="38:805"/>
                 <ViewModelInstanceListItem name="State Disabled" viewModelId="38:328" viewModelInstanceId="38:788" id="38:806"/>
             </ViewModelInstanceList>
             <ViewModelInstanceViewModel propertyValue="38:777" viewModelPropertyId="38:356" id="38:804"/>
+            <ViewModelInstanceString propertyValue="Preview state" viewModelPropertyId="138:903" id="138:165"/>
         </ViewModelInstance>
         <ViewModelInstance exports="true" name="Shadow" id="38:765">
-            <ViewModelInstanceString propertyValue="Shadow" viewModelPropertyId="138:903" id="138:166"/>
             <ViewModelInstanceBoolean viewModelPropertyId="38:350" id="38:766"/>
             <ViewModelInstanceList viewModelPropertyId="38:354" id="38:768">
                 <ViewModelInstanceListItem name="Shadow None" viewModelId="38:328" viewModelInstanceId="38:729" id="38:773"/>
@@ -3091,9 +3232,9 @@
                 <ViewModelInstanceListItem name="Shadow L" viewModelId="38:328" viewModelInstanceId="38:756" id="38:776"/>
             </ViewModelInstanceList>
             <ViewModelInstanceViewModel propertyValue="38:727" viewModelPropertyId="38:356" id="38:772"/>
+            <ViewModelInstanceString propertyValue="Shadow" viewModelPropertyId="138:903" id="138:166"/>
         </ViewModelInstance>
         <ViewModelInstance exports="true" name="Roundness" id="38:715">
-            <ViewModelInstanceString propertyValue="Roundness" viewModelPropertyId="138:903" id="138:167"/>
             <ViewModelInstanceBoolean viewModelPropertyId="38:350" id="38:716"/>
             <ViewModelInstanceList viewModelPropertyId="38:354" id="38:718">
                 <ViewModelInstanceListItem name="Roundness 0" viewModelId="38:328" viewModelInstanceId="38:679" id="38:723"/>
@@ -3102,18 +3243,18 @@
                 <ViewModelInstanceListItem name="Roundness 3" viewModelId="38:328" viewModelInstanceId="38:706" id="38:726"/>
             </ViewModelInstanceList>
             <ViewModelInstanceViewModel propertyValue="38:677" viewModelPropertyId="38:356" id="38:722"/>
+            <ViewModelInstanceString propertyValue="Roundness" viewModelPropertyId="138:903" id="138:167"/>
         </ViewModelInstance>
         <ViewModelInstance exports="true" name="Mode" id="38:667">
-            <ViewModelInstanceString propertyValue="Mode" viewModelPropertyId="138:903" id="138:168"/>
             <ViewModelInstanceBoolean viewModelPropertyId="38:350" id="38:668"/>
             <ViewModelInstanceList viewModelPropertyId="38:354" id="38:670">
                 <ViewModelInstanceListItem name="Mode Light" viewModelId="38:328" viewModelInstanceId="38:649" id="38:675"/>
                 <ViewModelInstanceListItem name="Mode Dark" viewModelId="38:328" viewModelInstanceId="38:658" id="38:676"/>
             </ViewModelInstanceList>
             <ViewModelInstanceViewModel propertyValue="38:647" viewModelPropertyId="38:356" id="38:674"/>
+            <ViewModelInstanceString propertyValue="Mode" viewModelPropertyId="138:903" id="138:168"/>
         </ViewModelInstance>
         <ViewModelInstance exports="true" name="Range" id="38:624">
-            <ViewModelInstanceString propertyValue="Range" viewModelPropertyId="138:903" id="138:169"/>
             <ViewModelInstanceBoolean viewModelPropertyId="38:350" id="38:625"/>
             <ViewModelInstanceList viewModelPropertyId="38:354" id="38:627">
                 <ViewModelInstanceListItem name="Day" viewModelId="38:328" viewModelInstanceId="38:597" id="38:629"/>
@@ -3121,6 +3262,7 @@
                 <ViewModelInstanceListItem name="Month" viewModelId="38:328" viewModelInstanceId="38:615" id="38:631"/>
             </ViewModelInstanceList>
             <ViewModelInstanceViewModel propertyValue="38:595" viewModelPropertyId="38:356" id="38:628"/>
+            <ViewModelInstanceString propertyValue="Range" viewModelPropertyId="138:903" id="138:169"/>
         </ViewModelInstance>
     </ViewModel>
     <ViewModel defaultInstanceId="38:827" name="Toolbar" groupId="1:2673" id="38:815">
@@ -4396,6 +4538,34 @@
             <ViewModelInstanceTrigger viewModelPropertyId="132:3" id="132:9"/>
         </ViewModelInstance>
     </ViewModel>
+    <ViewModel defaultInstanceId="136:510" name="ButtonRow" groupId="1:2673" id="136:400">
+        <ViewModelPropertyList name="buttons" id="136:401"/>
+        <ViewModelPropertyString name="label" id="136:402"/>
+        <ViewModelInstance exports="true" name="Contained" id="136:510">
+            <ViewModelInstanceList viewModelPropertyId="136:401" id="136:78">
+                <ViewModelInstanceListItem viewModelId="1:151" viewModelInstanceId="118:176" id="136:79"/>
+                <ViewModelInstanceListItem viewModelId="1:151" viewModelInstanceId="118:200" id="136:80"/>
+                <ViewModelInstanceListItem viewModelId="1:151" viewModelInstanceId="118:212" id="136:81"/>
+            </ViewModelInstanceList>
+            <ViewModelInstanceString propertyValue="Contained" viewModelPropertyId="136:402" id="136:82"/>
+        </ViewModelInstance>
+        <ViewModelInstance exports="true" name="Outlined" id="136:511">
+            <ViewModelInstanceList viewModelPropertyId="136:401" id="136:83">
+                <ViewModelInstanceListItem viewModelId="1:151" viewModelInstanceId="118:188" id="136:84"/>
+                <ViewModelInstanceListItem viewModelId="1:151" viewModelInstanceId="136:500" id="136:85"/>
+                <ViewModelInstanceListItem viewModelId="1:151" viewModelInstanceId="136:501" id="136:86"/>
+            </ViewModelInstanceList>
+            <ViewModelInstanceString propertyValue="Outlined" viewModelPropertyId="136:402" id="136:87"/>
+        </ViewModelInstance>
+        <ViewModelInstance exports="true" name="Text" id="136:512">
+            <ViewModelInstanceList viewModelPropertyId="136:401" id="136:88">
+                <ViewModelInstanceListItem viewModelId="1:151" viewModelInstanceId="136:502" id="136:89"/>
+                <ViewModelInstanceListItem viewModelId="1:151" viewModelInstanceId="136:503" id="136:90"/>
+                <ViewModelInstanceListItem viewModelId="1:151" viewModelInstanceId="136:504" id="136:91"/>
+            </ViewModelInstanceList>
+            <ViewModelInstanceString propertyValue="Text" viewModelPropertyId="136:402" id="136:92"/>
+        </ViewModelInstance>
+    </ViewModel>
     <ViewModel defaultInstanceId="140:20" name="TabSelection" groupId="1:2673" id="140:1">
         <ViewModelPropertyNumber name="selected" id="140:2"/>
         <ViewModelInstance exports="true" id="140:20">
@@ -4540,44 +4710,6 @@
             <ViewModelInstanceBoolean viewModelPropertyId="141:12" id="141:5206"/>
         </ViewModelInstance>
     </ViewModel>
-    <ViewModel defaultInstanceId="136:510" name="ButtonRow" groupId="1:2673" id="136:400">
-        <ViewModelPropertyList name="buttons" id="136:401"/>
-        <ViewModelPropertyString name="label" id="136:402"/>
-        <ViewModelInstance exports="true" name="Contained" id="136:510">
-            <ViewModelInstanceList viewModelPropertyId="136:401" id="136:78">
-                <ViewModelInstanceListItem viewModelId="1:151" viewModelInstanceId="118:176" id="136:79"/>
-                <ViewModelInstanceListItem viewModelId="1:151" viewModelInstanceId="118:200" id="136:80"/>
-                <ViewModelInstanceListItem viewModelId="1:151" viewModelInstanceId="118:212" id="136:81"/>
-            </ViewModelInstanceList>
-            <ViewModelInstanceString propertyValue="Contained" viewModelPropertyId="136:402" id="136:82"/>
-        </ViewModelInstance>
-        <ViewModelInstance exports="true" name="Outlined" id="136:511">
-            <ViewModelInstanceList viewModelPropertyId="136:401" id="136:83">
-                <ViewModelInstanceListItem viewModelId="1:151" viewModelInstanceId="118:188" id="136:84"/>
-                <ViewModelInstanceListItem viewModelId="1:151" viewModelInstanceId="136:500" id="136:85"/>
-                <ViewModelInstanceListItem viewModelId="1:151" viewModelInstanceId="136:501" id="136:86"/>
-            </ViewModelInstanceList>
-            <ViewModelInstanceString propertyValue="Outlined" viewModelPropertyId="136:402" id="136:87"/>
-        </ViewModelInstance>
-        <ViewModelInstance exports="true" name="Text" id="136:512">
-            <ViewModelInstanceList viewModelPropertyId="136:401" id="136:88">
-                <ViewModelInstanceListItem viewModelId="1:151" viewModelInstanceId="136:502" id="136:89"/>
-                <ViewModelInstanceListItem viewModelId="1:151" viewModelInstanceId="136:503" id="136:90"/>
-                <ViewModelInstanceListItem viewModelId="1:151" viewModelInstanceId="136:504" id="136:91"/>
-            </ViewModelInstanceList>
-            <ViewModelInstanceString propertyValue="Text" viewModelPropertyId="136:402" id="136:92"/>
-        </ViewModelInstance>
-    </ViewModel>
-    <DataConverterToNumber name="Toggle · Disabled icon (to number)" groupId="1:2674" id="138:950"/>
-    <DataConverterFormula name="Toggle · Disabled icon (stroke)" groupId="1:2674" id="138:951">
-        <FormulaTokenInput id="138:953"/>
-        <FormulaTokenOperation operationType="multiply" id="138:954"/>
-        <FormulaTokenValue operationValue="1.4" id="138:955"/>
-    </DataConverterFormula>
-    <DataConverterGroup name="Toggle · Disabled icon" groupId="1:2674" id="138:952">
-        <DataConverterGroupItem converterId="138:950" id="138:956"/>
-        <DataConverterGroupItem converterId="138:951" id="138:957"/>
-    </DataConverterGroup>
     <ViewModel defaultInstanceId="146:20" name="MenuState" groupId="1:2673" id="146:1">
         <ViewModelPropertyNumber name="selected" id="146:2"/>
         <ViewModelPropertyString name="label" id="146:3"/>
@@ -4686,59 +4818,6 @@
             <ViewModelInstanceString propertyValue="More publish options" viewModelPropertyId="148:10" id="146:353"/>
         </ViewModelInstance>
     </ViewModel>
-    <DataConverterFormula name="Range · Clamp low" groupId="1:2674" id="153:90">
-        <FormulaTokenFunction id="153:91"/>
-        <FormulaTokenValue id="153:92">
-            <DataBindContext sourcePathIds="153:1-153:4" propertyKey="777" nameBased="true" id="153:93"/>
-        </FormulaTokenValue>
-        <FormulaTokenArgumentSeparator id="153:94"/>
-        <FormulaTokenFunction functionType="1" id="153:95"/>
-        <FormulaTokenValue id="153:96">
-            <DataBindContext sourcePathIds="153:1-153:5" propertyKey="777" nameBased="true" id="153:97"/>
-        </FormulaTokenValue>
-        <FormulaTokenArgumentSeparator id="153:98"/>
-        <FormulaTokenInput id="153:99"/>
-        <FormulaTokenParenthesisClose id="153:110"/>
-        <FormulaTokenParenthesisClose id="153:111"/>
-    </DataConverterFormula>
-    <DataConverterFormula name="Range · Clamp high" groupId="1:2674" id="153:100">
-        <FormulaTokenFunction functionType="1" id="153:101"/>
-        <FormulaTokenValue id="153:102">
-            <DataBindContext sourcePathIds="153:1-153:3" propertyKey="777" nameBased="true" id="153:103"/>
-        </FormulaTokenValue>
-        <FormulaTokenArgumentSeparator id="153:104"/>
-        <FormulaTokenFunction id="153:105"/>
-        <FormulaTokenValue id="153:106">
-            <DataBindContext sourcePathIds="153:1-153:6" propertyKey="777" nameBased="true" id="153:107"/>
-        </FormulaTokenValue>
-        <FormulaTokenArgumentSeparator id="153:108"/>
-        <FormulaTokenInput id="153:109"/>
-        <FormulaTokenParenthesisClose id="153:112"/>
-        <FormulaTokenParenthesisClose id="153:113"/>
-    </DataConverterFormula>
-    <DataConverterFormula name="Range · Position (0–1)" groupId="1:2674" id="153:60">
-        <FormulaTokenParenthesisOpen id="153:61"/>
-        <FormulaTokenInput id="153:62"/>
-        <FormulaTokenOperation operationType="subtract" id="153:63"/>
-        <FormulaTokenValue operationValue="8" id="153:64"/>
-        <FormulaTokenParenthesisClose id="153:65"/>
-        <FormulaTokenOperation operationType="divide" id="153:66"/>
-        <FormulaTokenValue operationValue="184" id="153:67"/>
-    </DataConverterFormula>
-    <DataConverterFormula name="Range · Percent" groupId="1:2674" id="153:71">
-        <FormulaTokenParenthesisOpen id="153:72"/>
-        <FormulaTokenInput id="153:73"/>
-        <FormulaTokenOperation operationType="subtract" id="153:74"/>
-        <FormulaTokenValue operationValue="8" id="153:75"/>
-        <FormulaTokenParenthesisClose id="153:76"/>
-        <FormulaTokenOperation operationType="divide" id="153:77"/>
-        <FormulaTokenValue operationValue="1.84" id="153:78"/>
-    </DataConverterFormula>
-    <DataConverterToString decimals="0" round="true" name="Range · Percent (to text)" groupId="1:2674" id="153:79"/>
-    <DataConverterGroup name="Range · Percent text" groupId="1:2674" id="153:70">
-        <DataConverterGroupItem converterId="153:71" id="153:80"/>
-        <DataConverterGroupItem converterId="153:79" id="153:81"/>
-    </DataConverterGroup>
     <ViewModel defaultInstanceId="153:20" name="RangeSlider" groupId="1:2673" id="153:1">
         <ViewModelPropertyString name="label" id="153:2"/>
         <ViewModelPropertyNumber name="low" id="153:3"/>
@@ -4753,7 +4832,7 @@
         <ViewModelPropertyNumber name="_highRaw" id="153:12"/>
         <ViewModelInstance exports="true" name="Price" id="153:20">
             <ViewModelInstanceString propertyValue="Price" viewModelPropertyId="153:2" id="153:30"/>
-            <ViewModelInstanceNumber propertyValue="44.8" viewModelPropertyId="153:3" id="153:31"/>
+            <ViewModelInstanceNumber propertyValue="44.799999" viewModelPropertyId="153:3" id="153:31"/>
             <ViewModelInstanceNumber propertyValue="155.2" viewModelPropertyId="153:4" id="153:32"/>
             <ViewModelInstanceNumber propertyValue="8" viewModelPropertyId="153:5" id="153:33"/>
             <ViewModelInstanceNumber propertyValue="192" viewModelPropertyId="153:6" id="153:34"/>
@@ -4761,34 +4840,10 @@
             <ViewModelInstanceBoolean viewModelPropertyId="153:8" id="153:36"/>
             <ViewModelInstanceBoolean viewModelPropertyId="153:9" id="153:37"/>
             <ViewModelInstanceBoolean viewModelPropertyId="153:10" id="153:38"/>
-            <ViewModelInstanceNumber propertyValue="44.8" viewModelPropertyId="153:11" id="153:39"/>
+            <ViewModelInstanceNumber propertyValue="44.799999" viewModelPropertyId="153:11" id="153:39"/>
             <ViewModelInstanceNumber propertyValue="155.2" viewModelPropertyId="153:12" id="153:40"/>
         </ViewModelInstance>
     </ViewModel>
-    <DataConverterFormula name="Rating · Step up" groupId="1:2674" id="155:90">
-        <FormulaTokenFunction id="155:91"/>
-        <FormulaTokenValue operationValue="5" id="155:92"/>
-        <FormulaTokenArgumentSeparator id="155:93"/>
-        <FormulaTokenInput id="155:94"/>
-        <FormulaTokenOperation id="155:95"/>
-        <FormulaTokenValue operationValue="1" id="155:96"/>
-        <FormulaTokenParenthesisClose id="155:97"/>
-    </DataConverterFormula>
-    <DataConverterFormula name="Rating · Step down" groupId="1:2674" id="155:100">
-        <FormulaTokenFunction functionType="1" id="155:101"/>
-        <FormulaTokenValue id="155:102"/>
-        <FormulaTokenArgumentSeparator id="155:103"/>
-        <FormulaTokenInput id="155:104"/>
-        <FormulaTokenOperation operationType="subtract" id="155:105"/>
-        <FormulaTokenValue operationValue="1" id="155:106"/>
-        <FormulaTokenParenthesisClose id="155:107"/>
-    </DataConverterFormula>
-    <DataConverterToString decimals="0" round="true" name="Rating · Value (to text)" groupId="1:2674" id="155:81"/>
-    <DataConverterStringPad length="6" text=" of 5" padType="end" name="Rating · Of five" groupId="1:2674" id="155:82"/>
-    <DataConverterGroup name="Rating · Value text" groupId="1:2674" id="155:80">
-        <DataConverterGroupItem converterId="155:81" id="155:83"/>
-        <DataConverterGroupItem converterId="155:82" id="155:84"/>
-    </DataConverterGroup>
     <ViewModel defaultInstanceId="155:30" name="RatingState" groupId="1:2673" id="155:1">
         <ViewModelPropertyNumber name="value" id="155:2"/>
         <ViewModelPropertyNumber name="_hover" id="155:3"/>
@@ -4858,33 +4913,6 @@
             <ViewModelInstanceTrigger viewModelPropertyId="155:28" id="155:230"/>
         </ViewModelInstance>
     </ViewModel>
-    <DataConverterFormula name="Number · Step up" groupId="1:2674" id="157:60">
-        <FormulaTokenFunction id="157:30"/>
-        <FormulaTokenValue id="157:31">
-            <DataBindContext sourcePathIds="157:1-157:4" propertyKey="777" nameBased="true" id="157:32"/>
-        </FormulaTokenValue>
-        <FormulaTokenArgumentSeparator id="157:33"/>
-        <FormulaTokenInput id="157:34"/>
-        <FormulaTokenOperation id="157:35"/>
-        <FormulaTokenValue id="157:36">
-            <DataBindContext sourcePathIds="157:1-157:5" propertyKey="777" nameBased="true" id="157:37"/>
-        </FormulaTokenValue>
-        <FormulaTokenParenthesisClose id="157:38"/>
-    </DataConverterFormula>
-    <DataConverterFormula name="Number · Step down" groupId="1:2674" id="157:70">
-        <FormulaTokenFunction functionType="1" id="157:39"/>
-        <FormulaTokenValue id="157:40">
-            <DataBindContext sourcePathIds="157:1-157:3" propertyKey="777" nameBased="true" id="157:41"/>
-        </FormulaTokenValue>
-        <FormulaTokenArgumentSeparator id="157:42"/>
-        <FormulaTokenInput id="157:43"/>
-        <FormulaTokenOperation operationType="subtract" id="157:44"/>
-        <FormulaTokenValue id="157:45">
-            <DataBindContext sourcePathIds="157:1-157:5" propertyKey="777" nameBased="true" id="157:46"/>
-        </FormulaTokenValue>
-        <FormulaTokenParenthesisClose id="157:47"/>
-    </DataConverterFormula>
-    <DataConverterToString decimals="0" round="true" name="Number · Value (to text)" groupId="1:2674" id="157:80"/>
     <ViewModel defaultInstanceId="157:20" name="NumberField" groupId="1:2673" id="157:1">
         <ViewModelPropertyNumber name="value" id="157:2"/>
         <ViewModelPropertyNumber name="min" id="157:3"/>
@@ -4909,43 +4937,6 @@
             <ViewModelInstanceTrigger viewModelPropertyId="157:10" id="157:56"/>
             <ViewModelInstanceTrigger viewModelPropertyId="157:11" id="157:57"/>
             <ViewModelInstanceTrigger viewModelPropertyId="157:12" id="157:58"/>
-        </ViewModelInstance>
-    </ViewModel>
-    <DataConverterFormula name="Stepper · Number" groupId="1:2674" id="159:61">
-        <FormulaTokenInput id="159:62"/>
-        <FormulaTokenOperation id="159:63"/>
-        <FormulaTokenValue operationValue="1" id="159:64"/>
-    </DataConverterFormula>
-    <DataConverterToString decimals="0" round="true" name="Stepper · Number (to text)" groupId="1:2674" id="159:65"/>
-    <DataConverterGroup name="Stepper · Step number" groupId="1:2674" id="159:60">
-        <DataConverterGroupItem converterId="159:61" id="159:66"/>
-        <DataConverterGroupItem converterId="159:65" id="159:67"/>
-    </DataConverterGroup>
-    <DataConverterFormula name="Showcase · Stepper back" groupId="1:2674" id="160:70">
-        <FormulaTokenFunction functionType="1" id="160:71"/>
-        <FormulaTokenValue id="160:72"/>
-        <FormulaTokenArgumentSeparator id="160:73"/>
-        <FormulaTokenInput id="160:74"/>
-        <FormulaTokenOperation operationType="subtract" id="160:75"/>
-        <FormulaTokenValue operationValue="1" id="160:76"/>
-        <FormulaTokenParenthesisClose id="160:77"/>
-    </DataConverterFormula>
-    <DataConverterFormula name="Showcase · Stepper next" groupId="1:2674" id="160:80">
-        <FormulaTokenFunction id="160:81"/>
-        <FormulaTokenValue operationValue="2" id="160:82"/>
-        <FormulaTokenArgumentSeparator id="160:83"/>
-        <FormulaTokenInput id="160:84"/>
-        <FormulaTokenOperation id="160:85"/>
-        <FormulaTokenValue operationValue="1" id="160:86"/>
-        <FormulaTokenParenthesisClose id="160:87"/>
-    </DataConverterFormula>
-    <ViewModel defaultInstanceId="159:40" name="StepperState" groupId="1:2673" id="159:10">
-        <ViewModelPropertyNumber name="active" id="159:11"/>
-        <ViewModelInstance exports="true" name="Stepper" id="159:40">
-            <ViewModelInstanceNumber viewModelPropertyId="159:11" id="159:212"/>
-        </ViewModelInstance>
-        <ViewModelInstance exports="true" name="Checkout" id="159:41">
-            <ViewModelInstanceNumber propertyValue="1" viewModelPropertyId="159:11" id="159:213"/>
         </ViewModelInstance>
     </ViewModel>
     <ViewModel defaultInstanceId="159:30" name="Step" groupId="1:2673" id="159:1">
@@ -4976,6 +4967,15 @@
             <ViewModelInstanceNumber propertyValue="2" viewModelPropertyId="159:3" id="159:209"/>
             <ViewModelInstanceViewModel propertyValue="159:41" viewModelPropertyId="159:4" id="159:210"/>
             <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="159:5" id="159:211"/>
+        </ViewModelInstance>
+    </ViewModel>
+    <ViewModel defaultInstanceId="159:40" name="StepperState" groupId="1:2673" id="159:10">
+        <ViewModelPropertyNumber name="active" id="159:11"/>
+        <ViewModelInstance exports="true" name="Stepper" id="159:40">
+            <ViewModelInstanceNumber viewModelPropertyId="159:11" id="159:212"/>
+        </ViewModelInstance>
+        <ViewModelInstance exports="true" name="Checkout" id="159:41">
+            <ViewModelInstanceNumber propertyValue="1" viewModelPropertyId="159:11" id="159:213"/>
         </ViewModelInstance>
     </ViewModel>
     <ViewModel defaultInstanceId="159:50" name="Stepper" groupId="1:2673" id="159:20">

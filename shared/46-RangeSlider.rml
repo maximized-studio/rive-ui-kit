@@ -32,11 +32,11 @@
                         <TextStyleAxis tag="2003265652" axisValue="400" id="153:1086"/>
                     </TextStylePaint>
                     <TextValueRun styleId="153:1080" text="20" id="153:1087">
-                        <DataBindContext sourcePathIds="153:1-153:3" propertyKey="268" converterId="153:70" nameBased="true" id="153:1088"/>
+                        <DataBindContext sourcePathIds="153:1-153:3" propertyKey="268" nameBased="true" converterId="153:70" id="153:1088"/>
                     </TextValueRun>
                     <TextValueRun styleId="153:1080" text=" – " id="153:1089"/>
                     <TextValueRun styleId="153:1080" text="80" id="153:1090">
-                        <DataBindContext sourcePathIds="153:1-153:4" propertyKey="268" converterId="153:70" nameBased="true" id="153:1091"/>
+                        <DataBindContext sourcePathIds="153:1-153:4" propertyKey="268" nameBased="true" converterId="153:70" id="153:1091"/>
                     </TextValueRun>
                     <LayoutParticipant layoutWidthScaleType="hug" layoutHeightScaleType="hug" id="153:1092"/>
                 </Text>
@@ -48,7 +48,7 @@
                         <SolidColor colorValue="00000000" id="153:1110"/>
                     </Fill>
                     <LayoutComponentStyle positionLeftUnitsValue="points" positionRightUnitsValue="points" positionTopUnitsValue="points" positionBottomUnitsValue="points" edgeConstraints="84" positionTypeValue="absolute" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="153:1007">
-                        <DataBindContext sourcePathIds="153:1-153:7" propertyKey="596" converterId="9:90" nameBased="true" id="153:1111"/>
+                        <DataBindContext sourcePathIds="153:1-153:7" propertyKey="596" nameBased="true" converterId="9:90" id="153:1111"/>
                     </LayoutComponentStyle>
                 </LayoutComponent>
                 <Node name="Art" id="153:1112">
@@ -60,12 +60,12 @@
                                     <DataBindContext sourcePathIds="10:7-10:7412" propertyKey="37" id="153:1067"/>
                                 </SolidColor>
                             </Fill>
-                            <Stroke thickness="1" id="153:1068">
+                            <Stroke id="153:1068">
                                 <SolidColor colorValue="FF3F3F46" id="153:1069">
                                     <DataBindContext sourcePathIds="10:7-10:7420" propertyKey="37" id="153:1070"/>
                                 </SolidColor>
                             </Stroke>
-                            <DataBindContext sourcePathIds="153:1-153:7" propertyKey="18" converterId="9:145" nameBased="true" id="153:1071"/>
+                            <DataBindContext sourcePathIds="153:1-153:7" propertyKey="18" nameBased="true" converterId="9:145" id="153:1071"/>
                         </Shape>
                         <Shape name="Thumb" id="153:1051">
                             <Ellipse width="16" height="16" id="153:1052"/>
@@ -79,7 +79,7 @@
                             <Fill fillRule="clockwise" id="153:1058">
                                 <SolidColor colorValue="FFFFFFFF" id="153:1059"/>
                             </Fill>
-                            <Stroke thickness="1" id="153:1060">
+                            <Stroke id="153:1060">
                                 <SolidColor colorValue="FF27272A" id="153:1061">
                                     <DataBindContext sourcePathIds="10:7-10:7418" propertyKey="37" id="153:1062"/>
                                 </SolidColor>
@@ -92,18 +92,19 @@
                                     <DataBindContext sourcePathIds="10:7-10:2094" propertyKey="37" id="153:1049"/>
                                 </SolidColor>
                             </Fill>
-                            <DataBindContext sourcePathIds="153:1-153:10" propertyKey="18" converterId="9:145" nameBased="true" id="153:1050"/>
+                            <DataBindContext sourcePathIds="153:1-153:10" propertyKey="18" nameBased="true" converterId="9:145" id="153:1050"/>
                         </Shape>
                         <TranslationConstraint minValueY="8" maxValueY="8" doesCopyY="false" minY="true" maxY="true" minMaxSpaceValue="local" minValue="8" maxValue="192" min="true" max="true" id="153:1072">
                             <DataBindContext sourcePathIds="153:1-153:3" propertyKey="183" id="153:1073"/>
                             <DataBindContext sourcePathIds="153:1-153:6" propertyKey="184" id="153:1074"/>
                         </TranslationConstraint>
-                        <DataBindContext sourcePathIds="153:1-153:12" propertyKey="13" twoWay="true" sourceToTargetRunsFirst="true" id="153:1075"/>
-                        <SemanticData role="slider" traitFlags="32" label="Maximum" name="Semantics" id="153:1076">
+                        <SemanticData role="slider" label="Maximum" traitFlags="32" name="Semantics" id="153:1076">
                             <DataBindContext sourcePathIds="153:1-153:4" propertyKey="984" nameBased="true" converterId="153:70" id="153:1077"/>
                             <DataBindContext sourcePathIds="153:1-153:8" propertyKey="1004" nameBased="true" id="153:1078"/>
                             <DataBindContext sourcePathIds="153:1-153:7" propertyKey="1002" nameBased="true" id="153:1079"/>
                         </SemanticData>
+                        <FocusData name="Focus" id="0:27926"/>
+                        <DataBindContext sourcePathIds="153:1-153:12" propertyKey="13" twoWay="true" sourceToTargetRunsFirst="true" id="153:1075"/>
                     </Node>
                     <Node x="8" y="8" name="Low" id="153:1008">
                         <Shape opacity="0" name="Disabled Thumb" id="153:1027">
@@ -113,12 +114,12 @@
                                     <DataBindContext sourcePathIds="10:7-10:7412" propertyKey="37" id="153:1031"/>
                                 </SolidColor>
                             </Fill>
-                            <Stroke thickness="1" id="153:1032">
+                            <Stroke id="153:1032">
                                 <SolidColor colorValue="FF3F3F46" id="153:1033">
                                     <DataBindContext sourcePathIds="10:7-10:7420" propertyKey="37" id="153:1034"/>
                                 </SolidColor>
                             </Stroke>
-                            <DataBindContext sourcePathIds="153:1-153:7" propertyKey="18" converterId="9:145" nameBased="true" id="153:1035"/>
+                            <DataBindContext sourcePathIds="153:1-153:7" propertyKey="18" nameBased="true" converterId="9:145" id="153:1035"/>
                         </Shape>
                         <Shape name="Thumb" id="153:1015">
                             <Ellipse width="16" height="16" id="153:1016"/>
@@ -132,7 +133,7 @@
                             <Fill fillRule="clockwise" id="153:1022">
                                 <SolidColor colorValue="FFFFFFFF" id="153:1023"/>
                             </Fill>
-                            <Stroke thickness="1" id="153:1024">
+                            <Stroke id="153:1024">
                                 <SolidColor colorValue="FF27272A" id="153:1025">
                                     <DataBindContext sourcePathIds="10:7-10:7418" propertyKey="37" id="153:1026"/>
                                 </SolidColor>
@@ -145,21 +146,22 @@
                                     <DataBindContext sourcePathIds="10:7-10:2094" propertyKey="37" id="153:1013"/>
                                 </SolidColor>
                             </Fill>
-                            <DataBindContext sourcePathIds="153:1-153:9" propertyKey="18" converterId="9:145" nameBased="true" id="153:1014"/>
+                            <DataBindContext sourcePathIds="153:1-153:9" propertyKey="18" nameBased="true" converterId="9:145" id="153:1014"/>
                         </Shape>
                         <TranslationConstraint minValueY="8" maxValueY="8" doesCopyY="false" minY="true" maxY="true" minMaxSpaceValue="local" minValue="8" maxValue="192" min="true" max="true" id="153:1036">
                             <DataBindContext sourcePathIds="153:1-153:5" propertyKey="183" id="153:1037"/>
                             <DataBindContext sourcePathIds="153:1-153:4" propertyKey="184" id="153:1038"/>
                         </TranslationConstraint>
-                        <DataBindContext sourcePathIds="153:1-153:11" propertyKey="13" twoWay="true" sourceToTargetRunsFirst="true" id="153:1039"/>
-                        <SemanticData role="slider" traitFlags="32" label="Minimum" name="Semantics" id="153:1040">
+                        <SemanticData role="slider" label="Minimum" traitFlags="32" name="Semantics" id="153:1040">
                             <DataBindContext sourcePathIds="153:1-153:3" propertyKey="984" nameBased="true" converterId="153:70" id="153:1041"/>
                             <DataBindContext sourcePathIds="153:1-153:8" propertyKey="1004" nameBased="true" id="153:1042"/>
                             <DataBindContext sourcePathIds="153:1-153:7" propertyKey="1002" nameBased="true" id="153:1043"/>
                         </SemanticData>
+                        <FocusData name="Focus" id="0:27927"/>
+                        <DataBindContext sourcePathIds="153:1-153:11" propertyKey="13" twoWay="true" sourceToTargetRunsFirst="true" id="153:1039"/>
                     </Node>
                     <Shape y="8" name="Disabled Range" id="153:1130">
-                        <PointsPath isClosed="false" id="153:1131">
+                        <PointsPath id="153:1131">
                             <StraightVertex x="8" id="153:1132"/>
                             <StraightVertex x="192" id="153:1133"/>
                         </PointsPath>
@@ -168,14 +170,14 @@
                                 <DataBindContext sourcePathIds="10:7-10:7426" propertyKey="37" id="153:1139"/>
                             </SolidColor>
                             <TrimPath modeValue="sequential" id="153:1134">
-                                <DataBindContext sourcePathIds="153:1-153:3" propertyKey="114" converterId="153:60" nameBased="true" id="153:1135"/>
-                                <DataBindContext sourcePathIds="153:1-153:4" propertyKey="115" converterId="153:60" nameBased="true" id="153:1136"/>
+                                <DataBindContext sourcePathIds="153:1-153:3" propertyKey="114" nameBased="true" converterId="153:60" id="153:1135"/>
+                                <DataBindContext sourcePathIds="153:1-153:4" propertyKey="115" nameBased="true" converterId="153:60" id="153:1136"/>
                             </TrimPath>
                         </Stroke>
-                        <DataBindContext sourcePathIds="153:1-153:7" propertyKey="18" converterId="9:145" nameBased="true" id="153:1140"/>
+                        <DataBindContext sourcePathIds="153:1-153:7" propertyKey="18" nameBased="true" converterId="9:145" id="153:1140"/>
                     </Shape>
                     <Shape y="8" name="Range" id="153:1123">
-                        <PointsPath isClosed="false" id="153:1124">
+                        <PointsPath id="153:1124">
                             <StraightVertex x="8" id="153:1125"/>
                             <StraightVertex x="192" id="153:1126"/>
                         </PointsPath>
@@ -184,13 +186,13 @@
                                 <DataBindContext sourcePathIds="10:7-10:2104" propertyKey="37" id="153:1129"/>
                             </SolidColor>
                             <TrimPath modeValue="sequential" id="153:1120">
-                                <DataBindContext sourcePathIds="153:1-153:3" propertyKey="114" converterId="153:60" nameBased="true" id="153:1121"/>
-                                <DataBindContext sourcePathIds="153:1-153:4" propertyKey="115" converterId="153:60" nameBased="true" id="153:1122"/>
+                                <DataBindContext sourcePathIds="153:1-153:3" propertyKey="114" nameBased="true" converterId="153:60" id="153:1121"/>
+                                <DataBindContext sourcePathIds="153:1-153:4" propertyKey="115" nameBased="true" converterId="153:60" id="153:1122"/>
                             </TrimPath>
                         </Stroke>
                     </Shape>
                     <Shape y="8" name="Track" id="153:1113">
-                        <PointsPath isClosed="false" id="153:1114">
+                        <PointsPath id="153:1114">
                             <StraightVertex x="8" id="153:1115"/>
                             <StraightVertex x="192" id="153:1116"/>
                         </PointsPath>
@@ -280,8 +282,8 @@
                 <ListenerInputTypeViewModel viewModelPathIds="10:7-15:419" listenerTypeValue="viewModel" id="153:1191"/>
                 <ListenerViewModelChange fromViewModelProperty="true" fromDataBindId="153:1186" id="153:1187">
                     <BindablePropertyBoolean id="153:1188">
-                        <DataBindContext sourcePathIds="153:1-153:7" propertyKey="634" direction="true" id="153:1189"/>
                         <DataBindContext sourcePathIds="10:7-15:419" propertyKey="634" id="153:1186"/>
+                        <DataBindContext sourcePathIds="153:1-153:7" propertyKey="634" direction="true" id="153:1189"/>
                     </BindablePropertyBoolean>
                 </ListenerViewModelChange>
             </StateMachineListener>
@@ -289,8 +291,8 @@
                 <ListenerInputTypeViewModel viewModelPathIds="153:1-153:11" listenerTypeValue="viewModel" id="153:1197"/>
                 <ListenerViewModelChange fromViewModelProperty="true" fromDataBindId="153:1192" id="153:1193">
                     <BindablePropertyNumber id="153:1194">
-                        <DataBindContext sourcePathIds="153:1-153:3" propertyKey="636" direction="true" id="153:1195"/>
                         <DataBindContext sourcePathIds="153:1-153:11" propertyKey="636" converterId="153:90" id="153:1192"/>
+                        <DataBindContext sourcePathIds="153:1-153:3" propertyKey="636" direction="true" id="153:1195"/>
                     </BindablePropertyNumber>
                 </ListenerViewModelChange>
             </StateMachineListener>
@@ -298,8 +300,8 @@
                 <ListenerInputTypeViewModel viewModelPathIds="153:1-153:3" listenerTypeValue="viewModel" id="153:1203"/>
                 <ListenerViewModelChange fromViewModelProperty="true" fromDataBindId="153:1198" id="153:1199">
                     <BindablePropertyNumber id="153:1200">
-                        <DataBindContext sourcePathIds="153:1-153:11" propertyKey="636" direction="true" id="153:1201"/>
                         <DataBindContext sourcePathIds="153:1-153:3" propertyKey="636" id="153:1198"/>
+                        <DataBindContext sourcePathIds="153:1-153:11" propertyKey="636" direction="true" id="153:1201"/>
                     </BindablePropertyNumber>
                 </ListenerViewModelChange>
             </StateMachineListener>
@@ -307,8 +309,8 @@
                 <ListenerInputTypeViewModel viewModelPathIds="153:1-153:12" listenerTypeValue="viewModel" id="153:1209"/>
                 <ListenerViewModelChange fromViewModelProperty="true" fromDataBindId="153:1204" id="153:1205">
                     <BindablePropertyNumber id="153:1206">
-                        <DataBindContext sourcePathIds="153:1-153:4" propertyKey="636" direction="true" id="153:1207"/>
                         <DataBindContext sourcePathIds="153:1-153:12" propertyKey="636" converterId="153:100" id="153:1204"/>
+                        <DataBindContext sourcePathIds="153:1-153:4" propertyKey="636" direction="true" id="153:1207"/>
                     </BindablePropertyNumber>
                 </ListenerViewModelChange>
             </StateMachineListener>
@@ -316,8 +318,8 @@
                 <ListenerInputTypeViewModel viewModelPathIds="153:1-153:4" listenerTypeValue="viewModel" id="153:1215"/>
                 <ListenerViewModelChange fromViewModelProperty="true" fromDataBindId="153:1210" id="153:1211">
                     <BindablePropertyNumber id="153:1212">
-                        <DataBindContext sourcePathIds="153:1-153:12" propertyKey="636" direction="true" id="153:1213"/>
                         <DataBindContext sourcePathIds="153:1-153:4" propertyKey="636" id="153:1210"/>
+                        <DataBindContext sourcePathIds="153:1-153:12" propertyKey="636" direction="true" id="153:1213"/>
                     </BindablePropertyNumber>
                 </ListenerViewModelChange>
             </StateMachineListener>

@@ -14,7 +14,7 @@
                         </ViewModelInstanceString>
                         <ViewModelInstanceBoolean viewModelPropertyId="1:587" id="148:1018"/>
                         <ViewModelInstanceTrigger viewModelPropertyId="1:1321" id="148:1019">
-                            <DataBindContext sourcePathIds="148:1-148:8" propertyKey="687" nameBased="true" twoWay="true" id="148:1020"/>
+                            <DataBindContext sourcePathIds="148:1-148:8" propertyKey="687" twoWay="true" nameBased="true" id="148:1020"/>
                         </ViewModelInstanceTrigger>
                         <ViewModelInstanceBoolean viewModelPropertyId="7:1" id="148:1022">
                             <DataBindContext sourcePathIds="148:1-148:5" propertyKey="593" nameBased="true" id="148:1021"/>
@@ -46,7 +46,7 @@
                         </ViewModelInstanceString>
                         <ViewModelInstanceBoolean viewModelPropertyId="1:587" id="148:1041"/>
                         <ViewModelInstanceTrigger viewModelPropertyId="1:1321" id="148:1042">
-                            <DataBindContext sourcePathIds="148:1-148:9" propertyKey="687" nameBased="true" twoWay="true" id="148:1043"/>
+                            <DataBindContext sourcePathIds="148:1-148:9" propertyKey="687" twoWay="true" nameBased="true" id="148:1043"/>
                         </ViewModelInstanceTrigger>
                         <ViewModelInstanceBoolean viewModelPropertyId="7:1" id="148:1045">
                             <DataBindContext sourcePathIds="148:1-148:5" propertyKey="593" nameBased="true" id="148:1044"/>
@@ -79,19 +79,30 @@
             <NestedArtboardLayout instanceWidthScaleType="fill" instanceHeightScaleType="hug" artboardId="146:1000" dataBindPathIds="148:1-148:7" name="Menu" id="148:1006">
                 <NestedStateMachine animationId="146:1001" id="148:1007"/>
             </NestedArtboardLayout>
-            <LayoutComponentStyle positionTop="44" positionLeftUnitsValue="points" positionTopUnitsValue="points" edgeConstraints="16" positionTypeValue="absolute" displayValue="none" flexDirectionValue="column" intrinsicallySizedValue="true" widthUnitsValue="points" layoutHeightScaleType="hug" heightUnitsValue="auto" id="148:1004"/>
+            <LayoutComponentStyle positionTop="44" positionLeftUnitsValue="points" positionTopUnitsValue="points" edgeConstraints="16" positionTypeValue="absolute" flexDirectionValue="column" intrinsicallySizedValue="true" layoutHeightScaleType="hug" heightUnitsValue="auto" displayValue="none" id="148:1004"/>
         </LayoutComponent>
-        <StateMachine name="State Machine 1" id="148:1001"><StateMachineListener targetId="148:1000" name="Preview Disabled" id="148:1904"><ListenerInputTypeViewModel viewModelPathIds="10:7-15:419" listenerTypeValue="viewModel" id="148:1905"/><ListenerViewModelChange fromViewModelProperty="true" fromDataBindId="148:1900" id="148:1901"><BindablePropertyBoolean id="148:1902"><DataBindContext sourcePathIds="148:1-148:5" propertyKey="634" direction="true" id="148:1903"/><DataBindContext sourcePathIds="10:7-15:419" propertyKey="634" id="148:1900"/></BindablePropertyBoolean></ListenerViewModelChange></StateMachineListener>
+        <StateMachine name="State Machine 1" id="148:1001">
+            <StateMachineListener targetId="148:1000" name="Preview Disabled" id="148:1904">
+                <ListenerInputTypeViewModel viewModelPathIds="10:7-15:419" listenerTypeValue="viewModel" id="148:1905"/>
+                <ListenerViewModelChange fromViewModelProperty="true" fromDataBindId="148:1900" id="148:1901">
+                    <BindablePropertyBoolean id="148:1902">
+                        <DataBindContext sourcePathIds="10:7-15:419" propertyKey="634" id="148:1900"/>
+                        <DataBindContext sourcePathIds="148:1-148:5" propertyKey="634" direction="true" id="148:1903"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
             <StateMachineListener targetId="148:1000" name="Toggle Menu" id="148:1064">
                 <ListenerInputTypeViewModel viewModelPathIds="148:1-148:9" listenerTypeValue="viewModel" id="148:1065"/>
                 <ListenerViewModelChange fromViewModelProperty="true" fromDataBindId="148:1060" id="148:1061">
                     <BindablePropertyBoolean id="148:1062">
-                        <DataBindContext sourcePathIds="148:1-148:7-146:12-146:4" propertyKey="634" direction="true" id="148:1063"/>
                         <DataBindContext sourcePathIds="148:1-148:7-146:12-146:4" propertyKey="634" converterId="1:1018" id="148:1060"/>
+                        <DataBindContext sourcePathIds="148:1-148:7-146:12-146:4" propertyKey="634" direction="true" id="148:1063"/>
                     </BindablePropertyBoolean>
                 </ListenerViewModelChange>
             </StateMachineListener>
             <StateMachineLayer name="Open" id="148:1070">
+                <AnimationState animationId="148:1066" x="160" y="100" stateName="Closed" id="148:1068"/>
+                <AnimationState animationId="148:1067" x="320" y="100" stateName="Open" id="148:1069"/>
                 <AnyState x="500" id="148:1071">
                     <StateTransition stateToId="148:1068" duration="150" interpolationType="cubic" id="148:1072">
                         <TransitionViewModelCondition id="148:1073">
@@ -118,11 +129,9 @@
                 <EntryState id="148:1085">
                     <StateTransition stateToId="148:1068" id="148:1086"/>
                 </EntryState>
-                <AnimationState animationId="148:1066" x="160" y="100" stateName="Closed" id="148:1068"/>
-                <AnimationState animationId="148:1067" x="320" y="100" stateName="Open" id="148:1069"/>
             </StateMachineLayer>
         </StateMachine>
-        <LinearAnimation name="Closed" loopValue="loop" id="148:1066">
+        <LinearAnimation loopValue="loop" name="Closed" id="148:1066">
             <KeyedObject objectId="148:1005" id="148:1087">
                 <KeyedProperty property="opacity" id="148:1088">
                     <KeyFrameDouble interpolationType="linear" id="148:1089"/>
@@ -134,7 +143,7 @@
                 </KeyedProperty>
             </KeyedObject>
         </LinearAnimation>
-        <LinearAnimation name="Open" loopValue="loop" id="148:1067">
+        <LinearAnimation loopValue="loop" name="Open" id="148:1067">
             <KeyedObject objectId="148:1005" id="148:1093">
                 <KeyedProperty property="opacity" id="148:1094">
                     <KeyFrameDouble value="1" interpolationType="linear" id="148:1095"/>

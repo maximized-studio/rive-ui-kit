@@ -16,7 +16,7 @@
                             <ViewModelInstanceString propertyValue="Back" viewModelPropertyId="1:549" id="160:1016"/>
                             <ViewModelInstanceBoolean viewModelPropertyId="1:587" id="160:1017"/>
                             <ViewModelInstanceTrigger viewModelPropertyId="1:1321" id="160:1018">
-                                <DataBindContext sourcePathIds="160:1-160:3" propertyKey="687" nameBased="true" twoWay="true" id="160:1019"/>
+                                <DataBindContext sourcePathIds="160:1-160:3" propertyKey="687" twoWay="true" nameBased="true" id="160:1019"/>
                             </ViewModelInstanceTrigger>
                             <ViewModelInstanceBoolean viewModelPropertyId="7:1" id="160:1020"/>
                             <ViewModelInstanceBoolean viewModelPropertyId="7:3" id="160:1021"/>
@@ -38,7 +38,7 @@
                             <ViewModelInstanceString propertyValue="Next" viewModelPropertyId="1:549" id="160:1034"/>
                             <ViewModelInstanceBoolean viewModelPropertyId="1:587" id="160:1035"/>
                             <ViewModelInstanceTrigger viewModelPropertyId="1:1321" id="160:1036">
-                                <DataBindContext sourcePathIds="160:1-160:4" propertyKey="687" nameBased="true" twoWay="true" id="160:1037"/>
+                                <DataBindContext sourcePathIds="160:1-160:4" propertyKey="687" twoWay="true" nameBased="true" id="160:1037"/>
                             </ViewModelInstanceTrigger>
                             <ViewModelInstanceBoolean viewModelPropertyId="7:1" id="160:1038"/>
                             <ViewModelInstanceBoolean viewModelPropertyId="7:3" id="160:1039"/>
@@ -55,15 +55,15 @@
                 </LayoutComponent>
                 <LayoutComponentStyle gapHorizontal="8" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="160:1004"/>
             </LayoutComponent>
-            <LayoutComponentStyle gapVertical="24" flexDirectionValue="column" layoutAlignmentType="center" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="160:1003"/>
+            <LayoutComponentStyle gapVertical="24" layoutAlignmentType="center" flexDirectionValue="column" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="160:1003"/>
         </LayoutComponent>
         <StateMachine name="State Machine 1" id="160:1001">
             <StateMachineListener targetId="160:1000" name="Back" id="160:1051">
                 <ListenerInputTypeViewModel viewModelPathIds="160:1-160:3" listenerTypeValue="viewModel" id="160:1052"/>
                 <ListenerViewModelChange fromViewModelProperty="true" fromDataBindId="160:1047" id="160:1048">
                     <BindablePropertyNumber id="160:1049">
-                        <DataBindContext sourcePathIds="160:1-160:2-159:22-159:11" propertyKey="636" direction="true" id="160:1050"/>
                         <DataBindContext sourcePathIds="160:1-160:2-159:22-159:11" propertyKey="636" converterId="160:70" id="160:1047"/>
+                        <DataBindContext sourcePathIds="160:1-160:2-159:22-159:11" propertyKey="636" direction="true" id="160:1050"/>
                     </BindablePropertyNumber>
                 </ListenerViewModelChange>
             </StateMachineListener>
@@ -71,18 +71,18 @@
                 <ListenerInputTypeViewModel viewModelPathIds="160:1-160:4" listenerTypeValue="viewModel" id="160:1058"/>
                 <ListenerViewModelChange fromViewModelProperty="true" fromDataBindId="160:1053" id="160:1054">
                     <BindablePropertyNumber id="160:1055">
-                        <DataBindContext sourcePathIds="160:1-160:2-159:22-159:11" propertyKey="636" direction="true" id="160:1056"/>
                         <DataBindContext sourcePathIds="160:1-160:2-159:22-159:11" propertyKey="636" converterId="160:80" id="160:1053"/>
+                        <DataBindContext sourcePathIds="160:1-160:2-159:22-159:11" propertyKey="636" direction="true" id="160:1056"/>
                     </BindablePropertyNumber>
                 </ListenerViewModelChange>
             </StateMachineListener>
             <StateMachineLayer name="Layer 1" id="160:1061">
+                <AnimationState animationId="160:1060" x="160" id="160:1059"/>
                 <AnyState x="400" id="160:1062"/>
                 <ExitState x="480" id="160:1063"/>
                 <EntryState id="160:1064">
                     <StateTransition stateToId="160:1059" id="160:1065"/>
                 </EntryState>
-                <AnimationState animationId="160:1060" x="160" id="160:1059"/>
             </StateMachineLayer>
         </StateMachine>
         <LinearAnimation name="Timeline 1" id="160:1060"/>
