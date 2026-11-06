@@ -512,6 +512,35 @@ Previous and next Buttons around up to seven page buttons. Set two numbers and t
 </NestedArtboardLayout>
 ```
 
+## Progress Bar
+
+Source: `shared/35-ProgressBar.rml` · artboard `130:20` · state machine `130:22` · view model `ProgressBar` `130:1`
+
+| Property | Type | Id |
+|---|---|---|
+| `label` | string | `130:2` |
+| `value` | number | `130:3` |
+| `a11yHidden` | boolean | `130:4` |
+
+A label, a percentage and a bar that fills from the left.
+
+- View model `ProgressBar`: `label`, `value` (`0`–`100`), `a11yHidden`.
+- Values outside `0`–`100` are clamped; the percentage is rounded to a whole number.
+- The bar eases to a new value with a short layout animation.
+- Track and fill use the same tokens as the Slider (`_borderStrong`, `_brand600`); the corners follow `_radiusSmall`, so the theme roundness applies.
+- Screen readers get a `group` named by the label with the percentage as text. A chain of built-in converters makes that text (clamp, round, pad, add `%`, trim), so no script is involved.
+
+```xml
+<NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="130:20" isStateful="true" name="Progress Bar" id="X:1">
+    <NestedStateMachine animationId="130:22" id="X:2"/>
+    <ViewModelInstance viewModelId="130:1" exports="true" name="My Progress Bar" id="X:3">
+        <ViewModelInstanceString viewModelPropertyId="130:2" id="X:4"/>  <!-- label -->
+        <ViewModelInstanceNumber viewModelPropertyId="130:3" id="X:5"/>  <!-- value -->
+        <ViewModelInstanceBoolean viewModelPropertyId="130:4" id="X:6"/>  <!-- a11yHidden -->
+    </ViewModelInstance>
+</NestedArtboardLayout>
+```
+
 ## Radio Group
 
 Source: `shared/13-RadioGroup.rml` · artboard `10:3586` · state machine `10:3591` · view model `RadioGroup` `10:3548`
@@ -809,22 +838,22 @@ Contains: Nav Group
 ## Slide  (Showcase demo)
 
 Source: `shared/17-Slide.rml` · artboard `10:5313` · state machine `10:5405` · view model `Slide` `10:5163`
-Contains: Accordion, Alert, Avatar, Badge, Breadcrumbs, Button, Button Group, Checkbox Group, Dropdown, Label, Pagination, Radio Group, Slider, Switch Group, Tooltip Button
+Contains: Accordion, Alert, Avatar, Badge, Breadcrumbs, Button, Button Group, Checkbox Group, Dropdown, Label, Pagination, Progress Bar, Radio Group, Slider, Switch Group, Tooltip Button
 
 | Property | Type | Id |
 |---|---|---|
 | `name` | string | `10:5171` |
-| `content` | list of `Pagination` / `Accordion` / `RadioGroup` / `CheckboxGroup` / `SwitchGroup` / `Alert` / `Breadcrumbs` / `TooltipButton` / `Badge` / `Button` / `Label` / `Slider` / `Avatar` / `Dropdown` / `ButtonGroup` | `10:5173` |
+| `content` | list of `Pagination` / `Accordion` / `RadioGroup` / `CheckboxGroup` / `SwitchGroup` / `Alert` / `Breadcrumbs` / `TooltipButton` / `ProgressBar` / `Badge` / `Button` / `Label` / `Slider` / `Avatar` / `Dropdown` / `ButtonGroup` | `10:5173` |
 | `crumbs` | `Breadcrumbs` | `114:1` |
 
 ## Tile  (Showcase demo)
 
 Source: `shared/14-Tile.rml` · artboard `10:3618` · state machine `10:3623` · view model `Tile` `10:3612`
-Contains: Accordion, Alert, Avatar, Badge, Breadcrumbs, Button, Button Group, Checkbox Group, Dropdown, Label, Pagination, Radio Group, Slider, Switch Group, Tooltip Button
+Contains: Accordion, Alert, Avatar, Badge, Breadcrumbs, Button, Button Group, Checkbox Group, Dropdown, Label, Pagination, Progress Bar, Radio Group, Slider, Switch Group, Tooltip Button
 
 | Property | Type | Id |
 |---|---|---|
-| `content` | list of `Pagination` / `Accordion` / `RadioGroup` / `CheckboxGroup` / `SwitchGroup` / `Alert` / `Breadcrumbs` / `TooltipButton` / `Badge` / `Button` / `Label` / `Slider` / `Avatar` / `Dropdown` / `ButtonGroup` | `10:3861` |
+| `content` | list of `Pagination` / `Accordion` / `RadioGroup` / `CheckboxGroup` / `SwitchGroup` / `Alert` / `Breadcrumbs` / `TooltipButton` / `ProgressBar` / `Badge` / `Button` / `Label` / `Slider` / `Avatar` / `Dropdown` / `ButtonGroup` | `10:3861` |
 | `name` | string | `10:3614` |
 
 ## Toolbar  (Showcase demo)
