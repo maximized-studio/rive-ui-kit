@@ -63,6 +63,7 @@
                                     <ViewModelInstanceNumber viewModelPropertyId="99:100" id="131:187"/>
                                     <ViewModelInstanceString viewModelPropertyId="112:14" id="131:188"/>
                                     <ViewModelInstanceNumber propertyValue="1" viewModelPropertyId="118:1" id="131:189"/>
+                                    <ViewModelInstanceTrigger viewModelPropertyId="134:10" id="134:13"/>
                                 </ViewModelInstance>
                             </NestedArtboardLayout>
                             <LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="131:173"/>
@@ -91,6 +92,7 @@
                                     <ViewModelInstanceNumber propertyValue="3" viewModelPropertyId="118:1" id="131:207">
                                         <DataBindContext sourcePathIds="131:1-131:6" propertyKey="575" nameBased="true" id="131:208"/>
                                     </ViewModelInstanceNumber>
+                                    <ViewModelInstanceTrigger viewModelPropertyId="134:10" id="134:14"/>
                                 </ViewModelInstance>
                             </NestedArtboardLayout>
                             <LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="131:191"/>

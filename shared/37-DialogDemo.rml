@@ -39,6 +39,7 @@
                     <ViewModelInstanceNumber viewModelPropertyId="99:100" id="132:143"/>
                     <ViewModelInstanceString viewModelPropertyId="112:14" id="132:144"/>
                     <ViewModelInstanceNumber viewModelPropertyId="118:1" id="132:145"/>
+                    <ViewModelInstanceTrigger viewModelPropertyId="134:10" id="134:15"/>
                 </ViewModelInstance>
             </NestedArtboardLayout>
             <LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="132:131"/>

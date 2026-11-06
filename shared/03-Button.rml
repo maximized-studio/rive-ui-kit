@@ -615,7 +615,9 @@
                 <DataBindContext sourcePathIds="1:151-7:1" propertyKey="1002" nameBased="true" id="7:76"/>
                 <DataBindContext sourcePathIds="1:151-112:14" propertyKey="985" nameBased="true" id="112:145"/>
             </SemanticData>
-            <FocusData name="Focus" id="0:15797"/>
+            <FocusData name="Focus" id="0:15797">
+                <DataBindContext sourcePathIds="1:151-7:1" propertyKey="953" nameBased="true" converterId="1:1018" id="134:53"/>
+            </FocusData>
         </LayoutComponent>
         <LinearAnimation loopValue="loop" name="Variant Primary" id="902:1">
             <KeyedObject objectId="133:21" id="133:164">
@@ -1990,14 +1992,31 @@
                     </BindablePropertyBoolean>
                 </ListenerViewModelChange>
             </StateMachineListener>
-            <StateMachineListenerSingle listenerTypeValue="click" viewModelPathIds="1:1053-1:1067-1:1321" targetId="1:134" name="Pressed" id="1:1228">
+            <StateMachineListener targetId="1:134" name="Activate" id="134:29">
+                <ListenerInputTypeSemantic listenerTypeValue="semanticAction" id="134:2">
+                    <SemanticInput id="134:3"/>
+                </ListenerInputTypeSemantic>
+                <ListenerInputTypeKeyboard listenerTypeValue="keyboard" id="134:4">
+                    <KeyboardInput keyType="enter" keyPhase="1" id="134:5"/>
+                    <KeyboardInput keyType="kpEnter" keyPhase="1" id="134:6"/>
+                    <KeyboardInput keyType="space" keyPhase="1" id="134:7"/>
+                </ListenerInputTypeKeyboard>
+                <ListenerViewModelChange fromViewModelProperty="true" fromDataBindId="134:27" id="134:30">
+                    <BindablePropertyTrigger id="134:31">
+                        <DataBindContext sourcePathIds="1:151-134:10" propertyKey="686" id="134:27"/>
+                        <DataBindContext sourcePathIds="1:151-134:10" propertyKey="686" direction="true" converterId="1:1332" id="134:28"/>
+                    </BindablePropertyTrigger>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListener targetId="1:134" name="Pressed" id="1:1228">
+                <ListenerInputType listenerTypeValue="click" id="134:1"/>
                 <ListenerViewModelChange fromViewModelProperty="true" fromDataBindId="1:1331" id="1:1229">
                     <BindablePropertyTrigger id="1:1329">
                         <DataBindContext sourcePathIds="1:151-1:1321" propertyKey="686" direction="true" converterId="1:1332" id="1:1330"/>
                         <DataBindContext sourcePathIds="1:151-1:1321" propertyKey="686" id="1:1331"/>
                     </BindablePropertyTrigger>
                 </ListenerViewModelChange>
-            </StateMachineListenerSingle>
+            </StateMachineListener>
             <StateMachineListenerSingle listenerTypeValue="exit" targetId="1:134" name="Hover Off" id="1:585">
                 <ListenerViewModelChange id="1:586">
                     <BindablePropertyBoolean id="1:589">
@@ -2382,6 +2401,37 @@
                     </StateTransition>
                 </EntryState>
             </StateMachineLayer>
+            <StateMachineLayer name="Activate" id="134:35">
+                <AnimationState animationId="134:32" x="160" stateName="Idle" id="134:33">
+                    <StateTransition stateToId="134:34" id="134:36">
+                        <TransitionViewModelCondition opValue="notEqual" id="134:37">
+                            <TransitionPropertyViewModelComparator id="134:38">
+                                <BindablePropertyTrigger id="134:39">
+                                    <DataBindContext sourcePathIds="1:151-134:10" propertyKey="686" id="134:40"/>
+                                </BindablePropertyTrigger>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueTriggerComparator id="134:41"/>
+                        </TransitionViewModelCondition>
+                        <TransitionViewModelCondition id="134:42">
+                            <TransitionPropertyViewModelComparator id="134:43">
+                                <BindablePropertyBoolean id="134:44">
+                                    <DataBindContext sourcePathIds="1:151-7:1" propertyKey="634" id="134:45"/>
+                                </BindablePropertyBoolean>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueBooleanComparator id="134:46"/>
+                        </TransitionViewModelCondition>
+                        <StateMachineFireTrigger viewModelPathIds="1:151-1:1321" id="134:47"/>
+                    </StateTransition>
+                </AnimationState>
+                <AnimationState animationId="134:32" x="400" stateName="Fire" id="134:34">
+                    <StateTransition stateToId="134:33" id="134:48"/>
+                </AnimationState>
+                <AnyState x="560" id="134:49"/>
+                <ExitState x="640" id="134:50"/>
+                <EntryState id="134:51">
+                    <StateTransition stateToId="134:33" id="134:52"/>
+                </EntryState>
+            </StateMachineLayer>
         </StateMachine>
         <LinearAnimation name="Pressed" id="1:1221">
             <KeyedObject objectId="10:3137" id="10:3147">
@@ -2399,6 +2449,7 @@
                 </KeyedProperty>
             </KeyedObject>
         </LinearAnimation>
+        <LinearAnimation name="Activate Idle" id="134:32"/>
         <LinearAnimation name="Button Initial" id="1:126">
             <KeyedObject objectId="10:3133" id="10:3141">
                 <KeyedProperty property="opacity" id="10:3142">

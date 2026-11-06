@@ -21,6 +21,7 @@
                         <ViewModelInstanceNumber viewModelPropertyId="99:100" id="102:959"/>
                         <ViewModelInstanceString viewModelPropertyId="112:14" id="112:143"/>
                         <ViewModelInstanceNumber propertyValue="1" viewModelPropertyId="118:1" id="118:228"/>
+                        <ViewModelInstanceTrigger viewModelPropertyId="134:10" id="134:11"/>
                     </ViewModelInstance>
                 </NestedArtboardLayout>
                 <LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="102:780"/>
@@ -47,6 +48,7 @@
                         <ViewModelInstanceNumber viewModelPropertyId="99:100" id="102:973"/>
                         <ViewModelInstanceString viewModelPropertyId="112:14" id="112:144"/>
                         <ViewModelInstanceNumber propertyValue="1" viewModelPropertyId="118:1" id="118:229"/>
+                        <ViewModelInstanceTrigger viewModelPropertyId="134:10" id="134:12"/>
                     </ViewModelInstance>
                 </NestedArtboardLayout>
                 <LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="102:782"/>

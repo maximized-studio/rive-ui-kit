@@ -905,6 +905,7 @@
                 <ViewModelPropertyBoolean name="disabled" id="7:1"/>
                 <ViewModelPropertyBoolean name="a11yHidden" id="7:3"/>
                 <ViewModelPropertyTrigger name="_pressed" id="1:1321"/>
+                <ViewModelPropertyTrigger name="_activate" id="134:10"/>
                 <ViewModelPropertyBoolean name="_hover" id="1:587"/>
                 <ViewModelPropertyString name="text" id="1:549"/>
                 <ViewModelPropertyString name="hint" id="112:14"/>
@@ -919,6 +920,7 @@
                     <ViewModelInstanceNumber propertyValue="1" viewModelPropertyId="99:100" id="99:101"/>
                     <ViewModelInstanceString viewModelPropertyId="112:14" id="112:136"/>
                     <ViewModelInstanceNumber viewModelPropertyId="118:1" id="118:170"/>
+                    <ViewModelInstanceTrigger viewModelPropertyId="134:10" id="134:17"/>
                 </ViewModelInstance>
                 <ViewModelInstance exports="true" name="BG Cut" id="92:648">
                     <ViewModelInstanceString propertyValue="Cut" viewModelPropertyId="1:549" id="92:649"/>
@@ -931,6 +933,7 @@
                     <ViewModelInstanceNumber propertyValue="2" viewModelPropertyId="99:100" id="99:102"/>
                     <ViewModelInstanceString viewModelPropertyId="112:14" id="112:137"/>
                     <ViewModelInstanceNumber viewModelPropertyId="118:1" id="118:171"/>
+                    <ViewModelInstanceTrigger viewModelPropertyId="134:10" id="134:18"/>
                 </ViewModelInstance>
                 <ViewModelInstance exports="true" name="BG Paste" id="92:659">
                     <ViewModelInstanceString propertyValue="Paste" viewModelPropertyId="1:549" id="92:660"/>
@@ -943,6 +946,7 @@
                     <ViewModelInstanceNumber propertyValue="3" viewModelPropertyId="99:100" id="99:103"/>
                     <ViewModelInstanceString viewModelPropertyId="112:14" id="112:138"/>
                     <ViewModelInstanceNumber viewModelPropertyId="118:1" id="118:172"/>
+                    <ViewModelInstanceTrigger viewModelPropertyId="134:10" id="134:19"/>
                 </ViewModelInstance>
                 <ViewModelInstance exports="true" name="Next Button" id="33:101">
                     <ViewModelInstanceString propertyValue="Next" viewModelPropertyId="1:549" id="33:102"/>
@@ -955,6 +959,7 @@
                     <ViewModelInstanceNumber viewModelPropertyId="99:100" id="99:104"/>
                     <ViewModelInstanceString viewModelPropertyId="112:14" id="112:139"/>
                     <ViewModelInstanceNumber viewModelPropertyId="118:1" id="118:173"/>
+                    <ViewModelInstanceTrigger viewModelPropertyId="134:10" id="134:20"/>
                 </ViewModelInstance>
                 <ViewModelInstance exports="true" name="Prev Button" id="33:60">
                     <ViewModelInstanceString propertyValue="Previous" viewModelPropertyId="1:549" id="33:61"/>
@@ -967,6 +972,7 @@
                     <ViewModelInstanceNumber viewModelPropertyId="99:100" id="99:105"/>
                     <ViewModelInstanceString viewModelPropertyId="112:14" id="112:140"/>
                     <ViewModelInstanceNumber propertyValue="1" viewModelPropertyId="118:1" id="118:174"/>
+                    <ViewModelInstanceTrigger viewModelPropertyId="134:10" id="134:21"/>
                 </ViewModelInstance>
                 <ViewModelInstance exports="true" name="Variant Primary" id="118:176">
                     <ViewModelInstanceString propertyValue="Primary" viewModelPropertyId="1:549" id="118:177"/>
@@ -979,6 +985,7 @@
                     <ViewModelInstanceBoolean viewModelPropertyId="33:169" id="118:185"/>
                     <ViewModelInstanceNumber viewModelPropertyId="99:100" id="118:186"/>
                     <ViewModelInstanceString viewModelPropertyId="112:14" id="118:187"/>
+                    <ViewModelInstanceTrigger viewModelPropertyId="134:10" id="134:22"/>
                 </ViewModelInstance>
                 <ViewModelInstance exports="true" name="Variant Secondary" id="118:188">
                     <ViewModelInstanceString propertyValue="Secondary" viewModelPropertyId="1:549" id="118:189"/>
@@ -991,6 +998,7 @@
                     <ViewModelInstanceBoolean viewModelPropertyId="33:169" id="118:197"/>
                     <ViewModelInstanceNumber viewModelPropertyId="99:100" id="118:198"/>
                     <ViewModelInstanceString viewModelPropertyId="112:14" id="118:199"/>
+                    <ViewModelInstanceTrigger viewModelPropertyId="134:10" id="134:23"/>
                 </ViewModelInstance>
                 <ViewModelInstance exports="true" name="Variant Brand" id="118:200">
                     <ViewModelInstanceString propertyValue="Brand" viewModelPropertyId="1:549" id="118:201"/>
@@ -1003,6 +1011,7 @@
                     <ViewModelInstanceBoolean viewModelPropertyId="33:169" id="118:209"/>
                     <ViewModelInstanceNumber viewModelPropertyId="99:100" id="118:210"/>
                     <ViewModelInstanceString viewModelPropertyId="112:14" id="118:211"/>
+                    <ViewModelInstanceTrigger viewModelPropertyId="134:10" id="134:24"/>
                 </ViewModelInstance>
                 <ViewModelInstance exports="true" name="Variant Destructive" id="118:212">
                     <ViewModelInstanceString propertyValue="Delete" viewModelPropertyId="1:549" id="118:213"/>
@@ -1015,6 +1024,7 @@
                     <ViewModelInstanceBoolean viewModelPropertyId="33:169" id="118:221"/>
                     <ViewModelInstanceNumber viewModelPropertyId="99:100" id="118:222"/>
                     <ViewModelInstanceString viewModelPropertyId="112:14" id="118:223"/>
+                    <ViewModelInstanceTrigger viewModelPropertyId="134:10" id="134:25"/>
                 </ViewModelInstance>
                 <ViewModelInstance exports="true" id="1:152">
                     <ViewModelInstanceString propertyValue="Button" viewModelPropertyId="1:549" id="1:550"/>
@@ -1027,6 +1037,7 @@
                     <ViewModelInstanceNumber viewModelPropertyId="99:100" id="99:107"/>
                     <ViewModelInstanceString viewModelPropertyId="112:14" id="112:142"/>
                     <ViewModelInstanceNumber viewModelPropertyId="118:1" id="118:175"/>
+                    <ViewModelInstanceTrigger viewModelPropertyId="134:10" id="134:26"/>
                 </ViewModelInstance>
             </ViewModel>
             <ViewModel defaultInstanceId="1:150" name="Checkbox" groupId="1:2673" id="1:149">
