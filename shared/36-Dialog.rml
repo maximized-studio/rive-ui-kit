@@ -56,7 +56,9 @@
                                     <ViewModelInstanceBoolean viewModelPropertyId="7:3" id="131:183">
                                         <DataBindContext sourcePathIds="131:1-131:10" propertyKey="593" nameBased="true" id="131:184"/>
                                     </ViewModelInstanceBoolean>
-                                    <ViewModelInstanceNumber viewModelPropertyId="33:164" id="131:185"/>
+                                    <ViewModelInstanceNumber propertyValue="9" viewModelPropertyId="33:164" id="131:185">
+                                        <DataBindContext sourcePathIds="131:1-131:22" propertyKey="575" nameBased="true" id="131:213"/>
+                                    </ViewModelInstanceNumber>
                                     <ViewModelInstanceBoolean viewModelPropertyId="33:169" id="131:186"/>
                                     <ViewModelInstanceNumber viewModelPropertyId="99:100" id="131:187"/>
                                     <ViewModelInstanceString viewModelPropertyId="112:14" id="131:188"/>
@@ -80,7 +82,9 @@
                                     <ViewModelInstanceBoolean viewModelPropertyId="7:3" id="131:201">
                                         <DataBindContext sourcePathIds="131:1-131:10" propertyKey="593" nameBased="true" id="131:202"/>
                                     </ViewModelInstanceBoolean>
-                                    <ViewModelInstanceNumber viewModelPropertyId="33:164" id="131:203"/>
+                                    <ViewModelInstanceNumber propertyValue="8" viewModelPropertyId="33:164" id="131:203">
+                                        <DataBindContext sourcePathIds="131:1-131:21" propertyKey="575" nameBased="true" id="131:214"/>
+                                    </ViewModelInstanceNumber>
                                     <ViewModelInstanceBoolean viewModelPropertyId="33:169" id="131:204"/>
                                     <ViewModelInstanceNumber viewModelPropertyId="99:100" id="131:205"/>
                                     <ViewModelInstanceString viewModelPropertyId="112:14" id="131:206"/>
