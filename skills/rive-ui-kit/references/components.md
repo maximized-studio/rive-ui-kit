@@ -289,7 +289,7 @@ Source: `shared/03-Button.rml` · artboard `1:122` · state machine `1:127` · v
 
 A button in three variants and three colours, like MUI: `variant` sets the shape, `color` the meaning. The default (contained, neutral) follows the inverse colours of the mode (light on dark, dark on light), so it never clashes with the brand colour.
 
-- View model `Button`: `text`, `variant` (`0` contained, `1` outlined, `2` text), `color` (`0` neutral, `1` brand, `2` destructive), `icon` (`0` none, `1` arrow, `2` chevron left, `3` chevron right, `4` copy, `5` scissors, `6` clipboard, `7` save, `8` trash, `9` close), `iconOnly`, `disabled`, `hint`, `group` (see Button Group), `a11yHidden`. `_pressed` fires on a click, a screen reader's activate, or Enter/Space while the Button has keyboard focus.
+- View model `Button`: `text`, `variant` (`0` contained, `1` outlined, `2` text), `color` (`0` neutral, `1` brand, `2` destructive), `icon` (`0` none, `1` arrow, `2` chevron left, `3` chevron right, `4` copy, `5` scissors, `6` clipboard, `7` save, `8` trash, `9` close, `10` chevron down, `11` minus, `12` plus), `iconOnly`, `disabled`, `hint`, `group` (see Button Group), `a11yHidden`. `_pressed` fires on a click, a screen reader's activate, or Enter/Space while the Button has keyboard focus.
 - A disabled Button ignores all three, and it cannot take keyboard focus. Taps and keys go through a small gate (`_activate` → the Activate layer fires `_pressed` only when `disabled` is false), because the disabled shield only stops the pointer.
 - **Contained** is a filled button with the theme shadow. Neutral uses `_primaryBg` / `_primaryHover` / `_primaryText`, destructive `_dangerBg` / `_dangerHover` / `_dangerText`: Theme tokens per mode that ignore the brand. Brand uses `_brand600` with `_brand800` on hover.
 - **Outlined** sits on `_surfaceRaised` with a border: `_border` for neutral, `_infoBorder` for brand, `_errorBorder` for destructive, and text in `_text`, `_infoText` or `_errorText`.
@@ -612,6 +612,52 @@ Source: `shared/09-MenuItem.rml` · artboard `1:4156` · state machine `1:4161` 
         <ViewModelInstanceTrigger viewModelPropertyId="1:4213" id="X:10"/>  <!-- _pressed -->
         <ViewModelInstanceBoolean viewModelPropertyId="1:4211" id="X:11"/>  <!-- _hover -->
         <ViewModelInstanceString viewModelPropertyId="1:4186" id="X:12"/>  <!-- text -->
+    </ViewModelInstance>
+</NestedArtboardLayout>
+```
+
+## Number Field
+
+Source: `shared/49-NumberField.rml` · artboard `157:1000` · state machine `157:1001` · view model `NumberField` `157:1`
+Contains: Button
+
+| Property | Type | Id |
+|---|---|---|
+| `value` | number | `157:2` |
+| `min` | number | `157:3` |
+| `max` | number | `157:4` |
+| `step` | number | `157:5` |
+| `label` | string | `157:6` |
+| `disabled` | boolean | `157:7` |
+| `a11yHidden` | boolean | `157:8` |
+| `_decrease` | trigger | `157:9` |
+| `_increase` | trigger | `157:10` |
+| `_keyDecrease` | trigger | `157:11` |
+| `_keyIncrease` | trigger | `157:12` |
+
+A number between a minus and a plus Button, for quantities.
+
+- View model `NumberField`: `value`, `min`, `max`, `step`, `label` (screen reader name), `disabled`, `a11yHidden`.
+- The minus and plus are kit Buttons (outlined, icon only), so they hover, press, focus and disable like every Button. Their `_pressed` fires the field's private triggers; a view model listener steps `value` through a formula that keeps it between `min` and `max`.
+- With keyboard focus on the value, the arrow keys step it (up / right +, down / left −, held keys repeat), and a screen reader's increase and decrease do the same, through a gate that ignores them while disabled.
+- The value sits on `_surface` with a `_border` line and `_radiusButton` corners; disabled turns it `_textMuted`.
+- Screen readers get the two Buttons and a `slider` named by `label` with the value.
+
+```xml
+<NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="157:1000" isStateful="true" name="Number Field" id="X:1">
+    <NestedStateMachine animationId="157:1001" id="X:2"/>
+    <ViewModelInstance viewModelId="157:1" exports="true" name="My Number Field" id="X:3">
+        <ViewModelInstanceNumber viewModelPropertyId="157:2" id="X:4"/>  <!-- value -->
+        <ViewModelInstanceNumber viewModelPropertyId="157:3" id="X:5"/>  <!-- min -->
+        <ViewModelInstanceNumber viewModelPropertyId="157:4" id="X:6"/>  <!-- max -->
+        <ViewModelInstanceNumber viewModelPropertyId="157:5" id="X:7"/>  <!-- step -->
+        <ViewModelInstanceString viewModelPropertyId="157:6" id="X:8"/>  <!-- label -->
+        <ViewModelInstanceBoolean viewModelPropertyId="157:7" id="X:9"/>  <!-- disabled -->
+        <ViewModelInstanceBoolean viewModelPropertyId="157:8" id="X:10"/>  <!-- a11yHidden -->
+        <ViewModelInstanceTrigger viewModelPropertyId="157:9" id="X:11"/>  <!-- _decrease -->
+        <ViewModelInstanceTrigger viewModelPropertyId="157:10" id="X:12"/>  <!-- _increase -->
+        <ViewModelInstanceTrigger viewModelPropertyId="157:11" id="X:13"/>  <!-- _keyDecrease -->
+        <ViewModelInstanceTrigger viewModelPropertyId="157:12" id="X:14"/>  <!-- _keyIncrease -->
     </ViewModelInstance>
 </NestedArtboardLayout>
 ```
@@ -1241,22 +1287,22 @@ Contains: Nav Group
 ## Slide  (Showcase demo)
 
 Source: `shared/17-Slide.rml` · artboard `10:5313` · state machine `10:5405` · view model `Slide` `10:5163`
-Contains: Accordion, Alert, Avatar, Badge, Breadcrumbs, Button Group, Button Row, Checkbox Group, Chip Group, Dialog Demo, Label, Menu, Pagination, Progress Bar, Radio Group, Range Slider, Rating, Select, Slider, Split Button, Switch Group, Tabs, Toggle Button Group, Tooltip Button
+Contains: Accordion, Alert, Avatar, Badge, Breadcrumbs, Button Group, Button Row, Checkbox Group, Chip Group, Dialog Demo, Label, Menu, Number Field, Pagination, Progress Bar, Radio Group, Range Slider, Rating, Select, Slider, Split Button, Switch Group, Tabs, Toggle Button Group, Tooltip Button
 
 | Property | Type | Id |
 |---|---|---|
 | `name` | string | `10:5171` |
-| `content` | list of `Pagination` / `Accordion` / `RadioGroup` / `CheckboxGroup` / `SwitchGroup` / `Alert` / `Breadcrumbs` / `TooltipButton` / `ProgressBar` / `DialogDemo` / `ButtonRow` / `Tabs` / `ChipGroup` / `Menu` / `Select` / `SplitButton` / `RangeSlider` / `Rating` / `Badge` / `Label` / `Slider` / `Avatar` / `ToggleButtonGroup` / `ButtonGroup` | `10:5173` |
+| `content` | list of `Pagination` / `Accordion` / `RadioGroup` / `CheckboxGroup` / `SwitchGroup` / `Alert` / `Breadcrumbs` / `TooltipButton` / `ProgressBar` / `DialogDemo` / `ButtonRow` / `Tabs` / `ChipGroup` / `Menu` / `Select` / `SplitButton` / `RangeSlider` / `Rating` / `NumberField` / `Badge` / `Label` / `Slider` / `Avatar` / `ToggleButtonGroup` / `ButtonGroup` | `10:5173` |
 | `crumbs` | `Breadcrumbs` | `114:1` |
 
 ## Tile  (Showcase demo)
 
 Source: `shared/14-Tile.rml` · artboard `10:3618` · state machine `10:3623` · view model `Tile` `10:3612`
-Contains: Accordion, Alert, Avatar, Badge, Breadcrumbs, Button, Button Group, Checkbox Group, Chip Group, Dialog Demo, Label, Menu, Pagination, Progress Bar, Radio Group, Range Slider, Rating, Select, Slider, Split Button, Switch Group, Tabs, Toggle Button Group, Tooltip Button
+Contains: Accordion, Alert, Avatar, Badge, Breadcrumbs, Button, Button Group, Checkbox Group, Chip Group, Dialog Demo, Label, Menu, Number Field, Pagination, Progress Bar, Radio Group, Range Slider, Rating, Select, Slider, Split Button, Switch Group, Tabs, Toggle Button Group, Tooltip Button
 
 | Property | Type | Id |
 |---|---|---|
-| `content` | list of `Pagination` / `Accordion` / `RadioGroup` / `CheckboxGroup` / `SwitchGroup` / `Alert` / `Breadcrumbs` / `TooltipButton` / `ProgressBar` / `DialogDemo` / `Tabs` / `ChipGroup` / `Menu` / `Select` / `SplitButton` / `RangeSlider` / `Rating` / `Badge` / `Button` / `Label` / `Slider` / `Avatar` / `ToggleButtonGroup` / `ButtonGroup` | `10:3861` |
+| `content` | list of `Pagination` / `Accordion` / `RadioGroup` / `CheckboxGroup` / `SwitchGroup` / `Alert` / `Breadcrumbs` / `TooltipButton` / `ProgressBar` / `DialogDemo` / `Tabs` / `ChipGroup` / `Menu` / `Select` / `SplitButton` / `RangeSlider` / `Rating` / `NumberField` / `Badge` / `Button` / `Label` / `Slider` / `Avatar` / `ToggleButtonGroup` / `ButtonGroup` | `10:3861` |
 | `name` | string | `10:3614` |
 
 ## Toolbar  (Showcase demo)

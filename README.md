@@ -13,7 +13,7 @@ The kit is also on the [Rive Community](https://rive.app/community/files/25701-5
 - **Actions:** Button · Button Group · Split Button · Toggle Button / Toggle Button Group
 - **Display:** Accordion · Avatar · Badge · Label
 - **Feedback:** Alert · Dialog · Progress Bar · Tooltip
-- **Inputs:** Checkbox / Checkbox Group · Chip / Chip Group · Radio Option / Radio Group · Range Slider · Rating · Select · Slider · Switch / Switch Group
+- **Inputs:** Checkbox / Checkbox Group · Chip / Chip Group · Number Field · Radio Option / Radio Group · Range Slider · Rating · Select · Slider · Switch / Switch Group
 - **Navigation:** Breadcrumbs · Menu · Pagination · Tabs
 - **Building blocks:** Accordion Item · Breadcrumb Item · Button Row · Dialog Demo · Menu Item · Nav Group · Nav Item · Page Item · Showcase Section · Sidebar · Slide · Star · Tab · Tile · Toolbar · Tooltip Button
 
@@ -55,6 +55,7 @@ The components carry Rive semantics, so screen readers get a real accessibility 
 | Slider | `slider` | label, value |
 | Range Slider | `group` with two `slider`s | label; Minimum / Maximum with their percentage |
 | Rating | `slider` | label, value ("3 of 5"), disabled; increase / decrease |
+| Number Field | `button` / `slider` / `button` | Decrease, label with the value, Increase; increase / decrease |
 | Switch | `switchControl` | label, on/off |
 | Tabs / Tab | `tabList` / `tab` | label; tab label, selected, disabled |
 | Toggle Button Group / Toggle Button | `radioGroup` / `radioButton` | group label; label, checked, disabled |
@@ -99,7 +100,7 @@ A card that stays in view with a message in one of four variants. It has no clos
 
 A button in three variants and three colours, like MUI: `variant` sets the shape, `color` the meaning. The default (contained, neutral) follows the inverse colours of the mode (light on dark, dark on light), so it never clashes with the brand colour.
 
-- View model `Button`: `text`, `variant` (`0` contained, `1` outlined, `2` text), `color` (`0` neutral, `1` brand, `2` destructive), `icon` (`0` none, `1` arrow, `2` chevron left, `3` chevron right, `4` copy, `5` scissors, `6` clipboard, `7` save, `8` trash, `9` close), `iconOnly`, `disabled`, `hint`, `group` (see Button Group), `a11yHidden`. `_pressed` fires on a click, a screen reader's activate, or Enter/Space while the Button has keyboard focus.
+- View model `Button`: `text`, `variant` (`0` contained, `1` outlined, `2` text), `color` (`0` neutral, `1` brand, `2` destructive), `icon` (`0` none, `1` arrow, `2` chevron left, `3` chevron right, `4` copy, `5` scissors, `6` clipboard, `7` save, `8` trash, `9` close, `10` chevron down, `11` minus, `12` plus), `iconOnly`, `disabled`, `hint`, `group` (see Button Group), `a11yHidden`. `_pressed` fires on a click, a screen reader's activate, or Enter/Space while the Button has keyboard focus.
 - A disabled Button ignores all three, and it cannot take keyboard focus. Taps and keys go through a small gate (`_activate` → the Activate layer fires `_pressed` only when `disabled` is false), because the disabled shield only stops the pointer.
 - **Contained** is a filled button with the theme shadow. Neutral uses `_primaryBg` / `_primaryHover` / `_primaryText`, destructive `_dangerBg` / `_dangerHover` / `_dangerText`: Theme tokens per mode that ignore the brand. Brand uses `_brand600` with `_brand800` on hover.
 - **Outlined** sits on `_surfaceRaised` with a border: `_border` for neutral, `_infoBorder` for brand, `_errorBorder` for destructive, and text in `_text`, `_infoText` or `_errorText`.
@@ -146,6 +147,16 @@ Two thumbs on one track for a minimum and a maximum, like a price filter. The br
 - Drag either thumb. `low` never passes `high` and the other way round: each thumb follows a private raw value, and a listener writes it into `low` or `high` through a clamp formula with the other value as its limit. Write `low` or `high` from your app and the thumb follows.
 - Track `_borderStrong`, range `_brand600`, thumbs white with the small theme shadow; disabled uses `_textMuted` and `_surfaceSubtle`.
 - Screen readers get a `group` named by `label` with a `slider` per thumb (Minimum, Maximum) and its percentage.
+
+## Number Field
+
+A number between a minus and a plus Button, for quantities.
+
+- View model `NumberField`: `value`, `min`, `max`, `step`, `label` (screen reader name), `disabled`, `a11yHidden`.
+- The minus and plus are kit Buttons (outlined, icon only), so they hover, press, focus and disable like every Button. Their `_pressed` fires the field's private triggers; a view model listener steps `value` through a formula that keeps it between `min` and `max`.
+- With keyboard focus on the value, the arrow keys step it (up / right +, down / left −, held keys repeat), and a screen reader's increase and decrease do the same, through a gate that ignores them while disabled.
+- The value sits on `_surface` with a `_border` line and `_radiusButton` corners; disabled turns it `_textMuted`.
+- Screen readers get the two Buttons and a `slider` named by `label` with the value.
 
 ## Rating
 

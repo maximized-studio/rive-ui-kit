@@ -46,6 +46,94 @@
                         <DataBindContext sourcePathIds="1:151-7:1" propertyKey="47" nameBased="true" converterId="33:251" id="103:4"/>
                     </Stroke>
                 </Shape>
+                <Shape x="8" y="8" opacity="0" name="plus" id="157:3273">
+                    <PointsPath isClosed="false" id="157:3300">
+                        <StraightVertex x="-5" y="0" id="157:3301"/>
+                        <StraightVertex x="5" y="0" id="157:3302"/>
+                    </PointsPath>
+                    <PointsPath isClosed="false" id="157:3303">
+                        <StraightVertex x="0" y="-5" id="157:3304"/>
+                        <StraightVertex x="0" y="5" id="157:3305"/>
+                    </PointsPath>
+                    <Stroke thickness="0" cap="round" join="round" id="157:3278">
+                        <SolidColor colorValue="FFFFFFFF" id="157:3279">
+                            <DataBindContext sourcePathIds="10:7-10:2092" propertyKey="37" id="157:3280"/>
+                        </SolidColor>
+                    </Stroke>
+                    <Stroke thickness="0" cap="round" join="round" id="157:3281">
+                        <SolidColor colorValue="FF000000" id="157:3282">
+                            <DataBindContext sourcePathIds="10:7-10:7422" propertyKey="37" id="157:3283"/>
+                        </SolidColor>
+                    </Stroke>
+                    <Stroke thickness="1.75" cap="round" join="round" id="157:3284">
+                        <SolidColor colorValue="FF18181B" id="157:3285">
+                            <DataBindContext sourcePathIds="10:7-118:4" propertyKey="37" id="157:3286"/>
+                        </SolidColor>
+                    </Stroke>
+                    <Stroke thickness="0" cap="round" join="round" id="157:3287">
+                        <SolidColor colorValue="FFFFFFFF" id="157:3288">
+                            <DataBindContext sourcePathIds="10:7-118:7" propertyKey="37" id="157:3289"/>
+                        </SolidColor>
+                    </Stroke>
+                    <Stroke thickness="0" cap="round" join="round" id="157:3290">
+                        <SolidColor colorValue="FF000000" id="157:3291">
+                            <DataBindContext sourcePathIds="10:7-110:3" propertyKey="37" id="157:3292"/>
+                        </SolidColor>
+                    </Stroke>
+                    <Stroke thickness="0" cap="round" join="round" id="157:3293">
+                        <SolidColor colorValue="FF000000" id="157:3294">
+                            <DataBindContext sourcePathIds="10:7-110:12" propertyKey="37" id="157:3295"/>
+                        </SolidColor>
+                    </Stroke>
+                    <Stroke thickness="0" cap="round" join="round" id="157:3296">
+                        <SolidColor colorValue="FFA1A1AA" id="157:3297">
+                            <DataBindContext sourcePathIds="10:7-10:7426" propertyKey="37" id="157:3298"/>
+                        </SolidColor>
+                        <DataBindContext sourcePathIds="1:151-7:1" propertyKey="47" nameBased="true" converterId="33:251" id="157:3299"/>
+                    </Stroke>
+                </Shape>
+                <Shape x="8" y="8" opacity="0" name="minus" id="157:3001">
+                    <PointsPath isClosed="false" id="157:3028">
+                        <StraightVertex x="-5" y="0" id="157:3029"/>
+                        <StraightVertex x="5" y="0" id="157:3030"/>
+                    </PointsPath>
+                    <Stroke thickness="0" cap="round" join="round" id="157:3006">
+                        <SolidColor colorValue="FFFFFFFF" id="157:3007">
+                            <DataBindContext sourcePathIds="10:7-10:2092" propertyKey="37" id="157:3008"/>
+                        </SolidColor>
+                    </Stroke>
+                    <Stroke thickness="0" cap="round" join="round" id="157:3009">
+                        <SolidColor colorValue="FF000000" id="157:3010">
+                            <DataBindContext sourcePathIds="10:7-10:7422" propertyKey="37" id="157:3011"/>
+                        </SolidColor>
+                    </Stroke>
+                    <Stroke thickness="1.75" cap="round" join="round" id="157:3012">
+                        <SolidColor colorValue="FF18181B" id="157:3013">
+                            <DataBindContext sourcePathIds="10:7-118:4" propertyKey="37" id="157:3014"/>
+                        </SolidColor>
+                    </Stroke>
+                    <Stroke thickness="0" cap="round" join="round" id="157:3015">
+                        <SolidColor colorValue="FFFFFFFF" id="157:3016">
+                            <DataBindContext sourcePathIds="10:7-118:7" propertyKey="37" id="157:3017"/>
+                        </SolidColor>
+                    </Stroke>
+                    <Stroke thickness="0" cap="round" join="round" id="157:3018">
+                        <SolidColor colorValue="FF000000" id="157:3019">
+                            <DataBindContext sourcePathIds="10:7-110:3" propertyKey="37" id="157:3020"/>
+                        </SolidColor>
+                    </Stroke>
+                    <Stroke thickness="0" cap="round" join="round" id="157:3021">
+                        <SolidColor colorValue="FF000000" id="157:3022">
+                            <DataBindContext sourcePathIds="10:7-110:12" propertyKey="37" id="157:3023"/>
+                        </SolidColor>
+                    </Stroke>
+                    <Stroke thickness="0" cap="round" join="round" id="157:3024">
+                        <SolidColor colorValue="FFA1A1AA" id="157:3025">
+                            <DataBindContext sourcePathIds="10:7-10:7426" propertyKey="37" id="157:3026"/>
+                        </SolidColor>
+                        <DataBindContext sourcePathIds="1:151-7:1" propertyKey="47" nameBased="true" converterId="33:251" id="157:3027"/>
+                    </Stroke>
+                </Shape>
                 <Shape x="8" y="8" opacity="0" name="chevD" id="139:501" rotation="1.5707964">
                     <PointsPath id="139:502">
                         <StraightVertex x="-2" y="-5" id="139:503"/>
@@ -987,6 +1075,16 @@
                     <KeyFrameDouble id="139:530"/>
                 </KeyedProperty>
             </KeyedObject>
+            <KeyedObject objectId="157:3001" id="157:3031">
+                <KeyedProperty property="opacity" id="157:3032">
+                    <KeyFrameDouble id="157:3033"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3273" id="157:3306">
+                <KeyedProperty property="opacity" id="157:3307">
+                    <KeyFrameDouble id="157:3308"/>
+                </KeyedProperty>
+            </KeyedObject>
         </LinearAnimation>
         <LinearAnimation loopValue="loop" name="Icon Icon 1" id="903:24">
             <KeyedObject objectId="133:1" id="133:66">
@@ -1037,6 +1135,16 @@
             <KeyedObject objectId="139:501" id="139:531">
                 <KeyedProperty property="opacity" id="139:532">
                     <KeyFrameDouble id="139:533"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3001" id="157:3034">
+                <KeyedProperty property="opacity" id="157:3035">
+                    <KeyFrameDouble id="157:3036"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3273" id="157:3309">
+                <KeyedProperty property="opacity" id="157:3310">
+                    <KeyFrameDouble id="157:3311"/>
                 </KeyedProperty>
             </KeyedObject>
         </LinearAnimation>
@@ -1091,6 +1199,16 @@
                     <KeyFrameDouble id="139:536"/>
                 </KeyedProperty>
             </KeyedObject>
+            <KeyedObject objectId="157:3001" id="157:3037">
+                <KeyedProperty property="opacity" id="157:3038">
+                    <KeyFrameDouble id="157:3039"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3273" id="157:3312">
+                <KeyedProperty property="opacity" id="157:3313">
+                    <KeyFrameDouble id="157:3314"/>
+                </KeyedProperty>
+            </KeyedObject>
         </LinearAnimation>
         <LinearAnimation loopValue="loop" name="Icon Icon 3" id="903:70">
             <KeyedObject objectId="133:1" id="133:78">
@@ -1141,6 +1259,16 @@
             <KeyedObject objectId="139:501" id="139:537">
                 <KeyedProperty property="opacity" id="139:538">
                     <KeyFrameDouble id="139:539"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3001" id="157:3040">
+                <KeyedProperty property="opacity" id="157:3041">
+                    <KeyFrameDouble id="157:3042"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3273" id="157:3315">
+                <KeyedProperty property="opacity" id="157:3316">
+                    <KeyFrameDouble id="157:3317"/>
                 </KeyedProperty>
             </KeyedObject>
         </LinearAnimation>
@@ -1195,6 +1323,16 @@
                     <KeyFrameDouble id="139:542"/>
                 </KeyedProperty>
             </KeyedObject>
+            <KeyedObject objectId="157:3001" id="157:3043">
+                <KeyedProperty property="opacity" id="157:3044">
+                    <KeyFrameDouble id="157:3045"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3273" id="157:3318">
+                <KeyedProperty property="opacity" id="157:3319">
+                    <KeyFrameDouble id="157:3320"/>
+                </KeyedProperty>
+            </KeyedObject>
         </LinearAnimation>
         <LinearAnimation loopValue="loop" name="Icon Icon 5" id="903:116">
             <KeyedObject objectId="133:1" id="133:90">
@@ -1245,6 +1383,16 @@
             <KeyedObject objectId="139:501" id="139:543">
                 <KeyedProperty property="opacity" id="139:544">
                     <KeyFrameDouble id="139:545"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3001" id="157:3046">
+                <KeyedProperty property="opacity" id="157:3047">
+                    <KeyFrameDouble id="157:3048"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3273" id="157:3321">
+                <KeyedProperty property="opacity" id="157:3322">
+                    <KeyFrameDouble id="157:3323"/>
                 </KeyedProperty>
             </KeyedObject>
         </LinearAnimation>
@@ -1299,6 +1447,16 @@
                     <KeyFrameDouble id="139:548"/>
                 </KeyedProperty>
             </KeyedObject>
+            <KeyedObject objectId="157:3001" id="157:3049">
+                <KeyedProperty property="opacity" id="157:3050">
+                    <KeyFrameDouble id="157:3051"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3273" id="157:3324">
+                <KeyedProperty property="opacity" id="157:3325">
+                    <KeyFrameDouble id="157:3326"/>
+                </KeyedProperty>
+            </KeyedObject>
         </LinearAnimation>
         <LinearAnimation loopValue="loop" name="Icon Icon 7" id="903:162">
             <KeyedObject objectId="133:1" id="133:102">
@@ -1349,6 +1507,16 @@
             <KeyedObject objectId="139:501" id="139:549">
                 <KeyedProperty property="opacity" id="139:550">
                     <KeyFrameDouble id="139:551"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3001" id="157:3052">
+                <KeyedProperty property="opacity" id="157:3053">
+                    <KeyFrameDouble id="157:3054"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3273" id="157:3327">
+                <KeyedProperty property="opacity" id="157:3328">
+                    <KeyFrameDouble id="157:3329"/>
                 </KeyedProperty>
             </KeyedObject>
         </LinearAnimation>
@@ -1403,6 +1571,16 @@
                     <KeyFrameDouble id="139:554"/>
                 </KeyedProperty>
             </KeyedObject>
+            <KeyedObject objectId="157:3001" id="157:3055">
+                <KeyedProperty property="opacity" id="157:3056">
+                    <KeyFrameDouble id="157:3057"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3273" id="157:3330">
+                <KeyedProperty property="opacity" id="157:3331">
+                    <KeyFrameDouble id="157:3332"/>
+                </KeyedProperty>
+            </KeyedObject>
         </LinearAnimation>
         <LinearAnimation loopValue="loop" name="Icon Icon 9" id="133:136">
             <KeyedObject objectId="33:274" id="133:137">
@@ -1455,6 +1633,16 @@
                     <KeyFrameDouble id="139:557"/>
                 </KeyedProperty>
             </KeyedObject>
+            <KeyedObject objectId="157:3001" id="157:3058">
+                <KeyedProperty property="opacity" id="157:3059">
+                    <KeyFrameDouble id="157:3060"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3273" id="157:3333">
+                <KeyedProperty property="opacity" id="157:3334">
+                    <KeyFrameDouble id="157:3335"/>
+                </KeyedProperty>
+            </KeyedObject>
         </LinearAnimation>
         <LinearAnimation loopValue="loop" name="Icon Icon 10" id="139:720">
             <KeyedObject objectId="33:274" id="139:721">
@@ -1505,6 +1693,140 @@
             <KeyedObject objectId="139:501" id="139:748">
                 <KeyedProperty property="opacity" id="139:749">
                     <KeyFrameDouble id="139:750" value="1"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3001" id="157:3061">
+                <KeyedProperty property="opacity" id="157:3062">
+                    <KeyFrameDouble id="157:3063"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3273" id="157:3336">
+                <KeyedProperty property="opacity" id="157:3337">
+                    <KeyFrameDouble id="157:3338"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+        <LinearAnimation loopValue="loop" name="Icon Icon 11" id="157:3226">
+            <KeyedObject objectId="33:274" id="157:3227">
+                <KeyedProperty property="opacity" id="157:3228">
+                    <KeyFrameDouble id="157:3229"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="33:261" id="157:3230">
+                <KeyedProperty property="opacity" id="157:3231">
+                    <KeyFrameDouble id="157:3232"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="33:237" id="157:3233">
+                <KeyedProperty property="opacity" id="157:3234">
+                    <KeyFrameDouble id="157:3235"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="116:22" id="157:3236">
+                <KeyedProperty property="opacity" id="157:3237">
+                    <KeyFrameDouble id="157:3238"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="117:248" id="157:3239">
+                <KeyedProperty property="opacity" id="157:3240">
+                    <KeyFrameDouble id="157:3241"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="116:46" id="157:3242">
+                <KeyedProperty property="opacity" id="157:3243">
+                    <KeyFrameDouble id="157:3244"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="116:67" id="157:3245">
+                <KeyedProperty property="opacity" id="157:3246">
+                    <KeyFrameDouble id="157:3247"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="133:1" id="157:3248">
+                <KeyedProperty property="opacity" id="157:3249">
+                    <KeyFrameDouble id="157:3250"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="133:37" id="157:3251">
+                <KeyedProperty property="opacity" id="157:3252">
+                    <KeyFrameDouble id="157:3253"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="139:501" id="157:3254">
+                <KeyedProperty property="opacity" id="157:3255">
+                    <KeyFrameDouble id="157:3256"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3001" id="157:3257">
+                <KeyedProperty property="opacity" id="157:3258">
+                    <KeyFrameDouble id="157:3259" value="1"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3273" id="157:3339">
+                <KeyedProperty property="opacity" id="157:3340">
+                    <KeyFrameDouble id="157:3341"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+        <LinearAnimation loopValue="loop" name="Icon Icon 12" id="157:3504">
+            <KeyedObject objectId="33:274" id="157:3505">
+                <KeyedProperty property="opacity" id="157:3506">
+                    <KeyFrameDouble id="157:3507"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="33:261" id="157:3508">
+                <KeyedProperty property="opacity" id="157:3509">
+                    <KeyFrameDouble id="157:3510"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="33:237" id="157:3511">
+                <KeyedProperty property="opacity" id="157:3512">
+                    <KeyFrameDouble id="157:3513"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="116:22" id="157:3514">
+                <KeyedProperty property="opacity" id="157:3515">
+                    <KeyFrameDouble id="157:3516"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="117:248" id="157:3517">
+                <KeyedProperty property="opacity" id="157:3518">
+                    <KeyFrameDouble id="157:3519"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="116:46" id="157:3520">
+                <KeyedProperty property="opacity" id="157:3521">
+                    <KeyFrameDouble id="157:3522"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="116:67" id="157:3523">
+                <KeyedProperty property="opacity" id="157:3524">
+                    <KeyFrameDouble id="157:3525"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="133:1" id="157:3526">
+                <KeyedProperty property="opacity" id="157:3527">
+                    <KeyFrameDouble id="157:3528"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="133:37" id="157:3529">
+                <KeyedProperty property="opacity" id="157:3530">
+                    <KeyFrameDouble id="157:3531"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="139:501" id="157:3532">
+                <KeyedProperty property="opacity" id="157:3533">
+                    <KeyFrameDouble id="157:3534"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3001" id="157:3535">
+                <KeyedProperty property="opacity" id="157:3536">
+                    <KeyFrameDouble id="157:3537"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3273" id="157:3538">
+                <KeyedProperty property="opacity" id="157:3539">
+                    <KeyFrameDouble id="157:3540" value="1"/>
                 </KeyedProperty>
             </KeyedObject>
         </LinearAnimation>
@@ -1955,6 +2277,8 @@
                 <AnimationState animationId="133:108" x="160" y="400" stateName="Icon 8" id="133:260"/>
                 <AnimationState animationId="133:136" x="160" y="500" stateName="Icon 9" id="133:261"/>
                 <AnimationState animationId="139:720" x="280.0" y="500" stateName="Icon 10" id="139:751"/>
+                <AnimationState animationId="157:3226" x="400.0" y="500" stateName="Icon 11" id="157:3260"/>
+                <AnimationState animationId="157:3504" x="520.0" y="500" stateName="Icon 12" id="157:3541"/>
                 <AnimationState animationId="903:1" x="160" y="-400" stateName="Icon 0" id="903:2"/>
                 <AnimationState animationId="903:24" x="160" y="-300" stateName="Icon 1" id="903:25"/>
                 <AnimationState animationId="903:47" x="160" y="-200" stateName="Icon 2" id="903:48"/>
@@ -2074,6 +2398,26 @@
                             <TransitionValueNumberComparator value="10" id="139:757"/>
                         </TransitionViewModelCondition>
                     </StateTransition>
+                    <StateTransition stateToId="157:3260" id="157:3261">
+                        <TransitionViewModelCondition id="157:3262">
+                            <TransitionPropertyViewModelComparator id="157:3263">
+                                <BindablePropertyNumber id="157:3264">
+                                    <DataBindContext sourcePathIds="1:151-33:164" propertyKey="636" id="157:3265"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueNumberComparator value="11" id="157:3266"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                    <StateTransition stateToId="157:3541" id="157:3542">
+                        <TransitionViewModelCondition id="157:3543">
+                            <TransitionPropertyViewModelComparator id="157:3544">
+                                <BindablePropertyNumber id="157:3545">
+                                    <DataBindContext sourcePathIds="1:151-33:164" propertyKey="636" id="157:3546"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueNumberComparator value="12" id="157:3547"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
                 </AnyState>
                 <ExitState x="480" id="903:283"/>
                 <EntryState id="903:284">
@@ -2185,6 +2529,26 @@
                                 </BindablePropertyNumber>
                             </TransitionPropertyViewModelComparator>
                             <TransitionValueNumberComparator value="10" id="139:763"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                    <StateTransition stateToId="157:3260" id="157:3267">
+                        <TransitionViewModelCondition id="157:3268">
+                            <TransitionPropertyViewModelComparator id="157:3269">
+                                <BindablePropertyNumber id="157:3270">
+                                    <DataBindContext sourcePathIds="1:151-33:164" propertyKey="636" id="157:3271"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueNumberComparator value="11" id="157:3272"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                    <StateTransition stateToId="157:3541" id="157:3548">
+                        <TransitionViewModelCondition id="157:3549">
+                            <TransitionPropertyViewModelComparator id="157:3550">
+                                <BindablePropertyNumber id="157:3551">
+                                    <DataBindContext sourcePathIds="1:151-33:164" propertyKey="636" id="157:3552"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueNumberComparator value="12" id="157:3553"/>
                         </TransitionViewModelCondition>
                     </StateTransition>
                 </EntryState>
@@ -2607,6 +2971,66 @@
                     <KeyFrameDouble value="1.75" id="139:575"/>
                 </KeyedProperty>
             </KeyedObject>
+            <KeyedObject objectId="157:3006" id="157:3064">
+                <KeyedProperty property="thickness" id="157:3065">
+                    <KeyFrameDouble id="157:3066"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3009" id="157:3067">
+                <KeyedProperty property="thickness" id="157:3068">
+                    <KeyFrameDouble id="157:3069"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3012" id="157:3070">
+                <KeyedProperty property="thickness" id="157:3071">
+                    <KeyFrameDouble id="157:3072"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3015" id="157:3073">
+                <KeyedProperty property="thickness" id="157:3074">
+                    <KeyFrameDouble id="157:3075"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3018" id="157:3076">
+                <KeyedProperty property="thickness" id="157:3077">
+                    <KeyFrameDouble id="157:3078"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3021" id="157:3079">
+                <KeyedProperty property="thickness" id="157:3080">
+                    <KeyFrameDouble value="1.75" id="157:3081"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3278" id="157:3342">
+                <KeyedProperty property="thickness" id="157:3343">
+                    <KeyFrameDouble id="157:3344"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3281" id="157:3345">
+                <KeyedProperty property="thickness" id="157:3346">
+                    <KeyFrameDouble id="157:3347"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3284" id="157:3348">
+                <KeyedProperty property="thickness" id="157:3349">
+                    <KeyFrameDouble id="157:3350"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3287" id="157:3351">
+                <KeyedProperty property="thickness" id="157:3352">
+                    <KeyFrameDouble id="157:3353"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3290" id="157:3354">
+                <KeyedProperty property="thickness" id="157:3355">
+                    <KeyFrameDouble id="157:3356"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3293" id="157:3357">
+                <KeyedProperty property="thickness" id="157:3358">
+                    <KeyFrameDouble value="1.75" id="157:3359"/>
+                </KeyedProperty>
+            </KeyedObject>
         </LinearAnimation>
         <LinearAnimation loopValue="loop" name="Look Text Brand" id="135:1698">
             <KeyedObject objectId="33:279" id="135:1699">
@@ -2992,6 +3416,66 @@
             <KeyedObject objectId="139:521" id="139:591">
                 <KeyedProperty property="thickness" id="139:592">
                     <KeyFrameDouble id="139:593"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3006" id="157:3082">
+                <KeyedProperty property="thickness" id="157:3083">
+                    <KeyFrameDouble id="157:3084"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3009" id="157:3085">
+                <KeyedProperty property="thickness" id="157:3086">
+                    <KeyFrameDouble id="157:3087"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3012" id="157:3088">
+                <KeyedProperty property="thickness" id="157:3089">
+                    <KeyFrameDouble id="157:3090"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3015" id="157:3091">
+                <KeyedProperty property="thickness" id="157:3092">
+                    <KeyFrameDouble id="157:3093"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3018" id="157:3094">
+                <KeyedProperty property="thickness" id="157:3095">
+                    <KeyFrameDouble value="1.75" id="157:3096"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3021" id="157:3097">
+                <KeyedProperty property="thickness" id="157:3098">
+                    <KeyFrameDouble id="157:3099"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3278" id="157:3360">
+                <KeyedProperty property="thickness" id="157:3361">
+                    <KeyFrameDouble id="157:3362"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3281" id="157:3363">
+                <KeyedProperty property="thickness" id="157:3364">
+                    <KeyFrameDouble id="157:3365"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3284" id="157:3366">
+                <KeyedProperty property="thickness" id="157:3367">
+                    <KeyFrameDouble id="157:3368"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3287" id="157:3369">
+                <KeyedProperty property="thickness" id="157:3370">
+                    <KeyFrameDouble id="157:3371"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3290" id="157:3372">
+                <KeyedProperty property="thickness" id="157:3373">
+                    <KeyFrameDouble value="1.75" id="157:3374"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3293" id="157:3375">
+                <KeyedProperty property="thickness" id="157:3376">
+                    <KeyFrameDouble id="157:3377"/>
                 </KeyedProperty>
             </KeyedObject>
         </LinearAnimation>
@@ -3381,6 +3865,66 @@
                     <KeyFrameDouble id="139:611"/>
                 </KeyedProperty>
             </KeyedObject>
+            <KeyedObject objectId="157:3006" id="157:3100">
+                <KeyedProperty property="thickness" id="157:3101">
+                    <KeyFrameDouble id="157:3102"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3009" id="157:3103">
+                <KeyedProperty property="thickness" id="157:3104">
+                    <KeyFrameDouble value="1.75" id="157:3105"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3012" id="157:3106">
+                <KeyedProperty property="thickness" id="157:3107">
+                    <KeyFrameDouble id="157:3108"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3015" id="157:3109">
+                <KeyedProperty property="thickness" id="157:3110">
+                    <KeyFrameDouble id="157:3111"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3018" id="157:3112">
+                <KeyedProperty property="thickness" id="157:3113">
+                    <KeyFrameDouble id="157:3114"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3021" id="157:3115">
+                <KeyedProperty property="thickness" id="157:3116">
+                    <KeyFrameDouble id="157:3117"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3278" id="157:3378">
+                <KeyedProperty property="thickness" id="157:3379">
+                    <KeyFrameDouble id="157:3380"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3281" id="157:3381">
+                <KeyedProperty property="thickness" id="157:3382">
+                    <KeyFrameDouble value="1.75" id="157:3383"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3284" id="157:3384">
+                <KeyedProperty property="thickness" id="157:3385">
+                    <KeyFrameDouble id="157:3386"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3287" id="157:3387">
+                <KeyedProperty property="thickness" id="157:3388">
+                    <KeyFrameDouble id="157:3389"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3290" id="157:3390">
+                <KeyedProperty property="thickness" id="157:3391">
+                    <KeyFrameDouble id="157:3392"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3293" id="157:3393">
+                <KeyedProperty property="thickness" id="157:3394">
+                    <KeyFrameDouble id="157:3395"/>
+                </KeyedProperty>
+            </KeyedObject>
         </LinearAnimation>
         <LinearAnimation loopValue="loop" name="Look Outlined Destructive" id="135:1276">
             <KeyedObject objectId="33:279" id="135:1277">
@@ -3766,6 +4310,66 @@
             <KeyedObject objectId="139:521" id="139:627">
                 <KeyedProperty property="thickness" id="139:628">
                     <KeyFrameDouble value="1.75" id="139:629"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3006" id="157:3118">
+                <KeyedProperty property="thickness" id="157:3119">
+                    <KeyFrameDouble id="157:3120"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3009" id="157:3121">
+                <KeyedProperty property="thickness" id="157:3122">
+                    <KeyFrameDouble id="157:3123"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3012" id="157:3124">
+                <KeyedProperty property="thickness" id="157:3125">
+                    <KeyFrameDouble id="157:3126"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3015" id="157:3127">
+                <KeyedProperty property="thickness" id="157:3128">
+                    <KeyFrameDouble id="157:3129"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3018" id="157:3130">
+                <KeyedProperty property="thickness" id="157:3131">
+                    <KeyFrameDouble id="157:3132"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3021" id="157:3133">
+                <KeyedProperty property="thickness" id="157:3134">
+                    <KeyFrameDouble value="1.75" id="157:3135"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3278" id="157:3396">
+                <KeyedProperty property="thickness" id="157:3397">
+                    <KeyFrameDouble id="157:3398"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3281" id="157:3399">
+                <KeyedProperty property="thickness" id="157:3400">
+                    <KeyFrameDouble id="157:3401"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3284" id="157:3402">
+                <KeyedProperty property="thickness" id="157:3403">
+                    <KeyFrameDouble id="157:3404"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3287" id="157:3405">
+                <KeyedProperty property="thickness" id="157:3406">
+                    <KeyFrameDouble id="157:3407"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3290" id="157:3408">
+                <KeyedProperty property="thickness" id="157:3409">
+                    <KeyFrameDouble id="157:3410"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3293" id="157:3411">
+                <KeyedProperty property="thickness" id="157:3412">
+                    <KeyFrameDouble value="1.75" id="157:3413"/>
                 </KeyedProperty>
             </KeyedObject>
         </LinearAnimation>
@@ -4155,6 +4759,66 @@
                     <KeyFrameDouble id="139:647"/>
                 </KeyedProperty>
             </KeyedObject>
+            <KeyedObject objectId="157:3006" id="157:3136">
+                <KeyedProperty property="thickness" id="157:3137">
+                    <KeyFrameDouble id="157:3138"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3009" id="157:3139">
+                <KeyedProperty property="thickness" id="157:3140">
+                    <KeyFrameDouble id="157:3141"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3012" id="157:3142">
+                <KeyedProperty property="thickness" id="157:3143">
+                    <KeyFrameDouble id="157:3144"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3015" id="157:3145">
+                <KeyedProperty property="thickness" id="157:3146">
+                    <KeyFrameDouble id="157:3147"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3018" id="157:3148">
+                <KeyedProperty property="thickness" id="157:3149">
+                    <KeyFrameDouble value="1.75" id="157:3150"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3021" id="157:3151">
+                <KeyedProperty property="thickness" id="157:3152">
+                    <KeyFrameDouble id="157:3153"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3278" id="157:3414">
+                <KeyedProperty property="thickness" id="157:3415">
+                    <KeyFrameDouble id="157:3416"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3281" id="157:3417">
+                <KeyedProperty property="thickness" id="157:3418">
+                    <KeyFrameDouble id="157:3419"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3284" id="157:3420">
+                <KeyedProperty property="thickness" id="157:3421">
+                    <KeyFrameDouble id="157:3422"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3287" id="157:3423">
+                <KeyedProperty property="thickness" id="157:3424">
+                    <KeyFrameDouble id="157:3425"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3290" id="157:3426">
+                <KeyedProperty property="thickness" id="157:3427">
+                    <KeyFrameDouble value="1.75" id="157:3428"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3293" id="157:3429">
+                <KeyedProperty property="thickness" id="157:3430">
+                    <KeyFrameDouble id="157:3431"/>
+                </KeyedProperty>
+            </KeyedObject>
         </LinearAnimation>
         <LinearAnimation loopValue="loop" name="Look Outlined Neutral" id="135:854">
             <KeyedObject objectId="33:279" id="135:855">
@@ -4540,6 +5204,66 @@
             <KeyedObject objectId="139:521" id="139:663">
                 <KeyedProperty property="thickness" id="139:664">
                     <KeyFrameDouble id="139:665"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3006" id="157:3154">
+                <KeyedProperty property="thickness" id="157:3155">
+                    <KeyFrameDouble id="157:3156"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3009" id="157:3157">
+                <KeyedProperty property="thickness" id="157:3158">
+                    <KeyFrameDouble value="1.75" id="157:3159"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3012" id="157:3160">
+                <KeyedProperty property="thickness" id="157:3161">
+                    <KeyFrameDouble id="157:3162"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3015" id="157:3163">
+                <KeyedProperty property="thickness" id="157:3164">
+                    <KeyFrameDouble id="157:3165"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3018" id="157:3166">
+                <KeyedProperty property="thickness" id="157:3167">
+                    <KeyFrameDouble id="157:3168"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3021" id="157:3169">
+                <KeyedProperty property="thickness" id="157:3170">
+                    <KeyFrameDouble id="157:3171"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3278" id="157:3432">
+                <KeyedProperty property="thickness" id="157:3433">
+                    <KeyFrameDouble id="157:3434"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3281" id="157:3435">
+                <KeyedProperty property="thickness" id="157:3436">
+                    <KeyFrameDouble value="1.75" id="157:3437"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3284" id="157:3438">
+                <KeyedProperty property="thickness" id="157:3439">
+                    <KeyFrameDouble id="157:3440"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3287" id="157:3441">
+                <KeyedProperty property="thickness" id="157:3442">
+                    <KeyFrameDouble id="157:3443"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3290" id="157:3444">
+                <KeyedProperty property="thickness" id="157:3445">
+                    <KeyFrameDouble id="157:3446"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3293" id="157:3447">
+                <KeyedProperty property="thickness" id="157:3448">
+                    <KeyFrameDouble id="157:3449"/>
                 </KeyedProperty>
             </KeyedObject>
         </LinearAnimation>
@@ -4929,6 +5653,66 @@
                     <KeyFrameDouble id="139:683"/>
                 </KeyedProperty>
             </KeyedObject>
+            <KeyedObject objectId="157:3006" id="157:3172">
+                <KeyedProperty property="thickness" id="157:3173">
+                    <KeyFrameDouble id="157:3174"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3009" id="157:3175">
+                <KeyedProperty property="thickness" id="157:3176">
+                    <KeyFrameDouble id="157:3177"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3012" id="157:3178">
+                <KeyedProperty property="thickness" id="157:3179">
+                    <KeyFrameDouble id="157:3180"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3015" id="157:3181">
+                <KeyedProperty property="thickness" id="157:3182">
+                    <KeyFrameDouble value="1.75" id="157:3183"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3018" id="157:3184">
+                <KeyedProperty property="thickness" id="157:3185">
+                    <KeyFrameDouble id="157:3186"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3021" id="157:3187">
+                <KeyedProperty property="thickness" id="157:3188">
+                    <KeyFrameDouble id="157:3189"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3278" id="157:3450">
+                <KeyedProperty property="thickness" id="157:3451">
+                    <KeyFrameDouble id="157:3452"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3281" id="157:3453">
+                <KeyedProperty property="thickness" id="157:3454">
+                    <KeyFrameDouble id="157:3455"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3284" id="157:3456">
+                <KeyedProperty property="thickness" id="157:3457">
+                    <KeyFrameDouble id="157:3458"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3287" id="157:3459">
+                <KeyedProperty property="thickness" id="157:3460">
+                    <KeyFrameDouble value="1.75" id="157:3461"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3290" id="157:3462">
+                <KeyedProperty property="thickness" id="157:3463">
+                    <KeyFrameDouble id="157:3464"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3293" id="157:3465">
+                <KeyedProperty property="thickness" id="157:3466">
+                    <KeyFrameDouble id="157:3467"/>
+                </KeyedProperty>
+            </KeyedObject>
         </LinearAnimation>
         <LinearAnimation loopValue="loop" name="Look Contained Brand" id="135:432">
             <KeyedObject objectId="33:279" id="135:433">
@@ -5316,6 +6100,66 @@
                     <KeyFrameDouble id="139:701"/>
                 </KeyedProperty>
             </KeyedObject>
+            <KeyedObject objectId="157:3006" id="157:3190">
+                <KeyedProperty property="thickness" id="157:3191">
+                    <KeyFrameDouble value="1.75" id="157:3192"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3009" id="157:3193">
+                <KeyedProperty property="thickness" id="157:3194">
+                    <KeyFrameDouble id="157:3195"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3012" id="157:3196">
+                <KeyedProperty property="thickness" id="157:3197">
+                    <KeyFrameDouble id="157:3198"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3015" id="157:3199">
+                <KeyedProperty property="thickness" id="157:3200">
+                    <KeyFrameDouble id="157:3201"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3018" id="157:3202">
+                <KeyedProperty property="thickness" id="157:3203">
+                    <KeyFrameDouble id="157:3204"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3021" id="157:3205">
+                <KeyedProperty property="thickness" id="157:3206">
+                    <KeyFrameDouble id="157:3207"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3278" id="157:3468">
+                <KeyedProperty property="thickness" id="157:3469">
+                    <KeyFrameDouble value="1.75" id="157:3470"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3281" id="157:3471">
+                <KeyedProperty property="thickness" id="157:3472">
+                    <KeyFrameDouble id="157:3473"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3284" id="157:3474">
+                <KeyedProperty property="thickness" id="157:3475">
+                    <KeyFrameDouble id="157:3476"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3287" id="157:3477">
+                <KeyedProperty property="thickness" id="157:3478">
+                    <KeyFrameDouble id="157:3479"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3290" id="157:3480">
+                <KeyedProperty property="thickness" id="157:3481">
+                    <KeyFrameDouble id="157:3482"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3293" id="157:3483">
+                <KeyedProperty property="thickness" id="157:3484">
+                    <KeyFrameDouble id="157:3485"/>
+                </KeyedProperty>
+            </KeyedObject>
         </LinearAnimation>
         <LinearAnimation loopValue="loop" name="Look Contained Neutral" id="135:221">
             <KeyedObject objectId="33:279" id="135:222">
@@ -5701,6 +6545,66 @@
             <KeyedObject objectId="139:521" id="139:717">
                 <KeyedProperty property="thickness" id="139:718">
                     <KeyFrameDouble id="139:719"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3006" id="157:3208">
+                <KeyedProperty property="thickness" id="157:3209">
+                    <KeyFrameDouble id="157:3210"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3009" id="157:3211">
+                <KeyedProperty property="thickness" id="157:3212">
+                    <KeyFrameDouble id="157:3213"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3012" id="157:3214">
+                <KeyedProperty property="thickness" id="157:3215">
+                    <KeyFrameDouble value="1.75" id="157:3216"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3015" id="157:3217">
+                <KeyedProperty property="thickness" id="157:3218">
+                    <KeyFrameDouble id="157:3219"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3018" id="157:3220">
+                <KeyedProperty property="thickness" id="157:3221">
+                    <KeyFrameDouble id="157:3222"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3021" id="157:3223">
+                <KeyedProperty property="thickness" id="157:3224">
+                    <KeyFrameDouble id="157:3225"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3278" id="157:3486">
+                <KeyedProperty property="thickness" id="157:3487">
+                    <KeyFrameDouble id="157:3488"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3281" id="157:3489">
+                <KeyedProperty property="thickness" id="157:3490">
+                    <KeyFrameDouble id="157:3491"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3284" id="157:3492">
+                <KeyedProperty property="thickness" id="157:3493">
+                    <KeyFrameDouble value="1.75" id="157:3494"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3287" id="157:3495">
+                <KeyedProperty property="thickness" id="157:3496">
+                    <KeyFrameDouble id="157:3497"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3290" id="157:3498">
+                <KeyedProperty property="thickness" id="157:3499">
+                    <KeyFrameDouble id="157:3500"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="157:3293" id="157:3501">
+                <KeyedProperty property="thickness" id="157:3502">
+                    <KeyFrameDouble id="157:3503"/>
                 </KeyedProperty>
             </KeyedObject>
         </LinearAnimation>
