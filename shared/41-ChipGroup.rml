@@ -1,0 +1,29 @@
+<Rive version="1" kind="fragment">
+    <Artboard defaultStateMachineId="141:3001" viewModelId="141:9" viewModelInstanceId="141:70" isComponent="true" includeInExport="false" spaceId="1:5601" width="280" height="72" styleId="141:3004" x="3000" y="800" name="Chip Group" id="141:3000">
+        <Fill fillRule="clockwise" id="141:3006">
+            <SolidColor colorValue="00000000" id="141:3007"/>
+        </Fill>
+        <LayoutComponentStyle intrinsicallySizedValue="true" layoutHeightScaleType="hug" id="141:3004"/>
+        <LayoutComponent styleId="141:3005" name="Chips" id="141:3008">
+            <ArtboardComponentList participatesInLayout="true" id="141:3009">
+                <DataBindContext sourcePathIds="141:9-141:10" propertyKey="800" id="141:3010"/>
+            </ArtboardComponentList>
+            <LayoutComponentStyle gapHorizontal="8" gapVertical="8" flexWrapValue="wrap" intrinsicallySizedValue="true" layoutWidthScaleType="fill" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="141:3005"/>
+            <SemanticData role="group" name="Semantics" id="141:3011">
+                <DataBindContext sourcePathIds="141:9-141:11" propertyKey="983" nameBased="true" id="141:3012"/>
+                <DataBindContext sourcePathIds="141:9-141:12" propertyKey="1004" nameBased="true" id="141:3013"/>
+            </SemanticData>
+        </LayoutComponent>
+        <StateMachine name="State Machine 1" id="141:3001">
+            <StateMachineLayer name="Layer 1" id="141:3014">
+                <AnyState x="400" id="141:3015"/>
+                <ExitState x="480" id="141:3016"/>
+                <EntryState id="141:3017">
+                    <StateTransition stateToId="141:3002" id="141:3018"/>
+                </EntryState>
+                <AnimationState animationId="141:3003" x="160" id="141:3002"/>
+            </StateMachineLayer>
+        </StateMachine>
+        <LinearAnimation name="Timeline 1" id="141:3003"/>
+    </Artboard>
+</Rive>

@@ -1,0 +1,289 @@
+<Rive version="1" kind="fragment">
+    <Artboard defaultStateMachineId="140:1012" viewModelId="140:3" viewModelInstanceId="140:30" isComponent="true" includeInExport="false" spaceId="1:5601" width="80" height="40" styleId="140:1004" x="3000" name="Tab" id="140:1000">
+        <Fill fillRule="clockwise" id="140:1054">
+            <SolidColor colorValue="00000000" id="140:1055"/>
+        </Fill>
+        <LayoutComponentStyle layoutAlignmentType="center" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="140:1004"/>
+        <LayoutComponent styleId="140:1005" name="Tab" id="140:1001">
+            <LayoutComponent styleId="140:1006" isTargetOpaque="true" name="Disabled Shield" id="140:1002">
+                <Fill fillRule="clockwise" id="140:1056">
+                    <SolidColor colorValue="00000000" id="140:1057"/>
+                </Fill>
+                <LayoutComponentStyle positionLeftUnitsValue="points" positionRightUnitsValue="points" positionTopUnitsValue="points" positionBottomUnitsValue="points" edgeConstraints="84" positionTypeValue="absolute" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="140:1006">
+                    <DataBindContext sourcePathIds="140:3-140:6" propertyKey="596" converterId="9:90" nameBased="true" id="140:1058"/>
+                </LayoutComponentStyle>
+            </LayoutComponent>
+            <LayoutComponent styleId="140:1007" name="Slot" id="140:1051">
+                <LayoutComponent styleId="140:1008" name="Label" id="140:1052">
+                    <Text name="Disabled Text" id="140:1020">
+                        <TextStylePaint fontSize="14" fontAssetId="0:7" familyName="Inter" styleName="Medium" id="140:1019">
+                            <Fill fillRule="clockwise" id="140:1021">
+                                <SolidColor colorValue="FFA1A1AA" id="140:1022">
+                                    <DataBindContext sourcePathIds="10:7-10:7426" propertyKey="37" id="140:1023"/>
+                                </SolidColor>
+                            </Fill>
+                            <TextStyleAxis tag="1869640570" axisValue="14" id="140:1024"/>
+                            <TextStyleAxis tag="2003265652" axisValue="500" id="140:1025"/>
+                        </TextStylePaint>
+                        <TextValueRun styleId="140:1019" text="Tab" id="140:1026">
+                            <DataBindContext sourcePathIds="140:3-140:4" propertyKey="268" nameBased="true" id="140:1027"/>
+                        </TextValueRun>
+                        <LayoutParticipant layoutWidthScaleType="hug" layoutHeightScaleType="hug" id="140:1028"/>
+                        <DataBindContext sourcePathIds="140:3-140:6" propertyKey="18" converterId="9:145" nameBased="true" id="140:1018"/>
+                    </Text>
+                    <Text opacity="0" name="Active Text" id="140:1030">
+                        <TextStylePaint fontSize="14" fontAssetId="0:7" familyName="Inter" styleName="Medium" id="140:1029">
+                            <Fill fillRule="clockwise" id="140:1031">
+                                <SolidColor colorValue="FFFAFAFA" id="140:1032">
+                                    <DataBindContext sourcePathIds="10:7-10:7422" propertyKey="37" id="140:1033"/>
+                                </SolidColor>
+                            </Fill>
+                            <TextStyleAxis tag="1869640570" axisValue="14" id="140:1034"/>
+                            <TextStyleAxis tag="2003265652" axisValue="500" id="140:1035"/>
+                        </TextStylePaint>
+                        <TextValueRun styleId="140:1029" text="Tab" id="140:1036">
+                            <DataBindContext sourcePathIds="140:3-140:4" propertyKey="268" nameBased="true" id="140:1037"/>
+                        </TextValueRun>
+                        <LayoutParticipant layoutWidthScaleType="hug" layoutHeightScaleType="hug" id="140:1038"/>
+                    </Text>
+                    <Text name="Text" id="140:1040">
+                        <TextStylePaint fontSize="14" fontAssetId="0:7" familyName="Inter" styleName="Medium" id="140:1039">
+                            <Fill fillRule="clockwise" id="140:1041">
+                                <SolidColor colorValue="FFD4D4D8" id="140:1042">
+                                    <DataBindContext sourcePathIds="10:7-10:7424" propertyKey="37" id="140:1043"/>
+                                </SolidColor>
+                            </Fill>
+                            <TextStyleAxis tag="1869640570" axisValue="14" id="140:1044"/>
+                            <TextStyleAxis tag="2003265652" axisValue="500" id="140:1045"/>
+                        </TextStylePaint>
+                        <TextValueRun styleId="140:1039" text="Tab" id="140:1046">
+                            <DataBindContext sourcePathIds="140:3-140:4" propertyKey="268" nameBased="true" id="140:1047"/>
+                        </TextValueRun>
+                        <LayoutParticipant layoutWidthScaleType="hug" layoutHeightScaleType="hug" id="140:1048"/>
+                    </Text>
+                    <LayoutComponentStyle paddingLeft="10" paddingRight="10" paddingTop="6" paddingBottom="6" layoutTypeValue="stack" layoutAlignmentType="center" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="140:1008"/>
+                </LayoutComponent>
+                <LayoutComponent styleId="140:1009" opacity="0" name="Hover" id="140:1053">
+                    <Fill fillRule="clockwise" id="140:1059">
+                        <SolidColor colorValue="FF323238" id="140:1060">
+                            <DataBindContext sourcePathIds="10:7-10:7416" propertyKey="37" id="140:1061"/>
+                        </SolidColor>
+                    </Fill>
+                    <LayoutComponentStyle cornerRadiusTL="4" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="140:1009">
+                        <DataBindContext sourcePathIds="10:7-901:21" propertyKey="640" converterId="0:0" id="140:1062"/>
+                    </LayoutComponentStyle>
+                    <DataBindContext sourcePathIds="140:3-140:9" propertyKey="18" converterId="9:145" nameBased="true" id="140:1063"/>
+                </LayoutComponent>
+                <LayoutComponentStyle layoutTypeValue="stack" layoutAlignmentType="center" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="140:1007"/>
+            </LayoutComponent>
+            <LayoutComponent height="2" styleId="140:1010" opacity="0" name="Indicator" id="140:1049">
+                <LayoutComponent styleId="140:1011" name="Disabled Indicator" id="140:1050">
+                    <Fill fillRule="clockwise" id="140:1064">
+                        <SolidColor colorValue="FF3F3F46" id="140:1065">
+                            <DataBindContext sourcePathIds="10:7-10:7420" propertyKey="37" id="140:1066"/>
+                        </SolidColor>
+                    </Fill>
+                    <LayoutComponentStyle cornerRadiusTL="1" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="140:1011"/>
+                    <DataBindContext sourcePathIds="140:3-140:6" propertyKey="18" converterId="9:145" nameBased="true" id="140:1067"/>
+                </LayoutComponent>
+                <Fill fillRule="clockwise" id="140:1068">
+                    <SolidColor colorValue="FF2563EB" id="140:1069">
+                        <DataBindContext sourcePathIds="10:7-10:2104" propertyKey="37" id="140:1070"/>
+                    </SolidColor>
+                </Fill>
+                <LayoutComponentStyle cornerRadiusTL="1" layoutWidthScaleType="fill" widthUnitsValue="auto" id="140:1010"/>
+            </LayoutComponent>
+            <LayoutComponentStyle gapVertical="6" paddingTop="4" flexDirectionValue="column" layoutAlignmentType="center" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="140:1005"/>
+            <SemanticData role="tab" traitFlags="34" name="Semantics" id="140:1003">
+                <DataBindContext sourcePathIds="140:3-140:4" propertyKey="983" nameBased="true" id="140:1071"/>
+                <DataBindContext sourcePathIds="140:3-140:8" propertyKey="1004" nameBased="true" id="140:1072"/>
+                <DataBindContext sourcePathIds="140:3-140:6" propertyKey="1002" nameBased="true" id="140:1073"/>
+            </SemanticData>
+            <FocusData name="Focus" id="140:1074">
+                <DataBindContext sourcePathIds="140:3-140:6" propertyKey="953" converterId="1:1018" nameBased="true" id="140:1075"/>
+            </FocusData>
+        </LayoutComponent>
+        <StateMachine name="State Machine 1" id="140:1012">
+            <StateMachineListener targetId="140:1001" name="Cursor Off" id="140:1076">
+                <ListenerInputType listenerTypeValue="exit" id="140:1077"/>
+                <ListenerViewModelChange id="140:1078">
+                    <BindablePropertyBoolean id="140:1079">
+                        <DataBindContext sourcePathIds="10:7-63:244" propertyKey="634" direction="true" id="140:1080"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListener targetId="140:1001" name="Cursor On" id="140:1081">
+                <ListenerInputType id="140:1082"/>
+                <ListenerInputType listenerTypeValue="move" id="140:1083"/>
+                <ListenerViewModelChange id="140:1084">
+                    <BindablePropertyBoolean propertyValue="true" id="140:1085">
+                        <DataBindContext sourcePathIds="10:7-63:244" propertyKey="634" direction="true" id="140:1086"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListener targetId="140:1001" name="Hover Off" id="140:1087">
+                <ListenerInputType listenerTypeValue="exit" id="140:1088"/>
+                <ListenerViewModelChange id="140:1089">
+                    <BindablePropertyBoolean id="140:1090">
+                        <DataBindContext sourcePathIds="140:3-140:9" propertyKey="634" direction="true" id="140:1091"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListener targetId="140:1001" name="Hover On" id="140:1092">
+                <ListenerInputType id="140:1093"/>
+                <ListenerViewModelChange id="140:1094">
+                    <BindablePropertyBoolean propertyValue="true" id="140:1095">
+                        <DataBindContext sourcePathIds="140:3-140:9" propertyKey="634" direction="true" id="140:1096"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListener targetId="140:1000" name="Preview Disabled" id="140:1098">
+                <ListenerInputTypeViewModel viewModelPathIds="10:7-15:419" listenerTypeValue="viewModel" id="140:1099"/>
+                <ListenerViewModelChange fromViewModelProperty="true" fromDataBindId="140:1097" id="140:1100">
+                    <BindablePropertyBoolean id="140:1101">
+                        <DataBindContext sourcePathIds="140:3-140:6" propertyKey="634" direction="true" id="140:1102"/>
+                        <DataBindContext sourcePathIds="10:7-15:419" propertyKey="634" id="140:1097"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListener targetId="140:1002" name="Disabled Block" id="140:1103">
+                <ListenerInputType id="140:1104"/>
+                <ListenerViewModelChange id="140:1105">
+                    <BindablePropertyBoolean id="140:1106">
+                        <DataBindContext sourcePathIds="140:3-140:9" propertyKey="634" direction="true" id="140:1107"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListener targetId="140:1001" name="Activate" id="140:1108">
+                <ListenerInputType listenerTypeValue="click" id="140:1109"/>
+                <ListenerInputTypeSemantic listenerTypeValue="semanticAction" id="140:1110">
+                    <SemanticInput id="140:1111"/>
+                </ListenerInputTypeSemantic>
+                <ListenerInputTypeKeyboard listenerTypeValue="keyboard" id="140:1112">
+                    <KeyboardInput keyType="enter" keyPhase="1" id="140:1113"/>
+                    <KeyboardInput keyType="kpEnter" keyPhase="1" id="140:1114"/>
+                    <KeyboardInput keyType="space" keyPhase="1" id="140:1115"/>
+                </ListenerInputTypeKeyboard>
+                <ListenerViewModelChange fromViewModelProperty="true" fromDataBindId="140:1116" id="140:1117">
+                    <BindablePropertyTrigger id="140:1118">
+                        <DataBindContext sourcePathIds="140:3-140:10" propertyKey="686" id="140:1116"/>
+                        <DataBindContext sourcePathIds="140:3-140:10" propertyKey="686" direction="true" converterId="1:1332" id="140:1119"/>
+                    </BindablePropertyTrigger>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListener targetId="140:1000" name="Select" id="140:1121">
+                <ListenerInputTypeViewModel viewModelPathIds="140:3-140:11" listenerTypeValue="viewModel" id="140:1122"/>
+                <ListenerViewModelChange fromViewModelProperty="true" fromDataBindId="140:1120" id="140:1123">
+                    <BindablePropertyNumber id="140:1124">
+                        <DataBindContext sourcePathIds="140:3-140:7-140:2" propertyKey="636" direction="true" id="140:1125"/>
+                        <DataBindContext sourcePathIds="140:3-140:5" propertyKey="636" id="140:1120"/>
+                    </BindablePropertyNumber>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineLayer name="Selection" id="140:1126">
+                <AnyState x="400" id="140:1127">
+                    <StateTransition stateToId="140:1017" duration="150" interpolationType="cubic" id="140:1128">
+                        <TransitionViewModelCondition id="140:1129">
+                            <TransitionPropertyViewModelComparator id="140:1130">
+                                <BindablePropertyNumber id="140:1131">
+                                    <DataBindContext sourcePathIds="140:3-140:5" propertyKey="636" id="140:1132"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionPropertyViewModelComparator id="140:1133">
+                                <BindablePropertyNumber id="140:1134">
+                                    <DataBindContext sourcePathIds="140:3-140:7-140:2" propertyKey="636" id="140:1135"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                    <StateTransition stateToId="140:1016" duration="150" interpolationType="cubic" id="140:1136">
+                        <TransitionViewModelCondition opValue="notEqual" id="140:1137">
+                            <TransitionPropertyViewModelComparator id="140:1138">
+                                <BindablePropertyNumber id="140:1139">
+                                    <DataBindContext sourcePathIds="140:3-140:5" propertyKey="636" id="140:1140"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionPropertyViewModelComparator id="140:1141">
+                                <BindablePropertyNumber id="140:1142">
+                                    <DataBindContext sourcePathIds="140:3-140:7-140:2" propertyKey="636" id="140:1143"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                </AnyState>
+                <ExitState x="480" id="140:1144"/>
+                <EntryState id="140:1145">
+                    <StateTransition stateToId="140:1016" id="140:1146"/>
+                </EntryState>
+                <AnimationState animationId="140:1013" x="160" stateName="Unselected" id="140:1016"/>
+                <AnimationState animationId="140:1014" x="300" y="100" stateName="Selected" id="140:1017"/>
+            </StateMachineLayer>
+            <StateMachineLayer name="Activate" id="140:1149">
+                <AnimationState animationId="140:1015" x="160" stateName="Idle" id="140:1147">
+                    <StateTransition stateToId="140:1148" id="140:1150">
+                        <TransitionViewModelCondition opValue="notEqual" id="140:1151">
+                            <TransitionPropertyViewModelComparator id="140:1152">
+                                <BindablePropertyTrigger id="140:1153">
+                                    <DataBindContext sourcePathIds="140:3-140:10" propertyKey="686" id="140:1154"/>
+                                </BindablePropertyTrigger>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueTriggerComparator id="140:1155"/>
+                        </TransitionViewModelCondition>
+                        <TransitionViewModelCondition id="140:1156">
+                            <TransitionPropertyViewModelComparator id="140:1157">
+                                <BindablePropertyBoolean id="140:1158">
+                                    <DataBindContext sourcePathIds="140:3-140:6" propertyKey="634" id="140:1159"/>
+                                </BindablePropertyBoolean>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueBooleanComparator id="140:1160"/>
+                        </TransitionViewModelCondition>
+                        <StateMachineFireTrigger viewModelPathIds="140:3-140:11" id="140:1161"/>
+                    </StateTransition>
+                </AnimationState>
+                <AnimationState animationId="140:1015" x="400" stateName="Fire" id="140:1148">
+                    <StateTransition stateToId="140:1147" id="140:1162"/>
+                </AnimationState>
+                <AnyState x="560" id="140:1163"/>
+                <ExitState x="640" id="140:1164"/>
+                <EntryState id="140:1165">
+                    <StateTransition stateToId="140:1147" id="140:1166"/>
+                </EntryState>
+            </StateMachineLayer>
+        </StateMachine>
+        <LinearAnimation name="Unselected" loopValue="loop" id="140:1013">
+            <KeyedObject objectId="140:1030" id="140:1167">
+                <KeyedProperty property="opacity" id="140:1168">
+                    <KeyFrameDouble interpolationType="linear" id="140:1169"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="140:1049" id="140:1170">
+                <KeyedProperty property="opacity" id="140:1171">
+                    <KeyFrameDouble interpolationType="linear" id="140:1172"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="140:1003" id="140:1173">
+                <KeyedProperty property="isSelected" id="140:1174">
+                    <KeyFrameBool id="140:1175"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+        <LinearAnimation name="Selected" loopValue="loop" id="140:1014">
+            <KeyedObject objectId="140:1030" id="140:1176">
+                <KeyedProperty property="opacity" id="140:1177">
+                    <KeyFrameDouble value="1" interpolationType="linear" id="140:1178"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="140:1049" id="140:1179">
+                <KeyedProperty property="opacity" id="140:1180">
+                    <KeyFrameDouble value="1" interpolationType="linear" id="140:1181"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="140:1003" id="140:1182">
+                <KeyedProperty property="isSelected" id="140:1183">
+                    <KeyFrameBool value="true" id="140:1184"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+        <LinearAnimation name="Activate Idle" id="140:1015"/>
+    </Artboard>
+</Rive>

@@ -13,9 +13,9 @@ The kit is also on the [Rive Community](https://rive.app/community/files/25701-5
 - **Actions:** Button · Button Group · Dropdown
 - **Display:** Accordion · Avatar · Badge · Label
 - **Feedback:** Alert · Dialog · Progress Bar · Tooltip
-- **Inputs:** Checkbox / Checkbox Group · Radio Option / Radio Group · Slider · Switch / Switch Group
-- **Navigation:** Breadcrumbs · Pagination
-- **Building blocks:** Accordion Item · Breadcrumb Item · Dialog Demo · List Item · Nav Group · Nav Item · Page Item · Segment · Segmented Control · Showcase Section · Sidebar · Slide · Tile · Toolbar · Tooltip Button
+- **Inputs:** Checkbox / Checkbox Group · Chip / Chip Group · Radio Option / Radio Group · Slider · Switch / Switch Group
+- **Navigation:** Breadcrumbs · Pagination · Tabs
+- **Building blocks:** Accordion Item · Breadcrumb Item · Dialog Demo · List Item · Nav Group · Nav Item · Page Item · Segment · Segmented Control · Showcase Section · Sidebar · Slide · Tab · Tile · Toolbar · Tooltip Button
 
 Categories and the components in them are sorted A–Z. In the Showcase a category is data: a `ShowcaseSection` (title, tile list; the count is the list length) in `sections`, and a `NavGroup` in the Sidebar's `sections`.
 
@@ -46,12 +46,14 @@ The components carry Rive semantics, so screen readers get a real accessibility 
 | Badge, Label | `text` | text |
 | Breadcrumbs | `group` / `link` per item, `text` for the current page | label; item label, "Current page" |
 | Button, Dropdown, Page Item | `button` | label (the page number); Button also a hint |
-| Button Group, Checkbox Group, Pagination, Switch Group | `group` | group label |
+| Button Group, Checkbox Group, Chip Group, Pagination, Switch Group | `group` | group label |
 | Checkbox | `checkbox` | label, checked |
+| Chip | `button` (toggle) | label, on/off, disabled |
 | List Item | `list` / `listItem` | label |
 | Radio Option / Radio Group | `radioButton` / `radioGroup` | label, selected |
 | Slider | `slider` | label, value |
 | Switch | `switchControl` | label, on/off |
+| Tabs / Tab | `tabList` / `tab` | label; tab label, selected, disabled |
 | Dialog | `dialog`, `text`, `button` ×2 | title; body; the two Buttons |
 | Progress Bar | `group` / `text` | label; percentage ("64%") |
 | Tooltip | `text` | text (left out when its trigger carries it as a hint) |
@@ -106,6 +108,16 @@ A row of kit Buttons joined into one control: the outer corners follow the theme
 - Set `group` on every Button in the list: `1` first, `2` middle, `3` last (`0`, the default, is a standalone Button). It rounds only the outer corners and draws a divider before middle and last buttons; secondary borders merge into one line.
 - Each Button keeps its own `_pressed` trigger, hover, press ripple and disabled state, so you handle clicks per button as you would for a single Button.
 
+## Chip
+
+A pill you switch on and off, for filters and topics. On, it gets a check and the soft brand colours of the Label.
+
+- View model `Chip`: `label`, `selected` (two-way: a click, a screen reader's activate, or Enter/Space while it has keyboard focus toggles it), `disabled`, `a11yHidden`.
+- **Chip Group** wraps chips over as many rows as they need: view model `ChipGroup`: `chips` (a list of `Chip` instances), `label` (screen reader name), `a11yHidden`. Every chip keeps its own `selected`, so any number can be on. Read them from the list in your app.
+- Off: `_surface` with a `_border` line and `_text`. On: `_softBg`, `_softBorder` and `_softText`, the colours of the Label. Hover: `_surfaceHover`. Disabled: `_surfaceSubtle` and `_textMuted`. The corners follow `_radiusButton`.
+- Input goes through the same gate as the Button: every input fires `_activate`, and the Activate layer toggles only when `disabled` is false. A disabled chip also leaves keyboard focus.
+- Screen readers get a toggle `button` with the label that reports on or off.
+
 ## Pagination
 
 Previous and next Buttons around up to seven page buttons. Set two numbers and the component does the rest.
@@ -115,6 +127,17 @@ Previous and next Buttons around up to seven page buttons. Set two numbers and t
 - Previous and next step by one and are disabled on the first and last page.
 - Listen to `page` in your app to load that page.
 - The behaviour is a small Luau script, **Pagination Pages**: it fills the `_pages` list of Page Items and sets the disabled flags. Luau runs in the editor and in the Rive runtimes. Use a `.riv` exported from the editor or built with `rive --publish`: a plain CLI build (`--once`) does not run scripts. Like every script, it does not run in a Community thumbnail.
+
+## Tabs
+
+A row of tabs over a divider; the selected tab has full-strength text and a brand bar under it.
+
+- View model `Tabs`: `tabs` (a list of `Tab` instances), `selection` (a shared `TabSelection`), `label` (screen reader name), `a11yHidden`.
+- `Tab`: `label`, `value` (its position: `0` for the first), `disabled`, `group` (a `TabSelection`), `a11yHidden`. Point `group` of every Tab at the same `TabSelection` instance as the `Tabs` (as with Radio Group).
+- `TabSelection`: `selected`, the value of the selected tab. A click, a screen reader's activate, or Enter/Space on a focused tab writes it; set it from your app to switch tabs yourself.
+- The Tabs are the bar only. Rive has no slots, so show the matching content in your own layout from `selection.selected`.
+- Unselected tabs use `_textSecondary`, the selected one `_text` and a `_brand600` bar; hover adds a `_surfaceHover` background with `_radiusSmall` corners. A disabled tab turns `_textMuted` and ignores every input.
+- Screen readers get a `tabList` named by `label`, with a `tab` per item that reports selected and disabled.
 
 ## Dialog
 
@@ -153,7 +176,7 @@ A small bubble in the inverse theme colours (`_text` background, `_bg` text) wit
 
 ## Pointer cursor
 
-A canvas can't change the mouse cursor by itself, so the kit tells your app when to. `cursorPointer` (a boolean on the global Theme view model) is `true` while the pointer is over something clickable: an accordion header, a breadcrumb link, a button, checkbox, dropdown and its items, nav group header, nav item, page item, radio option, segment, slider, switch or tile. Disabled controls leave it `false`.
+A canvas can't change the mouse cursor by itself, so the kit tells your app when to. `cursorPointer` (a boolean on the global Theme view model) is `true` while the pointer is over something clickable: an accordion header, a breadcrumb link, a button, checkbox, chip, dropdown and its items, nav group header, nav item, page item, radio option, segment, slider, switch, tab or tile. Disabled controls leave it `false`.
 
 ```js
 const flag = rive.globalViewModelInstance("Theme").boolean("cursorPointer");

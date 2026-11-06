@@ -385,6 +385,64 @@ Contains: Checkbox
 </NestedArtboardLayout>
 ```
 
+## Chip
+
+Source: `shared/40-Chip.rml` · artboard `141:1000` · state machine `141:1004` · view model `Chip` `141:1`
+
+| Property | Type | Id |
+|---|---|---|
+| `label` | string | `141:2` |
+| `selected` | boolean | `141:3` |
+| `disabled` | boolean | `141:4` |
+| `a11yHidden` | boolean | `141:5` |
+| `_activate` | trigger | `141:7` |
+| `_toggle` | trigger | `141:8` |
+
+A pill you switch on and off, for filters and topics. On, it gets a check and the soft brand colours of the Label.
+
+- View model `Chip`: `label`, `selected` (two-way: a click, a screen reader's activate, or Enter/Space while it has keyboard focus toggles it), `disabled`, `a11yHidden`.
+- **Chip Group** wraps chips over as many rows as they need: view model `ChipGroup`: `chips` (a list of `Chip` instances), `label` (screen reader name), `a11yHidden`. Every chip keeps its own `selected`, so any number can be on. Read them from the list in your app.
+- Off: `_surface` with a `_border` line and `_text`. On: `_softBg`, `_softBorder` and `_softText`, the colours of the Label. Hover: `_surfaceHover`. Disabled: `_surfaceSubtle` and `_textMuted`. The corners follow `_radiusButton`.
+- Input goes through the same gate as the Button: every input fires `_activate`, and the Activate layer toggles only when `disabled` is false. A disabled chip also leaves keyboard focus.
+- Screen readers get a toggle `button` with the label that reports on or off.
+
+```xml
+<NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="141:1000" isStateful="true" name="Chip" id="X:1">
+    <NestedStateMachine animationId="141:1004" id="X:2"/>
+    <ViewModelInstance viewModelId="141:1" exports="true" name="My Chip" id="X:3">
+        <ViewModelInstanceString viewModelPropertyId="141:2" id="X:4"/>  <!-- label -->
+        <ViewModelInstanceBoolean viewModelPropertyId="141:3" id="X:5"/>  <!-- selected -->
+        <ViewModelInstanceBoolean viewModelPropertyId="141:4" id="X:6"/>  <!-- disabled -->
+        <ViewModelInstanceBoolean viewModelPropertyId="141:5" id="X:7"/>  <!-- a11yHidden -->
+        <ViewModelInstanceBoolean viewModelPropertyId="141:6" id="X:8"/>  <!-- _hover -->
+        <ViewModelInstanceTrigger viewModelPropertyId="141:7" id="X:9"/>  <!-- _activate -->
+        <ViewModelInstanceTrigger viewModelPropertyId="141:8" id="X:10"/>  <!-- _toggle -->
+    </ViewModelInstance>
+</NestedArtboardLayout>
+```
+
+## Chip Group
+
+Source: `shared/41-ChipGroup.rml` · artboard `141:3000` · state machine `141:3001` · view model `ChipGroup` `141:9`
+Contains: Chip
+
+| Property | Type | Id |
+|---|---|---|
+| `chips` | list of `Chip` | `141:10` |
+| `label` | string | `141:11` |
+| `a11yHidden` | boolean | `141:12` |
+
+```xml
+<NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="141:3000" isStateful="true" name="Chip Group" id="X:1">
+    <NestedStateMachine animationId="141:3001" id="X:2"/>
+    <ViewModelInstance viewModelId="141:9" exports="true" name="My Chip Group" id="X:3">
+        <ViewModelInstanceList viewModelPropertyId="141:10" id="X:4"/>  <!-- chips: add ViewModelInstanceListItem children -->
+        <ViewModelInstanceString viewModelPropertyId="141:11" id="X:5"/>  <!-- label -->
+        <ViewModelInstanceBoolean viewModelPropertyId="141:12" id="X:6"/>  <!-- a11yHidden -->
+    </ViewModelInstance>
+</NestedArtboardLayout>
+```
+
 ## Dialog
 
 Source: `shared/36-Dialog.rml` · artboard `131:100` · state machine `131:102` · view model `Dialog` `131:1`
@@ -794,6 +852,69 @@ Contains: Switch
 </NestedArtboardLayout>
 ```
 
+## Tab
+
+Source: `shared/38-Tab.rml` · artboard `140:1000` · state machine `140:1012` · view model `Tab` `140:3`
+
+| Property | Type | Id |
+|---|---|---|
+| `label` | string | `140:4` |
+| `value` | number | `140:5` |
+| `disabled` | boolean | `140:6` |
+| `group` | `TabSelection` | `140:7` |
+| `a11yHidden` | boolean | `140:8` |
+| `_activate` | trigger | `140:10` |
+| `_select` | trigger | `140:11` |
+
+```xml
+<NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="140:1000" isStateful="true" name="Tab" id="X:1">
+    <NestedStateMachine animationId="140:1012" id="X:2"/>
+    <ViewModelInstance viewModelId="140:3" exports="true" name="My Tab" id="X:3">
+        <ViewModelInstanceString viewModelPropertyId="140:4" id="X:4"/>  <!-- label -->
+        <ViewModelInstanceNumber viewModelPropertyId="140:5" id="X:5"/>  <!-- value -->
+        <ViewModelInstanceBoolean viewModelPropertyId="140:6" id="X:6"/>  <!-- disabled -->
+        <ViewModelInstanceViewModel viewModelPropertyId="140:7" id="X:7"/>  <!-- group: set propertyValue to the id of a shared instance -->
+        <ViewModelInstanceBoolean viewModelPropertyId="140:8" id="X:8"/>  <!-- a11yHidden -->
+        <ViewModelInstanceBoolean viewModelPropertyId="140:9" id="X:9"/>  <!-- _hover -->
+        <ViewModelInstanceTrigger viewModelPropertyId="140:10" id="X:10"/>  <!-- _activate -->
+        <ViewModelInstanceTrigger viewModelPropertyId="140:11" id="X:11"/>  <!-- _select -->
+    </ViewModelInstance>
+</NestedArtboardLayout>
+```
+
+## Tabs
+
+Source: `shared/39-Tabs.rml` · artboard `140:3000` · state machine `140:3001` · view model `Tabs` `140:12`
+Contains: Tab
+
+| Property | Type | Id |
+|---|---|---|
+| `tabs` | list of `Tab` | `140:13` |
+| `selection` | `TabSelection` | `140:14` |
+| `label` | string | `140:15` |
+| `a11yHidden` | boolean | `140:16` |
+
+A row of tabs over a divider; the selected tab has full-strength text and a brand bar under it.
+
+- View model `Tabs`: `tabs` (a list of `Tab` instances), `selection` (a shared `TabSelection`), `label` (screen reader name), `a11yHidden`.
+- `Tab`: `label`, `value` (its position: `0` for the first), `disabled`, `group` (a `TabSelection`), `a11yHidden`. Point `group` of every Tab at the same `TabSelection` instance as the `Tabs` (as with Radio Group).
+- `TabSelection`: `selected`, the value of the selected tab. A click, a screen reader's activate, or Enter/Space on a focused tab writes it; set it from your app to switch tabs yourself.
+- The Tabs are the bar only. Rive has no slots, so show the matching content in your own layout from `selection.selected`.
+- Unselected tabs use `_textSecondary`, the selected one `_text` and a `_brand600` bar; hover adds a `_surfaceHover` background with `_radiusSmall` corners. A disabled tab turns `_textMuted` and ignores every input.
+- Screen readers get a `tabList` named by `label`, with a `tab` per item that reports selected and disabled.
+
+```xml
+<NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="140:3000" isStateful="true" name="Tabs" id="X:1">
+    <NestedStateMachine animationId="140:3001" id="X:2"/>
+    <ViewModelInstance viewModelId="140:12" exports="true" name="My Tabs" id="X:3">
+        <ViewModelInstanceList viewModelPropertyId="140:13" id="X:4"/>  <!-- tabs: add ViewModelInstanceListItem children -->
+        <ViewModelInstanceViewModel viewModelPropertyId="140:14" id="X:5"/>  <!-- selection: set propertyValue to the id of a shared instance -->
+        <ViewModelInstanceString viewModelPropertyId="140:15" id="X:6"/>  <!-- label -->
+        <ViewModelInstanceBoolean viewModelPropertyId="140:16" id="X:7"/>  <!-- a11yHidden -->
+    </ViewModelInstance>
+</NestedArtboardLayout>
+```
+
 ## Theme Driver
 
 Source: `shared/18-ThemeDriver.rml` · artboard `10:14621` · state machine `10:14626`
@@ -912,22 +1033,22 @@ Contains: Nav Group
 ## Slide  (Showcase demo)
 
 Source: `shared/17-Slide.rml` · artboard `10:5313` · state machine `10:5405` · view model `Slide` `10:5163`
-Contains: Accordion, Alert, Avatar, Badge, Breadcrumbs, Button, Button Group, Checkbox Group, Dialog Demo, Dropdown, Label, Pagination, Progress Bar, Radio Group, Slider, Switch Group, Tooltip Button
+Contains: Accordion, Alert, Avatar, Badge, Breadcrumbs, Button, Button Group, Checkbox Group, Chip Group, Dialog Demo, Dropdown, Label, Pagination, Progress Bar, Radio Group, Slider, Switch Group, Tabs, Tooltip Button
 
 | Property | Type | Id |
 |---|---|---|
 | `name` | string | `10:5171` |
-| `content` | list of `Pagination` / `Accordion` / `RadioGroup` / `CheckboxGroup` / `SwitchGroup` / `Alert` / `Breadcrumbs` / `TooltipButton` / `ProgressBar` / `DialogDemo` / `Badge` / `Button` / `Label` / `Slider` / `Avatar` / `Dropdown` / `ButtonGroup` | `10:5173` |
+| `content` | list of `Pagination` / `Accordion` / `RadioGroup` / `CheckboxGroup` / `SwitchGroup` / `Alert` / `Breadcrumbs` / `TooltipButton` / `ProgressBar` / `DialogDemo` / `Tabs` / `ChipGroup` / `Badge` / `Button` / `Label` / `Slider` / `Avatar` / `Dropdown` / `ButtonGroup` | `10:5173` |
 | `crumbs` | `Breadcrumbs` | `114:1` |
 
 ## Tile  (Showcase demo)
 
 Source: `shared/14-Tile.rml` · artboard `10:3618` · state machine `10:3623` · view model `Tile` `10:3612`
-Contains: Accordion, Alert, Avatar, Badge, Breadcrumbs, Button, Button Group, Checkbox Group, Dialog Demo, Dropdown, Label, Pagination, Progress Bar, Radio Group, Slider, Switch Group, Tooltip Button
+Contains: Accordion, Alert, Avatar, Badge, Breadcrumbs, Button, Button Group, Checkbox Group, Chip Group, Dialog Demo, Dropdown, Label, Pagination, Progress Bar, Radio Group, Slider, Switch Group, Tabs, Tooltip Button
 
 | Property | Type | Id |
 |---|---|---|
-| `content` | list of `Pagination` / `Accordion` / `RadioGroup` / `CheckboxGroup` / `SwitchGroup` / `Alert` / `Breadcrumbs` / `TooltipButton` / `ProgressBar` / `DialogDemo` / `Badge` / `Button` / `Label` / `Slider` / `Avatar` / `Dropdown` / `ButtonGroup` | `10:3861` |
+| `content` | list of `Pagination` / `Accordion` / `RadioGroup` / `CheckboxGroup` / `SwitchGroup` / `Alert` / `Breadcrumbs` / `TooltipButton` / `ProgressBar` / `DialogDemo` / `Tabs` / `ChipGroup` / `Badge` / `Button` / `Label` / `Slider` / `Avatar` / `Dropdown` / `ButtonGroup` | `10:3861` |
 | `name` | string | `10:3614` |
 
 ## Toolbar  (Showcase demo)
