@@ -382,6 +382,70 @@ Contains: Checkbox
 </NestedArtboardLayout>
 ```
 
+## Dialog
+
+Source: `shared/36-Dialog.rml` · artboard `131:100` · state machine `131:102` · view model `Dialog` `131:1`
+Contains: Button
+
+| Property | Type | Id |
+|---|---|---|
+| `title` | string | `131:2` |
+| `body` | string | `131:3` |
+| `confirmText` | string | `131:4` |
+| `cancelText` | string | `131:5` |
+| `confirmVariant` | number | `131:6` |
+| `open` | boolean | `131:7` |
+| `confirmed` | trigger | `131:8` |
+| `cancelled` | trigger | `131:9` |
+| `a11yHidden` | boolean | `131:10` |
+
+A modal card over a dimmed scrim, with a title, a body and two kit Buttons. It is the dismissible counterpart of Alert.
+
+- View model `Dialog`: `title`, `body`, `confirmText`, `cancelText`, `confirmVariant` (a Button `variant`: `0` primary, `2` brand, `3` destructive), `open`, `a11yHidden`, and the triggers `confirmed` and `cancelled`.
+- Place it once over your screen as a layout that fills the artboard, and set `open` to show it. It fades and scales in, and leaves the layout when closed, so it never blocks input while hidden.
+- The confirm Button fires `confirmed`, the cancel Button and a click on the scrim fire `cancelled`; each one also sets `open` back to false. Listen to the triggers in your app.
+- The Buttons' `_pressed` triggers are bound to `confirmed` and `cancelled`, so the Dialog reacts to whatever makes a Button fire.
+- The card uses `_surface`, `_border`, `_radiusCard` and the theme shadow; the scrim is black at 50%.
+- Screen readers get a `dialog` named by the title, the body as text and the two Buttons.
+- **Dialog Demo** is the Showcase's building block: an "Open dialog" Button with a Dialog over it.
+
+```xml
+<NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="131:100" isStateful="true" name="Dialog" id="X:1">
+    <NestedStateMachine animationId="131:102" id="X:2"/>
+    <ViewModelInstance viewModelId="131:1" exports="true" name="My Dialog" id="X:3">
+        <ViewModelInstanceString viewModelPropertyId="131:2" id="X:4"/>  <!-- title -->
+        <ViewModelInstanceString viewModelPropertyId="131:3" id="X:5"/>  <!-- body -->
+        <ViewModelInstanceString viewModelPropertyId="131:4" id="X:6"/>  <!-- confirmText -->
+        <ViewModelInstanceString viewModelPropertyId="131:5" id="X:7"/>  <!-- cancelText -->
+        <ViewModelInstanceNumber viewModelPropertyId="131:6" id="X:8"/>  <!-- confirmVariant -->
+        <ViewModelInstanceBoolean viewModelPropertyId="131:7" id="X:9"/>  <!-- open -->
+        <ViewModelInstanceTrigger viewModelPropertyId="131:8" id="X:10"/>  <!-- confirmed -->
+        <ViewModelInstanceTrigger viewModelPropertyId="131:9" id="X:11"/>  <!-- cancelled -->
+        <ViewModelInstanceBoolean viewModelPropertyId="131:10" id="X:12"/>  <!-- a11yHidden -->
+    </ViewModelInstance>
+</NestedArtboardLayout>
+```
+
+## Dialog Demo
+
+Source: `shared/37-DialogDemo.rml` · artboard `132:100` · state machine `132:102` · view model `DialogDemo` `132:1`
+Contains: Button, Dialog
+
+| Property | Type | Id |
+|---|---|---|
+| `open` | boolean | `132:2` |
+| `_openPressed` | trigger | `132:3` |
+
+```xml
+<NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="132:100" isStateful="true" name="Dialog Demo" id="X:1">
+    <NestedStateMachine animationId="132:102" id="X:2"/>
+    <ViewModelInstance viewModelId="132:1" exports="true" name="My Dialog Demo" id="X:3">
+        <ViewModelInstanceBoolean viewModelPropertyId="132:2" id="X:4"/>  <!-- open -->
+        <ViewModelInstanceTrigger viewModelPropertyId="132:3" id="X:5"/>  <!-- _openPressed -->
+    </ViewModelInstance>
+</NestedArtboardLayout>
+```
+
 ## Dropdown
 
 Source: `shared/10-Dropdown.rml` · artboard `1:4236` · state machine `1:4241` · view model `Dropdown` `1:4248`
@@ -838,22 +902,22 @@ Contains: Nav Group
 ## Slide  (Showcase demo)
 
 Source: `shared/17-Slide.rml` · artboard `10:5313` · state machine `10:5405` · view model `Slide` `10:5163`
-Contains: Accordion, Alert, Avatar, Badge, Breadcrumbs, Button, Button Group, Checkbox Group, Dropdown, Label, Pagination, Progress Bar, Radio Group, Slider, Switch Group, Tooltip Button
+Contains: Accordion, Alert, Avatar, Badge, Breadcrumbs, Button, Button Group, Checkbox Group, Dialog Demo, Dropdown, Label, Pagination, Progress Bar, Radio Group, Slider, Switch Group, Tooltip Button
 
 | Property | Type | Id |
 |---|---|---|
 | `name` | string | `10:5171` |
-| `content` | list of `Pagination` / `Accordion` / `RadioGroup` / `CheckboxGroup` / `SwitchGroup` / `Alert` / `Breadcrumbs` / `TooltipButton` / `ProgressBar` / `Badge` / `Button` / `Label` / `Slider` / `Avatar` / `Dropdown` / `ButtonGroup` | `10:5173` |
+| `content` | list of `Pagination` / `Accordion` / `RadioGroup` / `CheckboxGroup` / `SwitchGroup` / `Alert` / `Breadcrumbs` / `TooltipButton` / `ProgressBar` / `DialogDemo` / `Badge` / `Button` / `Label` / `Slider` / `Avatar` / `Dropdown` / `ButtonGroup` | `10:5173` |
 | `crumbs` | `Breadcrumbs` | `114:1` |
 
 ## Tile  (Showcase demo)
 
 Source: `shared/14-Tile.rml` · artboard `10:3618` · state machine `10:3623` · view model `Tile` `10:3612`
-Contains: Accordion, Alert, Avatar, Badge, Breadcrumbs, Button, Button Group, Checkbox Group, Dropdown, Label, Pagination, Progress Bar, Radio Group, Slider, Switch Group, Tooltip Button
+Contains: Accordion, Alert, Avatar, Badge, Breadcrumbs, Button, Button Group, Checkbox Group, Dialog Demo, Dropdown, Label, Pagination, Progress Bar, Radio Group, Slider, Switch Group, Tooltip Button
 
 | Property | Type | Id |
 |---|---|---|
-| `content` | list of `Pagination` / `Accordion` / `RadioGroup` / `CheckboxGroup` / `SwitchGroup` / `Alert` / `Breadcrumbs` / `TooltipButton` / `ProgressBar` / `Badge` / `Button` / `Label` / `Slider` / `Avatar` / `Dropdown` / `ButtonGroup` | `10:3861` |
+| `content` | list of `Pagination` / `Accordion` / `RadioGroup` / `CheckboxGroup` / `SwitchGroup` / `Alert` / `Breadcrumbs` / `TooltipButton` / `ProgressBar` / `DialogDemo` / `Badge` / `Button` / `Label` / `Slider` / `Avatar` / `Dropdown` / `ButtonGroup` | `10:3861` |
 | `name` | string | `10:3614` |
 
 ## Toolbar  (Showcase demo)

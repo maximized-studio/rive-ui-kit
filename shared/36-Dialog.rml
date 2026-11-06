@@ -32,7 +32,7 @@
                             <TextStyleAxis tag="1869640570" axisValue="14" id="131:155"/>
                             <TextStyleAxis tag="2003265652" axisValue="400" id="131:156"/>
                         </TextStylePaint>
-                        <TextValueRun styleId="131:151" text="This removes the project and its files. You can't undo this." id="131:157">
+                        <TextValueRun styleId="131:151" text="This removes the project and its files. You can&apos;t undo this." id="131:157">
                             <DataBindContext sourcePathIds="131:1-131:3" propertyKey="268" nameBased="true" id="131:158"/>
                         </TextValueRun>
                         <LayoutParticipant layoutWidthScaleType="fill" layoutHeightScaleType="hug" id="131:159"/>
@@ -50,7 +50,7 @@
                                     </ViewModelInstanceString>
                                     <ViewModelInstanceBoolean viewModelPropertyId="1:587" id="131:179"/>
                                     <ViewModelInstanceTrigger viewModelPropertyId="1:1321" id="131:180">
-                                        <DataBindContext sourcePathIds="131:1-131:9" propertyKey="687" nameBased="true" twoWay="true" id="131:181"/>
+                                        <DataBindContext sourcePathIds="131:1-131:9" propertyKey="687" twoWay="true" nameBased="true" id="131:181"/>
                                     </ViewModelInstanceTrigger>
                                     <ViewModelInstanceBoolean viewModelPropertyId="7:1" id="131:182"/>
                                     <ViewModelInstanceBoolean viewModelPropertyId="7:3" id="131:183">
@@ -74,7 +74,7 @@
                                     </ViewModelInstanceString>
                                     <ViewModelInstanceBoolean viewModelPropertyId="1:587" id="131:197"/>
                                     <ViewModelInstanceTrigger viewModelPropertyId="1:1321" id="131:198">
-                                        <DataBindContext sourcePathIds="131:1-131:8" propertyKey="687" nameBased="true" twoWay="true" id="131:199"/>
+                                        <DataBindContext sourcePathIds="131:1-131:8" propertyKey="687" twoWay="true" nameBased="true" id="131:199"/>
                                     </ViewModelInstanceTrigger>
                                     <ViewModelInstanceBoolean viewModelPropertyId="7:1" id="131:200"/>
                                     <ViewModelInstanceBoolean viewModelPropertyId="7:3" id="131:201">
@@ -111,7 +111,7 @@
                         </SolidColor>
                     </Stroke>
                     <ComponentOrigin originX="0.5" originY="0.5" id="131:134"/>
-                    <LayoutComponentStyle gapVertical="8" paddingLeft="24" paddingRight="24" paddingTop="24" paddingBottom="24" flexDirectionValue="column" maxWidth="400" maxWidthUnitsValue="points" cornerRadiusTL="16" intrinsicallySizedValue="true" layoutWidthScaleType="fill" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="131:121">
+                    <LayoutComponentStyle gapVertical="8" paddingLeft="24" paddingRight="24" paddingTop="24" paddingBottom="24" flexDirectionValue="column" intrinsicallySizedValue="true" cornerRadiusTL="16" maxWidth="400" maxWidthUnitsValue="points" layoutWidthScaleType="fill" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="131:121">
                         <DataBindContext sourcePathIds="10:7-901:7" propertyKey="640" converterId="0:0" id="131:122"/>
                     </LayoutComponentStyle>
                     <SemanticData role="dialog" name="Semantics" id="131:210">
@@ -157,13 +157,13 @@
             </KeyedObject>
             <KeyedObject objectId="131:120" id="131:319">
                 <KeyedProperty property="scaleX" id="131:320">
-                    <KeyFrameDouble value="0.96" interpolationType="cubic" id="131:321">
+                    <KeyFrameDouble value="0.95999998" interpolationType="cubic" id="131:321">
                         <CubicEaseInterpolator x1="0.2" x2="0" id="131:322"/>
                     </KeyFrameDouble>
                     <KeyFrameDouble value="1" frame="12" id="131:323"/>
                 </KeyedProperty>
                 <KeyedProperty property="scaleY" id="131:324">
-                    <KeyFrameDouble value="0.96" interpolationType="cubic" id="131:325">
+                    <KeyFrameDouble value="0.95999998" interpolationType="cubic" id="131:325">
                         <CubicEaseInterpolator x1="0.2" x2="0" id="131:326"/>
                     </KeyFrameDouble>
                     <KeyFrameDouble value="1" frame="12" id="131:327"/>
@@ -179,7 +179,7 @@
             <KeyedObject objectId="131:110" id="131:334">
                 <KeyedProperty property="opacity" id="131:335">
                     <KeyFrameDouble value="1" interpolationType="cubic" id="131:336">
-                        <CubicEaseInterpolator x1="0.4" x2="1" id="131:337"/>
+                        <CubicEaseInterpolator x1="0.40000001" x2="1" id="131:337"/>
                     </KeyFrameDouble>
                     <KeyFrameDouble frame="9" id="131:338"/>
                 </KeyedProperty>
@@ -187,15 +187,15 @@
             <KeyedObject objectId="131:120" id="131:339">
                 <KeyedProperty property="scaleX" id="131:340">
                     <KeyFrameDouble value="1" interpolationType="cubic" id="131:341">
-                        <CubicEaseInterpolator x1="0.4" x2="1" id="131:342"/>
+                        <CubicEaseInterpolator x1="0.40000001" x2="1" id="131:342"/>
                     </KeyFrameDouble>
-                    <KeyFrameDouble value="0.98" frame="9" id="131:343"/>
+                    <KeyFrameDouble value="0.98000002" frame="9" id="131:343"/>
                 </KeyedProperty>
                 <KeyedProperty property="scaleY" id="131:344">
                     <KeyFrameDouble value="1" interpolationType="cubic" id="131:345">
-                        <CubicEaseInterpolator x1="0.4" x2="1" id="131:346"/>
+                        <CubicEaseInterpolator x1="0.40000001" x2="1" id="131:346"/>
                     </KeyFrameDouble>
-                    <KeyFrameDouble value="0.98" frame="9" id="131:347"/>
+                    <KeyFrameDouble value="0.98000002" frame="9" id="131:347"/>
                 </KeyedProperty>
             </KeyedObject>
         </LinearAnimation>

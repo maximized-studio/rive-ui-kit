@@ -1426,6 +1426,7 @@
             <SolidColor colorValue="FF09090B" id="10:112">
                 <DataBindContext sourcePathIds="10:7-10:7402" propertyKey="37" id="10:7437"/>
             </SolidColor>
+            <Feather isEnabled="false" id="329:2"/>
         </Fill>
         <LayoutComponentStyle flexDirectionValue="rowReverse" id="10:113"/>
         <LinearAnimation name="Cover On" id="10:15637">

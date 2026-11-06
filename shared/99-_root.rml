@@ -3591,6 +3591,22 @@
             <ViewModelInstanceNumber viewModelPropertyId="914:3" id="914:9"/>
         </ViewModelInstance>
     </ViewModel>
+    <ViewModel defaultInstanceId="122:3" name="NavExpansion" groupId="1:2673" id="122:1">
+        <ViewModelPropertyBoolean name="allOpen" id="122:2"/>
+        <ViewModelInstance exports="true" name="Default" id="122:3">
+            <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="122:2" id="122:7"/>
+        </ViewModelInstance>
+    </ViewModel>
+    <ViewModel defaultInstanceId="130:5" name="ProgressBar" groupId="1:2673" id="130:1">
+        <ViewModelPropertyString name="label" id="130:2"/>
+        <ViewModelPropertyNumber name="value" id="130:3"/>
+        <ViewModelPropertyBoolean name="a11yHidden" id="130:4"/>
+        <ViewModelInstance exports="true" name="Progress Bar" id="130:5">
+            <ViewModelInstanceString propertyValue="Uploading" viewModelPropertyId="130:2" id="130:6"/>
+            <ViewModelInstanceNumber propertyValue="64" viewModelPropertyId="130:3" id="130:7"/>
+            <ViewModelInstanceBoolean viewModelPropertyId="130:4" id="130:8"/>
+        </ViewModelInstance>
+    </ViewModel>
     <ViewModel defaultInstanceId="131:11" name="Dialog" groupId="1:2673" id="131:1">
         <ViewModelPropertyString name="title" id="131:2"/>
         <ViewModelPropertyString name="body" id="131:3"/>
@@ -3603,7 +3619,7 @@
         <ViewModelPropertyBoolean name="a11yHidden" id="131:10"/>
         <ViewModelInstance exports="true" name="Dialog" id="131:11">
             <ViewModelInstanceString propertyValue="Delete project?" viewModelPropertyId="131:2" id="131:12"/>
-            <ViewModelInstanceString propertyValue="This removes the project and its files. You can't undo this." viewModelPropertyId="131:3" id="131:13"/>
+            <ViewModelInstanceString propertyValue="This removes the project and its files. You can&apos;t undo this." viewModelPropertyId="131:3" id="131:13"/>
             <ViewModelInstanceString propertyValue="Delete" viewModelPropertyId="131:4" id="131:14"/>
             <ViewModelInstanceString propertyValue="Cancel" viewModelPropertyId="131:5" id="131:15"/>
             <ViewModelInstanceNumber propertyValue="3" viewModelPropertyId="131:6" id="131:16"/>
@@ -3623,22 +3639,6 @@
         <ViewModelInstance exports="true" name="Dialog Demo Tile" id="132:7">
             <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="132:2" id="132:8"/>
             <ViewModelInstanceTrigger viewModelPropertyId="132:3" id="132:9"/>
-        </ViewModelInstance>
-    </ViewModel>
-    <ViewModel defaultInstanceId="122:3" name="NavExpansion" groupId="1:2673" id="122:1">
-        <ViewModelPropertyBoolean name="allOpen" id="122:2"/>
-        <ViewModelInstance exports="true" name="Default" id="122:3">
-            <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="122:2" id="122:7"/>
-        </ViewModelInstance>
-    </ViewModel>
-    <ViewModel defaultInstanceId="130:5" name="ProgressBar" groupId="1:2673" id="130:1">
-        <ViewModelPropertyString name="label" id="130:2"/>
-        <ViewModelPropertyNumber name="value" id="130:3"/>
-        <ViewModelPropertyBoolean name="a11yHidden" id="130:4"/>
-        <ViewModelInstance exports="true" name="Progress Bar" id="130:5">
-            <ViewModelInstanceString propertyValue="Uploading" viewModelPropertyId="130:2" id="130:6"/>
-            <ViewModelInstanceNumber propertyValue="64" viewModelPropertyId="130:3" id="130:7"/>
-            <ViewModelInstanceBoolean viewModelPropertyId="130:4" id="130:8"/>
         </ViewModelInstance>
     </ViewModel>
 </Rive>

@@ -3,17 +3,17 @@
         <Fill fillRule="clockwise" id="132:103">
             <SolidColor colorValue="00000000" id="132:104"/>
         </Fill>
-        <LayoutComponentStyle layoutTypeValue="stack" layoutAlignmentType="center" id="132:101"/>
+        <LayoutComponentStyle layoutAlignmentType="center" layoutTypeValue="stack" id="132:101"/>
         <NestedArtboardLayout instanceWidthScaleType="fill" instanceHeightScaleType="fill" artboardId="131:100" isStateful="true" name="Dialog" id="132:110">
             <NestedStateMachine animationId="131:102" id="132:111"/>
             <ViewModelInstance viewModelId="131:1" exports="true" name="Demo Dialog" id="132:112">
                 <ViewModelInstanceString propertyValue="Delete project?" viewModelPropertyId="131:2" id="132:113"/>
-                <ViewModelInstanceString propertyValue="This removes the project and its files. You can't undo this." viewModelPropertyId="131:3" id="132:114"/>
+                <ViewModelInstanceString propertyValue="This removes the project and its files. You can&apos;t undo this." viewModelPropertyId="131:3" id="132:114"/>
                 <ViewModelInstanceString propertyValue="Delete" viewModelPropertyId="131:4" id="132:115"/>
                 <ViewModelInstanceString propertyValue="Cancel" viewModelPropertyId="131:5" id="132:116"/>
                 <ViewModelInstanceNumber propertyValue="3" viewModelPropertyId="131:6" id="132:117"/>
                 <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="131:7" id="132:118">
-                    <DataBindContext sourcePathIds="132:1-132:2" propertyKey="593" nameBased="true" twoWay="true" id="132:119"/>
+                    <DataBindContext sourcePathIds="132:1-132:2" propertyKey="593" twoWay="true" nameBased="true" id="132:119"/>
                 </ViewModelInstanceBoolean>
                 <ViewModelInstanceTrigger viewModelPropertyId="131:8" id="132:120"/>
                 <ViewModelInstanceTrigger viewModelPropertyId="131:9" id="132:121"/>
@@ -27,7 +27,7 @@
                     <ViewModelInstanceString propertyValue="Open dialog" viewModelPropertyId="1:549" id="132:135"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="1:587" id="132:136"/>
                     <ViewModelInstanceTrigger viewModelPropertyId="1:1321" id="132:137">
-                        <DataBindContext sourcePathIds="132:1-132:3" propertyKey="687" nameBased="true" twoWay="true" id="132:138"/>
+                        <DataBindContext sourcePathIds="132:1-132:3" propertyKey="687" twoWay="true" nameBased="true" id="132:138"/>
                     </ViewModelInstanceTrigger>
                     <ViewModelInstanceBoolean viewModelPropertyId="7:1" id="132:139"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="7:3" id="132:140"/>
