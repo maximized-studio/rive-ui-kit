@@ -12,10 +12,10 @@ The kit is also on the [Rive Community](https://rive.app/community/files/25701-5
 
 - **Actions:** Button · Button Group · Dropdown
 - **Display:** Accordion · Avatar · Badge · Label
-- **Feedback:** Alert · Progress Bar · Tooltip
+- **Feedback:** Alert · Dialog · Progress Bar · Tooltip
 - **Inputs:** Checkbox / Checkbox Group · Radio Option / Radio Group · Slider · Switch / Switch Group
 - **Navigation:** Breadcrumbs · Pagination
-- **Building blocks:** Accordion Item · Breadcrumb Item · List Item · Nav Group · Nav Item · Page Item · Segment · Segmented Control · Showcase Section · Sidebar · Slide · Tile · Toolbar · Tooltip Button
+- **Building blocks:** Accordion Item · Breadcrumb Item · Dialog Demo · List Item · Nav Group · Nav Item · Page Item · Segment · Segmented Control · Showcase Section · Sidebar · Slide · Tile · Toolbar · Tooltip Button
 
 Categories and the components in them are sorted A–Z. In the Showcase a category is data: a `ShowcaseSection` (title, tile list; the count is the list length) in `sections`, and a `NavGroup` in the Sidebar's `sections`.
 
@@ -52,6 +52,7 @@ The components carry Rive semantics, so screen readers get a real accessibility 
 | Radio Option / Radio Group | `radioButton` / `radioGroup` | label, selected |
 | Slider | `slider` | label, value |
 | Switch | `switchControl` | label, on/off |
+| Dialog | `dialog`, `text`, `button` ×2 | title; body; the two Buttons |
 | Progress Bar | `group` / `text` | label; percentage ("64%") |
 | Tooltip | `text` | text (left out when its trigger carries it as a hint) |
 | Tooltip Button | `button` | label, hint (the tooltip text) |
@@ -113,6 +114,18 @@ Previous and next Buttons around up to seven page buttons. Set two numbers and t
 - Previous and next step by one and are disabled on the first and last page.
 - Listen to `page` in your app to load that page.
 - The behaviour is a small Luau script, **Pagination Pages**: it fills the `_pages` list of Page Items and sets the disabled flags. Luau runs in the editor and in the Rive runtimes. Use a `.riv` exported from the editor or built with `rive --publish`: a plain CLI build (`--once`) does not run scripts. Like every script, it does not run in a Community thumbnail.
+
+## Dialog
+
+A modal card over a dimmed scrim, with a title, a body and two kit Buttons. It is the dismissible counterpart of Alert.
+
+- View model `Dialog`: `title`, `body`, `confirmText`, `cancelText`, `confirmVariant` (a Button `variant`: `0` primary, `2` brand, `3` destructive), `open`, `a11yHidden`, and the triggers `confirmed` and `cancelled`.
+- Place it once over your screen as a layout that fills the artboard, and set `open` to show it. It fades and scales in, and leaves the layout when closed, so it never blocks input while hidden.
+- The confirm Button fires `confirmed`, the cancel Button and a click on the scrim fire `cancelled`; each one also sets `open` back to false. Listen to the triggers in your app.
+- The Buttons' `_pressed` triggers are bound to `confirmed` and `cancelled`, so the Dialog reacts to whatever makes a Button fire.
+- The card uses `_surface`, `_border`, `_radiusCard` and the theme shadow; the scrim is black at 50%.
+- Screen readers get a `dialog` named by the title, the body as text and the two Buttons.
+- **Dialog Demo** is the Showcase's building block: an "Open dialog" Button with a Dialog over it.
 
 ## Progress Bar
 

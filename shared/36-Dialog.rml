@@ -1,0 +1,287 @@
+<Rive version="1" kind="fragment">
+    <Artboard defaultStateMachineId="131:102" viewModelId="131:1" viewModelInstanceId="131:11" isComponent="true" spaceId="1:5601" width="480" height="320" styleId="131:101" x="2400" y="200" name="Dialog" id="131:100">
+        <Fill fillRule="clockwise" id="131:103">
+            <SolidColor colorValue="00000000" id="131:104"/>
+        </Fill>
+        <LayoutComponentStyle id="131:101"/>
+        <LayoutComponent styleId="131:111" name="Overlay" id="131:110">
+            <LayoutComponent styleId="131:117" name="Card Area" id="131:116">
+                <LayoutComponent styleId="131:121" isTargetOpaque="true" name="Card" id="131:120">
+                    <Text sizingValue="autoHeight" name="Title" id="131:140">
+                        <TextStylePaint fontSize="18" fontAssetId="0:7" familyName="Inter" styleName="SemiBold" id="131:141">
+                            <Fill fillRule="clockwise" id="131:142">
+                                <SolidColor colorValue="FFFAFAFA" id="131:143">
+                                    <DataBindContext sourcePathIds="10:7-10:7422" propertyKey="37" id="131:144"/>
+                                </SolidColor>
+                            </Fill>
+                            <TextStyleAxis tag="1869640570" axisValue="14" id="131:145"/>
+                            <TextStyleAxis tag="2003265652" axisValue="600" id="131:146"/>
+                        </TextStylePaint>
+                        <TextValueRun styleId="131:141" text="Delete project?" id="131:147">
+                            <DataBindContext sourcePathIds="131:1-131:2" propertyKey="268" nameBased="true" id="131:148"/>
+                        </TextValueRun>
+                        <LayoutParticipant layoutWidthScaleType="fill" layoutHeightScaleType="hug" id="131:149"/>
+                    </Text>
+                    <Text sizingValue="autoHeight" name="Body" id="131:150">
+                        <TextStylePaint fontSize="14" fontAssetId="0:7" familyName="Inter" styleName="Regular" id="131:151">
+                            <Fill fillRule="clockwise" id="131:152">
+                                <SolidColor colorValue="FFD4D4D8" id="131:153">
+                                    <DataBindContext sourcePathIds="10:7-10:7424" propertyKey="37" id="131:154"/>
+                                </SolidColor>
+                            </Fill>
+                            <TextStyleAxis tag="1869640570" axisValue="14" id="131:155"/>
+                            <TextStyleAxis tag="2003265652" axisValue="400" id="131:156"/>
+                        </TextStylePaint>
+                        <TextValueRun styleId="131:151" text="This removes the project and its files. You can't undo this." id="131:157">
+                            <DataBindContext sourcePathIds="131:1-131:3" propertyKey="268" nameBased="true" id="131:158"/>
+                        </TextValueRun>
+                        <LayoutParticipant layoutWidthScaleType="fill" layoutHeightScaleType="hug" id="131:159"/>
+                        <SemanticData role="text" name="Semantics" id="131:160">
+                            <DataBindContext sourcePathIds="131:1-131:3" propertyKey="983" nameBased="true" id="131:161"/>
+                        </SemanticData>
+                    </Text>
+                    <LayoutComponent styleId="131:171" name="Actions" id="131:170">
+                        <LayoutComponent styleId="131:173" name="Cancel" id="131:172">
+                            <NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="1:122" isStateful="true" name="Button" id="131:174">
+                                <NestedStateMachine animationId="1:127" id="131:175"/>
+                                <ViewModelInstance viewModelId="1:151" exports="true" name="Cancel Button" id="131:176">
+                                    <ViewModelInstanceString propertyValue="Cancel" viewModelPropertyId="1:549" id="131:177">
+                                        <DataBindContext sourcePathIds="131:1-131:5" propertyKey="561" nameBased="true" id="131:178"/>
+                                    </ViewModelInstanceString>
+                                    <ViewModelInstanceBoolean viewModelPropertyId="1:587" id="131:179"/>
+                                    <ViewModelInstanceTrigger viewModelPropertyId="1:1321" id="131:180">
+                                        <DataBindContext sourcePathIds="131:1-131:9" propertyKey="687" nameBased="true" twoWay="true" id="131:181"/>
+                                    </ViewModelInstanceTrigger>
+                                    <ViewModelInstanceBoolean viewModelPropertyId="7:1" id="131:182"/>
+                                    <ViewModelInstanceBoolean viewModelPropertyId="7:3" id="131:183">
+                                        <DataBindContext sourcePathIds="131:1-131:10" propertyKey="593" nameBased="true" id="131:184"/>
+                                    </ViewModelInstanceBoolean>
+                                    <ViewModelInstanceNumber viewModelPropertyId="33:164" id="131:185"/>
+                                    <ViewModelInstanceBoolean viewModelPropertyId="33:169" id="131:186"/>
+                                    <ViewModelInstanceNumber viewModelPropertyId="99:100" id="131:187"/>
+                                    <ViewModelInstanceString viewModelPropertyId="112:14" id="131:188"/>
+                                    <ViewModelInstanceNumber propertyValue="1" viewModelPropertyId="118:1" id="131:189"/>
+                                </ViewModelInstance>
+                            </NestedArtboardLayout>
+                            <LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="131:173"/>
+                        </LayoutComponent>
+                        <LayoutComponent styleId="131:191" name="Confirm" id="131:190">
+                            <NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="1:122" isStateful="true" name="Button" id="131:192">
+                                <NestedStateMachine animationId="1:127" id="131:193"/>
+                                <ViewModelInstance viewModelId="1:151" exports="true" name="Confirm Button" id="131:194">
+                                    <ViewModelInstanceString propertyValue="Delete" viewModelPropertyId="1:549" id="131:195">
+                                        <DataBindContext sourcePathIds="131:1-131:4" propertyKey="561" nameBased="true" id="131:196"/>
+                                    </ViewModelInstanceString>
+                                    <ViewModelInstanceBoolean viewModelPropertyId="1:587" id="131:197"/>
+                                    <ViewModelInstanceTrigger viewModelPropertyId="1:1321" id="131:198">
+                                        <DataBindContext sourcePathIds="131:1-131:8" propertyKey="687" nameBased="true" twoWay="true" id="131:199"/>
+                                    </ViewModelInstanceTrigger>
+                                    <ViewModelInstanceBoolean viewModelPropertyId="7:1" id="131:200"/>
+                                    <ViewModelInstanceBoolean viewModelPropertyId="7:3" id="131:201">
+                                        <DataBindContext sourcePathIds="131:1-131:10" propertyKey="593" nameBased="true" id="131:202"/>
+                                    </ViewModelInstanceBoolean>
+                                    <ViewModelInstanceNumber viewModelPropertyId="33:164" id="131:203"/>
+                                    <ViewModelInstanceBoolean viewModelPropertyId="33:169" id="131:204"/>
+                                    <ViewModelInstanceNumber viewModelPropertyId="99:100" id="131:205"/>
+                                    <ViewModelInstanceString viewModelPropertyId="112:14" id="131:206"/>
+                                    <ViewModelInstanceNumber propertyValue="3" viewModelPropertyId="118:1" id="131:207">
+                                        <DataBindContext sourcePathIds="131:1-131:6" propertyKey="575" nameBased="true" id="131:208"/>
+                                    </ViewModelInstanceNumber>
+                                </ViewModelInstance>
+                            </NestedArtboardLayout>
+                            <LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="131:191"/>
+                        </LayoutComponent>
+                        <LayoutComponentStyle gapHorizontal="8" paddingTop="16" layoutAlignmentType="centerRight" intrinsicallySizedValue="true" layoutWidthScaleType="fill" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="131:171"/>
+                    </LayoutComponent>
+                    <Fill fillRule="clockwise" id="131:123">
+                        <SolidColor colorValue="26000000" id="131:124"/>
+                        <Feather strength="16" offsetY="6" id="131:125">
+                            <DataBindContext sourcePathIds="10:7-901:29" propertyKey="749" converterId="0:0" id="131:126"/>
+                            <DataBindContext sourcePathIds="10:7-901:35" propertyKey="751" converterId="0:0" id="131:127"/>
+                        </Feather>
+                    </Fill>
+                    <Fill fillRule="clockwise" id="131:128">
+                        <SolidColor colorValue="FF18181B" id="131:129">
+                            <DataBindContext sourcePathIds="10:7-10:7406" propertyKey="37" id="131:130"/>
+                        </SolidColor>
+                    </Fill>
+                    <Stroke id="131:131">
+                        <SolidColor colorValue="FF27272A" id="131:132">
+                            <DataBindContext sourcePathIds="10:7-10:7418" propertyKey="37" id="131:133"/>
+                        </SolidColor>
+                    </Stroke>
+                    <ComponentOrigin originX="0.5" originY="0.5" id="131:134"/>
+                    <LayoutComponentStyle gapVertical="8" paddingLeft="24" paddingRight="24" paddingTop="24" paddingBottom="24" flexDirectionValue="column" maxWidth="400" maxWidthUnitsValue="points" cornerRadiusTL="16" intrinsicallySizedValue="true" layoutWidthScaleType="fill" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="131:121">
+                        <DataBindContext sourcePathIds="10:7-901:7" propertyKey="640" converterId="0:0" id="131:122"/>
+                    </LayoutComponentStyle>
+                    <SemanticData role="dialog" name="Semantics" id="131:210">
+                        <DataBindContext sourcePathIds="131:1-131:2" propertyKey="983" nameBased="true" id="131:211"/>
+                        <DataBindContext sourcePathIds="131:1-131:10" propertyKey="1004" nameBased="true" id="131:212"/>
+                    </SemanticData>
+                </LayoutComponent>
+                <LayoutComponentStyle paddingLeft="24" paddingRight="24" paddingTop="24" paddingBottom="24" layoutAlignmentType="center" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="131:117"/>
+            </LayoutComponent>
+            <LayoutComponent styleId="131:113" name="Scrim" id="131:112">
+                <Fill fillRule="clockwise" id="131:114">
+                    <SolidColor colorValue="80000000" id="131:115"/>
+                </Fill>
+                <LayoutComponentStyle layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="131:113"/>
+            </LayoutComponent>
+            <LayoutComponentStyle layoutTypeValue="stack" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="131:111"/>
+        </LayoutComponent>
+        <LinearAnimation name="Closed" id="131:300">
+            <KeyedObject objectId="131:111" id="131:301">
+                <KeyedProperty property="displayValue" id="131:302">
+                    <KeyFrameUint value="1" id="131:303"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="131:110" id="131:304">
+                <KeyedProperty property="opacity" id="131:305">
+                    <KeyFrameDouble id="131:306"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+        <LinearAnimation duration="12" name="Opening" id="131:310">
+            <KeyedObject objectId="131:111" id="131:311">
+                <KeyedProperty property="displayValue" id="131:312">
+                    <KeyFrameUint id="131:313"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="131:110" id="131:314">
+                <KeyedProperty property="opacity" id="131:315">
+                    <KeyFrameDouble interpolationType="cubic" id="131:316">
+                        <CubicEaseInterpolator x1="0.2" x2="0" id="131:317"/>
+                    </KeyFrameDouble>
+                    <KeyFrameDouble value="1" frame="12" id="131:318"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="131:120" id="131:319">
+                <KeyedProperty property="scaleX" id="131:320">
+                    <KeyFrameDouble value="0.96" interpolationType="cubic" id="131:321">
+                        <CubicEaseInterpolator x1="0.2" x2="0" id="131:322"/>
+                    </KeyFrameDouble>
+                    <KeyFrameDouble value="1" frame="12" id="131:323"/>
+                </KeyedProperty>
+                <KeyedProperty property="scaleY" id="131:324">
+                    <KeyFrameDouble value="0.96" interpolationType="cubic" id="131:325">
+                        <CubicEaseInterpolator x1="0.2" x2="0" id="131:326"/>
+                    </KeyFrameDouble>
+                    <KeyFrameDouble value="1" frame="12" id="131:327"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+        <LinearAnimation duration="9" name="Closing" id="131:330">
+            <KeyedObject objectId="131:111" id="131:331">
+                <KeyedProperty property="displayValue" id="131:332">
+                    <KeyFrameUint id="131:333"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="131:110" id="131:334">
+                <KeyedProperty property="opacity" id="131:335">
+                    <KeyFrameDouble value="1" interpolationType="cubic" id="131:336">
+                        <CubicEaseInterpolator x1="0.4" x2="1" id="131:337"/>
+                    </KeyFrameDouble>
+                    <KeyFrameDouble frame="9" id="131:338"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="131:120" id="131:339">
+                <KeyedProperty property="scaleX" id="131:340">
+                    <KeyFrameDouble value="1" interpolationType="cubic" id="131:341">
+                        <CubicEaseInterpolator x1="0.4" x2="1" id="131:342"/>
+                    </KeyFrameDouble>
+                    <KeyFrameDouble value="0.98" frame="9" id="131:343"/>
+                </KeyedProperty>
+                <KeyedProperty property="scaleY" id="131:344">
+                    <KeyFrameDouble value="1" interpolationType="cubic" id="131:345">
+                        <CubicEaseInterpolator x1="0.4" x2="1" id="131:346"/>
+                    </KeyFrameDouble>
+                    <KeyFrameDouble value="0.98" frame="9" id="131:347"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+        <StateMachine name="State Machine 1" id="131:102">
+            <StateMachineListener targetId="131:112" name="Dismiss" id="131:400">
+                <ListenerInputType listenerTypeValue="click" id="131:401"/>
+                <ListenerViewModelChange fromViewModelProperty="true" fromDataBindId="131:405" id="131:402">
+                    <BindablePropertyTrigger id="131:403">
+                        <DataBindContext sourcePathIds="131:1-131:9" propertyKey="686" direction="true" converterId="1:1332" id="131:404"/>
+                        <DataBindContext sourcePathIds="131:1-131:9" propertyKey="686" id="131:405"/>
+                    </BindablePropertyTrigger>
+                </ListenerViewModelChange>
+                <ListenerViewModelChange id="131:406">
+                    <BindablePropertyBoolean id="131:407">
+                        <DataBindContext sourcePathIds="131:1-131:7" propertyKey="634" direction="true" id="131:408"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListener targetId="131:120" name="Close on Confirm" id="131:410">
+                <ListenerInputTypeViewModel viewModelPathIds="131:1-131:8" listenerTypeValue="viewModel" id="131:411"/>
+                <ListenerViewModelChange id="131:412">
+                    <BindablePropertyBoolean id="131:413">
+                        <DataBindContext sourcePathIds="131:1-131:7" propertyKey="634" direction="true" id="131:414"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListener targetId="131:120" name="Close on Cancel" id="131:415">
+                <ListenerInputTypeViewModel viewModelPathIds="131:1-131:9" listenerTypeValue="viewModel" id="131:416"/>
+                <ListenerViewModelChange id="131:417">
+                    <BindablePropertyBoolean id="131:418">
+                        <DataBindContext sourcePathIds="131:1-131:7" propertyKey="634" direction="true" id="131:419"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListener targetId="131:120" name="Card Blocks Scrim" id="131:420">
+                <ListenerInputType id="131:421"/>
+                <ListenerViewModelChange id="131:422">
+                    <BindablePropertyBoolean id="131:423">
+                        <DataBindContext sourcePathIds="10:7-63:244" propertyKey="634" direction="true" id="131:424"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineLayer name="Open" id="131:430">
+                <AnimationState animationId="131:300" x="160" stateName="Closed" id="131:431">
+                    <StateTransition stateToId="131:432" id="131:440">
+                        <TransitionViewModelCondition id="131:441">
+                            <TransitionPropertyViewModelComparator id="131:442">
+                                <BindablePropertyBoolean id="131:443">
+                                    <DataBindContext sourcePathIds="131:1-131:7" propertyKey="634" id="131:444"/>
+                                </BindablePropertyBoolean>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueBooleanComparator value="true" id="131:445"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                </AnimationState>
+                <AnimationState animationId="131:310" x="400" stateName="Open" id="131:432">
+                    <StateTransition stateToId="131:433" id="131:450">
+                        <TransitionViewModelCondition id="131:451">
+                            <TransitionPropertyViewModelComparator id="131:452">
+                                <BindablePropertyBoolean id="131:453">
+                                    <DataBindContext sourcePathIds="131:1-131:7" propertyKey="634" id="131:454"/>
+                                </BindablePropertyBoolean>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueBooleanComparator id="131:455"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                </AnimationState>
+                <AnimationState animationId="131:330" x="280" y="120" stateName="Closing" id="131:433">
+                    <StateTransition stateToId="131:432" id="131:460">
+                        <TransitionViewModelCondition id="131:461">
+                            <TransitionPropertyViewModelComparator id="131:462">
+                                <BindablePropertyBoolean id="131:463">
+                                    <DataBindContext sourcePathIds="131:1-131:7" propertyKey="634" id="131:464"/>
+                                </BindablePropertyBoolean>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueBooleanComparator value="true" id="131:465"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                    <StateTransition stateToId="131:431" enableExitTime="true" exitTimeIsPercetange="true" exitTime="100" id="131:466"/>
+                </AnimationState>
+                <AnyState x="560" id="131:434"/>
+                <ExitState x="640" id="131:435"/>
+                <EntryState id="131:436">
+                    <StateTransition stateToId="131:431" id="131:437"/>
+                </EntryState>
+            </StateMachineLayer>
+        </StateMachine>
+    </Artboard>
+</Rive>
