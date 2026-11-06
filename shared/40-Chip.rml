@@ -14,6 +14,110 @@
                 </LayoutComponentStyle>
             </LayoutComponent>
             <LayoutComponent styleId="141:1013" name="Content" id="141:1056">
+                <LayoutComponent width="14" height="14" styleId="168:82" name="Icon" id="168:83">
+                    <Shape x="7" y="7" opacity="0" name="play" id="168:10">
+                        <PointsPath isClosed="true" id="168:14">
+                            <StraightVertex radius="1" x="-3" y="-4.5" id="168:11"/>
+                            <StraightVertex radius="1" x="4" id="168:12"/>
+                            <StraightVertex radius="1" x="-3" y="4.5" id="168:13"/>
+                        </PointsPath>
+                        <Stroke thickness="1.75" cap="round" join="round" id="168:15">
+                            <SolidColor colorValue="FFFAFAFA" id="168:16">
+                                <DataBindContext sourcePathIds="10:7-10:7422" propertyKey="37" id="168:17"/>
+                            </SolidColor>
+                            <DataBindContext sourcePathIds="141:1-141:4" propertyKey="47" nameBased="true" converterId="167:2" id="168:18"/>
+                        </Stroke>
+                        <Stroke thickness="0" cap="round" join="round" id="168:19">
+                            <SolidColor colorValue="FFA1A1AA" id="168:20">
+                                <DataBindContext sourcePathIds="10:7-10:7426" propertyKey="37" id="168:21"/>
+                            </SolidColor>
+                            <DataBindContext sourcePathIds="141:1-141:4" propertyKey="47" nameBased="true" converterId="33:251" id="168:22"/>
+                        </Stroke>
+                    </Shape>
+                    <Shape x="7" y="7" opacity="0" name="panels" id="168:23">
+                        <PointsPath isClosed="true" id="168:28">
+                            <StraightVertex radius="1" x="-4.5" y="-4.5" id="168:24"/>
+                            <StraightVertex radius="1" x="4.5" y="-4.5" id="168:25"/>
+                            <StraightVertex radius="1" x="4.5" y="4.5" id="168:26"/>
+                            <StraightVertex radius="1" x="-4.5" y="4.5" id="168:27"/>
+                        </PointsPath>
+                        <PointsPath id="168:31">
+                            <StraightVertex x="-4.5" y="-1.5" id="168:29"/>
+                            <StraightVertex x="4.5" y="-1.5" id="168:30"/>
+                        </PointsPath>
+                        <PointsPath id="168:34">
+                            <StraightVertex x="-1.5" y="-1.5" id="168:32"/>
+                            <StraightVertex x="-1.5" y="4.5" id="168:33"/>
+                        </PointsPath>
+                        <Stroke thickness="1.75" cap="round" join="round" id="168:35">
+                            <SolidColor colorValue="FFFAFAFA" id="168:36">
+                                <DataBindContext sourcePathIds="10:7-10:7422" propertyKey="37" id="168:37"/>
+                            </SolidColor>
+                            <DataBindContext sourcePathIds="141:1-141:4" propertyKey="47" nameBased="true" converterId="167:2" id="168:38"/>
+                        </Stroke>
+                        <Stroke thickness="0" cap="round" join="round" id="168:39">
+                            <SolidColor colorValue="FFA1A1AA" id="168:40">
+                                <DataBindContext sourcePathIds="10:7-10:7426" propertyKey="37" id="168:41"/>
+                            </SolidColor>
+                            <DataBindContext sourcePathIds="141:1-141:4" propertyKey="47" nameBased="true" converterId="33:251" id="168:42"/>
+                        </Stroke>
+                    </Shape>
+                    <Shape x="7" y="7" opacity="0" name="link" id="168:43">
+                        <PointsPath isClockwise="false" id="168:48">
+                            <StraightVertex x="-1.5" y="-2.5" id="168:44"/>
+                            <StraightVertex radius="2.5" x="-5" y="-2.5" id="168:45"/>
+                            <StraightVertex radius="2.5" x="-5" y="2.5" id="168:46"/>
+                            <StraightVertex x="-1.5" y="2.5" id="168:47"/>
+                        </PointsPath>
+                        <PointsPath id="168:53">
+                            <StraightVertex x="1.5" y="-2.5" id="168:49"/>
+                            <StraightVertex radius="2.5" x="5" y="-2.5" id="168:50"/>
+                            <StraightVertex radius="2.5" x="5" y="2.5" id="168:51"/>
+                            <StraightVertex x="1.5" y="2.5" id="168:52"/>
+                        </PointsPath>
+                        <PointsPath id="168:56">
+                            <StraightVertex x="-2" id="168:54"/>
+                            <StraightVertex x="2" id="168:55"/>
+                        </PointsPath>
+                        <Stroke thickness="1.75" cap="round" join="round" id="168:57">
+                            <SolidColor colorValue="FFFAFAFA" id="168:58">
+                                <DataBindContext sourcePathIds="10:7-10:7422" propertyKey="37" id="168:59"/>
+                            </SolidColor>
+                            <DataBindContext sourcePathIds="141:1-141:4" propertyKey="47" nameBased="true" converterId="167:2" id="168:60"/>
+                        </Stroke>
+                        <Stroke thickness="0" cap="round" join="round" id="168:61">
+                            <SolidColor colorValue="FFA1A1AA" id="168:62">
+                                <DataBindContext sourcePathIds="10:7-10:7426" propertyKey="37" id="168:63"/>
+                            </SolidColor>
+                            <DataBindContext sourcePathIds="141:1-141:4" propertyKey="47" nameBased="true" converterId="33:251" id="168:64"/>
+                        </Stroke>
+                    </Shape>
+                    <Shape x="7" y="7" opacity="0" name="code" id="168:65">
+                        <PointsPath isClockwise="false" id="168:69">
+                            <StraightVertex x="2" y="3" id="168:66"/>
+                            <StraightVertex x="5" id="168:67"/>
+                            <StraightVertex x="2" y="-3" id="168:68"/>
+                        </PointsPath>
+                        <PointsPath isClockwise="false" id="168:73">
+                            <StraightVertex x="-2" y="-3" id="168:70"/>
+                            <StraightVertex x="-5" id="168:71"/>
+                            <StraightVertex x="-2" y="3" id="168:72"/>
+                        </PointsPath>
+                        <Stroke thickness="1.75" cap="round" join="round" id="168:74">
+                            <SolidColor colorValue="FFFAFAFA" id="168:75">
+                                <DataBindContext sourcePathIds="10:7-10:7422" propertyKey="37" id="168:76"/>
+                            </SolidColor>
+                            <DataBindContext sourcePathIds="141:1-141:4" propertyKey="47" nameBased="true" converterId="167:2" id="168:77"/>
+                        </Stroke>
+                        <Stroke thickness="0" cap="round" join="round" id="168:78">
+                            <SolidColor colorValue="FFA1A1AA" id="168:79">
+                                <DataBindContext sourcePathIds="10:7-10:7426" propertyKey="37" id="168:80"/>
+                            </SolidColor>
+                            <DataBindContext sourcePathIds="141:1-141:4" propertyKey="47" nameBased="true" converterId="33:251" id="168:81"/>
+                        </Stroke>
+                    </Shape>
+                    <LayoutComponentStyle displayValue="none" id="168:82"/>
+                </LayoutComponent>
                 <LayoutComponent width="14" height="14" styleId="141:1014" name="Check" id="141:1057">
                     <Shape x="7" y="7" name="Disabled Check" id="141:1062">
                         <PointsPath isClockwise="false" id="141:1063">
@@ -304,6 +408,117 @@
                     <StateTransition stateToId="141:1182" id="141:1201"/>
                 </EntryState>
             </StateMachineLayer>
+            <StateMachineLayer name="Icon" id="168:154">
+                <AnimationState animationId="168:84" x="160" y="100" stateName="Icon 0" id="168:149"/>
+                <AnimationState animationId="168:97" x="320" y="100" stateName="Icon 1" id="168:150"/>
+                <AnimationState animationId="168:110" x="480" y="100" stateName="Icon 2" id="168:151"/>
+                <AnimationState animationId="168:123" x="640" y="100" stateName="Icon 3" id="168:152"/>
+                <AnimationState animationId="168:136" x="800" y="100" stateName="Icon 4" id="168:153"/>
+                <AnyState x="500" id="168:155">
+                    <StateTransition stateToId="168:149" id="168:156">
+                        <TransitionViewModelCondition id="168:157">
+                            <TransitionPropertyViewModelComparator id="168:158">
+                                <BindablePropertyNumber id="168:159">
+                                    <DataBindContext sourcePathIds="141:1-168:1" propertyKey="636" id="168:160"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueNumberComparator id="168:161"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                    <StateTransition stateToId="168:150" id="168:162">
+                        <TransitionViewModelCondition id="168:163">
+                            <TransitionPropertyViewModelComparator id="168:164">
+                                <BindablePropertyNumber id="168:165">
+                                    <DataBindContext sourcePathIds="141:1-168:1" propertyKey="636" id="168:166"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueNumberComparator value="1" id="168:167"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                    <StateTransition stateToId="168:151" id="168:168">
+                        <TransitionViewModelCondition id="168:169">
+                            <TransitionPropertyViewModelComparator id="168:170">
+                                <BindablePropertyNumber id="168:171">
+                                    <DataBindContext sourcePathIds="141:1-168:1" propertyKey="636" id="168:172"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueNumberComparator value="2" id="168:173"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                    <StateTransition stateToId="168:152" id="168:174">
+                        <TransitionViewModelCondition id="168:175">
+                            <TransitionPropertyViewModelComparator id="168:176">
+                                <BindablePropertyNumber id="168:177">
+                                    <DataBindContext sourcePathIds="141:1-168:1" propertyKey="636" id="168:178"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueNumberComparator value="3" id="168:179"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                    <StateTransition stateToId="168:153" id="168:180">
+                        <TransitionViewModelCondition id="168:181">
+                            <TransitionPropertyViewModelComparator id="168:182">
+                                <BindablePropertyNumber id="168:183">
+                                    <DataBindContext sourcePathIds="141:1-168:1" propertyKey="636" id="168:184"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueNumberComparator value="4" id="168:185"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                </AnyState>
+                <ExitState x="600" id="168:186"/>
+                <EntryState id="168:187">
+                    <StateTransition stateToId="168:149" id="168:188"/>
+                </EntryState>
+            </StateMachineLayer>
+            <StateMachineLayer name="Icon Slot" id="168:199">
+                <AnimationState animationId="168:189" x="160" y="100" stateName="Hidden" id="168:197"/>
+                <AnimationState animationId="168:190" x="320" y="100" stateName="Shown" id="168:198"/>
+                <AnyState x="500" id="168:200">
+                    <StateTransition stateToId="168:197" id="168:201">
+                        <TransitionViewModelCondition id="168:202">
+                            <TransitionPropertyViewModelComparator id="168:203">
+                                <BindablePropertyBoolean id="168:204">
+                                    <DataBindContext sourcePathIds="141:1-141:3" propertyKey="634" id="168:205"/>
+                                </BindablePropertyBoolean>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueBooleanComparator value="true" id="168:206"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                    <StateTransition stateToId="168:197" id="168:207">
+                        <TransitionViewModelCondition id="168:208">
+                            <TransitionPropertyViewModelComparator id="168:209">
+                                <BindablePropertyNumber id="168:210">
+                                    <DataBindContext sourcePathIds="141:1-168:1" propertyKey="636" id="168:211"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueNumberComparator id="168:212"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                    <StateTransition stateToId="168:198" id="168:213">
+                        <TransitionViewModelCondition id="168:214">
+                            <TransitionPropertyViewModelComparator id="168:215">
+                                <BindablePropertyBoolean id="168:216">
+                                    <DataBindContext sourcePathIds="141:1-141:3" propertyKey="634" id="168:217"/>
+                                </BindablePropertyBoolean>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueBooleanComparator id="168:218"/>
+                        </TransitionViewModelCondition>
+                        <TransitionViewModelCondition opValue="greaterThan" id="168:219">
+                            <TransitionPropertyViewModelComparator id="168:220">
+                                <BindablePropertyNumber id="168:221">
+                                    <DataBindContext sourcePathIds="141:1-168:1" propertyKey="636" id="168:222"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueNumberComparator id="168:223"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                </AnyState>
+                <ExitState x="600" id="168:224"/>
+                <EntryState id="168:225">
+                    <StateTransition stateToId="168:197" id="168:226"/>
+                </EntryState>
+            </StateMachineLayer>
         </StateMachine>
         <LinearAnimation loopValue="loop" name="Off" id="141:1005">
             <KeyedObject objectId="141:1031" id="141:1202">
@@ -330,5 +545,129 @@
             </KeyedObject>
         </LinearAnimation>
         <LinearAnimation name="Activate Idle" id="141:1007"/>
+        <LinearAnimation loopValue="loop" name="Icon 0" id="168:84">
+            <KeyedObject objectId="168:10" id="168:85">
+                <KeyedProperty property="opacity" id="168:86">
+                    <KeyFrameDouble interpolationType="linear" id="168:87"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="168:23" id="168:88">
+                <KeyedProperty property="opacity" id="168:89">
+                    <KeyFrameDouble interpolationType="linear" id="168:90"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="168:43" id="168:91">
+                <KeyedProperty property="opacity" id="168:92">
+                    <KeyFrameDouble interpolationType="linear" id="168:93"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="168:65" id="168:94">
+                <KeyedProperty property="opacity" id="168:95">
+                    <KeyFrameDouble interpolationType="linear" id="168:96"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+        <LinearAnimation loopValue="loop" name="Icon 1" id="168:97">
+            <KeyedObject objectId="168:10" id="168:98">
+                <KeyedProperty property="opacity" id="168:99">
+                    <KeyFrameDouble value="1" interpolationType="linear" id="168:100"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="168:23" id="168:101">
+                <KeyedProperty property="opacity" id="168:102">
+                    <KeyFrameDouble interpolationType="linear" id="168:103"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="168:43" id="168:104">
+                <KeyedProperty property="opacity" id="168:105">
+                    <KeyFrameDouble interpolationType="linear" id="168:106"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="168:65" id="168:107">
+                <KeyedProperty property="opacity" id="168:108">
+                    <KeyFrameDouble interpolationType="linear" id="168:109"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+        <LinearAnimation loopValue="loop" name="Icon 2" id="168:110">
+            <KeyedObject objectId="168:10" id="168:111">
+                <KeyedProperty property="opacity" id="168:112">
+                    <KeyFrameDouble interpolationType="linear" id="168:113"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="168:23" id="168:114">
+                <KeyedProperty property="opacity" id="168:115">
+                    <KeyFrameDouble value="1" interpolationType="linear" id="168:116"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="168:43" id="168:117">
+                <KeyedProperty property="opacity" id="168:118">
+                    <KeyFrameDouble interpolationType="linear" id="168:119"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="168:65" id="168:120">
+                <KeyedProperty property="opacity" id="168:121">
+                    <KeyFrameDouble interpolationType="linear" id="168:122"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+        <LinearAnimation loopValue="loop" name="Icon 3" id="168:123">
+            <KeyedObject objectId="168:10" id="168:124">
+                <KeyedProperty property="opacity" id="168:125">
+                    <KeyFrameDouble interpolationType="linear" id="168:126"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="168:23" id="168:127">
+                <KeyedProperty property="opacity" id="168:128">
+                    <KeyFrameDouble interpolationType="linear" id="168:129"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="168:43" id="168:130">
+                <KeyedProperty property="opacity" id="168:131">
+                    <KeyFrameDouble value="1" interpolationType="linear" id="168:132"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="168:65" id="168:133">
+                <KeyedProperty property="opacity" id="168:134">
+                    <KeyFrameDouble interpolationType="linear" id="168:135"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+        <LinearAnimation loopValue="loop" name="Icon 4" id="168:136">
+            <KeyedObject objectId="168:10" id="168:137">
+                <KeyedProperty property="opacity" id="168:138">
+                    <KeyFrameDouble interpolationType="linear" id="168:139"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="168:23" id="168:140">
+                <KeyedProperty property="opacity" id="168:141">
+                    <KeyFrameDouble interpolationType="linear" id="168:142"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="168:43" id="168:143">
+                <KeyedProperty property="opacity" id="168:144">
+                    <KeyFrameDouble interpolationType="linear" id="168:145"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="168:65" id="168:146">
+                <KeyedProperty property="opacity" id="168:147">
+                    <KeyFrameDouble value="1" interpolationType="linear" id="168:148"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+        <LinearAnimation loopValue="loop" name="Icon Hidden" id="168:189">
+            <KeyedObject objectId="168:82" id="168:191">
+                <KeyedProperty property="displayValue" id="168:192">
+                    <KeyFrameUint value="1" id="168:193"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+        <LinearAnimation loopValue="loop" name="Icon Shown" id="168:190">
+            <KeyedObject objectId="168:82" id="168:194">
+                <KeyedProperty property="displayValue" id="168:195">
+                    <KeyFrameUint id="168:196"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
     </Artboard>
 </Rive>

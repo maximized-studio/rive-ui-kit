@@ -419,6 +419,7 @@ Source: `shared/40-Chip.rml` · artboard `141:1000` · state machine `141:1004` 
 | Property | Type | Id |
 |---|---|---|
 | `label` | string | `141:2` |
+| `icon` | number | `168:1` |
 | `selected` | boolean | `141:3` |
 | `disabled` | boolean | `141:4` |
 | `a11yHidden` | boolean | `141:5` |
@@ -427,7 +428,7 @@ Source: `shared/40-Chip.rml` · artboard `141:1000` · state machine `141:1004` 
 
 A pill you switch on and off, for filters and topics. On, it gets a check and the soft brand colours of the Label.
 
-- View model `Chip`: `label`, `selected` (two-way: a click, a screen reader's activate, or Enter/Space while it has keyboard focus toggles it), `disabled`, `a11yHidden`.
+- View model `Chip`: `label`, `icon` (`0` none, `1` play, `2` panels, `3` link, `4` code; a leading icon that the check replaces while the chip is selected, so the chip keeps its width), `selected` (two-way: a click, a screen reader's activate, or Enter/Space while it has keyboard focus toggles it), `disabled`, `a11yHidden`.
 - **Chip Group** wraps chips over as many rows as they need: view model `ChipGroup`: `chips` (a list of `Chip` instances), `label` (screen reader name), `a11yHidden`. Every chip keeps its own `selected`, so any number can be on. Read them from the list in your app.
 - Off: `_surface` with a `_border` line and `_text`. On: `_softBg`, `_softBorder` and `_softText`, the colours of the Label. Hover: `_surfaceHover`. Disabled: `_surfaceSubtle` and `_textMuted`. The corners follow `_radiusButton`.
 - Input goes through the same gate as the Button: every input fires `_activate`, and the Activate layer toggles only when `disabled` is false. A disabled chip also leaves keyboard focus.
@@ -438,12 +439,13 @@ A pill you switch on and off, for filters and topics. On, it gets a check and th
     <NestedStateMachine animationId="141:1004" id="X:2"/>
     <ViewModelInstance viewModelId="141:1" exports="true" name="My Chip" id="X:3">
         <ViewModelInstanceString viewModelPropertyId="141:2" id="X:4"/>  <!-- label -->
-        <ViewModelInstanceBoolean viewModelPropertyId="141:3" id="X:5"/>  <!-- selected -->
-        <ViewModelInstanceBoolean viewModelPropertyId="141:4" id="X:6"/>  <!-- disabled -->
-        <ViewModelInstanceBoolean viewModelPropertyId="141:5" id="X:7"/>  <!-- a11yHidden -->
-        <ViewModelInstanceBoolean viewModelPropertyId="141:6" id="X:8"/>  <!-- _hover -->
-        <ViewModelInstanceTrigger viewModelPropertyId="141:7" id="X:9"/>  <!-- _activate -->
-        <ViewModelInstanceTrigger viewModelPropertyId="141:8" id="X:10"/>  <!-- _toggle -->
+        <ViewModelInstanceNumber viewModelPropertyId="168:1" id="X:5"/>  <!-- icon -->
+        <ViewModelInstanceBoolean viewModelPropertyId="141:3" id="X:6"/>  <!-- selected -->
+        <ViewModelInstanceBoolean viewModelPropertyId="141:4" id="X:7"/>  <!-- disabled -->
+        <ViewModelInstanceBoolean viewModelPropertyId="141:5" id="X:8"/>  <!-- a11yHidden -->
+        <ViewModelInstanceBoolean viewModelPropertyId="141:6" id="X:9"/>  <!-- _hover -->
+        <ViewModelInstanceTrigger viewModelPropertyId="141:7" id="X:10"/>  <!-- _activate -->
+        <ViewModelInstanceTrigger viewModelPropertyId="141:8" id="X:11"/>  <!-- _toggle -->
     </ViewModelInstance>
 </NestedArtboardLayout>
 ```

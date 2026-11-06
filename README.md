@@ -123,7 +123,7 @@ A row of kit Buttons joined into one control: the outer corners follow the theme
 
 A pill you switch on and off, for filters and topics. On, it gets a check and the soft brand colours of the Label.
 
-- View model `Chip`: `label`, `selected` (two-way: a click, a screen reader's activate, or Enter/Space while it has keyboard focus toggles it), `disabled`, `a11yHidden`.
+- View model `Chip`: `label`, `icon` (`0` none, `1` play, `2` panels, `3` link, `4` code; a leading icon that the check replaces while the chip is selected, so the chip keeps its width), `selected` (two-way: a click, a screen reader's activate, or Enter/Space while it has keyboard focus toggles it), `disabled`, `a11yHidden`.
 - **Chip Group** wraps chips over as many rows as they need: view model `ChipGroup`: `chips` (a list of `Chip` instances), `label` (screen reader name), `a11yHidden`. Every chip keeps its own `selected`, so any number can be on. Read them from the list in your app.
 - Off: `_surface` with a `_border` line and `_text`. On: `_softBg`, `_softBorder` and `_softText`, the colours of the Label. Hover: `_surfaceHover`. Disabled: `_surfaceSubtle` and `_textMuted`. The corners follow `_radiusButton`.
 - Input goes through the same gate as the Button: every input fires `_activate`, and the Activate layer toggles only when `disabled` is false. A disabled chip also leaves keyboard focus.
@@ -359,4 +359,4 @@ The editor file is the source of truth. After editing in Rive, run `./pull.sh` b
 
 ## License
 
-[MIT](LICENSE) © Maximized Studio. The preview font `preview-assets/Inter.ttf` is licensed under the SIL Open Font License. The copy, scissors, clipboard, save, send, eye, align, file, folder, upload, pencil and clock icons are redrawn from [Lucide](https://lucide.dev) (ISC License, © Lucide Contributors).
+[MIT](LICENSE) © Maximized Studio. The preview font `preview-assets/Inter.ttf` is licensed under the SIL Open Font License. The copy, scissors, clipboard, save, send, eye, align, file, folder, upload, pencil, clock, play, panels, link and code icons are redrawn from [Lucide](https://lucide.dev) (ISC License, © Lucide Contributors).
