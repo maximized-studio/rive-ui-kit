@@ -993,6 +993,84 @@ Source: `shared/47-Star.rml` · artboard `155:1000` · state machine `155:1001` 
 </NestedArtboardLayout>
 ```
 
+## Step
+
+Source: `shared/50-Step.rml` · artboard `159:1000` · state machine `159:1001` · view model `Step` `159:1`
+
+| Property | Type | Id |
+|---|---|---|
+| `label` | string | `159:2` |
+| `value` | number | `159:3` |
+| `group` | `StepperState` | `159:4` |
+| `isLast` | boolean | `159:5` |
+
+```xml
+<NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="159:1000" isStateful="true" name="Step" id="X:1">
+    <NestedStateMachine animationId="159:1001" id="X:2"/>
+    <ViewModelInstance viewModelId="159:1" exports="true" name="My Step" id="X:3">
+        <ViewModelInstanceString viewModelPropertyId="159:2" id="X:4"/>  <!-- label -->
+        <ViewModelInstanceNumber viewModelPropertyId="159:3" id="X:5"/>  <!-- value -->
+        <ViewModelInstanceViewModel viewModelPropertyId="159:4" id="X:6"/>  <!-- group: set propertyValue to the id of a shared instance -->
+        <ViewModelInstanceBoolean viewModelPropertyId="159:5" id="X:7"/>  <!-- isLast -->
+    </ViewModelInstance>
+</NestedArtboardLayout>
+```
+
+## Stepper
+
+Source: `shared/51-Stepper.rml` · artboard `159:2000` · state machine `159:2001` · view model `Stepper` `159:20`
+Contains: Step
+
+| Property | Type | Id |
+|---|---|---|
+| `steps` | list of `Step` | `159:21` |
+| `state` | `StepperState` | `159:22` |
+| `label` | string | `159:23` |
+| `a11yHidden` | boolean | `159:24` |
+
+The steps of a wizard in a row: done steps get a check, the active one is filled, the rest wait in muted colours, with lines between them that fill as you go.
+
+- View model `Stepper`: `steps` (a list of `Step` instances), `state` (a shared `StepperState`), `label` (screen reader name), `a11yHidden`.
+- `Step`: `label`, `value` (its position: `0` for the first), `group` (the stepper's `StepperState`), `isLast` (hides the line after it). `StepperState`: `active`, the value of the current step.
+- Each Step compares its `value` with `active` in one layer (Upcoming, Active, Completed), so moving `active` is all your app does. The circle shows `value + 1` or a check.
+- Done and active circles use the primary tokens (`_primaryBg`, `_primaryText`), like the default Button; upcoming ones a `_borderStrong` ring with `_textMuted`.
+- **Stepper Demo** is the Showcase's building block: the Stepper with Back and Next Buttons that step `active` between the first and the last step.
+- Screen readers get a `list` named by `label` with a `listItem` per step; the active one is selected.
+
+```xml
+<NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="159:2000" isStateful="true" name="Stepper" id="X:1">
+    <NestedStateMachine animationId="159:2001" id="X:2"/>
+    <ViewModelInstance viewModelId="159:20" exports="true" name="My Stepper" id="X:3">
+        <ViewModelInstanceList viewModelPropertyId="159:21" id="X:4"/>  <!-- steps: add ViewModelInstanceListItem children -->
+        <ViewModelInstanceViewModel viewModelPropertyId="159:22" id="X:5"/>  <!-- state: set propertyValue to the id of a shared instance -->
+        <ViewModelInstanceString viewModelPropertyId="159:23" id="X:6"/>  <!-- label -->
+        <ViewModelInstanceBoolean viewModelPropertyId="159:24" id="X:7"/>  <!-- a11yHidden -->
+    </ViewModelInstance>
+</NestedArtboardLayout>
+```
+
+## Stepper Demo
+
+Source: `shared/52-StepperDemo.rml` · artboard `160:1000` · state machine `160:1001` · view model `StepperDemo` `160:1`
+Contains: Button, Stepper
+
+| Property | Type | Id |
+|---|---|---|
+| `stepper` | `Stepper` | `160:2` |
+| `_back` | trigger | `160:3` |
+| `_next` | trigger | `160:4` |
+
+```xml
+<NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="160:1000" isStateful="true" name="Stepper Demo" id="X:1">
+    <NestedStateMachine animationId="160:1001" id="X:2"/>
+    <ViewModelInstance viewModelId="160:1" exports="true" name="My Stepper Demo" id="X:3">
+        <ViewModelInstanceViewModel viewModelPropertyId="160:2" id="X:4"/>  <!-- stepper: set propertyValue to the id of a shared instance -->
+        <ViewModelInstanceTrigger viewModelPropertyId="160:3" id="X:5"/>  <!-- _back -->
+        <ViewModelInstanceTrigger viewModelPropertyId="160:4" id="X:6"/>  <!-- _next -->
+    </ViewModelInstance>
+</NestedArtboardLayout>
+```
+
 ## Switch
 
 Source: `shared/04-Switch.rml` · artboard `1:663` · state machine `1:668` · view model `Switch` `1:913`
@@ -1287,22 +1365,22 @@ Contains: Nav Group
 ## Slide  (Showcase demo)
 
 Source: `shared/17-Slide.rml` · artboard `10:5313` · state machine `10:5405` · view model `Slide` `10:5163`
-Contains: Accordion, Alert, Avatar, Badge, Breadcrumbs, Button Group, Button Row, Checkbox Group, Chip Group, Dialog Demo, Label, Menu, Number Field, Pagination, Progress Bar, Radio Group, Range Slider, Rating, Select, Slider, Split Button, Switch Group, Tabs, Toggle Button Group, Tooltip Button
+Contains: Accordion, Alert, Avatar, Badge, Breadcrumbs, Button Group, Button Row, Checkbox Group, Chip Group, Dialog Demo, Label, Menu, Number Field, Pagination, Progress Bar, Radio Group, Range Slider, Rating, Select, Slider, Split Button, Stepper Demo, Switch Group, Tabs, Toggle Button Group, Tooltip Button
 
 | Property | Type | Id |
 |---|---|---|
 | `name` | string | `10:5171` |
-| `content` | list of `Pagination` / `Accordion` / `RadioGroup` / `CheckboxGroup` / `SwitchGroup` / `Alert` / `Breadcrumbs` / `TooltipButton` / `ProgressBar` / `DialogDemo` / `ButtonRow` / `Tabs` / `ChipGroup` / `Menu` / `Select` / `SplitButton` / `RangeSlider` / `Rating` / `NumberField` / `Badge` / `Label` / `Slider` / `Avatar` / `ToggleButtonGroup` / `ButtonGroup` | `10:5173` |
+| `content` | list of `Pagination` / `Accordion` / `RadioGroup` / `CheckboxGroup` / `SwitchGroup` / `Alert` / `Breadcrumbs` / `TooltipButton` / `ProgressBar` / `DialogDemo` / `ButtonRow` / `Tabs` / `ChipGroup` / `Menu` / `Select` / `SplitButton` / `RangeSlider` / `Rating` / `NumberField` / `StepperDemo` / `Badge` / `Label` / `Slider` / `Avatar` / `ToggleButtonGroup` / `ButtonGroup` | `10:5173` |
 | `crumbs` | `Breadcrumbs` | `114:1` |
 
 ## Tile  (Showcase demo)
 
 Source: `shared/14-Tile.rml` · artboard `10:3618` · state machine `10:3623` · view model `Tile` `10:3612`
-Contains: Accordion, Alert, Avatar, Badge, Breadcrumbs, Button, Button Group, Checkbox Group, Chip Group, Dialog Demo, Label, Menu, Number Field, Pagination, Progress Bar, Radio Group, Range Slider, Rating, Select, Slider, Split Button, Switch Group, Tabs, Toggle Button Group, Tooltip Button
+Contains: Accordion, Alert, Avatar, Badge, Breadcrumbs, Button, Button Group, Checkbox Group, Chip Group, Dialog Demo, Label, Menu, Number Field, Pagination, Progress Bar, Radio Group, Range Slider, Rating, Select, Slider, Split Button, Stepper Demo, Switch Group, Tabs, Toggle Button Group, Tooltip Button
 
 | Property | Type | Id |
 |---|---|---|
-| `content` | list of `Pagination` / `Accordion` / `RadioGroup` / `CheckboxGroup` / `SwitchGroup` / `Alert` / `Breadcrumbs` / `TooltipButton` / `ProgressBar` / `DialogDemo` / `Tabs` / `ChipGroup` / `Menu` / `Select` / `SplitButton` / `RangeSlider` / `Rating` / `NumberField` / `Badge` / `Button` / `Label` / `Slider` / `Avatar` / `ToggleButtonGroup` / `ButtonGroup` | `10:3861` |
+| `content` | list of `Pagination` / `Accordion` / `RadioGroup` / `CheckboxGroup` / `SwitchGroup` / `Alert` / `Breadcrumbs` / `TooltipButton` / `ProgressBar` / `DialogDemo` / `Tabs` / `ChipGroup` / `Menu` / `Select` / `SplitButton` / `RangeSlider` / `Rating` / `NumberField` / `StepperDemo` / `Badge` / `Button` / `Label` / `Slider` / `Avatar` / `ToggleButtonGroup` / `ButtonGroup` | `10:3861` |
 | `name` | string | `10:3614` |
 
 ## Toolbar  (Showcase demo)

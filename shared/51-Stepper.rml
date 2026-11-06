@@ -1,0 +1,29 @@
+<Rive version="1" kind="fragment">
+    <Artboard defaultStateMachineId="159:2001" viewModelId="159:20" viewModelInstanceId="159:50" isComponent="true" spaceId="1:5601" width="400" height="24" styleId="159:2002" x="3600" y="1900" name="Stepper" id="159:2000">
+        <Fill fillRule="clockwise" id="159:2004">
+            <SolidColor colorValue="00000000" id="159:2005"/>
+        </Fill>
+        <LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="159:2002"/>
+        <LayoutComponent styleId="159:2003" name="Steps" id="159:2006">
+            <ArtboardComponentList participatesInLayout="true" id="159:2007">
+                <DataBindContext sourcePathIds="159:20-159:21" propertyKey="800" id="159:2008"/>
+            </ArtboardComponentList>
+            <LayoutComponentStyle gapHorizontal="8" layoutAlignmentType="center" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="159:2003"/>
+            <SemanticData role="list" name="Semantics" id="159:2009">
+                <DataBindContext sourcePathIds="159:20-159:23" propertyKey="983" nameBased="true" id="159:2010"/>
+                <DataBindContext sourcePathIds="159:20-159:24" propertyKey="1004" nameBased="true" id="159:2011"/>
+            </SemanticData>
+        </LayoutComponent>
+        <StateMachine name="State Machine 1" id="159:2001">
+            <StateMachineLayer name="Layer 1" id="159:2014">
+                <AnyState x="400" id="159:2015"/>
+                <ExitState x="480" id="159:2016"/>
+                <EntryState id="159:2017">
+                    <StateTransition stateToId="159:2012" id="159:2018"/>
+                </EntryState>
+                <AnimationState animationId="159:2013" x="160" id="159:2012"/>
+            </StateMachineLayer>
+        </StateMachine>
+        <LinearAnimation name="Timeline 1" id="159:2013"/>
+    </Artboard>
+</Rive>

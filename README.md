@@ -14,8 +14,8 @@ The kit is also on the [Rive Community](https://rive.app/community/files/25701-5
 - **Display:** Accordion · Avatar · Badge · Label
 - **Feedback:** Alert · Dialog · Progress Bar · Tooltip
 - **Inputs:** Checkbox / Checkbox Group · Chip / Chip Group · Number Field · Radio Option / Radio Group · Range Slider · Rating · Select · Slider · Switch / Switch Group
-- **Navigation:** Breadcrumbs · Menu · Pagination · Tabs
-- **Building blocks:** Accordion Item · Breadcrumb Item · Button Row · Dialog Demo · Menu Item · Nav Group · Nav Item · Page Item · Showcase Section · Sidebar · Slide · Star · Tab · Tile · Toolbar · Tooltip Button
+- **Navigation:** Breadcrumbs · Menu · Pagination · Stepper · Tabs
+- **Building blocks:** Accordion Item · Breadcrumb Item · Button Row · Dialog Demo · Menu Item · Nav Group · Nav Item · Page Item · Showcase Section · Sidebar · Slide · Star · Step · Stepper Demo · Tab · Tile · Toolbar · Tooltip Button
 
 Categories and the components in them are sorted A–Z. In the Showcase a category is data: a `ShowcaseSection` (title, tile list; the count is the list length) in `sections`, and a `NavGroup` in the Sidebar's `sections`.
 
@@ -57,6 +57,7 @@ The components carry Rive semantics, so screen readers get a real accessibility 
 | Rating | `slider` | label, value ("3 of 5"), disabled; increase / decrease |
 | Number Field | `button` / `slider` / `button` | Decrease, label with the value, Increase; increase / decrease |
 | Switch | `switchControl` | label, on/off |
+| Stepper / Step | `list` / `listItem` | label; step label, selected for the active step |
 | Tabs / Tab | `tabList` / `tab` | label; tab label, selected, disabled |
 | Toggle Button Group / Toggle Button | `radioGroup` / `radioButton` | group label; label, checked, disabled |
 | Dialog | `dialog`, `text`, `button` ×2 | title; body; the two Buttons |
@@ -190,6 +191,17 @@ Previous and next Buttons around up to seven page buttons. Set two numbers and t
 - Previous and next step by one and are disabled on the first and last page.
 - Listen to `page` in your app to load that page.
 - The behaviour is a small Luau script, **Pagination Pages**: it fills the `_pages` list of Page Items and sets the disabled flags. Luau runs in the editor and in the Rive runtimes. Use a `.riv` exported from the editor or built with `rive --publish`: a plain CLI build (`--once`) does not run scripts. Like every script, it does not run in a Community thumbnail.
+
+## Stepper
+
+The steps of a wizard in a row: done steps get a check, the active one is filled, the rest wait in muted colours, with lines between them that fill as you go.
+
+- View model `Stepper`: `steps` (a list of `Step` instances), `state` (a shared `StepperState`), `label` (screen reader name), `a11yHidden`.
+- `Step`: `label`, `value` (its position: `0` for the first), `group` (the stepper's `StepperState`), `isLast` (hides the line after it). `StepperState`: `active`, the value of the current step.
+- Each Step compares its `value` with `active` in one layer (Upcoming, Active, Completed), so moving `active` is all your app does. The circle shows `value + 1` or a check.
+- Done and active circles use the primary tokens (`_primaryBg`, `_primaryText`), like the default Button; upcoming ones a `_borderStrong` ring with `_textMuted`.
+- **Stepper Demo** is the Showcase's building block: the Stepper with Back and Next Buttons that step `active` between the first and the last step.
+- Screen readers get a `list` named by `label` with a `listItem` per step; the active one is selected.
 
 ## Tabs
 
