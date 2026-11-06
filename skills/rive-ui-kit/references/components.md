@@ -277,6 +277,7 @@ Source: `shared/03-Button.rml` · artboard `1:122` · state machine `1:127` · v
 |---|---|---|
 | `group` | number | `99:100` |
 | `variant` | number | `118:1` |
+| `color` | number | `136:1` |
 | `icon` | number | `33:164` |
 | `iconOnly` | boolean | `33:169` |
 | `disabled` | boolean | `7:1` |
@@ -286,11 +287,17 @@ Source: `shared/03-Button.rml` · artboard `1:122` · state machine `1:127` · v
 | `text` | string | `1:549` |
 | `hint` | string | `112:14` |
 
-A button in one of four variants. The default follows the inverse colours of the mode (light on dark, dark on light), so it never clashes with the brand colour.
+A button in three variants and three colours, like MUI: `variant` sets the shape, `color` the meaning. The default (contained, neutral) follows the inverse colours of the mode (light on dark, dark on light), so it never clashes with the brand colour.
 
-- View model `Button`: `text`, `variant` (`0` primary, `1` secondary, `2` brand, `3` destructive), `icon` (`0` none, `1` arrow, `2` chevron left, `3` chevron right, `4` copy, `5` scissors, `6` clipboard, `7` save, `8` trash, `9` close), `iconOnly`, `disabled`, `hint`, `group` (see Button Group), `a11yHidden`. `_pressed` fires on a click, a screen reader's activate, or Enter/Space while the Button has keyboard focus.
+- View model `Button`: `text`, `variant` (`0` contained, `1` outlined, `2` text), `color` (`0` neutral, `1` brand, `2` destructive), `icon` (`0` none, `1` arrow, `2` chevron left, `3` chevron right, `4` copy, `5` scissors, `6` clipboard, `7` save, `8` trash, `9` close), `iconOnly`, `disabled`, `hint`, `group` (see Button Group), `a11yHidden`. `_pressed` fires on a click, a screen reader's activate, or Enter/Space while the Button has keyboard focus.
 - A disabled Button ignores all three, and it cannot take keyboard focus. Taps and keys go through a small gate (`_activate` → the Activate layer fires `_pressed` only when `disabled` is false), because the disabled shield only stops the pointer.
-- Primary uses `_primaryBg` / `_primaryHover` / `_primaryText`, destructive `_dangerBg` / `_dangerHover` / `_dangerText`: Theme tokens per mode that ignore the brand. Only the brand variant follows the brand colour. Destructive stays red whatever the brand is.
+- **Contained** is a filled button with the theme shadow. Neutral uses `_primaryBg` / `_primaryHover` / `_primaryText`, destructive `_dangerBg` / `_dangerHover` / `_dangerText`: Theme tokens per mode that ignore the brand. Brand uses `_brand600` with `_brand800` on hover.
+- **Outlined** sits on `_surfaceRaised` with a border: `_border` for neutral, `_infoBorder` for brand, `_errorBorder` for destructive, and text in `_text`, `_infoText` or `_errorText`.
+- **Text** has no surface and no border, only the coloured text; hover adds a soft background (`_surfaceHover`, `_infoBg`, `_errorBg`).
+- Only the brand colour follows the brand. Destructive stays red whatever the brand is.
+- Disabled looks the same in every colour: `_textMuted` on `_surfaceSubtle`, or without the surface for the text variant.
+- One state machine layer, **Look**, holds one state per combination (Contained Neutral … Text Destructive).
+- Breaking change from the four old variants: `1` secondary is now `variant` 1 (outlined, neutral); the old `2` brand and `3` destructive are now `variant` 0 with `color` 1 or 2.
 - The Dropdown trigger uses the same primary tokens, so the actions look alike; its list keeps the brand accent.
 
 ```xml
@@ -299,15 +306,16 @@ A button in one of four variants. The default follows the inverse colours of the
     <ViewModelInstance viewModelId="1:151" exports="true" name="My Button" id="X:3">
         <ViewModelInstanceNumber viewModelPropertyId="99:100" id="X:4"/>  <!-- group -->
         <ViewModelInstanceNumber viewModelPropertyId="118:1" id="X:5"/>  <!-- variant -->
-        <ViewModelInstanceNumber viewModelPropertyId="33:164" id="X:6"/>  <!-- icon -->
-        <ViewModelInstanceBoolean viewModelPropertyId="33:169" id="X:7"/>  <!-- iconOnly -->
-        <ViewModelInstanceBoolean viewModelPropertyId="7:1" id="X:8"/>  <!-- disabled -->
-        <ViewModelInstanceBoolean viewModelPropertyId="7:3" id="X:9"/>  <!-- a11yHidden -->
-        <ViewModelInstanceTrigger viewModelPropertyId="1:1321" id="X:10"/>  <!-- _pressed -->
-        <ViewModelInstanceTrigger viewModelPropertyId="134:10" id="X:11"/>  <!-- _activate -->
-        <ViewModelInstanceBoolean viewModelPropertyId="1:587" id="X:12"/>  <!-- _hover -->
-        <ViewModelInstanceString viewModelPropertyId="1:549" id="X:13"/>  <!-- text -->
-        <ViewModelInstanceString viewModelPropertyId="112:14" id="X:14"/>  <!-- hint -->
+        <ViewModelInstanceNumber viewModelPropertyId="136:1" id="X:6"/>  <!-- color -->
+        <ViewModelInstanceNumber viewModelPropertyId="33:164" id="X:7"/>  <!-- icon -->
+        <ViewModelInstanceBoolean viewModelPropertyId="33:169" id="X:8"/>  <!-- iconOnly -->
+        <ViewModelInstanceBoolean viewModelPropertyId="7:1" id="X:9"/>  <!-- disabled -->
+        <ViewModelInstanceBoolean viewModelPropertyId="7:3" id="X:10"/>  <!-- a11yHidden -->
+        <ViewModelInstanceTrigger viewModelPropertyId="1:1321" id="X:11"/>  <!-- _pressed -->
+        <ViewModelInstanceTrigger viewModelPropertyId="134:10" id="X:12"/>  <!-- _activate -->
+        <ViewModelInstanceBoolean viewModelPropertyId="1:587" id="X:13"/>  <!-- _hover -->
+        <ViewModelInstanceString viewModelPropertyId="1:549" id="X:14"/>  <!-- text -->
+        <ViewModelInstanceString viewModelPropertyId="112:14" id="X:15"/>  <!-- hint -->
     </ViewModelInstance>
 </NestedArtboardLayout>
 ```
@@ -323,7 +331,7 @@ Contains: Button
 | `buttons` | list of `Button` | `92:610` |
 | `a11yHidden` | boolean | `92:612` |
 
-A row of kit Buttons joined into one control: the outer corners follow the theme roundness, the inner corners are square, and the group casts one shadow. Every Button variant works and they may be mixed.
+A row of kit Buttons joined into one control: the outer corners follow the theme roundness, the inner corners are square, and the group casts one shadow. Every Button variant and colour works and they may be mixed; set the same `variant` on each Button for an outlined or text group (a group cannot reach into its list).
 
 - View model `ButtonGroup`: `label` (screen reader name), `buttons` (a list of `Button` instances), `a11yHidden`.
 - Set `group` on every Button in the list: `1` first, `2` middle, `3` last (`0`, the default, is a standalone Button). It rounds only the outer corners and draws a divider before middle and last buttons; secondary borders merge into one line.
@@ -336,6 +344,26 @@ A row of kit Buttons joined into one control: the outer corners follow the theme
         <ViewModelInstanceString viewModelPropertyId="92:608" id="X:4"/>  <!-- label -->
         <ViewModelInstanceList viewModelPropertyId="92:610" id="X:5"/>  <!-- buttons: add ViewModelInstanceListItem children -->
         <ViewModelInstanceBoolean viewModelPropertyId="92:612" id="X:6"/>  <!-- a11yHidden -->
+    </ViewModelInstance>
+</NestedArtboardLayout>
+```
+
+## Button Row
+
+Source: `shared/42-ButtonRow.rml` · artboard `137:1` · state machine `137:10` · view model `ButtonRow` `136:400`
+Contains: Button
+
+| Property | Type | Id |
+|---|---|---|
+| `buttons` | list of `Button` | `136:401` |
+| `label` | string | `136:402` |
+
+```xml
+<NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="137:1" isStateful="true" name="Button Row" id="X:1">
+    <NestedStateMachine animationId="137:10" id="X:2"/>
+    <ViewModelInstance viewModelId="136:400" exports="true" name="My Button Row" id="X:3">
+        <ViewModelInstanceList viewModelPropertyId="136:401" id="X:4"/>  <!-- buttons: add ViewModelInstanceListItem children -->
+        <ViewModelInstanceString viewModelPropertyId="136:402" id="X:5"/>  <!-- label -->
     </ViewModelInstance>
 </NestedArtboardLayout>
 ```
@@ -454,7 +482,7 @@ Contains: Button
 | `body` | string | `131:3` |
 | `confirmText` | string | `131:4` |
 | `cancelText` | string | `131:5` |
-| `confirmVariant` | number | `131:6` |
+| `confirmColor` | number | `131:6` |
 | `open` | boolean | `131:7` |
 | `confirmed` | trigger | `131:8` |
 | `cancelled` | trigger | `131:9` |
@@ -465,7 +493,7 @@ Contains: Button
 
 A modal card over a dimmed scrim, with a title, a body and two kit Buttons. It is the dismissible counterpart of Alert.
 
-- View model `Dialog`: `title`, `body`, `confirmText`, `cancelText`, `confirmVariant` (a Button `variant`: `0` primary, `2` brand, `3` destructive), `confirmIcon` and `cancelIcon` (Button `icon` numbers; trash and close by default), `dim` (the 50% scrim, on by default), `open`, `a11yHidden`, and the triggers `confirmed` and `cancelled`.
+- View model `Dialog`: `title`, `body`, `confirmText`, `cancelText`, `confirmColor` (a Button `color`: `0` neutral, `1` brand, `2` destructive; was `confirmVariant`), `confirmIcon` and `cancelIcon` (Button `icon` numbers; trash and close by default), `dim` (the 50% scrim, on by default), `open`, `a11yHidden`, and the triggers `confirmed` and `cancelled`.
 - Place it once over your screen as a layout that fills the artboard, and set `open` to show it. It fades and scales in, and leaves the layout when closed, so it never blocks input while hidden.
 - The confirm Button fires `confirmed`, the cancel Button and a click on the scrim fire `cancelled`; each one also sets `open` back to false. Listen to the triggers in your app.
 - The Buttons' `_pressed` triggers are bound to `confirmed` and `cancelled`, so the Dialog reacts to whatever makes a Button fire: a click, a screen reader's activate, or Enter/Space.
@@ -482,7 +510,7 @@ A modal card over a dimmed scrim, with a title, a body and two kit Buttons. It i
         <ViewModelInstanceString viewModelPropertyId="131:3" id="X:5"/>  <!-- body -->
         <ViewModelInstanceString viewModelPropertyId="131:4" id="X:6"/>  <!-- confirmText -->
         <ViewModelInstanceString viewModelPropertyId="131:5" id="X:7"/>  <!-- cancelText -->
-        <ViewModelInstanceNumber viewModelPropertyId="131:6" id="X:8"/>  <!-- confirmVariant -->
+        <ViewModelInstanceNumber viewModelPropertyId="131:6" id="X:8"/>  <!-- confirmColor -->
         <ViewModelInstanceBoolean viewModelPropertyId="131:7" id="X:9"/>  <!-- open -->
         <ViewModelInstanceTrigger viewModelPropertyId="131:8" id="X:10"/>  <!-- confirmed -->
         <ViewModelInstanceTrigger viewModelPropertyId="131:9" id="X:11"/>  <!-- cancelled -->
@@ -1033,12 +1061,12 @@ Contains: Nav Group
 ## Slide  (Showcase demo)
 
 Source: `shared/17-Slide.rml` · artboard `10:5313` · state machine `10:5405` · view model `Slide` `10:5163`
-Contains: Accordion, Alert, Avatar, Badge, Breadcrumbs, Button, Button Group, Checkbox Group, Chip Group, Dialog Demo, Dropdown, Label, Pagination, Progress Bar, Radio Group, Slider, Switch Group, Tabs, Tooltip Button
+Contains: Accordion, Alert, Avatar, Badge, Breadcrumbs, Button Group, Button Row, Checkbox Group, Chip Group, Dialog Demo, Dropdown, Label, Pagination, Progress Bar, Radio Group, Slider, Switch Group, Tabs, Tooltip Button
 
 | Property | Type | Id |
 |---|---|---|
 | `name` | string | `10:5171` |
-| `content` | list of `Pagination` / `Accordion` / `RadioGroup` / `CheckboxGroup` / `SwitchGroup` / `Alert` / `Breadcrumbs` / `TooltipButton` / `ProgressBar` / `DialogDemo` / `Tabs` / `ChipGroup` / `Badge` / `Button` / `Label` / `Slider` / `Avatar` / `Dropdown` / `ButtonGroup` | `10:5173` |
+| `content` | list of `Pagination` / `Accordion` / `RadioGroup` / `CheckboxGroup` / `SwitchGroup` / `Alert` / `Breadcrumbs` / `TooltipButton` / `ProgressBar` / `DialogDemo` / `ButtonRow` / `Tabs` / `ChipGroup` / `Badge` / `Label` / `Slider` / `Avatar` / `Dropdown` / `ButtonGroup` | `10:5173` |
 | `crumbs` | `Breadcrumbs` | `114:1` |
 
 ## Tile  (Showcase demo)

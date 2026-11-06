@@ -1,0 +1,28 @@
+<Rive version="1" kind="fragment">
+    <Artboard defaultStateMachineId="137:10" viewModelId="136:400" viewModelInstanceId="136:510" isComponent="true" includeInExport="false" spaceId="1:5601" width="320" height="40" styleId="137:2" x="3000" y="1000" name="Button Row" id="137:1">
+        <Fill fillRule="clockwise" id="137:3">
+            <SolidColor colorValue="00000000" id="137:4"/>
+        </Fill>
+        <LayoutComponentStyle layoutAlignmentType="center" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="137:2"/>
+        <LayoutComponent styleId="137:6" name="Row" id="137:5">
+            <ArtboardComponentList participatesInLayout="true" id="137:7">
+                <DataBindContext sourcePathIds="136:400-136:401" propertyKey="800" id="137:8"/>
+            </ArtboardComponentList>
+            <LayoutComponentStyle gapHorizontal="8" layoutAlignmentType="center" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="137:6"/>
+            <SemanticData role="group" name="Semantics" id="137:9">
+                <DataBindContext sourcePathIds="136:400-136:402" propertyKey="983" nameBased="true" id="137:15"/>
+            </SemanticData>
+        </LayoutComponent>
+        <StateMachine name="State Machine 1" id="137:10">
+            <StateMachineLayer name="Layer 1" id="137:11">
+                <AnyState x="400" id="137:12"/>
+                <ExitState x="480" id="137:13"/>
+                <EntryState id="137:14">
+                    <StateTransition stateToId="137:16" id="137:17"/>
+                </EntryState>
+                <AnimationState animationId="137:18" x="160" id="137:16"/>
+            </StateMachineLayer>
+        </StateMachine>
+        <LinearAnimation name="Timeline 1" id="137:18"/>
+    </Artboard>
+</Rive>

@@ -65,6 +65,7 @@
                         <ViewModelInstanceBoolean viewModelPropertyId="33:169" id="112:350"/>
                         <ViewModelInstanceNumber viewModelPropertyId="99:100" id="112:351"/>
                         <ViewModelInstanceNumber viewModelPropertyId="118:1" id="118:230"/>
+                        <ViewModelInstanceNumber viewModelPropertyId="136:1" id="136:4"/>
                         <ViewModelInstanceTrigger viewModelPropertyId="134:10" id="134:16"/>
                     </ViewModelInstance>
                 </NestedArtboardLayout>

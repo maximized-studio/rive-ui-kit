@@ -15,7 +15,7 @@ The kit is also on the [Rive Community](https://rive.app/community/files/25701-5
 - **Feedback:** Alert · Dialog · Progress Bar · Tooltip
 - **Inputs:** Checkbox / Checkbox Group · Chip / Chip Group · Radio Option / Radio Group · Slider · Switch / Switch Group
 - **Navigation:** Breadcrumbs · Pagination · Tabs
-- **Building blocks:** Accordion Item · Breadcrumb Item · Dialog Demo · List Item · Nav Group · Nav Item · Page Item · Segment · Segmented Control · Showcase Section · Sidebar · Slide · Tab · Tile · Toolbar · Tooltip Button
+- **Building blocks:** Accordion Item · Breadcrumb Item · Button Row · Dialog Demo · List Item · Nav Group · Nav Item · Page Item · Segment · Segmented Control · Showcase Section · Sidebar · Slide · Tab · Tile · Toolbar · Tooltip Button
 
 Categories and the components in them are sorted A–Z. In the Showcase a category is data: a `ShowcaseSection` (title, tile list; the count is the list length) in `sections`, and a `NavGroup` in the Sidebar's `sections`.
 
@@ -93,16 +93,22 @@ A card that stays in view with a message in one of four variants. It has no clos
 
 ## Button
 
-A button in one of four variants. The default follows the inverse colours of the mode (light on dark, dark on light), so it never clashes with the brand colour.
+A button in three variants and three colours, like MUI: `variant` sets the shape, `color` the meaning. The default (contained, neutral) follows the inverse colours of the mode (light on dark, dark on light), so it never clashes with the brand colour.
 
-- View model `Button`: `text`, `variant` (`0` primary, `1` secondary, `2` brand, `3` destructive), `icon` (`0` none, `1` arrow, `2` chevron left, `3` chevron right, `4` copy, `5` scissors, `6` clipboard, `7` save, `8` trash, `9` close), `iconOnly`, `disabled`, `hint`, `group` (see Button Group), `a11yHidden`. `_pressed` fires on a click, a screen reader's activate, or Enter/Space while the Button has keyboard focus.
+- View model `Button`: `text`, `variant` (`0` contained, `1` outlined, `2` text), `color` (`0` neutral, `1` brand, `2` destructive), `icon` (`0` none, `1` arrow, `2` chevron left, `3` chevron right, `4` copy, `5` scissors, `6` clipboard, `7` save, `8` trash, `9` close), `iconOnly`, `disabled`, `hint`, `group` (see Button Group), `a11yHidden`. `_pressed` fires on a click, a screen reader's activate, or Enter/Space while the Button has keyboard focus.
 - A disabled Button ignores all three, and it cannot take keyboard focus. Taps and keys go through a small gate (`_activate` → the Activate layer fires `_pressed` only when `disabled` is false), because the disabled shield only stops the pointer.
-- Primary uses `_primaryBg` / `_primaryHover` / `_primaryText`, destructive `_dangerBg` / `_dangerHover` / `_dangerText`: Theme tokens per mode that ignore the brand. Only the brand variant follows the brand colour. Destructive stays red whatever the brand is.
+- **Contained** is a filled button with the theme shadow. Neutral uses `_primaryBg` / `_primaryHover` / `_primaryText`, destructive `_dangerBg` / `_dangerHover` / `_dangerText`: Theme tokens per mode that ignore the brand. Brand uses `_brand600` with `_brand800` on hover.
+- **Outlined** sits on `_surfaceRaised` with a border: `_border` for neutral, `_infoBorder` for brand, `_errorBorder` for destructive, and text in `_text`, `_infoText` or `_errorText`.
+- **Text** has no surface and no border, only the coloured text; hover adds a soft background (`_surfaceHover`, `_infoBg`, `_errorBg`).
+- Only the brand colour follows the brand. Destructive stays red whatever the brand is.
+- Disabled looks the same in every colour: `_textMuted` on `_surfaceSubtle`, or without the surface for the text variant.
+- One state machine layer, **Look**, holds one state per combination (Contained Neutral … Text Destructive).
+- Breaking change from the four old variants: `1` secondary is now `variant` 1 (outlined, neutral); the old `2` brand and `3` destructive are now `variant` 0 with `color` 1 or 2.
 - The Dropdown trigger uses the same primary tokens, so the actions look alike; its list keeps the brand accent.
 
 ## Button Group
 
-A row of kit Buttons joined into one control: the outer corners follow the theme roundness, the inner corners are square, and the group casts one shadow. Every Button variant works and they may be mixed.
+A row of kit Buttons joined into one control: the outer corners follow the theme roundness, the inner corners are square, and the group casts one shadow. Every Button variant and colour works and they may be mixed; set the same `variant` on each Button for an outlined or text group (a group cannot reach into its list).
 
 - View model `ButtonGroup`: `label` (screen reader name), `buttons` (a list of `Button` instances), `a11yHidden`.
 - Set `group` on every Button in the list: `1` first, `2` middle, `3` last (`0`, the default, is a standalone Button). It rounds only the outer corners and draws a divider before middle and last buttons; secondary borders merge into one line.
@@ -143,7 +149,7 @@ A row of tabs over a divider; the selected tab has full-strength text and a bran
 
 A modal card over a dimmed scrim, with a title, a body and two kit Buttons. It is the dismissible counterpart of Alert.
 
-- View model `Dialog`: `title`, `body`, `confirmText`, `cancelText`, `confirmVariant` (a Button `variant`: `0` primary, `2` brand, `3` destructive), `confirmIcon` and `cancelIcon` (Button `icon` numbers; trash and close by default), `dim` (the 50% scrim, on by default), `open`, `a11yHidden`, and the triggers `confirmed` and `cancelled`.
+- View model `Dialog`: `title`, `body`, `confirmText`, `cancelText`, `confirmColor` (a Button `color`: `0` neutral, `1` brand, `2` destructive; was `confirmVariant`), `confirmIcon` and `cancelIcon` (Button `icon` numbers; trash and close by default), `dim` (the 50% scrim, on by default), `open`, `a11yHidden`, and the triggers `confirmed` and `cancelled`.
 - Place it once over your screen as a layout that fills the artboard, and set `open` to show it. It fades and scales in, and leaves the layout when closed, so it never blocks input while hidden.
 - The confirm Button fires `confirmed`, the cancel Button and a click on the scrim fire `cancelled`; each one also sets `open` back to false. Listen to the triggers in your app.
 - The Buttons' `_pressed` triggers are bound to `confirmed` and `cancelled`, so the Dialog reacts to whatever makes a Button fire: a click, a screen reader's activate, or Enter/Space.
@@ -215,7 +221,7 @@ then ask your agent for the screen you want. The component reference is generate
 The kit keeps each kind of logic in one place:
 
 - **Look comes from data.** Colours, radii and shadows are tokens on the global `Theme`; components only read them.
-- **Picking one of several is a state.** A number that chooses what shows (a Button's `variant` and `icon`, an Alert's `variant`, a Tooltip's `placement`) drives a state machine layer with one state per value, such as Button › Variant › Primary.
+- **Picking one of several is a state.** A number that chooses what shows (a Button's `variant`, `color` and `icon`, an Alert's `variant`, a Tooltip's `placement`) drives a state machine layer with one state per value, such as Button › Look › Outlined Brand.
 - **Behaviour is a script, when it is an algorithm.** Pagination (which pages to show) and Tooltip Button (which side fits) so far. Everything else is native.
 - **Converter names say where they belong:** `<Part> · <what it does>`, for example `Slider · Percent text`. The ones only the Showcase uses start with `Showcase`.
 
