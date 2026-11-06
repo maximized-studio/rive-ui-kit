@@ -1,0 +1,40 @@
+<Rive version="1" kind="fragment">
+    <Artboard defaultStateMachineId="140:3001" viewModelId="140:12" viewModelInstanceId="140:60" isComponent="true" includeInExport="false" spaceId="1:5601" width="280" height="40" styleId="140:3004" x="3000" y="200" name="Tabs" id="140:3000">
+        <Fill fillRule="clockwise" id="140:3008">
+            <SolidColor colorValue="00000000" id="140:3009"/>
+        </Fill>
+        <LayoutComponentStyle intrinsicallySizedValue="true" layoutHeightScaleType="hug" id="140:3004"/>
+        <LayoutComponent styleId="140:3005" name="Frame" id="140:3010">
+            <LayoutComponent styleId="140:3006" name="Tab List" id="140:3011">
+                <LayoutComponentStyle gapHorizontal="4" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="140:3006"/>
+                <ArtboardComponentList participatesInLayout="true" id="140:3012">
+                    <DataBindContext sourcePathIds="140:12-140:13" propertyKey="800" id="140:3013"/>
+                </ArtboardComponentList>
+            </LayoutComponent>
+            <LayoutComponent height="1" styleId="140:3007" name="Divider" id="140:3014">
+                <Fill fillRule="clockwise" id="140:3015">
+                    <SolidColor colorValue="FF27272A" id="140:3016">
+                        <DataBindContext sourcePathIds="10:7-10:7418" propertyKey="37" id="140:3017"/>
+                    </SolidColor>
+                </Fill>
+                <LayoutComponentStyle layoutWidthScaleType="fill" widthUnitsValue="auto" id="140:3007"/>
+            </LayoutComponent>
+            <LayoutComponentStyle layoutAlignmentType="bottomLeft" intrinsicallySizedValue="true" layoutTypeValue="stack" layoutWidthScaleType="fill" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="140:3005"/>
+            <SemanticData role="tabList" name="Semantics" id="140:3018">
+                <DataBindContext sourcePathIds="140:12-140:15" propertyKey="983" nameBased="true" id="140:3019"/>
+                <DataBindContext sourcePathIds="140:12-140:16" propertyKey="1004" nameBased="true" id="140:3020"/>
+            </SemanticData>
+        </LayoutComponent>
+        <StateMachine name="State Machine 1" id="140:3001">
+            <StateMachineLayer name="Layer 1" id="140:3021">
+                <AnimationState animationId="140:3003" x="160" id="140:3002"/>
+                <AnyState x="400" id="140:3022"/>
+                <ExitState x="480" id="140:3023"/>
+                <EntryState id="140:3024">
+                    <StateTransition stateToId="140:3002" id="140:3025"/>
+                </EntryState>
+            </StateMachineLayer>
+        </StateMachine>
+        <LinearAnimation name="Timeline 1" id="140:3003"/>
+    </Artboard>
+</Rive>
