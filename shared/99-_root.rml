@@ -381,6 +381,11 @@
         <FormulaTokenParenthesisClose id="130:17"/>
         <FormulaTokenParenthesisClose id="130:18"/>
     </DataConverterFormula>
+    <DataConverterFormula name="Chip · Check (formula)" groupId="1:2674" id="141:51">
+        <FormulaTokenValue id="141:53"/>
+        <FormulaTokenOperation operationType="subtract" id="141:54"/>
+        <FormulaTokenInput id="141:55"/>
+    </DataConverterFormula>
     <DataConverterGroup name="Slider · Percent text" groupId="1:2674" id="2:40">
         <DataConverterGroupItem converterId="2:41" id="2:60"/>
         <DataConverterGroupItem converterId="2:61" id="2:62"/>
@@ -425,6 +430,10 @@
         <DataConverterGroupItem converterId="130:104" id="130:107"/>
         <DataConverterGroupItem converterId="130:105" id="130:108"/>
     </DataConverterGroup>
+    <DataConverterGroup name="Chip · Show check" groupId="1:2674" id="141:52">
+        <DataConverterGroupItem converterId="141:50" id="141:56"/>
+        <DataConverterGroupItem converterId="141:51" id="141:57"/>
+    </DataConverterGroup>
     <DataConverterListToLength name="Showcase · Tile count" groupId="1:2674" id="100:59"/>
     <DataConverterStringPad length="3" text=" " name="Progress · Pad to 3" groupId="1:2674" id="130:103"/>
     <DataConverterStringPad length="4" text="%" padType="end" name="Progress · Percent sign" groupId="1:2674" id="130:104"/>
@@ -437,6 +446,7 @@
     <DataConverterToNumber name="Button · Secondary border (to number)" groupId="1:2674" id="33:252"/>
     <DataConverterToNumber name="Showcase · Hover tint (to number)" groupId="1:2674" id="70:511"/>
     <DataConverterToNumber name="Button · No shadow in a group (to number)" groupId="1:2674" id="99:111"/>
+    <DataConverterToNumber name="Chip · Check (to number)" groupId="1:2674" id="141:50"/>
     <DataConverterToString round="true" name="SliderPercentString" groupId="1:2674" id="2:61"/>
     <DataConverterToString round="true" name="Progress · Percent (to text)" groupId="1:2674" id="130:19"/>
     <DataFolder name="UI Kit" id="1:2753">
@@ -2000,9 +2010,9 @@
     <ImageAsset file="Avatar.png" height="128" width="128" assetId="5251943" name="Avatar" groupId="1:2093" id="1:2091"/>
     <ImageAsset file="Showcase Cover.webp" format="webp" height="1080" width="1440" assetId="7319575" name="Showcase Cover" groupId="1:2093" id="42:629"/>
     <RenderPreset name="Preset 1" artboardId="10:110" format="png_sequence" width="1440" height="1080" id="57:1"/>
-    <ScriptAsset file="Pagination Pages.luau" serializedImplementedMethods="769" scriptProtocolValue="layout" codeFileId="0:15811" name="Pagination Pages" groupId="327:1" id="912:3"/>
-    <ScriptAsset file="Viewport.luau" compilationOrder="1" serializedImplementedMethods="4921" scriptProtocolValue="layout" codeFileId="0:27924" name="Viewport" groupId="327:1" id="913:9"/>
-    <ScriptAsset file="Tooltip Placement.luau" compilationOrder="2" serializedImplementedMethods="4881" scriptProtocolValue="layout" codeFileId="0:20578" name="Tooltip Placement" groupId="327:1" id="914:10"/>
+    <ScriptAsset file="Pagination Pages.luau" compilationOrder="2" serializedImplementedMethods="769" scriptProtocolValue="layout" codeFileId="0:15811" name="Pagination Pages" groupId="327:1" id="912:3"/>
+    <ScriptAsset file="Viewport.luau" compilationOrder="3" serializedImplementedMethods="4921" scriptProtocolValue="layout" codeFileId="0:27924" name="Viewport" groupId="327:1" id="913:9"/>
+    <ScriptAsset file="Tooltip Placement.luau" serializedImplementedMethods="4881" scriptProtocolValue="layout" codeFileId="0:20578" name="Tooltip Placement" groupId="327:1" id="914:10"/>
     <Space name="Space 1" colorValue="FF2F2F2F" id="1:5601"/>
     <TransitionPropertyViewModelComparator id="1:2359"/>
     <TransitionPropertyViewModelComparator id="1:2363"/>
@@ -3766,16 +3776,6 @@
             <ViewModelInstanceTrigger viewModelPropertyId="132:3" id="132:9"/>
         </ViewModelInstance>
     </ViewModel>
-    <DataConverterToNumber name="Chip · Check (to number)" groupId="1:2674" id="141:50"/>
-    <DataConverterFormula name="Chip · Check (formula)" groupId="1:2674" id="141:51">
-        <FormulaTokenValue operationValue="1" id="141:53"/>
-        <FormulaTokenOperation operationType="subtract" id="141:54"/>
-        <FormulaTokenInput id="141:55"/>
-    </DataConverterFormula>
-    <DataConverterGroup name="Chip · Show check" groupId="1:2674" id="141:52">
-        <DataConverterGroupItem converterId="141:50" id="141:56"/>
-        <DataConverterGroupItem converterId="141:51" id="141:57"/>
-    </DataConverterGroup>
     <ViewModel defaultInstanceId="140:20" name="TabSelection" groupId="1:2673" id="140:1">
         <ViewModelPropertyNumber name="selected" id="140:2"/>
         <ViewModelInstance exports="true" id="140:20">

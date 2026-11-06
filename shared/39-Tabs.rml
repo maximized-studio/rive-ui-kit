@@ -19,7 +19,7 @@
                 </Fill>
                 <LayoutComponentStyle layoutWidthScaleType="fill" widthUnitsValue="auto" id="140:3007"/>
             </LayoutComponent>
-            <LayoutComponentStyle layoutTypeValue="stack" layoutAlignmentType="bottomLeft" intrinsicallySizedValue="true" layoutWidthScaleType="fill" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="140:3005"/>
+            <LayoutComponentStyle layoutAlignmentType="bottomLeft" intrinsicallySizedValue="true" layoutTypeValue="stack" layoutWidthScaleType="fill" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="140:3005"/>
             <SemanticData role="tabList" name="Semantics" id="140:3018">
                 <DataBindContext sourcePathIds="140:12-140:15" propertyKey="983" nameBased="true" id="140:3019"/>
                 <DataBindContext sourcePathIds="140:12-140:16" propertyKey="1004" nameBased="true" id="140:3020"/>
@@ -27,12 +27,12 @@
         </LayoutComponent>
         <StateMachine name="State Machine 1" id="140:3001">
             <StateMachineLayer name="Layer 1" id="140:3021">
+                <AnimationState animationId="140:3003" x="160" id="140:3002"/>
                 <AnyState x="400" id="140:3022"/>
                 <ExitState x="480" id="140:3023"/>
                 <EntryState id="140:3024">
                     <StateTransition stateToId="140:3002" id="140:3025"/>
                 </EntryState>
-                <AnimationState animationId="140:3003" x="160" id="140:3002"/>
             </StateMachineLayer>
         </StateMachine>
         <LinearAnimation name="Timeline 1" id="140:3003"/>
