@@ -55,6 +55,7 @@
                         </ViewModelInstanceString>
                         <ViewModelInstanceBoolean viewModelPropertyId="1:587" id="112:342"/>
                         <ViewModelInstanceTrigger viewModelPropertyId="1:1321" id="112:343"/>
+                        <ViewModelInstanceTrigger viewModelPropertyId="134:10" id="134:16"/>
                         <ViewModelInstanceBoolean viewModelPropertyId="7:1" id="112:344"/>
                         <ViewModelInstanceBoolean viewModelPropertyId="7:3" id="112:345">
                             <DataBindContext sourcePathIds="112:7-112:11" propertyKey="593" nameBased="true" id="112:346"/>

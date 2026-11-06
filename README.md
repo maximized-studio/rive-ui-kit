@@ -93,7 +93,8 @@ A card that stays in view with a message in one of four variants. It has no clos
 
 A button in one of four variants. The default follows the inverse colours of the mode (light on dark, dark on light), so it never clashes with the brand colour.
 
-- View model `Button`: `text`, `variant` (`0` primary, `1` secondary, `2` brand, `3` destructive), `icon` (`0` none, `1` arrow, `2` chevron left, `3` chevron right, `4` copy, `5` scissors, `6` clipboard, `7` save, `8` trash, `9` close), `iconOnly`, `disabled`, `hint`, `group` (see Button Group), `a11yHidden`. `_pressed` fires on a click.
+- View model `Button`: `text`, `variant` (`0` primary, `1` secondary, `2` brand, `3` destructive), `icon` (`0` none, `1` arrow, `2` chevron left, `3` chevron right, `4` copy, `5` scissors, `6` clipboard, `7` save, `8` trash, `9` close), `iconOnly`, `disabled`, `hint`, `group` (see Button Group), `a11yHidden`. `_pressed` fires on a click, a screen reader's activate, or Enter/Space while the Button has keyboard focus.
+- A disabled Button ignores all three, and it cannot take keyboard focus. Taps and keys go through a small gate (`_activate` → the Activate layer fires `_pressed` only when `disabled` is false), because the disabled shield only stops the pointer.
 - Primary uses `_primaryBg` / `_primaryHover` / `_primaryText`, destructive `_dangerBg` / `_dangerHover` / `_dangerText`: Theme tokens per mode that ignore the brand. Only the brand variant follows the brand colour. Destructive stays red whatever the brand is.
 - The Dropdown trigger uses the same primary tokens, so the actions look alike; its list keeps the brand accent.
 
@@ -122,7 +123,7 @@ A modal card over a dimmed scrim, with a title, a body and two kit Buttons. It i
 - View model `Dialog`: `title`, `body`, `confirmText`, `cancelText`, `confirmVariant` (a Button `variant`: `0` primary, `2` brand, `3` destructive), `confirmIcon` and `cancelIcon` (Button `icon` numbers; trash and close by default), `dim` (the 50% scrim, on by default), `open`, `a11yHidden`, and the triggers `confirmed` and `cancelled`.
 - Place it once over your screen as a layout that fills the artboard, and set `open` to show it. It fades and scales in, and leaves the layout when closed, so it never blocks input while hidden.
 - The confirm Button fires `confirmed`, the cancel Button and a click on the scrim fire `cancelled`; each one also sets `open` back to false. Listen to the triggers in your app.
-- The Buttons' `_pressed` triggers are bound to `confirmed` and `cancelled`, so the Dialog reacts to whatever makes a Button fire.
+- The Buttons' `_pressed` triggers are bound to `confirmed` and `cancelled`, so the Dialog reacts to whatever makes a Button fire: a click, a screen reader's activate, or Enter/Space.
 - The card uses `_surface`, `_border`, `_radiusCard` and the theme shadow; the scrim is black at 50%.
 - Screen readers get a `dialog` named by the title, the body as text and the two Buttons.
 - A click outside the card closes it too, also with `dim` off.

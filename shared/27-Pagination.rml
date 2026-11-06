@@ -12,6 +12,7 @@
                         <ViewModelInstanceString propertyValue="Previous" viewModelPropertyId="1:549" id="102:949"/>
                         <ViewModelInstanceBoolean viewModelPropertyId="1:587" id="102:950"/>
                         <ViewModelInstanceTrigger viewModelPropertyId="1:1321" id="102:951"/>
+                        <ViewModelInstanceTrigger viewModelPropertyId="134:10" id="134:11"/>
                         <ViewModelInstanceBoolean viewModelPropertyId="7:1" id="102:952">
                             <DataBindContext sourcePathIds="102:7-102:13" propertyKey="593" nameBased="true" id="102:953"/>
                         </ViewModelInstanceBoolean>
@@ -38,6 +39,7 @@
                         <ViewModelInstanceString propertyValue="Next" viewModelPropertyId="1:549" id="102:963"/>
                         <ViewModelInstanceBoolean viewModelPropertyId="1:587" id="102:964"/>
                         <ViewModelInstanceTrigger viewModelPropertyId="1:1321" id="102:965"/>
+                        <ViewModelInstanceTrigger viewModelPropertyId="134:10" id="134:12"/>
                         <ViewModelInstanceBoolean viewModelPropertyId="7:1" id="102:966">
                             <DataBindContext sourcePathIds="102:7-102:14" propertyKey="593" nameBased="true" id="102:967"/>
                         </ViewModelInstanceBoolean>

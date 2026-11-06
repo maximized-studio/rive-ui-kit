@@ -905,6 +905,7 @@
                 <ViewModelPropertyBoolean name="disabled" id="7:1"/>
                 <ViewModelPropertyBoolean name="a11yHidden" id="7:3"/>
                 <ViewModelPropertyTrigger name="_pressed" id="1:1321"/>
+                <ViewModelPropertyTrigger name="_activate" id="134:10"/>
                 <ViewModelPropertyBoolean name="_hover" id="1:587"/>
                 <ViewModelPropertyString name="text" id="1:549"/>
                 <ViewModelPropertyString name="hint" id="112:14"/>
@@ -912,6 +913,7 @@
                     <ViewModelInstanceString propertyValue="Copy" viewModelPropertyId="1:549" id="92:638"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="1:587" id="92:639"/>
                     <ViewModelInstanceTrigger viewModelPropertyId="1:1321" id="92:640"/>
+                    <ViewModelInstanceTrigger viewModelPropertyId="134:10" id="134:17"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="7:1" id="92:641"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="7:3" id="92:642"/>
                     <ViewModelInstanceNumber propertyValue="4" viewModelPropertyId="33:164" id="92:645"/>
@@ -924,6 +926,7 @@
                     <ViewModelInstanceString propertyValue="Cut" viewModelPropertyId="1:549" id="92:649"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="1:587" id="92:650"/>
                     <ViewModelInstanceTrigger viewModelPropertyId="1:1321" id="92:651"/>
+                    <ViewModelInstanceTrigger viewModelPropertyId="134:10" id="134:18"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="7:1" id="92:652"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="7:3" id="92:653"/>
                     <ViewModelInstanceNumber propertyValue="5" viewModelPropertyId="33:164" id="92:656"/>
@@ -936,6 +939,7 @@
                     <ViewModelInstanceString propertyValue="Paste" viewModelPropertyId="1:549" id="92:660"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="1:587" id="92:661"/>
                     <ViewModelInstanceTrigger viewModelPropertyId="1:1321" id="92:662"/>
+                    <ViewModelInstanceTrigger viewModelPropertyId="134:10" id="134:19"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="7:1" id="92:663"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="7:3" id="92:664"/>
                     <ViewModelInstanceNumber propertyValue="6" viewModelPropertyId="33:164" id="92:667"/>
@@ -948,6 +952,7 @@
                     <ViewModelInstanceString propertyValue="Next" viewModelPropertyId="1:549" id="33:102"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="1:587" id="33:103"/>
                     <ViewModelInstanceTrigger viewModelPropertyId="1:1321" id="33:104"/>
+                    <ViewModelInstanceTrigger viewModelPropertyId="134:10" id="134:20"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="7:1" id="33:105"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="7:3" id="33:106"/>
                     <ViewModelInstanceNumber propertyValue="3" viewModelPropertyId="33:164" id="33:165"/>
@@ -960,6 +965,7 @@
                     <ViewModelInstanceString propertyValue="Previous" viewModelPropertyId="1:549" id="33:61"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="1:587" id="33:62"/>
                     <ViewModelInstanceTrigger viewModelPropertyId="1:1321" id="33:63"/>
+                    <ViewModelInstanceTrigger viewModelPropertyId="134:10" id="134:21"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="7:1" id="33:64"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="7:3" id="33:65"/>
                     <ViewModelInstanceNumber propertyValue="2" viewModelPropertyId="33:164" id="33:166"/>
@@ -972,6 +978,7 @@
                     <ViewModelInstanceString propertyValue="Primary" viewModelPropertyId="1:549" id="118:177"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="1:587" id="118:178"/>
                     <ViewModelInstanceTrigger viewModelPropertyId="1:1321" id="118:179"/>
+                    <ViewModelInstanceTrigger viewModelPropertyId="134:10" id="134:22"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="7:1" id="118:180"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="7:3" id="118:181"/>
                     <ViewModelInstanceNumber viewModelPropertyId="118:1" id="118:183"/>
@@ -984,6 +991,7 @@
                     <ViewModelInstanceString propertyValue="Secondary" viewModelPropertyId="1:549" id="118:189"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="1:587" id="118:190"/>
                     <ViewModelInstanceTrigger viewModelPropertyId="1:1321" id="118:191"/>
+                    <ViewModelInstanceTrigger viewModelPropertyId="134:10" id="134:23"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="7:1" id="118:192"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="7:3" id="118:193"/>
                     <ViewModelInstanceNumber propertyValue="1" viewModelPropertyId="118:1" id="118:195"/>
@@ -996,6 +1004,7 @@
                     <ViewModelInstanceString propertyValue="Brand" viewModelPropertyId="1:549" id="118:201"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="1:587" id="118:202"/>
                     <ViewModelInstanceTrigger viewModelPropertyId="1:1321" id="118:203"/>
+                    <ViewModelInstanceTrigger viewModelPropertyId="134:10" id="134:24"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="7:1" id="118:204"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="7:3" id="118:205"/>
                     <ViewModelInstanceNumber propertyValue="2" viewModelPropertyId="118:1" id="118:207"/>
@@ -1008,6 +1017,7 @@
                     <ViewModelInstanceString propertyValue="Delete" viewModelPropertyId="1:549" id="118:213"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="1:587" id="118:214"/>
                     <ViewModelInstanceTrigger viewModelPropertyId="1:1321" id="118:215"/>
+                    <ViewModelInstanceTrigger viewModelPropertyId="134:10" id="134:25"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="7:1" id="118:216"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="7:3" id="118:217"/>
                     <ViewModelInstanceNumber propertyValue="3" viewModelPropertyId="118:1" id="118:219"/>
@@ -1020,6 +1030,7 @@
                     <ViewModelInstanceString propertyValue="Button" viewModelPropertyId="1:549" id="1:550"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="1:587" id="1:588"/>
                     <ViewModelInstanceTrigger viewModelPropertyId="1:1321" id="1:1322"/>
+                    <ViewModelInstanceTrigger viewModelPropertyId="134:10" id="134:26"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="7:1" id="7:2"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="7:3" id="7:4"/>
                     <ViewModelInstanceNumber viewModelPropertyId="33:164" id="33:168"/>

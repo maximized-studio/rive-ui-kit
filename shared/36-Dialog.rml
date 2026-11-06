@@ -52,6 +52,7 @@
                                     <ViewModelInstanceTrigger viewModelPropertyId="1:1321" id="131:180">
                                         <DataBindContext sourcePathIds="131:1-131:9" propertyKey="687" twoWay="true" nameBased="true" id="131:181"/>
                                     </ViewModelInstanceTrigger>
+                                    <ViewModelInstanceTrigger viewModelPropertyId="134:10" id="134:13"/>
                                     <ViewModelInstanceBoolean viewModelPropertyId="7:1" id="131:182"/>
                                     <ViewModelInstanceBoolean viewModelPropertyId="7:3" id="131:183">
                                         <DataBindContext sourcePathIds="131:1-131:10" propertyKey="593" nameBased="true" id="131:184"/>
@@ -78,6 +79,7 @@
                                     <ViewModelInstanceTrigger viewModelPropertyId="1:1321" id="131:198">
                                         <DataBindContext sourcePathIds="131:1-131:8" propertyKey="687" twoWay="true" nameBased="true" id="131:199"/>
                                     </ViewModelInstanceTrigger>
+                                    <ViewModelInstanceTrigger viewModelPropertyId="134:10" id="134:14"/>
                                     <ViewModelInstanceBoolean viewModelPropertyId="7:1" id="131:200"/>
                                     <ViewModelInstanceBoolean viewModelPropertyId="7:3" id="131:201">
                                         <DataBindContext sourcePathIds="131:1-131:10" propertyKey="593" nameBased="true" id="131:202"/>

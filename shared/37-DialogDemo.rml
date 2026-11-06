@@ -32,6 +32,7 @@
                     <ViewModelInstanceTrigger viewModelPropertyId="1:1321" id="132:137">
                         <DataBindContext sourcePathIds="132:1-132:3" propertyKey="687" twoWay="true" nameBased="true" id="132:138"/>
                     </ViewModelInstanceTrigger>
+                    <ViewModelInstanceTrigger viewModelPropertyId="134:10" id="134:15"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="7:1" id="132:139"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="7:3" id="132:140"/>
                     <ViewModelInstanceNumber viewModelPropertyId="33:164" id="132:141"/>
