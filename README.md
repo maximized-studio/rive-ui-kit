@@ -10,12 +10,12 @@ The kit is also on the [Rive Community](https://rive.app/community/files/25701-5
 
 ## Components
 
-- **Actions:** Button · Button Group · Dropdown · Toggle Button / Toggle Button Group
+- **Actions:** Button · Button Group · Split Button · Toggle Button / Toggle Button Group
 - **Display:** Accordion · Avatar · Badge · Label
 - **Feedback:** Alert · Dialog · Progress Bar · Tooltip
-- **Inputs:** Checkbox / Checkbox Group · Chip / Chip Group · Radio Option / Radio Group · Slider · Switch / Switch Group
-- **Navigation:** Breadcrumbs · Pagination · Tabs
-- **Building blocks:** Accordion Item · Breadcrumb Item · Button Row · Dialog Demo · List Item · Nav Group · Nav Item · Page Item · Showcase Section · Sidebar · Slide · Tab · Tile · Toolbar · Tooltip Button
+- **Inputs:** Checkbox / Checkbox Group · Chip / Chip Group · Radio Option / Radio Group · Select · Slider · Switch / Switch Group
+- **Navigation:** Breadcrumbs · Menu · Pagination · Tabs
+- **Building blocks:** Accordion Item · Breadcrumb Item · Button Row · Dialog Demo · Menu Item · Nav Group · Nav Item · Page Item · Showcase Section · Sidebar · Slide · Tab · Tile · Toolbar · Tooltip Button
 
 Categories and the components in them are sorted A–Z. In the Showcase a category is data: a `ShowcaseSection` (title, tile list; the count is the list length) in `sections`, and a `NavGroup` in the Sidebar's `sections`.
 
@@ -45,11 +45,12 @@ The components carry Rive semantics, so screen readers get a real accessibility 
 | Avatar | `image` | label |
 | Badge, Label | `text` | text |
 | Breadcrumbs | `group` / `link` per item, `text` for the current page | label; item label, "Current page" |
-| Button, Dropdown, Page Item | `button` | label (the page number); Button also a hint |
+| Button, Page Item | `button` | label (the page number); Button also a hint |
 | Button Group, Checkbox Group, Chip Group, Pagination, Switch Group | `group` | group label |
 | Checkbox | `checkbox` | label, checked |
 | Chip | `button` (toggle) | label, on/off, disabled |
-| List Item | `list` / `listItem` | label |
+| Menu / Menu Item | `list` / `listItem` | label; item label, selected (in a Select), disabled |
+| Select | `button` (expandable) | label, the chosen value, expanded, disabled |
 | Radio Option / Radio Group | `radioButton` / `radioGroup` | label, selected |
 | Slider | `slider` | label, value |
 | Switch | `switchControl` | label, on/off |
@@ -105,7 +106,6 @@ A button in three variants and three colours, like MUI: `variant` sets the shape
 - Disabled looks the same in every colour: `_textMuted` on `_surfaceSubtle`, or without the surface for the text variant.
 - One state machine layer, **Look**, holds one state per combination (Contained Neutral … Text Destructive).
 - Breaking change from the four old variants: `1` secondary is now `variant` 1 (outlined, neutral); the old `2` brand and `3` destructive are now `variant` 0 with `color` 1 or 2.
-- The Dropdown trigger uses the same primary tokens, so the actions look alike; its list keeps the brand accent.
 
 ## Button Group
 
@@ -135,6 +135,19 @@ A row of toggle buttons on a track where exactly one is on, like the Mode and Ro
 - Input goes through the same Activate gate as the Button, so a disabled option ignores every input. Disabled options turn `_textMuted`.
 - The selected option sits on `_surfaceRaised`, the track on `_surfaceSubtle`; corners follow `_radiusSegment` / `_radiusSegmentInner`.
 - Screen readers get a `radioGroup` with a `radioButton` per option that reports checked. For several independent on/off choices, use Chips.
+
+## Menu, Select and Split Button
+
+One **Menu** serves all three: a floating panel of **Menu Items**. On its own it is a context menu; Select and Split Button place it under their trigger.
+
+- View model `Menu`: `items` (a list of `MenuItem` instances), `state` (a `MenuState`), `label` (screen reader name), `a11yHidden`.
+- `MenuItem`: `text`, `disabled`, `group` (point it at the menu's `MenuState`), `a11yHidden`. A click, a screen reader's activate or Enter/Space chooses it: it writes `state.selected` (its position), `state.label` (its text) and `state.open = false`, and fires its own `_pressed`. A disabled item ignores every input.
+- `MenuState`: `selected` (`-1` for none), `label`, `open`, `showSelection` (a check on the chosen item; on for a Select, off for menus of actions).
+- **Select** (Inputs): a field that shows `menu.state.label` and opens the menu below it. View model `Select`: `menu`, `label` (screen reader name), `disabled`, `a11yHidden`. Read `menu.state.selected` in your app; set `menu.state.label` to the first value or a placeholder. Screen readers get an expandable `button` with the chosen value.
+- **Split Button** (Actions): a kit Button and a chevron Button joined like a Button Group, with the menu under the chevron. View model `SplitButton`: `text`, `variant`, `color` (as on the Button), `disabled`, `menu`, `menuLabel` (screen reader name of the chevron), `a11yHidden`, and the trigger `pressed` for the main action. Listen to the items' `_pressed` or to `menu.state.selected` for the menu actions.
+- The menu closes when an item is chosen or the trigger is pressed again. Rive has no "click outside" for a nested component: close it from your app (`menu.state.open = false`) when you need that.
+- The panel uses `_surface`, `_border`, `_radiusDropdown` and the theme shadow; items get a soft brand hover.
+- Breaking change: Dropdown is gone. Its list became the Menu; for a value use Select, for actions use Split Button or a Menu.
 
 ## Pagination
 
@@ -194,7 +207,7 @@ A small bubble in the inverse theme colours (`_text` background, `_bg` text) wit
 
 ## Pointer cursor
 
-A canvas can't change the mouse cursor by itself, so the kit tells your app when to. `cursorPointer` (a boolean on the global Theme view model) is `true` while the pointer is over something clickable: an accordion header, a breadcrumb link, a button, checkbox, chip, dropdown and its items, nav group header, nav item, page item, radio option, slider, switch, tab, tile or toggle button. Disabled controls leave it `false`.
+A canvas can't change the mouse cursor by itself, so the kit tells your app when to. `cursorPointer` (a boolean on the global Theme view model) is `true` while the pointer is over something clickable: an accordion header, a breadcrumb link, a button, checkbox, chip, menu item, select, nav group header, nav item, page item, radio option, slider, switch, tab, tile or toggle button. Disabled controls leave it `false`.
 
 ```js
 const flag = rive.globalViewModelInstance("Theme").boolean("cursorPointer");

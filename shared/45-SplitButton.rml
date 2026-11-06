@@ -1,0 +1,150 @@
+<Rive version="1" kind="fragment">
+    <Artboard defaultStateMachineId="148:1001" viewModelId="148:1" viewModelInstanceId="148:20" isComponent="true" spaceId="1:5601" width="160" height="40" styleId="148:1002" x="3600" y="800" name="Split Button" id="148:1000">
+        <Fill fillRule="clockwise" id="148:1008">
+            <SolidColor colorValue="00000000" id="148:1009"/>
+        </Fill>
+        <LayoutComponentStyle flexDirectionValue="column" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="148:1002"/>
+        <LayoutComponent styleId="148:1003" name="Row" id="148:1010">
+            <LayoutComponent styleId="148:1011" name="Main" id="148:1012">
+                <NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="1:122" isStateful="true" name="Button" id="148:1013">
+                    <NestedStateMachine animationId="1:127" id="148:1014"/>
+                    <ViewModelInstance viewModelId="1:151" exports="true" name="Main Button" id="148:1015">
+                        <ViewModelInstanceString propertyValue="Publish" viewModelPropertyId="1:549" id="148:1016">
+                            <DataBindContext sourcePathIds="148:1-148:2" propertyKey="561" nameBased="true" id="148:1017"/>
+                        </ViewModelInstanceString>
+                        <ViewModelInstanceBoolean viewModelPropertyId="1:587" id="148:1018"/>
+                        <ViewModelInstanceTrigger viewModelPropertyId="1:1321" id="148:1019">
+                            <DataBindContext sourcePathIds="148:1-148:8" propertyKey="687" nameBased="true" twoWay="true" id="148:1020"/>
+                        </ViewModelInstanceTrigger>
+                        <ViewModelInstanceBoolean viewModelPropertyId="7:1" id="148:1022">
+                            <DataBindContext sourcePathIds="148:1-148:5" propertyKey="593" nameBased="true" id="148:1021"/>
+                        </ViewModelInstanceBoolean>
+                        <ViewModelInstanceBoolean viewModelPropertyId="7:3" id="148:1024">
+                            <DataBindContext sourcePathIds="148:1-148:6" propertyKey="593" nameBased="true" id="148:1023"/>
+                        </ViewModelInstanceBoolean>
+                        <ViewModelInstanceNumber viewModelPropertyId="33:164" id="148:1025"/>
+                        <ViewModelInstanceBoolean viewModelPropertyId="33:169" id="148:1026"/>
+                        <ViewModelInstanceNumber propertyValue="1" viewModelPropertyId="99:100" id="148:1027"/>
+                        <ViewModelInstanceString viewModelPropertyId="112:14" id="148:1028"/>
+                        <ViewModelInstanceNumber viewModelPropertyId="118:1" id="148:1030">
+                            <DataBindContext sourcePathIds="148:1-148:3" propertyKey="575" nameBased="true" id="148:1029"/>
+                        </ViewModelInstanceNumber>
+                        <ViewModelInstanceNumber propertyValue="1" viewModelPropertyId="136:1" id="148:1032">
+                            <DataBindContext sourcePathIds="148:1-148:4" propertyKey="575" nameBased="true" id="148:1031"/>
+                        </ViewModelInstanceNumber>
+                        <ViewModelInstanceTrigger viewModelPropertyId="134:10" id="148:1033"/>
+                    </ViewModelInstance>
+                </NestedArtboardLayout>
+                <LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="148:1011"/>
+            </LayoutComponent>
+            <LayoutComponent styleId="148:1034" name="Menu" id="148:1035">
+                <NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="1:122" isStateful="true" name="Button" id="148:1036">
+                    <NestedStateMachine animationId="1:127" id="148:1037"/>
+                    <ViewModelInstance viewModelId="1:151" exports="true" name="Menu Button" id="148:1038">
+                        <ViewModelInstanceString propertyValue="Publish" viewModelPropertyId="1:549" id="148:1039">
+                            <DataBindContext sourcePathIds="148:1-148:10" propertyKey="561" nameBased="true" id="148:1040"/>
+                        </ViewModelInstanceString>
+                        <ViewModelInstanceBoolean viewModelPropertyId="1:587" id="148:1041"/>
+                        <ViewModelInstanceTrigger viewModelPropertyId="1:1321" id="148:1042">
+                            <DataBindContext sourcePathIds="148:1-148:9" propertyKey="687" nameBased="true" twoWay="true" id="148:1043"/>
+                        </ViewModelInstanceTrigger>
+                        <ViewModelInstanceBoolean viewModelPropertyId="7:1" id="148:1045">
+                            <DataBindContext sourcePathIds="148:1-148:5" propertyKey="593" nameBased="true" id="148:1044"/>
+                        </ViewModelInstanceBoolean>
+                        <ViewModelInstanceBoolean viewModelPropertyId="7:3" id="148:1047">
+                            <DataBindContext sourcePathIds="148:1-148:6" propertyKey="593" nameBased="true" id="148:1046"/>
+                        </ViewModelInstanceBoolean>
+                        <ViewModelInstanceNumber propertyValue="10" viewModelPropertyId="33:164" id="148:1048"/>
+                        <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="33:169" id="148:1049"/>
+                        <ViewModelInstanceNumber propertyValue="3" viewModelPropertyId="99:100" id="148:1050"/>
+                        <ViewModelInstanceString viewModelPropertyId="112:14" id="148:1051"/>
+                        <ViewModelInstanceNumber viewModelPropertyId="118:1" id="148:1053">
+                            <DataBindContext sourcePathIds="148:1-148:3" propertyKey="575" nameBased="true" id="148:1052"/>
+                        </ViewModelInstanceNumber>
+                        <ViewModelInstanceNumber propertyValue="1" viewModelPropertyId="136:1" id="148:1055">
+                            <DataBindContext sourcePathIds="148:1-148:4" propertyKey="575" nameBased="true" id="148:1054"/>
+                        </ViewModelInstanceNumber>
+                        <ViewModelInstanceTrigger viewModelPropertyId="134:10" id="148:1056"/>
+                    </ViewModelInstance>
+                </NestedArtboardLayout>
+                <LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="148:1034"/>
+            </LayoutComponent>
+            <LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="148:1003"/>
+            <SemanticData role="group" name="Semantics" id="148:1057">
+                <DataBindContext sourcePathIds="148:1-148:2" propertyKey="983" nameBased="true" id="148:1058"/>
+                <DataBindContext sourcePathIds="148:1-148:6" propertyKey="1004" nameBased="true" id="148:1059"/>
+            </SemanticData>
+        </LayoutComponent>
+        <LayoutComponent width="220" styleId="148:1004" opacity="0" name="Overlay" id="148:1005">
+            <NestedArtboardLayout instanceWidthScaleType="fill" instanceHeightScaleType="hug" artboardId="146:1000" dataBindPathIds="148:1-148:7" name="Menu" id="148:1006">
+                <NestedStateMachine animationId="146:1001" id="148:1007"/>
+            </NestedArtboardLayout>
+            <LayoutComponentStyle positionTop="44" positionLeftUnitsValue="points" positionTopUnitsValue="points" edgeConstraints="16" positionTypeValue="absolute" displayValue="none" flexDirectionValue="column" intrinsicallySizedValue="true" widthUnitsValue="points" layoutHeightScaleType="hug" heightUnitsValue="auto" id="148:1004"/>
+        </LayoutComponent>
+        <StateMachine name="State Machine 1" id="148:1001"><StateMachineListener targetId="148:1000" name="Preview Disabled" id="148:1904"><ListenerInputTypeViewModel viewModelPathIds="10:7-15:419" listenerTypeValue="viewModel" id="148:1905"/><ListenerViewModelChange fromViewModelProperty="true" fromDataBindId="148:1900" id="148:1901"><BindablePropertyBoolean id="148:1902"><DataBindContext sourcePathIds="148:1-148:5" propertyKey="634" direction="true" id="148:1903"/><DataBindContext sourcePathIds="10:7-15:419" propertyKey="634" id="148:1900"/></BindablePropertyBoolean></ListenerViewModelChange></StateMachineListener>
+            <StateMachineListener targetId="148:1000" name="Toggle Menu" id="148:1064">
+                <ListenerInputTypeViewModel viewModelPathIds="148:1-148:9" listenerTypeValue="viewModel" id="148:1065"/>
+                <ListenerViewModelChange fromViewModelProperty="true" fromDataBindId="148:1060" id="148:1061">
+                    <BindablePropertyBoolean id="148:1062">
+                        <DataBindContext sourcePathIds="148:1-148:7-146:12-146:4" propertyKey="634" direction="true" id="148:1063"/>
+                        <DataBindContext sourcePathIds="148:1-148:7-146:12-146:4" propertyKey="634" converterId="1:1018" id="148:1060"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineLayer name="Open" id="148:1070">
+                <AnyState x="500" id="148:1071">
+                    <StateTransition stateToId="148:1068" duration="150" interpolationType="cubic" id="148:1072">
+                        <TransitionViewModelCondition id="148:1073">
+                            <TransitionPropertyViewModelComparator id="148:1074">
+                                <BindablePropertyBoolean id="148:1075">
+                                    <DataBindContext sourcePathIds="148:1-148:7-146:12-146:4" propertyKey="634" id="148:1076"/>
+                                </BindablePropertyBoolean>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueBooleanComparator id="148:1077"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                    <StateTransition stateToId="148:1069" duration="150" interpolationType="cubic" id="148:1078">
+                        <TransitionViewModelCondition id="148:1079">
+                            <TransitionPropertyViewModelComparator id="148:1080">
+                                <BindablePropertyBoolean id="148:1081">
+                                    <DataBindContext sourcePathIds="148:1-148:7-146:12-146:4" propertyKey="634" id="148:1082"/>
+                                </BindablePropertyBoolean>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueBooleanComparator value="true" id="148:1083"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                </AnyState>
+                <ExitState x="600" id="148:1084"/>
+                <EntryState id="148:1085">
+                    <StateTransition stateToId="148:1068" id="148:1086"/>
+                </EntryState>
+                <AnimationState animationId="148:1066" x="160" y="100" stateName="Closed" id="148:1068"/>
+                <AnimationState animationId="148:1067" x="320" y="100" stateName="Open" id="148:1069"/>
+            </StateMachineLayer>
+        </StateMachine>
+        <LinearAnimation name="Closed" loopValue="loop" id="148:1066">
+            <KeyedObject objectId="148:1005" id="148:1087">
+                <KeyedProperty property="opacity" id="148:1088">
+                    <KeyFrameDouble interpolationType="linear" id="148:1089"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="148:1004" id="148:1090">
+                <KeyedProperty property="displayValue" id="148:1091">
+                    <KeyFrameUint value="1" id="148:1092"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+        <LinearAnimation name="Open" loopValue="loop" id="148:1067">
+            <KeyedObject objectId="148:1005" id="148:1093">
+                <KeyedProperty property="opacity" id="148:1094">
+                    <KeyFrameDouble value="1" interpolationType="linear" id="148:1095"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="148:1004" id="148:1096">
+                <KeyedProperty property="displayValue" id="148:1097">
+                    <KeyFrameUint id="148:1098"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+    </Artboard>
+</Rive>

@@ -298,7 +298,6 @@ A button in three variants and three colours, like MUI: `variant` sets the shape
 - Disabled looks the same in every colour: `_textMuted` on `_surfaceSubtle`, or without the surface for the text variant.
 - One state machine layer, **Look**, holds one state per combination (Contained Neutral … Text Destructive).
 - Breaking change from the four old variants: `1` secondary is now `variant` 1 (outlined, neutral); the old `2` brand and `3` destructive are now `variant` 0 with `color` 1 or 2.
-- The Dropdown trigger uses the same primary tokens, so the actions look alike; its list keeps the brand accent.
 
 ```xml
 <NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="1:122" isStateful="true" name="Button" id="X:1">
@@ -542,34 +541,6 @@ Contains: Button, Dialog
 </NestedArtboardLayout>
 ```
 
-## Dropdown
-
-Source: `shared/10-Dropdown.rml` · artboard `1:4236` · state machine `1:4241` · view model `Dropdown` `1:4248`
-Contains: List Item
-
-| Property | Type | Id |
-|---|---|---|
-| `disabled` | boolean | `7:39` |
-| `a11yHidden` | boolean | `7:41` |
-| `_pressed` | trigger | `1:4254` |
-| `text` | string | `1:4252` |
-| `list` | list of `ListItem` | `1:4250` |
-
-```xml
-<NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="1:4236" isStateful="true" name="Dropdown" id="X:1">
-    <NestedStateMachine animationId="1:4241" id="X:2"/>
-    <ViewModelInstance viewModelId="1:4248" exports="true" name="My Dropdown" id="X:3">
-        <ViewModelInstanceBoolean viewModelPropertyId="7:39" id="X:4"/>  <!-- disabled -->
-        <ViewModelInstanceBoolean viewModelPropertyId="7:41" id="X:5"/>  <!-- a11yHidden -->
-        <ViewModelInstanceBoolean viewModelPropertyId="1:4282" id="X:6"/>  <!-- _open -->
-        <ViewModelInstanceTrigger viewModelPropertyId="1:4254" id="X:7"/>  <!-- _pressed -->
-        <ViewModelInstanceBoolean viewModelPropertyId="1:4256" id="X:8"/>  <!-- _hover -->
-        <ViewModelInstanceString viewModelPropertyId="1:4252" id="X:9"/>  <!-- text -->
-        <ViewModelInstanceList viewModelPropertyId="1:4250" id="X:10"/>  <!-- list: add ViewModelInstanceListItem children -->
-    </ViewModelInstance>
-</NestedArtboardLayout>
-```
-
 ## Label
 
 Source: `shared/06-Label.rml` · artboard `1:1722` · state machine `1:1740` · view model `Label` `1:1748`
@@ -589,12 +560,39 @@ Source: `shared/06-Label.rml` · artboard `1:1722` · state machine `1:1740` · 
 </NestedArtboardLayout>
 ```
 
-## List Item
+## Menu
 
-Source: `shared/09-ListItem.rml` · artboard `1:4156` · state machine `1:4161` · view model `ListItem` `1:4184`
+Source: `shared/43-Menu.rml` · artboard `146:1000` · state machine `146:1001` · view model `Menu` `146:10`
+Contains: Menu Item
 
 | Property | Type | Id |
 |---|---|---|
+| `items` | list of `MenuItem` | `146:11` |
+| `state` | `MenuState` | `146:12` |
+| `label` | string | `146:13` |
+| `a11yHidden` | boolean | `146:14` |
+
+```xml
+<NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="146:1000" isStateful="true" name="Menu" id="X:1">
+    <NestedStateMachine animationId="146:1001" id="X:2"/>
+    <ViewModelInstance viewModelId="146:10" exports="true" name="My Menu" id="X:3">
+        <ViewModelInstanceList viewModelPropertyId="146:11" id="X:4"/>  <!-- items: add ViewModelInstanceListItem children -->
+        <ViewModelInstanceViewModel viewModelPropertyId="146:12" id="X:5"/>  <!-- state: set propertyValue to the id of a shared instance -->
+        <ViewModelInstanceString viewModelPropertyId="146:13" id="X:6"/>  <!-- label -->
+        <ViewModelInstanceBoolean viewModelPropertyId="146:14" id="X:7"/>  <!-- a11yHidden -->
+    </ViewModelInstance>
+</NestedArtboardLayout>
+```
+
+## Menu Item
+
+Source: `shared/09-MenuItem.rml` · artboard `1:4156` · state machine `1:4161` · view model `MenuItem` `1:4184`
+
+| Property | Type | Id |
+|---|---|---|
+| `group` | `MenuState` | `145:1` |
+| `_activate` | trigger | `145:2` |
+| `_choose` | trigger | `145:3` |
 | `disabled` | boolean | `7:43` |
 | `a11yHidden` | boolean | `7:47` |
 | `index` | list index (filled in by the list) | `1:4327` |
@@ -602,15 +600,18 @@ Source: `shared/09-ListItem.rml` · artboard `1:4156` · state machine `1:4161` 
 | `text` | string | `1:4186` |
 
 ```xml
-<NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="1:4156" isStateful="true" name="List Item" id="X:1">
+<NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="1:4156" isStateful="true" name="Menu Item" id="X:1">
     <NestedStateMachine animationId="1:4161" id="X:2"/>
-    <ViewModelInstance viewModelId="1:4184" exports="true" name="My List Item" id="X:3">
-        <ViewModelInstanceBoolean viewModelPropertyId="7:43" id="X:4"/>  <!-- disabled -->
-        <ViewModelInstanceBoolean viewModelPropertyId="7:47" id="X:5"/>  <!-- a11yHidden -->
-        <ViewModelInstanceSymbolListIndex viewModelPropertyId="1:4327" id="X:6"/>  <!-- index -->
-        <ViewModelInstanceTrigger viewModelPropertyId="1:4213" id="X:7"/>  <!-- _pressed -->
-        <ViewModelInstanceBoolean viewModelPropertyId="1:4211" id="X:8"/>  <!-- _hover -->
-        <ViewModelInstanceString viewModelPropertyId="1:4186" id="X:9"/>  <!-- text -->
+    <ViewModelInstance viewModelId="1:4184" exports="true" name="My Menu Item" id="X:3">
+        <ViewModelInstanceViewModel viewModelPropertyId="145:1" id="X:4"/>  <!-- group: set propertyValue to the id of a shared instance -->
+        <ViewModelInstanceTrigger viewModelPropertyId="145:2" id="X:5"/>  <!-- _activate -->
+        <ViewModelInstanceTrigger viewModelPropertyId="145:3" id="X:6"/>  <!-- _choose -->
+        <ViewModelInstanceBoolean viewModelPropertyId="7:43" id="X:7"/>  <!-- disabled -->
+        <ViewModelInstanceBoolean viewModelPropertyId="7:47" id="X:8"/>  <!-- a11yHidden -->
+        <ViewModelInstanceSymbolListIndex viewModelPropertyId="1:4327" id="X:9"/>  <!-- index -->
+        <ViewModelInstanceTrigger viewModelPropertyId="1:4213" id="X:10"/>  <!-- _pressed -->
+        <ViewModelInstanceBoolean viewModelPropertyId="1:4211" id="X:11"/>  <!-- _hover -->
+        <ViewModelInstanceString viewModelPropertyId="1:4186" id="X:12"/>  <!-- text -->
     </ViewModelInstance>
 </NestedArtboardLayout>
 ```
@@ -754,6 +755,35 @@ Source: `shared/01-RadioOption.rml` · artboard `1:16` · state machine `1:21` �
 </NestedArtboardLayout>
 ```
 
+## Select
+
+Source: `shared/44-Select.rml` · artboard `147:1000` · state machine `147:1001` · view model `Select` `147:1`
+Contains: Menu
+
+| Property | Type | Id |
+|---|---|---|
+| `menu` | `Menu` | `147:2` |
+| `label` | string | `147:3` |
+| `disabled` | boolean | `147:4` |
+| `a11yHidden` | boolean | `147:5` |
+| `_activate` | trigger | `147:7` |
+| `_toggle` | trigger | `147:8` |
+
+```xml
+<NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="147:1000" isStateful="true" name="Select" id="X:1">
+    <NestedStateMachine animationId="147:1001" id="X:2"/>
+    <ViewModelInstance viewModelId="147:1" exports="true" name="My Select" id="X:3">
+        <ViewModelInstanceViewModel viewModelPropertyId="147:2" id="X:4"/>  <!-- menu: set propertyValue to the id of a shared instance -->
+        <ViewModelInstanceString viewModelPropertyId="147:3" id="X:5"/>  <!-- label -->
+        <ViewModelInstanceBoolean viewModelPropertyId="147:4" id="X:6"/>  <!-- disabled -->
+        <ViewModelInstanceBoolean viewModelPropertyId="147:5" id="X:7"/>  <!-- a11yHidden -->
+        <ViewModelInstanceBoolean viewModelPropertyId="147:6" id="X:8"/>  <!-- _hover -->
+        <ViewModelInstanceTrigger viewModelPropertyId="147:7" id="X:9"/>  <!-- _activate -->
+        <ViewModelInstanceTrigger viewModelPropertyId="147:8" id="X:10"/>  <!-- _toggle -->
+    </ViewModelInstance>
+</NestedArtboardLayout>
+```
+
 ## Slider
 
 Source: `shared/07-Slider.rml` · artboard `1:1870` · state machine `1:1875` · view model `Slider` `1:1932`
@@ -780,6 +810,40 @@ Source: `shared/07-Slider.rml` · artboard `1:1870` · state machine `1:1875` ·
         <ViewModelInstanceNumber viewModelPropertyId="1:1962" id="X:9"/>  <!-- currentPos -->
         <ViewModelInstanceNumber viewModelPropertyId="1:1960" id="X:10"/>  <!-- maxPos -->
         <ViewModelInstanceNumber viewModelPropertyId="1:1958" id="X:11"/>  <!-- minPos -->
+    </ViewModelInstance>
+</NestedArtboardLayout>
+```
+
+## Split Button
+
+Source: `shared/45-SplitButton.rml` · artboard `148:1000` · state machine `148:1001` · view model `SplitButton` `148:1`
+Contains: Button, Menu
+
+| Property | Type | Id |
+|---|---|---|
+| `text` | string | `148:2` |
+| `variant` | number | `148:3` |
+| `color` | number | `148:4` |
+| `disabled` | boolean | `148:5` |
+| `a11yHidden` | boolean | `148:6` |
+| `menu` | `Menu` | `148:7` |
+| `pressed` | trigger | `148:8` |
+| `_menuPressed` | trigger | `148:9` |
+| `menuLabel` | string | `148:10` |
+
+```xml
+<NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="148:1000" isStateful="true" name="Split Button" id="X:1">
+    <NestedStateMachine animationId="148:1001" id="X:2"/>
+    <ViewModelInstance viewModelId="148:1" exports="true" name="My Split Button" id="X:3">
+        <ViewModelInstanceString viewModelPropertyId="148:2" id="X:4"/>  <!-- text -->
+        <ViewModelInstanceNumber viewModelPropertyId="148:3" id="X:5"/>  <!-- variant -->
+        <ViewModelInstanceNumber viewModelPropertyId="148:4" id="X:6"/>  <!-- color -->
+        <ViewModelInstanceBoolean viewModelPropertyId="148:5" id="X:7"/>  <!-- disabled -->
+        <ViewModelInstanceBoolean viewModelPropertyId="148:6" id="X:8"/>  <!-- a11yHidden -->
+        <ViewModelInstanceViewModel viewModelPropertyId="148:7" id="X:9"/>  <!-- menu: set propertyValue to the id of a shared instance -->
+        <ViewModelInstanceTrigger viewModelPropertyId="148:8" id="X:10"/>  <!-- pressed -->
+        <ViewModelInstanceTrigger viewModelPropertyId="148:9" id="X:11"/>  <!-- _menuPressed -->
+        <ViewModelInstanceString viewModelPropertyId="148:10" id="X:12"/>  <!-- menuLabel -->
     </ViewModelInstance>
 </NestedArtboardLayout>
 ```
@@ -1078,22 +1142,22 @@ Contains: Nav Group
 ## Slide  (Showcase demo)
 
 Source: `shared/17-Slide.rml` · artboard `10:5313` · state machine `10:5405` · view model `Slide` `10:5163`
-Contains: Accordion, Alert, Avatar, Badge, Breadcrumbs, Button Group, Button Row, Checkbox Group, Chip Group, Dialog Demo, Dropdown, Label, Pagination, Progress Bar, Radio Group, Slider, Switch Group, Tabs, Toggle Button Group, Tooltip Button
+Contains: Accordion, Alert, Avatar, Badge, Breadcrumbs, Button Group, Button Row, Checkbox Group, Chip Group, Dialog Demo, Label, Menu, Pagination, Progress Bar, Radio Group, Select, Slider, Split Button, Switch Group, Tabs, Toggle Button Group, Tooltip Button
 
 | Property | Type | Id |
 |---|---|---|
 | `name` | string | `10:5171` |
-| `content` | list of `Pagination` / `Accordion` / `RadioGroup` / `CheckboxGroup` / `SwitchGroup` / `Alert` / `Breadcrumbs` / `TooltipButton` / `ProgressBar` / `DialogDemo` / `ButtonRow` / `Tabs` / `ChipGroup` / `Badge` / `Label` / `Slider` / `Avatar` / `Dropdown` / `ToggleButtonGroup` / `ButtonGroup` | `10:5173` |
+| `content` | list of `Pagination` / `Accordion` / `RadioGroup` / `CheckboxGroup` / `SwitchGroup` / `Alert` / `Breadcrumbs` / `TooltipButton` / `ProgressBar` / `DialogDemo` / `ButtonRow` / `Tabs` / `ChipGroup` / `Menu` / `Select` / `SplitButton` / `Badge` / `Label` / `Slider` / `Avatar` / `ToggleButtonGroup` / `ButtonGroup` | `10:5173` |
 | `crumbs` | `Breadcrumbs` | `114:1` |
 
 ## Tile  (Showcase demo)
 
 Source: `shared/14-Tile.rml` · artboard `10:3618` · state machine `10:3623` · view model `Tile` `10:3612`
-Contains: Accordion, Alert, Avatar, Badge, Breadcrumbs, Button, Button Group, Checkbox Group, Chip Group, Dialog Demo, Dropdown, Label, Pagination, Progress Bar, Radio Group, Slider, Switch Group, Tabs, Toggle Button Group, Tooltip Button
+Contains: Accordion, Alert, Avatar, Badge, Breadcrumbs, Button, Button Group, Checkbox Group, Chip Group, Dialog Demo, Label, Menu, Pagination, Progress Bar, Radio Group, Select, Slider, Split Button, Switch Group, Tabs, Toggle Button Group, Tooltip Button
 
 | Property | Type | Id |
 |---|---|---|
-| `content` | list of `Pagination` / `Accordion` / `RadioGroup` / `CheckboxGroup` / `SwitchGroup` / `Alert` / `Breadcrumbs` / `TooltipButton` / `ProgressBar` / `DialogDemo` / `Tabs` / `ChipGroup` / `Badge` / `Button` / `Label` / `Slider` / `Avatar` / `Dropdown` / `ToggleButtonGroup` / `ButtonGroup` | `10:3861` |
+| `content` | list of `Pagination` / `Accordion` / `RadioGroup` / `CheckboxGroup` / `SwitchGroup` / `Alert` / `Breadcrumbs` / `TooltipButton` / `ProgressBar` / `DialogDemo` / `Tabs` / `ChipGroup` / `Menu` / `Select` / `SplitButton` / `Badge` / `Button` / `Label` / `Slider` / `Avatar` / `ToggleButtonGroup` / `ButtonGroup` | `10:3861` |
 | `name` | string | `10:3614` |
 
 ## Toolbar  (Showcase demo)
