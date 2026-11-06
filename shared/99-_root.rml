@@ -1219,10 +1219,20 @@
                     <ViewModelInstanceList viewModelPropertyId="10:5173" id="112:173">
                         <ViewModelInstanceListItem viewModelId="112:7" viewModelInstanceId="112:17" id="112:174"/>
                     </ViewModelInstanceList>
-                    <ViewModelInstanceNumber propertyValue="8" viewModelPropertyId="10:5175" id="112:175"/>
+                    <ViewModelInstanceNumber propertyValue="9" viewModelPropertyId="10:5175" id="112:175"/>
                     <ViewModelInstanceNumber propertyValue="2.2" viewModelPropertyId="10:5177" id="112:176"/>
                     <ViewModelInstanceViewModel propertyValue="10:5193" viewModelPropertyId="10:5179" id="112:177"/>
                     <ViewModelInstanceViewModel propertyValue="114:31" viewModelPropertyId="114:1" id="114:56"/>
+                </ViewModelInstance>
+                <ViewModelInstance exports="true" name="S Progress Bar" id="130:110">
+                    <ViewModelInstanceString propertyValue="Progress Bar" viewModelPropertyId="10:5171" id="130:111"/>
+                    <ViewModelInstanceList viewModelPropertyId="10:5173" id="130:112">
+                        <ViewModelInstanceListItem viewModelId="130:1" viewModelInstanceId="130:5" id="130:113"/>
+                    </ViewModelInstanceList>
+                    <ViewModelInstanceNumber propertyValue="8" viewModelPropertyId="10:5175" id="130:114"/>
+                    <ViewModelInstanceNumber propertyValue="1.6" viewModelPropertyId="10:5177" id="130:115"/>
+                    <ViewModelInstanceViewModel propertyValue="10:5193" viewModelPropertyId="10:5179" id="130:116"/>
+                    <ViewModelInstanceViewModel propertyValue="130:140" viewModelPropertyId="114:1" id="130:117"/>
                 </ViewModelInstance>
                 <ViewModelInstance exports="true" name="S Alert" id="110:299">
                     <ViewModelInstanceString propertyValue="Alert" viewModelPropertyId="10:5171" id="110:300"/>
@@ -1249,7 +1259,7 @@
                     <ViewModelInstanceList viewModelPropertyId="10:5173" id="102:600">
                         <ViewModelInstanceListItem viewModelId="102:7" viewModelInstanceId="102:20" id="102:601"/>
                     </ViewModelInstanceList>
-                    <ViewModelInstanceNumber propertyValue="14" viewModelPropertyId="10:5175" id="102:602"/>
+                    <ViewModelInstanceNumber propertyValue="15" viewModelPropertyId="10:5175" id="102:602"/>
                     <ViewModelInstanceNumber propertyValue="1.8" viewModelPropertyId="10:5177" id="102:603"/>
                     <ViewModelInstanceViewModel propertyValue="10:5193" viewModelPropertyId="10:5179" id="102:604"/>
                     <ViewModelInstanceViewModel propertyValue="114:109" viewModelPropertyId="114:1" id="114:134"/>
@@ -1259,7 +1269,7 @@
                     <ViewModelInstanceList viewModelPropertyId="10:5173" id="111:72">
                         <ViewModelInstanceListItem viewModelId="111:9" viewModelInstanceId="111:22" id="111:73"/>
                     </ViewModelInstanceList>
-                    <ViewModelInstanceNumber propertyValue="13" viewModelPropertyId="10:5175" id="111:74"/>
+                    <ViewModelInstanceNumber propertyValue="14" viewModelPropertyId="10:5175" id="111:74"/>
                     <ViewModelInstanceNumber propertyValue="1.8" viewModelPropertyId="10:5177" id="111:75"/>
                     <ViewModelInstanceViewModel propertyValue="10:5193" viewModelPropertyId="10:5179" id="111:76"/>
                     <ViewModelInstanceViewModel propertyValue="114:135" viewModelPropertyId="114:1" id="114:160"/>
@@ -1282,7 +1292,7 @@
                     <ViewModelInstanceList viewModelPropertyId="10:5173" id="10:5206">
                         <ViewModelInstanceListItem viewModelId="10:4445" viewModelInstanceId="10:4467" id="10:5210"/>
                     </ViewModelInstanceList>
-                    <ViewModelInstanceNumber propertyValue="12" viewModelPropertyId="10:5175" id="10:5207"/>
+                    <ViewModelInstanceNumber propertyValue="13" viewModelPropertyId="10:5175" id="10:5207"/>
                     <ViewModelInstanceNumber propertyValue="2.2" viewModelPropertyId="10:5177" id="10:5208"/>
                     <ViewModelInstanceViewModel propertyValue="10:5193" viewModelPropertyId="10:5179" id="10:5209"/>
                     <ViewModelInstanceViewModel propertyValue="114:187" viewModelPropertyId="114:1" id="114:212"/>
@@ -1292,7 +1302,7 @@
                     <ViewModelInstanceList viewModelPropertyId="10:5173" id="10:5213">
                         <ViewModelInstanceListItem viewModelId="1:1932" viewModelInstanceId="1:1933" id="10:5217"/>
                     </ViewModelInstanceList>
-                    <ViewModelInstanceNumber propertyValue="11" viewModelPropertyId="10:5175" id="10:5214"/>
+                    <ViewModelInstanceNumber propertyValue="12" viewModelPropertyId="10:5175" id="10:5214"/>
                     <ViewModelInstanceNumber propertyValue="2.2" viewModelPropertyId="10:5177" id="10:5215"/>
                     <ViewModelInstanceViewModel propertyValue="10:5193" viewModelPropertyId="10:5179" id="10:5216"/>
                     <ViewModelInstanceViewModel propertyValue="114:213" viewModelPropertyId="114:1" id="114:238"/>
@@ -1312,7 +1322,7 @@
                     <ViewModelInstanceList viewModelPropertyId="10:5173" id="10:5227">
                         <ViewModelInstanceListItem viewModelId="10:3548" viewModelInstanceId="10:3580" id="10:5231"/>
                     </ViewModelInstanceList>
-                    <ViewModelInstanceNumber propertyValue="10" viewModelPropertyId="10:5175" id="10:5228"/>
+                    <ViewModelInstanceNumber propertyValue="11" viewModelPropertyId="10:5175" id="10:5228"/>
                     <ViewModelInstanceNumber propertyValue="2.2" viewModelPropertyId="10:5177" id="10:5229"/>
                     <ViewModelInstanceViewModel propertyValue="10:5193" viewModelPropertyId="10:5179" id="10:5230"/>
                     <ViewModelInstanceViewModel propertyValue="114:265" viewModelPropertyId="114:1" id="114:290"/>
@@ -1322,7 +1332,7 @@
                     <ViewModelInstanceList viewModelPropertyId="10:5173" id="10:5234">
                         <ViewModelInstanceListItem viewModelId="10:4154" viewModelInstanceId="10:4176" id="10:5238"/>
                     </ViewModelInstanceList>
-                    <ViewModelInstanceNumber propertyValue="9" viewModelPropertyId="10:5175" id="10:5235"/>
+                    <ViewModelInstanceNumber propertyValue="10" viewModelPropertyId="10:5175" id="10:5235"/>
                     <ViewModelInstanceNumber propertyValue="2.2" viewModelPropertyId="10:5177" id="10:5236"/>
                     <ViewModelInstanceViewModel propertyValue="10:5193" viewModelPropertyId="10:5179" id="10:5237"/>
                     <ViewModelInstanceViewModel propertyValue="114:291" viewModelPropertyId="114:1" id="114:316"/>
@@ -1403,6 +1413,7 @@
                         <ViewModelInstanceListItem viewModelId="10:5163" viewModelInstanceId="10:5239" id="10:5310"/>
                         <ViewModelInstanceListItem viewModelId="10:5163" viewModelInstanceId="10:5246" id="10:5311"/>
                         <ViewModelInstanceListItem viewModelId="10:5163" viewModelInstanceId="110:299" id="110:336"/>
+                        <ViewModelInstanceListItem viewModelId="10:5163" viewModelInstanceId="130:110" id="130:170"/>
                         <ViewModelInstanceListItem viewModelId="10:5163" viewModelInstanceId="112:171" id="112:187"/>
                         <ViewModelInstanceListItem viewModelId="10:5163" viewModelInstanceId="10:5232" id="10:5309"/>
                         <ViewModelInstanceListItem viewModelId="10:5163" viewModelInstanceId="10:5225" id="10:5308"/>
@@ -1414,7 +1425,7 @@
                     <ViewModelInstanceViewModel propertyValue="10:5193" viewModelPropertyId="10:5184" id="10:5292"/>
                     <ViewModelInstanceNumber propertyValue="1" viewModelPropertyId="10:5187" id="10:5293"/>
                     <ViewModelInstanceNumber propertyValue="9" viewModelPropertyId="10:5190" id="10:5294"/>
-                    <ViewModelInstanceNumber propertyValue="15" viewModelPropertyId="10:5576" id="10:5577"/>
+                    <ViewModelInstanceNumber propertyValue="16" viewModelPropertyId="10:5576" id="10:5577"/>
                     <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="10:15635" id="10:15636"/>
                     <ViewModelInstanceViewModel propertyValue="33:60" viewModelPropertyId="33:3" id="33:4"/>
                     <ViewModelInstanceViewModel propertyValue="33:101" viewModelPropertyId="33:5" id="33:6"/>
@@ -1459,8 +1470,17 @@
                         <ViewModelInstanceListItem viewModelId="112:7" viewModelInstanceId="112:17" id="112:167"/>
                     </ViewModelInstanceList>
                     <ViewModelInstanceBoolean viewModelPropertyId="10:4507" id="112:168"/>
-                    <ViewModelInstanceNumber propertyValue="8" viewModelPropertyId="10:4567" id="112:169"/>
+                    <ViewModelInstanceNumber propertyValue="9" viewModelPropertyId="10:4567" id="112:169"/>
                     <ViewModelInstanceViewModel propertyValue="10:4585" viewModelPropertyId="10:4589" id="112:170"/>
+                </ViewModelInstance>
+                <ViewModelInstance exports="true" name="T Progress Bar" id="130:120">
+                    <ViewModelInstanceString propertyValue="Progress Bar" viewModelPropertyId="10:3614" id="130:121"/>
+                    <ViewModelInstanceList viewModelPropertyId="10:3861" id="130:122">
+                        <ViewModelInstanceListItem viewModelId="130:1" viewModelInstanceId="130:5" id="130:123"/>
+                    </ViewModelInstanceList>
+                    <ViewModelInstanceBoolean viewModelPropertyId="10:4507" id="130:124"/>
+                    <ViewModelInstanceNumber propertyValue="8" viewModelPropertyId="10:4567" id="130:125"/>
+                    <ViewModelInstanceViewModel propertyValue="10:4585" viewModelPropertyId="10:4589" id="130:126"/>
                 </ViewModelInstance>
                 <ViewModelInstance exports="true" name="T Alert" id="110:291">
                     <ViewModelInstanceString propertyValue="Alert" viewModelPropertyId="10:3614" id="110:292"/>
@@ -1486,7 +1506,7 @@
                         <ViewModelInstanceListItem viewModelId="102:7" viewModelInstanceId="102:20" id="102:594"/>
                     </ViewModelInstanceList>
                     <ViewModelInstanceBoolean viewModelPropertyId="10:4507" id="102:595"/>
-                    <ViewModelInstanceNumber propertyValue="14" viewModelPropertyId="10:4567" id="102:596"/>
+                    <ViewModelInstanceNumber propertyValue="15" viewModelPropertyId="10:4567" id="102:596"/>
                     <ViewModelInstanceViewModel propertyValue="10:4585" viewModelPropertyId="10:4589" id="102:597"/>
                 </ViewModelInstance>
                 <ViewModelInstance exports="true" name="T Breadcrumbs" id="111:62">
@@ -1495,7 +1515,7 @@
                         <ViewModelInstanceListItem viewModelId="111:9" viewModelInstanceId="111:22" id="111:66"/>
                     </ViewModelInstanceList>
                     <ViewModelInstanceBoolean viewModelPropertyId="10:4507" id="111:67"/>
-                    <ViewModelInstanceNumber propertyValue="13" viewModelPropertyId="10:4567" id="111:68"/>
+                    <ViewModelInstanceNumber propertyValue="14" viewModelPropertyId="10:4567" id="111:68"/>
                     <ViewModelInstanceViewModel propertyValue="10:4585" viewModelPropertyId="10:4589" id="111:69"/>
                 </ViewModelInstance>
                 <ViewModelInstance exports="true" name="T Button" id="10:4595">
@@ -1513,7 +1533,7 @@
                         <ViewModelInstanceListItem viewModelId="10:4445" viewModelInstanceId="10:4467" id="10:4612"/>
                     </ViewModelInstanceList>
                     <ViewModelInstanceBoolean viewModelPropertyId="10:4507" id="10:4609"/>
-                    <ViewModelInstanceNumber propertyValue="12" viewModelPropertyId="10:4567" id="10:4610"/>
+                    <ViewModelInstanceNumber propertyValue="13" viewModelPropertyId="10:4567" id="10:4610"/>
                     <ViewModelInstanceViewModel propertyValue="10:4585" viewModelPropertyId="10:4589" id="10:4611"/>
                 </ViewModelInstance>
                 <ViewModelInstance exports="true" name="T Slider" id="10:4613">
@@ -1522,7 +1542,7 @@
                         <ViewModelInstanceListItem viewModelId="1:1932" viewModelInstanceId="1:1933" id="10:4621"/>
                     </ViewModelInstanceList>
                     <ViewModelInstanceBoolean viewModelPropertyId="10:4507" id="10:4618"/>
-                    <ViewModelInstanceNumber propertyValue="11" viewModelPropertyId="10:4567" id="10:4619"/>
+                    <ViewModelInstanceNumber propertyValue="12" viewModelPropertyId="10:4567" id="10:4619"/>
                     <ViewModelInstanceViewModel propertyValue="10:4585" viewModelPropertyId="10:4589" id="10:4620"/>
                 </ViewModelInstance>
                 <ViewModelInstance exports="true" name="T Dropdown" id="10:4622">
@@ -1540,7 +1560,7 @@
                         <ViewModelInstanceListItem viewModelId="10:3548" viewModelInstanceId="10:3580" id="10:4639"/>
                     </ViewModelInstanceList>
                     <ViewModelInstanceBoolean viewModelPropertyId="10:4507" id="10:4636"/>
-                    <ViewModelInstanceNumber propertyValue="10" viewModelPropertyId="10:4567" id="10:4637"/>
+                    <ViewModelInstanceNumber propertyValue="11" viewModelPropertyId="10:4567" id="10:4637"/>
                     <ViewModelInstanceViewModel propertyValue="10:4585" viewModelPropertyId="10:4589" id="10:4638"/>
                 </ViewModelInstance>
                 <ViewModelInstance exports="true" name="T Checkbox Group" id="10:4640">
@@ -1549,7 +1569,7 @@
                         <ViewModelInstanceListItem viewModelId="10:4154" viewModelInstanceId="10:4176" id="10:4648"/>
                     </ViewModelInstanceList>
                     <ViewModelInstanceBoolean viewModelPropertyId="10:4507" id="10:4645"/>
-                    <ViewModelInstanceNumber propertyValue="9" viewModelPropertyId="10:4567" id="10:4646"/>
+                    <ViewModelInstanceNumber propertyValue="10" viewModelPropertyId="10:4567" id="10:4646"/>
                     <ViewModelInstanceViewModel propertyValue="10:4585" viewModelPropertyId="10:4589" id="10:4647"/>
                 </ViewModelInstance>
                 <ViewModelInstance exports="true" name="T Badge" id="10:4649">
@@ -1597,6 +1617,7 @@
                     <ViewModelInstanceString propertyValue="Feedback" viewModelPropertyId="100:2" id="110:316"/>
                     <ViewModelInstanceList viewModelPropertyId="100:3" id="110:317">
                         <ViewModelInstanceListItem viewModelId="10:3612" viewModelInstanceId="110:291" id="110:313"/>
+                        <ViewModelInstanceListItem viewModelId="10:3612" viewModelInstanceId="130:120" id="130:171"/>
                         <ViewModelInstanceListItem viewModelId="10:3612" viewModelInstanceId="112:163" id="112:185"/>
                     </ViewModelInstanceList>
                     <ViewModelInstanceViewModel propertyValue="10:4585" viewModelPropertyId="100:5" id="110:322"/>
@@ -2645,9 +2666,15 @@
         </ViewModelInstance>
         <ViewModelInstance exports="true" name="Nav Tooltip" id="112:179">
             <ViewModelInstanceString propertyValue="Tooltip" viewModelPropertyId="41:868" id="112:180"/>
-            <ViewModelInstanceNumber propertyValue="8" viewModelPropertyId="41:870" id="112:181"/>
+            <ViewModelInstanceNumber propertyValue="9" viewModelPropertyId="41:870" id="112:181"/>
             <ViewModelInstanceViewModel propertyValue="10:4585" viewModelPropertyId="41:872" id="112:182"/>
             <ViewModelInstanceBoolean viewModelPropertyId="41:874" id="112:183"/>
+        </ViewModelInstance>
+        <ViewModelInstance exports="true" name="Nav Progress Bar" id="130:130">
+            <ViewModelInstanceString propertyValue="Progress Bar" viewModelPropertyId="41:868" id="130:131"/>
+            <ViewModelInstanceNumber propertyValue="8" viewModelPropertyId="41:870" id="130:132"/>
+            <ViewModelInstanceViewModel propertyValue="10:4585" viewModelPropertyId="41:872" id="130:133"/>
+            <ViewModelInstanceBoolean viewModelPropertyId="41:874" id="130:134"/>
         </ViewModelInstance>
         <ViewModelInstance exports="true" name="Nav Alert" id="110:307">
             <ViewModelInstanceString propertyValue="Alert" viewModelPropertyId="41:868" id="110:308"/>
@@ -2663,13 +2690,13 @@
         </ViewModelInstance>
         <ViewModelInstance exports="true" name="Nav Pagination" id="102:606">
             <ViewModelInstanceString propertyValue="Pagination" viewModelPropertyId="41:868" id="102:607"/>
-            <ViewModelInstanceNumber propertyValue="14" viewModelPropertyId="41:870" id="102:608"/>
+            <ViewModelInstanceNumber propertyValue="15" viewModelPropertyId="41:870" id="102:608"/>
             <ViewModelInstanceViewModel propertyValue="10:4585" viewModelPropertyId="41:872" id="102:609"/>
             <ViewModelInstanceBoolean viewModelPropertyId="41:874" id="102:610"/>
         </ViewModelInstance>
         <ViewModelInstance exports="true" name="Nav Breadcrumbs" id="111:78">
             <ViewModelInstanceString propertyValue="Breadcrumbs" viewModelPropertyId="41:868" id="111:79"/>
-            <ViewModelInstanceNumber propertyValue="13" viewModelPropertyId="41:870" id="111:80"/>
+            <ViewModelInstanceNumber propertyValue="14" viewModelPropertyId="41:870" id="111:80"/>
             <ViewModelInstanceViewModel propertyValue="10:4585" viewModelPropertyId="41:872" id="111:81"/>
             <ViewModelInstanceBoolean viewModelPropertyId="41:874" id="111:82"/>
         </ViewModelInstance>
@@ -2693,13 +2720,13 @@
         </ViewModelInstance>
         <ViewModelInstance exports="true" name="Nav Checkbox Group" id="42:297">
             <ViewModelInstanceString propertyValue="Checkbox Group" viewModelPropertyId="41:868" id="42:298"/>
-            <ViewModelInstanceNumber propertyValue="9" viewModelPropertyId="41:870" id="42:299"/>
+            <ViewModelInstanceNumber propertyValue="10" viewModelPropertyId="41:870" id="42:299"/>
             <ViewModelInstanceViewModel propertyValue="10:4585" viewModelPropertyId="41:872" id="42:300"/>
             <ViewModelInstanceBoolean viewModelPropertyId="41:874" id="42:301"/>
         </ViewModelInstance>
         <ViewModelInstance exports="true" name="Nav Radio Group" id="42:291">
             <ViewModelInstanceString propertyValue="Radio Group" viewModelPropertyId="41:868" id="42:292"/>
-            <ViewModelInstanceNumber propertyValue="10" viewModelPropertyId="41:870" id="42:293"/>
+            <ViewModelInstanceNumber propertyValue="11" viewModelPropertyId="41:870" id="42:293"/>
             <ViewModelInstanceViewModel propertyValue="10:4585" viewModelPropertyId="41:872" id="42:294"/>
             <ViewModelInstanceBoolean viewModelPropertyId="41:874" id="42:295"/>
         </ViewModelInstance>
@@ -2711,13 +2738,13 @@
         </ViewModelInstance>
         <ViewModelInstance exports="true" name="Nav Slider" id="42:279">
             <ViewModelInstanceString propertyValue="Slider" viewModelPropertyId="41:868" id="42:280"/>
-            <ViewModelInstanceNumber propertyValue="11" viewModelPropertyId="41:870" id="42:281"/>
+            <ViewModelInstanceNumber propertyValue="12" viewModelPropertyId="41:870" id="42:281"/>
             <ViewModelInstanceViewModel propertyValue="10:4585" viewModelPropertyId="41:872" id="42:282"/>
             <ViewModelInstanceBoolean viewModelPropertyId="41:874" id="42:283"/>
         </ViewModelInstance>
         <ViewModelInstance exports="true" name="Nav Switch Group" id="42:273">
             <ViewModelInstanceString propertyValue="Switch Group" viewModelPropertyId="41:868" id="42:274"/>
-            <ViewModelInstanceNumber propertyValue="12" viewModelPropertyId="41:870" id="42:275"/>
+            <ViewModelInstanceNumber propertyValue="13" viewModelPropertyId="41:870" id="42:275"/>
             <ViewModelInstanceViewModel propertyValue="10:4585" viewModelPropertyId="41:872" id="42:276"/>
             <ViewModelInstanceBoolean viewModelPropertyId="41:874" id="42:277"/>
         </ViewModelInstance>
@@ -2772,10 +2799,11 @@
         <ViewModelInstance exports="true" name="Feedback" id="110:323">
             <ViewModelInstanceBoolean viewModelPropertyId="41:878" id="110:324"/>
             <ViewModelInstanceString propertyValue="Feedback" viewModelPropertyId="41:880" id="110:325"/>
-            <ViewModelInstanceNumber propertyValue="2" viewModelPropertyId="41:882" id="110:326"/>
+            <ViewModelInstanceNumber propertyValue="3" viewModelPropertyId="41:882" id="110:326"/>
             <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="41:884" id="110:327"/>
             <ViewModelInstanceList viewModelPropertyId="41:886" id="110:328">
                 <ViewModelInstanceListItem name="Nav Alert" viewModelId="41:862" viewModelInstanceId="110:307" id="110:314"/>
+                <ViewModelInstanceListItem name="Nav Progress Bar" viewModelId="41:862" viewModelInstanceId="130:130" id="130:172"/>
                 <ViewModelInstanceListItem name="Nav Tooltip" viewModelId="41:862" viewModelInstanceId="112:179" id="112:186"/>
             </ViewModelInstanceList>
             <ViewModelInstanceBoolean viewModelPropertyId="41:888" id="110:332"/>
@@ -3002,6 +3030,22 @@
             <ViewModelInstanceViewModel propertyValue="114:3" viewModelPropertyId="111:5" id="114:44"/>
             <ViewModelInstanceBoolean viewModelPropertyId="111:6" id="114:45"/>
             <ViewModelInstanceBoolean viewModelPropertyId="111:8" id="114:47"/>
+        </ViewModelInstance>
+        <ViewModelInstance exports="true" name="Showcase Progress Bar / All components" id="130:150">
+            <ViewModelInstanceString propertyValue="All components" viewModelPropertyId="111:2" id="130:151"/>
+            <ViewModelInstanceBoolean viewModelPropertyId="111:3" id="130:152"/>
+            <ViewModelInstanceSymbolListIndex viewModelPropertyId="111:4" id="130:153"/>
+            <ViewModelInstanceViewModel propertyValue="114:3" viewModelPropertyId="111:5" id="130:154"/>
+            <ViewModelInstanceBoolean viewModelPropertyId="111:6" id="130:155"/>
+            <ViewModelInstanceBoolean viewModelPropertyId="111:8" id="130:156"/>
+        </ViewModelInstance>
+        <ViewModelInstance exports="true" name="Showcase Progress Bar / Progress Bar" id="130:160">
+            <ViewModelInstanceString propertyValue="Progress Bar" viewModelPropertyId="111:2" id="130:161"/>
+            <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="111:3" id="130:162"/>
+            <ViewModelInstanceSymbolListIndex viewModelPropertyId="111:4" id="130:163"/>
+            <ViewModelInstanceViewModel propertyValue="114:3" viewModelPropertyId="111:5" id="130:164"/>
+            <ViewModelInstanceBoolean viewModelPropertyId="111:6" id="130:165"/>
+            <ViewModelInstanceBoolean viewModelPropertyId="111:8" id="130:166"/>
         </ViewModelInstance>
         <ViewModelInstance exports="true" name="Showcase Alert / All components" id="114:58">
             <ViewModelInstanceString propertyValue="All components" viewModelPropertyId="111:2" id="114:59"/>
@@ -3265,6 +3309,16 @@
             <ViewModelInstanceBoolean viewModelPropertyId="111:13" id="114:53"/>
             <ViewModelInstanceViewModel propertyValue="114:3" viewModelPropertyId="111:15" id="114:55"/>
         </ViewModelInstance>
+        <ViewModelInstance exports="true" name="Showcase Progress Bar" id="130:140">
+            <ViewModelInstanceList viewModelPropertyId="111:10" id="130:141">
+                <ViewModelInstanceListItem viewModelId="111:1" viewModelInstanceId="130:150" id="130:142"/>
+                <ViewModelInstanceListItem viewModelId="111:1" viewModelInstanceId="130:160" id="130:143"/>
+            </ViewModelInstanceList>
+            <ViewModelInstanceNumber propertyValue="-1" viewModelPropertyId="111:11" id="130:144"/>
+            <ViewModelInstanceString propertyValue="Breadcrumb" viewModelPropertyId="111:12" id="130:145"/>
+            <ViewModelInstanceBoolean viewModelPropertyId="111:13" id="130:146"/>
+            <ViewModelInstanceViewModel propertyValue="114:3" viewModelPropertyId="111:15" id="130:147"/>
+        </ViewModelInstance>
         <ViewModelInstance exports="true" name="Showcase Alert" id="114:57">
             <ViewModelInstanceList viewModelPropertyId="111:10" id="114:74">
                 <ViewModelInstanceListItem viewModelId="111:1" viewModelInstanceId="114:58" id="114:75"/>
@@ -3458,6 +3512,38 @@
             <ViewModelInstanceNumber viewModelPropertyId="914:1" id="914:7"/>
             <ViewModelInstanceNumber viewModelPropertyId="914:2" id="914:8"/>
             <ViewModelInstanceNumber viewModelPropertyId="914:3" id="914:9"/>
+        </ViewModelInstance>
+    </ViewModel>
+    <DataConverterFormula name="Progress · Clamp 0-100" groupId="1:2674" id="130:9">
+        <FormulaTokenFunction id="130:10"/>
+        <FormulaTokenValue operationValue="100" id="130:11"/>
+        <FormulaTokenArgumentSeparator id="130:12"/>
+        <FormulaTokenFunction functionType="1" id="130:13"/>
+        <FormulaTokenValue operationValue="0" id="130:14"/>
+        <FormulaTokenArgumentSeparator id="130:15"/>
+        <FormulaTokenInput id="130:16"/>
+        <FormulaTokenParenthesisClose id="130:17"/>
+        <FormulaTokenParenthesisClose id="130:18"/>
+    </DataConverterFormula>
+    <DataConverterToString decimals="0" round="true" name="Progress · Percent (to text)" groupId="1:2674" id="130:19"/>
+    <DataConverterStringPad length="3" text=" " name="Progress · Pad to 3" groupId="1:2674" id="130:103"/>
+    <DataConverterStringPad length="4" text="%" padType="end" name="Progress · Percent sign" groupId="1:2674" id="130:104"/>
+    <DataConverterStringTrim trimType="1" name="Progress · Trim start" groupId="1:2674" id="130:105"/>
+    <DataConverterGroup name="Progress · Percent text" groupId="1:2674" id="130:100">
+        <DataConverterGroupItem converterId="130:9" id="130:101"/>
+        <DataConverterGroupItem converterId="130:19" id="130:102"/>
+        <DataConverterGroupItem converterId="130:103" id="130:106"/>
+        <DataConverterGroupItem converterId="130:104" id="130:107"/>
+        <DataConverterGroupItem converterId="130:105" id="130:108"/>
+    </DataConverterGroup>
+    <ViewModel defaultInstanceId="130:5" name="ProgressBar" groupId="1:2673" id="130:1">
+        <ViewModelPropertyString name="label" id="130:2"/>
+        <ViewModelPropertyNumber name="value" id="130:3"/>
+        <ViewModelPropertyBoolean name="a11yHidden" id="130:4"/>
+        <ViewModelInstance exports="true" name="Progress Bar" id="130:5">
+            <ViewModelInstanceString propertyValue="Uploading" viewModelPropertyId="130:2" id="130:6"/>
+            <ViewModelInstanceNumber propertyValue="64" viewModelPropertyId="130:3" id="130:7"/>
+            <ViewModelInstanceBoolean viewModelPropertyId="130:4" id="130:8"/>
         </ViewModelInstance>
     </ViewModel>
     <ViewModel defaultInstanceId="122:3" name="NavExpansion" groupId="1:2673" id="122:1">

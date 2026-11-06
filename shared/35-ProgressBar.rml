@@ -1,0 +1,84 @@
+<Rive version="1" kind="fragment">
+    <Artboard defaultStateMachineId="130:22" viewModelId="130:1" viewModelInstanceId="130:5" isComponent="true" spaceId="1:5601" width="280" height="38" styleId="130:21" x="2400" name="Progress Bar" id="130:20">
+        <Fill fillRule="clockwise" id="130:26">
+            <SolidColor colorValue="00000000" id="130:27"/>
+        </Fill>
+        <LayoutComponentStyle intrinsicallySizedValue="true" layoutHeightScaleType="hug" id="130:21"/>
+        <LayoutComponent styleId="130:31" name="Frame" id="130:30">
+            <LayoutComponent styleId="130:33" name="Header" id="130:32">
+                <Text sizingValue="autoHeight" name="Label" id="130:34">
+                    <TextStylePaint fontSize="14" fontAssetId="0:7" familyName="Inter" styleName="Medium" id="130:35">
+                        <Fill fillRule="clockwise" id="130:36">
+                            <SolidColor colorValue="FFFAFAFA" id="130:37">
+                                <DataBindContext sourcePathIds="10:7-10:7422" propertyKey="37" id="130:38"/>
+                            </SolidColor>
+                        </Fill>
+                        <TextStyleAxis tag="1869640570" axisValue="14" id="130:39"/>
+                        <TextStyleAxis tag="2003265652" axisValue="500" id="130:40"/>
+                    </TextStylePaint>
+                    <TextValueRun styleId="130:35" text="Uploading" id="130:41">
+                        <DataBindContext sourcePathIds="130:1-130:2" propertyKey="268" nameBased="true" id="130:42"/>
+                    </TextValueRun>
+                    <LayoutParticipant layoutWidthScaleType="fill" layoutHeightScaleType="hug" id="130:43"/>
+                </Text>
+                <Text name="Value" id="130:44">
+                    <TextStylePaint fontSize="14" fontAssetId="0:7" familyName="Inter" styleName="Regular" id="130:45">
+                        <Fill fillRule="clockwise" id="130:46">
+                            <SolidColor colorValue="FFD4D4D8" id="130:47">
+                                <DataBindContext sourcePathIds="10:7-10:7424" propertyKey="37" id="130:48"/>
+                            </SolidColor>
+                        </Fill>
+                        <TextStyleAxis tag="1869640570" axisValue="14" id="130:49"/>
+                        <TextStyleAxis tag="2003265652" axisValue="400" id="130:50"/>
+                    </TextStylePaint>
+                    <TextValueRun styleId="130:45" text="64%" name="Percent" id="130:51">
+                        <DataBindContext sourcePathIds="130:1-130:3" propertyKey="268" nameBased="true" converterId="130:100" id="130:52"/>
+                    </TextValueRun>
+                    <LayoutParticipant layoutWidthScaleType="hug" layoutHeightScaleType="hug" id="130:54"/>
+                    <SemanticData role="text" name="Semantics" id="130:55">
+                        <DataBindContext sourcePathIds="130:1-130:3" propertyKey="983" nameBased="true" converterId="130:100" id="130:56"/>
+                    </SemanticData>
+                </Text>
+                <LayoutComponentStyle gapHorizontal="12" intrinsicallySizedValue="true" layoutWidthScaleType="fill" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="130:33"/>
+            </LayoutComponent>
+            <LayoutComponent height="8" clip="true" styleId="130:61" name="Track" id="130:60">
+                <LayoutComponent width="64" styleId="130:67" name="Bar" id="130:66">
+                    <Fill fillRule="clockwise" id="130:71">
+                        <SolidColor colorValue="FF2563EB" id="130:72">
+                            <DataBindContext sourcePathIds="10:7-10:2104" propertyKey="37" id="130:73"/>
+                        </SolidColor>
+                    </Fill>
+                    <LayoutComponentStyle interpolationTime="0.3" animationStyleType="custom" interpolationType="cubic" cornerRadiusTL="4" layoutHeightScaleType="fill" widthUnitsValue="percent" heightUnitsValue="auto" id="130:67">
+                        <CubicEaseInterpolator id="130:68"/>
+                        <DataBindContext sourcePathIds="10:7-901:21" propertyKey="640" converterId="0:0" id="130:69"/>
+                    </LayoutComponentStyle>
+                    <DataBindContext sourcePathIds="130:1-130:3" propertyKey="7" nameBased="true" converterId="130:9" id="130:70"/>
+                </LayoutComponent>
+                <Fill fillRule="clockwise" id="130:63">
+                    <SolidColor colorValue="FF3F3F46" id="130:64">
+                        <DataBindContext sourcePathIds="10:7-10:7420" propertyKey="37" id="130:65"/>
+                    </SolidColor>
+                </Fill>
+                <LayoutComponentStyle cornerRadiusTL="4" layoutWidthScaleType="fill" widthUnitsValue="auto" id="130:61">
+                    <DataBindContext sourcePathIds="10:7-901:21" propertyKey="640" converterId="0:0" id="130:62"/>
+                </LayoutComponentStyle>
+            </LayoutComponent>
+            <LayoutComponentStyle gapVertical="8" flexDirectionValue="column" intrinsicallySizedValue="true" layoutWidthScaleType="fill" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="130:31"/>
+            <SemanticData role="group" name="Semantics" id="130:75">
+                <DataBindContext sourcePathIds="130:1-130:2" propertyKey="983" nameBased="true" id="130:76"/>
+                <DataBindContext sourcePathIds="130:1-130:4" propertyKey="1004" nameBased="true" id="130:77"/>
+            </SemanticData>
+        </LayoutComponent>
+        <StateMachine name="State Machine 1" id="130:22">
+            <StateMachineLayer name="Layer 1" id="130:23">
+                <AnimationState animationId="130:28" x="100" y="100" id="130:24"/>
+                <ExitState x="300" y="200" id="130:80"/>
+                <AnyState x="100" y="200" id="130:81"/>
+                <EntryState x="100" id="130:82">
+                    <StateTransition stateToId="130:24" id="130:25"/>
+                </EntryState>
+            </StateMachineLayer>
+        </StateMachine>
+        <LinearAnimation name="Timeline 1" id="130:28"/>
+    </Artboard>
+</Rive>
