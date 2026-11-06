@@ -101,7 +101,7 @@ A card that stays in view with a message in one of four variants. It has no clos
 
 A button in three variants and three colours, like MUI: `variant` sets the shape, `color` the meaning. The default (contained, neutral) follows the inverse colours of the mode (light on dark, dark on light), so it never clashes with the brand colour.
 
-- View model `Button`: `text`, `variant` (`0` contained, `1` outlined, `2` text), `color` (`0` neutral, `1` brand, `2` destructive), `icon` (`0` none, `1` arrow, `2` chevron left, `3` chevron right, `4` copy, `5` scissors, `6` clipboard, `7` save, `8` trash, `9` close, `10` chevron down, `11` minus, `12` plus), `iconOnly`, `disabled`, `hint`, `group` (see Button Group), `a11yHidden`. `_pressed` fires on a click, a screen reader's activate, or Enter/Space while the Button has keyboard focus.
+- View model `Button`: `text`, `variant` (`0` contained, `1` outlined, `2` text), `color` (`0` neutral, `1` brand, `2` destructive), `icon` (`0` none, `1` arrow, `2` chevron left, `3` chevron right, `4` copy, `5` scissors, `6` clipboard, `7` save, `8` trash, `9` close, `10` chevron down, `11` minus, `12` plus, `13` send, `14` eye), `iconOnly`, `disabled`, `hint`, `group` (see Button Group), `a11yHidden`. `_pressed` fires on a click, a screen reader's activate, or Enter/Space while the Button has keyboard focus.
 - A disabled Button ignores all three, and it cannot take keyboard focus. Taps and keys go through a small gate (`_activate` → the Activate layer fires `_pressed` only when `disabled` is false), because the disabled shield only stops the pointer.
 - **Contained** is a filled button with the theme shadow. Neutral uses `_primaryBg` / `_primaryHover` / `_primaryText`, destructive `_dangerBg` / `_dangerHover` / `_dangerText`: Theme tokens per mode that ignore the brand. Brand uses `_brand600` with `_brand800` on hover.
 - **Outlined** sits on `_surfaceRaised` with a border: `_border` for neutral, `_infoBorder` for brand, `_errorBorder` for destructive, and text in `_text`, `_infoText` or `_errorText`.
@@ -134,7 +134,7 @@ A pill you switch on and off, for filters and topics. On, it gets a check and th
 A row of toggle buttons on a track where exactly one is on, like the Mode and Roundness choices in the Theme panel (which are this component).
 
 - View model `ToggleButtonGroup`: `options` (a list of `ToggleButton` instances), `selection` (a shared `ToggleSelection`), `label` (screen reader name), `a11yHidden`.
-- `ToggleButton`: `label`, `value` (its position), `icon` (`0` none, `1` sun, `2` moon, `3`–`6` corner sizes, `7` check, `8` blocked), `iconOnly` (hides the label but keeps it for screen readers), `disabled`, `group` (a `ToggleSelection`), `a11yHidden`. Point `group` of every option at the group's `ToggleSelection`.
+- `ToggleButton`: `label`, `value` (its position), `icon` (`0` none, `1` sun, `2` moon, `3`–`6` corner sizes, `7` check, `8` blocked, `9` align left, `10` align center, `11` align right), `iconOnly` (hides the label but keeps it for screen readers), `disabled`, `group` (a `ToggleSelection`), `a11yHidden`. Point `group` of every option at the group's `ToggleSelection`.
 - `ToggleSelection`: `selected`, the value of the option that is on. A click, a screen reader's activate, or Enter/Space on a focused option writes it.
 - Input goes through the same Activate gate as the Button, so a disabled option ignores every input. Disabled options turn `_textMuted`.
 - The selected option sits on `_surfaceRaised`, the track on `_surfaceSubtle`; corners follow `_radiusSegment` / `_radiusSegmentInner`.
@@ -174,7 +174,7 @@ Five stars for a score from 0 to 5.
 One **Menu** serves all three: a floating panel of **Menu Items**. On its own it is a context menu; Select and Split Button place it under their trigger.
 
 - View model `Menu`: `items` (a list of `MenuItem` instances), `state` (a `MenuState`), `label` (screen reader name), `a11yHidden`.
-- `MenuItem`: `text`, `disabled`, `group` (point it at the menu's `MenuState`), `a11yHidden`. A click, a screen reader's activate or Enter/Space chooses it: it writes `state.selected` (its position), `state.label` (its text) and `state.open = false`, and fires its own `_pressed`. A disabled item ignores every input.
+- `MenuItem`: `text`, `icon` (`0` none, `1` new file, `2` folder, `3` save, `4` export, `5` pencil, `6` clock, `7` copy; a leading icon in the text colour, muted when disabled), `disabled`, `group` (point it at the menu's `MenuState`), `a11yHidden`. A click, a screen reader's activate or Enter/Space chooses it: it writes `state.selected` (its position), `state.label` (its text) and `state.open = false`, and fires its own `_pressed`. A disabled item ignores every input.
 - `MenuState`: `selected` (`-1` for none), `label`, `open`, `showSelection` (a check on the chosen item; on for a Select, off for menus of actions).
 - **Select** (Inputs): a field that shows `menu.state.label` and opens the menu below it. View model `Select`: `menu`, `label` (screen reader name), `disabled`, `a11yHidden`. Read `menu.state.selected` in your app; set `menu.state.label` to the first value or a placeholder. Screen readers get an expandable `button` with the chosen value.
 - **Split Button** (Actions): a kit Button and a chevron Button joined like a Button Group, with the menu under the chevron. View model `SplitButton`: `text`, `variant`, `color` (as on the Button), `disabled`, `menu`, `menuLabel` (screen reader name of the chevron), `a11yHidden`, and the trigger `pressed` for the main action. Listen to the items' `_pressed` or to `menu.state.selected` for the menu actions.
@@ -359,4 +359,4 @@ The editor file is the source of truth. After editing in Rive, run `./pull.sh` b
 
 ## License
 
-[MIT](LICENSE) © Maximized Studio. The preview font `preview-assets/Inter.ttf` is licensed under the SIL Open Font License. The copy, scissors, clipboard and save icons are redrawn from [Lucide](https://lucide.dev) (ISC License, © Lucide Contributors).
+[MIT](LICENSE) © Maximized Studio. The preview font `preview-assets/Inter.ttf` is licensed under the SIL Open Font License. The copy, scissors, clipboard, save, send, eye, align, file, folder, upload, pencil and clock icons are redrawn from [Lucide](https://lucide.dev) (ISC License, © Lucide Contributors).

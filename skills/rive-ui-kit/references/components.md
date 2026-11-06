@@ -289,7 +289,7 @@ Source: `shared/03-Button.rml` · artboard `1:122` · state machine `1:127` · v
 
 A button in three variants and three colours, like MUI: `variant` sets the shape, `color` the meaning. The default (contained, neutral) follows the inverse colours of the mode (light on dark, dark on light), so it never clashes with the brand colour.
 
-- View model `Button`: `text`, `variant` (`0` contained, `1` outlined, `2` text), `color` (`0` neutral, `1` brand, `2` destructive), `icon` (`0` none, `1` arrow, `2` chevron left, `3` chevron right, `4` copy, `5` scissors, `6` clipboard, `7` save, `8` trash, `9` close, `10` chevron down, `11` minus, `12` plus), `iconOnly`, `disabled`, `hint`, `group` (see Button Group), `a11yHidden`. `_pressed` fires on a click, a screen reader's activate, or Enter/Space while the Button has keyboard focus.
+- View model `Button`: `text`, `variant` (`0` contained, `1` outlined, `2` text), `color` (`0` neutral, `1` brand, `2` destructive), `icon` (`0` none, `1` arrow, `2` chevron left, `3` chevron right, `4` copy, `5` scissors, `6` clipboard, `7` save, `8` trash, `9` close, `10` chevron down, `11` minus, `12` plus, `13` send, `14` eye), `iconOnly`, `disabled`, `hint`, `group` (see Button Group), `a11yHidden`. `_pressed` fires on a click, a screen reader's activate, or Enter/Space while the Button has keyboard focus.
 - A disabled Button ignores all three, and it cannot take keyboard focus. Taps and keys go through a small gate (`_activate` → the Activate layer fires `_pressed` only when `disabled` is false), because the disabled shield only stops the pointer.
 - **Contained** is a filled button with the theme shadow. Neutral uses `_primaryBg` / `_primaryHover` / `_primaryText`, destructive `_dangerBg` / `_dangerHover` / `_dangerText`: Theme tokens per mode that ignore the brand. Brand uses `_brand600` with `_brand800` on hover.
 - **Outlined** sits on `_surfaceRaised` with a border: `_border` for neutral, `_infoBorder` for brand, `_errorBorder` for destructive, and text in `_text`, `_infoText` or `_errorText`.
@@ -598,6 +598,7 @@ Source: `shared/09-MenuItem.rml` · artboard `1:4156` · state machine `1:4161` 
 | `index` | list index (filled in by the list) | `1:4327` |
 | `_pressed` | trigger | `1:4213` |
 | `text` | string | `1:4186` |
+| `icon` | number | `167:1` |
 
 ```xml
 <NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="1:4156" isStateful="true" name="Menu Item" id="X:1">
@@ -612,6 +613,7 @@ Source: `shared/09-MenuItem.rml` · artboard `1:4156` · state machine `1:4161` 
         <ViewModelInstanceTrigger viewModelPropertyId="1:4213" id="X:10"/>  <!-- _pressed -->
         <ViewModelInstanceBoolean viewModelPropertyId="1:4211" id="X:11"/>  <!-- _hover -->
         <ViewModelInstanceString viewModelPropertyId="1:4186" id="X:12"/>  <!-- text -->
+        <ViewModelInstanceNumber viewModelPropertyId="167:1" id="X:13"/>  <!-- icon -->
     </ViewModelInstance>
 </NestedArtboardLayout>
 ```
@@ -1241,7 +1243,7 @@ Contains: Toggle Button
 A row of toggle buttons on a track where exactly one is on, like the Mode and Roundness choices in the Theme panel (which are this component).
 
 - View model `ToggleButtonGroup`: `options` (a list of `ToggleButton` instances), `selection` (a shared `ToggleSelection`), `label` (screen reader name), `a11yHidden`.
-- `ToggleButton`: `label`, `value` (its position), `icon` (`0` none, `1` sun, `2` moon, `3`–`6` corner sizes, `7` check, `8` blocked), `iconOnly` (hides the label but keeps it for screen readers), `disabled`, `group` (a `ToggleSelection`), `a11yHidden`. Point `group` of every option at the group's `ToggleSelection`.
+- `ToggleButton`: `label`, `value` (its position), `icon` (`0` none, `1` sun, `2` moon, `3`–`6` corner sizes, `7` check, `8` blocked, `9` align left, `10` align center, `11` align right), `iconOnly` (hides the label but keeps it for screen readers), `disabled`, `group` (a `ToggleSelection`), `a11yHidden`. Point `group` of every option at the group's `ToggleSelection`.
 - `ToggleSelection`: `selected`, the value of the option that is on. A click, a screen reader's activate, or Enter/Space on a focused option writes it.
 - Input goes through the same Activate gate as the Button, so a disabled option ignores every input. Disabled options turn `_textMuted`.
 - The selected option sits on `_surfaceRaised`, the track on `_surfaceSubtle`; corners follow `_radiusSegment` / `_radiusSegmentInner`.

@@ -11,7 +11,7 @@
                         <NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="112:188" isStateful="true" name="Tooltip" id="112:322">
                             <NestedStateMachine animationId="112:190" id="112:323"/>
                             <ViewModelInstance viewModelId="112:1" exports="true" name="Tooltip" id="112:324">
-                                <ViewModelInstanceString propertyValue="Saves your changes" viewModelPropertyId="112:2" id="112:325">
+                                <ViewModelInstanceString propertyValue="Shows a short hint" viewModelPropertyId="112:2" id="112:325">
                                     <DataBindContext sourcePathIds="112:7-112:9" propertyKey="561" nameBased="true" id="112:326"/>
                                 </ViewModelInstanceString>
                                 <ViewModelInstanceNumber viewModelPropertyId="112:3" id="112:327">
@@ -47,10 +47,10 @@
                 <NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="1:122" isStateful="true" name="Button" id="112:335">
                     <NestedStateMachine animationId="1:127" id="112:336"/>
                     <ViewModelInstance viewModelId="1:151" exports="true" name="Trigger Button" id="112:337">
-                        <ViewModelInstanceString propertyValue="Save" viewModelPropertyId="1:549" id="112:338">
+                        <ViewModelInstanceString propertyValue="Hover me" viewModelPropertyId="1:549" id="112:338">
                             <DataBindContext sourcePathIds="112:7-112:8" propertyKey="561" nameBased="true" id="112:339"/>
                         </ViewModelInstanceString>
-                        <ViewModelInstanceString propertyValue="Saves your changes" viewModelPropertyId="112:14" id="112:340">
+                        <ViewModelInstanceString propertyValue="Shows a short hint" viewModelPropertyId="112:14" id="112:340">
                             <DataBindContext sourcePathIds="112:7-112:9" propertyKey="561" nameBased="true" id="112:341"/>
                         </ViewModelInstanceString>
                         <ViewModelInstanceBoolean viewModelPropertyId="1:587" id="112:342"/>
@@ -59,7 +59,7 @@
                         <ViewModelInstanceBoolean viewModelPropertyId="7:3" id="112:345">
                             <DataBindContext sourcePathIds="112:7-112:11" propertyKey="593" nameBased="true" id="112:346"/>
                         </ViewModelInstanceBoolean>
-                        <ViewModelInstanceNumber propertyValue="7" viewModelPropertyId="33:164" id="112:349">
+                        <ViewModelInstanceNumber propertyValue="14" viewModelPropertyId="33:164" id="112:349">
                             <DataBindContext sourcePathIds="112:7-117:265" propertyKey="575" nameBased="true" id="117:268"/>
                         </ViewModelInstanceNumber>
                         <ViewModelInstanceBoolean viewModelPropertyId="33:169" id="112:350"/>

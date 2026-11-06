@@ -22,7 +22,7 @@
                         <ViewModelInstanceBoolean viewModelPropertyId="7:3" id="148:1024">
                             <DataBindContext sourcePathIds="148:1-148:6" propertyKey="593" nameBased="true" id="148:1023"/>
                         </ViewModelInstanceBoolean>
-                        <ViewModelInstanceNumber viewModelPropertyId="33:164" id="148:1025"/>
+                        <ViewModelInstanceNumber propertyValue="13" viewModelPropertyId="33:164" id="148:1025"/>
                         <ViewModelInstanceBoolean viewModelPropertyId="33:169" id="148:1026"/>
                         <ViewModelInstanceNumber propertyValue="1" viewModelPropertyId="99:100" id="148:1027"/>
                         <ViewModelInstanceString viewModelPropertyId="112:14" id="148:1028"/>
