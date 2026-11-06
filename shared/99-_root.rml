@@ -2323,6 +2323,7 @@
     <DataGroup name="Converters" type="converters" id="1:2674"/>
     <DataGroup name="Global View Models" type="globalViewModels" id="283:1"/>
     <ElasticScrollPhysics constraintId="10:1708" id="10:1711"/>
+    <ElasticScrollPhysics constraintId="162:2" id="162:3"/>
     <Folder name="Components" id="10:8609">
         <ComponentAsset artboardId="1:663" name="Switch" groupId="1:2112" id="1:931"/>
         <ComponentAsset artboardId="1:122" name="Button" groupId="1:2112" id="1:932"/>
