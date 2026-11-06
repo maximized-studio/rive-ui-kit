@@ -136,6 +136,31 @@ flag.on(() => (canvas.style.cursor = flag.value ? "pointer" : ""));
 
 With `@rive-app/react-*`: pass `rive?.globalViewModelInstance("Theme")` to `useViewModelInstanceBoolean("cursorPointer", …)` and toggle a `cursor-pointer` class. Use the same flag for a hover pointer on iPad or desktop apps.
 
+## Build on the kit
+
+Build your own screens on top of this repo and keep pulling updates. Your work lives in one folder, the kit stays untouched:
+
+```bash
+git clone https://github.com/maximized-studio/rive-ui-kit my-app && cd my-app
+git remote rename origin upstream
+mkdir themes/myapp && cp skills/rive-ui-kit/templates/60-Screen.rml themes/myapp/
+echo Screen > themes/myapp/main.txt          # the artboard the build plays
+PREVIEW=1 ./build.sh myapp && rive build/myapp --screenshot --advance=2s
+git pull upstream main                       # later: new components and fixes
+```
+
+Treat `shared/` as reference source: read it, don't edit it, so `git pull` never conflicts. To change a component's shape, copy it into your folder under a new name; that copy is yours and no longer receives updates.
+
+### With an AI agent
+
+The repo ships an agent skill in `skills/rive-ui-kit/`: how to set up a screen, every component's ids and properties with a paste-ready snippet, and the traps to avoid. Install it with
+
+```bash
+npx skills add maximized-studio/rive-ui-kit
+```
+
+then ask your agent for the screen you want. The component reference is generated from the RML by `tools/skill_reference.py`, so it always matches the kit.
+
 ## How it is organised
 
 The kit keeps each kind of logic in one place:
@@ -150,6 +175,7 @@ shared/            the kit: one .rml file per artboard, 99-_root.rml
                    (view models, assets, interpolators), image assets and Luau scripts
 themes/<name>/     only what that theme changes (Default changes nothing)
 tools/             Python helpers: retheming, RML generation, splitting
+skills/rive-ui-kit/ the agent skill: SKILL.md, generated component reference, a starter screen
 build.sh           assembles and verifies every theme into build/<name>/
 ```
 

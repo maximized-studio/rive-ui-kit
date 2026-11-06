@@ -1,0 +1,56 @@
+<Rive version="1" kind="fragment">
+    <Artboard defaultStateMachineId="60000:40" width="420" height="260" styleId="60000:2" name="Screen" id="60000:1">
+        <LayoutComponentStyle flexDirectionValue="column" layoutAlignmentType="center" gapHorizontal="16" gapVertical="16" paddingLeft="24" paddingRight="24" paddingTop="24" paddingBottom="24" id="60000:2"/>
+        <Fill id="60000:3">
+            <SolidColor colorValue="FFFAFAFA" id="60000:4">
+                <DataBindContext sourcePathIds="10:7-10:7402" propertyKey="37" id="60000:5"/>
+            </SolidColor>
+        </Fill>
+        <LayoutComponent styleId="60000:11" name="Theme Driver" id="60000:10">
+            <NestedArtboardLayout instanceWidthScaleType="fill" instanceHeightScaleType="fill" artboardId="10:14621" name="Theme Driver" id="60000:12">
+                <NestedStateMachine animationId="10:14626" id="60000:13"/>
+            </NestedArtboardLayout>
+            <LayoutComponentStyle positionLeftUnitsValue="points" positionRightUnitsValue="points" positionTopUnitsValue="points" positionBottomUnitsValue="points" positionTypeValue="absolute" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="60000:11"/>
+        </LayoutComponent>
+        <NestedArtboardLayout instanceWidthScaleType="fill" instanceHeightScaleType="hug" artboardId="110:337" isStateful="true" name="Alert" id="60000:20">
+            <NestedStateMachine animationId="110:339" id="60000:21"/>
+            <ViewModelInstance viewModelId="110:223" exports="true" name="Screen Alert" id="60000:22">
+                <ViewModelInstanceString propertyValue="Built on the kit" viewModelPropertyId="110:224" id="60000:23"/>
+                <ViewModelInstanceString propertyValue="This screen lives in its own folder and pulls every component from upstream." viewModelPropertyId="110:225" id="60000:24"/>
+                <ViewModelInstanceNumber propertyValue="1" viewModelPropertyId="110:226" id="60000:25"/>
+                <ViewModelInstanceBoolean viewModelPropertyId="110:230" id="60000:26"/>
+            </ViewModelInstance>
+        </NestedArtboardLayout>
+        <NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="1:122" isStateful="true" name="Button" id="60000:30">
+            <NestedStateMachine animationId="1:127" id="60000:31"/>
+            <ViewModelInstance viewModelId="1:151" exports="true" name="Screen Button" id="60000:32">
+                <ViewModelInstanceString propertyValue="Get started" viewModelPropertyId="1:549" id="60000:33"/>
+                <ViewModelInstanceBoolean viewModelPropertyId="1:587" id="60000:35"/>
+                <ViewModelInstanceTrigger viewModelPropertyId="1:1321" id="60000:36"/>
+                <ViewModelInstanceBoolean viewModelPropertyId="7:1" id="60000:37"/>
+                <ViewModelInstanceBoolean viewModelPropertyId="7:3" id="60000:38"/>
+                <ViewModelInstanceNumber viewModelPropertyId="33:164" id="60000:39"/>
+                <ViewModelInstanceBoolean viewModelPropertyId="33:169" id="60000:50"/>
+                <ViewModelInstanceNumber viewModelPropertyId="99:100" id="60000:51"/>
+                <ViewModelInstanceString viewModelPropertyId="112:14" id="60000:52"/>
+                <ViewModelInstanceNumber propertyValue="2" viewModelPropertyId="118:1" id="60000:34"/>
+            </ViewModelInstance>
+        </NestedArtboardLayout>
+        <NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="1:663" isStateful="true" name="Switch" id="60001:1">
+            <NestedStateMachine animationId="1:668" id="60001:2"/>
+            <ViewModelInstance viewModelId="1:913" exports="true" name="Screen Switch" id="60001:3">
+                <ViewModelInstanceBoolean viewModelPropertyId="7:25" id="60001:4"/>  <!-- disabled -->
+                <ViewModelInstanceBoolean viewModelPropertyId="7:30" id="60001:5"/>  <!-- a11yHidden -->
+                <ViewModelInstanceTrigger viewModelPropertyId="1:1473" id="60001:6"/>  <!-- _pressed -->
+                <ViewModelInstanceBoolean viewModelPropertyId="1:3121" id="60001:7"/>  <!-- _hover -->
+                <ViewModelInstanceBoolean viewModelPropertyId="1:915" id="60001:8"/>  <!-- active -->
+                <ViewModelInstanceString propertyValue="Notifications" viewModelPropertyId="1:2170" id="60001:9"/>  <!-- label -->
+            </ViewModelInstance>
+        </NestedArtboardLayout>
+        <StateMachine name="State Machine 1" id="60000:40">
+            <StateMachineLayer name="Layer 1" id="60000:41">
+                <EntryState id="60000:42"/>
+            </StateMachineLayer>
+        </StateMachine>
+    </Artboard>
+</Rive>

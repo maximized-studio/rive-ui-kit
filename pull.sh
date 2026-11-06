@@ -27,4 +27,6 @@ python3 tools/pull_fixups.py shared
 find $tmp/kit -maxdepth 1 -type f \( -name '*.png' -o -name '*.webp' -o -name '*.jpg' -o -name '*.svg' \) -exec cp {} shared/ \;
 # Inter is a Rive-hosted font: keep it out of shared/ (PREVIEW builds add it back for local screenshots)
 sed -i '' 's|<FontAsset file="[^"]*" |<FontAsset |' shared/99-_root.rml
+# Keep the agent skill's component reference in step with the kit
+python3 tools/skill_reference.py
 ./build.sh

@@ -22,9 +22,12 @@ for t in $themes; do
       $out/99-_root.rml $out/99-_root.rml --bake $out
     rm $out/palette.json
   fi
+  # A main.txt names the artboard this folder plays (your own screen); the kit's default is the Showcase
+  main=Showcase
+  [[ -f themes/$t/main.txt ]] && main=$(<themes/$t/main.txt) && rm -f $out/main.txt
   cat > $out/rive.yaml <<YAML
 name: "UI Kit $(tr '[:lower:]' '[:upper:]' <<< ${t:0:1})${t:1}"
-main: "Showcase"
+main: "$main"
 logs:
   file: build/rive.log
   problems: build/problems.log
