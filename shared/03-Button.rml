@@ -2003,8 +2003,8 @@
                 </ListenerInputTypeKeyboard>
                 <ListenerViewModelChange fromViewModelProperty="true" fromDataBindId="134:27" id="134:30">
                     <BindablePropertyTrigger id="134:31">
-                        <DataBindContext sourcePathIds="1:151-134:10" propertyKey="686" direction="true" converterId="1:1332" id="134:28"/>
                         <DataBindContext sourcePathIds="1:151-134:10" propertyKey="686" id="134:27"/>
+                        <DataBindContext sourcePathIds="1:151-134:10" propertyKey="686" direction="true" converterId="1:1332" id="134:28"/>
                     </BindablePropertyTrigger>
                 </ListenerViewModelChange>
             </StateMachineListener>
