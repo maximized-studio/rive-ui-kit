@@ -3619,6 +3619,7 @@
         <ViewModelPropertyBoolean name="a11yHidden" id="131:10"/>
         <ViewModelPropertyNumber name="confirmIcon" id="131:21"/>
         <ViewModelPropertyNumber name="cancelIcon" id="131:22"/>
+        <ViewModelPropertyBoolean name="dim" id="131:25"/>
         <ViewModelInstance exports="true" name="Dialog" id="131:11">
             <ViewModelInstanceString propertyValue="Delete project?" viewModelPropertyId="131:2" id="131:12"/>
             <ViewModelInstanceString propertyValue="This removes the project and its files. You can&apos;t undo this." viewModelPropertyId="131:3" id="131:13"/>
@@ -3631,6 +3632,7 @@
             <ViewModelInstanceBoolean viewModelPropertyId="131:10" id="131:20"/>
             <ViewModelInstanceNumber propertyValue="8" viewModelPropertyId="131:21" id="131:23"/>
             <ViewModelInstanceNumber propertyValue="9" viewModelPropertyId="131:22" id="131:24"/>
+            <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="131:25" id="131:26"/>
         </ViewModelInstance>
     </ViewModel>
     <ViewModel defaultInstanceId="132:4" name="DialogDemo" groupId="1:2673" id="132:1">
