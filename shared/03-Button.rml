@@ -270,28 +270,28 @@
                     </Shape>
                     <Shape x="8" y="8" opacity="0" name="trash" id="133:1">
                         <PointsPath id="133:2">
-                            <StraightVertex x="-6.0" y="-4.0" id="133:3"/>
-                            <StraightVertex x="6.0" y="-4.0" id="133:4"/>
+                            <StraightVertex x="-6" y="-4" id="133:3"/>
+                            <StraightVertex x="6" y="-4" id="133:4"/>
                         </PointsPath>
                         <PointsPath id="133:5">
-                            <StraightVertex x="4.6667" y="-4.0" id="133:6"/>
-                            <StraightVertex radius="1.333" x="4.6667" y="6.6667" id="133:7"/>
-                            <StraightVertex radius="1.333" x="-4.6667" y="6.6667" id="133:8"/>
-                            <StraightVertex x="-4.6667" y="-4.0" id="133:9"/>
+                            <StraightVertex x="4.6666999" y="-4" id="133:6"/>
+                            <StraightVertex radius="1.3329999" x="4.6666999" y="6.6666999" id="133:7"/>
+                            <StraightVertex radius="1.3329999" x="-4.6666999" y="6.6666999" id="133:8"/>
+                            <StraightVertex x="-4.6666999" y="-4" id="133:9"/>
                         </PointsPath>
                         <PointsPath id="133:10">
-                            <StraightVertex x="-2.6667" y="-4.0" id="133:11"/>
-                            <StraightVertex radius="1.333" x="-2.6667" y="-6.6667" id="133:12"/>
-                            <StraightVertex radius="1.333" x="2.6667" y="-6.6667" id="133:13"/>
-                            <StraightVertex x="2.6667" y="-4.0" id="133:14"/>
+                            <StraightVertex x="-2.6666999" y="-4" id="133:11"/>
+                            <StraightVertex radius="1.3329999" x="-2.6666999" y="-6.6666999" id="133:12"/>
+                            <StraightVertex radius="1.3329999" x="2.6666999" y="-6.6666999" id="133:13"/>
+                            <StraightVertex x="2.6666999" y="-4" id="133:14"/>
                         </PointsPath>
                         <PointsPath id="133:15">
-                            <StraightVertex x="-1.3333" y="-0.6667" id="133:16"/>
-                            <StraightVertex x="-1.3333" y="3.3333" id="133:17"/>
+                            <StraightVertex x="-1.3333" y="-0.66670001" id="133:16"/>
+                            <StraightVertex x="-1.3333" y="3.3333001" id="133:17"/>
                         </PointsPath>
                         <PointsPath id="133:18">
-                            <StraightVertex x="1.3333" y="-0.6667" id="133:19"/>
-                            <StraightVertex x="1.3333" y="3.3333" id="133:20"/>
+                            <StraightVertex x="1.3333" y="-0.66670001" id="133:19"/>
+                            <StraightVertex x="1.3333" y="3.3333001" id="133:20"/>
                         </PointsPath>
                         <Stroke thickness="0" cap="round" join="round" id="133:21">
                             <SolidColor colorValue="FFFFFFFF" id="133:22">
@@ -322,12 +322,12 @@
                     </Shape>
                     <Shape x="8" y="8" opacity="0" name="x" id="133:37">
                         <PointsPath id="133:38">
-                            <StraightVertex x="4.0" y="-4.0" id="133:39"/>
-                            <StraightVertex x="-4.0" y="4.0" id="133:40"/>
+                            <StraightVertex x="4" y="-4" id="133:39"/>
+                            <StraightVertex x="-4" y="4" id="133:40"/>
                         </PointsPath>
                         <PointsPath id="133:41">
-                            <StraightVertex x="-4.0" y="-4.0" id="133:42"/>
-                            <StraightVertex x="4.0" y="4.0" id="133:43"/>
+                            <StraightVertex x="-4" y="-4" id="133:42"/>
+                            <StraightVertex x="4" y="4" id="133:43"/>
                         </PointsPath>
                         <Stroke thickness="0" cap="round" join="round" id="133:44">
                             <SolidColor colorValue="FFFFFFFF" id="133:45">
@@ -618,6 +618,46 @@
             <FocusData name="Focus" id="0:15797"/>
         </LayoutComponent>
         <LinearAnimation loopValue="loop" name="Variant Primary" id="902:1">
+            <KeyedObject objectId="133:21" id="133:164">
+                <KeyedProperty property="thickness" id="133:165">
+                    <KeyFrameDouble id="133:166"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="133:44" id="133:167">
+                <KeyedProperty property="thickness" id="133:168">
+                    <KeyFrameDouble id="133:169"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="133:24" id="133:170">
+                <KeyedProperty property="thickness" id="133:171">
+                    <KeyFrameDouble id="133:172"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="133:47" id="133:173">
+                <KeyedProperty property="thickness" id="133:174">
+                    <KeyFrameDouble id="133:175"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="133:27" id="133:176">
+                <KeyedProperty property="thickness" id="133:177">
+                    <KeyFrameDouble value="1.75" id="133:178"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="133:50" id="133:179">
+                <KeyedProperty property="thickness" id="133:180">
+                    <KeyFrameDouble value="1.75" id="133:181"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="133:30" id="133:182">
+                <KeyedProperty property="thickness" id="133:183">
+                    <KeyFrameDouble id="133:184"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="133:53" id="133:185">
+                <KeyedProperty property="thickness" id="133:186">
+                    <KeyFrameDouble id="133:187"/>
+                </KeyedProperty>
+            </KeyedObject>
             <KeyedObject objectId="33:279" id="902:5">
                 <KeyedProperty property="thickness" id="902:3">
                     <KeyFrameDouble id="902:4"/>
@@ -793,48 +833,48 @@
                     <KeyFrameUint value="1" id="902:106"/>
                 </KeyedProperty>
             </KeyedObject>
-            <KeyedObject objectId="133:21" id="133:164">
-                <KeyedProperty property="thickness" id="133:165">
-                    <KeyFrameDouble id="133:166"/>
-                </KeyedProperty>
-            </KeyedObject>
-            <KeyedObject objectId="133:44" id="133:167">
-                <KeyedProperty property="thickness" id="133:168">
-                    <KeyFrameDouble id="133:169"/>
-                </KeyedProperty>
-            </KeyedObject>
-            <KeyedObject objectId="133:24" id="133:170">
-                <KeyedProperty property="thickness" id="133:171">
-                    <KeyFrameDouble id="133:172"/>
-                </KeyedProperty>
-            </KeyedObject>
-            <KeyedObject objectId="133:47" id="133:173">
-                <KeyedProperty property="thickness" id="133:174">
-                    <KeyFrameDouble id="133:175"/>
-                </KeyedProperty>
-            </KeyedObject>
-            <KeyedObject objectId="133:27" id="133:176">
-                <KeyedProperty property="thickness" id="133:177">
-                    <KeyFrameDouble value="1.75" id="133:178"/>
-                </KeyedProperty>
-            </KeyedObject>
-            <KeyedObject objectId="133:50" id="133:179">
-                <KeyedProperty property="thickness" id="133:180">
-                    <KeyFrameDouble value="1.75" id="133:181"/>
-                </KeyedProperty>
-            </KeyedObject>
-            <KeyedObject objectId="133:30" id="133:182">
-                <KeyedProperty property="thickness" id="133:183">
-                    <KeyFrameDouble id="133:184"/>
-                </KeyedProperty>
-            </KeyedObject>
-            <KeyedObject objectId="133:53" id="133:185">
-                <KeyedProperty property="thickness" id="133:186">
-                    <KeyFrameDouble id="133:187"/>
-                </KeyedProperty>
-            </KeyedObject>
         </LinearAnimation>
         <LinearAnimation loopValue="loop" name="Variant Secondary" id="902:108">
+            <KeyedObject objectId="133:21" id="133:188">
+                <KeyedProperty property="thickness" id="133:189">
+                    <KeyFrameDouble id="133:190"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="133:44" id="133:191">
+                <KeyedProperty property="thickness" id="133:192">
+                    <KeyFrameDouble id="133:193"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="133:24" id="133:194">
+                <KeyedProperty property="thickness" id="133:195">
+                    <KeyFrameDouble value="1.75" id="133:196"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="133:47" id="133:197">
+                <KeyedProperty property="thickness" id="133:198">
+                    <KeyFrameDouble value="1.75" id="133:199"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="133:27" id="133:200">
+                <KeyedProperty property="thickness" id="133:201">
+                    <KeyFrameDouble id="133:202"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="133:50" id="133:203">
+                <KeyedProperty property="thickness" id="133:204">
+                    <KeyFrameDouble id="133:205"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="133:30" id="133:206">
+                <KeyedProperty property="thickness" id="133:207">
+                    <KeyFrameDouble id="133:208"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="133:53" id="133:209">
+                <KeyedProperty property="thickness" id="133:210">
+                    <KeyFrameDouble id="133:211"/>
+                </KeyedProperty>
+            </KeyedObject>
             <KeyedObject objectId="33:279" id="902:112">
                 <KeyedProperty property="thickness" id="902:110">
                     <KeyFrameDouble id="902:111"/>
@@ -1010,48 +1050,48 @@
                     <KeyFrameUint value="1" id="902:213"/>
                 </KeyedProperty>
             </KeyedObject>
-            <KeyedObject objectId="133:21" id="133:188">
-                <KeyedProperty property="thickness" id="133:189">
-                    <KeyFrameDouble id="133:190"/>
-                </KeyedProperty>
-            </KeyedObject>
-            <KeyedObject objectId="133:44" id="133:191">
-                <KeyedProperty property="thickness" id="133:192">
-                    <KeyFrameDouble id="133:193"/>
-                </KeyedProperty>
-            </KeyedObject>
-            <KeyedObject objectId="133:24" id="133:194">
-                <KeyedProperty property="thickness" id="133:195">
-                    <KeyFrameDouble value="1.75" id="133:196"/>
-                </KeyedProperty>
-            </KeyedObject>
-            <KeyedObject objectId="133:47" id="133:197">
-                <KeyedProperty property="thickness" id="133:198">
-                    <KeyFrameDouble value="1.75" id="133:199"/>
-                </KeyedProperty>
-            </KeyedObject>
-            <KeyedObject objectId="133:27" id="133:200">
-                <KeyedProperty property="thickness" id="133:201">
-                    <KeyFrameDouble id="133:202"/>
-                </KeyedProperty>
-            </KeyedObject>
-            <KeyedObject objectId="133:50" id="133:203">
-                <KeyedProperty property="thickness" id="133:204">
-                    <KeyFrameDouble id="133:205"/>
-                </KeyedProperty>
-            </KeyedObject>
-            <KeyedObject objectId="133:30" id="133:206">
-                <KeyedProperty property="thickness" id="133:207">
-                    <KeyFrameDouble id="133:208"/>
-                </KeyedProperty>
-            </KeyedObject>
-            <KeyedObject objectId="133:53" id="133:209">
-                <KeyedProperty property="thickness" id="133:210">
-                    <KeyFrameDouble id="133:211"/>
-                </KeyedProperty>
-            </KeyedObject>
         </LinearAnimation>
         <LinearAnimation loopValue="loop" name="Variant Brand" id="902:215">
+            <KeyedObject objectId="133:21" id="133:212">
+                <KeyedProperty property="thickness" id="133:213">
+                    <KeyFrameDouble value="1.75" id="133:214"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="133:44" id="133:215">
+                <KeyedProperty property="thickness" id="133:216">
+                    <KeyFrameDouble value="1.75" id="133:217"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="133:24" id="133:218">
+                <KeyedProperty property="thickness" id="133:219">
+                    <KeyFrameDouble id="133:220"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="133:47" id="133:221">
+                <KeyedProperty property="thickness" id="133:222">
+                    <KeyFrameDouble id="133:223"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="133:27" id="133:224">
+                <KeyedProperty property="thickness" id="133:225">
+                    <KeyFrameDouble id="133:226"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="133:50" id="133:227">
+                <KeyedProperty property="thickness" id="133:228">
+                    <KeyFrameDouble id="133:229"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="133:30" id="133:230">
+                <KeyedProperty property="thickness" id="133:231">
+                    <KeyFrameDouble id="133:232"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="133:53" id="133:233">
+                <KeyedProperty property="thickness" id="133:234">
+                    <KeyFrameDouble id="133:235"/>
+                </KeyedProperty>
+            </KeyedObject>
             <KeyedObject objectId="33:279" id="902:219">
                 <KeyedProperty property="thickness" id="902:217">
                     <KeyFrameDouble value="1.75" id="902:218"/>
@@ -1227,48 +1267,48 @@
                     <KeyFrameUint value="1" id="902:320"/>
                 </KeyedProperty>
             </KeyedObject>
-            <KeyedObject objectId="133:21" id="133:212">
-                <KeyedProperty property="thickness" id="133:213">
-                    <KeyFrameDouble value="1.75" id="133:214"/>
-                </KeyedProperty>
-            </KeyedObject>
-            <KeyedObject objectId="133:44" id="133:215">
-                <KeyedProperty property="thickness" id="133:216">
-                    <KeyFrameDouble value="1.75" id="133:217"/>
-                </KeyedProperty>
-            </KeyedObject>
-            <KeyedObject objectId="133:24" id="133:218">
-                <KeyedProperty property="thickness" id="133:219">
-                    <KeyFrameDouble id="133:220"/>
-                </KeyedProperty>
-            </KeyedObject>
-            <KeyedObject objectId="133:47" id="133:221">
-                <KeyedProperty property="thickness" id="133:222">
-                    <KeyFrameDouble id="133:223"/>
-                </KeyedProperty>
-            </KeyedObject>
-            <KeyedObject objectId="133:27" id="133:224">
-                <KeyedProperty property="thickness" id="133:225">
-                    <KeyFrameDouble id="133:226"/>
-                </KeyedProperty>
-            </KeyedObject>
-            <KeyedObject objectId="133:50" id="133:227">
-                <KeyedProperty property="thickness" id="133:228">
-                    <KeyFrameDouble id="133:229"/>
-                </KeyedProperty>
-            </KeyedObject>
-            <KeyedObject objectId="133:30" id="133:230">
-                <KeyedProperty property="thickness" id="133:231">
-                    <KeyFrameDouble id="133:232"/>
-                </KeyedProperty>
-            </KeyedObject>
-            <KeyedObject objectId="133:53" id="133:233">
-                <KeyedProperty property="thickness" id="133:234">
-                    <KeyFrameDouble id="133:235"/>
-                </KeyedProperty>
-            </KeyedObject>
         </LinearAnimation>
         <LinearAnimation loopValue="loop" name="Variant Destructive" id="902:322">
+            <KeyedObject objectId="133:21" id="133:236">
+                <KeyedProperty property="thickness" id="133:237">
+                    <KeyFrameDouble id="133:238"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="133:44" id="133:239">
+                <KeyedProperty property="thickness" id="133:240">
+                    <KeyFrameDouble id="133:241"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="133:24" id="133:242">
+                <KeyedProperty property="thickness" id="133:243">
+                    <KeyFrameDouble id="133:244"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="133:47" id="133:245">
+                <KeyedProperty property="thickness" id="133:246">
+                    <KeyFrameDouble id="133:247"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="133:27" id="133:248">
+                <KeyedProperty property="thickness" id="133:249">
+                    <KeyFrameDouble id="133:250"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="133:50" id="133:251">
+                <KeyedProperty property="thickness" id="133:252">
+                    <KeyFrameDouble id="133:253"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="133:30" id="133:254">
+                <KeyedProperty property="thickness" id="133:255">
+                    <KeyFrameDouble value="1.75" id="133:256"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="133:53" id="133:257">
+                <KeyedProperty property="thickness" id="133:258">
+                    <KeyFrameDouble value="1.75" id="133:259"/>
+                </KeyedProperty>
+            </KeyedObject>
             <KeyedObject objectId="33:279" id="902:326">
                 <KeyedProperty property="thickness" id="902:324">
                     <KeyFrameDouble id="902:325"/>
@@ -1444,48 +1484,18 @@
                     <KeyFrameUint id="902:427"/>
                 </KeyedProperty>
             </KeyedObject>
-            <KeyedObject objectId="133:21" id="133:236">
-                <KeyedProperty property="thickness" id="133:237">
-                    <KeyFrameDouble id="133:238"/>
-                </KeyedProperty>
-            </KeyedObject>
-            <KeyedObject objectId="133:44" id="133:239">
-                <KeyedProperty property="thickness" id="133:240">
-                    <KeyFrameDouble id="133:241"/>
-                </KeyedProperty>
-            </KeyedObject>
-            <KeyedObject objectId="133:24" id="133:242">
-                <KeyedProperty property="thickness" id="133:243">
-                    <KeyFrameDouble id="133:244"/>
-                </KeyedProperty>
-            </KeyedObject>
-            <KeyedObject objectId="133:47" id="133:245">
-                <KeyedProperty property="thickness" id="133:246">
-                    <KeyFrameDouble id="133:247"/>
-                </KeyedProperty>
-            </KeyedObject>
-            <KeyedObject objectId="133:27" id="133:248">
-                <KeyedProperty property="thickness" id="133:249">
-                    <KeyFrameDouble id="133:250"/>
-                </KeyedProperty>
-            </KeyedObject>
-            <KeyedObject objectId="133:50" id="133:251">
-                <KeyedProperty property="thickness" id="133:252">
-                    <KeyFrameDouble id="133:253"/>
-                </KeyedProperty>
-            </KeyedObject>
-            <KeyedObject objectId="133:30" id="133:254">
-                <KeyedProperty property="thickness" id="133:255">
-                    <KeyFrameDouble value="1.75" id="133:256"/>
-                </KeyedProperty>
-            </KeyedObject>
-            <KeyedObject objectId="133:53" id="133:257">
-                <KeyedProperty property="thickness" id="133:258">
-                    <KeyFrameDouble value="1.75" id="133:259"/>
-                </KeyedProperty>
-            </KeyedObject>
         </LinearAnimation>
         <LinearAnimation loopValue="loop" name="Icon Icon 0" id="903:1">
+            <KeyedObject objectId="133:1" id="133:60">
+                <KeyedProperty property="opacity" id="133:61">
+                    <KeyFrameDouble id="133:62"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="133:37" id="133:63">
+                <KeyedProperty property="opacity" id="133:64">
+                    <KeyFrameDouble id="133:65"/>
+                </KeyedProperty>
+            </KeyedObject>
             <KeyedObject objectId="33:274" id="903:5">
                 <KeyedProperty property="opacity" id="903:3">
                     <KeyFrameDouble id="903:4"/>
@@ -1521,18 +1531,18 @@
                     <KeyFrameDouble id="903:22"/>
                 </KeyedProperty>
             </KeyedObject>
-            <KeyedObject objectId="133:1" id="133:60">
-                <KeyedProperty property="opacity" id="133:61">
-                    <KeyFrameDouble id="133:62"/>
-                </KeyedProperty>
-            </KeyedObject>
-            <KeyedObject objectId="133:37" id="133:63">
-                <KeyedProperty property="opacity" id="133:64">
-                    <KeyFrameDouble id="133:65"/>
-                </KeyedProperty>
-            </KeyedObject>
         </LinearAnimation>
         <LinearAnimation loopValue="loop" name="Icon Icon 1" id="903:24">
+            <KeyedObject objectId="133:1" id="133:66">
+                <KeyedProperty property="opacity" id="133:67">
+                    <KeyFrameDouble id="133:68"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="133:37" id="133:69">
+                <KeyedProperty property="opacity" id="133:70">
+                    <KeyFrameDouble id="133:71"/>
+                </KeyedProperty>
+            </KeyedObject>
             <KeyedObject objectId="33:274" id="903:28">
                 <KeyedProperty property="opacity" id="903:26">
                     <KeyFrameDouble id="903:27"/>
@@ -1568,18 +1578,18 @@
                     <KeyFrameDouble id="903:45"/>
                 </KeyedProperty>
             </KeyedObject>
-            <KeyedObject objectId="133:1" id="133:66">
-                <KeyedProperty property="opacity" id="133:67">
-                    <KeyFrameDouble id="133:68"/>
-                </KeyedProperty>
-            </KeyedObject>
-            <KeyedObject objectId="133:37" id="133:69">
-                <KeyedProperty property="opacity" id="133:70">
-                    <KeyFrameDouble id="133:71"/>
-                </KeyedProperty>
-            </KeyedObject>
         </LinearAnimation>
         <LinearAnimation loopValue="loop" name="Icon Icon 2" id="903:47">
+            <KeyedObject objectId="133:1" id="133:72">
+                <KeyedProperty property="opacity" id="133:73">
+                    <KeyFrameDouble id="133:74"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="133:37" id="133:75">
+                <KeyedProperty property="opacity" id="133:76">
+                    <KeyFrameDouble id="133:77"/>
+                </KeyedProperty>
+            </KeyedObject>
             <KeyedObject objectId="33:274" id="903:51">
                 <KeyedProperty property="opacity" id="903:49">
                     <KeyFrameDouble id="903:50"/>
@@ -1615,18 +1625,18 @@
                     <KeyFrameDouble id="903:68"/>
                 </KeyedProperty>
             </KeyedObject>
-            <KeyedObject objectId="133:1" id="133:72">
-                <KeyedProperty property="opacity" id="133:73">
-                    <KeyFrameDouble id="133:74"/>
-                </KeyedProperty>
-            </KeyedObject>
-            <KeyedObject objectId="133:37" id="133:75">
-                <KeyedProperty property="opacity" id="133:76">
-                    <KeyFrameDouble id="133:77"/>
-                </KeyedProperty>
-            </KeyedObject>
         </LinearAnimation>
         <LinearAnimation loopValue="loop" name="Icon Icon 3" id="903:70">
+            <KeyedObject objectId="133:1" id="133:78">
+                <KeyedProperty property="opacity" id="133:79">
+                    <KeyFrameDouble id="133:80"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="133:37" id="133:81">
+                <KeyedProperty property="opacity" id="133:82">
+                    <KeyFrameDouble id="133:83"/>
+                </KeyedProperty>
+            </KeyedObject>
             <KeyedObject objectId="33:274" id="903:74">
                 <KeyedProperty property="opacity" id="903:72">
                     <KeyFrameDouble value="1" id="903:73"/>
@@ -1662,18 +1672,18 @@
                     <KeyFrameDouble id="903:91"/>
                 </KeyedProperty>
             </KeyedObject>
-            <KeyedObject objectId="133:1" id="133:78">
-                <KeyedProperty property="opacity" id="133:79">
-                    <KeyFrameDouble id="133:80"/>
-                </KeyedProperty>
-            </KeyedObject>
-            <KeyedObject objectId="133:37" id="133:81">
-                <KeyedProperty property="opacity" id="133:82">
-                    <KeyFrameDouble id="133:83"/>
-                </KeyedProperty>
-            </KeyedObject>
         </LinearAnimation>
         <LinearAnimation loopValue="loop" name="Icon Icon 4" id="903:93">
+            <KeyedObject objectId="133:1" id="133:84">
+                <KeyedProperty property="opacity" id="133:85">
+                    <KeyFrameDouble id="133:86"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="133:37" id="133:87">
+                <KeyedProperty property="opacity" id="133:88">
+                    <KeyFrameDouble id="133:89"/>
+                </KeyedProperty>
+            </KeyedObject>
             <KeyedObject objectId="33:274" id="903:97">
                 <KeyedProperty property="opacity" id="903:95">
                     <KeyFrameDouble id="903:96"/>
@@ -1709,18 +1719,18 @@
                     <KeyFrameDouble id="903:114"/>
                 </KeyedProperty>
             </KeyedObject>
-            <KeyedObject objectId="133:1" id="133:84">
-                <KeyedProperty property="opacity" id="133:85">
-                    <KeyFrameDouble id="133:86"/>
-                </KeyedProperty>
-            </KeyedObject>
-            <KeyedObject objectId="133:37" id="133:87">
-                <KeyedProperty property="opacity" id="133:88">
-                    <KeyFrameDouble id="133:89"/>
-                </KeyedProperty>
-            </KeyedObject>
         </LinearAnimation>
         <LinearAnimation loopValue="loop" name="Icon Icon 5" id="903:116">
+            <KeyedObject objectId="133:1" id="133:90">
+                <KeyedProperty property="opacity" id="133:91">
+                    <KeyFrameDouble id="133:92"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="133:37" id="133:93">
+                <KeyedProperty property="opacity" id="133:94">
+                    <KeyFrameDouble id="133:95"/>
+                </KeyedProperty>
+            </KeyedObject>
             <KeyedObject objectId="33:274" id="903:120">
                 <KeyedProperty property="opacity" id="903:118">
                     <KeyFrameDouble id="903:119"/>
@@ -1756,18 +1766,18 @@
                     <KeyFrameDouble id="903:137"/>
                 </KeyedProperty>
             </KeyedObject>
-            <KeyedObject objectId="133:1" id="133:90">
-                <KeyedProperty property="opacity" id="133:91">
-                    <KeyFrameDouble id="133:92"/>
-                </KeyedProperty>
-            </KeyedObject>
-            <KeyedObject objectId="133:37" id="133:93">
-                <KeyedProperty property="opacity" id="133:94">
-                    <KeyFrameDouble id="133:95"/>
-                </KeyedProperty>
-            </KeyedObject>
         </LinearAnimation>
         <LinearAnimation loopValue="loop" name="Icon Icon 6" id="903:139">
+            <KeyedObject objectId="133:1" id="133:96">
+                <KeyedProperty property="opacity" id="133:97">
+                    <KeyFrameDouble id="133:98"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="133:37" id="133:99">
+                <KeyedProperty property="opacity" id="133:100">
+                    <KeyFrameDouble id="133:101"/>
+                </KeyedProperty>
+            </KeyedObject>
             <KeyedObject objectId="33:274" id="903:143">
                 <KeyedProperty property="opacity" id="903:141">
                     <KeyFrameDouble id="903:142"/>
@@ -1803,18 +1813,18 @@
                     <KeyFrameDouble value="1" id="903:160"/>
                 </KeyedProperty>
             </KeyedObject>
-            <KeyedObject objectId="133:1" id="133:96">
-                <KeyedProperty property="opacity" id="133:97">
-                    <KeyFrameDouble id="133:98"/>
-                </KeyedProperty>
-            </KeyedObject>
-            <KeyedObject objectId="133:37" id="133:99">
-                <KeyedProperty property="opacity" id="133:100">
-                    <KeyFrameDouble id="133:101"/>
-                </KeyedProperty>
-            </KeyedObject>
         </LinearAnimation>
         <LinearAnimation loopValue="loop" name="Icon Icon 7" id="903:162">
+            <KeyedObject objectId="133:1" id="133:102">
+                <KeyedProperty property="opacity" id="133:103">
+                    <KeyFrameDouble id="133:104"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="133:37" id="133:105">
+                <KeyedProperty property="opacity" id="133:106">
+                    <KeyFrameDouble id="133:107"/>
+                </KeyedProperty>
+            </KeyedObject>
             <KeyedObject objectId="33:274" id="903:166">
                 <KeyedProperty property="opacity" id="903:164">
                     <KeyFrameDouble id="903:165"/>
@@ -1848,16 +1858,6 @@
             <KeyedObject objectId="116:67" id="903:184">
                 <KeyedProperty property="opacity" id="903:182">
                     <KeyFrameDouble id="903:183"/>
-                </KeyedProperty>
-            </KeyedObject>
-            <KeyedObject objectId="133:1" id="133:102">
-                <KeyedProperty property="opacity" id="133:103">
-                    <KeyFrameDouble id="133:104"/>
-                </KeyedProperty>
-            </KeyedObject>
-            <KeyedObject objectId="133:37" id="133:105">
-                <KeyedProperty property="opacity" id="133:106">
-                    <KeyFrameDouble id="133:107"/>
                 </KeyedProperty>
             </KeyedObject>
         </LinearAnimation>
@@ -2166,6 +2166,8 @@
                 </EntryState>
             </StateMachineLayer>
             <StateMachineLayer name="Icon" id="903:281">
+                <AnimationState animationId="133:108" x="160" y="400" stateName="Icon 8" id="133:260"/>
+                <AnimationState animationId="133:136" x="160" y="500" stateName="Icon 9" id="133:261"/>
                 <AnimationState animationId="903:1" x="160" y="-400" stateName="Icon 0" id="903:2"/>
                 <AnimationState animationId="903:24" x="160" y="-300" stateName="Icon 1" id="903:25"/>
                 <AnimationState animationId="903:47" x="160" y="-200" stateName="Icon 2" id="903:48"/>
@@ -2174,8 +2176,6 @@
                 <AnimationState animationId="903:116" x="160" y="100" stateName="Icon 5" id="903:117"/>
                 <AnimationState animationId="903:139" x="160" y="200" stateName="Icon 6" id="903:140"/>
                 <AnimationState animationId="903:162" x="160" y="300" stateName="Icon 7" id="903:163"/>
-                <AnimationState animationId="133:108" x="160" y="400" stateName="Icon 8" id="133:260"/>
-                <AnimationState animationId="133:136" x="160" y="500" stateName="Icon 9" id="133:261"/>
                 <AnyState x="400" id="903:282">
                     <StateTransition stateToId="903:2" id="903:233">
                         <TransitionViewModelCondition id="903:234">

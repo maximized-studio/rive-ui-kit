@@ -287,7 +287,7 @@ Source: `shared/03-Button.rml` · artboard `1:122` · state machine `1:127` · v
 
 A button in one of four variants. The default follows the inverse colours of the mode (light on dark, dark on light), so it never clashes with the brand colour.
 
-- View model `Button`: `text`, `variant` (`0` primary, `1` secondary, `2` brand, `3` destructive), `icon`, `iconOnly`, `disabled`, `hint`, `group` (see Button Group), `a11yHidden`. `_pressed` fires on a click.
+- View model `Button`: `text`, `variant` (`0` primary, `1` secondary, `2` brand, `3` destructive), `icon` (`0` none, `1` arrow, `2` chevron left, `3` chevron right, `4` copy, `5` scissors, `6` clipboard, `7` save, `8` trash, `9` close), `iconOnly`, `disabled`, `hint`, `group` (see Button Group), `a11yHidden`. `_pressed` fires on a click.
 - Primary uses `_primaryBg` / `_primaryHover` / `_primaryText`, destructive `_dangerBg` / `_dangerHover` / `_dangerText`: Theme tokens per mode that ignore the brand. Only the brand variant follows the brand colour. Destructive stays red whatever the brand is.
 - The Dropdown trigger uses the same primary tokens, so the actions look alike; its list keeps the brand accent.
 
@@ -398,16 +398,18 @@ Contains: Button
 | `confirmed` | trigger | `131:8` |
 | `cancelled` | trigger | `131:9` |
 | `a11yHidden` | boolean | `131:10` |
+| `confirmIcon` | number | `131:21` |
+| `cancelIcon` | number | `131:22` |
 
 A modal card over a dimmed scrim, with a title, a body and two kit Buttons. It is the dismissible counterpart of Alert.
 
-- View model `Dialog`: `title`, `body`, `confirmText`, `cancelText`, `confirmVariant` (a Button `variant`: `0` primary, `2` brand, `3` destructive), `open`, `a11yHidden`, and the triggers `confirmed` and `cancelled`.
+- View model `Dialog`: `title`, `body`, `confirmText`, `cancelText`, `confirmVariant` (a Button `variant`: `0` primary, `2` brand, `3` destructive), `confirmIcon` and `cancelIcon` (Button `icon` numbers; trash and close by default), `open`, `a11yHidden`, and the triggers `confirmed` and `cancelled`.
 - Place it once over your screen as a layout that fills the artboard, and set `open` to show it. It fades and scales in, and leaves the layout when closed, so it never blocks input while hidden.
 - The confirm Button fires `confirmed`, the cancel Button and a click on the scrim fire `cancelled`; each one also sets `open` back to false. Listen to the triggers in your app.
 - The Buttons' `_pressed` triggers are bound to `confirmed` and `cancelled`, so the Dialog reacts to whatever makes a Button fire.
 - The card uses `_surface`, `_border`, `_radiusCard` and the theme shadow; the scrim is black at 50%.
 - Screen readers get a `dialog` named by the title, the body as text and the two Buttons.
-- **Dialog Demo** is the Showcase's building block: an "Open dialog" Button with a Dialog over it.
+- **Dialog Demo** is the Showcase's building block: a small screen with an "Open dialog" Button and a Dialog over it; the screen clips the scrim, as the edges of a real app would.
 
 ```xml
 <NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="131:100" isStateful="true" name="Dialog" id="X:1">
@@ -422,6 +424,8 @@ A modal card over a dimmed scrim, with a title, a body and two kit Buttons. It i
         <ViewModelInstanceTrigger viewModelPropertyId="131:8" id="X:10"/>  <!-- confirmed -->
         <ViewModelInstanceTrigger viewModelPropertyId="131:9" id="X:11"/>  <!-- cancelled -->
         <ViewModelInstanceBoolean viewModelPropertyId="131:10" id="X:12"/>  <!-- a11yHidden -->
+        <ViewModelInstanceNumber viewModelPropertyId="131:21" id="X:13"/>  <!-- confirmIcon -->
+        <ViewModelInstanceNumber viewModelPropertyId="131:22" id="X:14"/>  <!-- cancelIcon -->
     </ViewModelInstance>
 </NestedArtboardLayout>
 ```
