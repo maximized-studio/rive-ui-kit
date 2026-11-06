@@ -1,10 +1,18 @@
 <Rive version="1" kind="fragment">
-    <Artboard defaultStateMachineId="38:363" viewModelId="38:328" viewModelInstanceId="38:329" isComponent="true" includeInExport="false" spaceId="1:5601" width="100" height="32" styleId="38:361" x="1200" y="1634" name="Segment" id="38:358">
+    <Artboard defaultStateMachineId="38:363" viewModelId="38:328" viewModelInstanceId="38:329" isComponent="true" spaceId="1:5601" width="100" height="32" styleId="38:361" x="1200" y="1634" name="Toggle Button" id="38:358">
         <Fill fillRule="clockwise" id="38:359">
             <SolidColor colorValue="00000000" id="38:360"/>
         </Fill>
         <LayoutComponentStyle layoutAlignmentType="center" intrinsicallySizedValue="true" layoutWidthScaleType="fill" layoutHeightScaleType="hug" id="38:361"/>
         <LayoutComponent styleId="38:383" name="Segment" id="38:382">
+            <LayoutComponent styleId="138:47" isTargetOpaque="true" name="Disabled Shield" id="138:48">
+                <Fill fillRule="clockwise" id="138:49">
+                    <SolidColor colorValue="00000000" id="138:50"/>
+                </Fill>
+                <LayoutComponentStyle layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="138:47">
+                    <DataBindContext sourcePathIds="38:328-38:334" propertyKey="596" converterId="9:90" nameBased="true" id="138:51"/>
+                </LayoutComponentStyle>
+            </LayoutComponent>
             <LayoutComponent styleId="38:385" name="Pad" id="38:384">
                 <GridItemPlacement id="38:386"/>
                 <LayoutComponent width="14" height="14" styleId="38:388" name="Icon" id="38:387">
@@ -25,6 +33,12 @@
                                 <DataBindContext sourcePathIds="10:7-10:7422" propertyKey="37" id="38:639"/>
                             </SolidColor>
                         </Stroke>
+                        <Stroke thickness="0" id="138:15">
+                            <SolidColor colorValue="FFFAFAFA" id="138:16">
+                                <DataBindContext sourcePathIds="10:7-10:7426" propertyKey="37" id="138:17"/>
+                            </SolidColor>
+                            <DataBindContext sourcePathIds="38:328-38:334" propertyKey="47" converterId="138:952" nameBased="true" id="138:18"/>
+                        </Stroke>
                     </Shape>
                     <Shape x="7" y="7" opacity="0" name="Check" id="38:515">
                         <PointsPath isClosed="true" id="38:516">
@@ -44,6 +58,12 @@
                                 <DataBindContext sourcePathIds="10:7-10:7422" propertyKey="37" id="38:638"/>
                             </SolidColor>
                         </Stroke>
+                        <Stroke thickness="0" id="138:19">
+                            <SolidColor colorValue="FFFAFAFA" id="138:20">
+                                <DataBindContext sourcePathIds="10:7-10:7426" propertyKey="37" id="138:21"/>
+                            </SolidColor>
+                            <DataBindContext sourcePathIds="38:328-38:334" propertyKey="47" converterId="138:952" nameBased="true" id="138:22"/>
+                        </Stroke>
                     </Shape>
                     <Shape x="7" y="7" opacity="0" name="Corner L" id="38:506">
                         <PointsPath id="38:507">
@@ -56,6 +76,12 @@
                             <SolidColor colorValue="FFFAFAFA" id="38:513">
                                 <DataBindContext sourcePathIds="10:7-10:7422" propertyKey="37" id="38:637"/>
                             </SolidColor>
+                        </Stroke>
+                        <Stroke thickness="0" id="138:23">
+                            <SolidColor colorValue="FFFAFAFA" id="138:24">
+                                <DataBindContext sourcePathIds="10:7-10:7426" propertyKey="37" id="138:25"/>
+                            </SolidColor>
+                            <DataBindContext sourcePathIds="38:328-38:334" propertyKey="47" converterId="138:952" nameBased="true" id="138:26"/>
                         </Stroke>
                     </Shape>
                     <Shape x="7" y="7" opacity="0" name="Corner M" id="38:497">
@@ -70,6 +96,12 @@
                                 <DataBindContext sourcePathIds="10:7-10:7422" propertyKey="37" id="38:636"/>
                             </SolidColor>
                         </Stroke>
+                        <Stroke thickness="0" id="138:27">
+                            <SolidColor colorValue="FFFAFAFA" id="138:28">
+                                <DataBindContext sourcePathIds="10:7-10:7426" propertyKey="37" id="138:29"/>
+                            </SolidColor>
+                            <DataBindContext sourcePathIds="38:328-38:334" propertyKey="47" converterId="138:952" nameBased="true" id="138:30"/>
+                        </Stroke>
                     </Shape>
                     <Shape x="7" y="7" opacity="0" name="Corner S" id="38:488">
                         <PointsPath id="38:489">
@@ -83,6 +115,12 @@
                                 <DataBindContext sourcePathIds="10:7-10:7422" propertyKey="37" id="38:635"/>
                             </SolidColor>
                         </Stroke>
+                        <Stroke thickness="0" id="138:31">
+                            <SolidColor colorValue="FFFAFAFA" id="138:32">
+                                <DataBindContext sourcePathIds="10:7-10:7426" propertyKey="37" id="138:33"/>
+                            </SolidColor>
+                            <DataBindContext sourcePathIds="38:328-38:334" propertyKey="47" converterId="138:952" nameBased="true" id="138:34"/>
+                        </Stroke>
                     </Shape>
                     <Shape x="7" y="7" opacity="0" name="Corner None" id="38:480">
                         <PointsPath id="38:481">
@@ -94,6 +132,12 @@
                             <SolidColor colorValue="FFFAFAFA" id="38:486">
                                 <DataBindContext sourcePathIds="10:7-10:7422" propertyKey="37" id="38:634"/>
                             </SolidColor>
+                        </Stroke>
+                        <Stroke thickness="0" id="138:35">
+                            <SolidColor colorValue="FFFAFAFA" id="138:36">
+                                <DataBindContext sourcePathIds="10:7-10:7426" propertyKey="37" id="138:37"/>
+                            </SolidColor>
+                            <DataBindContext sourcePathIds="38:328-38:334" propertyKey="47" converterId="138:952" nameBased="true" id="138:38"/>
                         </Stroke>
                     </Shape>
                     <Shape x="7" y="7" opacity="0" name="Moon" id="38:469">
@@ -109,6 +153,12 @@
                             <SolidColor colorValue="FFFAFAFA" id="38:478">
                                 <DataBindContext sourcePathIds="10:7-10:7422" propertyKey="37" id="38:633"/>
                             </SolidColor>
+                        </Stroke>
+                        <Stroke thickness="0" id="138:39">
+                            <SolidColor colorValue="FFFAFAFA" id="138:40">
+                                <DataBindContext sourcePathIds="10:7-10:7426" propertyKey="37" id="138:41"/>
+                            </SolidColor>
+                            <DataBindContext sourcePathIds="38:328-38:334" propertyKey="47" converterId="138:952" nameBased="true" id="138:42"/>
                         </Stroke>
                     </Shape>
                     <Shape x="7" y="7" opacity="0" name="Sun" id="38:435">
@@ -156,26 +206,53 @@
                                 <DataBindContext sourcePathIds="10:7-10:7422" propertyKey="37" id="38:632"/>
                             </SolidColor>
                         </Stroke>
+                        <Stroke thickness="0" id="138:43">
+                            <SolidColor colorValue="FFFAFAFA" id="138:44">
+                                <DataBindContext sourcePathIds="10:7-10:7426" propertyKey="37" id="138:45"/>
+                            </SolidColor>
+                            <DataBindContext sourcePathIds="38:328-38:334" propertyKey="47" converterId="138:952" nameBased="true" id="138:46"/>
+                        </Stroke>
                     </Shape>
                     <LayoutComponentStyle id="38:388">
                         <DataBindContext sourcePathIds="38:328-38:340" propertyKey="596" nameBased="true" converterId="33:216" id="38:542"/>
                     </LayoutComponentStyle>
                 </LayoutComponent>
-                <Text id="38:389">
-                    <TextStylePaint fontSize="13" fontAssetId="0:7" familyName="Inter" styleName="Regular" id="38:390">
-                        <Fill fillRule="clockwise" id="38:391">
-                            <SolidColor colorValue="FFFAFAFA" id="38:392">
-                                <DataBindContext sourcePathIds="10:7-10:7422" propertyKey="37" id="38:640"/>
-                            </SolidColor>
-                        </Fill>
-                        <TextStyleAxis tag="1869640570" axisValue="14" id="38:393"/>
-                        <TextStyleAxis tag="2003265652" axisValue="600" id="38:394"/>
-                    </TextStylePaint>
-                    <TextValueRun styleId="38:390" text="Option" id="38:395">
-                        <DataBindContext sourcePathIds="38:328-38:348" propertyKey="268" nameBased="true" id="38:543"/>
-                    </TextValueRun>
-                    <LayoutParticipant layoutWidthScaleType="hug" layoutHeightScaleType="hug" id="38:396"/>
-                </Text>
+                <LayoutComponent styleId="138:1" name="Label" id="138:2">
+                    <Text id="138:3" name="Disabled Text">
+                        <TextStylePaint fontSize="13" fontAssetId="0:7" familyName="Inter" styleName="Regular" id="138:4">
+                            <Fill fillRule="clockwise" id="138:5">
+                                <SolidColor colorValue="FFFAFAFA" id="138:6">
+                                    <DataBindContext sourcePathIds="10:7-10:7426" propertyKey="37" id="138:7"/>
+                                </SolidColor>
+                            </Fill>
+                            <TextStyleAxis tag="1869640570" axisValue="14" id="138:8"/>
+                            <TextStyleAxis tag="2003265652" axisValue="600" id="138:9"/>
+                        </TextStylePaint>
+                        <TextValueRun styleId="138:4" text="Option" id="138:10">
+                            <DataBindContext sourcePathIds="38:328-38:348" propertyKey="268" nameBased="true" id="138:11"/>
+                        </TextValueRun>
+                        <LayoutParticipant layoutWidthScaleType="hug" layoutHeightScaleType="hug" id="138:12"/>
+                        <DataBindContext sourcePathIds="38:328-38:334" propertyKey="18" converterId="9:145" nameBased="true" id="138:13"/>
+                    </Text>
+                    <Text id="38:389">
+                        <TextStylePaint fontSize="13" fontAssetId="0:7" familyName="Inter" styleName="Regular" id="38:390">
+                            <Fill fillRule="clockwise" id="38:391">
+                                <SolidColor colorValue="FFFAFAFA" id="38:392">
+                                    <DataBindContext sourcePathIds="10:7-10:7422" propertyKey="37" id="38:640"/>
+                                </SolidColor>
+                            </Fill>
+                            <TextStyleAxis tag="1869640570" axisValue="14" id="38:393"/>
+                            <TextStyleAxis tag="2003265652" axisValue="600" id="38:394"/>
+                        </TextStylePaint>
+                        <TextValueRun styleId="38:390" text="Option" id="38:395">
+                            <DataBindContext sourcePathIds="38:328-38:348" propertyKey="268" nameBased="true" id="38:543"/>
+                        </TextValueRun>
+                        <LayoutParticipant layoutWidthScaleType="hug" layoutHeightScaleType="hug" id="38:396"/>
+                    </Text>
+                    <LayoutComponentStyle layoutTypeValue="stack" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="138:1">
+                        <DataBindContext sourcePathIds="38:328-138:900" propertyKey="596" converterId="9:145" nameBased="true" id="138:14"/>
+                    </LayoutComponentStyle>
+                </LayoutComponent>
                 <LayoutComponentStyle gapHorizontal="6" paddingLeft="12" paddingRight="12" paddingTop="6" paddingBottom="6" layoutAlignmentType="center" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="38:385"/>
             </LayoutComponent>
             <LayoutComponent styleId="38:398" opacity="0" name="Selected" id="38:397">
@@ -202,11 +279,24 @@
                 <DataBindContext sourcePathIds="38:328-38:346" propertyKey="18" nameBased="true" converterId="9:145" id="38:544"/>
             </LayoutComponent>
             <LayoutComponentStyle layoutAlignmentType="center" intrinsicallySizedValue="true" layoutTypeValue="stack" layoutWidthScaleType="fill" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="38:383"/>
+            <SemanticData role="radioButton" traitFlags="36" name="Semantics" id="138:52">
+                <DataBindContext sourcePathIds="38:328-38:348" propertyKey="983" nameBased="true" id="138:53"/>
+                <DataBindContext sourcePathIds="38:328-38:336" propertyKey="1004" nameBased="true" id="138:54"/>
+                <DataBindContext sourcePathIds="38:328-38:334" propertyKey="1002" nameBased="true" id="138:55"/>
+            </SemanticData>
+            <FocusData name="Focus" id="138:56">
+                <DataBindContext sourcePathIds="38:328-38:334" propertyKey="953" converterId="1:1018" nameBased="true" id="138:57"/>
+            </FocusData>
         </LayoutComponent>
         <LinearAnimation name="Selected" id="38:547">
             <KeyedObject objectId="38:397" id="38:551">
                 <KeyedProperty property="opacity" id="38:552">
                     <KeyFrameDouble value="1" interpolationType="linear" id="38:553"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="138:52" id="138:58">
+                <KeyedProperty property="isChecked" id="138:59">
+                    <KeyFrameUint value="1" id="138:60"/>
                 </KeyedProperty>
             </KeyedObject>
         </LinearAnimation>
@@ -622,6 +712,40 @@
                     </BindablePropertyBoolean>
                 </ListenerViewModelChange>
             </StateMachineListener>
+            <StateMachineListener targetId="138:48" name="Disabled Block" id="138:64">
+                <ListenerInputType id="138:65"/>
+                <ListenerViewModelChange id="138:66">
+                    <BindablePropertyBoolean id="138:67">
+                        <DataBindContext sourcePathIds="38:328-38:346" propertyKey="634" direction="true" id="138:68"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListener targetId="38:382" name="Activate" id="138:70">
+                <ListenerInputType listenerTypeValue="click" id="138:71"/>
+                <ListenerInputTypeSemantic listenerTypeValue="semanticAction" id="138:72">
+                    <SemanticInput id="138:73"/>
+                </ListenerInputTypeSemantic>
+                <ListenerInputTypeKeyboard listenerTypeValue="keyboard" id="138:74">
+                    <KeyboardInput keyType="enter" keyPhase="1" id="138:75"/>
+                    <KeyboardInput keyType="kpEnter" keyPhase="1" id="138:76"/>
+                    <KeyboardInput keyType="space" keyPhase="1" id="138:77"/>
+                </ListenerInputTypeKeyboard>
+                <ListenerViewModelChange fromViewModelProperty="true" fromDataBindId="138:69" id="138:78">
+                    <BindablePropertyTrigger id="138:79">
+                        <DataBindContext sourcePathIds="38:328-138:901" propertyKey="686" id="138:69"/>
+                        <DataBindContext sourcePathIds="38:328-138:901" propertyKey="686" direction="true" converterId="1:1332" id="138:80"/>
+                    </BindablePropertyTrigger>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListener targetId="38:358" name="Select" id="138:82">
+                <ListenerInputTypeViewModel viewModelPathIds="38:328-138:902" listenerTypeValue="viewModel" id="138:83"/>
+                <ListenerViewModelChange fromViewModelProperty="true" fromDataBindId="138:81" id="138:84">
+                    <BindablePropertyNumber id="138:85">
+                        <DataBindContext sourcePathIds="38:328-38:342-38:332" propertyKey="636" direction="true" id="138:86"/>
+                        <DataBindContext sourcePathIds="38:328-38:338" propertyKey="636" id="138:81"/>
+                    </BindablePropertyNumber>
+                </ListenerViewModelChange>
+            </StateMachineListener>
             <StateMachineLayer name="Layer 1" id="38:364">
                 <AnyState x="400" id="38:365">
                     <StateTransition stateToId="38:554" duration="150" interpolationType="cubic" id="38:555">
@@ -660,15 +784,6 @@
                 <AnimationState animationId="38:362" x="160" id="38:368"/>
                 <AnimationState animationId="38:547" x="300" y="100" stateName="Selected" id="38:554"/>
             </StateMachineLayer>
-            <StateMachineListener targetId="38:382" name="Select" id="38:573">
-                <ListenerInputType listenerTypeValue="click" id="38:574"/>
-                <ListenerViewModelChange fromViewModelProperty="true" fromDataBindId="38:578" id="38:575">
-                    <BindablePropertyNumber id="38:576">
-                        <DataBindContext sourcePathIds="38:328-38:342-38:332" propertyKey="636" direction="true" id="38:577"/>
-                        <DataBindContext sourcePathIds="38:328-38:338" propertyKey="636" id="38:578"/>
-                    </BindablePropertyNumber>
-                </ListenerViewModelChange>
-            </StateMachineListener>
             <StateMachineLayer name="Icon" id="905:343">
                 <AnimationState animationId="905:1" x="160" y="-450" stateName="Icon 0" id="905:2"/>
                 <AnimationState animationId="905:27" x="160" y="-350" stateName="Icon 1" id="905:28"/>
@@ -865,6 +980,37 @@
                     </StateTransition>
                 </EntryState>
             </StateMachineLayer>
+            <StateMachineLayer name="Activate" id="138:96">
+                <AnimationState animationId="138:93" x="160" stateName="Idle" id="138:94">
+                    <StateTransition stateToId="138:95" id="138:97">
+                        <TransitionViewModelCondition opValue="notEqual" id="138:98">
+                            <TransitionPropertyViewModelComparator id="138:99">
+                                <BindablePropertyTrigger id="138:100">
+                                    <DataBindContext sourcePathIds="38:328-138:901" propertyKey="686" id="138:101"/>
+                                </BindablePropertyTrigger>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueTriggerComparator id="138:102"/>
+                        </TransitionViewModelCondition>
+                        <TransitionViewModelCondition id="138:103">
+                            <TransitionPropertyViewModelComparator id="138:104">
+                                <BindablePropertyBoolean id="138:105">
+                                    <DataBindContext sourcePathIds="38:328-38:334" propertyKey="634" id="138:106"/>
+                                </BindablePropertyBoolean>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueBooleanComparator id="138:107"/>
+                        </TransitionViewModelCondition>
+                        <StateMachineFireTrigger viewModelPathIds="38:328-138:902" id="138:108"/>
+                    </StateTransition>
+                </AnimationState>
+                <AnimationState animationId="138:93" x="400" stateName="Fire" id="138:95">
+                    <StateTransition stateToId="138:94" id="138:109"/>
+                </AnimationState>
+                <AnyState x="560" id="138:110"/>
+                <ExitState x="640" id="138:111"/>
+                <EntryState id="138:112">
+                    <StateTransition stateToId="138:94" id="138:113"/>
+                </EntryState>
+            </StateMachineLayer>
         </StateMachine>
         <LinearAnimation name="Unselected" id="38:362">
             <KeyedObject objectId="38:397" id="38:548">
@@ -872,6 +1018,12 @@
                     <KeyFrameDouble interpolationType="linear" id="38:550"/>
                 </KeyedProperty>
             </KeyedObject>
+            <KeyedObject objectId="138:52" id="138:61">
+                <KeyedProperty property="isChecked" id="138:62">
+                    <KeyFrameUint id="138:63"/>
+                </KeyedProperty>
+            </KeyedObject>
         </LinearAnimation>
+        <LinearAnimation name="Activate Idle" id="138:93"/>
     </Artboard>
 </Rive>

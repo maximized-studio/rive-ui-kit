@@ -754,56 +754,6 @@ Source: `shared/01-RadioOption.rml` · artboard `1:16` · state machine `1:21` �
 </NestedArtboardLayout>
 ```
 
-## Segment
-
-Source: `shared/19-Segment.rml` · artboard `38:358` · state machine `38:363` · view model `Segment` `38:328`
-
-| Property | Type | Id |
-|---|---|---|
-| `disabled` | boolean | `38:334` |
-| `a11yHidden` | boolean | `38:336` |
-| `value` | number | `38:338` |
-| `icon` | number | `38:340` |
-| `group` | `SegmentSelection` | `38:342` |
-| `label` | string | `38:348` |
-
-```xml
-<NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="38:358" isStateful="true" name="Segment" id="X:1">
-    <NestedStateMachine animationId="38:363" id="X:2"/>
-    <ViewModelInstance viewModelId="38:328" exports="true" name="My Segment" id="X:3">
-        <ViewModelInstanceBoolean viewModelPropertyId="38:334" id="X:4"/>  <!-- disabled -->
-        <ViewModelInstanceBoolean viewModelPropertyId="38:336" id="X:5"/>  <!-- a11yHidden -->
-        <ViewModelInstanceNumber viewModelPropertyId="38:338" id="X:6"/>  <!-- value -->
-        <ViewModelInstanceNumber viewModelPropertyId="38:340" id="X:7"/>  <!-- icon -->
-        <ViewModelInstanceViewModel viewModelPropertyId="38:342" id="X:8"/>  <!-- group: set propertyValue to the id of a shared instance -->
-        <ViewModelInstanceBoolean viewModelPropertyId="38:346" id="X:9"/>  <!-- _hover -->
-        <ViewModelInstanceString viewModelPropertyId="38:348" id="X:10"/>  <!-- label -->
-    </ViewModelInstance>
-</NestedArtboardLayout>
-```
-
-## Segmented Control
-
-Source: `shared/20-SegmentedControl.rml` · artboard `38:370` · state machine `38:375` · view model `SegmentedControl` `38:330`
-Contains: Segment
-
-| Property | Type | Id |
-|---|---|---|
-| `a11yHidden` | boolean | `38:350` |
-| `options` | list of `Segment` | `38:354` |
-| `selection` | `SegmentSelection` | `38:356` |
-
-```xml
-<NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="38:370" isStateful="true" name="Segmented Control" id="X:1">
-    <NestedStateMachine animationId="38:375" id="X:2"/>
-    <ViewModelInstance viewModelId="38:330" exports="true" name="My Segmented Control" id="X:3">
-        <ViewModelInstanceBoolean viewModelPropertyId="38:350" id="X:4"/>  <!-- a11yHidden -->
-        <ViewModelInstanceList viewModelPropertyId="38:354" id="X:5"/>  <!-- options: add ViewModelInstanceListItem children -->
-        <ViewModelInstanceViewModel viewModelPropertyId="38:356" id="X:6"/>  <!-- selection: set propertyValue to the id of a shared instance -->
-    </ViewModelInstance>
-</NestedArtboardLayout>
-```
-
 ## Slider
 
 Source: `shared/07-Slider.rml` · artboard `1:1870` · state machine `1:1875` · view model `Slider` `1:1932`
@@ -953,6 +903,73 @@ Source: `shared/18-ThemeDriver.rml` · artboard `10:14621` · state machine `10:
 </NestedArtboardLayout>
 ```
 
+## Toggle Button
+
+Source: `shared/19-ToggleButton.rml` · artboard `38:358` · state machine `38:363` · view model `ToggleButton` `38:328`
+
+| Property | Type | Id |
+|---|---|---|
+| `disabled` | boolean | `38:334` |
+| `a11yHidden` | boolean | `38:336` |
+| `value` | number | `38:338` |
+| `icon` | number | `38:340` |
+| `group` | `ToggleSelection` | `38:342` |
+| `label` | string | `38:348` |
+| `iconOnly` | boolean | `138:900` |
+| `_activate` | trigger | `138:901` |
+| `_select` | trigger | `138:902` |
+
+```xml
+<NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="38:358" isStateful="true" name="Toggle Button" id="X:1">
+    <NestedStateMachine animationId="38:363" id="X:2"/>
+    <ViewModelInstance viewModelId="38:328" exports="true" name="My Toggle Button" id="X:3">
+        <ViewModelInstanceBoolean viewModelPropertyId="38:334" id="X:4"/>  <!-- disabled -->
+        <ViewModelInstanceBoolean viewModelPropertyId="38:336" id="X:5"/>  <!-- a11yHidden -->
+        <ViewModelInstanceNumber viewModelPropertyId="38:338" id="X:6"/>  <!-- value -->
+        <ViewModelInstanceNumber viewModelPropertyId="38:340" id="X:7"/>  <!-- icon -->
+        <ViewModelInstanceViewModel viewModelPropertyId="38:342" id="X:8"/>  <!-- group: set propertyValue to the id of a shared instance -->
+        <ViewModelInstanceBoolean viewModelPropertyId="38:346" id="X:9"/>  <!-- _hover -->
+        <ViewModelInstanceString viewModelPropertyId="38:348" id="X:10"/>  <!-- label -->
+        <ViewModelInstanceBoolean viewModelPropertyId="138:900" id="X:11"/>  <!-- iconOnly -->
+        <ViewModelInstanceTrigger viewModelPropertyId="138:901" id="X:12"/>  <!-- _activate -->
+        <ViewModelInstanceTrigger viewModelPropertyId="138:902" id="X:13"/>  <!-- _select -->
+    </ViewModelInstance>
+</NestedArtboardLayout>
+```
+
+## Toggle Button Group
+
+Source: `shared/20-ToggleButtonGroup.rml` · artboard `38:370` · state machine `38:375` · view model `ToggleButtonGroup` `38:330`
+Contains: Toggle Button
+
+| Property | Type | Id |
+|---|---|---|
+| `a11yHidden` | boolean | `38:350` |
+| `options` | list of `ToggleButton` | `38:354` |
+| `label` | string | `138:903` |
+| `selection` | `ToggleSelection` | `38:356` |
+
+A row of toggle buttons on a track where exactly one is on, like the Mode and Roundness choices in the Theme panel (which are this component).
+
+- View model `ToggleButtonGroup`: `options` (a list of `ToggleButton` instances), `selection` (a shared `ToggleSelection`), `label` (screen reader name), `a11yHidden`.
+- `ToggleButton`: `label`, `value` (its position), `icon` (`0` none, `1` sun, `2` moon, `3`–`6` corner sizes, `7` check, `8` blocked), `iconOnly` (hides the label but keeps it for screen readers), `disabled`, `group` (a `ToggleSelection`), `a11yHidden`. Point `group` of every option at the group's `ToggleSelection`.
+- `ToggleSelection`: `selected`, the value of the option that is on. A click, a screen reader's activate, or Enter/Space on a focused option writes it.
+- Input goes through the same Activate gate as the Button, so a disabled option ignores every input. Disabled options turn `_textMuted`.
+- The selected option sits on `_surfaceRaised`, the track on `_surfaceSubtle`; corners follow `_radiusSegment` / `_radiusSegmentInner`.
+- Screen readers get a `radioGroup` with a `radioButton` per option that reports checked. For several independent on/off choices, use Chips.
+
+```xml
+<NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="38:370" isStateful="true" name="Toggle Button Group" id="X:1">
+    <NestedStateMachine animationId="38:375" id="X:2"/>
+    <ViewModelInstance viewModelId="38:330" exports="true" name="My Toggle Button Group" id="X:3">
+        <ViewModelInstanceBoolean viewModelPropertyId="38:350" id="X:4"/>  <!-- a11yHidden -->
+        <ViewModelInstanceList viewModelPropertyId="38:354" id="X:5"/>  <!-- options: add ViewModelInstanceListItem children -->
+        <ViewModelInstanceString viewModelPropertyId="138:903" id="X:6"/>  <!-- label -->
+        <ViewModelInstanceViewModel viewModelPropertyId="38:356" id="X:7"/>  <!-- selection: set propertyValue to the id of a shared instance -->
+    </ViewModelInstance>
+</NestedArtboardLayout>
+```
+
 ## Tooltip
 
 Source: `shared/33-Tooltip.rml` · artboard `112:188` · state machine `112:190` · view model `Tooltip` `112:1`
@@ -1061,33 +1078,33 @@ Contains: Nav Group
 ## Slide  (Showcase demo)
 
 Source: `shared/17-Slide.rml` · artboard `10:5313` · state machine `10:5405` · view model `Slide` `10:5163`
-Contains: Accordion, Alert, Avatar, Badge, Breadcrumbs, Button Group, Button Row, Checkbox Group, Chip Group, Dialog Demo, Dropdown, Label, Pagination, Progress Bar, Radio Group, Slider, Switch Group, Tabs, Tooltip Button
+Contains: Accordion, Alert, Avatar, Badge, Breadcrumbs, Button Group, Button Row, Checkbox Group, Chip Group, Dialog Demo, Dropdown, Label, Pagination, Progress Bar, Radio Group, Slider, Switch Group, Tabs, Toggle Button Group, Tooltip Button
 
 | Property | Type | Id |
 |---|---|---|
 | `name` | string | `10:5171` |
-| `content` | list of `Pagination` / `Accordion` / `RadioGroup` / `CheckboxGroup` / `SwitchGroup` / `Alert` / `Breadcrumbs` / `TooltipButton` / `ProgressBar` / `DialogDemo` / `ButtonRow` / `Tabs` / `ChipGroup` / `Badge` / `Label` / `Slider` / `Avatar` / `Dropdown` / `ButtonGroup` | `10:5173` |
+| `content` | list of `Pagination` / `Accordion` / `RadioGroup` / `CheckboxGroup` / `SwitchGroup` / `Alert` / `Breadcrumbs` / `TooltipButton` / `ProgressBar` / `DialogDemo` / `ButtonRow` / `Tabs` / `ChipGroup` / `Badge` / `Label` / `Slider` / `Avatar` / `Dropdown` / `ToggleButtonGroup` / `ButtonGroup` | `10:5173` |
 | `crumbs` | `Breadcrumbs` | `114:1` |
 
 ## Tile  (Showcase demo)
 
 Source: `shared/14-Tile.rml` · artboard `10:3618` · state machine `10:3623` · view model `Tile` `10:3612`
-Contains: Accordion, Alert, Avatar, Badge, Breadcrumbs, Button, Button Group, Checkbox Group, Chip Group, Dialog Demo, Dropdown, Label, Pagination, Progress Bar, Radio Group, Slider, Switch Group, Tabs, Tooltip Button
+Contains: Accordion, Alert, Avatar, Badge, Breadcrumbs, Button, Button Group, Checkbox Group, Chip Group, Dialog Demo, Dropdown, Label, Pagination, Progress Bar, Radio Group, Slider, Switch Group, Tabs, Toggle Button Group, Tooltip Button
 
 | Property | Type | Id |
 |---|---|---|
-| `content` | list of `Pagination` / `Accordion` / `RadioGroup` / `CheckboxGroup` / `SwitchGroup` / `Alert` / `Breadcrumbs` / `TooltipButton` / `ProgressBar` / `DialogDemo` / `Tabs` / `ChipGroup` / `Badge` / `Button` / `Label` / `Slider` / `Avatar` / `Dropdown` / `ButtonGroup` | `10:3861` |
+| `content` | list of `Pagination` / `Accordion` / `RadioGroup` / `CheckboxGroup` / `SwitchGroup` / `Alert` / `Breadcrumbs` / `TooltipButton` / `ProgressBar` / `DialogDemo` / `Tabs` / `ChipGroup` / `Badge` / `Button` / `Label` / `Slider` / `Avatar` / `Dropdown` / `ToggleButtonGroup` / `ButtonGroup` | `10:3861` |
 | `name` | string | `10:3614` |
 
 ## Toolbar  (Showcase demo)
 
 Source: `shared/12-Toolbar.rml` · artboard `10:2114` · state machine `10:2119` · view model `Toolbar` `38:815`
-Contains: Segmented Control, Slider, Tooltip
+Contains: Slider, Toggle Button Group, Tooltip
 
 | Property | Type | Id |
 |---|---|---|
-| `mode` | `SegmentedControl` | `38:819` |
-| `roundness` | `SegmentedControl` | `38:821` |
-| `shadow` | `SegmentedControl` | `38:823` |
-| `state` | `SegmentedControl` | `38:825` |
+| `mode` | `ToggleButtonGroup` | `38:819` |
+| `roundness` | `ToggleButtonGroup` | `38:821` |
+| `shadow` | `ToggleButtonGroup` | `38:823` |
+| `state` | `ToggleButtonGroup` | `38:825` |
 | `canvas` | `Slider` | `115:1` |

@@ -10,12 +10,12 @@ The kit is also on the [Rive Community](https://rive.app/community/files/25701-5
 
 ## Components
 
-- **Actions:** Button · Button Group · Dropdown
+- **Actions:** Button · Button Group · Dropdown · Toggle Button / Toggle Button Group
 - **Display:** Accordion · Avatar · Badge · Label
 - **Feedback:** Alert · Dialog · Progress Bar · Tooltip
 - **Inputs:** Checkbox / Checkbox Group · Chip / Chip Group · Radio Option / Radio Group · Slider · Switch / Switch Group
 - **Navigation:** Breadcrumbs · Pagination · Tabs
-- **Building blocks:** Accordion Item · Breadcrumb Item · Button Row · Dialog Demo · List Item · Nav Group · Nav Item · Page Item · Segment · Segmented Control · Showcase Section · Sidebar · Slide · Tab · Tile · Toolbar · Tooltip Button
+- **Building blocks:** Accordion Item · Breadcrumb Item · Button Row · Dialog Demo · List Item · Nav Group · Nav Item · Page Item · Showcase Section · Sidebar · Slide · Tab · Tile · Toolbar · Tooltip Button
 
 Categories and the components in them are sorted A–Z. In the Showcase a category is data: a `ShowcaseSection` (title, tile list; the count is the list length) in `sections`, and a `NavGroup` in the Sidebar's `sections`.
 
@@ -54,6 +54,7 @@ The components carry Rive semantics, so screen readers get a real accessibility 
 | Slider | `slider` | label, value |
 | Switch | `switchControl` | label, on/off |
 | Tabs / Tab | `tabList` / `tab` | label; tab label, selected, disabled |
+| Toggle Button Group / Toggle Button | `radioGroup` / `radioButton` | group label; label, checked, disabled |
 | Dialog | `dialog`, `text`, `button` ×2 | title; body; the two Buttons |
 | Progress Bar | `group` / `text` | label; percentage ("64%") |
 | Tooltip | `text` | text (left out when its trigger carries it as a hint) |
@@ -124,6 +125,17 @@ A pill you switch on and off, for filters and topics. On, it gets a check and th
 - Input goes through the same gate as the Button: every input fires `_activate`, and the Activate layer toggles only when `disabled` is false. A disabled chip also leaves keyboard focus.
 - Screen readers get a toggle `button` with the label that reports on or off.
 
+## Toggle Button Group
+
+A row of toggle buttons on a track where exactly one is on, like the Mode and Roundness choices in the Theme panel (which are this component).
+
+- View model `ToggleButtonGroup`: `options` (a list of `ToggleButton` instances), `selection` (a shared `ToggleSelection`), `label` (screen reader name), `a11yHidden`.
+- `ToggleButton`: `label`, `value` (its position), `icon` (`0` none, `1` sun, `2` moon, `3`–`6` corner sizes, `7` check, `8` blocked), `iconOnly` (hides the label but keeps it for screen readers), `disabled`, `group` (a `ToggleSelection`), `a11yHidden`. Point `group` of every option at the group's `ToggleSelection`.
+- `ToggleSelection`: `selected`, the value of the option that is on. A click, a screen reader's activate, or Enter/Space on a focused option writes it.
+- Input goes through the same Activate gate as the Button, so a disabled option ignores every input. Disabled options turn `_textMuted`.
+- The selected option sits on `_surfaceRaised`, the track on `_surfaceSubtle`; corners follow `_radiusSegment` / `_radiusSegmentInner`.
+- Screen readers get a `radioGroup` with a `radioButton` per option that reports checked. For several independent on/off choices, use Chips.
+
 ## Pagination
 
 Previous and next Buttons around up to seven page buttons. Set two numbers and the component does the rest.
@@ -182,7 +194,7 @@ A small bubble in the inverse theme colours (`_text` background, `_bg` text) wit
 
 ## Pointer cursor
 
-A canvas can't change the mouse cursor by itself, so the kit tells your app when to. `cursorPointer` (a boolean on the global Theme view model) is `true` while the pointer is over something clickable: an accordion header, a breadcrumb link, a button, checkbox, chip, dropdown and its items, nav group header, nav item, page item, radio option, segment, slider, switch, tab or tile. Disabled controls leave it `false`.
+A canvas can't change the mouse cursor by itself, so the kit tells your app when to. `cursorPointer` (a boolean on the global Theme view model) is `true` while the pointer is over something clickable: an accordion header, a breadcrumb link, a button, checkbox, chip, dropdown and its items, nav group header, nav item, page item, radio option, slider, switch, tab, tile or toggle button. Disabled controls leave it `false`.
 
 ```js
 const flag = rive.globalViewModelInstance("Theme").boolean("cursorPointer");

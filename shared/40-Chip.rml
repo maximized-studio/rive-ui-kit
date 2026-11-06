@@ -1,5 +1,5 @@
 <Rive version="1" kind="fragment">
-    <Artboard defaultStateMachineId="141:1004" viewModelId="141:1" viewModelInstanceId="141:30" isComponent="true" includeInExport="false" spaceId="1:5601" width="80" height="32" styleId="141:1010" x="3000" y="600" name="Chip" id="141:1000">
+    <Artboard defaultStateMachineId="141:1004" viewModelId="141:1" viewModelInstanceId="141:30" isComponent="true" spaceId="1:5601" width="80" height="32" styleId="141:1010" x="3000" y="600" name="Chip" id="141:1000">
         <Fill fillRule="clockwise" id="141:1051">
             <SolidColor colorValue="00000000" id="141:1052"/>
         </Fill>

@@ -100,7 +100,7 @@
                         </LayoutComponent>
                         <LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="113:12"/>
                     </LayoutComponent>
-                    <NestedArtboardLayout instanceWidthScaleType="fill" instanceHeightScaleType="hug" artboardId="38:370" dataBindPathIds="38:815-38:819" name="Segmented Control" id="38:807">
+                    <NestedArtboardLayout instanceWidthScaleType="fill" instanceHeightScaleType="hug" artboardId="38:370" dataBindPathIds="38:815-38:819" name="Toggle Button Group" id="38:807">
                         <NestedStateMachine animationId="10:2119" id="38:808"/>
                     </NestedArtboardLayout>
                     <LayoutComponentStyle gapVertical="8" flexDirectionValue="column" intrinsicallySizedValue="true" layoutWidthScaleType="fill" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="10:7686"/>
@@ -494,7 +494,7 @@
                         </LayoutComponent>
                         <LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="113:110"/>
                     </LayoutComponent>
-                    <NestedArtboardLayout instanceWidthScaleType="fill" instanceHeightScaleType="hug" artboardId="38:370" dataBindPathIds="38:815-38:821" name="Segmented Control" id="38:809">
+                    <NestedArtboardLayout instanceWidthScaleType="fill" instanceHeightScaleType="hug" artboardId="38:370" dataBindPathIds="38:815-38:821" name="Toggle Button Group" id="38:809">
                         <NestedStateMachine animationId="10:2119" id="38:810"/>
                     </NestedArtboardLayout>
                     <LayoutComponentStyle gapVertical="8" flexDirectionValue="column" intrinsicallySizedValue="true" layoutWidthScaleType="fill" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="10:2245"/>
@@ -571,7 +571,7 @@
                         </LayoutComponent>
                         <LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="113:159"/>
                     </LayoutComponent>
-                    <NestedArtboardLayout instanceWidthScaleType="fill" instanceHeightScaleType="hug" artboardId="38:370" dataBindPathIds="38:815-38:823" name="Segmented Control" id="38:811">
+                    <NestedArtboardLayout instanceWidthScaleType="fill" instanceHeightScaleType="hug" artboardId="38:370" dataBindPathIds="38:815-38:823" name="Toggle Button Group" id="38:811">
                         <NestedStateMachine animationId="10:2119" id="38:812"/>
                     </NestedArtboardLayout>
                     <LayoutComponentStyle gapVertical="8" flexDirectionValue="column" intrinsicallySizedValue="true" layoutWidthScaleType="fill" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="10:2349"/>
@@ -672,7 +672,7 @@
                         </LayoutComponent>
                         <LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="113:208"/>
                     </LayoutComponent>
-                    <NestedArtboardLayout instanceWidthScaleType="fill" instanceHeightScaleType="hug" artboardId="38:370" dataBindPathIds="38:815-38:825" name="Segmented Control" id="38:813">
+                    <NestedArtboardLayout instanceWidthScaleType="fill" instanceHeightScaleType="hug" artboardId="38:370" dataBindPathIds="38:815-38:825" name="Toggle Button Group" id="38:813">
                         <NestedStateMachine animationId="10:2119" id="38:814"/>
                     </NestedArtboardLayout>
                     <LayoutComponentStyle gapVertical="8" flexDirectionValue="column" intrinsicallySizedValue="true" layoutWidthScaleType="fill" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="15:450"/>
