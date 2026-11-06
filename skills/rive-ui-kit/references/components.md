@@ -755,6 +755,46 @@ Source: `shared/01-RadioOption.rml` · artboard `1:16` · state machine `1:21` �
 </NestedArtboardLayout>
 ```
 
+## Range Slider
+
+Source: `shared/46-RangeSlider.rml` · artboard `153:1000` · state machine `153:1001` · view model `RangeSlider` `153:1`
+
+| Property | Type | Id |
+|---|---|---|
+| `label` | string | `153:2` |
+| `low` | number | `153:3` |
+| `high` | number | `153:4` |
+| `minPos` | number | `153:5` |
+| `maxPos` | number | `153:6` |
+| `disabled` | boolean | `153:7` |
+| `a11yHidden` | boolean | `153:8` |
+
+Two thumbs on one track for a minimum and a maximum, like a price filter. The brand line runs between them.
+
+- View model `RangeSlider`: `label`, `low`, `high`, `minPos`, `maxPos`, `disabled`, `a11yHidden`. Like the Slider, the values are positions on the 200-point track (`minPos` 8 to `maxPos` 192); the header shows them as percentages ("20 – 80").
+- Drag either thumb. `low` never passes `high` and the other way round: each thumb follows a private raw value, and a listener writes it into `low` or `high` through a clamp formula with the other value as its limit. Write `low` or `high` from your app and the thumb follows.
+- Track `_borderStrong`, range `_brand600`, thumbs white with the small theme shadow; disabled uses `_textMuted` and `_surfaceSubtle`.
+- Screen readers get a `group` named by `label` with a `slider` per thumb (Minimum, Maximum) and its percentage.
+
+```xml
+<NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="153:1000" isStateful="true" name="Range Slider" id="X:1">
+    <NestedStateMachine animationId="153:1001" id="X:2"/>
+    <ViewModelInstance viewModelId="153:1" exports="true" name="My Range Slider" id="X:3">
+        <ViewModelInstanceString viewModelPropertyId="153:2" id="X:4"/>  <!-- label -->
+        <ViewModelInstanceNumber viewModelPropertyId="153:3" id="X:5"/>  <!-- low -->
+        <ViewModelInstanceNumber viewModelPropertyId="153:4" id="X:6"/>  <!-- high -->
+        <ViewModelInstanceNumber viewModelPropertyId="153:5" id="X:7"/>  <!-- minPos -->
+        <ViewModelInstanceNumber viewModelPropertyId="153:6" id="X:8"/>  <!-- maxPos -->
+        <ViewModelInstanceBoolean viewModelPropertyId="153:7" id="X:9"/>  <!-- disabled -->
+        <ViewModelInstanceBoolean viewModelPropertyId="153:8" id="X:10"/>  <!-- a11yHidden -->
+        <ViewModelInstanceBoolean viewModelPropertyId="153:9" id="X:11"/>  <!-- _hoverLow -->
+        <ViewModelInstanceBoolean viewModelPropertyId="153:10" id="X:12"/>  <!-- _hoverHigh -->
+        <ViewModelInstanceNumber viewModelPropertyId="153:11" id="X:13"/>  <!-- _lowRaw -->
+        <ViewModelInstanceNumber viewModelPropertyId="153:12" id="X:14"/>  <!-- _highRaw -->
+    </ViewModelInstance>
+</NestedArtboardLayout>
+```
+
 ## Select
 
 Source: `shared/44-Select.rml` · artboard `147:1000` · state machine `147:1001` · view model `Select` `147:1`
@@ -1142,22 +1182,22 @@ Contains: Nav Group
 ## Slide  (Showcase demo)
 
 Source: `shared/17-Slide.rml` · artboard `10:5313` · state machine `10:5405` · view model `Slide` `10:5163`
-Contains: Accordion, Alert, Avatar, Badge, Breadcrumbs, Button Group, Button Row, Checkbox Group, Chip Group, Dialog Demo, Label, Menu, Pagination, Progress Bar, Radio Group, Select, Slider, Split Button, Switch Group, Tabs, Toggle Button Group, Tooltip Button
+Contains: Accordion, Alert, Avatar, Badge, Breadcrumbs, Button Group, Button Row, Checkbox Group, Chip Group, Dialog Demo, Label, Menu, Pagination, Progress Bar, Radio Group, Range Slider, Select, Slider, Split Button, Switch Group, Tabs, Toggle Button Group, Tooltip Button
 
 | Property | Type | Id |
 |---|---|---|
 | `name` | string | `10:5171` |
-| `content` | list of `Pagination` / `Accordion` / `RadioGroup` / `CheckboxGroup` / `SwitchGroup` / `Alert` / `Breadcrumbs` / `TooltipButton` / `ProgressBar` / `DialogDemo` / `ButtonRow` / `Tabs` / `ChipGroup` / `Menu` / `Select` / `SplitButton` / `Badge` / `Label` / `Slider` / `Avatar` / `ToggleButtonGroup` / `ButtonGroup` | `10:5173` |
+| `content` | list of `Pagination` / `Accordion` / `RadioGroup` / `CheckboxGroup` / `SwitchGroup` / `Alert` / `Breadcrumbs` / `TooltipButton` / `ProgressBar` / `DialogDemo` / `ButtonRow` / `Tabs` / `ChipGroup` / `Menu` / `Select` / `SplitButton` / `RangeSlider` / `Badge` / `Label` / `Slider` / `Avatar` / `ToggleButtonGroup` / `ButtonGroup` | `10:5173` |
 | `crumbs` | `Breadcrumbs` | `114:1` |
 
 ## Tile  (Showcase demo)
 
 Source: `shared/14-Tile.rml` · artboard `10:3618` · state machine `10:3623` · view model `Tile` `10:3612`
-Contains: Accordion, Alert, Avatar, Badge, Breadcrumbs, Button, Button Group, Checkbox Group, Chip Group, Dialog Demo, Label, Menu, Pagination, Progress Bar, Radio Group, Select, Slider, Split Button, Switch Group, Tabs, Toggle Button Group, Tooltip Button
+Contains: Accordion, Alert, Avatar, Badge, Breadcrumbs, Button, Button Group, Checkbox Group, Chip Group, Dialog Demo, Label, Menu, Pagination, Progress Bar, Radio Group, Range Slider, Select, Slider, Split Button, Switch Group, Tabs, Toggle Button Group, Tooltip Button
 
 | Property | Type | Id |
 |---|---|---|
-| `content` | list of `Pagination` / `Accordion` / `RadioGroup` / `CheckboxGroup` / `SwitchGroup` / `Alert` / `Breadcrumbs` / `TooltipButton` / `ProgressBar` / `DialogDemo` / `Tabs` / `ChipGroup` / `Menu` / `Select` / `SplitButton` / `Badge` / `Button` / `Label` / `Slider` / `Avatar` / `ToggleButtonGroup` / `ButtonGroup` | `10:3861` |
+| `content` | list of `Pagination` / `Accordion` / `RadioGroup` / `CheckboxGroup` / `SwitchGroup` / `Alert` / `Breadcrumbs` / `TooltipButton` / `ProgressBar` / `DialogDemo` / `Tabs` / `ChipGroup` / `Menu` / `Select` / `SplitButton` / `RangeSlider` / `Badge` / `Button` / `Label` / `Slider` / `Avatar` / `ToggleButtonGroup` / `ButtonGroup` | `10:3861` |
 | `name` | string | `10:3614` |
 
 ## Toolbar  (Showcase demo)

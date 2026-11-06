@@ -13,7 +13,7 @@ The kit is also on the [Rive Community](https://rive.app/community/files/25701-5
 - **Actions:** Button · Button Group · Split Button · Toggle Button / Toggle Button Group
 - **Display:** Accordion · Avatar · Badge · Label
 - **Feedback:** Alert · Dialog · Progress Bar · Tooltip
-- **Inputs:** Checkbox / Checkbox Group · Chip / Chip Group · Radio Option / Radio Group · Select · Slider · Switch / Switch Group
+- **Inputs:** Checkbox / Checkbox Group · Chip / Chip Group · Radio Option / Radio Group · Range Slider · Select · Slider · Switch / Switch Group
 - **Navigation:** Breadcrumbs · Menu · Pagination · Tabs
 - **Building blocks:** Accordion Item · Breadcrumb Item · Button Row · Dialog Demo · Menu Item · Nav Group · Nav Item · Page Item · Showcase Section · Sidebar · Slide · Tab · Tile · Toolbar · Tooltip Button
 
@@ -53,6 +53,7 @@ The components carry Rive semantics, so screen readers get a real accessibility 
 | Select | `button` (expandable) | label, the chosen value, expanded, disabled |
 | Radio Option / Radio Group | `radioButton` / `radioGroup` | label, selected |
 | Slider | `slider` | label, value |
+| Range Slider | `group` with two `slider`s | label; Minimum / Maximum with their percentage |
 | Switch | `switchControl` | label, on/off |
 | Tabs / Tab | `tabList` / `tab` | label; tab label, selected, disabled |
 | Toggle Button Group / Toggle Button | `radioGroup` / `radioButton` | group label; label, checked, disabled |
@@ -135,6 +136,15 @@ A row of toggle buttons on a track where exactly one is on, like the Mode and Ro
 - Input goes through the same Activate gate as the Button, so a disabled option ignores every input. Disabled options turn `_textMuted`.
 - The selected option sits on `_surfaceRaised`, the track on `_surfaceSubtle`; corners follow `_radiusSegment` / `_radiusSegmentInner`.
 - Screen readers get a `radioGroup` with a `radioButton` per option that reports checked. For several independent on/off choices, use Chips.
+
+## Range Slider
+
+Two thumbs on one track for a minimum and a maximum, like a price filter. The brand line runs between them.
+
+- View model `RangeSlider`: `label`, `low`, `high`, `minPos`, `maxPos`, `disabled`, `a11yHidden`. Like the Slider, the values are positions on the 200-point track (`minPos` 8 to `maxPos` 192); the header shows them as percentages ("20 – 80").
+- Drag either thumb. `low` never passes `high` and the other way round: each thumb follows a private raw value, and a listener writes it into `low` or `high` through a clamp formula with the other value as its limit. Write `low` or `high` from your app and the thumb follows.
+- Track `_borderStrong`, range `_brand600`, thumbs white with the small theme shadow; disabled uses `_textMuted` and `_surfaceSubtle`.
+- Screen readers get a `group` named by `label` with a `slider` per thumb (Minimum, Maximum) and its percentage.
 
 ## Menu, Select and Split Button
 
