@@ -12,7 +12,7 @@
             </Fill>
             <LayoutComponent styleId="414:21" name="Single (script)" id="414:20">
                 <ScriptedLayout scriptAssetId="414:10" name="Accordion Single" id="414:22"/>
-                <LayoutComponentStyle positionTypeValue="absolute" widthUnitsValue="points" heightUnitsValue="points" id="414:21"/>
+                <LayoutComponentStyle positionTypeValue="absolute" id="414:21"/>
             </LayoutComponent>
             <ArtboardComponentList name="Items" participatesInLayout="true" id="104:195">
                 <DataBindContext sourcePathIds="104:8-104:9" propertyKey="800" nameBased="true" id="104:196"/>

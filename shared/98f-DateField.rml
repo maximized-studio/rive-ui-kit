@@ -1,5 +1,4 @@
 <Rive version="1" kind="fragment">
-    <ScriptAsset file="Date Field.luau" scriptProtocolValue="layout" name="Date Field" groupId="327:1" id="252:17"/>
     <Artboard defaultStateMachineId="252:12" viewModelId="252:1" viewModelInstanceId="252:10" isComponent="true" spaceId="1:5601" width="300" height="430" styleId="252:240" x="13000" y="600" name="Date Field" id="252:11">
         <Fill fillRule="clockwise" id="252:241">
             <SolidColor colorValue="00000000" id="252:242"/>
@@ -37,7 +36,7 @@
                             <DataBindContext sourcePathIds="252:1-252:7" propertyKey="268" nameBased="true" id="252:34"/>
                         </TextValueRun>
                         <LayoutParticipant layoutWidthScaleType="fill" layoutHeightScaleType="hug" id="252:42"/>
-                        <DataBindContext sourcePathIds="252:1-252:8" propertyKey="18" converterId="9:145" nameBased="true" id="252:43"/>
+                        <DataBindContext sourcePathIds="252:1-252:8" propertyKey="18" nameBased="true" converterId="9:145" id="252:43"/>
                     </Text>
                     <Text sizingValue="autoHeight" name="Placeholder" id="252:46">
                         <TextStylePaint fontSize="14" fontAssetId="0:7" familyName="Inter" styleName="Regular" id="252:44">
@@ -53,32 +52,32 @@
                             <DataBindContext sourcePathIds="252:1-252:4" propertyKey="268" nameBased="true" id="252:45"/>
                         </TextValueRun>
                         <LayoutParticipant layoutWidthScaleType="fill" layoutHeightScaleType="hug" id="252:53"/>
-                        <DataBindContext sourcePathIds="252:1-252:8" propertyKey="18" converterId="9:90" nameBased="true" id="252:54"/>
+                        <DataBindContext sourcePathIds="252:1-252:8" propertyKey="18" nameBased="true" converterId="9:90" id="252:54"/>
                     </Text>
-                    <LayoutComponentStyle layoutTypeValue="stack" intrinsicallySizedValue="true" layoutWidthScaleType="fill" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="252:55"/>
+                    <LayoutComponentStyle intrinsicallySizedValue="true" layoutTypeValue="stack" layoutWidthScaleType="fill" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="252:55"/>
                 </LayoutComponent>
-                <LayoutComponent styleId="252:76" width="16" height="16" name="Icon" id="252:77">
-                    <Node x="1" y="1" scaleX="0.5833" scaleY="0.5833" name="Calendar" id="252:57">
+                <LayoutComponent width="16" height="16" styleId="252:76" name="Icon" id="252:77">
+                    <Node x="1" y="1" scaleX="0.58329999" scaleY="0.58329999" name="Calendar" id="252:57">
                         <Shape name="Calendar" id="252:58">
                             <PointsPath isClosed="true" id="252:63">
-                                <StraightVertex x="3" y="5" radius="2.5" id="252:59"/>
-                                <StraightVertex x="21" y="5" radius="2.5" id="252:60"/>
-                                <StraightVertex x="21" y="21" radius="2.5" id="252:61"/>
-                                <StraightVertex x="3" y="21" radius="2.5" id="252:62"/>
+                                <StraightVertex radius="2.5" x="3" y="5" id="252:59"/>
+                                <StraightVertex radius="2.5" x="21" y="5" id="252:60"/>
+                                <StraightVertex radius="2.5" x="21" y="21" id="252:61"/>
+                                <StraightVertex radius="2.5" x="3" y="21" id="252:62"/>
                             </PointsPath>
-                            <PointsPath isClosed="false" id="252:66">
+                            <PointsPath id="252:66">
                                 <StraightVertex x="3" y="10" id="252:64"/>
                                 <StraightVertex x="21" y="10" id="252:65"/>
                             </PointsPath>
-                            <PointsPath isClosed="false" id="252:69">
+                            <PointsPath id="252:69">
                                 <StraightVertex x="8" y="2.5" id="252:67"/>
                                 <StraightVertex x="8" y="6.5" id="252:68"/>
                             </PointsPath>
-                            <PointsPath isClosed="false" id="252:72">
+                            <PointsPath id="252:72">
                                 <StraightVertex x="16" y="2.5" id="252:70"/>
                                 <StraightVertex x="16" y="6.5" id="252:71"/>
                             </PointsPath>
-                            <Stroke thickness="2.6" cap="round" join="round" id="252:73">
+                            <Stroke thickness="2.5999999" cap="round" join="round" id="252:73">
                                 <SolidColor colorValue="FF888888" id="252:74">
                                     <DataBindContext sourcePathIds="10:7-10:7426" propertyKey="37" id="252:75"/>
                                 </SolidColor>
@@ -93,7 +92,7 @@
                             <DataBindContext sourcePathIds="10:7-10:7422" propertyKey="37" id="252:81"/>
                         </SolidColor>
                     </Fill>
-                    <LayoutComponentStyle positionTypeValue="absolute" positionLeftUnitsValue="points" positionRightUnitsValue="points" positionTopUnitsValue="points" positionBottomUnitsValue="points" widthUnitsValue="auto" heightUnitsValue="auto" cornerRadiusTL="8" id="252:83">
+                    <LayoutComponentStyle positionLeftUnitsValue="points" positionRightUnitsValue="points" positionTopUnitsValue="points" positionBottomUnitsValue="points" positionTypeValue="absolute" cornerRadiusTL="8" widthUnitsValue="auto" heightUnitsValue="auto" id="252:83">
                         <DataBindContext sourcePathIds="10:7-901:5" propertyKey="640" id="252:82"/>
                     </LayoutComponentStyle>
                 </LayoutComponent>
@@ -102,23 +101,24 @@
                         <DataBindContext sourcePathIds="10:7-10:7406" propertyKey="37" id="252:86"/>
                     </SolidColor>
                 </Fill>
-                <Stroke thickness="1" cap="butt" join="round" id="252:87">
+                <Stroke join="round" id="252:87">
                     <SolidColor colorValue="FF27272A" id="252:88">
                         <DataBindContext sourcePathIds="10:7-10:7418" propertyKey="37" id="252:89"/>
                     </SolidColor>
                 </Stroke>
-                <Stroke thickness="1" id="252:90">
+                <Stroke id="252:90">
                     <SolidColor colorValue="FF888888" id="252:91">
                         <DataBindContext sourcePathIds="10:7-10:2102" propertyKey="37" id="252:92"/>
                     </SolidColor>
-                    <DataBindContext sourcePathIds="252:1-252:5" propertyKey="47" converterId="9:145" nameBased="true" id="252:93"/>
+                    <DataBindContext sourcePathIds="252:1-252:5" propertyKey="47" nameBased="true" converterId="9:145" id="252:93"/>
                 </Stroke>
-                <SemanticData role="button" isExpandable="true" name="Semantics" id="252:98">
-                    <DataBindContext sourcePathIds="252:1-252:2" propertyKey="983" nameBased="true" id="252:96"/>
-                    <DataBindContext sourcePathIds="252:1-252:6" propertyKey="1004" nameBased="true" id="252:97"/>
+                <SemanticData role="button" traitFlags="33" name="Semantics" id="252:98">
                     <DataBindContext sourcePathIds="252:1-252:7" propertyKey="984" nameBased="true" id="252:94"/>
                     <DataBindContext sourcePathIds="252:1-252:5" propertyKey="996" nameBased="true" id="252:95"/>
+                    <DataBindContext sourcePathIds="252:1-252:2" propertyKey="983" nameBased="true" id="252:96"/>
+                    <DataBindContext sourcePathIds="252:1-252:6" propertyKey="1004" nameBased="true" id="252:97"/>
                 </SemanticData>
+                <FocusData name="Focus" id="0:91761"/>
                 <LayoutComponentStyle gapHorizontal="8" paddingLeft="12" paddingRight="12" layoutAlignmentType="centerLeft" cornerRadiusTL="8" layoutWidthScaleType="fill" widthUnitsValue="auto" id="252:78">
                     <DataBindContext sourcePathIds="10:7-901:5" propertyKey="640" id="252:99"/>
                 </LayoutComponentStyle>
@@ -131,7 +131,7 @@
                             <ViewModelInstanceNumber propertyValue="2026" viewModelPropertyId="410:201" id="252:101"/>
                             <ViewModelInstanceNumber propertyValue="11" viewModelPropertyId="410:202" id="252:102"/>
                             <ViewModelInstanceString propertyValue="2026-11-12" viewModelPropertyId="410:203" id="252:104">
-                                <DataBindContext sourcePathIds="252:1-252:3" propertyKey="561" nameBased="true" twoWay="true" id="252:103"/>
+                                <DataBindContext sourcePathIds="252:1-252:3" propertyKey="561" twoWay="true" nameBased="true" id="252:103"/>
                             </ViewModelInstanceString>
                             <ViewModelInstanceString propertyValue="2026-11-07" viewModelPropertyId="410:204" id="252:105"/>
                             <ViewModelInstanceString propertyValue="Delivery date" viewModelPropertyId="410:205" id="252:107">
@@ -153,13 +153,13 @@
                         <DataBindContext sourcePathIds="10:7-901:35" propertyKey="751" id="252:119"/>
                     </Feather>
                 </Fill>
-                <LayoutComponentStyle positionTypeValue="absolute" positionLeftUnitsValue="points" positionTopUnitsValue="points" positionTop="72" cornerRadiusTL="12" displayValue="none" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="252:14">
+                <LayoutComponentStyle positionTop="72" positionLeftUnitsValue="points" positionTopUnitsValue="points" positionTypeValue="absolute" intrinsicallySizedValue="true" cornerRadiusTL="12" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" displayValue="none" id="252:14">
                     <DataBindContext sourcePathIds="10:7-901:7" propertyKey="640" id="252:122"/>
                 </LayoutComponentStyle>
             </LayoutComponent>
             <LayoutComponentStyle gapVertical="6" flexDirectionValue="column" intrinsicallySizedValue="true" layoutWidthScaleType="fill" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="252:123"/>
         </LayoutComponent>
-        <LayoutComponent styleId="252:129" width="1" height="1" name="Date Field (script)" id="252:130">
+        <LayoutComponent width="1" height="1" styleId="252:129" name="Date Field (script)" id="252:130">
             <ScriptedLayout scriptAssetId="252:17" name="Date Field" id="252:128"/>
             <LayoutComponentStyle positionTypeValue="absolute" id="252:129"/>
         </LayoutComponent>
@@ -167,7 +167,7 @@
             <Fill fillRule="clockwise" id="252:125">
                 <SolidColor colorValue="00000000" id="252:126"/>
             </Fill>
-            <LayoutComponentStyle positionTypeValue="absolute" positionLeftUnitsValue="points" positionRightUnitsValue="points" positionTopUnitsValue="points" positionBottomUnitsValue="points" widthUnitsValue="auto" heightUnitsValue="auto" id="252:127"/>
+            <LayoutComponentStyle positionLeftUnitsValue="points" positionRightUnitsValue="points" positionTopUnitsValue="points" positionBottomUnitsValue="points" positionTypeValue="absolute" widthUnitsValue="auto" heightUnitsValue="auto" id="252:127"/>
         </LayoutComponent>
         <StateMachine name="State Machine 1" id="252:12">
             <StateMachineListener targetId="252:13" name="Hover On" id="252:137">
@@ -216,7 +216,7 @@
                 <ListenerViewModelChange fromViewModelProperty="true" fromDataBindId="252:131" id="252:132">
                     <BindablePropertyBoolean id="252:133">
                         <DataBindContext sourcePathIds="252:1-252:5" propertyKey="634" id="252:131"/>
-                        <DataBindContext sourcePathIds="252:1-252:5" propertyKey="634" converterId="1:1018" direction="true" id="252:134"/>
+                        <DataBindContext sourcePathIds="252:1-252:5" propertyKey="634" direction="true" converterId="1:1018" id="252:134"/>
                     </BindablePropertyBoolean>
                 </ListenerViewModelChange>
             </StateMachineListener>
@@ -309,49 +309,50 @@
         </StateMachine>
         <LinearAnimation loopValue="loop" name="Closed" id="252:18">
             <KeyedObject objectId="252:14" id="252:220">
-                <KeyedProperty propertyKey="596" id="252:219">
+                <KeyedProperty property="displayValue" id="252:219">
                     <KeyFrameUint value="1" id="252:218"/>
                 </KeyedProperty>
             </KeyedObject>
             <KeyedObject objectId="252:15" id="252:225">
-                <KeyedProperty propertyKey="18" id="252:222">
-                    <KeyFrameDouble value="0" id="252:221"/>
+                <KeyedProperty property="opacity" id="252:222">
+                    <KeyFrameDouble id="252:221"/>
                 </KeyedProperty>
-                <KeyedProperty propertyKey="14" id="252:224">
+                <KeyedProperty property="y" id="252:224">
                     <KeyFrameDouble value="-4" id="252:223"/>
                 </KeyedProperty>
             </KeyedObject>
         </LinearAnimation>
         <LinearAnimation loopValue="loop" name="Open" id="252:19">
             <KeyedObject objectId="252:14" id="252:228">
-                <KeyedProperty propertyKey="596" id="252:227">
-                    <KeyFrameUint value="0" id="252:226"/>
+                <KeyedProperty property="displayValue" id="252:227">
+                    <KeyFrameUint id="252:226"/>
                 </KeyedProperty>
             </KeyedObject>
             <KeyedObject objectId="252:15" id="252:233">
-                <KeyedProperty propertyKey="18" id="252:230">
+                <KeyedProperty property="opacity" id="252:230">
                     <KeyFrameDouble value="1" id="252:229"/>
                 </KeyedProperty>
-                <KeyedProperty propertyKey="14" id="252:232">
-                    <KeyFrameDouble value="0" id="252:231"/>
+                <KeyedProperty property="y" id="252:232">
+                    <KeyFrameDouble id="252:231"/>
                 </KeyedProperty>
             </KeyedObject>
         </LinearAnimation>
         <LinearAnimation loopValue="loop" name="Hover Off" id="252:20">
             <KeyedObject objectId="252:22" id="252:236">
-                <KeyedProperty propertyKey="18" id="252:235">
-                    <KeyFrameDouble value="0" id="252:234"/>
+                <KeyedProperty property="opacity" id="252:235">
+                    <KeyFrameDouble id="252:234"/>
                 </KeyedProperty>
             </KeyedObject>
         </LinearAnimation>
         <LinearAnimation loopValue="loop" name="Hover On" id="252:21">
             <KeyedObject objectId="252:22" id="252:239">
-                <KeyedProperty propertyKey="18" id="252:238">
-                    <KeyFrameDouble value="0.04" id="252:237"/>
+                <KeyedProperty property="opacity" id="252:238">
+                    <KeyFrameDouble value="0.039999999" id="252:237"/>
                 </KeyedProperty>
             </KeyedObject>
         </LinearAnimation>
     </Artboard>
+    <ScriptAsset file="Date Field.luau" compilationOrder="14" serializedImplementedMethods="769" scriptProtocolValue="layout" codeFileId="0:62840" name="Date Field" groupId="327:1" id="252:17"/>
     <ViewModel defaultInstanceId="252:10" name="DateField" groupId="1:2673" id="252:1">
         <ViewModelPropertyString name="label" id="252:2"/>
         <ViewModelPropertyString name="value" id="252:3"/>

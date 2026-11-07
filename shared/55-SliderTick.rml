@@ -1,14 +1,51 @@
 <Rive version="1" kind="fragment">
-<Artboard defaultStateMachineId="404:3" viewModelId="403:200" viewModelInstanceId="403:210" isComponent="true" spaceId="1:5601" width="4" height="4" styleId="404:2" x="4000" y="200" name="Slider Tick" id="404:1">
-<Fill fillRule="clockwise" id="404:32"><SolidColor colorValue="00000000" id="404:33"/></Fill>
-<LayoutComponentStyle id="404:2"/>
-<Node x="2" y="2" name="Dot" id="404:34">
-<Node name="On Wrap" id="404:35"><Shape name="On" opacity="0.55" id="404:17"><PointsPath isClosed="true" id="404:18"><CubicMirroredVertex x="0" y="-2.0" rotation="0" distance="1.1046" id="404:13"/><CubicMirroredVertex x="2.0" y="0" rotation="1.5707963267948966" distance="1.1046" id="404:14"/><CubicMirroredVertex x="0" y="2.0" rotation="3.141592653589793" distance="1.1046" id="404:15"/><CubicMirroredVertex x="-2.0" y="0" rotation="-1.5707963267948966" distance="1.1046" id="404:16"/></PointsPath><Fill fillRule="clockwise" id="404:6"><SolidColor colorValue="FF09090B" id="404:7"><DataBindContext sourcePathIds="10:7-10:7402" propertyKey="37" id="404:8"/></SolidColor></Fill></Shape><DataBindContext sourcePathIds="403:200-403:201" propertyKey="18" nameBased="true" converterId="9:145" id="404:36"/></Node>
-<Node name="Off Wrap" id="404:37"><Shape name="Off"  id="404:30"><PointsPath isClosed="true" id="404:31"><CubicMirroredVertex x="0" y="-2.0" rotation="0" distance="1.1046" id="404:26"/><CubicMirroredVertex x="2.0" y="0" rotation="1.5707963267948966" distance="1.1046" id="404:27"/><CubicMirroredVertex x="0" y="2.0" rotation="3.141592653589793" distance="1.1046" id="404:28"/><CubicMirroredVertex x="-2.0" y="0" rotation="-1.5707963267948966" distance="1.1046" id="404:29"/></PointsPath><Fill fillRule="clockwise" id="404:19"><SolidColor colorValue="FFA1A1AA" id="404:20"><DataBindContext sourcePathIds="10:7-10:7426" propertyKey="37" id="404:21"/></SolidColor></Fill></Shape><DataBindContext sourcePathIds="403:200-403:201" propertyKey="18" nameBased="true" converterId="9:90" id="404:38"/></Node>
-</Node>
-<StateMachine name="State Machine 1" id="404:3">
-<StateMachineLayer name="Layer 1" id="404:4"><AnimationState animationId="404:5" id="404:39"/><AnyState id="404:40"/><ExitState id="404:41"/><EntryState id="404:42"/></StateMachineLayer>
-</StateMachine>
-<LinearAnimation name="Idle" id="404:5"/>
-</Artboard>
+    <Artboard defaultStateMachineId="404:3" viewModelId="403:200" viewModelInstanceId="403:210" isComponent="true" spaceId="1:5601" width="4" height="4" styleId="404:2" x="4000" y="200" name="Slider Tick" id="404:1">
+        <Fill fillRule="clockwise" id="404:32">
+            <SolidColor colorValue="00000000" id="404:33"/>
+        </Fill>
+        <LayoutComponentStyle id="404:2"/>
+        <Node x="2" y="2" name="Dot" id="404:34">
+            <Node name="On Wrap" id="404:35">
+                <Shape opacity="0.55000001" name="On" id="404:17">
+                    <PointsPath isClosed="true" id="404:18">
+                        <CubicMirroredVertex distance="1.1046" y="-2" id="404:13"/>
+                        <CubicMirroredVertex rotation="1.5707964" distance="1.1046" x="2" id="404:14"/>
+                        <CubicMirroredVertex rotation="3.1415927" distance="1.1046" y="2" id="404:15"/>
+                        <CubicMirroredVertex rotation="-1.5707964" distance="1.1046" x="-2" id="404:16"/>
+                    </PointsPath>
+                    <Fill fillRule="clockwise" id="404:6">
+                        <SolidColor colorValue="FF09090B" id="404:7">
+                            <DataBindContext sourcePathIds="10:7-10:7402" propertyKey="37" id="404:8"/>
+                        </SolidColor>
+                    </Fill>
+                </Shape>
+                <DataBindContext sourcePathIds="403:200-403:201" propertyKey="18" nameBased="true" converterId="9:145" id="404:36"/>
+            </Node>
+            <Node name="Off Wrap" id="404:37">
+                <Shape name="Off" id="404:30">
+                    <PointsPath isClosed="true" id="404:31">
+                        <CubicMirroredVertex distance="1.1046" y="-2" id="404:26"/>
+                        <CubicMirroredVertex rotation="1.5707964" distance="1.1046" x="2" id="404:27"/>
+                        <CubicMirroredVertex rotation="3.1415927" distance="1.1046" y="2" id="404:28"/>
+                        <CubicMirroredVertex rotation="-1.5707964" distance="1.1046" x="-2" id="404:29"/>
+                    </PointsPath>
+                    <Fill fillRule="clockwise" id="404:19">
+                        <SolidColor colorValue="FFA1A1AA" id="404:20">
+                            <DataBindContext sourcePathIds="10:7-10:7426" propertyKey="37" id="404:21"/>
+                        </SolidColor>
+                    </Fill>
+                </Shape>
+                <DataBindContext sourcePathIds="403:200-403:201" propertyKey="18" nameBased="true" converterId="9:90" id="404:38"/>
+            </Node>
+        </Node>
+        <StateMachine name="State Machine 1" id="404:3">
+            <StateMachineLayer name="Layer 1" id="404:4">
+                <AnimationState animationId="404:5" id="404:39"/>
+                <AnyState id="404:40"/>
+                <ExitState id="404:41"/>
+                <EntryState id="404:42"/>
+            </StateMachineLayer>
+        </StateMachine>
+        <LinearAnimation name="Idle" id="404:5"/>
+    </Artboard>
 </Rive>

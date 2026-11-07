@@ -516,6 +516,88 @@
         <FormulaTokenOperation operationType="multiply" id="167:410"/>
         <FormulaTokenInput id="167:411"/>
     </DataConverterFormula>
+    <DataConverterFormula name="Number · Room below" groupId="1:2674" id="400:300">
+        <FormulaTokenFunction id="400:310"/>
+        <FormulaTokenInput id="400:311"/>
+        <FormulaTokenOperation operationType="subtract" id="400:312"/>
+        <FormulaTokenValue id="400:313">
+            <DataBindContext sourcePathIds="157:1-157:3" propertyKey="777" nameBased="true" id="400:314"/>
+        </FormulaTokenValue>
+        <FormulaTokenArgumentSeparator id="400:315"/>
+        <FormulaTokenValue id="400:316"/>
+        <FormulaTokenOperation operationType="subtract" id="400:317"/>
+        <FormulaTokenValue id="400:318">
+            <DataBindContext sourcePathIds="157:1-157:7" propertyKey="777" nameBased="true" converterId="9:145" id="400:319"/>
+        </FormulaTokenValue>
+        <FormulaTokenParenthesisClose id="400:320"/>
+    </DataConverterFormula>
+    <DataConverterFormula name="Number · Room above" groupId="1:2674" id="400:301">
+        <FormulaTokenFunction id="400:340"/>
+        <FormulaTokenValue id="400:341">
+            <DataBindContext sourcePathIds="157:1-157:4" propertyKey="777" nameBased="true" id="400:342"/>
+        </FormulaTokenValue>
+        <FormulaTokenOperation operationType="subtract" id="400:343"/>
+        <FormulaTokenInput id="400:344"/>
+        <FormulaTokenArgumentSeparator id="400:345"/>
+        <FormulaTokenValue id="400:346"/>
+        <FormulaTokenOperation operationType="subtract" id="400:347"/>
+        <FormulaTokenValue id="400:348">
+            <DataBindContext sourcePathIds="157:1-157:7" propertyKey="777" nameBased="true" converterId="9:145" id="400:349"/>
+        </FormulaTokenValue>
+        <FormulaTokenParenthesisClose id="400:350"/>
+    </DataConverterFormula>
+    <DataConverterFormula name="Discrete Slider · Thumb x" groupId="1:2674" id="403:301">
+        <FormulaTokenInput id="403:600"/>
+        <FormulaTokenOperation operationType="multiply" id="403:601"/>
+        <FormulaTokenValue operationValue="260" id="403:602"/>
+        <FormulaTokenOperation id="403:603"/>
+        <FormulaTokenValue operationValue="10" id="403:604"/>
+    </DataConverterFormula>
+    <DataConverterFormula name="Discrete Slider · Fill percent" groupId="1:2674" id="403:302">
+        <FormulaTokenInput id="403:605"/>
+        <FormulaTokenOperation operationType="multiply" id="403:606"/>
+        <FormulaTokenValue operationValue="100" id="403:607"/>
+    </DataConverterFormula>
+    <DataConverterFormula name="Discrete Slider · Step up" groupId="1:2674" id="403:303">
+        <FormulaTokenFunction id="403:608"/>
+        <FormulaTokenValue id="403:609">
+            <DataBindContext sourcePathIds="403:100-403:103" propertyKey="777" nameBased="true" id="403:610"/>
+        </FormulaTokenValue>
+        <FormulaTokenArgumentSeparator id="403:611"/>
+        <FormulaTokenInput id="403:612"/>
+        <FormulaTokenOperation id="403:613"/>
+        <FormulaTokenValue id="403:614">
+            <DataBindContext sourcePathIds="403:100-403:104" propertyKey="777" nameBased="true" id="403:615"/>
+        </FormulaTokenValue>
+        <FormulaTokenParenthesisClose id="403:616"/>
+    </DataConverterFormula>
+    <DataConverterFormula name="Discrete Slider · Step down" groupId="1:2674" id="403:304">
+        <FormulaTokenFunction functionType="max" id="403:617"/>
+        <FormulaTokenValue id="403:618">
+            <DataBindContext sourcePathIds="403:100-403:102" propertyKey="777" nameBased="true" id="403:619"/>
+        </FormulaTokenValue>
+        <FormulaTokenArgumentSeparator id="403:620"/>
+        <FormulaTokenInput id="403:621"/>
+        <FormulaTokenOperation operationType="subtract" id="403:622"/>
+        <FormulaTokenValue id="403:623">
+            <DataBindContext sourcePathIds="403:100-403:104" propertyKey="777" nameBased="true" id="403:624"/>
+        </FormulaTokenValue>
+        <FormulaTokenParenthesisClose id="403:625"/>
+    </DataConverterFormula>
+    <DataConverterFormula name="Checkbox · State (0, 1, mixed 2)" groupId="1:2674" id="422:511">
+        <FormulaTokenInput id="422:512"/>
+        <FormulaTokenOperation id="422:513"/>
+        <FormulaTokenValue operationValue="2" id="422:514"/>
+        <FormulaTokenOperation operationType="multiply" id="422:515"/>
+        <FormulaTokenValue id="422:516">
+            <DataBindContext sourcePathIds="1:149-422:500" propertyKey="777" nameBased="true" converterId="9:145" id="422:517"/>
+        </FormulaTokenValue>
+    </DataConverterFormula>
+    <DataConverterFormula name="Checkbox Group · Indent (formula)" groupId="1:2674" id="422:595">
+        <FormulaTokenInput id="422:597"/>
+        <FormulaTokenOperation operationType="multiply" id="422:598"/>
+        <FormulaTokenValue operationValue="26" id="422:599"/>
+    </DataConverterFormula>
     <DataConverterGroup name="Slider · Percent text" groupId="1:2674" id="2:40">
         <DataConverterGroupItem converterId="2:41" id="2:60"/>
         <DataConverterGroupItem converterId="2:61" id="2:62"/>
@@ -585,10 +667,31 @@
         <DataConverterGroupItem converterId="167:404" id="167:413"/>
         <DataConverterGroupItem converterId="167:408" id="167:414"/>
     </DataConverterGroup>
+    <DataConverterGroup name="Number · Decrease off" groupId="1:2674" id="400:303">
+        <DataConverterGroupItem converterId="400:300" id="400:304"/>
+        <DataConverterGroupItem converterId="400:302" id="400:305"/>
+    </DataConverterGroup>
+    <DataConverterGroup name="Number · Increase off" groupId="1:2674" id="400:306">
+        <DataConverterGroupItem converterId="400:301" id="400:307"/>
+        <DataConverterGroupItem converterId="400:302" id="400:308"/>
+    </DataConverterGroup>
+    <DataConverterGroup name="Discrete Slider · Value (to text)" groupId="1:2674" id="403:300">
+        <DataConverterGroupItem converterId="403:305" id="403:307"/>
+        <DataConverterGroupItem converterId="403:306" id="403:308"/>
+    </DataConverterGroup>
+    <DataConverterGroup name="Checkbox · Semantic state" groupId="1:2674" id="422:510">
+        <DataConverterGroupItem converterId="2:64" id="422:518"/>
+        <DataConverterGroupItem converterId="422:511" id="422:519"/>
+    </DataConverterGroup>
+    <DataConverterGroup name="Checkbox Group · Indent" groupId="1:2674" id="422:590">
+        <DataConverterGroupItem converterId="9:145" id="422:594"/>
+        <DataConverterGroupItem converterId="422:595" id="422:596"/>
+    </DataConverterGroup>
     <DataConverterListToLength name="Showcase · Tile count" groupId="1:2674" id="100:59"/>
     <DataConverterStringPad length="3" text=" " name="Progress · Pad to 3" groupId="1:2674" id="130:103"/>
     <DataConverterStringPad length="4" text="%" padType="end" name="Progress · Percent sign" groupId="1:2674" id="130:104"/>
     <DataConverterStringPad length="6" text=" of 5" padType="end" name="Rating · Of five" groupId="1:2674" id="155:82"/>
+    <DataConverterStringRemoveZeros name="Discrete Slider · No trailing zeros" groupId="1:2674" id="403:306"/>
     <DataConverterStringTrim name="Progress · Trim start" groupId="1:2674" id="130:105"/>
     <DataConverterToNumber name="Checkbox · Checked (to number)" groupId="1:2674" id="2:64"/>
     <DataConverterToNumber name="Showcase · Panel width / Disabled · Shield (to number)" groupId="1:2674" id="9:91"/>
@@ -607,6 +710,8 @@
     <DataConverterToString round="true" name="Rating · Value (to text)" groupId="1:2674" id="155:81"/>
     <DataConverterToString round="true" name="Number · Value (to text)" groupId="1:2674" id="157:80"/>
     <DataConverterToString round="true" name="Stepper · Number (to text)" groupId="1:2674" id="159:65"/>
+    <DataConverterToString round="true" decimals="1" name="Discrete Slider · Value (1 decimal)" groupId="1:2674" id="403:305"/>
+    <DataConverterToString round="true" name="Calendar · Day (to text)" groupId="1:2674" id="410:300"/>
     <DataFolder name="UI Kit" id="1:2753">
         <DataFolder name="Utils" id="1:1021">
             <DataConverterBooleanNegate name="Utils · Toggle" groupId="1:2674" id="1:1018"/>
@@ -897,6 +1002,54 @@
                 <ViewModelPropertyBoolean name="_hover" id="1:4211"/>
                 <ViewModelPropertyString name="text" id="1:4186"/>
                 <ViewModelPropertyNumber name="icon" id="167:1"/>
+                <ViewModelInstance exports="true" name="Context Copy" id="518:970">
+                    <ViewModelInstanceString propertyValue="Copy" viewModelPropertyId="1:4186" id="518:85"/>
+                    <ViewModelInstanceBoolean viewModelPropertyId="1:4211" id="518:86"/>
+                    <ViewModelInstanceTrigger viewModelPropertyId="1:4213" id="518:87"/>
+                    <ViewModelInstanceSymbolListIndex viewModelPropertyId="1:4327" id="518:88"/>
+                    <ViewModelInstanceBoolean viewModelPropertyId="7:43" id="518:89"/>
+                    <ViewModelInstanceBoolean viewModelPropertyId="7:47" id="518:90"/>
+                    <ViewModelInstanceViewModel propertyValue="518:960" viewModelPropertyId="145:1" id="518:91"/>
+                    <ViewModelInstanceTrigger viewModelPropertyId="145:2" id="518:92"/>
+                    <ViewModelInstanceTrigger viewModelPropertyId="145:3" id="518:93"/>
+                    <ViewModelInstanceNumber propertyValue="7" viewModelPropertyId="167:1" id="518:94"/>
+                </ViewModelInstance>
+                <ViewModelInstance exports="true" name="Context Rename" id="518:971">
+                    <ViewModelInstanceString propertyValue="Rename" viewModelPropertyId="1:4186" id="518:95"/>
+                    <ViewModelInstanceBoolean viewModelPropertyId="1:4211" id="518:96"/>
+                    <ViewModelInstanceTrigger viewModelPropertyId="1:4213" id="518:97"/>
+                    <ViewModelInstanceSymbolListIndex viewModelPropertyId="1:4327" id="518:98"/>
+                    <ViewModelInstanceBoolean viewModelPropertyId="7:43" id="518:99"/>
+                    <ViewModelInstanceBoolean viewModelPropertyId="7:47" id="518:100"/>
+                    <ViewModelInstanceViewModel propertyValue="518:960" viewModelPropertyId="145:1" id="518:101"/>
+                    <ViewModelInstanceTrigger viewModelPropertyId="145:2" id="518:102"/>
+                    <ViewModelInstanceTrigger viewModelPropertyId="145:3" id="518:103"/>
+                    <ViewModelInstanceNumber propertyValue="5" viewModelPropertyId="167:1" id="518:104"/>
+                </ViewModelInstance>
+                <ViewModelInstance exports="true" name="Context Move to folder" id="518:972">
+                    <ViewModelInstanceString propertyValue="Move to folder" viewModelPropertyId="1:4186" id="518:105"/>
+                    <ViewModelInstanceBoolean viewModelPropertyId="1:4211" id="518:106"/>
+                    <ViewModelInstanceTrigger viewModelPropertyId="1:4213" id="518:107"/>
+                    <ViewModelInstanceSymbolListIndex viewModelPropertyId="1:4327" id="518:108"/>
+                    <ViewModelInstanceBoolean viewModelPropertyId="7:43" id="518:109"/>
+                    <ViewModelInstanceBoolean viewModelPropertyId="7:47" id="518:110"/>
+                    <ViewModelInstanceViewModel propertyValue="518:960" viewModelPropertyId="145:1" id="518:111"/>
+                    <ViewModelInstanceTrigger viewModelPropertyId="145:2" id="518:112"/>
+                    <ViewModelInstanceTrigger viewModelPropertyId="145:3" id="518:113"/>
+                    <ViewModelInstanceNumber propertyValue="2" viewModelPropertyId="167:1" id="518:114"/>
+                </ViewModelInstance>
+                <ViewModelInstance exports="true" name="Context Export" id="518:973">
+                    <ViewModelInstanceString propertyValue="Export" viewModelPropertyId="1:4186" id="518:115"/>
+                    <ViewModelInstanceBoolean viewModelPropertyId="1:4211" id="518:116"/>
+                    <ViewModelInstanceTrigger viewModelPropertyId="1:4213" id="518:117"/>
+                    <ViewModelInstanceSymbolListIndex viewModelPropertyId="1:4327" id="518:118"/>
+                    <ViewModelInstanceBoolean viewModelPropertyId="7:43" id="518:119"/>
+                    <ViewModelInstanceBoolean viewModelPropertyId="7:47" id="518:120"/>
+                    <ViewModelInstanceViewModel propertyValue="518:960" viewModelPropertyId="145:1" id="518:121"/>
+                    <ViewModelInstanceTrigger viewModelPropertyId="145:2" id="518:122"/>
+                    <ViewModelInstanceTrigger viewModelPropertyId="145:3" id="518:123"/>
+                    <ViewModelInstanceNumber propertyValue="4" viewModelPropertyId="167:1" id="518:124"/>
+                </ViewModelInstance>
                 <ViewModelInstance exports="true" name="Menu item" id="1:4185">
                     <ViewModelInstanceString propertyValue="Menu item 1" viewModelPropertyId="1:4186" id="1:4187"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="1:4211" id="1:4212"/>
@@ -1404,36 +1557,36 @@
                     <ViewModelInstanceBoolean viewModelPropertyId="7:10" id="7:11"/>
                     <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="1:157" id="10:4159"/>
                     <ViewModelInstanceString propertyValue="Product updates" viewModelPropertyId="1:955" id="10:4160"/>
-                    <ViewModelInstanceBoolean viewModelPropertyId="422:500" id="422:1"/>
                     <ViewModelInstanceTrigger viewModelPropertyId="1:1533" id="10:4161"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="1:2761" id="10:4162"/>
+                    <ViewModelInstanceBoolean viewModelPropertyId="422:500" id="422:1"/>
                 </ViewModelInstance>
                 <ViewModelInstance exports="true" name="Weekly digest" id="10:4164">
                     <ViewModelInstanceBoolean viewModelPropertyId="7:5" id="7:7"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="7:10" id="7:12"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="1:157" id="10:4165"/>
                     <ViewModelInstanceString propertyValue="Weekly digest" viewModelPropertyId="1:955" id="10:4166"/>
-                    <ViewModelInstanceBoolean viewModelPropertyId="422:500" id="422:2"/>
                     <ViewModelInstanceTrigger viewModelPropertyId="1:1533" id="10:4167"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="1:2761" id="10:4168"/>
+                    <ViewModelInstanceBoolean viewModelPropertyId="422:500" id="422:2"/>
                 </ViewModelInstance>
                 <ViewModelInstance exports="true" name="Security alerts" id="10:4170">
                     <ViewModelInstanceBoolean viewModelPropertyId="7:5" id="7:8"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="7:10" id="7:13"/>
                     <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="1:157" id="10:4171"/>
                     <ViewModelInstanceString propertyValue="Security alerts" viewModelPropertyId="1:955" id="10:4172"/>
-                    <ViewModelInstanceBoolean viewModelPropertyId="422:500" id="422:3"/>
                     <ViewModelInstanceTrigger viewModelPropertyId="1:1533" id="10:4173"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="1:2761" id="10:4174"/>
+                    <ViewModelInstanceBoolean viewModelPropertyId="422:500" id="422:3"/>
                 </ViewModelInstance>
                 <ViewModelInstance exports="true" id="1:150">
                     <ViewModelInstanceBoolean viewModelPropertyId="1:157" id="1:158"/>
                     <ViewModelInstanceString propertyValue="Checkbox" viewModelPropertyId="1:955" id="1:956"/>
-                    <ViewModelInstanceBoolean viewModelPropertyId="422:500" id="422:4"/>
                     <ViewModelInstanceTrigger viewModelPropertyId="1:1533" id="1:1534"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="1:2761" id="1:2762"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="7:5" id="7:9"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="7:10" id="7:14"/>
+                    <ViewModelInstanceBoolean viewModelPropertyId="422:500" id="422:4"/>
                 </ViewModelInstance>
             </ViewModel>
         </DataFolder>
@@ -2546,15 +2699,15 @@
                 <ViewModelPropertyBoolean name="_mixed" id="422:504"/>
                 <ViewModelInstance exports="true" name="Preferences" id="10:4176">
                     <ViewModelInstanceBoolean viewModelPropertyId="7:61" id="7:62"/>
-                    <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="422:501" id="422:505"/>
-                    <ViewModelInstanceString propertyValue="All emails" viewModelPropertyId="422:502" id="422:506"/>
-                    <ViewModelInstanceBoolean viewModelPropertyId="422:503" id="422:507"/>
-                    <ViewModelInstanceBoolean viewModelPropertyId="422:504" id="422:508"/>
                     <ViewModelInstanceList viewModelPropertyId="10:4156" id="10:4177">
                         <ViewModelInstanceListItem viewModelId="1:149" viewModelInstanceId="10:4158" id="10:4178"/>
                         <ViewModelInstanceListItem viewModelId="1:149" viewModelInstanceId="10:4164" id="10:4179"/>
                         <ViewModelInstanceListItem viewModelId="1:149" viewModelInstanceId="10:4170" id="10:4180"/>
                     </ViewModelInstanceList>
+                    <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="422:501" id="422:505"/>
+                    <ViewModelInstanceString propertyValue="All emails" viewModelPropertyId="422:502" id="422:506"/>
+                    <ViewModelInstanceBoolean viewModelPropertyId="422:503" id="422:507"/>
+                    <ViewModelInstanceBoolean viewModelPropertyId="422:504" id="422:508"/>
                 </ViewModelInstance>
             </ViewModel>
             <ViewModel defaultInstanceId="10:4467" name="SwitchGroup" groupId="1:2673" id="10:4445">
@@ -2795,9 +2948,15 @@
     <ImageAsset file="Avatar.png" height="128" width="128" assetId="5251943" name="Avatar" groupId="1:2093" id="1:2091"/>
     <ImageAsset file="Showcase Cover.webp" format="webp" height="1080" width="1440" assetId="7319575" name="Showcase Cover" groupId="1:2093" id="42:629"/>
     <RenderPreset name="Preset 1" artboardId="10:110" format="png_sequence" width="1440" height="1080" id="57:1"/>
-    <ScriptAsset file="Pagination Pages.luau" serializedImplementedMethods="769" scriptProtocolValue="layout" codeFileId="0:15811" name="Pagination Pages" groupId="327:1" id="912:3"/>
-    <ScriptAsset file="Viewport.luau" compilationOrder="1" serializedImplementedMethods="4921" scriptProtocolValue="layout" codeFileId="0:27924" name="Viewport" groupId="327:1" id="913:9"/>
-    <ScriptAsset file="Tooltip Placement.luau" compilationOrder="2" serializedImplementedMethods="4881" scriptProtocolValue="layout" codeFileId="0:20578" name="Tooltip Placement" groupId="327:1" id="914:10"/>
+    <ScriptAsset file="Zero Or Less.luau" compilationOrder="10" serializedImplementedMethods="3072" scriptProtocolValue="converter" codeFileId="0:84187" name="Zero Or Less" groupId="327:1" id="400:200"/>
+    <ScriptAsset file="Discrete Slider.luau" compilationOrder="7" serializedImplementedMethods="4985" scriptProtocolValue="layout" codeFileId="0:85120" name="Discrete Slider" groupId="327:1" id="403:400"/>
+    <ScriptAsset file="Calendar.luau" compilationOrder="8" serializedImplementedMethods="769" scriptProtocolValue="layout" codeFileId="0:91752" name="Calendar" groupId="327:1" id="410:400"/>
+    <ScriptAsset file="Accordion Single.luau" compilationOrder="12" serializedImplementedMethods="769" scriptProtocolValue="layout" codeFileId="0:80578" name="Accordion Single" groupId="327:1" id="414:10"/>
+    <ScriptAsset file="Select All.luau" compilationOrder="11" serializedImplementedMethods="769" scriptProtocolValue="layout" codeFileId="0:82275" name="Select All" groupId="327:1" id="422:520"/>
+    <ScriptAsset file="Pagination Pages.luau" compilationOrder="5" serializedImplementedMethods="769" scriptProtocolValue="layout" codeFileId="0:15811" name="Pagination Pages" groupId="327:1" id="912:3"/>
+    <ScriptAsset file="Viewport.luau" compilationOrder="9" serializedImplementedMethods="4921" scriptProtocolValue="layout" codeFileId="0:27924" name="Viewport" groupId="327:1" id="913:9"/>
+    <ScriptAsset file="Tooltip Placement.luau" compilationOrder="6" serializedImplementedMethods="4881" scriptProtocolValue="layout" codeFileId="0:20578" name="Tooltip Placement" groupId="327:1" id="914:10"/>
+    <ScriptedDataConverter scriptAssetId="400:200" name="Utils · Zero or less" groupId="1:2674" id="400:302"/>
     <Space name="Space 1" colorValue="FF2F2F2F" id="1:5601"/>
     <TransitionPropertyViewModelComparator id="1:2359"/>
     <TransitionPropertyViewModelComparator id="1:2363"/>
@@ -5438,6 +5597,12 @@
         <ViewModelPropertyString name="label" id="146:3"/>
         <ViewModelPropertyBoolean name="open" id="146:4"/>
         <ViewModelPropertyBoolean name="showSelection" id="146:5"/>
+        <ViewModelInstance exports="true" name="Context" id="518:960">
+            <ViewModelInstanceNumber propertyValue="-1" viewModelPropertyId="146:2" id="518:81"/>
+            <ViewModelInstanceString propertyValue="Context" viewModelPropertyId="146:3" id="518:82"/>
+            <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="146:4" id="518:83"/>
+            <ViewModelInstanceBoolean viewModelPropertyId="146:5" id="518:84"/>
+        </ViewModelInstance>
         <ViewModelInstance exports="true" name="Menu" id="146:20">
             <ViewModelInstanceNumber propertyValue="-1" viewModelPropertyId="146:2" id="146:322"/>
             <ViewModelInstanceString propertyValue="Menu" viewModelPropertyId="146:3" id="146:323"/>
@@ -5468,6 +5633,17 @@
         <ViewModelPropertyViewModel viewModelReferenceId="146:1" name="state" id="146:12"/>
         <ViewModelPropertyString name="label" id="146:13"/>
         <ViewModelPropertyBoolean name="a11yHidden" id="146:14"/>
+        <ViewModelInstance exports="true" name="Context" id="518:961">
+            <ViewModelInstanceList viewModelPropertyId="146:11" id="518:125">
+                <ViewModelInstanceListItem name="Copy" viewModelId="1:4184" viewModelInstanceId="518:970" id="518:126"/>
+                <ViewModelInstanceListItem name="Rename" viewModelId="1:4184" viewModelInstanceId="518:971" id="518:127"/>
+                <ViewModelInstanceListItem name="Move to folder" viewModelId="1:4184" viewModelInstanceId="518:972" id="518:128"/>
+                <ViewModelInstanceListItem name="Export" viewModelId="1:4184" viewModelInstanceId="518:973" id="518:129"/>
+            </ViewModelInstanceList>
+            <ViewModelInstanceViewModel propertyValue="518:960" viewModelPropertyId="146:12" id="518:130"/>
+            <ViewModelInstanceString propertyValue="File actions" viewModelPropertyId="146:13" id="518:131"/>
+            <ViewModelInstanceBoolean viewModelPropertyId="146:14" id="518:132"/>
+        </ViewModelInstance>
         <ViewModelInstance exports="true" name="Countries" id="146:31">
             <ViewModelInstanceList viewModelPropertyId="146:11" id="146:236">
                 <ViewModelInstanceListItem name="Netherlands" viewModelId="1:4184" viewModelInstanceId="146:410" id="146:237"/>
@@ -5729,83 +5905,6 @@
             <ViewModelInstanceTrigger viewModelPropertyId="160:4" id="160:23"/>
         </ViewModelInstance>
     </ViewModel>
-    <DataConverterFormula name="Number · Room below" groupId="1:2674" id="400:300">
-        <FormulaTokenFunction id="400:310"/>
-        <FormulaTokenInput id="400:311"/>
-        <FormulaTokenOperation operationType="subtract" id="400:312"/>
-        <FormulaTokenValue id="400:313"><DataBindContext sourcePathIds="157:1-157:3" propertyKey="777" nameBased="true" id="400:314"/></FormulaTokenValue>
-        <FormulaTokenArgumentSeparator id="400:315"/>
-        <FormulaTokenValue id="400:316"/>
-        <FormulaTokenOperation operationType="subtract" id="400:317"/>
-        <FormulaTokenValue id="400:318"><DataBindContext sourcePathIds="157:1-157:7" propertyKey="777" nameBased="true" converterId="9:145" id="400:319"/></FormulaTokenValue>
-        <FormulaTokenParenthesisClose id="400:320"/>
-    </DataConverterFormula>
-    <DataConverterFormula name="Number · Room above" groupId="1:2674" id="400:301">
-        <FormulaTokenFunction id="400:340"/>
-        <FormulaTokenValue id="400:341"><DataBindContext sourcePathIds="157:1-157:4" propertyKey="777" nameBased="true" id="400:342"/></FormulaTokenValue>
-        <FormulaTokenOperation operationType="subtract" id="400:343"/>
-        <FormulaTokenInput id="400:344"/>
-        <FormulaTokenArgumentSeparator id="400:345"/>
-        <FormulaTokenValue id="400:346"/>
-        <FormulaTokenOperation operationType="subtract" id="400:347"/>
-        <FormulaTokenValue id="400:348"><DataBindContext sourcePathIds="157:1-157:7" propertyKey="777" nameBased="true" converterId="9:145" id="400:349"/></FormulaTokenValue>
-        <FormulaTokenParenthesisClose id="400:350"/>
-    </DataConverterFormula>
-    <ScriptedDataConverter scriptAssetId="400:200" name="Utils · Zero or less" groupId="1:2674" id="400:302"/>
-    <DataConverterGroup name="Number · Decrease off" groupId="1:2674" id="400:303">
-        <DataConverterGroupItem converterId="400:300" id="400:304"/>
-        <DataConverterGroupItem converterId="400:302" id="400:305"/>
-    </DataConverterGroup>
-    <DataConverterGroup name="Number · Increase off" groupId="1:2674" id="400:306">
-        <DataConverterGroupItem converterId="400:301" id="400:307"/>
-        <DataConverterGroupItem converterId="400:302" id="400:308"/>
-    </DataConverterGroup>
-    <DataConverterFormula name="Checkbox · State (0, 1, mixed 2)" groupId="1:2674" id="422:511">
-        <FormulaTokenInput id="422:512"/>
-        <FormulaTokenOperation id="422:513"/>
-        <FormulaTokenValue operationValue="2" id="422:514"/>
-        <FormulaTokenOperation operationType="multiply" id="422:515"/>
-        <FormulaTokenValue id="422:516"><DataBindContext sourcePathIds="1:149-422:500" propertyKey="777" nameBased="true" converterId="9:145" id="422:517"/></FormulaTokenValue>
-    </DataConverterFormula>
-    <DataConverterGroup name="Checkbox · Semantic state" groupId="1:2674" id="422:510">
-        <DataConverterGroupItem converterId="2:64" id="422:518"/>
-        <DataConverterGroupItem converterId="422:511" id="422:519"/>
-    </DataConverterGroup>
-    <DataConverterGroup name="Checkbox Group · Indent" groupId="1:2674" id="422:590">
-        <DataConverterGroupItem converterId="9:145" id="422:594"/>
-        <DataConverterGroupItem converterId="422:595" id="422:596"/>
-    </DataConverterGroup>
-    <DataConverterFormula name="Checkbox Group · Indent (formula)" groupId="1:2674" id="422:595">
-        <FormulaTokenInput id="422:597"/>
-        <FormulaTokenOperation operationType="multiply" id="422:598"/>
-        <FormulaTokenValue operationValue="26" id="422:599"/>
-    </DataConverterFormula>
-    <ScriptAsset file="Accordion Single.luau" name="Accordion Single" groupId="327:1" id="414:10"/>
-    <ScriptAsset file="Select All.luau" name="Select All" groupId="327:1" id="422:520"/>
-    <ScriptAsset file="Zero Or Less.luau" name="Zero Or Less" groupId="327:1" id="400:200"/>
-    <!-- discrete-slider -->
-    <DataConverterToString round="true" decimals="1" name="Discrete Slider · Value (1 decimal)" groupId="1:2674" id="403:305"/>
-    <DataConverterStringRemoveZeros name="Discrete Slider · No trailing zeros" groupId="1:2674" id="403:306"/>
-    <DataConverterGroup name="Discrete Slider · Value (to text)" groupId="1:2674" id="403:300">
-        <DataConverterGroupItem converterId="403:305" id="403:307"/>
-        <DataConverterGroupItem converterId="403:306" id="403:308"/>
-    </DataConverterGroup>
-    <DataConverterFormula name="Discrete Slider · Thumb x" groupId="1:2674" id="403:301">
-        <FormulaTokenInput id="403:600"/><FormulaTokenOperation operationType="multiply" id="403:601"/><FormulaTokenValue operationValue="260" id="403:602"/>
-        <FormulaTokenOperation id="403:603"/><FormulaTokenValue operationValue="10" id="403:604"/>
-    </DataConverterFormula>
-    <DataConverterFormula name="Discrete Slider · Fill percent" groupId="1:2674" id="403:302">
-        <FormulaTokenInput id="403:605"/><FormulaTokenOperation operationType="multiply" id="403:606"/><FormulaTokenValue operationValue="100" id="403:607"/>
-    </DataConverterFormula>
-    <DataConverterFormula name="Discrete Slider · Step up" groupId="1:2674" id="403:303">
-        <FormulaTokenFunction id="403:608"/><FormulaTokenValue id="403:609"><DataBindContext sourcePathIds="403:100-403:103" propertyKey="777" nameBased="true" id="403:610"/></FormulaTokenValue><FormulaTokenArgumentSeparator id="403:611"/>
-        <FormulaTokenInput id="403:612"/><FormulaTokenOperation id="403:613"/><FormulaTokenValue id="403:614"><DataBindContext sourcePathIds="403:100-403:104" propertyKey="777" nameBased="true" id="403:615"/></FormulaTokenValue><FormulaTokenParenthesisClose id="403:616"/>
-    </DataConverterFormula>
-    <DataConverterFormula name="Discrete Slider · Step down" groupId="1:2674" id="403:304">
-        <FormulaTokenFunction functionType="max" id="403:617"/><FormulaTokenValue id="403:618"><DataBindContext sourcePathIds="403:100-403:102" propertyKey="777" nameBased="true" id="403:619"/></FormulaTokenValue><FormulaTokenArgumentSeparator id="403:620"/>
-        <FormulaTokenInput id="403:621"/><FormulaTokenOperation operationType="subtract" id="403:622"/><FormulaTokenValue id="403:623"><DataBindContext sourcePathIds="403:100-403:104" propertyKey="777" nameBased="true" id="403:624"/></FormulaTokenValue><FormulaTokenParenthesisClose id="403:625"/>
-    </DataConverterFormula>
-    <ScriptAsset file="Discrete Slider.luau" name="Discrete Slider" groupId="327:1" id="403:400"/>
     <ViewModel defaultInstanceId="403:150" name="DiscreteSlider" groupId="1:2673" id="403:100">
         <ViewModelPropertyNumber name="value" id="403:101"/>
         <ViewModelPropertyNumber name="min" id="403:102"/>
@@ -5825,14 +5924,14 @@
         <ViewModelPropertyTrigger name="_doDown" id="403:116"/>
         <ViewModelInstance exports="true" name="Volume" id="403:150">
             <ViewModelInstanceNumber propertyValue="40" viewModelPropertyId="403:101" id="403:626"/>
-            <ViewModelInstanceNumber propertyValue="0" viewModelPropertyId="403:102" id="403:627"/>
+            <ViewModelInstanceNumber viewModelPropertyId="403:102" id="403:627"/>
             <ViewModelInstanceNumber propertyValue="100" viewModelPropertyId="403:103" id="403:628"/>
             <ViewModelInstanceNumber propertyValue="10" viewModelPropertyId="403:104" id="403:629"/>
             <ViewModelInstanceString propertyValue="Volume" viewModelPropertyId="403:105" id="403:630"/>
             <ViewModelInstanceBoolean viewModelPropertyId="403:106" id="403:631"/>
             <ViewModelInstanceBoolean viewModelPropertyId="403:107" id="403:632"/>
             <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="403:108" id="403:633"/>
-            <ViewModelInstanceNumber propertyValue="0.4" viewModelPropertyId="403:109" id="403:634"/>
+            <ViewModelInstanceNumber propertyValue="0.40000001" viewModelPropertyId="403:109" id="403:634"/>
             <ViewModelInstanceBoolean viewModelPropertyId="403:110" id="403:635"/>
             <ViewModelInstanceBoolean viewModelPropertyId="403:111" id="403:636"/>
             <ViewModelInstanceList viewModelPropertyId="403:112" id="403:637"/>
@@ -5866,10 +5965,6 @@
             <ViewModelInstanceBoolean viewModelPropertyId="403:201" id="403:211"/>
         </ViewModelInstance>
     </ViewModel>
-    <!-- /discrete-slider -->
-    <!-- calendar -->
-    <DataConverterToString round="true" name="Calendar · Day (to text)" groupId="1:2674" id="410:300"/>
-    <ScriptAsset file="Calendar.luau" name="Calendar" groupId="327:1" id="410:400"/>
     <ViewModel defaultInstanceId="410:150" name="CalendarDay" groupId="1:2673" id="410:100">
         <ViewModelPropertyNumber name="day" id="410:101"/>
         <ViewModelPropertyString name="label" id="410:102"/>
@@ -5936,5 +6031,4 @@
             <ViewModelInstanceString propertyValue="2026-11-18" viewModelPropertyId="410:212" id="410:616"/>
         </ViewModelInstance>
     </ViewModel>
-    <!-- /calendar -->
 </Rive>

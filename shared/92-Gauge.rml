@@ -1,43 +1,15 @@
 <Rive version="1" kind="fragment">
-    <DataConverterFormula name="Gauge · Arc end" groupId="1:2674" id="875:9">
-        <FormulaTokenFunction id="875:12"/>
-        <FormulaTokenValue operationValue="0.5" id="875:13"/>
-        <FormulaTokenArgumentSeparator id="875:14"/>
-        <FormulaTokenFunction functionType="max" id="875:15"/>
-        <FormulaTokenValue operationValue="0" id="875:16"/>
-        <FormulaTokenArgumentSeparator id="875:17"/>
-        <FormulaTokenInput id="875:18"/>
-        <FormulaTokenOperation operationType="divide" id="875:19"/>
-        <FormulaTokenValue operationValue="200" id="875:20"/>
-        <FormulaTokenParenthesisClose id="875:21"/>
-        <FormulaTokenParenthesisClose id="875:22"/>
-    </DataConverterFormula>
-    <DataConverterFormula name="Gauge · Needle angle" groupId="1:2674" id="875:10">
-        <FormulaTokenFunction id="875:23"/>
-        <FormulaTokenValue operationValue="3.1415927" id="875:24"/>
-        <FormulaTokenArgumentSeparator id="875:25"/>
-        <FormulaTokenFunction functionType="max" id="875:26"/>
-        <FormulaTokenValue operationValue="0" id="875:27"/>
-        <FormulaTokenArgumentSeparator id="875:28"/>
-        <FormulaTokenInput id="875:29"/>
-        <FormulaTokenOperation operationType="multiply" id="875:30"/>
-        <FormulaTokenValue operationValue="0.031415927" id="875:31"/>
-        <FormulaTokenParenthesisClose id="875:32"/>
-        <FormulaTokenParenthesisClose id="875:33"/>
-    </DataConverterFormula>
-    <DataConverterToString round="true" name="Gauge · Value (to text)" groupId="1:2674" id="875:11"/>
-    <Artboard defaultStateMachineId="875:7" viewModelId="875:1" viewModelInstanceId="875:5" isComponent="true" spaceId="1:5601" width="200" height="180" styleId="875:124" x="10400" y="0" name="Gauge" id="875:6">
+    <Artboard defaultStateMachineId="875:7" viewModelId="875:1" viewModelInstanceId="875:5" isComponent="true" spaceId="1:5601" width="200" height="180" styleId="875:124" x="10400" name="Gauge" id="875:6">
         <Fill fillRule="clockwise" id="875:125">
             <SolidColor colorValue="00000000" id="875:126"/>
         </Fill>
         <LayoutComponentStyle paddingTop="8" paddingBottom="8" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="875:124"/>
         <LayoutComponent width="200" styleId="875:112" name="Gauge" id="875:113">
-            <LayoutComponent styleId="875:68" width="200" height="106" name="Art" id="875:69">
+            <LayoutComponent width="200" height="106" styleId="875:68" name="Art" id="875:69">
                 <Node name="Dial" id="875:67">
                     <Node x="100" y="96" name="Needle" id="875:47">
-                        <DataBindContext sourcePathIds="875:1-875:2" propertyKey="15" converterId="875:10" nameBased="true" id="875:48"/>
                         <Shape name="Hub Dot" id="875:49">
-                            <Ellipse x="0" y="0" width="4" height="4" id="875:50"/>
+                            <Ellipse width="4" height="4" id="875:50"/>
                             <Fill fillRule="clockwise" id="875:51">
                                 <SolidColor colorValue="FF888888" id="875:52">
                                     <DataBindContext sourcePathIds="10:7-10:7406" propertyKey="37" id="875:53"/>
@@ -45,7 +17,7 @@
                             </Fill>
                         </Shape>
                         <Shape name="Hub" id="875:54">
-                            <Ellipse x="0" y="0" width="12" height="12" id="875:55"/>
+                            <Ellipse width="12" height="12" id="875:55"/>
                             <Fill fillRule="clockwise" id="875:56">
                                 <SolidColor colorValue="FF888888" id="875:57">
                                     <DataBindContext sourcePathIds="10:7-10:7422" propertyKey="37" id="875:58"/>
@@ -54,9 +26,9 @@
                         </Shape>
                         <Shape name="Pointer" id="875:59">
                             <PointsPath isClosed="true" id="875:63">
-                                <StraightVertex x="0" y="2.5" id="875:60"/>
-                                <StraightVertex x="-62" y="0" id="875:61"/>
-                                <StraightVertex x="0" y="-2.5" id="875:62"/>
+                                <StraightVertex y="2.5" id="875:60"/>
+                                <StraightVertex x="-62" id="875:61"/>
+                                <StraightVertex y="-2.5" id="875:62"/>
                             </PointsPath>
                             <Fill fillRule="clockwise" id="875:64">
                                 <SolidColor colorValue="FF888888" id="875:65">
@@ -64,20 +36,21 @@
                                 </SolidColor>
                             </Fill>
                         </Shape>
+                        <DataBindContext sourcePathIds="875:1-875:2" propertyKey="15" nameBased="true" converterId="875:10" id="875:48"/>
                     </Node>
                     <Shape x="100" y="96" rotation="-1.5707963" name="Value" id="875:36">
-                        <Ellipse x="0" y="0" width="160" height="160" id="875:37"/>
+                        <Ellipse width="160" height="160" id="875:37"/>
                         <Stroke thickness="14" cap="round" join="round" id="875:38">
                             <SolidColor colorValue="FF888888" id="875:39">
                                 <DataBindContext sourcePathIds="10:7-10:2102" propertyKey="37" id="875:40"/>
                             </SolidColor>
                             <TrimPath end="0.5" modeValue="sequential" id="875:35">
-                                <DataBindContext sourcePathIds="875:1-875:2" propertyKey="115" converterId="875:9" nameBased="true" id="875:34"/>
+                                <DataBindContext sourcePathIds="875:1-875:2" propertyKey="115" nameBased="true" converterId="875:9" id="875:34"/>
                             </TrimPath>
                         </Stroke>
                     </Shape>
                     <Shape x="100" y="96" rotation="-1.5707963" name="Track" id="875:42">
-                        <Ellipse x="0" y="0" width="160" height="160" id="875:43"/>
+                        <Ellipse width="160" height="160" id="875:43"/>
                         <Stroke thickness="14" cap="round" join="round" id="875:44">
                             <SolidColor colorValue="FF888888" id="875:45">
                                 <DataBindContext sourcePathIds="10:7-10:7418" propertyKey="37" id="875:46"/>
@@ -129,12 +102,12 @@
                         <TextStyleAxis tag="2003265652" axisValue="600" id="875:97"/>
                     </TextStylePaint>
                     <TextValueRun styleId="875:90" text="72" id="875:98">
-                        <DataBindContext sourcePathIds="875:1-875:2" propertyKey="268" converterId="875:11" nameBased="true" id="875:91"/>
+                        <DataBindContext sourcePathIds="875:1-875:2" propertyKey="268" nameBased="true" converterId="875:11" id="875:91"/>
                     </TextValueRun>
                     <LayoutParticipant layoutWidthScaleType="hug" layoutHeightScaleType="hug" id="875:99"/>
                 </Text>
                 <Text name="Label" id="875:102">
-                    <TextStylePaint fontSize="12" fontAssetId="0:7" familyName="Inter" styleName="Medium" id="875:100">
+                    <TextStylePaint fontAssetId="0:7" familyName="Inter" styleName="Medium" id="875:100">
                         <Fill fillRule="clockwise" id="875:103">
                             <SolidColor colorValue="FF888888" id="875:104">
                                 <DataBindContext sourcePathIds="10:7-10:7426" propertyKey="37" id="875:105"/>
@@ -148,14 +121,14 @@
                     </TextValueRun>
                     <LayoutParticipant layoutWidthScaleType="hug" layoutHeightScaleType="hug" id="875:109"/>
                 </Text>
-                <LayoutComponentStyle marginTop="-6" flexDirectionValue="column" layoutAlignmentType="center" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="875:110"/>
+                <LayoutComponentStyle marginTop="-6" layoutAlignmentType="center" flexDirectionValue="column" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="875:110"/>
             </LayoutComponent>
             <SemanticData role="text" name="Semantics" id="875:117">
+                <DataBindContext sourcePathIds="875:1-875:2" propertyKey="984" nameBased="true" converterId="875:11" id="875:114"/>
                 <DataBindContext sourcePathIds="875:1-875:3" propertyKey="983" nameBased="true" id="875:115"/>
                 <DataBindContext sourcePathIds="875:1-875:4" propertyKey="1004" nameBased="true" id="875:116"/>
-                <DataBindContext sourcePathIds="875:1-875:2" propertyKey="984" converterId="875:11" nameBased="true" id="875:114"/>
             </SemanticData>
-            <LayoutComponentStyle gapVertical="2" flexDirectionValue="column" layoutAlignmentType="topCenter" intrinsicallySizedValue="true" layoutHeightScaleType="hug" heightUnitsValue="auto" id="875:112"/>
+            <LayoutComponentStyle gapVertical="2" layoutAlignmentType="topCenter" flexDirectionValue="column" intrinsicallySizedValue="true" layoutHeightScaleType="hug" heightUnitsValue="auto" id="875:112"/>
         </LayoutComponent>
         <StateMachine name="State Machine 1" id="875:7">
             <StateMachineLayer name="Layer 1" id="875:119">
@@ -169,6 +142,33 @@
         </StateMachine>
         <LinearAnimation name="Idle" id="875:8"/>
     </Artboard>
+    <DataConverterFormula name="Gauge · Arc end" groupId="1:2674" id="875:9">
+        <FormulaTokenFunction id="875:12"/>
+        <FormulaTokenValue operationValue="0.5" id="875:13"/>
+        <FormulaTokenArgumentSeparator id="875:14"/>
+        <FormulaTokenFunction functionType="max" id="875:15"/>
+        <FormulaTokenValue operationValue="0" id="875:16"/>
+        <FormulaTokenArgumentSeparator id="875:17"/>
+        <FormulaTokenInput id="875:18"/>
+        <FormulaTokenOperation operationType="divide" id="875:19"/>
+        <FormulaTokenValue operationValue="200" id="875:20"/>
+        <FormulaTokenParenthesisClose id="875:21"/>
+        <FormulaTokenParenthesisClose id="875:22"/>
+    </DataConverterFormula>
+    <DataConverterFormula name="Gauge · Needle angle" groupId="1:2674" id="875:10">
+        <FormulaTokenFunction id="875:23"/>
+        <FormulaTokenValue operationValue="3.1415927" id="875:24"/>
+        <FormulaTokenArgumentSeparator id="875:25"/>
+        <FormulaTokenFunction functionType="max" id="875:26"/>
+        <FormulaTokenValue operationValue="0" id="875:27"/>
+        <FormulaTokenArgumentSeparator id="875:28"/>
+        <FormulaTokenInput id="875:29"/>
+        <FormulaTokenOperation operationType="multiply" id="875:30"/>
+        <FormulaTokenValue operationValue="0.031415928" id="875:31"/>
+        <FormulaTokenParenthesisClose id="875:32"/>
+        <FormulaTokenParenthesisClose id="875:33"/>
+    </DataConverterFormula>
+    <DataConverterToString round="true" name="Gauge · Value (to text)" groupId="1:2674" id="875:11"/>
     <ViewModel defaultInstanceId="875:5" name="Gauge" groupId="1:2673" id="875:1">
         <ViewModelPropertyNumber name="value" id="875:2"/>
         <ViewModelPropertyString name="label" id="875:3"/>

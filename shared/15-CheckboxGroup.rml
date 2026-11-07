@@ -49,7 +49,7 @@
                 </LayoutComponent>
                 <LayoutComponent styleId="422:591" name="Select All (script)" id="422:592">
                     <ScriptedLayout scriptAssetId="422:520" name="Select All" id="422:593"/>
-                    <LayoutComponentStyle positionTypeValue="absolute" widthUnitsValue="points" heightUnitsValue="points" id="422:591"/>
+                    <LayoutComponentStyle positionTypeValue="absolute" id="422:591"/>
                 </LayoutComponent>
             </LayoutComponent>
             <SemanticData role="group" label="Email preferences" name="Semantics" id="2:23">

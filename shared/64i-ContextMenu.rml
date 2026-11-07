@@ -1,5 +1,4 @@
 <Rive version="1" kind="fragment">
-    <ScriptAsset file="Context Menu.luau" scriptProtocolValue="layout" name="Context Menu" groupId="327:1" id="518:800"/>
     <Artboard defaultStateMachineId="518:78" viewModelId="518:900" viewModelInstanceId="518:950" isComponent="true" spaceId="1:5601" width="360" height="240" styleId="518:77" x="5600" y="4400" name="Context Menu" id="518:1">
         <Fill fillRule="clockwise" id="518:79">
             <SolidColor colorValue="00000000" id="518:80"/>
@@ -32,7 +31,7 @@
                     </TextValueRun>
                     <LayoutParticipant layoutWidthScaleType="hug" layoutHeightScaleType="hug" id="518:19"/>
                 </Text>
-                <LayoutComponentStyle layoutAlignmentType="center" positionLeftUnitsValue="points" positionRightUnitsValue="points" positionTopUnitsValue="points" positionBottomUnitsValue="points" positionTypeValue="absolute" widthUnitsValue="auto" heightUnitsValue="auto" id="518:20"/>
+                <LayoutComponentStyle positionLeftUnitsValue="points" positionRightUnitsValue="points" positionTopUnitsValue="points" positionBottomUnitsValue="points" layoutAlignmentType="center" positionTypeValue="absolute" widthUnitsValue="auto" heightUnitsValue="auto" id="518:20"/>
             </LayoutComponent>
             <LayoutComponent styleId="518:22" name="Context Menu (script)" id="518:23">
                 <ScriptedLayout scriptAssetId="518:800" name="Context Menu" id="518:21"/>
@@ -43,7 +42,7 @@
                     <DataBindContext sourcePathIds="10:7-10:7406" propertyKey="37" id="518:26"/>
                 </SolidColor>
             </Fill>
-            <Stroke thickness="1" cap="butt" join="round" id="518:27">
+            <Stroke join="round" id="518:27">
                 <SolidColor colorValue="FF27272A" id="518:28">
                     <DataBindContext sourcePathIds="10:7-10:7418" propertyKey="37" id="518:29"/>
                 </SolidColor>
@@ -91,104 +90,40 @@
         </StateMachine>
         <LinearAnimation loopValue="loop" name="Closed" id="518:43">
             <KeyedObject objectId="518:2" id="518:39">
-                <KeyedProperty propertyKey="18" id="518:38">
-                    <KeyFrameDouble value="0" frame="0" id="518:37"/>
+                <KeyedProperty property="opacity" id="518:38">
+                    <KeyFrameDouble id="518:37"/>
                 </KeyedProperty>
             </KeyedObject>
             <KeyedObject objectId="518:9" id="518:42">
-                <KeyedProperty propertyKey="18" id="518:41">
-                    <KeyFrameDouble value="1" frame="0" id="518:40"/>
+                <KeyedProperty property="opacity" id="518:41">
+                    <KeyFrameDouble value="1" id="518:40"/>
                 </KeyedProperty>
             </KeyedObject>
         </LinearAnimation>
-        <LinearAnimation fps="60" duration="8" name="Shown" id="518:57">
+        <LinearAnimation duration="8" name="Shown" id="518:57">
             <KeyedObject objectId="518:2" id="518:52">
-                <KeyedProperty propertyKey="18" id="518:50">
-                    <KeyFrameDouble value="0" interpolationType="cubic" frame="0" id="518:44">
+                <KeyedProperty property="opacity" id="518:50">
+                    <KeyFrameDouble interpolationType="cubic" id="518:44">
                         <CubicEaseInterpolator x1="0.2" x2="0" id="518:45"/>
                     </KeyFrameDouble>
                     <KeyFrameDouble value="1" interpolationType="linear" frame="8" id="518:46"/>
                 </KeyedProperty>
-                <KeyedProperty propertyKey="14" id="518:51">
-                    <KeyFrameDouble value="-4" interpolationType="cubic" frame="0" id="518:47">
+                <KeyedProperty property="y" id="518:51">
+                    <KeyFrameDouble value="-4" interpolationType="cubic" id="518:47">
                         <CubicEaseInterpolator x1="0.2" x2="0" id="518:48"/>
                     </KeyFrameDouble>
-                    <KeyFrameDouble value="0" interpolationType="linear" frame="8" id="518:49"/>
+                    <KeyFrameDouble interpolationType="linear" frame="8" id="518:49"/>
                 </KeyedProperty>
             </KeyedObject>
             <KeyedObject objectId="518:9" id="518:56">
-                <KeyedProperty propertyKey="18" id="518:55">
-                    <KeyFrameDouble value="1" interpolationType="linear" frame="0" id="518:53"/>
-                    <KeyFrameDouble value="0" interpolationType="linear" frame="8" id="518:54"/>
+                <KeyedProperty property="opacity" id="518:55">
+                    <KeyFrameDouble value="1" interpolationType="linear" id="518:53"/>
+                    <KeyFrameDouble interpolationType="linear" frame="8" id="518:54"/>
                 </KeyedProperty>
             </KeyedObject>
         </LinearAnimation>
     </Artboard>
-    <ViewModelInstance viewModelId="146:1" exports="true" name="Context" id="518:960">
-        <ViewModelInstanceNumber propertyValue="-1" viewModelPropertyId="146:2" id="518:81"/>
-        <ViewModelInstanceString propertyValue="Context" viewModelPropertyId="146:3" id="518:82"/>
-        <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="146:4" id="518:83"/>
-        <ViewModelInstanceBoolean viewModelPropertyId="146:5" id="518:84"/>
-    </ViewModelInstance>
-    <ViewModelInstance viewModelId="1:4184" exports="true" name="Context Copy" id="518:970">
-        <ViewModelInstanceString propertyValue="Copy" viewModelPropertyId="1:4186" id="518:85"/>
-        <ViewModelInstanceBoolean viewModelPropertyId="1:4211" id="518:86"/>
-        <ViewModelInstanceTrigger viewModelPropertyId="1:4213" id="518:87"/>
-        <ViewModelInstanceSymbolListIndex viewModelPropertyId="1:4327" id="518:88"/>
-        <ViewModelInstanceBoolean viewModelPropertyId="7:43" id="518:89"/>
-        <ViewModelInstanceBoolean viewModelPropertyId="7:47" id="518:90"/>
-        <ViewModelInstanceViewModel propertyValue="518:960" viewModelPropertyId="145:1" id="518:91"/>
-        <ViewModelInstanceTrigger viewModelPropertyId="145:2" id="518:92"/>
-        <ViewModelInstanceTrigger viewModelPropertyId="145:3" id="518:93"/>
-        <ViewModelInstanceNumber propertyValue="7" viewModelPropertyId="167:1" id="518:94"/>
-    </ViewModelInstance>
-    <ViewModelInstance viewModelId="1:4184" exports="true" name="Context Rename" id="518:971">
-        <ViewModelInstanceString propertyValue="Rename" viewModelPropertyId="1:4186" id="518:95"/>
-        <ViewModelInstanceBoolean viewModelPropertyId="1:4211" id="518:96"/>
-        <ViewModelInstanceTrigger viewModelPropertyId="1:4213" id="518:97"/>
-        <ViewModelInstanceSymbolListIndex viewModelPropertyId="1:4327" id="518:98"/>
-        <ViewModelInstanceBoolean viewModelPropertyId="7:43" id="518:99"/>
-        <ViewModelInstanceBoolean viewModelPropertyId="7:47" id="518:100"/>
-        <ViewModelInstanceViewModel propertyValue="518:960" viewModelPropertyId="145:1" id="518:101"/>
-        <ViewModelInstanceTrigger viewModelPropertyId="145:2" id="518:102"/>
-        <ViewModelInstanceTrigger viewModelPropertyId="145:3" id="518:103"/>
-        <ViewModelInstanceNumber propertyValue="5" viewModelPropertyId="167:1" id="518:104"/>
-    </ViewModelInstance>
-    <ViewModelInstance viewModelId="1:4184" exports="true" name="Context Move to folder" id="518:972">
-        <ViewModelInstanceString propertyValue="Move to folder" viewModelPropertyId="1:4186" id="518:105"/>
-        <ViewModelInstanceBoolean viewModelPropertyId="1:4211" id="518:106"/>
-        <ViewModelInstanceTrigger viewModelPropertyId="1:4213" id="518:107"/>
-        <ViewModelInstanceSymbolListIndex viewModelPropertyId="1:4327" id="518:108"/>
-        <ViewModelInstanceBoolean viewModelPropertyId="7:43" id="518:109"/>
-        <ViewModelInstanceBoolean viewModelPropertyId="7:47" id="518:110"/>
-        <ViewModelInstanceViewModel propertyValue="518:960" viewModelPropertyId="145:1" id="518:111"/>
-        <ViewModelInstanceTrigger viewModelPropertyId="145:2" id="518:112"/>
-        <ViewModelInstanceTrigger viewModelPropertyId="145:3" id="518:113"/>
-        <ViewModelInstanceNumber propertyValue="2" viewModelPropertyId="167:1" id="518:114"/>
-    </ViewModelInstance>
-    <ViewModelInstance viewModelId="1:4184" exports="true" name="Context Export" id="518:973">
-        <ViewModelInstanceString propertyValue="Export" viewModelPropertyId="1:4186" id="518:115"/>
-        <ViewModelInstanceBoolean viewModelPropertyId="1:4211" id="518:116"/>
-        <ViewModelInstanceTrigger viewModelPropertyId="1:4213" id="518:117"/>
-        <ViewModelInstanceSymbolListIndex viewModelPropertyId="1:4327" id="518:118"/>
-        <ViewModelInstanceBoolean viewModelPropertyId="7:43" id="518:119"/>
-        <ViewModelInstanceBoolean viewModelPropertyId="7:47" id="518:120"/>
-        <ViewModelInstanceViewModel propertyValue="518:960" viewModelPropertyId="145:1" id="518:121"/>
-        <ViewModelInstanceTrigger viewModelPropertyId="145:2" id="518:122"/>
-        <ViewModelInstanceTrigger viewModelPropertyId="145:3" id="518:123"/>
-        <ViewModelInstanceNumber propertyValue="4" viewModelPropertyId="167:1" id="518:124"/>
-    </ViewModelInstance>
-    <ViewModelInstance viewModelId="146:10" exports="true" name="Context" id="518:961">
-        <ViewModelInstanceList viewModelPropertyId="146:11" id="518:125">
-            <ViewModelInstanceListItem name="Copy" viewModelId="1:4184" viewModelInstanceId="518:970" id="518:126"/>
-            <ViewModelInstanceListItem name="Rename" viewModelId="1:4184" viewModelInstanceId="518:971" id="518:127"/>
-            <ViewModelInstanceListItem name="Move to folder" viewModelId="1:4184" viewModelInstanceId="518:972" id="518:128"/>
-            <ViewModelInstanceListItem name="Export" viewModelId="1:4184" viewModelInstanceId="518:973" id="518:129"/>
-        </ViewModelInstanceList>
-        <ViewModelInstanceViewModel propertyValue="518:960" viewModelPropertyId="146:12" id="518:130"/>
-        <ViewModelInstanceString propertyValue="File actions" viewModelPropertyId="146:13" id="518:131"/>
-        <ViewModelInstanceBoolean viewModelPropertyId="146:14" id="518:132"/>
-    </ViewModelInstance>
+    <ScriptAsset file="Context Menu.luau" compilationOrder="13" serializedImplementedMethods="4921" scriptProtocolValue="layout" codeFileId="0:37036" name="Context Menu" groupId="327:1" id="518:800"/>
     <ViewModel defaultInstanceId="518:950" name="ContextMenu" groupId="1:2673" id="518:900">
         <ViewModelPropertyString name="hint" id="518:901"/>
         <ViewModelPropertyString name="label" id="518:902"/>

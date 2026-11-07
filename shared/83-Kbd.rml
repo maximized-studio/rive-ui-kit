@@ -1,13 +1,13 @@
 <Rive version="1" kind="fragment">
-    <Artboard defaultStateMachineId="830:7" viewModelId="830:1" viewModelInstanceId="830:4" isComponent="true" spaceId="1:5601" width="40" height="24" styleId="830:43" x="8400" y="0" name="Kbd" id="830:6">
+    <Artboard defaultStateMachineId="830:7" viewModelId="830:1" viewModelInstanceId="830:4" isComponent="true" spaceId="1:5601" width="40" height="24" styleId="830:43" x="8400" name="Kbd" id="830:6">
         <Fill fillRule="clockwise" id="830:44">
             <SolidColor colorValue="00000000" id="830:45"/>
         </Fill>
         <LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="830:43"/>
         <LayoutComponent styleId="830:35" name="Key" id="830:36">
-            <LayoutComponent styleId="830:29" height="22" name="Face" id="830:30">
+            <LayoutComponent height="22" styleId="830:29" name="Face" id="830:30">
                 <Text name="Keys" id="830:14">
-                    <TextStylePaint fontSize="12" fontAssetId="0:7" familyName="Inter" styleName="Medium" id="830:12">
+                    <TextStylePaint fontAssetId="0:7" familyName="Inter" styleName="Medium" id="830:12">
                         <Fill fillRule="clockwise" id="830:15">
                             <SolidColor colorValue="FF888888" id="830:16">
                                 <DataBindContext sourcePathIds="10:7-10:7424" propertyKey="37" id="830:17"/>
@@ -25,7 +25,7 @@
                         <DataBindContext sourcePathIds="830:1-830:3" propertyKey="1004" nameBased="true" id="830:10"/>
                     </SemanticData>
                 </Text>
-                <Stroke thickness="1" cap="butt" join="round" id="830:22">
+                <Stroke join="round" id="830:22">
                     <SolidColor colorValue="FF27272A" id="830:23">
                         <DataBindContext sourcePathIds="10:7-10:7418" propertyKey="37" id="830:24"/>
                     </SolidColor>
@@ -35,7 +35,7 @@
                         <DataBindContext sourcePathIds="10:7-10:7414" propertyKey="37" id="830:27"/>
                     </SolidColor>
                 </Fill>
-                <LayoutComponentStyle paddingLeft="7" paddingRight="7" minWidth="22" minWidthUnitsValue="points" layoutAlignmentType="center" cornerRadiusTL="6" layoutWidthScaleType="hug" widthUnitsValue="auto" id="830:29">
+                <LayoutComponentStyle paddingLeft="7" paddingRight="7" layoutAlignmentType="center" cornerRadiusTL="6" minWidth="22" minWidthUnitsValue="points" layoutWidthScaleType="hug" widthUnitsValue="auto" id="830:29">
                     <DataBindContext sourcePathIds="10:7-901:21" propertyKey="640" id="830:28"/>
                 </LayoutComponentStyle>
             </LayoutComponent>
@@ -44,7 +44,7 @@
                     <DataBindContext sourcePathIds="10:7-10:7420" propertyKey="37" id="830:33"/>
                 </SolidColor>
             </Fill>
-            <LayoutComponentStyle paddingBottom="2" cornerRadiusTL="6" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="830:35">
+            <LayoutComponentStyle paddingBottom="2" intrinsicallySizedValue="true" cornerRadiusTL="6" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="830:35">
                 <DataBindContext sourcePathIds="10:7-901:21" propertyKey="640" id="830:34"/>
             </LayoutComponentStyle>
         </LayoutComponent>

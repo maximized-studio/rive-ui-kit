@@ -14,9 +14,9 @@
                 <LayoutComponent styleId="422:531" name="Mixed" id="422:530">
                     <Node x="8" y="8" name="Dash" id="422:532">
                         <Shape name="Dash" id="422:533">
-                            <PointsPath isClosed="false" id="422:534">
-                                <StraightVertex x="-4" y="0" id="422:535"/>
-                                <StraightVertex x="4" y="0" id="422:536"/>
+                            <PointsPath id="422:534">
+                                <StraightVertex x="-4" id="422:535"/>
+                                <StraightVertex x="4" id="422:536"/>
                             </PointsPath>
                             <Stroke thickness="2" cap="round" join="round" id="422:537">
                                 <SolidColor colorValue="FFFAFAFA" id="422:538">

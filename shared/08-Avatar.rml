@@ -1,6 +1,79 @@
 <Rive version="1" kind="fragment">
     <Artboard defaultStateMachineId="1:2053" viewModelId="1:2082" viewModelInstanceId="1:2083" isComponent="true" spaceId="1:5601" width="32" height="32" styleId="1:2051" x="1800" name="Avatar" id="1:2048">
-        <Node x="26" y="26" name="Status" id="407:49"><Shape opacity="0" name="Online" id="407:5"><PointsPath isClosed="true" id="407:6"><CubicMirroredVertex x="0" y="-4.0" rotation="0" distance="2.2092" id="407:1"/><CubicMirroredVertex x="4.0" y="0" rotation="1.5707963267948966" distance="2.2092" id="407:2"/><CubicMirroredVertex x="0" y="4.0" rotation="3.141592653589793" distance="2.2092" id="407:3"/><CubicMirroredVertex x="-4.0" y="0" rotation="-1.5707963267948966" distance="2.2092" id="407:4"/></PointsPath><Fill fillRule="clockwise" id="407:7"><SolidColor colorValue="FF22C55E" id="407:8"><DataBindContext sourcePathIds="10:7-110:6" propertyKey="37" id="407:9"/></SolidColor></Fill><Stroke thickness="2" id="407:10"><SolidColor colorValue="FF09090B" id="407:11"><DataBindContext sourcePathIds="10:7-10:7402" propertyKey="37" id="407:12"/></SolidColor></Stroke></Shape><Shape opacity="0" name="Away" id="407:17"><PointsPath isClosed="true" id="407:18"><CubicMirroredVertex x="0" y="-4.0" rotation="0" distance="2.2092" id="407:13"/><CubicMirroredVertex x="4.0" y="0" rotation="1.5707963267948966" distance="2.2092" id="407:14"/><CubicMirroredVertex x="0" y="4.0" rotation="3.141592653589793" distance="2.2092" id="407:15"/><CubicMirroredVertex x="-4.0" y="0" rotation="-1.5707963267948966" distance="2.2092" id="407:16"/></PointsPath><Fill fillRule="clockwise" id="407:19"><SolidColor colorValue="FFEAB308" id="407:20"><DataBindContext sourcePathIds="10:7-110:9" propertyKey="37" id="407:21"/></SolidColor></Fill><Stroke thickness="2" id="407:22"><SolidColor colorValue="FF09090B" id="407:23"><DataBindContext sourcePathIds="10:7-10:7402" propertyKey="37" id="407:24"/></SolidColor></Stroke></Shape><Shape opacity="0" name="Busy" id="407:29"><PointsPath isClosed="true" id="407:30"><CubicMirroredVertex x="0" y="-4.0" rotation="0" distance="2.2092" id="407:25"/><CubicMirroredVertex x="4.0" y="0" rotation="1.5707963267948966" distance="2.2092" id="407:26"/><CubicMirroredVertex x="0" y="4.0" rotation="3.141592653589793" distance="2.2092" id="407:27"/><CubicMirroredVertex x="-4.0" y="0" rotation="-1.5707963267948966" distance="2.2092" id="407:28"/></PointsPath><Fill fillRule="clockwise" id="407:31"><SolidColor colorValue="FFEF4444" id="407:32"><DataBindContext sourcePathIds="10:7-110:12" propertyKey="37" id="407:33"/></SolidColor></Fill><Stroke thickness="2" id="407:34"><SolidColor colorValue="FF09090B" id="407:35"><DataBindContext sourcePathIds="10:7-10:7402" propertyKey="37" id="407:36"/></SolidColor></Stroke></Shape><Shape opacity="0" name="Offline" id="407:41"><PointsPath isClosed="true" id="407:42"><CubicMirroredVertex x="0" y="-4.0" rotation="0" distance="2.2092" id="407:37"/><CubicMirroredVertex x="4.0" y="0" rotation="1.5707963267948966" distance="2.2092" id="407:38"/><CubicMirroredVertex x="0" y="4.0" rotation="3.141592653589793" distance="2.2092" id="407:39"/><CubicMirroredVertex x="-4.0" y="0" rotation="-1.5707963267948966" distance="2.2092" id="407:40"/></PointsPath><Fill fillRule="clockwise" id="407:43"><SolidColor colorValue="FFA1A1AA" id="407:44"><DataBindContext sourcePathIds="10:7-10:7426" propertyKey="37" id="407:45"/></SolidColor></Fill><Stroke thickness="2" id="407:46"><SolidColor colorValue="FF09090B" id="407:47"><DataBindContext sourcePathIds="10:7-10:7402" propertyKey="37" id="407:48"/></SolidColor></Stroke></Shape></Node>
+        <Node x="26" y="26" name="Status" id="407:49">
+            <Shape opacity="0" name="Online" id="407:5">
+                <PointsPath isClosed="true" id="407:6">
+                    <CubicMirroredVertex distance="2.2091999" y="-4" id="407:1"/>
+                    <CubicMirroredVertex rotation="1.5707964" distance="2.2091999" x="4" id="407:2"/>
+                    <CubicMirroredVertex rotation="3.1415927" distance="2.2091999" y="4" id="407:3"/>
+                    <CubicMirroredVertex rotation="-1.5707964" distance="2.2091999" x="-4" id="407:4"/>
+                </PointsPath>
+                <Fill fillRule="clockwise" id="407:7">
+                    <SolidColor colorValue="FF22C55E" id="407:8">
+                        <DataBindContext sourcePathIds="10:7-110:6" propertyKey="37" id="407:9"/>
+                    </SolidColor>
+                </Fill>
+                <Stroke thickness="2" id="407:10">
+                    <SolidColor colorValue="FF09090B" id="407:11">
+                        <DataBindContext sourcePathIds="10:7-10:7402" propertyKey="37" id="407:12"/>
+                    </SolidColor>
+                </Stroke>
+            </Shape>
+            <Shape opacity="0" name="Away" id="407:17">
+                <PointsPath isClosed="true" id="407:18">
+                    <CubicMirroredVertex distance="2.2091999" y="-4" id="407:13"/>
+                    <CubicMirroredVertex rotation="1.5707964" distance="2.2091999" x="4" id="407:14"/>
+                    <CubicMirroredVertex rotation="3.1415927" distance="2.2091999" y="4" id="407:15"/>
+                    <CubicMirroredVertex rotation="-1.5707964" distance="2.2091999" x="-4" id="407:16"/>
+                </PointsPath>
+                <Fill fillRule="clockwise" id="407:19">
+                    <SolidColor colorValue="FFEAB308" id="407:20">
+                        <DataBindContext sourcePathIds="10:7-110:9" propertyKey="37" id="407:21"/>
+                    </SolidColor>
+                </Fill>
+                <Stroke thickness="2" id="407:22">
+                    <SolidColor colorValue="FF09090B" id="407:23">
+                        <DataBindContext sourcePathIds="10:7-10:7402" propertyKey="37" id="407:24"/>
+                    </SolidColor>
+                </Stroke>
+            </Shape>
+            <Shape opacity="0" name="Busy" id="407:29">
+                <PointsPath isClosed="true" id="407:30">
+                    <CubicMirroredVertex distance="2.2091999" y="-4" id="407:25"/>
+                    <CubicMirroredVertex rotation="1.5707964" distance="2.2091999" x="4" id="407:26"/>
+                    <CubicMirroredVertex rotation="3.1415927" distance="2.2091999" y="4" id="407:27"/>
+                    <CubicMirroredVertex rotation="-1.5707964" distance="2.2091999" x="-4" id="407:28"/>
+                </PointsPath>
+                <Fill fillRule="clockwise" id="407:31">
+                    <SolidColor colorValue="FFEF4444" id="407:32">
+                        <DataBindContext sourcePathIds="10:7-110:12" propertyKey="37" id="407:33"/>
+                    </SolidColor>
+                </Fill>
+                <Stroke thickness="2" id="407:34">
+                    <SolidColor colorValue="FF09090B" id="407:35">
+                        <DataBindContext sourcePathIds="10:7-10:7402" propertyKey="37" id="407:36"/>
+                    </SolidColor>
+                </Stroke>
+            </Shape>
+            <Shape opacity="0" name="Offline" id="407:41">
+                <PointsPath isClosed="true" id="407:42">
+                    <CubicMirroredVertex distance="2.2091999" y="-4" id="407:37"/>
+                    <CubicMirroredVertex rotation="1.5707964" distance="2.2091999" x="4" id="407:38"/>
+                    <CubicMirroredVertex rotation="3.1415927" distance="2.2091999" y="4" id="407:39"/>
+                    <CubicMirroredVertex rotation="-1.5707964" distance="2.2091999" x="-4" id="407:40"/>
+                </PointsPath>
+                <Fill fillRule="clockwise" id="407:43">
+                    <SolidColor colorValue="FFA1A1AA" id="407:44">
+                        <DataBindContext sourcePathIds="10:7-10:7426" propertyKey="37" id="407:45"/>
+                    </SolidColor>
+                </Fill>
+                <Stroke thickness="2" id="407:46">
+                    <SolidColor colorValue="FF09090B" id="407:47">
+                        <DataBindContext sourcePathIds="10:7-10:7402" propertyKey="37" id="407:48"/>
+                    </SolidColor>
+                </Stroke>
+            </Shape>
+        </Node>
         <Shape x="16" y="16" locked="true" id="1:2077">
             <Rectangle cornerRadiusTL="16" width="32" height="32" id="10:6092">
                 <DataBindContext sourcePathIds="10:7-901:1" propertyKey="31" converterId="0:0" id="10:6539"/>
@@ -23,13 +96,180 @@
                 </EntryState>
                 <AnimationState animationId="1:2052" x="100" y="100" id="1:2058"/>
             </StateMachineLayer>
-            <StateMachineLayer name="Status" id="407:150"><AnyState id="407:151"><StateTransition stateToId="407:63" id="407:64"><TransitionViewModelCondition id="407:65"><TransitionPropertyViewModelComparator id="407:66"><BindablePropertyNumber id="407:67"><DataBindContext sourcePathIds="1:2082-407:900" propertyKey="636" id="407:68"/></BindablePropertyNumber></TransitionPropertyViewModelComparator><TransitionValueNumberComparator id="407:69"/></TransitionViewModelCondition></StateTransition><StateTransition stateToId="407:83" id="407:84"><TransitionViewModelCondition id="407:85"><TransitionPropertyViewModelComparator id="407:86"><BindablePropertyNumber id="407:87"><DataBindContext sourcePathIds="1:2082-407:900" propertyKey="636" id="407:88"/></BindablePropertyNumber></TransitionPropertyViewModelComparator><TransitionValueNumberComparator value="1" id="407:89"/></TransitionViewModelCondition></StateTransition><StateTransition stateToId="407:103" id="407:104"><TransitionViewModelCondition id="407:105"><TransitionPropertyViewModelComparator id="407:106"><BindablePropertyNumber id="407:107"><DataBindContext sourcePathIds="1:2082-407:900" propertyKey="636" id="407:108"/></BindablePropertyNumber></TransitionPropertyViewModelComparator><TransitionValueNumberComparator value="2" id="407:109"/></TransitionViewModelCondition></StateTransition><StateTransition stateToId="407:123" id="407:124"><TransitionViewModelCondition id="407:125"><TransitionPropertyViewModelComparator id="407:126"><BindablePropertyNumber id="407:127"><DataBindContext sourcePathIds="1:2082-407:900" propertyKey="636" id="407:128"/></BindablePropertyNumber></TransitionPropertyViewModelComparator><TransitionValueNumberComparator value="3" id="407:129"/></TransitionViewModelCondition></StateTransition><StateTransition stateToId="407:143" id="407:144"><TransitionViewModelCondition id="407:145"><TransitionPropertyViewModelComparator id="407:146"><BindablePropertyNumber id="407:147"><DataBindContext sourcePathIds="1:2082-407:900" propertyKey="636" id="407:148"/></BindablePropertyNumber></TransitionPropertyViewModelComparator><TransitionValueNumberComparator value="4" id="407:149"/></TransitionViewModelCondition></StateTransition></AnyState><ExitState id="407:152"/><EntryState id="407:153"><StateTransition stateToId="407:63" id="407:154"/></EntryState><AnimationState animationId="407:50" stateName="None" id="407:63"/><AnimationState animationId="407:70" stateName="Online" id="407:83"/><AnimationState animationId="407:90" stateName="Away" id="407:103"/><AnimationState animationId="407:110" stateName="Busy" id="407:123"/><AnimationState animationId="407:130" stateName="Offline" id="407:143"/></StateMachineLayer>
+            <StateMachineLayer name="Status" id="407:150">
+                <AnimationState animationId="407:50" stateName="None" id="407:63"/>
+                <AnimationState animationId="407:70" stateName="Online" id="407:83"/>
+                <AnimationState animationId="407:90" stateName="Away" id="407:103"/>
+                <AnimationState animationId="407:110" stateName="Busy" id="407:123"/>
+                <AnimationState animationId="407:130" stateName="Offline" id="407:143"/>
+                <AnyState id="407:151">
+                    <StateTransition stateToId="407:63" id="407:64">
+                        <TransitionViewModelCondition id="407:65">
+                            <TransitionPropertyViewModelComparator id="407:66">
+                                <BindablePropertyNumber id="407:67">
+                                    <DataBindContext sourcePathIds="1:2082-407:900" propertyKey="636" id="407:68"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueNumberComparator id="407:69"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                    <StateTransition stateToId="407:83" id="407:84">
+                        <TransitionViewModelCondition id="407:85">
+                            <TransitionPropertyViewModelComparator id="407:86">
+                                <BindablePropertyNumber id="407:87">
+                                    <DataBindContext sourcePathIds="1:2082-407:900" propertyKey="636" id="407:88"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueNumberComparator value="1" id="407:89"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                    <StateTransition stateToId="407:103" id="407:104">
+                        <TransitionViewModelCondition id="407:105">
+                            <TransitionPropertyViewModelComparator id="407:106">
+                                <BindablePropertyNumber id="407:107">
+                                    <DataBindContext sourcePathIds="1:2082-407:900" propertyKey="636" id="407:108"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueNumberComparator value="2" id="407:109"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                    <StateTransition stateToId="407:123" id="407:124">
+                        <TransitionViewModelCondition id="407:125">
+                            <TransitionPropertyViewModelComparator id="407:126">
+                                <BindablePropertyNumber id="407:127">
+                                    <DataBindContext sourcePathIds="1:2082-407:900" propertyKey="636" id="407:128"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueNumberComparator value="3" id="407:129"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                    <StateTransition stateToId="407:143" id="407:144">
+                        <TransitionViewModelCondition id="407:145">
+                            <TransitionPropertyViewModelComparator id="407:146">
+                                <BindablePropertyNumber id="407:147">
+                                    <DataBindContext sourcePathIds="1:2082-407:900" propertyKey="636" id="407:148"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueNumberComparator value="4" id="407:149"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                </AnyState>
+                <ExitState id="407:152"/>
+                <EntryState id="407:153">
+                    <StateTransition stateToId="407:63" id="407:154"/>
+                </EntryState>
+            </StateMachineLayer>
         </StateMachine>
         <LinearAnimation name="Timeline 1" id="1:2052"/>
-        <LinearAnimation name="Status None" id="407:50"><KeyedObject objectId="407:5" id="407:51"><KeyedProperty propertyKey="18" id="407:52"><KeyFrameDouble value="0" id="407:53"/></KeyedProperty></KeyedObject><KeyedObject objectId="407:17" id="407:54"><KeyedProperty propertyKey="18" id="407:55"><KeyFrameDouble value="0" id="407:56"/></KeyedProperty></KeyedObject><KeyedObject objectId="407:29" id="407:57"><KeyedProperty propertyKey="18" id="407:58"><KeyFrameDouble value="0" id="407:59"/></KeyedProperty></KeyedObject><KeyedObject objectId="407:41" id="407:60"><KeyedProperty propertyKey="18" id="407:61"><KeyFrameDouble value="0" id="407:62"/></KeyedProperty></KeyedObject></LinearAnimation>
-        <LinearAnimation name="Status Online" id="407:70"><KeyedObject objectId="407:5" id="407:71"><KeyedProperty propertyKey="18" id="407:72"><KeyFrameDouble value="1" id="407:73"/></KeyedProperty></KeyedObject><KeyedObject objectId="407:17" id="407:74"><KeyedProperty propertyKey="18" id="407:75"><KeyFrameDouble value="0" id="407:76"/></KeyedProperty></KeyedObject><KeyedObject objectId="407:29" id="407:77"><KeyedProperty propertyKey="18" id="407:78"><KeyFrameDouble value="0" id="407:79"/></KeyedProperty></KeyedObject><KeyedObject objectId="407:41" id="407:80"><KeyedProperty propertyKey="18" id="407:81"><KeyFrameDouble value="0" id="407:82"/></KeyedProperty></KeyedObject></LinearAnimation>
-        <LinearAnimation name="Status Away" id="407:90"><KeyedObject objectId="407:5" id="407:91"><KeyedProperty propertyKey="18" id="407:92"><KeyFrameDouble value="0" id="407:93"/></KeyedProperty></KeyedObject><KeyedObject objectId="407:17" id="407:94"><KeyedProperty propertyKey="18" id="407:95"><KeyFrameDouble value="1" id="407:96"/></KeyedProperty></KeyedObject><KeyedObject objectId="407:29" id="407:97"><KeyedProperty propertyKey="18" id="407:98"><KeyFrameDouble value="0" id="407:99"/></KeyedProperty></KeyedObject><KeyedObject objectId="407:41" id="407:100"><KeyedProperty propertyKey="18" id="407:101"><KeyFrameDouble value="0" id="407:102"/></KeyedProperty></KeyedObject></LinearAnimation>
-        <LinearAnimation name="Status Busy" id="407:110"><KeyedObject objectId="407:5" id="407:111"><KeyedProperty propertyKey="18" id="407:112"><KeyFrameDouble value="0" id="407:113"/></KeyedProperty></KeyedObject><KeyedObject objectId="407:17" id="407:114"><KeyedProperty propertyKey="18" id="407:115"><KeyFrameDouble value="0" id="407:116"/></KeyedProperty></KeyedObject><KeyedObject objectId="407:29" id="407:117"><KeyedProperty propertyKey="18" id="407:118"><KeyFrameDouble value="1" id="407:119"/></KeyedProperty></KeyedObject><KeyedObject objectId="407:41" id="407:120"><KeyedProperty propertyKey="18" id="407:121"><KeyFrameDouble value="0" id="407:122"/></KeyedProperty></KeyedObject></LinearAnimation>
-        <LinearAnimation name="Status Offline" id="407:130"><KeyedObject objectId="407:5" id="407:131"><KeyedProperty propertyKey="18" id="407:132"><KeyFrameDouble value="0" id="407:133"/></KeyedProperty></KeyedObject><KeyedObject objectId="407:17" id="407:134"><KeyedProperty propertyKey="18" id="407:135"><KeyFrameDouble value="0" id="407:136"/></KeyedProperty></KeyedObject><KeyedObject objectId="407:29" id="407:137"><KeyedProperty propertyKey="18" id="407:138"><KeyFrameDouble value="0" id="407:139"/></KeyedProperty></KeyedObject><KeyedObject objectId="407:41" id="407:140"><KeyedProperty propertyKey="18" id="407:141"><KeyFrameDouble value="1" id="407:142"/></KeyedProperty></KeyedObject></LinearAnimation>
+        <LinearAnimation name="Status None" id="407:50">
+            <KeyedObject objectId="407:5" id="407:51">
+                <KeyedProperty property="opacity" id="407:52">
+                    <KeyFrameDouble id="407:53"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="407:17" id="407:54">
+                <KeyedProperty property="opacity" id="407:55">
+                    <KeyFrameDouble id="407:56"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="407:29" id="407:57">
+                <KeyedProperty property="opacity" id="407:58">
+                    <KeyFrameDouble id="407:59"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="407:41" id="407:60">
+                <KeyedProperty property="opacity" id="407:61">
+                    <KeyFrameDouble id="407:62"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+        <LinearAnimation name="Status Online" id="407:70">
+            <KeyedObject objectId="407:5" id="407:71">
+                <KeyedProperty property="opacity" id="407:72">
+                    <KeyFrameDouble value="1" id="407:73"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="407:17" id="407:74">
+                <KeyedProperty property="opacity" id="407:75">
+                    <KeyFrameDouble id="407:76"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="407:29" id="407:77">
+                <KeyedProperty property="opacity" id="407:78">
+                    <KeyFrameDouble id="407:79"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="407:41" id="407:80">
+                <KeyedProperty property="opacity" id="407:81">
+                    <KeyFrameDouble id="407:82"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+        <LinearAnimation name="Status Away" id="407:90">
+            <KeyedObject objectId="407:5" id="407:91">
+                <KeyedProperty property="opacity" id="407:92">
+                    <KeyFrameDouble id="407:93"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="407:17" id="407:94">
+                <KeyedProperty property="opacity" id="407:95">
+                    <KeyFrameDouble value="1" id="407:96"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="407:29" id="407:97">
+                <KeyedProperty property="opacity" id="407:98">
+                    <KeyFrameDouble id="407:99"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="407:41" id="407:100">
+                <KeyedProperty property="opacity" id="407:101">
+                    <KeyFrameDouble id="407:102"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+        <LinearAnimation name="Status Busy" id="407:110">
+            <KeyedObject objectId="407:5" id="407:111">
+                <KeyedProperty property="opacity" id="407:112">
+                    <KeyFrameDouble id="407:113"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="407:17" id="407:114">
+                <KeyedProperty property="opacity" id="407:115">
+                    <KeyFrameDouble id="407:116"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="407:29" id="407:117">
+                <KeyedProperty property="opacity" id="407:118">
+                    <KeyFrameDouble value="1" id="407:119"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="407:41" id="407:120">
+                <KeyedProperty property="opacity" id="407:121">
+                    <KeyFrameDouble id="407:122"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+        <LinearAnimation name="Status Offline" id="407:130">
+            <KeyedObject objectId="407:5" id="407:131">
+                <KeyedProperty property="opacity" id="407:132">
+                    <KeyFrameDouble id="407:133"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="407:17" id="407:134">
+                <KeyedProperty property="opacity" id="407:135">
+                    <KeyFrameDouble id="407:136"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="407:29" id="407:137">
+                <KeyedProperty property="opacity" id="407:138">
+                    <KeyFrameDouble id="407:139"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="407:41" id="407:140">
+                <KeyedProperty property="opacity" id="407:141">
+                    <KeyFrameDouble value="1" id="407:142"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
     </Artboard>
 </Rive>

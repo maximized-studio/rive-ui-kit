@@ -1,5 +1,5 @@
 <Rive version="1" kind="fragment">
-    <Artboard defaultStateMachineId="400:2" viewModelId="400:100" viewModelInstanceId="400:110" isComponent="true" spaceId="1:5601" width="40" height="40" styleId="400:3" x="4000" y="0" name="Spinner" id="400:1">
+    <Artboard defaultStateMachineId="400:2" viewModelId="400:100" viewModelInstanceId="400:110" isComponent="true" spaceId="1:5601" width="40" height="40" styleId="400:3" x="4000" name="Spinner" id="400:1">
         <Fill fillRule="clockwise" id="400:4">
             <SolidColor colorValue="00000000" id="400:5"/>
         </Fill>
@@ -15,7 +15,7 @@
                     <SolidColor colorValue="FF2563EB" id="400:23">
                         <DataBindContext sourcePathIds="10:7-10:2104" propertyKey="37" id="400:24"/>
                     </SolidColor>
-                    <TrimPath end="0.3" modeValue="sequential" id="400:25"/>
+                    <TrimPath end="0.30000001" modeValue="sequential" id="400:25"/>
                 </Stroke>
             </Shape>
             <Shape name="Track" id="400:30">
@@ -45,29 +45,29 @@
                 </EntryState>
             </StateMachineLayer>
         </StateMachine>
-        <LinearAnimation fps="60" duration="54" loopValue="loop" name="Spin" id="400:60">
+        <LinearAnimation duration="54" loopValue="loop" name="Spin" id="400:60">
             <KeyedObject objectId="400:20" id="400:61">
-                <KeyedProperty propertyKey="15" id="400:62">
-                    <KeyFrameDouble value="0" interpolationType="linear" frame="0" id="400:63"/>
-                    <KeyFrameDouble value="6.2831853" frame="54" id="400:64"/>
+                <KeyedProperty property="rotation" id="400:62">
+                    <KeyFrameDouble interpolationType="linear" id="400:63"/>
+                    <KeyFrameDouble value="6.2831855" frame="54" id="400:64"/>
                 </KeyedProperty>
             </KeyedObject>
         </LinearAnimation>
-        <LinearAnimation fps="60" duration="84" loopValue="loop" name="Sweep" id="400:70">
+        <LinearAnimation duration="84" loopValue="loop" name="Sweep" id="400:70">
             <KeyedObject objectId="400:25" id="400:71">
-                <KeyedProperty propertyKey="115" id="400:72">
-                    <KeyFrameDouble value="0.08" interpolationType="cubic" frame="0" id="400:73">
-                        <CubicEaseInterpolator x1="0.4" x2="0.2" id="400:74"/>
+                <KeyedProperty property="end" id="400:72">
+                    <KeyFrameDouble value="0.079999998" interpolationType="cubic" id="400:73">
+                        <CubicEaseInterpolator x1="0.40000001" x2="0.2" id="400:74"/>
                     </KeyFrameDouble>
-                    <KeyFrameDouble value="0.72" interpolationType="cubic" frame="42" id="400:75">
-                        <CubicEaseInterpolator x1="0.4" x2="0.2" id="400:76"/>
+                    <KeyFrameDouble value="0.72000003" interpolationType="cubic" frame="42" id="400:75">
+                        <CubicEaseInterpolator x1="0.40000001" x2="0.2" id="400:76"/>
                     </KeyFrameDouble>
                     <KeyFrameDouble value="1.08" frame="84" id="400:77"/>
                 </KeyedProperty>
-                <KeyedProperty propertyKey="114" id="400:78">
-                    <KeyFrameDouble value="0" interpolationType="linear" frame="0" id="400:79"/>
-                    <KeyFrameDouble value="0" interpolationType="cubic" frame="42" id="400:80">
-                        <CubicEaseInterpolator x1="0.4" x2="0.2" id="400:81"/>
+                <KeyedProperty property="start" id="400:78">
+                    <KeyFrameDouble interpolationType="linear" id="400:79"/>
+                    <KeyFrameDouble interpolationType="cubic" frame="42" id="400:80">
+                        <CubicEaseInterpolator x1="0.40000001" x2="0.2" id="400:81"/>
                     </KeyFrameDouble>
                     <KeyFrameDouble value="1" frame="84" id="400:82"/>
                 </KeyedProperty>

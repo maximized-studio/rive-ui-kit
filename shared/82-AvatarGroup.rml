@@ -1,6 +1,5 @@
 <Rive version="1" kind="fragment">
-    <DataConverterToString round="true" name="Avatar Group · Extra (to text)" groupId="1:2674" id="820:16"/>
-    <Artboard defaultStateMachineId="820:12" viewModelId="820:1" viewModelInstanceId="820:10" isComponent="true" spaceId="1:5601" width="180" height="36" styleId="820:172" x="8000" y="0" name="Avatar Group" id="820:11">
+    <Artboard defaultStateMachineId="820:12" viewModelId="820:1" viewModelInstanceId="820:10" isComponent="true" spaceId="1:5601" width="180" height="36" styleId="820:172" x="8000" name="Avatar Group" id="820:11">
         <Fill fillRule="clockwise" id="820:173">
             <SolidColor colorValue="00000000" id="820:174"/>
         </Fill>
@@ -22,7 +21,7 @@
                     </TextValueRun>
                     <LayoutParticipant layoutWidthScaleType="hug" layoutHeightScaleType="hug" id="820:27"/>
                 </Text>
-                <Stroke thickness="3" cap="butt" join="round" id="820:29">
+                <Stroke thickness="3" join="round" id="820:29">
                     <SolidColor colorValue="FF09090B" id="820:30">
                         <DataBindContext sourcePathIds="10:7-10:7402" propertyKey="37" id="820:31"/>
                     </SolidColor>
@@ -52,7 +51,7 @@
                     </TextValueRun>
                     <LayoutParticipant layoutWidthScaleType="hug" layoutHeightScaleType="hug" id="820:46"/>
                 </Text>
-                <Stroke thickness="3" cap="butt" join="round" id="820:48">
+                <Stroke thickness="3" join="round" id="820:48">
                     <SolidColor colorValue="FF09090B" id="820:49">
                         <DataBindContext sourcePathIds="10:7-10:7402" propertyKey="37" id="820:50"/>
                     </SolidColor>
@@ -82,7 +81,7 @@
                     </TextValueRun>
                     <LayoutParticipant layoutWidthScaleType="hug" layoutHeightScaleType="hug" id="820:65"/>
                 </Text>
-                <Stroke thickness="3" cap="butt" join="round" id="820:67">
+                <Stroke thickness="3" join="round" id="820:67">
                     <SolidColor colorValue="FF09090B" id="820:68">
                         <DataBindContext sourcePathIds="10:7-10:7402" propertyKey="37" id="820:69"/>
                     </SolidColor>
@@ -112,7 +111,7 @@
                     </TextValueRun>
                     <LayoutParticipant layoutWidthScaleType="hug" layoutHeightScaleType="hug" id="820:84"/>
                 </Text>
-                <Stroke thickness="3" cap="butt" join="round" id="820:86">
+                <Stroke thickness="3" join="round" id="820:86">
                     <SolidColor colorValue="FF09090B" id="820:87">
                         <DataBindContext sourcePathIds="10:7-10:7402" propertyKey="37" id="820:88"/>
                     </SolidColor>
@@ -139,11 +138,11 @@
                     </TextStylePaint>
                     <TextValueRun styleId="820:94" text="+" id="820:101"/>
                     <TextValueRun styleId="820:94" text="3" id="820:102">
-                        <DataBindContext sourcePathIds="820:1-820:7" propertyKey="268" converterId="820:16" nameBased="true" id="820:103"/>
+                        <DataBindContext sourcePathIds="820:1-820:7" propertyKey="268" nameBased="true" converterId="820:16" id="820:103"/>
                     </TextValueRun>
                     <LayoutParticipant layoutWidthScaleType="hug" layoutHeightScaleType="hug" id="820:104"/>
                 </Text>
-                <Stroke thickness="3" cap="butt" join="round" id="820:106">
+                <Stroke thickness="3" join="round" id="820:106">
                     <SolidColor colorValue="FF09090B" id="820:107">
                         <DataBindContext sourcePathIds="10:7-10:7402" propertyKey="37" id="820:108"/>
                     </SolidColor>
@@ -153,9 +152,9 @@
                         <DataBindContext sourcePathIds="10:7-10:7408" propertyKey="37" id="820:111"/>
                     </SolidColor>
                 </Fill>
-                <LayoutComponentStyle marginLeft="-6" paddingLeft="9" paddingRight="9" minWidth="32" minWidthUnitsValue="points" layoutAlignmentType="center" cornerRadiusTL="16" layoutWidthScaleType="hug" widthUnitsValue="auto" id="820:93">
+                <LayoutComponentStyle marginLeft="-6" paddingLeft="9" paddingRight="9" layoutAlignmentType="center" cornerRadiusTL="16" minWidth="32" minWidthUnitsValue="points" layoutWidthScaleType="hug" widthUnitsValue="auto" id="820:93">
                     <DataBindContext sourcePathIds="10:7-901:1" propertyKey="640" id="820:112"/>
-                    <DataBindContext sourcePathIds="820:1-820:7" propertyKey="596" converterId="33:216" nameBased="true" id="820:113"/>
+                    <DataBindContext sourcePathIds="820:1-820:7" propertyKey="596" nameBased="true" converterId="33:216" id="820:113"/>
                 </LayoutComponentStyle>
             </LayoutComponent>
             <SemanticData role="group" name="Semantics" id="820:116">
@@ -215,49 +214,50 @@
         </StateMachine>
         <LinearAnimation loopValue="loop" name="Rest" id="820:14">
             <KeyedObject objectId="820:36" id="820:150">
-                <KeyedProperty propertyKey="508" id="820:149">
+                <KeyedProperty property="marginLeft" id="820:149">
                     <KeyFrameDouble value="-6" id="820:148"/>
                 </KeyedProperty>
             </KeyedObject>
             <KeyedObject objectId="820:55" id="820:153">
-                <KeyedProperty propertyKey="508" id="820:152">
+                <KeyedProperty property="marginLeft" id="820:152">
                     <KeyFrameDouble value="-6" id="820:151"/>
                 </KeyedProperty>
             </KeyedObject>
             <KeyedObject objectId="820:74" id="820:156">
-                <KeyedProperty propertyKey="508" id="820:155">
+                <KeyedProperty property="marginLeft" id="820:155">
                     <KeyFrameDouble value="-6" id="820:154"/>
                 </KeyedProperty>
             </KeyedObject>
             <KeyedObject objectId="820:93" id="820:159">
-                <KeyedProperty propertyKey="508" id="820:158">
+                <KeyedProperty property="marginLeft" id="820:158">
                     <KeyFrameDouble value="-6" id="820:157"/>
                 </KeyedProperty>
             </KeyedObject>
         </LinearAnimation>
         <LinearAnimation loopValue="loop" name="Fan Out" id="820:15">
             <KeyedObject objectId="820:36" id="820:162">
-                <KeyedProperty propertyKey="508" id="820:161">
+                <KeyedProperty property="marginLeft" id="820:161">
                     <KeyFrameDouble value="4" id="820:160"/>
                 </KeyedProperty>
             </KeyedObject>
             <KeyedObject objectId="820:55" id="820:165">
-                <KeyedProperty propertyKey="508" id="820:164">
+                <KeyedProperty property="marginLeft" id="820:164">
                     <KeyFrameDouble value="4" id="820:163"/>
                 </KeyedProperty>
             </KeyedObject>
             <KeyedObject objectId="820:74" id="820:168">
-                <KeyedProperty propertyKey="508" id="820:167">
+                <KeyedProperty property="marginLeft" id="820:167">
                     <KeyFrameDouble value="4" id="820:166"/>
                 </KeyedProperty>
             </KeyedObject>
             <KeyedObject objectId="820:93" id="820:171">
-                <KeyedProperty propertyKey="508" id="820:170">
+                <KeyedProperty property="marginLeft" id="820:170">
                     <KeyFrameDouble value="4" id="820:169"/>
                 </KeyedProperty>
             </KeyedObject>
         </LinearAnimation>
     </Artboard>
+    <DataConverterToString round="true" name="Avatar Group · Extra (to text)" groupId="1:2674" id="820:16"/>
     <ViewModel defaultInstanceId="820:10" name="AvatarGroup" groupId="1:2673" id="820:1">
         <ViewModelPropertyString name="label" id="820:2"/>
         <ViewModelPropertyString name="initials1" id="820:3"/>

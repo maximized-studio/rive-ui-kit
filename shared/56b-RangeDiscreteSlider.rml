@@ -1,5 +1,5 @@
 <Rive version="1" kind="fragment">
-    <Artboard defaultStateMachineId="346:3" viewModelId="345:100" viewModelInstanceId="345:150" isComponent="true" spaceId="1:5601" width="280" height="56" styleId="346:2" x="12000" y="0" name="Range Discrete Slider" id="346:1">
+    <Artboard defaultStateMachineId="346:3" viewModelId="345:100" viewModelInstanceId="345:150" isComponent="true" spaceId="1:5601" width="280" height="56" styleId="346:2" x="12000" name="Range Discrete Slider" id="346:1">
         <Fill fillRule="clockwise" id="346:407">
             <SolidColor colorValue="00000000" id="346:408"/>
         </Fill>
@@ -72,12 +72,12 @@
             <LayoutComponent height="24" styleId="346:5" name="Track Area" id="346:4">
                 <LayoutComponent styleId="346:165" name="Drag" id="346:166">
                     <ScriptedLayout scriptAssetId="345:400" name="Range Discrete Slider" id="346:167"/>
-                    <LayoutComponentStyle positionLeftUnitsValue="points" positionRightUnitsValue="points" positionTopUnitsValue="points" positionBottomUnitsValue="points" positionTypeValue="absolute" edgeConstraints="84" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="346:165"/>
+                    <LayoutComponentStyle positionLeftUnitsValue="points" positionRightUnitsValue="points" positionTopUnitsValue="points" positionBottomUnitsValue="points" edgeConstraints="84" positionTypeValue="absolute" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="346:165"/>
                 </LayoutComponent>
                 <Node x="10" y="12" name="Low Thumb" id="346:43">
-                    <Node y="-28" opacity="0" scaleX="0.8" scaleY="0.8" name="Bubble" id="346:6">
-                        <Text name="Bubble Value" sizingValue="fixed" width="36" height="20" alignValue="center" verticalAlignValue="middle" x="-18" y="-10" id="346:8">
-                            <TextStylePaint fontSize="12" fontAssetId="0:7" familyName="Inter" styleName="Medium" id="346:7">
+                    <Node y="-28" scaleX="0.80000001" scaleY="0.80000001" opacity="0" name="Bubble" id="346:6">
+                        <Text alignValue="center" sizingValue="fixed" width="36" height="20" verticalAlignValue="middle" x="-18" y="-10" name="Bubble Value" id="346:8">
+                            <TextStylePaint fontAssetId="0:7" familyName="Inter" styleName="Medium" id="346:7">
                                 <Fill fillRule="clockwise" id="346:9">
                                     <SolidColor colorValue="FF09090B" id="346:10">
                                         <DataBindContext sourcePathIds="10:7-10:7402" propertyKey="37" id="346:11"/>
@@ -95,7 +95,7 @@
                             <PointsPath isClosed="true" id="346:18">
                                 <StraightVertex x="-5" y="9" id="346:19"/>
                                 <StraightVertex x="5" y="9" id="346:20"/>
-                                <StraightVertex x="0" y="14" id="346:21"/>
+                                <StraightVertex y="14" id="346:21"/>
                             </PointsPath>
                             <Fill fillRule="clockwise" id="346:22">
                                 <SolidColor colorValue="FFFAFAFA" id="346:23">
@@ -104,7 +104,7 @@
                             </Fill>
                         </Shape>
                         <Shape name="Body" id="346:25">
-                            <Rectangle width="36" height="20" cornerRadiusTL="6" linkCornerRadius="true" id="346:26"/>
+                            <Rectangle cornerRadiusTL="6" width="36" height="20" id="346:26"/>
                             <Fill fillRule="clockwise" id="346:27">
                                 <SolidColor colorValue="FFFAFAFA" id="346:28">
                                     <DataBindContext sourcePathIds="10:7-10:7422" propertyKey="37" id="346:29"/>
@@ -114,10 +114,10 @@
                     </Node>
                     <Shape name="Disabled Knob" id="346:60">
                         <PointsPath isClosed="true" id="346:61">
-                            <CubicMirroredVertex x="0" y="-9" rotation="0" distance="4.97" id="346:62"/>
-                            <CubicMirroredVertex x="9" y="0" rotation="1.5707963" distance="4.97" id="346:63"/>
-                            <CubicMirroredVertex x="0" y="9" rotation="3.1415927" distance="4.97" id="346:64"/>
-                            <CubicMirroredVertex x="-9" y="0" rotation="-1.5707963" distance="4.97" id="346:65"/>
+                            <CubicMirroredVertex distance="4.9699998" y="-9" id="346:62"/>
+                            <CubicMirroredVertex rotation="1.5707963" distance="4.9699998" x="9" id="346:63"/>
+                            <CubicMirroredVertex rotation="3.1415927" distance="4.9699998" y="9" id="346:64"/>
+                            <CubicMirroredVertex rotation="-1.5707963" distance="4.9699998" x="-9" id="346:65"/>
                         </PointsPath>
                         <Fill fillRule="clockwise" id="346:66">
                             <SolidColor colorValue="FF3F3F46" id="346:67">
@@ -133,10 +133,10 @@
                     </Shape>
                     <Shape name="Knob" id="346:44">
                         <PointsPath isClosed="true" id="346:45">
-                            <CubicMirroredVertex x="0" y="-9" rotation="0" distance="4.97" id="346:46"/>
-                            <CubicMirroredVertex x="9" y="0" rotation="1.5707963" distance="4.97" id="346:47"/>
-                            <CubicMirroredVertex x="0" y="9" rotation="3.1415927" distance="4.97" id="346:48"/>
-                            <CubicMirroredVertex x="-9" y="0" rotation="-1.5707963" distance="4.97" id="346:49"/>
+                            <CubicMirroredVertex distance="4.9699998" y="-9" id="346:46"/>
+                            <CubicMirroredVertex rotation="1.5707963" distance="4.9699998" x="9" id="346:47"/>
+                            <CubicMirroredVertex rotation="3.1415927" distance="4.9699998" y="9" id="346:48"/>
+                            <CubicMirroredVertex rotation="-1.5707963" distance="4.9699998" x="-9" id="346:49"/>
                         </PointsPath>
                         <Fill fillRule="clockwise" id="346:50">
                             <SolidColor colorValue="40000000" id="346:51"/>
@@ -154,12 +154,12 @@
                             </SolidColor>
                         </Stroke>
                     </Shape>
-                    <Shape name="Halo" opacity="0" id="346:41">
+                    <Shape opacity="0" name="Halo" id="346:41">
                         <PointsPath isClosed="true" id="346:42">
-                            <CubicMirroredVertex x="0" y="-16.0" rotation="0" distance="8.8368" id="346:37"/>
-                            <CubicMirroredVertex x="16.0" y="0" rotation="1.5707963267948966" distance="8.8368" id="346:38"/>
-                            <CubicMirroredVertex x="0" y="16.0" rotation="3.141592653589793" distance="8.8368" id="346:39"/>
-                            <CubicMirroredVertex x="-16.0" y="0" rotation="-1.5707963267948966" distance="8.8368" id="346:40"/>
+                            <CubicMirroredVertex distance="8.8367996" y="-16" id="346:37"/>
+                            <CubicMirroredVertex rotation="1.5707964" distance="8.8367996" x="16" id="346:38"/>
+                            <CubicMirroredVertex rotation="3.1415927" distance="8.8367996" y="16" id="346:39"/>
+                            <CubicMirroredVertex rotation="-1.5707964" distance="8.8367996" x="-16" id="346:40"/>
                         </PointsPath>
                         <Fill fillRule="clockwise" id="346:30">
                             <SolidColor colorValue="FF93C5FD" id="346:31">
@@ -170,9 +170,9 @@
                     <DataBindContext sourcePathIds="345:100-345:110" propertyKey="13" nameBased="true" converterId="403:301" id="346:73"/>
                 </Node>
                 <Node x="10" y="12" name="High Thumb" id="346:111">
-                    <Node y="-28" opacity="0" scaleX="0.8" scaleY="0.8" name="Bubble" id="346:74">
-                        <Text name="Bubble Value" sizingValue="fixed" width="36" height="20" alignValue="center" verticalAlignValue="middle" x="-18" y="-10" id="346:76">
-                            <TextStylePaint fontSize="12" fontAssetId="0:7" familyName="Inter" styleName="Medium" id="346:75">
+                    <Node y="-28" scaleX="0.80000001" scaleY="0.80000001" opacity="0" name="Bubble" id="346:74">
+                        <Text alignValue="center" sizingValue="fixed" width="36" height="20" verticalAlignValue="middle" x="-18" y="-10" name="Bubble Value" id="346:76">
+                            <TextStylePaint fontAssetId="0:7" familyName="Inter" styleName="Medium" id="346:75">
                                 <Fill fillRule="clockwise" id="346:77">
                                     <SolidColor colorValue="FF09090B" id="346:78">
                                         <DataBindContext sourcePathIds="10:7-10:7402" propertyKey="37" id="346:79"/>
@@ -190,7 +190,7 @@
                             <PointsPath isClosed="true" id="346:86">
                                 <StraightVertex x="-5" y="9" id="346:87"/>
                                 <StraightVertex x="5" y="9" id="346:88"/>
-                                <StraightVertex x="0" y="14" id="346:89"/>
+                                <StraightVertex y="14" id="346:89"/>
                             </PointsPath>
                             <Fill fillRule="clockwise" id="346:90">
                                 <SolidColor colorValue="FFFAFAFA" id="346:91">
@@ -199,7 +199,7 @@
                             </Fill>
                         </Shape>
                         <Shape name="Body" id="346:93">
-                            <Rectangle width="36" height="20" cornerRadiusTL="6" linkCornerRadius="true" id="346:94"/>
+                            <Rectangle cornerRadiusTL="6" width="36" height="20" id="346:94"/>
                             <Fill fillRule="clockwise" id="346:95">
                                 <SolidColor colorValue="FFFAFAFA" id="346:96">
                                     <DataBindContext sourcePathIds="10:7-10:7422" propertyKey="37" id="346:97"/>
@@ -209,10 +209,10 @@
                     </Node>
                     <Shape name="Disabled Knob" id="346:128">
                         <PointsPath isClosed="true" id="346:129">
-                            <CubicMirroredVertex x="0" y="-9" rotation="0" distance="4.97" id="346:130"/>
-                            <CubicMirroredVertex x="9" y="0" rotation="1.5707963" distance="4.97" id="346:131"/>
-                            <CubicMirroredVertex x="0" y="9" rotation="3.1415927" distance="4.97" id="346:132"/>
-                            <CubicMirroredVertex x="-9" y="0" rotation="-1.5707963" distance="4.97" id="346:133"/>
+                            <CubicMirroredVertex distance="4.9699998" y="-9" id="346:130"/>
+                            <CubicMirroredVertex rotation="1.5707963" distance="4.9699998" x="9" id="346:131"/>
+                            <CubicMirroredVertex rotation="3.1415927" distance="4.9699998" y="9" id="346:132"/>
+                            <CubicMirroredVertex rotation="-1.5707963" distance="4.9699998" x="-9" id="346:133"/>
                         </PointsPath>
                         <Fill fillRule="clockwise" id="346:134">
                             <SolidColor colorValue="FF3F3F46" id="346:135">
@@ -228,10 +228,10 @@
                     </Shape>
                     <Shape name="Knob" id="346:112">
                         <PointsPath isClosed="true" id="346:113">
-                            <CubicMirroredVertex x="0" y="-9" rotation="0" distance="4.97" id="346:114"/>
-                            <CubicMirroredVertex x="9" y="0" rotation="1.5707963" distance="4.97" id="346:115"/>
-                            <CubicMirroredVertex x="0" y="9" rotation="3.1415927" distance="4.97" id="346:116"/>
-                            <CubicMirroredVertex x="-9" y="0" rotation="-1.5707963" distance="4.97" id="346:117"/>
+                            <CubicMirroredVertex distance="4.9699998" y="-9" id="346:114"/>
+                            <CubicMirroredVertex rotation="1.5707963" distance="4.9699998" x="9" id="346:115"/>
+                            <CubicMirroredVertex rotation="3.1415927" distance="4.9699998" y="9" id="346:116"/>
+                            <CubicMirroredVertex rotation="-1.5707963" distance="4.9699998" x="-9" id="346:117"/>
                         </PointsPath>
                         <Fill fillRule="clockwise" id="346:118">
                             <SolidColor colorValue="40000000" id="346:119"/>
@@ -249,12 +249,12 @@
                             </SolidColor>
                         </Stroke>
                     </Shape>
-                    <Shape name="Halo" opacity="0" id="346:109">
+                    <Shape opacity="0" name="Halo" id="346:109">
                         <PointsPath isClosed="true" id="346:110">
-                            <CubicMirroredVertex x="0" y="-16.0" rotation="0" distance="8.8368" id="346:105"/>
-                            <CubicMirroredVertex x="16.0" y="0" rotation="1.5707963267948966" distance="8.8368" id="346:106"/>
-                            <CubicMirroredVertex x="0" y="16.0" rotation="3.141592653589793" distance="8.8368" id="346:107"/>
-                            <CubicMirroredVertex x="-16.0" y="0" rotation="-1.5707963267948966" distance="8.8368" id="346:108"/>
+                            <CubicMirroredVertex distance="8.8367996" y="-16" id="346:105"/>
+                            <CubicMirroredVertex rotation="1.5707964" distance="8.8367996" x="16" id="346:106"/>
+                            <CubicMirroredVertex rotation="3.1415927" distance="8.8367996" y="16" id="346:107"/>
+                            <CubicMirroredVertex rotation="-1.5707964" distance="8.8367996" x="-16" id="346:108"/>
                         </PointsPath>
                         <Fill fillRule="clockwise" id="346:98">
                             <SolidColor colorValue="FF93C5FD" id="346:99">
@@ -268,7 +268,7 @@
                     <ArtboardComponentList participatesInLayout="true" id="346:144">
                         <DataBindContext sourcePathIds="345:100-345:117" propertyKey="800" id="346:145"/>
                     </ArtboardComponentList>
-                    <LayoutComponentStyle positionLeftUnitsValue="points" positionRightUnitsValue="points" positionTopUnitsValue="points" positionBottomUnitsValue="points" positionTypeValue="absolute" positionLeft="8" positionRight="8" positionTop="10" heightUnitsValue="points" layoutAlignmentType="spaceBetweenCenter" layoutWidthScaleType="fill" widthUnitsValue="auto" id="346:142"/>
+                    <LayoutComponentStyle positionLeft="8" positionRight="8" positionTop="10" positionLeftUnitsValue="points" positionRightUnitsValue="points" positionTopUnitsValue="points" positionBottomUnitsValue="points" layoutAlignmentType="spaceBetweenCenter" positionTypeValue="absolute" layoutWidthScaleType="fill" widthUnitsValue="auto" id="346:142"/>
                     <DataBindContext sourcePathIds="345:100-345:109" propertyKey="18" nameBased="true" converterId="9:145" id="346:146"/>
                 </LayoutComponent>
                 <LayoutComponent clip="true" height="4" styleId="346:147" name="Track" id="346:150">
@@ -279,7 +279,7 @@
                                     <DataBindContext sourcePathIds="10:7-10:7420" propertyKey="37" id="346:155"/>
                                 </SolidColor>
                             </Fill>
-                            <LayoutComponentStyle positionLeftUnitsValue="points" positionRightUnitsValue="points" positionTopUnitsValue="points" positionBottomUnitsValue="points" positionTypeValue="absolute" edgeConstraints="84" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="346:149"/>
+                            <LayoutComponentStyle positionLeftUnitsValue="points" positionRightUnitsValue="points" positionTopUnitsValue="points" positionBottomUnitsValue="points" edgeConstraints="84" positionTypeValue="absolute" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="346:149"/>
                             <DataBindContext sourcePathIds="345:100-345:107" propertyKey="18" nameBased="true" converterId="9:145" id="346:156"/>
                         </LayoutComponent>
                         <Fill fillRule="clockwise" id="346:157">
@@ -297,7 +297,7 @@
                             <DataBindContext sourcePathIds="10:7-10:7418" propertyKey="37" id="346:164"/>
                         </SolidColor>
                     </Fill>
-                    <LayoutComponentStyle positionLeftUnitsValue="points" positionRightUnitsValue="points" positionTopUnitsValue="points" positionBottomUnitsValue="points" positionTypeValue="absolute" positionLeft="10" positionRight="10" positionTop="10" heightUnitsValue="points" cornerRadiusTL="2" layoutWidthScaleType="fill" widthUnitsValue="auto" id="346:147"/>
+                    <LayoutComponentStyle positionLeft="10" positionRight="10" positionTop="10" positionLeftUnitsValue="points" positionRightUnitsValue="points" positionTopUnitsValue="points" positionBottomUnitsValue="points" positionTypeValue="absolute" cornerRadiusTL="2" layoutWidthScaleType="fill" widthUnitsValue="auto" id="346:147"/>
                 </LayoutComponent>
                 <SemanticData role="slider" traitFlags="32" name="Semantics" id="346:168">
                     <DataBindContext sourcePathIds="345:100-345:106" propertyKey="983" nameBased="true" id="346:169"/>
@@ -307,7 +307,7 @@
                 <FocusData name="Focus" id="346:172">
                     <DataBindContext sourcePathIds="345:100-345:107" propertyKey="953" nameBased="true" converterId="1:1018" id="346:173"/>
                 </FocusData>
-                <LayoutComponentStyle layoutWidthScaleType="fill" widthUnitsValue="auto" heightUnitsValue="points" id="346:5"/>
+                <LayoutComponentStyle layoutWidthScaleType="fill" widthUnitsValue="auto" id="346:5"/>
             </LayoutComponent>
             <LayoutComponentStyle gapVertical="6" flexDirectionValue="column" intrinsicallySizedValue="true" layoutWidthScaleType="fill" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="346:218"/>
         </LayoutComponent>
@@ -369,6 +369,9 @@
                 </ListenerViewModelChange>
             </StateMachineListener>
             <StateMachineLayer name="Low Thumb" id="346:263">
+                <AnimationState animationId="346:257" stateName="Rest" id="346:260"/>
+                <AnimationState animationId="346:258" stateName="Hover" id="346:261"/>
+                <AnimationState animationId="346:259" stateName="Drag" id="346:262"/>
                 <AnyState id="346:264">
                     <StateTransition stateToId="346:262" duration="120" id="346:265">
                         <TransitionViewModelCondition id="346:266">
@@ -421,11 +424,11 @@
                 <EntryState id="346:294">
                     <StateTransition stateToId="346:260" id="346:295"/>
                 </EntryState>
-                <AnimationState animationId="346:257" stateName="Rest" id="346:260"/>
-                <AnimationState animationId="346:258" stateName="Hover" id="346:261"/>
-                <AnimationState animationId="346:259" stateName="Drag" id="346:262"/>
             </StateMachineLayer>
             <StateMachineLayer name="High Thumb" id="346:338">
+                <AnimationState animationId="346:332" stateName="Rest" id="346:335"/>
+                <AnimationState animationId="346:333" stateName="Hover" id="346:336"/>
+                <AnimationState animationId="346:334" stateName="Drag" id="346:337"/>
                 <AnyState id="346:339">
                     <StateTransition stateToId="346:337" duration="120" id="346:340">
                         <TransitionViewModelCondition id="346:341">
@@ -478,144 +481,118 @@
                 <EntryState id="346:369">
                     <StateTransition stateToId="346:335" id="346:370"/>
                 </EntryState>
-                <AnimationState animationId="346:332" stateName="Rest" id="346:335"/>
-                <AnimationState animationId="346:333" stateName="Hover" id="346:336"/>
-                <AnimationState animationId="346:334" stateName="Drag" id="346:337"/>
             </StateMachineLayer>
         </StateMachine>
-        <LinearAnimation fps="60" duration="1" loopValue="loop" name="Low Thumb Rest" id="346:257">
+        <LinearAnimation duration="1" loopValue="loop" name="Low Thumb Rest" id="346:257">
             <KeyedObject objectId="346:6" id="346:297">
-                <KeyedProperty propertyKey="18" id="346:298">
-                    <KeyFrameDouble value="0" frame="0" id="346:296"/>
+                <KeyedProperty property="opacity" id="346:298">
+                    <KeyFrameDouble id="346:296"/>
                 </KeyedProperty>
-            </KeyedObject>
-            <KeyedObject objectId="346:6" id="346:300">
-                <KeyedProperty propertyKey="16" id="346:301">
-                    <KeyFrameDouble value="0.8" frame="0" id="346:299"/>
+                <KeyedProperty property="scaleX" id="346:301">
+                    <KeyFrameDouble value="0.80000001" id="346:299"/>
                 </KeyedProperty>
-            </KeyedObject>
-            <KeyedObject objectId="346:6" id="346:303">
-                <KeyedProperty propertyKey="17" id="346:304">
-                    <KeyFrameDouble value="0.8" frame="0" id="346:302"/>
+                <KeyedProperty property="scaleY" id="346:304">
+                    <KeyFrameDouble value="0.80000001" id="346:302"/>
                 </KeyedProperty>
             </KeyedObject>
             <KeyedObject objectId="346:41" id="346:306">
-                <KeyedProperty propertyKey="18" id="346:307">
-                    <KeyFrameDouble value="0" frame="0" id="346:305"/>
+                <KeyedProperty property="opacity" id="346:307">
+                    <KeyFrameDouble id="346:305"/>
                 </KeyedProperty>
             </KeyedObject>
         </LinearAnimation>
-        <LinearAnimation fps="60" duration="1" loopValue="loop" name="Low Thumb Hover" id="346:258">
+        <LinearAnimation duration="1" loopValue="loop" name="Low Thumb Hover" id="346:258">
             <KeyedObject objectId="346:6" id="346:309">
-                <KeyedProperty propertyKey="18" id="346:310">
-                    <KeyFrameDouble value="1" frame="0" id="346:308"/>
+                <KeyedProperty property="opacity" id="346:310">
+                    <KeyFrameDouble value="1" id="346:308"/>
                 </KeyedProperty>
-            </KeyedObject>
-            <KeyedObject objectId="346:6" id="346:312">
-                <KeyedProperty propertyKey="16" id="346:313">
-                    <KeyFrameDouble value="1" frame="0" id="346:311"/>
+                <KeyedProperty property="scaleX" id="346:313">
+                    <KeyFrameDouble value="1" id="346:311"/>
                 </KeyedProperty>
-            </KeyedObject>
-            <KeyedObject objectId="346:6" id="346:315">
-                <KeyedProperty propertyKey="17" id="346:316">
-                    <KeyFrameDouble value="1" frame="0" id="346:314"/>
+                <KeyedProperty property="scaleY" id="346:316">
+                    <KeyFrameDouble value="1" id="346:314"/>
                 </KeyedProperty>
             </KeyedObject>
             <KeyedObject objectId="346:41" id="346:318">
-                <KeyedProperty propertyKey="18" id="346:319">
-                    <KeyFrameDouble value="0.25" frame="0" id="346:317"/>
+                <KeyedProperty property="opacity" id="346:319">
+                    <KeyFrameDouble value="0.25" id="346:317"/>
                 </KeyedProperty>
             </KeyedObject>
         </LinearAnimation>
-        <LinearAnimation fps="60" duration="1" loopValue="loop" name="Low Thumb Drag" id="346:259">
+        <LinearAnimation duration="1" loopValue="loop" name="Low Thumb Drag" id="346:259">
             <KeyedObject objectId="346:6" id="346:321">
-                <KeyedProperty propertyKey="18" id="346:322">
-                    <KeyFrameDouble value="1" frame="0" id="346:320"/>
+                <KeyedProperty property="opacity" id="346:322">
+                    <KeyFrameDouble value="1" id="346:320"/>
                 </KeyedProperty>
-            </KeyedObject>
-            <KeyedObject objectId="346:6" id="346:324">
-                <KeyedProperty propertyKey="16" id="346:325">
-                    <KeyFrameDouble value="1" frame="0" id="346:323"/>
+                <KeyedProperty property="scaleX" id="346:325">
+                    <KeyFrameDouble value="1" id="346:323"/>
                 </KeyedProperty>
-            </KeyedObject>
-            <KeyedObject objectId="346:6" id="346:327">
-                <KeyedProperty propertyKey="17" id="346:328">
-                    <KeyFrameDouble value="1" frame="0" id="346:326"/>
+                <KeyedProperty property="scaleY" id="346:328">
+                    <KeyFrameDouble value="1" id="346:326"/>
                 </KeyedProperty>
             </KeyedObject>
             <KeyedObject objectId="346:41" id="346:330">
-                <KeyedProperty propertyKey="18" id="346:331">
-                    <KeyFrameDouble value="0.4" frame="0" id="346:329"/>
+                <KeyedProperty property="opacity" id="346:331">
+                    <KeyFrameDouble value="0.40000001" id="346:329"/>
                 </KeyedProperty>
             </KeyedObject>
         </LinearAnimation>
-        <LinearAnimation fps="60" duration="1" loopValue="loop" name="High Thumb Rest" id="346:332">
+        <LinearAnimation duration="1" loopValue="loop" name="High Thumb Rest" id="346:332">
             <KeyedObject objectId="346:74" id="346:372">
-                <KeyedProperty propertyKey="18" id="346:373">
-                    <KeyFrameDouble value="0" frame="0" id="346:371"/>
+                <KeyedProperty property="opacity" id="346:373">
+                    <KeyFrameDouble id="346:371"/>
                 </KeyedProperty>
-            </KeyedObject>
-            <KeyedObject objectId="346:74" id="346:375">
-                <KeyedProperty propertyKey="16" id="346:376">
-                    <KeyFrameDouble value="0.8" frame="0" id="346:374"/>
+                <KeyedProperty property="scaleX" id="346:376">
+                    <KeyFrameDouble value="0.80000001" id="346:374"/>
                 </KeyedProperty>
-            </KeyedObject>
-            <KeyedObject objectId="346:74" id="346:378">
-                <KeyedProperty propertyKey="17" id="346:379">
-                    <KeyFrameDouble value="0.8" frame="0" id="346:377"/>
+                <KeyedProperty property="scaleY" id="346:379">
+                    <KeyFrameDouble value="0.80000001" id="346:377"/>
                 </KeyedProperty>
             </KeyedObject>
             <KeyedObject objectId="346:109" id="346:381">
-                <KeyedProperty propertyKey="18" id="346:382">
-                    <KeyFrameDouble value="0" frame="0" id="346:380"/>
+                <KeyedProperty property="opacity" id="346:382">
+                    <KeyFrameDouble id="346:380"/>
                 </KeyedProperty>
             </KeyedObject>
         </LinearAnimation>
-        <LinearAnimation fps="60" duration="1" loopValue="loop" name="High Thumb Hover" id="346:333">
+        <LinearAnimation duration="1" loopValue="loop" name="High Thumb Hover" id="346:333">
             <KeyedObject objectId="346:74" id="346:384">
-                <KeyedProperty propertyKey="18" id="346:385">
-                    <KeyFrameDouble value="1" frame="0" id="346:383"/>
+                <KeyedProperty property="opacity" id="346:385">
+                    <KeyFrameDouble value="1" id="346:383"/>
                 </KeyedProperty>
-            </KeyedObject>
-            <KeyedObject objectId="346:74" id="346:387">
-                <KeyedProperty propertyKey="16" id="346:388">
-                    <KeyFrameDouble value="1" frame="0" id="346:386"/>
+                <KeyedProperty property="scaleX" id="346:388">
+                    <KeyFrameDouble value="1" id="346:386"/>
                 </KeyedProperty>
-            </KeyedObject>
-            <KeyedObject objectId="346:74" id="346:390">
-                <KeyedProperty propertyKey="17" id="346:391">
-                    <KeyFrameDouble value="1" frame="0" id="346:389"/>
+                <KeyedProperty property="scaleY" id="346:391">
+                    <KeyFrameDouble value="1" id="346:389"/>
                 </KeyedProperty>
             </KeyedObject>
             <KeyedObject objectId="346:109" id="346:393">
-                <KeyedProperty propertyKey="18" id="346:394">
-                    <KeyFrameDouble value="0.25" frame="0" id="346:392"/>
+                <KeyedProperty property="opacity" id="346:394">
+                    <KeyFrameDouble value="0.25" id="346:392"/>
                 </KeyedProperty>
             </KeyedObject>
         </LinearAnimation>
-        <LinearAnimation fps="60" duration="1" loopValue="loop" name="High Thumb Drag" id="346:334">
+        <LinearAnimation duration="1" loopValue="loop" name="High Thumb Drag" id="346:334">
             <KeyedObject objectId="346:74" id="346:396">
-                <KeyedProperty propertyKey="18" id="346:397">
-                    <KeyFrameDouble value="1" frame="0" id="346:395"/>
+                <KeyedProperty property="opacity" id="346:397">
+                    <KeyFrameDouble value="1" id="346:395"/>
                 </KeyedProperty>
-            </KeyedObject>
-            <KeyedObject objectId="346:74" id="346:399">
-                <KeyedProperty propertyKey="16" id="346:400">
-                    <KeyFrameDouble value="1" frame="0" id="346:398"/>
+                <KeyedProperty property="scaleX" id="346:400">
+                    <KeyFrameDouble value="1" id="346:398"/>
                 </KeyedProperty>
-            </KeyedObject>
-            <KeyedObject objectId="346:74" id="346:402">
-                <KeyedProperty propertyKey="17" id="346:403">
-                    <KeyFrameDouble value="1" frame="0" id="346:401"/>
+                <KeyedProperty property="scaleY" id="346:403">
+                    <KeyFrameDouble value="1" id="346:401"/>
                 </KeyedProperty>
             </KeyedObject>
             <KeyedObject objectId="346:109" id="346:405">
-                <KeyedProperty propertyKey="18" id="346:406">
-                    <KeyFrameDouble value="0.4" frame="0" id="346:404"/>
+                <KeyedProperty property="opacity" id="346:406">
+                    <KeyFrameDouble value="0.40000001" id="346:404"/>
                 </KeyedProperty>
             </KeyedObject>
         </LinearAnimation>
     </Artboard>
+    <ScriptAsset file="Range Discrete Slider.luau" compilationOrder="1" serializedImplementedMethods="4985" scriptProtocolValue="layout" codeFileId="0:27938" name="Range Discrete Slider" groupId="327:1" id="345:400"/>
     <ViewModel defaultInstanceId="345:150" name="RangeDiscreteSlider" groupId="1:2673" id="345:100">
         <ViewModelPropertyNumber name="low" id="345:101"/>
         <ViewModelPropertyNumber name="high" id="345:102"/>
@@ -639,7 +616,7 @@
         <ViewModelInstance exports="true" name="Price" id="345:150">
             <ViewModelInstanceNumber propertyValue="20" viewModelPropertyId="345:101" id="345:500"/>
             <ViewModelInstanceNumber propertyValue="80" viewModelPropertyId="345:102" id="345:501"/>
-            <ViewModelInstanceNumber propertyValue="0" viewModelPropertyId="345:103" id="345:502"/>
+            <ViewModelInstanceNumber viewModelPropertyId="345:103" id="345:502"/>
             <ViewModelInstanceNumber propertyValue="100" viewModelPropertyId="345:104" id="345:503"/>
             <ViewModelInstanceNumber propertyValue="10" viewModelPropertyId="345:105" id="345:504"/>
             <ViewModelInstanceString propertyValue="Price" viewModelPropertyId="345:106" id="345:505"/>
@@ -647,8 +624,8 @@
             <ViewModelInstanceBoolean viewModelPropertyId="345:108" id="345:507"/>
             <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="345:109" id="345:508"/>
             <ViewModelInstanceNumber propertyValue="0.2" viewModelPropertyId="345:110" id="345:509"/>
-            <ViewModelInstanceNumber propertyValue="0.8" viewModelPropertyId="345:111" id="345:510"/>
-            <ViewModelInstanceNumber propertyValue="0.6" viewModelPropertyId="345:112" id="345:511"/>
+            <ViewModelInstanceNumber propertyValue="0.80000001" viewModelPropertyId="345:111" id="345:510"/>
+            <ViewModelInstanceNumber propertyValue="0.60000002" viewModelPropertyId="345:112" id="345:511"/>
             <ViewModelInstanceBoolean viewModelPropertyId="345:113" id="345:512"/>
             <ViewModelInstanceBoolean viewModelPropertyId="345:114" id="345:513"/>
             <ViewModelInstanceBoolean viewModelPropertyId="345:115" id="345:514"/>
@@ -658,5 +635,4 @@
             <ViewModelInstanceTrigger viewModelPropertyId="345:119" id="345:518"/>
         </ViewModelInstance>
     </ViewModel>
-    <ScriptAsset file="Range Discrete Slider.luau" name="Range Discrete Slider" groupId="327:1" id="345:400"/>
 </Rive>

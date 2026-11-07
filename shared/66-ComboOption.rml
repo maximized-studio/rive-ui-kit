@@ -1,9 +1,9 @@
 <Rive version="1" kind="fragment">
-    <Artboard defaultStateMachineId="675:1001" viewModelId="675:1" viewModelInstanceId="675:20" isComponent="true" spaceId="1:5601" width="272" height="34" styleId="675:1131" x="8700" y="0" name="Combo Option" id="675:1000">
+    <Artboard defaultStateMachineId="675:1001" viewModelId="675:1" viewModelInstanceId="675:20" isComponent="true" spaceId="1:5601" width="272" height="34" styleId="675:1131" x="8700" name="Combo Option" id="675:1000">
         <Fill fillRule="clockwise" id="675:1132">
             <SolidColor colorValue="00000000" id="675:1133"/>
         </Fill>
-        <LayoutComponentStyle layoutWidthScaleType="fill" intrinsicallySizedValue="true" layoutHeightScaleType="hug" heightUnitsValue="auto" id="675:1131"/>
+        <LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="fill" layoutHeightScaleType="hug" heightUnitsValue="auto" id="675:1131"/>
         <LayoutComponent height="34" styleId="675:1020" name="Option" id="675:1002">
             <Text name="Label" id="675:1023">
                 <TextStylePaint fontSize="14" fontAssetId="0:7" familyName="Inter" styleName="Regular" id="675:1022">
@@ -23,7 +23,7 @@
             <LayoutComponent width="16" height="16" styleId="675:1010" opacity="0" name="Check" id="675:1004">
                 <Node name="Art" id="675:1011">
                     <Shape name="Check" id="675:1012">
-                        <PointsPath isClosed="false" id="675:1013">
+                        <PointsPath isClockwise="false" id="675:1013">
                             <StraightVertex x="3.5" y="8.5" id="675:1014"/>
                             <StraightVertex x="6.5" y="11.5" id="675:1015"/>
                             <StraightVertex x="12.5" y="4.5" id="675:1016"/>
@@ -50,12 +50,13 @@
             <Fill fillRule="clockwise" id="675:1036">
                 <SolidColor colorValue="00000000" id="675:1037"/>
             </Fill>
-            <LayoutComponentStyle paddingLeft="10" paddingRight="8" gapHorizontal="8" layoutAlignmentType="centerLeft" layoutWidthScaleType="fill" widthUnitsValue="auto" id="675:1020">
+            <LayoutComponentStyle gapHorizontal="8" paddingLeft="10" paddingRight="8" layoutAlignmentType="centerLeft" layoutWidthScaleType="fill" widthUnitsValue="auto" id="675:1020">
                 <DataBindContext sourcePathIds="10:7-901:21" propertyKey="640" converterId="0:0" id="675:1038"/>
             </LayoutComponentStyle>
             <SemanticData role="listItem" traitFlags="4" name="Semantics" id="675:1005">
                 <DataBindContext sourcePathIds="675:1-675:2" propertyKey="983" nameBased="true" id="675:1039"/>
             </SemanticData>
+            <FocusData name="Focus" id="0:91755"/>
         </LayoutComponent>
         <StateMachine name="State Machine 1" id="675:1001">
             <StateMachineListener targetId="675:1002" name="Cursor Off" id="675:1113">
@@ -78,7 +79,7 @@
             <StateMachineListener targetId="675:1002" name="Pick" id="675:1100">
                 <ListenerInputType listenerTypeValue="click" id="675:1101"/>
                 <ListenerInputTypeSemantic listenerTypeValue="semanticAction" id="675:1102">
-                    <SemanticInput actionType="tap" id="675:1103"/>
+                    <SemanticInput id="675:1103"/>
                 </ListenerInputTypeSemantic>
                 <ListenerViewModelChange fromViewModelProperty="true" fromDataBindId="675:1098" id="675:1104">
                     <BindablePropertyTrigger id="675:1105">
@@ -110,6 +111,9 @@
                 </ListenerViewModelChange>
             </StateMachineListener>
             <StateMachineLayer name="Highlight" id="675:1061">
+                <AnimationState animationId="675:1007" stateName="Init" id="675:1058"/>
+                <AnimationState animationId="675:1007" stateName="Off" id="675:1059"/>
+                <AnimationState animationId="675:1006" stateName="On" id="675:1060"/>
                 <AnyState id="675:1062">
                     <StateTransition stateToId="675:1060" duration="80" id="675:1063">
                         <TransitionViewModelCondition id="675:1064">
@@ -136,11 +140,11 @@
                 <EntryState id="675:1076">
                     <StateTransition stateToId="675:1058" id="675:1077"/>
                 </EntryState>
-                <AnimationState animationId="675:1007" stateName="Init" id="675:1058"/>
-                <AnimationState animationId="675:1007" stateName="Off" id="675:1059"/>
-                <AnimationState animationId="675:1006" stateName="On" id="675:1060"/>
             </StateMachineLayer>
             <StateMachineLayer name="Selected" id="675:1081">
+                <AnimationState animationId="675:1009" stateName="Init" id="675:1078"/>
+                <AnimationState animationId="675:1009" stateName="Off" id="675:1079"/>
+                <AnimationState animationId="675:1008" stateName="On" id="675:1080"/>
                 <AnyState id="675:1082">
                     <StateTransition stateToId="675:1080" duration="100" id="675:1083">
                         <TransitionViewModelCondition id="675:1084">
@@ -167,9 +171,6 @@
                 <EntryState id="675:1096">
                     <StateTransition stateToId="675:1078" id="675:1097"/>
                 </EntryState>
-                <AnimationState animationId="675:1009" stateName="Init" id="675:1078"/>
-                <AnimationState animationId="675:1009" stateName="Off" id="675:1079"/>
-                <AnimationState animationId="675:1008" stateName="On" id="675:1080"/>
             </StateMachineLayer>
         </StateMachine>
         <LinearAnimation loopValue="loop" name="Highlight On" id="675:1006">
@@ -182,7 +183,7 @@
         <LinearAnimation loopValue="loop" name="Highlight Off" id="675:1007">
             <KeyedObject objectId="675:1003" id="675:1045">
                 <KeyedProperty property="opacity" id="675:1043">
-                    <KeyFrameDouble value="0" interpolationType="linear" id="675:1044"/>
+                    <KeyFrameDouble interpolationType="linear" id="675:1044"/>
                 </KeyedProperty>
             </KeyedObject>
         </LinearAnimation>
@@ -201,12 +202,12 @@
         <LinearAnimation loopValue="loop" name="Unselected" id="675:1009">
             <KeyedObject objectId="675:1004" id="675:1054">
                 <KeyedProperty property="opacity" id="675:1052">
-                    <KeyFrameDouble value="0" interpolationType="linear" id="675:1053"/>
+                    <KeyFrameDouble interpolationType="linear" id="675:1053"/>
                 </KeyedProperty>
             </KeyedObject>
             <KeyedObject objectId="675:1005" id="675:1055">
                 <KeyedProperty property="isSelected" id="675:1056">
-                    <KeyFrameBool value="false" id="675:1057"/>
+                    <KeyFrameBool id="675:1057"/>
                 </KeyedProperty>
             </KeyedObject>
         </LinearAnimation>
