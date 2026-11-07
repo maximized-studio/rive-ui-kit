@@ -30,7 +30,10 @@ sec = block(f'Sec {section}')
 tile_ids = re.findall(r'viewModelInstanceId="([^"]+)"', sec.group(0))
 names = [re.search(r'name="T ([^"]+)" id="%s"' % re.escape(t), s).group(1) for t in tile_ids]
 pos = sum(1 for x in names if x.lower() < title.lower())
-slot = slot_of('T', names[pos - 1]) + 1 if pos else slot_of('T', names[0])
+if names:
+    slot = slot_of('T', names[pos - 1]) + 1 if pos else slot_of('T', names[0])
+else:  # an empty (last) section: append after every slide
+    slot = int(re.search(r'propertyValue="(\d+)" viewModelPropertyId="10:5576"', block('Showcase').group(0)).group(1))
 after = names[pos - 1] if pos else None
 print(f'{title}: {section} position {pos}, slot {slot}')
 

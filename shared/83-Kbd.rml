@@ -1,0 +1,75 @@
+<Rive version="1" kind="fragment">
+    <Artboard defaultStateMachineId="830:7" viewModelId="830:1" viewModelInstanceId="830:4" isComponent="true" spaceId="1:5601" width="40" height="24" styleId="830:43" x="8400" y="0" name="Kbd" id="830:6">
+        <Fill fillRule="clockwise" id="830:44">
+            <SolidColor colorValue="00000000" id="830:45"/>
+        </Fill>
+        <LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="830:43"/>
+        <LayoutComponent styleId="830:35" name="Key" id="830:36">
+            <LayoutComponent styleId="830:29" height="22" name="Face" id="830:30">
+                <Text name="Keys" id="830:14">
+                    <TextStylePaint fontSize="12" fontAssetId="0:7" familyName="Inter" styleName="Medium" id="830:12">
+                        <Fill fillRule="clockwise" id="830:15">
+                            <SolidColor colorValue="FF888888" id="830:16">
+                                <DataBindContext sourcePathIds="10:7-10:7424" propertyKey="37" id="830:17"/>
+                            </SolidColor>
+                        </Fill>
+                        <TextStyleAxis tag="1869640570" axisValue="14" id="830:18"/>
+                        <TextStyleAxis tag="2003265652" axisValue="500" id="830:19"/>
+                    </TextStylePaint>
+                    <TextValueRun styleId="830:12" text="⌘ K" id="830:20">
+                        <DataBindContext sourcePathIds="830:1-830:2" propertyKey="268" nameBased="true" id="830:13"/>
+                    </TextValueRun>
+                    <LayoutParticipant layoutWidthScaleType="hug" layoutHeightScaleType="hug" id="830:21"/>
+                    <SemanticData role="text" name="Semantics" id="830:11">
+                        <DataBindContext sourcePathIds="830:1-830:2" propertyKey="983" nameBased="true" id="830:9"/>
+                        <DataBindContext sourcePathIds="830:1-830:3" propertyKey="1004" nameBased="true" id="830:10"/>
+                    </SemanticData>
+                </Text>
+                <Stroke thickness="1" cap="butt" join="round" id="830:22">
+                    <SolidColor colorValue="FF27272A" id="830:23">
+                        <DataBindContext sourcePathIds="10:7-10:7418" propertyKey="37" id="830:24"/>
+                    </SolidColor>
+                </Stroke>
+                <Fill fillRule="clockwise" id="830:25">
+                    <SolidColor colorValue="FF27272A" id="830:26">
+                        <DataBindContext sourcePathIds="10:7-10:7414" propertyKey="37" id="830:27"/>
+                    </SolidColor>
+                </Fill>
+                <LayoutComponentStyle paddingLeft="7" paddingRight="7" minWidth="22" minWidthUnitsValue="points" layoutAlignmentType="center" cornerRadiusTL="6" layoutWidthScaleType="hug" widthUnitsValue="auto" id="830:29">
+                    <DataBindContext sourcePathIds="10:7-901:21" propertyKey="640" id="830:28"/>
+                </LayoutComponentStyle>
+            </LayoutComponent>
+            <Fill fillRule="clockwise" id="830:31">
+                <SolidColor colorValue="FF3F3F46" id="830:32">
+                    <DataBindContext sourcePathIds="10:7-10:7420" propertyKey="37" id="830:33"/>
+                </SolidColor>
+            </Fill>
+            <LayoutComponentStyle paddingBottom="2" cornerRadiusTL="6" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="830:35">
+                <DataBindContext sourcePathIds="10:7-901:21" propertyKey="640" id="830:34"/>
+            </LayoutComponentStyle>
+        </LayoutComponent>
+        <StateMachine name="State Machine 1" id="830:7">
+            <StateMachineLayer name="Layer 1" id="830:38">
+                <AnimationState animationId="830:8" stateName="Idle" id="830:37"/>
+                <AnyState id="830:39"/>
+                <ExitState id="830:40"/>
+                <EntryState id="830:41">
+                    <StateTransition stateToId="830:37" id="830:42"/>
+                </EntryState>
+            </StateMachineLayer>
+        </StateMachine>
+        <LinearAnimation name="Idle" id="830:8"/>
+    </Artboard>
+    <ViewModel defaultInstanceId="830:4" name="Kbd" groupId="1:2673" id="830:1">
+        <ViewModelPropertyString name="keys" id="830:2"/>
+        <ViewModelPropertyBoolean name="a11yHidden" id="830:3"/>
+        <ViewModelInstance exports="true" name="Command K" id="830:4">
+            <ViewModelInstanceString propertyValue="⌘ K" viewModelPropertyId="830:2" id="830:46"/>
+            <ViewModelInstanceBoolean viewModelPropertyId="830:3" id="830:47"/>
+        </ViewModelInstance>
+        <ViewModelInstance exports="true" name="Escape" id="830:5">
+            <ViewModelInstanceString propertyValue="Esc" viewModelPropertyId="830:2" id="830:48"/>
+            <ViewModelInstanceBoolean viewModelPropertyId="830:3" id="830:49"/>
+        </ViewModelInstance>
+    </ViewModel>
+</Rive>

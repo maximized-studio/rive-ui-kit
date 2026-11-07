@@ -1,0 +1,375 @@
+<Rive version="1" kind="fragment">
+    <ScriptAsset file="Date Field.luau" scriptProtocolValue="layout" name="Date Field" groupId="327:1" id="252:17"/>
+    <Artboard defaultStateMachineId="252:12" viewModelId="252:1" viewModelInstanceId="252:10" isComponent="true" spaceId="1:5601" width="300" height="430" styleId="252:240" x="13000" y="600" name="Date Field" id="252:11">
+        <Fill fillRule="clockwise" id="252:241">
+            <SolidColor colorValue="00000000" id="252:242"/>
+        </Fill>
+        <LayoutComponentStyle id="252:240"/>
+        <LayoutComponent styleId="252:123" name="Content" id="252:124">
+            <Text sizingValue="autoHeight" name="Label" id="252:25">
+                <TextStylePaint fontSize="13" fontAssetId="0:7" familyName="Inter" styleName="Medium" id="252:23">
+                    <Fill fillRule="clockwise" id="252:26">
+                        <SolidColor colorValue="FF888888" id="252:27">
+                            <DataBindContext sourcePathIds="10:7-10:7422" propertyKey="37" id="252:28"/>
+                        </SolidColor>
+                    </Fill>
+                    <TextStyleAxis tag="1869640570" axisValue="14" id="252:29"/>
+                    <TextStyleAxis tag="2003265652" axisValue="500" id="252:30"/>
+                </TextStylePaint>
+                <TextValueRun styleId="252:23" text="Delivery date" id="252:31">
+                    <DataBindContext sourcePathIds="252:1-252:2" propertyKey="268" nameBased="true" id="252:24"/>
+                </TextValueRun>
+                <LayoutParticipant layoutWidthScaleType="fill" layoutHeightScaleType="hug" id="252:32"/>
+            </Text>
+            <LayoutComponent height="40" styleId="252:78" isTargetOpaque="true" name="Field" id="252:13">
+                <LayoutComponent styleId="252:55" name="Text" id="252:56">
+                    <Text sizingValue="autoHeight" name="Value" id="252:35">
+                        <TextStylePaint fontSize="14" fontAssetId="0:7" familyName="Inter" styleName="Regular" id="252:33">
+                            <Fill fillRule="clockwise" id="252:36">
+                                <SolidColor colorValue="FF888888" id="252:37">
+                                    <DataBindContext sourcePathIds="10:7-10:7422" propertyKey="37" id="252:38"/>
+                                </SolidColor>
+                            </Fill>
+                            <TextStyleAxis tag="1869640570" axisValue="14" id="252:39"/>
+                            <TextStyleAxis tag="2003265652" axisValue="400" id="252:40"/>
+                        </TextStylePaint>
+                        <TextValueRun styleId="252:33" text="12 Nov 2026" id="252:41">
+                            <DataBindContext sourcePathIds="252:1-252:7" propertyKey="268" nameBased="true" id="252:34"/>
+                        </TextValueRun>
+                        <LayoutParticipant layoutWidthScaleType="fill" layoutHeightScaleType="hug" id="252:42"/>
+                        <DataBindContext sourcePathIds="252:1-252:8" propertyKey="18" converterId="9:145" nameBased="true" id="252:43"/>
+                    </Text>
+                    <Text sizingValue="autoHeight" name="Placeholder" id="252:46">
+                        <TextStylePaint fontSize="14" fontAssetId="0:7" familyName="Inter" styleName="Regular" id="252:44">
+                            <Fill fillRule="clockwise" id="252:47">
+                                <SolidColor colorValue="FF888888" id="252:48">
+                                    <DataBindContext sourcePathIds="10:7-10:7426" propertyKey="37" id="252:49"/>
+                                </SolidColor>
+                            </Fill>
+                            <TextStyleAxis tag="1869640570" axisValue="14" id="252:50"/>
+                            <TextStyleAxis tag="2003265652" axisValue="400" id="252:51"/>
+                        </TextStylePaint>
+                        <TextValueRun styleId="252:44" text="Pick a date" id="252:52">
+                            <DataBindContext sourcePathIds="252:1-252:4" propertyKey="268" nameBased="true" id="252:45"/>
+                        </TextValueRun>
+                        <LayoutParticipant layoutWidthScaleType="fill" layoutHeightScaleType="hug" id="252:53"/>
+                        <DataBindContext sourcePathIds="252:1-252:8" propertyKey="18" converterId="9:90" nameBased="true" id="252:54"/>
+                    </Text>
+                    <LayoutComponentStyle layoutTypeValue="stack" intrinsicallySizedValue="true" layoutWidthScaleType="fill" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="252:55"/>
+                </LayoutComponent>
+                <LayoutComponent styleId="252:76" width="16" height="16" name="Icon" id="252:77">
+                    <Node x="1" y="1" scaleX="0.5833" scaleY="0.5833" name="Calendar" id="252:57">
+                        <Shape name="Calendar" id="252:58">
+                            <PointsPath isClosed="true" id="252:63">
+                                <StraightVertex x="3" y="5" radius="2.5" id="252:59"/>
+                                <StraightVertex x="21" y="5" radius="2.5" id="252:60"/>
+                                <StraightVertex x="21" y="21" radius="2.5" id="252:61"/>
+                                <StraightVertex x="3" y="21" radius="2.5" id="252:62"/>
+                            </PointsPath>
+                            <PointsPath isClosed="false" id="252:66">
+                                <StraightVertex x="3" y="10" id="252:64"/>
+                                <StraightVertex x="21" y="10" id="252:65"/>
+                            </PointsPath>
+                            <PointsPath isClosed="false" id="252:69">
+                                <StraightVertex x="8" y="2.5" id="252:67"/>
+                                <StraightVertex x="8" y="6.5" id="252:68"/>
+                            </PointsPath>
+                            <PointsPath isClosed="false" id="252:72">
+                                <StraightVertex x="16" y="2.5" id="252:70"/>
+                                <StraightVertex x="16" y="6.5" id="252:71"/>
+                            </PointsPath>
+                            <Stroke thickness="2.6" cap="round" join="round" id="252:73">
+                                <SolidColor colorValue="FF888888" id="252:74">
+                                    <DataBindContext sourcePathIds="10:7-10:7426" propertyKey="37" id="252:75"/>
+                                </SolidColor>
+                            </Stroke>
+                        </Shape>
+                    </Node>
+                    <LayoutComponentStyle id="252:76"/>
+                </LayoutComponent>
+                <LayoutComponent styleId="252:83" opacity="0" name="Hover" id="252:22">
+                    <Fill fillRule="clockwise" id="252:79">
+                        <SolidColor colorValue="FF888888" id="252:80">
+                            <DataBindContext sourcePathIds="10:7-10:7422" propertyKey="37" id="252:81"/>
+                        </SolidColor>
+                    </Fill>
+                    <LayoutComponentStyle positionTypeValue="absolute" positionLeftUnitsValue="points" positionRightUnitsValue="points" positionTopUnitsValue="points" positionBottomUnitsValue="points" widthUnitsValue="auto" heightUnitsValue="auto" cornerRadiusTL="8" id="252:83">
+                        <DataBindContext sourcePathIds="10:7-901:5" propertyKey="640" id="252:82"/>
+                    </LayoutComponentStyle>
+                </LayoutComponent>
+                <Fill fillRule="clockwise" id="252:84">
+                    <SolidColor colorValue="FF18181B" id="252:85">
+                        <DataBindContext sourcePathIds="10:7-10:7406" propertyKey="37" id="252:86"/>
+                    </SolidColor>
+                </Fill>
+                <Stroke thickness="1" cap="butt" join="round" id="252:87">
+                    <SolidColor colorValue="FF27272A" id="252:88">
+                        <DataBindContext sourcePathIds="10:7-10:7418" propertyKey="37" id="252:89"/>
+                    </SolidColor>
+                </Stroke>
+                <Stroke thickness="1" id="252:90">
+                    <SolidColor colorValue="FF888888" id="252:91">
+                        <DataBindContext sourcePathIds="10:7-10:2102" propertyKey="37" id="252:92"/>
+                    </SolidColor>
+                    <DataBindContext sourcePathIds="252:1-252:5" propertyKey="47" converterId="9:145" nameBased="true" id="252:93"/>
+                </Stroke>
+                <SemanticData role="button" isExpandable="true" name="Semantics" id="252:98">
+                    <DataBindContext sourcePathIds="252:1-252:2" propertyKey="983" nameBased="true" id="252:96"/>
+                    <DataBindContext sourcePathIds="252:1-252:6" propertyKey="1004" nameBased="true" id="252:97"/>
+                    <DataBindContext sourcePathIds="252:1-252:7" propertyKey="984" nameBased="true" id="252:94"/>
+                    <DataBindContext sourcePathIds="252:1-252:5" propertyKey="996" nameBased="true" id="252:95"/>
+                </SemanticData>
+                <LayoutComponentStyle gapHorizontal="8" paddingLeft="12" paddingRight="12" layoutAlignmentType="centerLeft" cornerRadiusTL="8" layoutWidthScaleType="fill" widthUnitsValue="auto" id="252:78">
+                    <DataBindContext sourcePathIds="10:7-901:5" propertyKey="640" id="252:99"/>
+                </LayoutComponentStyle>
+            </LayoutComponent>
+            <LayoutComponent styleId="252:14" isTargetOpaque="true" name="Popover" id="252:15">
+                <LayoutComponent styleId="252:120" name="Calendar" id="252:121">
+                    <NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="412:1" isStateful="true" name="Calendar" id="252:113">
+                        <NestedStateMachine animationId="412:3" id="252:114"/>
+                        <ViewModelInstance viewModelId="410:200" exports="true" name="Date Field Calendar" id="252:100">
+                            <ViewModelInstanceNumber propertyValue="2026" viewModelPropertyId="410:201" id="252:101"/>
+                            <ViewModelInstanceNumber propertyValue="11" viewModelPropertyId="410:202" id="252:102"/>
+                            <ViewModelInstanceString propertyValue="2026-11-12" viewModelPropertyId="410:203" id="252:104">
+                                <DataBindContext sourcePathIds="252:1-252:3" propertyKey="561" nameBased="true" twoWay="true" id="252:103"/>
+                            </ViewModelInstanceString>
+                            <ViewModelInstanceString propertyValue="2026-11-07" viewModelPropertyId="410:204" id="252:105"/>
+                            <ViewModelInstanceString propertyValue="Delivery date" viewModelPropertyId="410:205" id="252:107">
+                                <DataBindContext sourcePathIds="252:1-252:2" propertyKey="561" nameBased="true" id="252:106"/>
+                            </ViewModelInstanceString>
+                            <ViewModelInstanceBoolean viewModelPropertyId="410:206" id="252:108"/>
+                            <ViewModelInstanceString propertyValue="November 2026" viewModelPropertyId="410:207" id="252:109"/>
+                            <ViewModelInstanceList viewModelPropertyId="410:208" id="252:110"/>
+                            <ViewModelInstanceTrigger viewModelPropertyId="410:209" id="252:111"/>
+                            <ViewModelInstanceTrigger viewModelPropertyId="410:210" id="252:112"/>
+                        </ViewModelInstance>
+                    </NestedArtboardLayout>
+                    <LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="252:120"/>
+                </LayoutComponent>
+                <Fill fillRule="clockwise" name="Shadow" id="252:115">
+                    <SolidColor colorValue="33000000" id="252:116"/>
+                    <Feather strength="16" offsetY="6" id="252:117">
+                        <DataBindContext sourcePathIds="10:7-901:29" propertyKey="749" id="252:118"/>
+                        <DataBindContext sourcePathIds="10:7-901:35" propertyKey="751" id="252:119"/>
+                    </Feather>
+                </Fill>
+                <LayoutComponentStyle positionTypeValue="absolute" positionLeftUnitsValue="points" positionTopUnitsValue="points" positionTop="72" cornerRadiusTL="12" displayValue="none" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="252:14">
+                    <DataBindContext sourcePathIds="10:7-901:7" propertyKey="640" id="252:122"/>
+                </LayoutComponentStyle>
+            </LayoutComponent>
+            <LayoutComponentStyle gapVertical="6" flexDirectionValue="column" intrinsicallySizedValue="true" layoutWidthScaleType="fill" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="252:123"/>
+        </LayoutComponent>
+        <LayoutComponent styleId="252:129" width="1" height="1" name="Date Field (script)" id="252:130">
+            <ScriptedLayout scriptAssetId="252:17" name="Date Field" id="252:128"/>
+            <LayoutComponentStyle positionTypeValue="absolute" id="252:129"/>
+        </LayoutComponent>
+        <LayoutComponent styleId="252:127" name="Outside" id="252:16">
+            <Fill fillRule="clockwise" id="252:125">
+                <SolidColor colorValue="00000000" id="252:126"/>
+            </Fill>
+            <LayoutComponentStyle positionTypeValue="absolute" positionLeftUnitsValue="points" positionRightUnitsValue="points" positionTopUnitsValue="points" positionBottomUnitsValue="points" widthUnitsValue="auto" heightUnitsValue="auto" id="252:127"/>
+        </LayoutComponent>
+        <StateMachine name="State Machine 1" id="252:12">
+            <StateMachineListener targetId="252:13" name="Hover On" id="252:137">
+                <ListenerInputType id="252:138"/>
+                <ListenerInputType listenerTypeValue="move" id="252:139"/>
+                <ListenerViewModelChange id="252:140">
+                    <BindablePropertyBoolean propertyValue="true" id="252:141">
+                        <DataBindContext sourcePathIds="252:1-252:9" propertyKey="634" direction="true" id="252:142"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListener targetId="252:13" name="Hover Off" id="252:143">
+                <ListenerInputType listenerTypeValue="exit" id="252:144"/>
+                <ListenerViewModelChange id="252:145">
+                    <BindablePropertyBoolean id="252:146">
+                        <DataBindContext sourcePathIds="252:1-252:9" propertyKey="634" direction="true" id="252:147"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListener targetId="252:13" name="Cursor On" id="252:148">
+                <ListenerInputType id="252:149"/>
+                <ListenerInputType listenerTypeValue="move" id="252:150"/>
+                <ListenerViewModelChange id="252:151">
+                    <BindablePropertyBoolean propertyValue="true" id="252:152">
+                        <DataBindContext sourcePathIds="10:7-63:244" propertyKey="634" direction="true" id="252:153"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListener targetId="252:13" name="Cursor Off" id="252:154">
+                <ListenerInputType listenerTypeValue="exit" id="252:155"/>
+                <ListenerViewModelChange id="252:156">
+                    <BindablePropertyBoolean id="252:157">
+                        <DataBindContext sourcePathIds="10:7-63:244" propertyKey="634" direction="true" id="252:158"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListener targetId="252:13" name="Toggle" id="252:165">
+                <ListenerInputType listenerTypeValue="click" id="252:159"/>
+                <ListenerInputTypeSemantic listenerTypeValue="semanticAction" id="252:160">
+                    <SemanticInput id="252:161"/>
+                </ListenerInputTypeSemantic>
+                <ListenerInputTypeKeyboard listenerTypeValue="keyboard" id="252:162">
+                    <KeyboardInput keyType="enter" keyPhase="1" id="252:163"/>
+                    <KeyboardInput keyType="space" keyPhase="1" id="252:164"/>
+                </ListenerInputTypeKeyboard>
+                <ListenerViewModelChange fromViewModelProperty="true" fromDataBindId="252:131" id="252:132">
+                    <BindablePropertyBoolean id="252:133">
+                        <DataBindContext sourcePathIds="252:1-252:5" propertyKey="634" id="252:131"/>
+                        <DataBindContext sourcePathIds="252:1-252:5" propertyKey="634" converterId="1:1018" direction="true" id="252:134"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListener targetId="252:16" name="Outside Click" id="252:170">
+                <ListenerInputType listenerTypeValue="click" id="252:166"/>
+                <ListenerViewModelChange id="252:167">
+                    <BindablePropertyBoolean id="252:168">
+                        <DataBindContext sourcePathIds="252:1-252:5" propertyKey="634" direction="true" id="252:169"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListener targetId="252:11" name="Escape" id="252:174">
+                <ListenerInputTypeKeyboard listenerTypeValue="keyboard" id="252:135">
+                    <KeyboardInput keyType="escape" keyPhase="1" id="252:136"/>
+                </ListenerInputTypeKeyboard>
+                <ListenerViewModelChange id="252:171">
+                    <BindablePropertyBoolean id="252:172">
+                        <DataBindContext sourcePathIds="252:1-252:5" propertyKey="634" direction="true" id="252:173"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListener targetId="252:15" name="Popover Blocks Outside" id="252:179">
+                <ListenerInputType id="252:175"/>
+                <ListenerViewModelChange id="252:176">
+                    <BindablePropertyBoolean id="252:177">
+                        <DataBindContext sourcePathIds="10:7-63:244" propertyKey="634" direction="true" id="252:178"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineLayer name="Open" id="252:194">
+                <AnimationState animationId="252:18" stateName="Off" id="252:180"/>
+                <AnimationState animationId="252:19" stateName="On" id="252:181"/>
+                <AnyState id="252:195">
+                    <StateTransition stateToId="252:180" duration="120" id="252:192">
+                        <TransitionViewModelCondition id="252:182">
+                            <TransitionPropertyViewModelComparator id="252:183">
+                                <BindablePropertyBoolean id="252:184">
+                                    <DataBindContext sourcePathIds="252:1-252:5" propertyKey="634" id="252:185"/>
+                                </BindablePropertyBoolean>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueBooleanComparator id="252:186"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                    <StateTransition stateToId="252:181" duration="160" id="252:193">
+                        <TransitionViewModelCondition id="252:187">
+                            <TransitionPropertyViewModelComparator id="252:188">
+                                <BindablePropertyBoolean id="252:189">
+                                    <DataBindContext sourcePathIds="252:1-252:5" propertyKey="634" id="252:190"/>
+                                </BindablePropertyBoolean>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueBooleanComparator value="true" id="252:191"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                </AnyState>
+                <ExitState id="252:196"/>
+                <EntryState id="252:197">
+                    <StateTransition stateToId="252:180" id="252:198"/>
+                </EntryState>
+            </StateMachineLayer>
+            <StateMachineLayer name="Hover" id="252:213">
+                <AnimationState animationId="252:20" stateName="Off" id="252:199"/>
+                <AnimationState animationId="252:21" stateName="On" id="252:200"/>
+                <AnyState id="252:214">
+                    <StateTransition stateToId="252:199" duration="180" id="252:211">
+                        <TransitionViewModelCondition id="252:201">
+                            <TransitionPropertyViewModelComparator id="252:202">
+                                <BindablePropertyBoolean id="252:203">
+                                    <DataBindContext sourcePathIds="252:1-252:9" propertyKey="634" id="252:204"/>
+                                </BindablePropertyBoolean>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueBooleanComparator id="252:205"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                    <StateTransition stateToId="252:200" duration="100" id="252:212">
+                        <TransitionViewModelCondition id="252:206">
+                            <TransitionPropertyViewModelComparator id="252:207">
+                                <BindablePropertyBoolean id="252:208">
+                                    <DataBindContext sourcePathIds="252:1-252:9" propertyKey="634" id="252:209"/>
+                                </BindablePropertyBoolean>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueBooleanComparator value="true" id="252:210"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                </AnyState>
+                <ExitState id="252:215"/>
+                <EntryState id="252:216">
+                    <StateTransition stateToId="252:199" id="252:217"/>
+                </EntryState>
+            </StateMachineLayer>
+        </StateMachine>
+        <LinearAnimation loopValue="loop" name="Closed" id="252:18">
+            <KeyedObject objectId="252:14" id="252:220">
+                <KeyedProperty propertyKey="596" id="252:219">
+                    <KeyFrameUint value="1" id="252:218"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="252:15" id="252:225">
+                <KeyedProperty propertyKey="18" id="252:222">
+                    <KeyFrameDouble value="0" id="252:221"/>
+                </KeyedProperty>
+                <KeyedProperty propertyKey="14" id="252:224">
+                    <KeyFrameDouble value="-4" id="252:223"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+        <LinearAnimation loopValue="loop" name="Open" id="252:19">
+            <KeyedObject objectId="252:14" id="252:228">
+                <KeyedProperty propertyKey="596" id="252:227">
+                    <KeyFrameUint value="0" id="252:226"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="252:15" id="252:233">
+                <KeyedProperty propertyKey="18" id="252:230">
+                    <KeyFrameDouble value="1" id="252:229"/>
+                </KeyedProperty>
+                <KeyedProperty propertyKey="14" id="252:232">
+                    <KeyFrameDouble value="0" id="252:231"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+        <LinearAnimation loopValue="loop" name="Hover Off" id="252:20">
+            <KeyedObject objectId="252:22" id="252:236">
+                <KeyedProperty propertyKey="18" id="252:235">
+                    <KeyFrameDouble value="0" id="252:234"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+        <LinearAnimation loopValue="loop" name="Hover On" id="252:21">
+            <KeyedObject objectId="252:22" id="252:239">
+                <KeyedProperty propertyKey="18" id="252:238">
+                    <KeyFrameDouble value="0.04" id="252:237"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+    </Artboard>
+    <ViewModel defaultInstanceId="252:10" name="DateField" groupId="1:2673" id="252:1">
+        <ViewModelPropertyString name="label" id="252:2"/>
+        <ViewModelPropertyString name="value" id="252:3"/>
+        <ViewModelPropertyString name="placeholder" id="252:4"/>
+        <ViewModelPropertyString name="_display" id="252:7"/>
+        <ViewModelPropertyBoolean name="open" id="252:5"/>
+        <ViewModelPropertyBoolean name="a11yHidden" id="252:6"/>
+        <ViewModelPropertyBoolean name="_hasValue" id="252:8"/>
+        <ViewModelPropertyBoolean name="_hover" id="252:9"/>
+        <ViewModelInstance exports="true" name="Delivery date" id="252:10">
+            <ViewModelInstanceString propertyValue="Delivery date" viewModelPropertyId="252:2" id="252:243"/>
+            <ViewModelInstanceString propertyValue="2026-11-12" viewModelPropertyId="252:3" id="252:244"/>
+            <ViewModelInstanceString propertyValue="Pick a date" viewModelPropertyId="252:4" id="252:245"/>
+            <ViewModelInstanceString propertyValue="12 Nov 2026" viewModelPropertyId="252:7" id="252:246"/>
+            <ViewModelInstanceBoolean viewModelPropertyId="252:5" id="252:247"/>
+            <ViewModelInstanceBoolean viewModelPropertyId="252:6" id="252:248"/>
+            <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="252:8" id="252:249"/>
+            <ViewModelInstanceBoolean viewModelPropertyId="252:9" id="252:250"/>
+        </ViewModelInstance>
+    </ViewModel>
+</Rive>

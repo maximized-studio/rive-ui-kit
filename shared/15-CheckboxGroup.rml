@@ -1,5 +1,5 @@
 <Rive version="1" kind="fragment">
-    <Artboard defaultStateMachineId="10:4199" viewModelId="10:4154" viewModelInstanceId="10:4176" isComponent="true" includeInExport="false" spaceId="1:5601" width="220" height="130" styleId="10:4182" x="1200" y="853" name="Checkbox Group" id="10:4181">
+    <Artboard defaultStateMachineId="10:4199" viewModelId="10:4154" viewModelInstanceId="10:4176" isComponent="true" includeInExport="false" spaceId="1:5601" width="220" height="136" styleId="10:4182" x="1200" y="853" name="Checkbox Group" id="10:4181">
         <LayoutComponent styleId="10:4184" name="Group" id="10:4183">
             <Text id="10:4185">
                 <TextStylePaint fontSize="13" fontAssetId="0:7" familyName="Inter" styleName="Bold" id="10:4186">
@@ -16,9 +16,41 @@
             </Text>
             <LayoutComponent styleId="10:4194" name="Options" id="10:4193">
                 <LayoutComponentStyle gapVertical="8" flexDirectionValue="column" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="10:4194"/>
-                <ArtboardComponentList participatesInLayout="true" id="10:4206">
-                    <DataBindContext sourcePathIds="10:4154-10:4156" propertyKey="800" id="10:4207"/>
-                </ArtboardComponentList>
+                <LayoutComponent styleId="422:561" name="All" id="422:560">
+                    <NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="1:70" isStateful="true" name="All Checkbox" id="422:562">
+                        <NestedStateMachine animationId="1:75" id="422:563"/>
+                        <ViewModelInstance viewModelId="1:149" exports="true" name="All" id="422:564">
+                            <ViewModelInstanceBoolean viewModelPropertyId="7:5" id="422:565"/>
+                            <ViewModelInstanceBoolean viewModelPropertyId="7:10" id="422:566"/>
+                            <ViewModelInstanceBoolean viewModelPropertyId="1:157" id="422:567">
+                                <DataBindContext sourcePathIds="10:4154-422:503" propertyKey="593" twoWay="true" nameBased="true" id="422:568"/>
+                            </ViewModelInstanceBoolean>
+                            <ViewModelInstanceString propertyValue="All" viewModelPropertyId="1:955" id="422:569">
+                                <DataBindContext sourcePathIds="10:4154-422:502" propertyKey="561" nameBased="true" id="422:570"/>
+                            </ViewModelInstanceString>
+                            <ViewModelInstanceBoolean viewModelPropertyId="422:500" id="422:571">
+                                <DataBindContext sourcePathIds="10:4154-422:504" propertyKey="593" nameBased="true" id="422:572"/>
+                            </ViewModelInstanceBoolean>
+                            <ViewModelInstanceTrigger viewModelPropertyId="1:1533" id="422:573"/>
+                            <ViewModelInstanceBoolean viewModelPropertyId="1:2761" id="422:574"/>
+                        </ViewModelInstance>
+                    </NestedArtboardLayout>
+                    <LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="422:561">
+                        <DataBindContext sourcePathIds="10:4154-422:501" propertyKey="596" nameBased="true" converterId="9:90" id="422:575"/>
+                    </LayoutComponentStyle>
+                </LayoutComponent>
+                <LayoutComponent styleId="422:581" name="Children" id="422:580">
+                    <ArtboardComponentList participatesInLayout="true" id="10:4206">
+                        <DataBindContext sourcePathIds="10:4154-10:4156" propertyKey="800" id="10:4207"/>
+                    </ArtboardComponentList>
+                    <LayoutComponentStyle gapVertical="8" flexDirectionValue="column" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="422:581">
+                        <DataBindContext sourcePathIds="10:4154-422:501" propertyKey="512" nameBased="true" converterId="422:590" id="422:582"/>
+                    </LayoutComponentStyle>
+                </LayoutComponent>
+                <LayoutComponent styleId="422:591" name="Select All (script)" id="422:592">
+                    <ScriptedLayout scriptAssetId="422:520" name="Select All" id="422:593"/>
+                    <LayoutComponentStyle positionTypeValue="absolute" widthUnitsValue="points" heightUnitsValue="points" id="422:591"/>
+                </LayoutComponent>
             </LayoutComponent>
             <SemanticData role="group" label="Email preferences" name="Semantics" id="2:23">
                 <DataBindContext sourcePathIds="10:4154-7:61" propertyKey="1004" nameBased="true" id="7:65"/>

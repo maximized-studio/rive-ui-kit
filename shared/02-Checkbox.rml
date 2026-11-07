@@ -11,6 +11,41 @@
                 </LayoutComponentStyle>
             </LayoutComponent>
             <LayoutComponent width="16" height="16" styleId="1:86" name="Indicator" id="1:83">
+                <LayoutComponent styleId="422:531" name="Mixed" id="422:530">
+                    <Node x="8" y="8" name="Dash" id="422:532">
+                        <Shape name="Dash" id="422:533">
+                            <PointsPath isClosed="false" id="422:534">
+                                <StraightVertex x="-4" y="0" id="422:535"/>
+                                <StraightVertex x="4" y="0" id="422:536"/>
+                            </PointsPath>
+                            <Stroke thickness="2" cap="round" join="round" id="422:537">
+                                <SolidColor colorValue="FFFAFAFA" id="422:538">
+                                    <DataBindContext sourcePathIds="10:7-10:2092" propertyKey="37" id="422:539"/>
+                                </SolidColor>
+                            </Stroke>
+                        </Shape>
+                    </Node>
+                    <LayoutComponent styleId="422:541" name="Disabled Mixed" id="422:540">
+                        <Fill fillRule="clockwise" id="422:542">
+                            <SolidColor colorValue="FF888888" id="422:543">
+                                <DataBindContext sourcePathIds="10:7-10:7420" propertyKey="37" id="422:544"/>
+                            </SolidColor>
+                        </Fill>
+                        <LayoutComponentStyle positionLeftUnitsValue="points" positionRightUnitsValue="points" positionTopUnitsValue="points" positionBottomUnitsValue="points" edgeConstraints="84" positionTypeValue="absolute" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="422:541">
+                            <DataBindContext sourcePathIds="10:7-901:11" propertyKey="640" converterId="0:0" id="422:545"/>
+                        </LayoutComponentStyle>
+                        <DataBindContext sourcePathIds="1:149-7:5" propertyKey="18" nameBased="true" converterId="9:145" id="422:546"/>
+                    </LayoutComponent>
+                    <Fill fillRule="clockwise" id="422:547">
+                        <SolidColor colorValue="FF2563EB" id="422:548">
+                            <DataBindContext sourcePathIds="10:7-10:2104" propertyKey="37" id="422:549"/>
+                        </SolidColor>
+                    </Fill>
+                    <LayoutComponentStyle positionLeftUnitsValue="points" positionRightUnitsValue="points" positionTopUnitsValue="points" positionBottomUnitsValue="points" edgeConstraints="84" positionTypeValue="absolute" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="422:531">
+                        <DataBindContext sourcePathIds="10:7-901:11" propertyKey="640" converterId="0:0" id="422:550"/>
+                    </LayoutComponentStyle>
+                    <DataBindContext sourcePathIds="1:149-422:500" propertyKey="18" nameBased="true" converterId="9:145" id="422:551"/>
+                </LayoutComponent>
                 <LayoutComponent width="11" height="8" styleId="1:1106" id="1:1105">
                     <Node x="-0.5" y="-0.49999809" name="Mark" id="1:1096">
                         <Node x="-2.1666999" y="-3.5" scaleX="0.66666698" scaleY="0.66666698" name="Check Icon" id="10:15545">
@@ -147,7 +182,7 @@
             <LayoutComponentStyle gapHorizontal="8" layoutAlignmentType="centerLeft" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" name="Layout Style" id="1:96"/>
             <SemanticData role="checkbox" traitFlags="36" name="Semantics" id="2:2">
                 <DataBindContext sourcePathIds="1:149-1:955" propertyKey="983" nameBased="true" id="2:27"/>
-                <DataBindContext sourcePathIds="1:149-1:157" propertyKey="998" nameBased="true" converterId="2:64" id="2:28"/>
+                <DataBindContext sourcePathIds="1:149-1:157" propertyKey="998" nameBased="true" converterId="422:510" id="2:28"/>
                 <DataBindContext sourcePathIds="1:149-7:10" propertyKey="1004" nameBased="true" id="7:77"/>
                 <DataBindContext sourcePathIds="1:149-7:5" propertyKey="1002" nameBased="true" id="7:78"/>
             </SemanticData>

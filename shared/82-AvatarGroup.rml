@@ -1,0 +1,281 @@
+<Rive version="1" kind="fragment">
+    <DataConverterToString round="true" name="Avatar Group · Extra (to text)" groupId="1:2674" id="820:16"/>
+    <Artboard defaultStateMachineId="820:12" viewModelId="820:1" viewModelInstanceId="820:10" isComponent="true" spaceId="1:5601" width="180" height="36" styleId="820:172" x="8000" y="0" name="Avatar Group" id="820:11">
+        <Fill fillRule="clockwise" id="820:173">
+            <SolidColor colorValue="00000000" id="820:174"/>
+        </Fill>
+        <LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="820:172"/>
+        <LayoutComponent styleId="820:117" name="Avatars" id="820:13">
+            <LayoutComponent width="32" height="32" styleId="820:17" name="Avatar 1" id="820:28">
+                <Text name="Initials" id="820:20">
+                    <TextStylePaint fontSize="11" fontAssetId="0:7" familyName="Inter" styleName="SemiBold" id="820:18">
+                        <Fill fillRule="clockwise" id="820:21">
+                            <SolidColor colorValue="FF888888" id="820:22">
+                                <DataBindContext sourcePathIds="10:7-10:2092" propertyKey="37" id="820:23"/>
+                            </SolidColor>
+                        </Fill>
+                        <TextStyleAxis tag="1869640570" axisValue="14" id="820:24"/>
+                        <TextStyleAxis tag="2003265652" axisValue="600" id="820:25"/>
+                    </TextStylePaint>
+                    <TextValueRun styleId="820:18" text="MV" id="820:26">
+                        <DataBindContext sourcePathIds="820:1-820:3" propertyKey="268" nameBased="true" id="820:19"/>
+                    </TextValueRun>
+                    <LayoutParticipant layoutWidthScaleType="hug" layoutHeightScaleType="hug" id="820:27"/>
+                </Text>
+                <Stroke thickness="3" cap="butt" join="round" id="820:29">
+                    <SolidColor colorValue="FF09090B" id="820:30">
+                        <DataBindContext sourcePathIds="10:7-10:7402" propertyKey="37" id="820:31"/>
+                    </SolidColor>
+                </Stroke>
+                <Fill fillRule="clockwise" id="820:32">
+                    <SolidColor colorValue="FF888888" id="820:33">
+                        <DataBindContext sourcePathIds="10:7-10:2104" propertyKey="37" id="820:34"/>
+                    </SolidColor>
+                </Fill>
+                <LayoutComponentStyle layoutAlignmentType="center" cornerRadiusTL="16" id="820:17">
+                    <DataBindContext sourcePathIds="10:7-901:1" propertyKey="640" id="820:35"/>
+                </LayoutComponentStyle>
+            </LayoutComponent>
+            <LayoutComponent width="32" height="32" styleId="820:36" name="Avatar 2" id="820:47">
+                <Text name="Initials" id="820:39">
+                    <TextStylePaint fontSize="11" fontAssetId="0:7" familyName="Inter" styleName="SemiBold" id="820:37">
+                        <Fill fillRule="clockwise" id="820:40">
+                            <SolidColor colorValue="FF888888" id="820:41">
+                                <DataBindContext sourcePathIds="10:7-10:2112" propertyKey="37" id="820:42"/>
+                            </SolidColor>
+                        </Fill>
+                        <TextStyleAxis tag="1869640570" axisValue="14" id="820:43"/>
+                        <TextStyleAxis tag="2003265652" axisValue="600" id="820:44"/>
+                    </TextStylePaint>
+                    <TextValueRun styleId="820:37" text="JS" id="820:45">
+                        <DataBindContext sourcePathIds="820:1-820:4" propertyKey="268" nameBased="true" id="820:38"/>
+                    </TextValueRun>
+                    <LayoutParticipant layoutWidthScaleType="hug" layoutHeightScaleType="hug" id="820:46"/>
+                </Text>
+                <Stroke thickness="3" cap="butt" join="round" id="820:48">
+                    <SolidColor colorValue="FF09090B" id="820:49">
+                        <DataBindContext sourcePathIds="10:7-10:7402" propertyKey="37" id="820:50"/>
+                    </SolidColor>
+                </Stroke>
+                <Fill fillRule="clockwise" id="820:51">
+                    <SolidColor colorValue="FF888888" id="820:52">
+                        <DataBindContext sourcePathIds="10:7-10:2098" propertyKey="37" id="820:53"/>
+                    </SolidColor>
+                </Fill>
+                <LayoutComponentStyle marginLeft="-6" layoutAlignmentType="center" cornerRadiusTL="16" id="820:36">
+                    <DataBindContext sourcePathIds="10:7-901:1" propertyKey="640" id="820:54"/>
+                </LayoutComponentStyle>
+            </LayoutComponent>
+            <LayoutComponent width="32" height="32" styleId="820:55" name="Avatar 3" id="820:66">
+                <Text name="Initials" id="820:58">
+                    <TextStylePaint fontSize="11" fontAssetId="0:7" familyName="Inter" styleName="SemiBold" id="820:56">
+                        <Fill fillRule="clockwise" id="820:59">
+                            <SolidColor colorValue="FF888888" id="820:60">
+                                <DataBindContext sourcePathIds="10:7-10:2092" propertyKey="37" id="820:61"/>
+                            </SolidColor>
+                        </Fill>
+                        <TextStyleAxis tag="1869640570" axisValue="14" id="820:62"/>
+                        <TextStyleAxis tag="2003265652" axisValue="600" id="820:63"/>
+                    </TextStylePaint>
+                    <TextValueRun styleId="820:56" text="AK" id="820:64">
+                        <DataBindContext sourcePathIds="820:1-820:5" propertyKey="268" nameBased="true" id="820:57"/>
+                    </TextValueRun>
+                    <LayoutParticipant layoutWidthScaleType="hug" layoutHeightScaleType="hug" id="820:65"/>
+                </Text>
+                <Stroke thickness="3" cap="butt" join="round" id="820:67">
+                    <SolidColor colorValue="FF09090B" id="820:68">
+                        <DataBindContext sourcePathIds="10:7-10:7402" propertyKey="37" id="820:69"/>
+                    </SolidColor>
+                </Stroke>
+                <Fill fillRule="clockwise" id="820:70">
+                    <SolidColor colorValue="FF888888" id="820:71">
+                        <DataBindContext sourcePathIds="10:7-10:2106" propertyKey="37" id="820:72"/>
+                    </SolidColor>
+                </Fill>
+                <LayoutComponentStyle marginLeft="-6" layoutAlignmentType="center" cornerRadiusTL="16" id="820:55">
+                    <DataBindContext sourcePathIds="10:7-901:1" propertyKey="640" id="820:73"/>
+                </LayoutComponentStyle>
+            </LayoutComponent>
+            <LayoutComponent width="32" height="32" styleId="820:74" name="Avatar 4" id="820:85">
+                <Text name="Initials" id="820:77">
+                    <TextStylePaint fontSize="11" fontAssetId="0:7" familyName="Inter" styleName="SemiBold" id="820:75">
+                        <Fill fillRule="clockwise" id="820:78">
+                            <SolidColor colorValue="FF888888" id="820:79">
+                                <DataBindContext sourcePathIds="10:7-10:2112" propertyKey="37" id="820:80"/>
+                            </SolidColor>
+                        </Fill>
+                        <TextStyleAxis tag="1869640570" axisValue="14" id="820:81"/>
+                        <TextStyleAxis tag="2003265652" axisValue="600" id="820:82"/>
+                    </TextStylePaint>
+                    <TextValueRun styleId="820:75" text="LB" id="820:83">
+                        <DataBindContext sourcePathIds="820:1-820:6" propertyKey="268" nameBased="true" id="820:76"/>
+                    </TextValueRun>
+                    <LayoutParticipant layoutWidthScaleType="hug" layoutHeightScaleType="hug" id="820:84"/>
+                </Text>
+                <Stroke thickness="3" cap="butt" join="round" id="820:86">
+                    <SolidColor colorValue="FF09090B" id="820:87">
+                        <DataBindContext sourcePathIds="10:7-10:7402" propertyKey="37" id="820:88"/>
+                    </SolidColor>
+                </Stroke>
+                <Fill fillRule="clockwise" id="820:89">
+                    <SolidColor colorValue="FF888888" id="820:90">
+                        <DataBindContext sourcePathIds="10:7-10:2100" propertyKey="37" id="820:91"/>
+                    </SolidColor>
+                </Fill>
+                <LayoutComponentStyle marginLeft="-6" layoutAlignmentType="center" cornerRadiusTL="16" id="820:74">
+                    <DataBindContext sourcePathIds="10:7-901:1" propertyKey="640" id="820:92"/>
+                </LayoutComponentStyle>
+            </LayoutComponent>
+            <LayoutComponent height="32" styleId="820:93" name="More" id="820:105">
+                <Text name="Extra" id="820:95">
+                    <TextStylePaint fontSize="11" fontAssetId="0:7" familyName="Inter" styleName="SemiBold" id="820:94">
+                        <Fill fillRule="clockwise" id="820:96">
+                            <SolidColor colorValue="FF888888" id="820:97">
+                                <DataBindContext sourcePathIds="10:7-10:7424" propertyKey="37" id="820:98"/>
+                            </SolidColor>
+                        </Fill>
+                        <TextStyleAxis tag="1869640570" axisValue="14" id="820:99"/>
+                        <TextStyleAxis tag="2003265652" axisValue="600" id="820:100"/>
+                    </TextStylePaint>
+                    <TextValueRun styleId="820:94" text="+" id="820:101"/>
+                    <TextValueRun styleId="820:94" text="3" id="820:102">
+                        <DataBindContext sourcePathIds="820:1-820:7" propertyKey="268" converterId="820:16" nameBased="true" id="820:103"/>
+                    </TextValueRun>
+                    <LayoutParticipant layoutWidthScaleType="hug" layoutHeightScaleType="hug" id="820:104"/>
+                </Text>
+                <Stroke thickness="3" cap="butt" join="round" id="820:106">
+                    <SolidColor colorValue="FF09090B" id="820:107">
+                        <DataBindContext sourcePathIds="10:7-10:7402" propertyKey="37" id="820:108"/>
+                    </SolidColor>
+                </Stroke>
+                <Fill fillRule="clockwise" id="820:109">
+                    <SolidColor colorValue="FF888888" id="820:110">
+                        <DataBindContext sourcePathIds="10:7-10:7408" propertyKey="37" id="820:111"/>
+                    </SolidColor>
+                </Fill>
+                <LayoutComponentStyle marginLeft="-6" paddingLeft="9" paddingRight="9" minWidth="32" minWidthUnitsValue="points" layoutAlignmentType="center" cornerRadiusTL="16" layoutWidthScaleType="hug" widthUnitsValue="auto" id="820:93">
+                    <DataBindContext sourcePathIds="10:7-901:1" propertyKey="640" id="820:112"/>
+                    <DataBindContext sourcePathIds="820:1-820:7" propertyKey="596" converterId="33:216" nameBased="true" id="820:113"/>
+                </LayoutComponentStyle>
+            </LayoutComponent>
+            <SemanticData role="group" name="Semantics" id="820:116">
+                <DataBindContext sourcePathIds="820:1-820:2" propertyKey="983" nameBased="true" id="820:114"/>
+                <DataBindContext sourcePathIds="820:1-820:8" propertyKey="1004" nameBased="true" id="820:115"/>
+            </SemanticData>
+            <LayoutComponentStyle paddingLeft="2" paddingRight="2" paddingTop="2" paddingBottom="2" layoutAlignmentType="centerLeft" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="820:117"/>
+        </LayoutComponent>
+        <StateMachine name="State Machine 1" id="820:12">
+            <StateMachineListener targetId="820:13" name="Hover On" id="820:120">
+                <ListenerInputType id="820:121"/>
+                <ListenerInputType listenerTypeValue="move" id="820:122"/>
+                <ListenerViewModelChange id="820:123">
+                    <BindablePropertyBoolean propertyValue="true" id="820:124">
+                        <DataBindContext sourcePathIds="820:1-820:9" propertyKey="634" direction="true" id="820:125"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineListener targetId="820:13" name="Hover Off" id="820:126">
+                <ListenerInputType listenerTypeValue="exit" id="820:127"/>
+                <ListenerViewModelChange id="820:128">
+                    <BindablePropertyBoolean id="820:129">
+                        <DataBindContext sourcePathIds="820:1-820:9" propertyKey="634" direction="true" id="820:130"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+            </StateMachineListener>
+            <StateMachineLayer name="Fan" id="820:143">
+                <AnimationState animationId="820:14" stateName="Rest" id="820:118"/>
+                <AnimationState animationId="820:15" stateName="Fan Out" id="820:119"/>
+                <AnyState id="820:144">
+                    <StateTransition stateToId="820:118" duration="220" id="820:141">
+                        <TransitionViewModelCondition id="820:131">
+                            <TransitionPropertyViewModelComparator id="820:132">
+                                <BindablePropertyBoolean id="820:133">
+                                    <DataBindContext sourcePathIds="820:1-820:9" propertyKey="634" id="820:134"/>
+                                </BindablePropertyBoolean>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueBooleanComparator id="820:135"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                    <StateTransition stateToId="820:119" duration="180" id="820:142">
+                        <TransitionViewModelCondition id="820:136">
+                            <TransitionPropertyViewModelComparator id="820:137">
+                                <BindablePropertyBoolean id="820:138">
+                                    <DataBindContext sourcePathIds="820:1-820:9" propertyKey="634" id="820:139"/>
+                                </BindablePropertyBoolean>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueBooleanComparator value="true" id="820:140"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                </AnyState>
+                <ExitState id="820:145"/>
+                <EntryState id="820:146">
+                    <StateTransition stateToId="820:118" id="820:147"/>
+                </EntryState>
+            </StateMachineLayer>
+        </StateMachine>
+        <LinearAnimation loopValue="loop" name="Rest" id="820:14">
+            <KeyedObject objectId="820:36" id="820:150">
+                <KeyedProperty propertyKey="508" id="820:149">
+                    <KeyFrameDouble value="-6" id="820:148"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="820:55" id="820:153">
+                <KeyedProperty propertyKey="508" id="820:152">
+                    <KeyFrameDouble value="-6" id="820:151"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="820:74" id="820:156">
+                <KeyedProperty propertyKey="508" id="820:155">
+                    <KeyFrameDouble value="-6" id="820:154"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="820:93" id="820:159">
+                <KeyedProperty propertyKey="508" id="820:158">
+                    <KeyFrameDouble value="-6" id="820:157"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+        <LinearAnimation loopValue="loop" name="Fan Out" id="820:15">
+            <KeyedObject objectId="820:36" id="820:162">
+                <KeyedProperty propertyKey="508" id="820:161">
+                    <KeyFrameDouble value="4" id="820:160"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="820:55" id="820:165">
+                <KeyedProperty propertyKey="508" id="820:164">
+                    <KeyFrameDouble value="4" id="820:163"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="820:74" id="820:168">
+                <KeyedProperty propertyKey="508" id="820:167">
+                    <KeyFrameDouble value="4" id="820:166"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="820:93" id="820:171">
+                <KeyedProperty propertyKey="508" id="820:170">
+                    <KeyFrameDouble value="4" id="820:169"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+    </Artboard>
+    <ViewModel defaultInstanceId="820:10" name="AvatarGroup" groupId="1:2673" id="820:1">
+        <ViewModelPropertyString name="label" id="820:2"/>
+        <ViewModelPropertyString name="initials1" id="820:3"/>
+        <ViewModelPropertyString name="initials2" id="820:4"/>
+        <ViewModelPropertyString name="initials3" id="820:5"/>
+        <ViewModelPropertyString name="initials4" id="820:6"/>
+        <ViewModelPropertyNumber name="extra" id="820:7"/>
+        <ViewModelPropertyBoolean name="a11yHidden" id="820:8"/>
+        <ViewModelPropertyBoolean name="_hover" id="820:9"/>
+        <ViewModelInstance exports="true" name="Team" id="820:10">
+            <ViewModelInstanceString propertyValue="Team members" viewModelPropertyId="820:2" id="820:175"/>
+            <ViewModelInstanceString propertyValue="MV" viewModelPropertyId="820:3" id="820:176"/>
+            <ViewModelInstanceString propertyValue="JS" viewModelPropertyId="820:4" id="820:177"/>
+            <ViewModelInstanceString propertyValue="AK" viewModelPropertyId="820:5" id="820:178"/>
+            <ViewModelInstanceString propertyValue="LB" viewModelPropertyId="820:6" id="820:179"/>
+            <ViewModelInstanceNumber propertyValue="3" viewModelPropertyId="820:7" id="820:180"/>
+            <ViewModelInstanceBoolean viewModelPropertyId="820:8" id="820:181"/>
+            <ViewModelInstanceBoolean viewModelPropertyId="820:9" id="820:182"/>
+        </ViewModelInstance>
+    </ViewModel>
+</Rive>
