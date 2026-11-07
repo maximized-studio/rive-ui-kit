@@ -11,11 +11,11 @@ The kit is also on the [Rive Community](https://rive.app/community/files/25701-5
 ## Components
 
 - **Actions:** Button · Button Group · Split Button · Toggle Button / Toggle Button Group
-- **Display:** Accordion · Avatar · Badge · Label
-- **Feedback:** Alert · Dialog · Progress Bar · Tooltip
-- **Inputs:** Checkbox / Checkbox Group · Chip / Chip Group · Number Field · Radio Option / Radio Group · Range Slider · Rating · Select · Slider · Switch / Switch Group
-- **Navigation:** Breadcrumbs · Menu · Pagination · Stepper · Tabs
-- **Building blocks:** Accordion Item · Breadcrumb Item · Button Row · Dialog Demo · Menu Item · Nav Group · Nav Item · Page Item · Showcase Section · Sidebar · Slide · Star · Step · Stepper Demo · Tab · Tile · Toolbar · Tooltip Button
+- **Display:** Accordion · Avatar · Avatar Group · Badge · Gauge · Kbd · Label
+- **Feedback:** Alert · Dialog · Progress Bar · Spinner · Tooltip
+- **Inputs:** Checkbox / Checkbox Group · Chip / Chip Group · Combobox · Date Field · Discrete Slider · Knob · Number Field · PIN Input · Radio Option / Radio Group · Range Discrete Slider · Range Slider · Rating · Select · Slider · Switch / Switch Group · Tag Input
+- **Navigation:** Breadcrumbs · Context Menu · Menu · Pagination · Stepper · Tabs
+- **Building blocks:** Accordion Item · Breadcrumb Item · Button Row · Calendar · Calendar Day · Combo Option · Dialog Demo · Menu Item · Nav Group · Nav Item · Page Item · Showcase Section · Sidebar · Slide · Slider Tick · Star · Step · Stepper Demo · Tab · Tag · Tile · Toolbar · Tooltip Button
 
 Categories and the components in them are sorted A–Z. In the Showcase a category is data: a `ShowcaseSection` (title, tile list; the count is the list length) in `sections`, and a `NavGroup` in the Sidebar's `sections`.
 
@@ -42,28 +42,38 @@ The components carry Rive semantics, so screen readers get a real accessibility 
 |---|---|---|
 | Accordion | `group` / `button` per item | label; item title, expanded |
 | Alert | `group` (live region), `text` | title; body |
+| Avatar Group | `group` | label |
 | Avatar | `image` | label |
 | Badge, Label | `text` | text |
 | Breadcrumbs | `group` / `link` per item, `text` for the current page | label; item label, "Current page" |
-| Button, Page Item | `button` | label (the page number); Button also a hint |
 | Button Group, Checkbox Group, Chip Group, Pagination, Switch Group | `group` | group label |
-| Checkbox | `checkbox` | label, checked |
+| Button, Page Item | `button` | label (the page number); Button also a hint |
+| Calendar / Calendar Day | `group` / `button` per day | label, the month; the full date, selected |
+| Checkbox | `checkbox` | label, checked (`0`, `1` or `2` for mixed) |
 | Chip | `button` (toggle) | label, on/off, disabled |
+| Combobox / Combo Option | `textField` (expandable), `button`, `list` / `listItem` | label, query, expanded, disabled; "Show options"; option label, selected |
+| Context Menu | `group` | label, hint (the kit Menu follows) |
+| Date Field | `button` | label, the date |
+| Dialog | `dialog`, `text`, `button` ×2 | title; body; the two Buttons |
+| Discrete Slider, Knob, Range Discrete Slider | `slider` | label, value, disabled; increase / decrease |
+| Gauge | `text` | label, value |
+| Kbd | `text` | keys |
 | Menu / Menu Item | `list` / `listItem` | label; item label, selected (in a Select), disabled |
-| Select | `button` (expandable) | label, the chosen value, expanded, disabled |
+| Number Field | `button` / `slider` / `button` | Decrease, label with the value, Increase; increase / decrease |
+| PIN Input, Tag Input | `textField` | label, value (Tag Input: the draft), disabled |
+| Progress Bar | `group` / `text` | label; percentage ("64%") |
 | Radio Option / Radio Group | `radioButton` / `radioGroup` | label, selected |
-| Slider | `slider` | label, value |
 | Range Slider | `group` with two `slider`s | label; Minimum / Maximum with their percentage |
 | Rating | `slider` | label, value ("3 of 5"), disabled; increase / decrease |
-| Number Field | `button` / `slider` / `button` | Decrease, label with the value, Increase; increase / decrease |
-| Switch | `switchControl` | label, on/off |
+| Select | `button` (expandable) | label, the chosen value, expanded, disabled |
+| Slider | `slider` | label, value |
+| Spinner | `image` | label |
 | Stepper / Step | `list` / `listItem` | label; step label, selected for the active step |
+| Switch | `switchControl` | label, on/off |
 | Tabs / Tab | `tabList` / `tab` | label; tab label, selected, disabled |
 | Toggle Button Group / Toggle Button | `radioGroup` / `radioButton` | group label; label, checked, disabled |
-| Dialog | `dialog`, `text`, `button` ×2 | title; body; the two Buttons |
-| Progress Bar | `group` / `text` | label; percentage ("64%") |
-| Tooltip | `text` | text (left out when its trigger carries it as a hint) |
 | Tooltip Button | `button` | label, hint (the tooltip text) |
+| Tooltip | `text` | text (left out when its trigger carries it as a hint) |
 
 Labels are bound to the same view model properties as the visible text, so they stay correct when you change the copy. Check the tree headless:
 
@@ -73,10 +83,11 @@ rive build/default --semantics=$PWD/build/default.semantics.json
 
 ## Accordion
 
-A card of collapsible items; several can be open at once.
+A card of collapsible items; several can be open at once, or one at a time.
 
-- View model `Accordion`: `items` (a list of `AccordionItem`), `label` (screen reader name), `a11yHidden`.
+- View model `Accordion`: `items` (a list of `AccordionItem`), `single`, `label` (screen reader name), `a11yHidden`.
 - `AccordionItem`: `title`, `body`, `open`. Clicking the header (or a screen reader's activate) toggles `open`; the body grows open with a short layout animation and the chevron turns.
+- With `single` on, opening an item closes the others. A small Luau script, **Accordion Single**, does that; with `single` off it does nothing.
 - Each header is a `button` that reports expanded or collapsed.
 
 ## Breadcrumbs
@@ -155,6 +166,7 @@ A number between a minus and a plus Button, for quantities.
 
 - View model `NumberField`: `value`, `min`, `max`, `step`, `label` (screen reader name), `disabled`, `a11yHidden`.
 - The minus and plus are kit Buttons (outlined, icon only), so they hover, press, focus and disable like every Button. Their `_pressed` fires the field's private triggers; a view model listener steps `value` through a formula that keeps it between `min` and `max`.
+- The minus and plus Buttons turn off at `min` and `max` (and while the field is disabled). Rive has no number-to-boolean converter, so a tiny Luau converter, **Zero Or Less**, turns `min(value − min, 1 − disabled)` into the Button's `disabled`. Reuse it for any "turn this off at a limit" bind.
 - With keyboard focus on the value, the arrow keys step it (up / right +, down / left −, held keys repeat), and a screen reader's increase and decrease do the same, through a gate that ignores them while disabled.
 - The value sits on `_surface` with a `_border` line and `_radiusButton` corners; disabled turns it `_textMuted`.
 - Screen readers get the two Buttons and a `slider` named by `label` with the value.
@@ -231,8 +243,9 @@ A modal card over a dimmed scrim, with a title, a body and two kit Buttons. It i
 
 A label, a percentage and a bar that fills from the left.
 
-- View model `ProgressBar`: `label`, `value` (`0`–`100`), `a11yHidden`.
+- View model `ProgressBar`: `label`, `value` (`0`–`100`), `indeterminate`, `a11yHidden`.
 - Values outside `0`–`100` are clamped; the percentage is rounded to a whole number.
+- `indeterminate` hides the bar and the percentage and runs a brand segment across the track, for work of unknown length. Instance `Syncing`.
 - The bar eases to a new value with a short layout animation.
 - Track and fill use the same tokens as the Slider (`_borderStrong`, `_brand600`); the corners follow `_radiusSmall`, so the theme roundness applies.
 - Screen readers get a `group` named by the label with the percentage as text. A chain of built-in converters makes that text (clamp, round, pad, add `%`, trim), so no script is involved.
@@ -248,6 +261,131 @@ A small bubble in the inverse theme colours (`_text` background, `_bg` text) wit
 - **Automatic placement.** `placement` is the side you prefer. When the bubble would leave the artboard on that side and fits on the opposite one, it flips there, like a web popover with `position-try-fallbacks: flip-block, flip-inline`. The side shown is `_placement` (read it, don't set it). A small Luau script, **Tooltip Placement**, decides: Rive gives a script no screen position, so it compares the pointer as it sees it with the pointer the Theme Driver's Viewport script reports, which tells it where the trigger is. Until the pointer has moved over the artboard once (keyboard only), and in a file without the Theme Driver, the preferred side stays.
 - Screen readers: the Button gets the tooltip text as its `hint` (Button has a new `hint` property) and the bubble is hidden from the tree, so the text is read once. A Tooltip on its own is a `text` node.
 - Long text wraps at 240 points.
+
+## Avatar
+
+A round image, optionally with a status dot.
+
+- View model `Avatar`: `image`, `status` (`0` none, `1` online, `2` away, `3` busy, `4` offline), `a11yHidden`.
+- The dot sits at the bottom right in the success, warning, error or muted token, ringed in the background colour.
+- Screen readers get an `image`.
+
+## Avatar Group
+
+Overlapping initials with a +N bubble; they fan out on hover.
+
+- View model `AvatarGroup`: `label` (screen reader name), `initials1`–`initials4`, `extra` (the number in the +N bubble), `a11yHidden`.
+- Four fixed slots, so fill them from your app and put the rest in `extra`.
+- Screen readers get a `group` named by `label`.
+
+## Calendar
+
+A month card for picking a date.
+
+- View model `Calendar`: `year`, `month` (`1`–`12`, the month on screen), `value` (the chosen date as `"2026-11-07"`, empty for none), `today` (same format, set by your app; it gets a brand ring), `label` (screen reader name), `a11yHidden`.
+- A small Luau script, **Calendar**, fills the 6 × 7 grid (Monday first, the days of the months around it muted), writes the title ("November 2026"), turns a click on a day into `value` (a day of the next or previous month also shows that month) and steps the month on the Previous / Next kit Buttons.
+- `CalendarDay` (one cell): `day`, `label` (the full date for screen readers), `inMonth`, `today`, `selected`. A Look layer picks the number style; the chosen day gets a brand disc, hover a soft tint.
+- Screen readers get a `group` named by `label`, the month as a group and a `button` per day, selected for the chosen one.
+
+## Checkbox Group
+
+Checkboxes under one label, optionally with an All row.
+
+- `Checkbox`: `label`, `disabled`, `mixed`, `a11yHidden`; the checked state is `_active`. `mixed` shows a brand box with a dash; screen readers get checked `0`, `1` or `2`.
+- View model `CheckboxGroup`: `options` (a list of `Checkbox`), `selectAll`, `allLabel`, `a11yHidden`.
+- `selectAll` shows an All checkbox above the options, which indent under it. A small Luau script, **Select All**, keeps it in step (checked when every option is, mixed when some are) and checks or clears every option when it is clicked.
+
+## Combobox
+
+A text field that filters a list as you type.
+
+- View model `Combobox`: `options` (a list of `ComboOption`), `value` (the chosen label), `query` (what is typed), `label`, `placeholder`, `open`, `disabled`, `a11yHidden`.
+- `ComboOption`: `label`, `selected`.
+- A small Luau script, **Combobox**, opens the panel while the field has focus and fills it with the options whose label contains `query` (any case, at most six). Up / Down move the highlight, Enter or a click picks one, Escape closes; with no match the panel says "No results". The chevron opens and closes it.
+- Screen readers get an expandable `textField` named by `label`, a "Show options" `button` and a `list` of the results.
+
+## Context Menu
+
+A press held still opens the kit Menu at the pointer.
+
+- View model `ContextMenu`: `menu` (a kit `Menu`), `hint` (the text in the area), `label`, `a11yHidden`, and `x`, `y` and the trigger `openAt`.
+- A small Luau script, **Context Menu**, opens the menu after a 0.45 s hold, kept inside the area, and closes it on a press outside. Choosing an item closes it like every kit Menu; read `menu.state.selected`.
+- Rive can't tell mouse buttons apart, so a right-click needs your app: write `x` and `y` (a position in the area) and fire `openAt`.
+- Screen readers get a `group` named by `label` with `hint` as its hint.
+
+## Date Field
+
+A field that shows a date and opens the Calendar under it.
+
+- View model `DateField`: `label`, `value` (an ISO date, `"2026-11-12"`, empty for none), `placeholder`, `open`, `a11yHidden`.
+- The Calendar is nested with its `value` bound two-way to the field's. A small Luau script, **Date Field**, writes the shown text ("12 Nov 2026") and closes the popover when a day is picked. The month arrows keep it open; a click outside closes it.
+- Screen readers get a `button` named by `label` with the date.
+
+## Discrete Slider
+
+A slider that snaps to steps, with tick marks and a value bubble.
+
+- View model `DiscreteSlider`: `value`, `min`, `max`, `step`, `label`, `showTicks`, `disabled`, `a11yHidden`.
+- A small Luau script, **Discrete Slider**, maps a press and drag on the track to `value` (snapped to `step` within `min`..`max`), keeps the thumb and fill in step when your app writes `value`, `min`, `max` or `step`, and fills the tick list (one `SliderTick` per step, up to 50).
+- Hover and drag show a bubble with the value above the thumb and a soft halo; the header value fades out meanwhile. Values print without trailing zeros (`2.5`, `40`).
+- With keyboard focus the arrow keys step it, and a screen reader's increase and decrease do the same, through gates that ignore them while disabled. Disabled greys the fill and the thumb.
+- Screen readers get a `slider` named by `label` with the value.
+
+## Gauge
+
+A semicircle meter with a needle.
+
+- View model `Gauge`: `value` (`0`–`100`), `label`, `a11yHidden`.
+- The arc and the needle follow `value` through formulas; fully native.
+- Screen readers get `text` named by `label` with the value.
+
+## Kbd
+
+A keyboard key cap for shortcuts (`⌘ K`, `Esc`).
+
+- View model `Kbd`: `keys`, `a11yHidden`.
+- Screen readers get `keys` as `text`.
+
+## Knob
+
+A rotary dial from `min` to `max` with a 270° arc.
+
+- View model `Knob`: `value`, `min`, `max`, `step`, `label`, `disabled`, `a11yHidden`.
+- A small Luau script, **Knob Drag**, turns a drag on the dial into `value`: up or right raises it, down or left lowers it, 160 points cover the whole range. The mouse wheel steps it too. The arc, indicator and number are bound natively to `value`.
+- With keyboard focus the arrow keys step it, and a screen reader's increase and decrease do the same, through gates that ignore them while disabled.
+- Screen readers get a `slider` named by `label` with the value.
+
+## PIN Input
+
+Six boxes for a one-time code.
+
+- View model `PinInput`: `value`, `complete` (read it), `error`, `label`, `disabled`, `a11yHidden`.
+- One hidden text input takes the typing, bound two-way to `value`. A small Luau script, **PIN Input**, keeps `value` to six digits, spreads them over the boxes, sets `complete` at six and moves the brand ring and the caret. `error` turns the boxes red.
+- Screen readers get a `textField` named by `label` with the value.
+
+## Range Discrete Slider
+
+Two thumbs that snap to steps, like the Discrete Slider.
+
+- View model `RangeDiscreteSlider`: `low`, `high`, `min`, `max`, `step`, `label`, `showTicks`, `disabled`, `a11yHidden`.
+- A small Luau script, **Range Discrete Slider**, picks the nearer thumb on a press and drags it (snapped, clamped, never past the other thumb) and keeps the thumbs and the fill between them in step when your app writes `low`, `high`, `min`, `max` or `step`. Ticks between the thumbs light up; the thumb you drag shows its value in a bubble.
+- The screen reader's increase and decrease move the high thumb.
+
+## Spinner
+
+An indeterminate loader: a brand arc that turns while its length sweeps.
+
+- View model `Spinner`: `label` (screen reader name, "Loading"), `a11yHidden`.
+- Two looping layers (Spin and Sweep); nothing to drive.
+
+## Tag Input
+
+A field that turns what you type into tags.
+
+- View model `TagInput`: `tags` (a list of `Tag`), `draft` (the text being typed), `label`, `placeholder`, `disabled`, `a11yHidden`.
+- `Tag`: `label`, `disabled`. Its × fires `_remove`.
+- A small Luau script, **Tag Input**, adds the draft as a tag on Enter or a comma (trimmed, skipped when empty or already there), removes a tag when its × is clicked and passes `disabled` on to every tag. Tags wrap over as many rows as they need.
+- Screen readers get a `textField` named by `label` with the draft; each tag is text with a remove `button`.
 
 ## Pointer cursor
 
@@ -291,8 +429,10 @@ The kit keeps each kind of logic in one place:
 
 - **Look comes from data.** Colours, radii and shadows are tokens on the global `Theme`; components only read them.
 - **Picking one of several is a state.** A number that chooses what shows (a Button's `variant`, `color` and `icon`, an Alert's `variant`, a Tooltip's `placement`) drives a state machine layer with one state per value, such as Button › Look › Outlined Brand.
-- **Behaviour is a script, when it is an algorithm.** Pagination (which pages to show) and Tooltip Button (which side fits) so far. Everything else is native.
+- **Behaviour is a script, when it is an algorithm.** Which pages Pagination shows, which side a tooltip fits on, which days a calendar shows. Everything else is native.
 - **Converter names say where they belong:** `<Part> · <what it does>`, for example `Slider · Percent text`. The ones only the Showcase uses start with `Showcase`.
+
+Some components carry a small Luau script for their behaviour: Accordion (**Accordion Single**), Calendar, Checkbox Group (**Select All**), Combobox, Context Menu, Date Field, Discrete Slider, Knob (**Knob Drag**), Pagination (**Pagination Pages**), PIN Input, Range Discrete Slider, Tag Input, Tooltip Button (**Tooltip Placement**) and the Theme Driver (**Viewport**). Each script starts with a comment that says what it does. Everything else is native: state machines, binds and built-in converters. Scripts run in the editor and in the Rive runtimes, not in a plain CLI build (`--once`) or a Community thumbnail. One script is a converter: **Zero Or Less** turns a number into a bool (true at zero or below). Rive has no number-to-boolean converter, so put a Formula in front that reaches zero when the bool should be on; the Number Field turns its Buttons off at the limits that way.
 
 ```
 shared/            the kit: one .rml file per artboard, 99-_root.rml

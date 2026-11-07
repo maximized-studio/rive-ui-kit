@@ -100,11 +100,13 @@ Contains: Accordion Item
 | `items` | list of `AccordionItem` | `104:9` |
 | `label` | string | `104:10` |
 | `a11yHidden` | boolean | `104:11` |
+| `single` | boolean | `414:1` |
 
-A card of collapsible items; several can be open at once.
+A card of collapsible items; several can be open at once, or one at a time.
 
-- View model `Accordion`: `items` (a list of `AccordionItem`), `label` (screen reader name), `a11yHidden`.
+- View model `Accordion`: `items` (a list of `AccordionItem`), `single`, `label` (screen reader name), `a11yHidden`.
 - `AccordionItem`: `title`, `body`, `open`. Clicking the header (or a screen reader's activate) toggles `open`; the body grows open with a short layout animation and the chevron turns.
+- With `single` on, opening an item closes the others. A small Luau script, **Accordion Single**, does that; with `single` off it does nothing.
 - Each header is a `button` that reports expanded or collapsed.
 
 ```xml
@@ -114,6 +116,7 @@ A card of collapsible items; several can be open at once.
         <ViewModelInstanceList viewModelPropertyId="104:9" id="X:4"/>  <!-- items: add ViewModelInstanceListItem children -->
         <ViewModelInstanceString viewModelPropertyId="104:10" id="X:5"/>  <!-- label -->
         <ViewModelInstanceBoolean viewModelPropertyId="104:11" id="X:6"/>  <!-- a11yHidden -->
+        <ViewModelInstanceBoolean viewModelPropertyId="414:1" id="X:7"/>  <!-- single -->
     </ViewModelInstance>
 </NestedArtboardLayout>
 ```
@@ -180,6 +183,13 @@ Source: `shared/08-Avatar.rml` · artboard `1:2048` · state machine `1:2053` ·
 |---|---|---|
 | `a11yHidden` | boolean | `7:57` |
 | `image` | image | `1:2129` |
+| `status` | number | `407:900` |
+
+A round image, optionally with a status dot.
+
+- View model `Avatar`: `image`, `status` (`0` none, `1` online, `2` away, `3` busy, `4` offline), `a11yHidden`.
+- The dot sits at the bottom right in the success, warning, error or muted token, ringed in the background colour.
+- Screen readers get an `image`.
 
 ```xml
 <NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="1:2048" isStateful="true" name="Avatar" id="X:1">
@@ -187,6 +197,43 @@ Source: `shared/08-Avatar.rml` · artboard `1:2048` · state machine `1:2053` ·
     <ViewModelInstance viewModelId="1:2082" exports="true" name="My Avatar" id="X:3">
         <ViewModelInstanceBoolean viewModelPropertyId="7:57" id="X:4"/>  <!-- a11yHidden -->
         <ViewModelInstanceAssetImage viewModelPropertyId="1:2129" id="X:5"/>  <!-- image -->
+        <ViewModelInstanceNumber viewModelPropertyId="407:900" id="X:6"/>  <!-- status -->
+    </ViewModelInstance>
+</NestedArtboardLayout>
+```
+
+## Avatar Group
+
+Source: `shared/82-AvatarGroup.rml` · artboard `820:11` · state machine `820:12` · view model `AvatarGroup` `820:1`
+
+| Property | Type | Id |
+|---|---|---|
+| `label` | string | `820:2` |
+| `initials1` | string | `820:3` |
+| `initials2` | string | `820:4` |
+| `initials3` | string | `820:5` |
+| `initials4` | string | `820:6` |
+| `extra` | number | `820:7` |
+| `a11yHidden` | boolean | `820:8` |
+
+Overlapping initials with a +N bubble; they fan out on hover.
+
+- View model `AvatarGroup`: `label` (screen reader name), `initials1`–`initials4`, `extra` (the number in the +N bubble), `a11yHidden`.
+- Four fixed slots, so fill them from your app and put the rest in `extra`.
+- Screen readers get a `group` named by `label`.
+
+```xml
+<NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="820:11" isStateful="true" name="Avatar Group" id="X:1">
+    <NestedStateMachine animationId="820:12" id="X:2"/>
+    <ViewModelInstance viewModelId="820:1" exports="true" name="My Avatar Group" id="X:3">
+        <ViewModelInstanceString viewModelPropertyId="820:2" id="X:4"/>  <!-- label -->
+        <ViewModelInstanceString viewModelPropertyId="820:3" id="X:5"/>  <!-- initials1 -->
+        <ViewModelInstanceString viewModelPropertyId="820:4" id="X:6"/>  <!-- initials2 -->
+        <ViewModelInstanceString viewModelPropertyId="820:5" id="X:7"/>  <!-- initials3 -->
+        <ViewModelInstanceString viewModelPropertyId="820:6" id="X:8"/>  <!-- initials4 -->
+        <ViewModelInstanceNumber viewModelPropertyId="820:7" id="X:9"/>  <!-- extra -->
+        <ViewModelInstanceBoolean viewModelPropertyId="820:8" id="X:10"/>  <!-- a11yHidden -->
+        <ViewModelInstanceBoolean viewModelPropertyId="820:9" id="X:11"/>  <!-- _hover -->
     </ViewModelInstance>
 </NestedArtboardLayout>
 ```
@@ -367,6 +414,84 @@ Contains: Button
 </NestedArtboardLayout>
 ```
 
+## Calendar
+
+Source: `shared/58-Calendar.rml` · artboard `412:1` · state machine `412:3` · view model `Calendar` `410:200`
+Contains: Button
+
+| Property | Type | Id |
+|---|---|---|
+| `year` | number | `410:201` |
+| `month` | number | `410:202` |
+| `value` | string | `410:203` |
+| `today` | string | `410:204` |
+| `label` | string | `410:205` |
+| `a11yHidden` | boolean | `410:206` |
+| `_prev` | trigger | `410:209` |
+| `_next` | trigger | `410:210` |
+| `range` | boolean | `410:211` |
+| `endValue` | string | `410:212` |
+
+A month card for picking a date.
+
+- View model `Calendar`: `year`, `month` (`1`–`12`, the month on screen), `value` (the chosen date as `"2026-11-07"`, empty for none), `today` (same format, set by your app; it gets a brand ring), `label` (screen reader name), `a11yHidden`.
+- A small Luau script, **Calendar**, fills the 6 × 7 grid (Monday first, the days of the months around it muted), writes the title ("November 2026"), turns a click on a day into `value` (a day of the next or previous month also shows that month) and steps the month on the Previous / Next kit Buttons.
+- `CalendarDay` (one cell): `day`, `label` (the full date for screen readers), `inMonth`, `today`, `selected`. A Look layer picks the number style; the chosen day gets a brand disc, hover a soft tint.
+- Screen readers get a `group` named by `label`, the month as a group and a `button` per day, selected for the chosen one.
+
+```xml
+<NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="412:1" isStateful="true" name="Calendar" id="X:1">
+    <NestedStateMachine animationId="412:3" id="X:2"/>
+    <ViewModelInstance viewModelId="410:200" exports="true" name="My Calendar" id="X:3">
+        <ViewModelInstanceNumber viewModelPropertyId="410:201" id="X:4"/>  <!-- year -->
+        <ViewModelInstanceNumber viewModelPropertyId="410:202" id="X:5"/>  <!-- month -->
+        <ViewModelInstanceString viewModelPropertyId="410:203" id="X:6"/>  <!-- value -->
+        <ViewModelInstanceString viewModelPropertyId="410:204" id="X:7"/>  <!-- today -->
+        <ViewModelInstanceString viewModelPropertyId="410:205" id="X:8"/>  <!-- label -->
+        <ViewModelInstanceBoolean viewModelPropertyId="410:206" id="X:9"/>  <!-- a11yHidden -->
+        <ViewModelInstanceString viewModelPropertyId="410:207" id="X:10"/>  <!-- _title -->
+        <ViewModelInstanceList viewModelPropertyId="410:208" id="X:11"/>  <!-- _days: add ViewModelInstanceListItem children -->
+        <ViewModelInstanceTrigger viewModelPropertyId="410:209" id="X:12"/>  <!-- _prev -->
+        <ViewModelInstanceTrigger viewModelPropertyId="410:210" id="X:13"/>  <!-- _next -->
+        <ViewModelInstanceBoolean viewModelPropertyId="410:211" id="X:14"/>  <!-- range -->
+        <ViewModelInstanceString viewModelPropertyId="410:212" id="X:15"/>  <!-- endValue -->
+    </ViewModelInstance>
+</NestedArtboardLayout>
+```
+
+## Calendar Day
+
+Source: `shared/57-CalendarDay.rml` · artboard `411:1` · state machine `411:3` · view model `CalendarDay` `410:100`
+
+| Property | Type | Id |
+|---|---|---|
+| `day` | number | `410:101` |
+| `label` | string | `410:102` |
+| `inMonth` | boolean | `410:103` |
+| `today` | boolean | `410:104` |
+| `selected` | boolean | `410:105` |
+| `inRange` | boolean | `410:108` |
+| `rangeStart` | boolean | `410:109` |
+| `rangeEnd` | boolean | `410:110` |
+
+```xml
+<NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="411:1" isStateful="true" name="Calendar Day" id="X:1">
+    <NestedStateMachine animationId="411:3" id="X:2"/>
+    <ViewModelInstance viewModelId="410:100" exports="true" name="My Calendar Day" id="X:3">
+        <ViewModelInstanceNumber viewModelPropertyId="410:101" id="X:4"/>  <!-- day -->
+        <ViewModelInstanceString viewModelPropertyId="410:102" id="X:5"/>  <!-- label -->
+        <ViewModelInstanceBoolean viewModelPropertyId="410:103" id="X:6"/>  <!-- inMonth -->
+        <ViewModelInstanceBoolean viewModelPropertyId="410:104" id="X:7"/>  <!-- today -->
+        <ViewModelInstanceBoolean viewModelPropertyId="410:105" id="X:8"/>  <!-- selected -->
+        <ViewModelInstanceBoolean viewModelPropertyId="410:106" id="X:9"/>  <!-- _hover -->
+        <ViewModelInstanceBoolean viewModelPropertyId="410:107" id="X:10"/>  <!-- _pick -->
+        <ViewModelInstanceBoolean viewModelPropertyId="410:108" id="X:11"/>  <!-- inRange -->
+        <ViewModelInstanceBoolean viewModelPropertyId="410:109" id="X:12"/>  <!-- rangeStart -->
+        <ViewModelInstanceBoolean viewModelPropertyId="410:110" id="X:13"/>  <!-- rangeEnd -->
+    </ViewModelInstance>
+</NestedArtboardLayout>
+```
+
 ## Checkbox
 
 Source: `shared/02-Checkbox.rml` · artboard `1:70` · state machine `1:75` · view model `Checkbox` `1:149`
@@ -377,6 +502,7 @@ Source: `shared/02-Checkbox.rml` · artboard `1:70` · state machine `1:75` · v
 | `a11yHidden` | boolean | `7:10` |
 | `_pressed` | trigger | `1:1533` |
 | `label` | string | `1:955` |
+| `mixed` | boolean | `422:500` |
 
 ```xml
 <NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="1:70" isStateful="true" name="Checkbox" id="X:1">
@@ -388,6 +514,7 @@ Source: `shared/02-Checkbox.rml` · artboard `1:70` · state machine `1:75` · v
         <ViewModelInstanceBoolean viewModelPropertyId="1:2761" id="X:7"/>  <!-- _hover -->
         <ViewModelInstanceBoolean viewModelPropertyId="1:157" id="X:8"/>  <!-- _active -->
         <ViewModelInstanceString viewModelPropertyId="1:955" id="X:9"/>  <!-- label -->
+        <ViewModelInstanceBoolean viewModelPropertyId="422:500" id="X:10"/>  <!-- mixed -->
     </ViewModelInstance>
 </NestedArtboardLayout>
 ```
@@ -401,6 +528,14 @@ Contains: Checkbox
 |---|---|---|
 | `a11yHidden` | boolean | `7:61` |
 | `options` | list of `Checkbox` | `10:4156` |
+| `selectAll` | boolean | `422:501` |
+| `allLabel` | string | `422:502` |
+
+Checkboxes under one label, optionally with an All row.
+
+- `Checkbox`: `label`, `disabled`, `mixed`, `a11yHidden`; the checked state is `_active`. `mixed` shows a brand box with a dash; screen readers get checked `0`, `1` or `2`.
+- View model `CheckboxGroup`: `options` (a list of `Checkbox`), `selectAll`, `allLabel`, `a11yHidden`.
+- `selectAll` shows an All checkbox above the options, which indent under it. A small Luau script, **Select All**, keeps it in step (checked when every option is, mixed when some are) and checks or clears every option when it is clicked.
 
 ```xml
 <NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="10:4181" isStateful="true" name="Checkbox Group" id="X:1">
@@ -408,6 +543,10 @@ Contains: Checkbox
     <ViewModelInstance viewModelId="10:4154" exports="true" name="My Checkbox Group" id="X:3">
         <ViewModelInstanceBoolean viewModelPropertyId="7:61" id="X:4"/>  <!-- a11yHidden -->
         <ViewModelInstanceList viewModelPropertyId="10:4156" id="X:5"/>  <!-- options: add ViewModelInstanceListItem children -->
+        <ViewModelInstanceBoolean viewModelPropertyId="422:501" id="X:6"/>  <!-- selectAll -->
+        <ViewModelInstanceString viewModelPropertyId="422:502" id="X:7"/>  <!-- allLabel -->
+        <ViewModelInstanceBoolean viewModelPropertyId="422:503" id="X:8"/>  <!-- _all -->
+        <ViewModelInstanceBoolean viewModelPropertyId="422:504" id="X:9"/>  <!-- _mixed -->
     </ViewModelInstance>
 </NestedArtboardLayout>
 ```
@@ -468,6 +607,156 @@ Contains: Chip
         <ViewModelInstanceList viewModelPropertyId="141:10" id="X:4"/>  <!-- chips: add ViewModelInstanceListItem children -->
         <ViewModelInstanceString viewModelPropertyId="141:11" id="X:5"/>  <!-- label -->
         <ViewModelInstanceBoolean viewModelPropertyId="141:12" id="X:6"/>  <!-- a11yHidden -->
+    </ViewModelInstance>
+</NestedArtboardLayout>
+```
+
+## Combo Option
+
+Source: `shared/66-ComboOption.rml` · artboard `675:1000` · state machine `675:1001` · view model `ComboOption` `675:1`
+
+| Property | Type | Id |
+|---|---|---|
+| `label` | string | `675:2` |
+| `selected` | boolean | `675:3` |
+| `_pick` | trigger | `675:6` |
+
+```xml
+<NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="675:1000" isStateful="true" name="Combo Option" id="X:1">
+    <NestedStateMachine animationId="675:1001" id="X:2"/>
+    <ViewModelInstance viewModelId="675:1" exports="true" name="My Combo Option" id="X:3">
+        <ViewModelInstanceString viewModelPropertyId="675:2" id="X:4"/>  <!-- label -->
+        <ViewModelInstanceBoolean viewModelPropertyId="675:3" id="X:5"/>  <!-- selected -->
+        <ViewModelInstanceBoolean viewModelPropertyId="675:4" id="X:6"/>  <!-- _active -->
+        <ViewModelInstanceBoolean viewModelPropertyId="675:5" id="X:7"/>  <!-- _hover -->
+        <ViewModelInstanceTrigger viewModelPropertyId="675:6" id="X:8"/>  <!-- _pick -->
+    </ViewModelInstance>
+</NestedArtboardLayout>
+```
+
+## Combobox
+
+Source: `shared/66-Combobox.rml` · artboard `676:1000` · state machine `676:1001` · view model `Combobox` `676:1`
+Contains: Combo Option
+
+| Property | Type | Id |
+|---|---|---|
+| `options` | list of `ComboOption` | `676:2` |
+| `value` | string | `676:3` |
+| `query` | string | `676:4` |
+| `label` | string | `676:5` |
+| `placeholder` | string | `676:6` |
+| `open` | boolean | `676:7` |
+| `disabled` | boolean | `676:8` |
+| `a11yHidden` | boolean | `676:9` |
+| `_up` | trigger | `676:14` |
+| `_down` | trigger | `676:15` |
+| `_enter` | trigger | `676:16` |
+| `_escape` | trigger | `676:17` |
+| `_toggle` | trigger | `676:18` |
+
+A text field that filters a list as you type.
+
+- View model `Combobox`: `options` (a list of `ComboOption`), `value` (the chosen label), `query` (what is typed), `label`, `placeholder`, `open`, `disabled`, `a11yHidden`.
+- `ComboOption`: `label`, `selected`.
+- A small Luau script, **Combobox**, opens the panel while the field has focus and fills it with the options whose label contains `query` (any case, at most six). Up / Down move the highlight, Enter or a click picks one, Escape closes; with no match the panel says "No results". The chevron opens and closes it.
+- Screen readers get an expandable `textField` named by `label`, a "Show options" `button` and a `list` of the results.
+
+```xml
+<NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="676:1000" isStateful="true" name="Combobox" id="X:1">
+    <NestedStateMachine animationId="676:1001" id="X:2"/>
+    <ViewModelInstance viewModelId="676:1" exports="true" name="My Combobox" id="X:3">
+        <ViewModelInstanceList viewModelPropertyId="676:2" id="X:4"/>  <!-- options: add ViewModelInstanceListItem children -->
+        <ViewModelInstanceString viewModelPropertyId="676:3" id="X:5"/>  <!-- value -->
+        <ViewModelInstanceString viewModelPropertyId="676:4" id="X:6"/>  <!-- query -->
+        <ViewModelInstanceString viewModelPropertyId="676:5" id="X:7"/>  <!-- label -->
+        <ViewModelInstanceString viewModelPropertyId="676:6" id="X:8"/>  <!-- placeholder -->
+        <ViewModelInstanceBoolean viewModelPropertyId="676:7" id="X:9"/>  <!-- open -->
+        <ViewModelInstanceBoolean viewModelPropertyId="676:8" id="X:10"/>  <!-- disabled -->
+        <ViewModelInstanceBoolean viewModelPropertyId="676:9" id="X:11"/>  <!-- a11yHidden -->
+        <ViewModelInstanceList viewModelPropertyId="676:10" id="X:12"/>  <!-- _results: add ViewModelInstanceListItem children -->
+        <ViewModelInstanceBoolean viewModelPropertyId="676:11" id="X:13"/>  <!-- _empty -->
+        <ViewModelInstanceBoolean viewModelPropertyId="676:12" id="X:14"/>  <!-- _focused -->
+        <ViewModelInstanceBoolean viewModelPropertyId="676:13" id="X:15"/>  <!-- _hover -->
+        <ViewModelInstanceTrigger viewModelPropertyId="676:14" id="X:16"/>  <!-- _up -->
+        <ViewModelInstanceTrigger viewModelPropertyId="676:15" id="X:17"/>  <!-- _down -->
+        <ViewModelInstanceTrigger viewModelPropertyId="676:16" id="X:18"/>  <!-- _enter -->
+        <ViewModelInstanceTrigger viewModelPropertyId="676:17" id="X:19"/>  <!-- _escape -->
+        <ViewModelInstanceTrigger viewModelPropertyId="676:18" id="X:20"/>  <!-- _toggle -->
+    </ViewModelInstance>
+</NestedArtboardLayout>
+```
+
+## Context Menu
+
+Source: `shared/64i-ContextMenu.rml` · artboard `518:1` · state machine `518:78` · view model `ContextMenu` `518:900`
+Contains: Menu
+
+| Property | Type | Id |
+|---|---|---|
+| `hint` | string | `518:901` |
+| `label` | string | `518:902` |
+| `a11yHidden` | boolean | `518:903` |
+| `x` | number | `518:904` |
+| `y` | number | `518:905` |
+| `openAt` | trigger | `518:906` |
+| `menu` | `Menu` | `518:920` |
+
+A press held still opens the kit Menu at the pointer.
+
+- View model `ContextMenu`: `menu` (a kit `Menu`), `hint` (the text in the area), `label`, `a11yHidden`, and `x`, `y` and the trigger `openAt`.
+- A small Luau script, **Context Menu**, opens the menu after a 0.45 s hold, kept inside the area, and closes it on a press outside. Choosing an item closes it like every kit Menu; read `menu.state.selected`.
+- Rive can't tell mouse buttons apart, so a right-click needs your app: write `x` and `y` (a position in the area) and fire `openAt`.
+- Screen readers get a `group` named by `label` with `hint` as its hint.
+
+```xml
+<NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="518:1" isStateful="true" name="Context Menu" id="X:1">
+    <NestedStateMachine animationId="518:78" id="X:2"/>
+    <ViewModelInstance viewModelId="518:900" exports="true" name="My Context Menu" id="X:3">
+        <ViewModelInstanceString viewModelPropertyId="518:901" id="X:4"/>  <!-- hint -->
+        <ViewModelInstanceString viewModelPropertyId="518:902" id="X:5"/>  <!-- label -->
+        <ViewModelInstanceBoolean viewModelPropertyId="518:903" id="X:6"/>  <!-- a11yHidden -->
+        <ViewModelInstanceNumber viewModelPropertyId="518:904" id="X:7"/>  <!-- x -->
+        <ViewModelInstanceNumber viewModelPropertyId="518:905" id="X:8"/>  <!-- y -->
+        <ViewModelInstanceTrigger viewModelPropertyId="518:906" id="X:9"/>  <!-- openAt -->
+        <ViewModelInstanceNumber viewModelPropertyId="518:907" id="X:10"/>  <!-- _menuX -->
+        <ViewModelInstanceNumber viewModelPropertyId="518:908" id="X:11"/>  <!-- _menuY -->
+        <ViewModelInstanceViewModel viewModelPropertyId="518:920" id="X:12"/>  <!-- menu: set propertyValue to the id of a shared instance -->
+    </ViewModelInstance>
+</NestedArtboardLayout>
+```
+
+## Date Field
+
+Source: `shared/98f-DateField.rml` · artboard `252:11` · state machine `252:12` · view model `DateField` `252:1`
+Contains: Calendar
+
+| Property | Type | Id |
+|---|---|---|
+| `label` | string | `252:2` |
+| `value` | string | `252:3` |
+| `placeholder` | string | `252:4` |
+| `open` | boolean | `252:5` |
+| `a11yHidden` | boolean | `252:6` |
+
+A field that shows a date and opens the Calendar under it.
+
+- View model `DateField`: `label`, `value` (an ISO date, `"2026-11-12"`, empty for none), `placeholder`, `open`, `a11yHidden`.
+- The Calendar is nested with its `value` bound two-way to the field's. A small Luau script, **Date Field**, writes the shown text ("12 Nov 2026") and closes the popover when a day is picked. The month arrows keep it open; a click outside closes it.
+- Screen readers get a `button` named by `label` with the date.
+
+```xml
+<NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="252:11" isStateful="true" name="Date Field" id="X:1">
+    <NestedStateMachine animationId="252:12" id="X:2"/>
+    <ViewModelInstance viewModelId="252:1" exports="true" name="My Date Field" id="X:3">
+        <ViewModelInstanceString viewModelPropertyId="252:2" id="X:4"/>  <!-- label -->
+        <ViewModelInstanceString viewModelPropertyId="252:3" id="X:5"/>  <!-- value -->
+        <ViewModelInstanceString viewModelPropertyId="252:4" id="X:6"/>  <!-- placeholder -->
+        <ViewModelInstanceString viewModelPropertyId="252:7" id="X:7"/>  <!-- _display -->
+        <ViewModelInstanceBoolean viewModelPropertyId="252:5" id="X:8"/>  <!-- open -->
+        <ViewModelInstanceBoolean viewModelPropertyId="252:6" id="X:9"/>  <!-- a11yHidden -->
+        <ViewModelInstanceBoolean viewModelPropertyId="252:8" id="X:10"/>  <!-- _hasValue -->
+        <ViewModelInstanceBoolean viewModelPropertyId="252:9" id="X:11"/>  <!-- _hover -->
     </ViewModelInstance>
 </NestedArtboardLayout>
 ```
@@ -539,6 +828,154 @@ Contains: Button, Dialog
     <ViewModelInstance viewModelId="132:1" exports="true" name="My Dialog Demo" id="X:3">
         <ViewModelInstanceBoolean viewModelPropertyId="132:2" id="X:4"/>  <!-- open -->
         <ViewModelInstanceTrigger viewModelPropertyId="132:3" id="X:5"/>  <!-- _openPressed -->
+    </ViewModelInstance>
+</NestedArtboardLayout>
+```
+
+## Discrete Slider
+
+Source: `shared/56-DiscreteSlider.rml` · artboard `405:1` · state machine `405:3` · view model `DiscreteSlider` `403:100`
+
+| Property | Type | Id |
+|---|---|---|
+| `value` | number | `403:101` |
+| `min` | number | `403:102` |
+| `max` | number | `403:103` |
+| `step` | number | `403:104` |
+| `label` | string | `403:105` |
+| `disabled` | boolean | `403:106` |
+| `a11yHidden` | boolean | `403:107` |
+| `showTicks` | boolean | `403:108` |
+| `_keyUp` | trigger | `403:113` |
+| `_keyDown` | trigger | `403:114` |
+| `_doUp` | trigger | `403:115` |
+| `_doDown` | trigger | `403:116` |
+
+A slider that snaps to steps, with tick marks and a value bubble.
+
+- View model `DiscreteSlider`: `value`, `min`, `max`, `step`, `label`, `showTicks`, `disabled`, `a11yHidden`.
+- A small Luau script, **Discrete Slider**, maps a press and drag on the track to `value` (snapped to `step` within `min`..`max`), keeps the thumb and fill in step when your app writes `value`, `min`, `max` or `step`, and fills the tick list (one `SliderTick` per step, up to 50).
+- Hover and drag show a bubble with the value above the thumb and a soft halo; the header value fades out meanwhile. Values print without trailing zeros (`2.5`, `40`).
+- With keyboard focus the arrow keys step it, and a screen reader's increase and decrease do the same, through gates that ignore them while disabled. Disabled greys the fill and the thumb.
+- Screen readers get a `slider` named by `label` with the value.
+
+```xml
+<NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="405:1" isStateful="true" name="Discrete Slider" id="X:1">
+    <NestedStateMachine animationId="405:3" id="X:2"/>
+    <ViewModelInstance viewModelId="403:100" exports="true" name="My Discrete Slider" id="X:3">
+        <ViewModelInstanceNumber viewModelPropertyId="403:101" id="X:4"/>  <!-- value -->
+        <ViewModelInstanceNumber viewModelPropertyId="403:102" id="X:5"/>  <!-- min -->
+        <ViewModelInstanceNumber viewModelPropertyId="403:103" id="X:6"/>  <!-- max -->
+        <ViewModelInstanceNumber viewModelPropertyId="403:104" id="X:7"/>  <!-- step -->
+        <ViewModelInstanceString viewModelPropertyId="403:105" id="X:8"/>  <!-- label -->
+        <ViewModelInstanceBoolean viewModelPropertyId="403:106" id="X:9"/>  <!-- disabled -->
+        <ViewModelInstanceBoolean viewModelPropertyId="403:107" id="X:10"/>  <!-- a11yHidden -->
+        <ViewModelInstanceBoolean viewModelPropertyId="403:108" id="X:11"/>  <!-- showTicks -->
+        <ViewModelInstanceNumber viewModelPropertyId="403:109" id="X:12"/>  <!-- _fraction -->
+        <ViewModelInstanceBoolean viewModelPropertyId="403:110" id="X:13"/>  <!-- _dragging -->
+        <ViewModelInstanceBoolean viewModelPropertyId="403:111" id="X:14"/>  <!-- _hover -->
+        <ViewModelInstanceList viewModelPropertyId="403:112" id="X:15"/>  <!-- _ticks: add ViewModelInstanceListItem children -->
+        <ViewModelInstanceTrigger viewModelPropertyId="403:113" id="X:16"/>  <!-- _keyUp -->
+        <ViewModelInstanceTrigger viewModelPropertyId="403:114" id="X:17"/>  <!-- _keyDown -->
+        <ViewModelInstanceTrigger viewModelPropertyId="403:115" id="X:18"/>  <!-- _doUp -->
+        <ViewModelInstanceTrigger viewModelPropertyId="403:116" id="X:19"/>  <!-- _doDown -->
+    </ViewModelInstance>
+</NestedArtboardLayout>
+```
+
+## Gauge
+
+Source: `shared/92-Gauge.rml` · artboard `875:6` · state machine `875:7` · view model `Gauge` `875:1`
+
+| Property | Type | Id |
+|---|---|---|
+| `value` | number | `875:2` |
+| `label` | string | `875:3` |
+| `a11yHidden` | boolean | `875:4` |
+
+A semicircle meter with a needle.
+
+- View model `Gauge`: `value` (`0`–`100`), `label`, `a11yHidden`.
+- The arc and the needle follow `value` through formulas; fully native.
+- Screen readers get `text` named by `label` with the value.
+
+```xml
+<NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="875:6" isStateful="true" name="Gauge" id="X:1">
+    <NestedStateMachine animationId="875:7" id="X:2"/>
+    <ViewModelInstance viewModelId="875:1" exports="true" name="My Gauge" id="X:3">
+        <ViewModelInstanceNumber viewModelPropertyId="875:2" id="X:4"/>  <!-- value -->
+        <ViewModelInstanceString viewModelPropertyId="875:3" id="X:5"/>  <!-- label -->
+        <ViewModelInstanceBoolean viewModelPropertyId="875:4" id="X:6"/>  <!-- a11yHidden -->
+    </ViewModelInstance>
+</NestedArtboardLayout>
+```
+
+## Kbd
+
+Source: `shared/83-Kbd.rml` · artboard `830:6` · state machine `830:7` · view model `Kbd` `830:1`
+
+| Property | Type | Id |
+|---|---|---|
+| `keys` | string | `830:2` |
+| `a11yHidden` | boolean | `830:3` |
+
+A keyboard key cap for shortcuts (`⌘ K`, `Esc`).
+
+- View model `Kbd`: `keys`, `a11yHidden`.
+- Screen readers get `keys` as `text`.
+
+```xml
+<NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="830:6" isStateful="true" name="Kbd" id="X:1">
+    <NestedStateMachine animationId="830:7" id="X:2"/>
+    <ViewModelInstance viewModelId="830:1" exports="true" name="My Kbd" id="X:3">
+        <ViewModelInstanceString viewModelPropertyId="830:2" id="X:4"/>  <!-- keys -->
+        <ViewModelInstanceBoolean viewModelPropertyId="830:3" id="X:5"/>  <!-- a11yHidden -->
+    </ViewModelInstance>
+</NestedArtboardLayout>
+```
+
+## Knob
+
+Source: `shared/69-Knob.rml` · artboard `640:1000` · state machine `640:1001` · view model `Knob` `640:1`
+
+| Property | Type | Id |
+|---|---|---|
+| `value` | number | `640:2` |
+| `min` | number | `640:3` |
+| `max` | number | `640:4` |
+| `step` | number | `640:5` |
+| `label` | string | `640:6` |
+| `disabled` | boolean | `640:7` |
+| `a11yHidden` | boolean | `640:8` |
+| `_increase` | trigger | `640:11` |
+| `_decrease` | trigger | `640:12` |
+| `_keyIncrease` | trigger | `640:13` |
+| `_keyDecrease` | trigger | `640:14` |
+
+A rotary dial from `min` to `max` with a 270° arc.
+
+- View model `Knob`: `value`, `min`, `max`, `step`, `label`, `disabled`, `a11yHidden`.
+- A small Luau script, **Knob Drag**, turns a drag on the dial into `value`: up or right raises it, down or left lowers it, 160 points cover the whole range. The mouse wheel steps it too. The arc, indicator and number are bound natively to `value`.
+- With keyboard focus the arrow keys step it, and a screen reader's increase and decrease do the same, through gates that ignore them while disabled.
+- Screen readers get a `slider` named by `label` with the value.
+
+```xml
+<NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="640:1000" isStateful="true" name="Knob" id="X:1">
+    <NestedStateMachine animationId="640:1001" id="X:2"/>
+    <ViewModelInstance viewModelId="640:1" exports="true" name="My Knob" id="X:3">
+        <ViewModelInstanceNumber viewModelPropertyId="640:2" id="X:4"/>  <!-- value -->
+        <ViewModelInstanceNumber viewModelPropertyId="640:3" id="X:5"/>  <!-- min -->
+        <ViewModelInstanceNumber viewModelPropertyId="640:4" id="X:6"/>  <!-- max -->
+        <ViewModelInstanceNumber viewModelPropertyId="640:5" id="X:7"/>  <!-- step -->
+        <ViewModelInstanceString viewModelPropertyId="640:6" id="X:8"/>  <!-- label -->
+        <ViewModelInstanceBoolean viewModelPropertyId="640:7" id="X:9"/>  <!-- disabled -->
+        <ViewModelInstanceBoolean viewModelPropertyId="640:8" id="X:10"/>  <!-- a11yHidden -->
+        <ViewModelInstanceBoolean viewModelPropertyId="640:9" id="X:11"/>  <!-- _hover -->
+        <ViewModelInstanceBoolean viewModelPropertyId="640:10" id="X:12"/>  <!-- _active -->
+        <ViewModelInstanceTrigger viewModelPropertyId="640:11" id="X:13"/>  <!-- _increase -->
+        <ViewModelInstanceTrigger viewModelPropertyId="640:12" id="X:14"/>  <!-- _decrease -->
+        <ViewModelInstanceTrigger viewModelPropertyId="640:13" id="X:15"/>  <!-- _keyIncrease -->
+        <ViewModelInstanceTrigger viewModelPropertyId="640:14" id="X:16"/>  <!-- _keyDecrease -->
     </ViewModelInstance>
 </NestedArtboardLayout>
 ```
@@ -643,6 +1080,7 @@ A number between a minus and a plus Button, for quantities.
 
 - View model `NumberField`: `value`, `min`, `max`, `step`, `label` (screen reader name), `disabled`, `a11yHidden`.
 - The minus and plus are kit Buttons (outlined, icon only), so they hover, press, focus and disable like every Button. Their `_pressed` fires the field's private triggers; a view model listener steps `value` through a formula that keeps it between `min` and `max`.
+- The minus and plus Buttons turn off at `min` and `max` (and while the field is disabled). Rive has no number-to-boolean converter, so a tiny Luau converter, **Zero Or Less**, turns `min(value − min, 1 − disabled)` into the Button's `disabled`. Reuse it for any "turn this off at a limit" bind.
 - With keyboard focus on the value, the arrow keys step it (up / right +, down / left −, held keys repeat), and a screen reader's increase and decrease do the same, through a gate that ignores them while disabled.
 - The value sits on `_surface` with a `_border` line and `_radiusButton` corners; disabled turns it `_textMuted`.
 - Screen readers get the two Buttons and a `slider` named by `label` with the value.
@@ -662,6 +1100,48 @@ A number between a minus and a plus Button, for quantities.
         <ViewModelInstanceTrigger viewModelPropertyId="157:10" id="X:12"/>  <!-- _increase -->
         <ViewModelInstanceTrigger viewModelPropertyId="157:11" id="X:13"/>  <!-- _keyDecrease -->
         <ViewModelInstanceTrigger viewModelPropertyId="157:12" id="X:14"/>  <!-- _keyIncrease -->
+    </ViewModelInstance>
+</NestedArtboardLayout>
+```
+
+## PIN Input
+
+Source: `shared/69-PinInput.rml` · artboard `650:1000` · state machine `650:1001` · view model `PinInput` `650:1`
+
+| Property | Type | Id |
+|---|---|---|
+| `value` | string | `650:2` |
+| `label` | string | `650:3` |
+| `error` | boolean | `650:4` |
+| `disabled` | boolean | `650:5` |
+| `a11yHidden` | boolean | `650:6` |
+| `complete` | boolean | `650:7` |
+
+Six boxes for a one-time code.
+
+- View model `PinInput`: `value`, `complete` (read it), `error`, `label`, `disabled`, `a11yHidden`.
+- One hidden text input takes the typing, bound two-way to `value`. A small Luau script, **PIN Input**, keeps `value` to six digits, spreads them over the boxes, sets `complete` at six and moves the brand ring and the caret. `error` turns the boxes red.
+- Screen readers get a `textField` named by `label` with the value.
+
+```xml
+<NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="650:1000" isStateful="true" name="PIN Input" id="X:1">
+    <NestedStateMachine animationId="650:1001" id="X:2"/>
+    <ViewModelInstance viewModelId="650:1" exports="true" name="My PIN Input" id="X:3">
+        <ViewModelInstanceString viewModelPropertyId="650:2" id="X:4"/>  <!-- value -->
+        <ViewModelInstanceString viewModelPropertyId="650:3" id="X:5"/>  <!-- label -->
+        <ViewModelInstanceBoolean viewModelPropertyId="650:4" id="X:6"/>  <!-- error -->
+        <ViewModelInstanceBoolean viewModelPropertyId="650:5" id="X:7"/>  <!-- disabled -->
+        <ViewModelInstanceBoolean viewModelPropertyId="650:6" id="X:8"/>  <!-- a11yHidden -->
+        <ViewModelInstanceBoolean viewModelPropertyId="650:7" id="X:9"/>  <!-- complete -->
+        <ViewModelInstanceBoolean viewModelPropertyId="650:8" id="X:10"/>  <!-- _focused -->
+        <ViewModelInstanceNumber viewModelPropertyId="650:9" id="X:11"/>  <!-- _ring -->
+        <ViewModelInstanceNumber viewModelPropertyId="650:10" id="X:12"/>  <!-- _caret -->
+        <ViewModelInstanceString viewModelPropertyId="650:11" id="X:13"/>  <!-- _c1 -->
+        <ViewModelInstanceString viewModelPropertyId="650:12" id="X:14"/>  <!-- _c2 -->
+        <ViewModelInstanceString viewModelPropertyId="650:13" id="X:15"/>  <!-- _c3 -->
+        <ViewModelInstanceString viewModelPropertyId="650:14" id="X:16"/>  <!-- _c4 -->
+        <ViewModelInstanceString viewModelPropertyId="650:15" id="X:17"/>  <!-- _c5 -->
+        <ViewModelInstanceString viewModelPropertyId="650:16" id="X:18"/>  <!-- _c6 -->
     </ViewModelInstance>
 </NestedArtboardLayout>
 ```
@@ -732,11 +1212,13 @@ Source: `shared/35-ProgressBar.rml` · artboard `130:20` · state machine `130:2
 | `label` | string | `130:2` |
 | `value` | number | `130:3` |
 | `a11yHidden` | boolean | `130:4` |
+| `indeterminate` | boolean | `402:1` |
 
 A label, a percentage and a bar that fills from the left.
 
-- View model `ProgressBar`: `label`, `value` (`0`–`100`), `a11yHidden`.
+- View model `ProgressBar`: `label`, `value` (`0`–`100`), `indeterminate`, `a11yHidden`.
 - Values outside `0`–`100` are clamped; the percentage is rounded to a whole number.
+- `indeterminate` hides the bar and the percentage and runs a brand segment across the track, for work of unknown length. Instance `Syncing`.
 - The bar eases to a new value with a short layout animation.
 - Track and fill use the same tokens as the Slider (`_borderStrong`, `_brand600`); the corners follow `_radiusSmall`, so the theme roundness applies.
 - Screen readers get a `group` named by the label with the percentage as text. A chain of built-in converters makes that text (clamp, round, pad, add `%`, trim), so no script is involved.
@@ -748,6 +1230,7 @@ A label, a percentage and a bar that fills from the left.
         <ViewModelInstanceString viewModelPropertyId="130:2" id="X:4"/>  <!-- label -->
         <ViewModelInstanceNumber viewModelPropertyId="130:3" id="X:5"/>  <!-- value -->
         <ViewModelInstanceBoolean viewModelPropertyId="130:4" id="X:6"/>  <!-- a11yHidden -->
+        <ViewModelInstanceBoolean viewModelPropertyId="402:1" id="X:7"/>  <!-- indeterminate -->
     </ViewModelInstance>
 </NestedArtboardLayout>
 ```
@@ -801,6 +1284,57 @@ Source: `shared/01-RadioOption.rml` · artboard `1:16` · state machine `1:21` �
         <ViewModelInstanceBoolean viewModelPropertyId="1:3015" id="X:10"/>  <!-- _hover -->
         <ViewModelInstanceBoolean viewModelPropertyId="1:953" id="X:11"/>  <!-- _active -->
         <ViewModelInstanceString viewModelPropertyId="1:951" id="X:12"/>  <!-- label -->
+    </ViewModelInstance>
+</NestedArtboardLayout>
+```
+
+## Range Discrete Slider
+
+Source: `shared/56b-RangeDiscreteSlider.rml` · artboard `346:1` · state machine `346:3` · view model `RangeDiscreteSlider` `345:100`
+
+| Property | Type | Id |
+|---|---|---|
+| `low` | number | `345:101` |
+| `high` | number | `345:102` |
+| `min` | number | `345:103` |
+| `max` | number | `345:104` |
+| `step` | number | `345:105` |
+| `label` | string | `345:106` |
+| `disabled` | boolean | `345:107` |
+| `a11yHidden` | boolean | `345:108` |
+| `showTicks` | boolean | `345:109` |
+| `_keyUp` | trigger | `345:118` |
+| `_keyDown` | trigger | `345:119` |
+
+Two thumbs that snap to steps, like the Discrete Slider.
+
+- View model `RangeDiscreteSlider`: `low`, `high`, `min`, `max`, `step`, `label`, `showTicks`, `disabled`, `a11yHidden`.
+- A small Luau script, **Range Discrete Slider**, picks the nearer thumb on a press and drags it (snapped, clamped, never past the other thumb) and keeps the thumbs and the fill between them in step when your app writes `low`, `high`, `min`, `max` or `step`. Ticks between the thumbs light up; the thumb you drag shows its value in a bubble.
+- The screen reader's increase and decrease move the high thumb.
+
+```xml
+<NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="346:1" isStateful="true" name="Range Discrete Slider" id="X:1">
+    <NestedStateMachine animationId="346:3" id="X:2"/>
+    <ViewModelInstance viewModelId="345:100" exports="true" name="My Range Discrete Slider" id="X:3">
+        <ViewModelInstanceNumber viewModelPropertyId="345:101" id="X:4"/>  <!-- low -->
+        <ViewModelInstanceNumber viewModelPropertyId="345:102" id="X:5"/>  <!-- high -->
+        <ViewModelInstanceNumber viewModelPropertyId="345:103" id="X:6"/>  <!-- min -->
+        <ViewModelInstanceNumber viewModelPropertyId="345:104" id="X:7"/>  <!-- max -->
+        <ViewModelInstanceNumber viewModelPropertyId="345:105" id="X:8"/>  <!-- step -->
+        <ViewModelInstanceString viewModelPropertyId="345:106" id="X:9"/>  <!-- label -->
+        <ViewModelInstanceBoolean viewModelPropertyId="345:107" id="X:10"/>  <!-- disabled -->
+        <ViewModelInstanceBoolean viewModelPropertyId="345:108" id="X:11"/>  <!-- a11yHidden -->
+        <ViewModelInstanceBoolean viewModelPropertyId="345:109" id="X:12"/>  <!-- showTicks -->
+        <ViewModelInstanceNumber viewModelPropertyId="345:110" id="X:13"/>  <!-- _lowFraction -->
+        <ViewModelInstanceNumber viewModelPropertyId="345:111" id="X:14"/>  <!-- _highFraction -->
+        <ViewModelInstanceNumber viewModelPropertyId="345:112" id="X:15"/>  <!-- _span -->
+        <ViewModelInstanceBoolean viewModelPropertyId="345:113" id="X:16"/>  <!-- _hoverLow -->
+        <ViewModelInstanceBoolean viewModelPropertyId="345:114" id="X:17"/>  <!-- _hoverHigh -->
+        <ViewModelInstanceBoolean viewModelPropertyId="345:115" id="X:18"/>  <!-- _dragLow -->
+        <ViewModelInstanceBoolean viewModelPropertyId="345:116" id="X:19"/>  <!-- _dragHigh -->
+        <ViewModelInstanceList viewModelPropertyId="345:117" id="X:20"/>  <!-- _ticks: add ViewModelInstanceListItem children -->
+        <ViewModelInstanceTrigger viewModelPropertyId="345:118" id="X:21"/>  <!-- _keyUp -->
+        <ViewModelInstanceTrigger viewModelPropertyId="345:119" id="X:22"/>  <!-- _keyDown -->
     </ViewModelInstance>
 </NestedArtboardLayout>
 ```
@@ -940,6 +1474,47 @@ Source: `shared/07-Slider.rml` · artboard `1:1870` · state machine `1:1875` ·
         <ViewModelInstanceNumber viewModelPropertyId="1:1962" id="X:9"/>  <!-- currentPos -->
         <ViewModelInstanceNumber viewModelPropertyId="1:1960" id="X:10"/>  <!-- maxPos -->
         <ViewModelInstanceNumber viewModelPropertyId="1:1958" id="X:11"/>  <!-- minPos -->
+    </ViewModelInstance>
+</NestedArtboardLayout>
+```
+
+## Slider Tick
+
+Source: `shared/55-SliderTick.rml` · artboard `404:1` · state machine `404:3` · view model `SliderTick` `403:200`
+
+| Property | Type | Id |
+|---|---|---|
+| `on` | boolean | `403:201` |
+
+```xml
+<NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="404:1" isStateful="true" name="Slider Tick" id="X:1">
+    <NestedStateMachine animationId="404:3" id="X:2"/>
+    <ViewModelInstance viewModelId="403:200" exports="true" name="My Slider Tick" id="X:3">
+        <ViewModelInstanceBoolean viewModelPropertyId="403:201" id="X:4"/>  <!-- on -->
+    </ViewModelInstance>
+</NestedArtboardLayout>
+```
+
+## Spinner
+
+Source: `shared/53-Spinner.rml` · artboard `400:1` · state machine `400:2` · view model `Spinner` `400:100`
+
+| Property | Type | Id |
+|---|---|---|
+| `label` | string | `400:101` |
+| `a11yHidden` | boolean | `400:102` |
+
+An indeterminate loader: a brand arc that turns while its length sweeps.
+
+- View model `Spinner`: `label` (screen reader name, "Loading"), `a11yHidden`.
+- Two looping layers (Spin and Sweep); nothing to drive.
+
+```xml
+<NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="400:1" isStateful="true" name="Spinner" id="X:1">
+    <NestedStateMachine animationId="400:2" id="X:2"/>
+    <ViewModelInstance viewModelId="400:100" exports="true" name="My Spinner" id="X:3">
+        <ViewModelInstanceString viewModelPropertyId="400:101" id="X:4"/>  <!-- label -->
+        <ViewModelInstanceBoolean viewModelPropertyId="400:102" id="X:5"/>  <!-- a11yHidden -->
     </ViewModelInstance>
 </NestedArtboardLayout>
 ```
@@ -1186,6 +1761,67 @@ A row of tabs over a divider; the selected tab has full-strength text and a bran
 </NestedArtboardLayout>
 ```
 
+## Tag
+
+Source: `shared/66-Tag.rml` · artboard `685:1000` · state machine `685:1001` · view model `Tag` `685:1`
+
+| Property | Type | Id |
+|---|---|---|
+| `label` | string | `685:2` |
+| `_remove` | trigger | `685:3` |
+| `disabled` | boolean | `685:5` |
+
+```xml
+<NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="685:1000" isStateful="true" name="Tag" id="X:1">
+    <NestedStateMachine animationId="685:1001" id="X:2"/>
+    <ViewModelInstance viewModelId="685:1" exports="true" name="My Tag" id="X:3">
+        <ViewModelInstanceString viewModelPropertyId="685:2" id="X:4"/>  <!-- label -->
+        <ViewModelInstanceTrigger viewModelPropertyId="685:3" id="X:5"/>  <!-- _remove -->
+        <ViewModelInstanceBoolean viewModelPropertyId="685:4" id="X:6"/>  <!-- _hover -->
+        <ViewModelInstanceBoolean viewModelPropertyId="685:5" id="X:7"/>  <!-- disabled -->
+    </ViewModelInstance>
+</NestedArtboardLayout>
+```
+
+## Tag Input
+
+Source: `shared/66-TagInput.rml` · artboard `688:1000` · state machine `688:1001` · view model `TagInput` `688:1`
+Contains: Tag
+
+| Property | Type | Id |
+|---|---|---|
+| `tags` | list of `Tag` | `688:2` |
+| `draft` | string | `688:3` |
+| `label` | string | `688:4` |
+| `placeholder` | string | `688:5` |
+| `disabled` | boolean | `688:6` |
+| `a11yHidden` | boolean | `688:7` |
+| `_commit` | trigger | `688:10` |
+
+A field that turns what you type into tags.
+
+- View model `TagInput`: `tags` (a list of `Tag`), `draft` (the text being typed), `label`, `placeholder`, `disabled`, `a11yHidden`.
+- `Tag`: `label`, `disabled`. Its × fires `_remove`.
+- A small Luau script, **Tag Input**, adds the draft as a tag on Enter or a comma (trimmed, skipped when empty or already there), removes a tag when its × is clicked and passes `disabled` on to every tag. Tags wrap over as many rows as they need.
+- Screen readers get a `textField` named by `label` with the draft; each tag is text with a remove `button`.
+
+```xml
+<NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="688:1000" isStateful="true" name="Tag Input" id="X:1">
+    <NestedStateMachine animationId="688:1001" id="X:2"/>
+    <ViewModelInstance viewModelId="688:1" exports="true" name="My Tag Input" id="X:3">
+        <ViewModelInstanceList viewModelPropertyId="688:2" id="X:4"/>  <!-- tags: add ViewModelInstanceListItem children -->
+        <ViewModelInstanceString viewModelPropertyId="688:3" id="X:5"/>  <!-- draft -->
+        <ViewModelInstanceString viewModelPropertyId="688:4" id="X:6"/>  <!-- label -->
+        <ViewModelInstanceString viewModelPropertyId="688:5" id="X:7"/>  <!-- placeholder -->
+        <ViewModelInstanceBoolean viewModelPropertyId="688:6" id="X:8"/>  <!-- disabled -->
+        <ViewModelInstanceBoolean viewModelPropertyId="688:7" id="X:9"/>  <!-- a11yHidden -->
+        <ViewModelInstanceBoolean viewModelPropertyId="688:8" id="X:10"/>  <!-- _focused -->
+        <ViewModelInstanceBoolean viewModelPropertyId="688:9" id="X:11"/>  <!-- _hover -->
+        <ViewModelInstanceTrigger viewModelPropertyId="688:10" id="X:12"/>  <!-- _commit -->
+    </ViewModelInstance>
+</NestedArtboardLayout>
+```
+
 ## Theme Driver
 
 Source: `shared/18-ThemeDriver.rml` · artboard `10:14621` · state machine `10:14626`
@@ -1371,22 +2007,22 @@ Contains: Nav Group
 ## Slide  (Showcase demo)
 
 Source: `shared/17-Slide.rml` · artboard `10:5313` · state machine `10:5405` · view model `Slide` `10:5163`
-Contains: Accordion, Alert, Avatar, Badge, Breadcrumbs, Button Group, Button Row, Checkbox Group, Chip Group, Dialog Demo, Label, Menu, Number Field, Pagination, Progress Bar, Radio Group, Range Slider, Rating, Select, Slider, Split Button, Stepper Demo, Switch Group, Tabs, Toggle Button Group, Tooltip Button
+Contains: Accordion, Alert, Avatar, Avatar Group, Badge, Breadcrumbs, Button Group, Button Row, Checkbox Group, Chip Group, Combobox, Context Menu, Date Field, Dialog Demo, Discrete Slider, Gauge, Kbd, Knob, Label, Menu, Number Field, PIN Input, Pagination, Progress Bar, Radio Group, Range Discrete Slider, Range Slider, Rating, Select, Slider, Spinner, Split Button, Stepper Demo, Switch Group, Tabs, Tag Input, Toggle Button Group, Tooltip Button
 
 | Property | Type | Id |
 |---|---|---|
 | `name` | string | `10:5171` |
-| `content` | list of `Pagination` / `Accordion` / `RadioGroup` / `CheckboxGroup` / `SwitchGroup` / `Alert` / `Breadcrumbs` / `TooltipButton` / `ProgressBar` / `DialogDemo` / `ButtonRow` / `Tabs` / `ChipGroup` / `Menu` / `Select` / `SplitButton` / `RangeSlider` / `Rating` / `NumberField` / `StepperDemo` / `Badge` / `Label` / `Slider` / `Avatar` / `ToggleButtonGroup` / `ButtonGroup` | `10:5173` |
+| `content` | list of `Pagination` / `Accordion` / `RadioGroup` / `CheckboxGroup` / `SwitchGroup` / `Alert` / `Breadcrumbs` / `TooltipButton` / `ProgressBar` / `DialogDemo` / `ButtonRow` / `Tabs` / `ChipGroup` / `Menu` / `Select` / `SplitButton` / `RangeSlider` / `Rating` / `NumberField` / `StepperDemo` / `Badge` / `Label` / `Slider` / `Avatar` / `DateField` / `RangeDiscreteSlider` / `ToggleButtonGroup` / `Spinner` / `DiscreteSlider` / `ContextMenu` / `Knob` / `PinInput` / `Combobox` / `TagInput` / `AvatarGroup` / `Kbd` / `Gauge` / `ButtonGroup` | `10:5173` |
 | `crumbs` | `Breadcrumbs` | `114:1` |
 
 ## Tile  (Showcase demo)
 
 Source: `shared/14-Tile.rml` · artboard `10:3618` · state machine `10:3623` · view model `Tile` `10:3612`
-Contains: Accordion, Alert, Avatar, Badge, Breadcrumbs, Button, Button Group, Checkbox Group, Chip Group, Dialog Demo, Label, Menu, Number Field, Pagination, Progress Bar, Radio Group, Range Slider, Rating, Select, Slider, Split Button, Stepper Demo, Switch Group, Tabs, Toggle Button Group, Tooltip Button
+Contains: Accordion, Alert, Avatar, Avatar Group, Badge, Breadcrumbs, Button, Button Group, Checkbox Group, Chip Group, Combobox, Context Menu, Date Field, Dialog Demo, Discrete Slider, Gauge, Kbd, Knob, Label, Menu, Number Field, PIN Input, Pagination, Progress Bar, Radio Group, Range Discrete Slider, Range Slider, Rating, Select, Slider, Spinner, Split Button, Stepper Demo, Switch Group, Tabs, Tag Input, Toggle Button Group, Tooltip Button
 
 | Property | Type | Id |
 |---|---|---|
-| `content` | list of `Pagination` / `Accordion` / `RadioGroup` / `CheckboxGroup` / `SwitchGroup` / `Alert` / `Breadcrumbs` / `TooltipButton` / `ProgressBar` / `DialogDemo` / `Tabs` / `ChipGroup` / `Menu` / `Select` / `SplitButton` / `RangeSlider` / `Rating` / `NumberField` / `StepperDemo` / `Badge` / `Button` / `Label` / `Slider` / `Avatar` / `ToggleButtonGroup` / `ButtonGroup` | `10:3861` |
+| `content` | list of `Pagination` / `Accordion` / `RadioGroup` / `CheckboxGroup` / `SwitchGroup` / `Alert` / `Breadcrumbs` / `TooltipButton` / `ProgressBar` / `DialogDemo` / `Tabs` / `ChipGroup` / `Menu` / `Select` / `SplitButton` / `RangeSlider` / `Rating` / `NumberField` / `StepperDemo` / `Badge` / `Button` / `Label` / `Slider` / `Avatar` / `DateField` / `RangeDiscreteSlider` / `ToggleButtonGroup` / `Spinner` / `DiscreteSlider` / `ContextMenu` / `Knob` / `PinInput` / `Combobox` / `TagInput` / `AvatarGroup` / `Kbd` / `Gauge` / `ButtonGroup` | `10:3861` |
 | `name` | string | `10:3614` |
 
 ## Toolbar  (Showcase demo)
