@@ -2011,7 +2011,7 @@
                         <ViewModelInstanceListItem viewModelId="252:1" viewModelInstanceId="252:10" id="385:28"/>
                     </ViewModelInstanceList>
                     <ViewModelInstanceNumber propertyValue="20" viewModelPropertyId="10:5175" id="385:29"/>
-                    <ViewModelInstanceNumber propertyValue="1.4" viewModelPropertyId="10:5177" id="385:30"/>
+                    <ViewModelInstanceNumber propertyValue="1.2" viewModelPropertyId="10:5177" id="385:30"/>
                     <ViewModelInstanceViewModel propertyValue="10:5193" viewModelPropertyId="10:5179" id="385:31"/>
                     <ViewModelInstanceViewModel propertyValue="385:1" viewModelPropertyId="114:1" id="385:32"/>
                 </ViewModelInstance>

@@ -1,5 +1,5 @@
 <Rive version="1" kind="fragment">
-    <Artboard defaultStateMachineId="252:12" viewModelId="252:1" viewModelInstanceId="252:10" isComponent="true" spaceId="1:5601" width="300" height="430" styleId="252:240" x="13000" y="600" name="Date Field" id="252:11">
+    <Artboard defaultStateMachineId="252:12" viewModelId="252:1" viewModelInstanceId="252:10" isComponent="true" spaceId="1:5601" width="300" height="63" styleId="252:240" x="13000" y="600" name="Date Field" id="252:11">
         <Fill fillRule="clockwise" id="252:241">
             <SolidColor colorValue="00000000" id="252:242"/>
         </Fill>
@@ -153,7 +153,7 @@
             <Fill fillRule="clockwise" id="252:125">
                 <SolidColor colorValue="00000000" id="252:126"/>
             </Fill>
-            <LayoutComponentStyle positionLeftUnitsValue="points" positionRightUnitsValue="points" positionTopUnitsValue="points" positionBottomUnitsValue="points" positionTypeValue="absolute" widthUnitsValue="auto" heightUnitsValue="auto" id="252:127"/>
+            <LayoutComponentStyle positionLeft="-24" positionRight="-24" positionTop="-24" positionBottom="-380" positionLeftUnitsValue="points" positionRightUnitsValue="points" positionTopUnitsValue="points" positionBottomUnitsValue="points" positionTypeValue="absolute" widthUnitsValue="auto" heightUnitsValue="auto" id="252:127"/>
         </LayoutComponent>
         <StateMachine name="State Machine 1" id="252:12">
             <StateMachineListener targetId="252:13" name="Hover On" id="252:137">
