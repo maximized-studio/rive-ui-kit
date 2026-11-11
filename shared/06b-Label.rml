@@ -1,16 +1,64 @@
 <Rive version="1" kind="fragment">
-<Artboard defaultStateMachineId="983:2" viewModelId="983:100" viewModelInstanceId="983:110" isComponent="true" spaceId="1:5601" width="38" height="17" styleId="983:3" x="200" y="1233" name="Label" id="983:1">
-<Fill fillRule="clockwise" id="983:303"><SolidColor colorValue="00000000" id="983:304"/></Fill>
-<LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="983:3"/>
-<LayoutComponent styleId="983:300" name="Label" id="983:305"><Text name="Disabled Text" id="983:307"><TextStylePaint fontSize="14" fontAssetId="0:7" familyName="Inter" styleName="Medium" id="983:306"><Fill fillRule="clockwise" id="983:308"><SolidColor colorValue="FFA1A1AA" id="983:309"><DataBindContext sourcePathIds="10:7-10:7426" propertyKey="37" id="983:310"/></SolidColor></Fill><TextStyleAxis tag="1869640570" axisValue="14" id="983:311"/><TextStyleAxis tag="2003265652" axisValue="500" id="983:312"/></TextStylePaint><TextValueRun styleId="983:306" text="Label" id="983:313"><DataBindContext sourcePathIds="983:100-983:101" propertyKey="268" nameBased="true" id="983:314"/></TextValueRun><LayoutParticipant layoutWidthScaleType="hug" layoutHeightScaleType="hug" id="983:315"/><DataBindContext sourcePathIds="983:100-983:102" propertyKey="18" nameBased="true" converterId="9:145" id="983:316"/></Text><Text name="Text" id="983:318"><TextStylePaint fontSize="14" fontAssetId="0:7" familyName="Inter" styleName="Medium" id="983:317"><Fill fillRule="clockwise" id="983:319"><SolidColor colorValue="FFFAFAFA" id="983:320"><DataBindContext sourcePathIds="10:7-10:7422" propertyKey="37" id="983:321"/></SolidColor></Fill><TextStyleAxis tag="1869640570" axisValue="14" id="983:322"/><TextStyleAxis tag="2003265652" axisValue="500" id="983:323"/></TextStylePaint><TextValueRun styleId="983:317" text="Label" id="983:324"><DataBindContext sourcePathIds="983:100-983:101" propertyKey="268" nameBased="true" id="983:325"/></TextValueRun><LayoutParticipant layoutWidthScaleType="hug" layoutHeightScaleType="hug" id="983:326"/><DataBindContext sourcePathIds="983:100-983:102" propertyKey="18" nameBased="true" converterId="9:90" id="983:327"/></Text>
-<LayoutComponentStyle intrinsicallySizedValue="true" layoutTypeValue="stack" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="983:300"/></LayoutComponent>
-<StateMachine name="State Machine 1" id="983:2"><StateMachineLayer name="Layer 1" id="983:301"><AnimationState animationId="983:302" id="983:328"/><AnyState id="983:329"/><ExitState id="983:330"/><EntryState id="983:331"/></StateMachineLayer></StateMachine>
-<LinearAnimation name="Idle" id="983:302"/>
-</Artboard>
-<ViewModel defaultInstanceId="983:110" name="Label" groupId="1:2673" id="983:100">
-<ViewModelPropertyString name="text" id="983:101"/>
-<ViewModelPropertyBoolean name="disabled" id="983:102"/>
-<ViewModelInstance exports="true" name="Label" id="983:110"><ViewModelInstanceString propertyValue="Label" viewModelPropertyId="983:101" id="983:111"/><ViewModelInstanceBoolean viewModelPropertyId="983:102" id="983:112"/></ViewModelInstance>
-<ViewModelInstance exports="true" name="Disabled" id="983:120"><ViewModelInstanceString propertyValue="Disabled label" viewModelPropertyId="983:101" id="983:121"/><ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="983:102" id="983:122"/></ViewModelInstance>
-</ViewModel>
+    <Artboard defaultStateMachineId="983:2" viewModelId="983:100" viewModelInstanceId="983:110" isComponent="true" spaceId="1:5601" width="38" height="17" styleId="983:3" x="200" y="1233" name="Label" id="983:1">
+        <Fill fillRule="clockwise" id="983:303">
+            <SolidColor colorValue="00000000" id="983:304"/>
+        </Fill>
+        <LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="983:3"/>
+        <LayoutComponent styleId="983:300" name="Label" id="983:305">
+            <Text name="Disabled Text" id="983:307">
+                <TextStylePaint fontSize="14" fontAssetId="0:7" familyName="Inter" styleName="Medium" id="983:306">
+                    <Fill fillRule="clockwise" id="983:308">
+                        <SolidColor colorValue="FFA1A1AA" id="983:309">
+                            <DataBindContext sourcePathIds="10:7-10:7426" propertyKey="37" id="983:310"/>
+                        </SolidColor>
+                    </Fill>
+                    <TextStyleAxis tag="1869640570" axisValue="14" id="983:311"/>
+                    <TextStyleAxis tag="2003265652" axisValue="500" id="983:312"/>
+                </TextStylePaint>
+                <TextValueRun styleId="983:306" text="Label" id="983:313">
+                    <DataBindContext sourcePathIds="983:100-983:101" propertyKey="268" nameBased="true" id="983:314"/>
+                </TextValueRun>
+                <LayoutParticipant layoutWidthScaleType="hug" layoutHeightScaleType="hug" id="983:315"/>
+                <DataBindContext sourcePathIds="983:100-983:102" propertyKey="18" nameBased="true" converterId="9:145" id="983:316"/>
+            </Text>
+            <Text name="Text" id="983:318">
+                <TextStylePaint fontSize="14" fontAssetId="0:7" familyName="Inter" styleName="Medium" id="983:317">
+                    <Fill fillRule="clockwise" id="983:319">
+                        <SolidColor colorValue="FFFAFAFA" id="983:320">
+                            <DataBindContext sourcePathIds="10:7-10:7422" propertyKey="37" id="983:321"/>
+                        </SolidColor>
+                    </Fill>
+                    <TextStyleAxis tag="1869640570" axisValue="14" id="983:322"/>
+                    <TextStyleAxis tag="2003265652" axisValue="500" id="983:323"/>
+                </TextStylePaint>
+                <TextValueRun styleId="983:317" text="Label" id="983:324">
+                    <DataBindContext sourcePathIds="983:100-983:101" propertyKey="268" nameBased="true" id="983:325"/>
+                </TextValueRun>
+                <LayoutParticipant layoutWidthScaleType="hug" layoutHeightScaleType="hug" id="983:326"/>
+                <DataBindContext sourcePathIds="983:100-983:102" propertyKey="18" nameBased="true" converterId="9:90" id="983:327"/>
+            </Text>
+            <LayoutComponentStyle intrinsicallySizedValue="true" layoutTypeValue="stack" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="983:300"/>
+        </LayoutComponent>
+        <StateMachine name="State Machine 1" id="983:2">
+            <StateMachineLayer name="Layer 1" id="983:301">
+                <AnimationState animationId="983:302" id="983:328"/>
+                <AnyState id="983:329"/>
+                <ExitState id="983:330"/>
+                <EntryState id="983:331"/>
+            </StateMachineLayer>
+        </StateMachine>
+        <LinearAnimation name="Idle" id="983:302"/>
+    </Artboard>
+    <ViewModel defaultInstanceId="983:110" name="Label" groupId="1:2673" id="983:100">
+        <ViewModelPropertyString name="text" id="983:101"/>
+        <ViewModelPropertyBoolean name="disabled" id="983:102"/>
+        <ViewModelInstance exports="true" name="Label" id="983:110">
+            <ViewModelInstanceString propertyValue="Label" viewModelPropertyId="983:101" id="983:111"/>
+            <ViewModelInstanceBoolean viewModelPropertyId="983:102" id="983:112"/>
+        </ViewModelInstance>
+        <ViewModelInstance exports="true" name="Disabled" id="983:120">
+            <ViewModelInstanceString propertyValue="Disabled label" viewModelPropertyId="983:101" id="983:121"/>
+            <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="983:102" id="983:122"/>
+        </ViewModelInstance>
+    </ViewModel>
 </Rive>

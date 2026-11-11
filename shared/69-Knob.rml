@@ -178,8 +178,20 @@
                 </FocusData>
             </LayoutComponent>
             <LayoutComponent styleId="640:1161" name="Label" id="640:1162">
-                
-                <LayoutComponent styleId="983:411" name="Label" id="983:414"><NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="983:1" isStateful="true" name="Label" id="983:415"><NestedStateMachine animationId="983:2" id="983:416"/><ViewModelInstance viewModelId="983:100" exports="true" name="Label" id="983:417"><ViewModelInstanceString propertyValue="Volume" viewModelPropertyId="983:101" id="983:418"><DataBindContext sourcePathIds="640:1-640:6" propertyKey="561" nameBased="true" id="983:419"/></ViewModelInstanceString><ViewModelInstanceBoolean viewModelPropertyId="983:102" id="983:412"><DataBindContext sourcePathIds="640:1-640:7" propertyKey="593" nameBased="true" id="983:413"/></ViewModelInstanceBoolean></ViewModelInstance></NestedArtboardLayout><LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="983:411"/></LayoutComponent>
+                <LayoutComponent styleId="983:411" name="Label" id="983:414">
+                    <NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="983:1" isStateful="true" name="Label" id="983:415">
+                        <NestedStateMachine animationId="983:2" id="983:416"/>
+                        <ViewModelInstance viewModelId="983:100" exports="true" name="Label" id="983:417">
+                            <ViewModelInstanceBoolean viewModelPropertyId="983:102" id="983:412">
+                                <DataBindContext sourcePathIds="640:1-640:7" propertyKey="593" nameBased="true" id="983:413"/>
+                            </ViewModelInstanceBoolean>
+                            <ViewModelInstanceString propertyValue="Volume" viewModelPropertyId="983:101" id="983:418">
+                                <DataBindContext sourcePathIds="640:1-640:6" propertyKey="561" nameBased="true" id="983:419"/>
+                            </ViewModelInstanceString>
+                        </ViewModelInstance>
+                    </NestedArtboardLayout>
+                    <LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="983:411"/>
+                </LayoutComponent>
                 <LayoutComponentStyle intrinsicallySizedValue="true" layoutTypeValue="stack" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="640:1161"/>
             </LayoutComponent>
             <LayoutComponentStyle gapVertical="8" layoutAlignmentType="topCenter" flexDirectionValue="column" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="640:1159"/>
@@ -472,7 +484,7 @@
         <FormulaTokenValue operationValue="2.3561945" id="640:1046"/>
     </DataConverterFormula>
     <DataConverterToString round="true" name="Knob · Value (to text)" groupId="1:2674" id="640:540"/>
-    <ScriptAsset file="Knob Drag.luau" compilationOrder="5" serializedImplementedMethods="2102137" scriptProtocolValue="layout" codeFileId="0:54769" name="Knob Drag" groupId="327:1" id="640:1006"/>
+    <ScriptAsset file="Knob Drag.luau" compilationOrder="4" serializedImplementedMethods="2102137" scriptProtocolValue="layout" codeFileId="0:54769" name="Knob Drag" groupId="327:1" id="640:1006"/>
     <ViewModel defaultInstanceId="640:20" name="Knob" groupId="1:2673" id="640:1">
         <ViewModelPropertyNumber name="value" id="640:2"/>
         <ViewModelPropertyNumber name="min" id="640:3"/>

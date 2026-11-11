@@ -2,15 +2,27 @@
     <Artboard defaultStateMachineId="10:3591" viewModelId="10:3548" viewModelInstanceId="10:3580" isComponent="true" includeInExport="false" spaceId="1:5601" width="220" height="130" styleId="10:3589" y="1634" name="Radio Group" id="10:3586">
         <LayoutComponentStyle flexDirectionValue="column" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" id="10:3589"/>
         <LayoutComponent styleId="10:3599" name="Group" id="10:3598">
-            <LayoutComponent styleId="983:420" name="Label" id="983:422"><NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="983:1" isStateful="true" name="Label" id="983:423"><NestedStateMachine animationId="983:2" id="983:424"/><ViewModelInstance viewModelId="983:100" exports="true" name="Label" id="983:425"><ViewModelInstanceString propertyValue="Notifications" viewModelPropertyId="983:101" id="983:426"><DataBindContext sourcePathIds="10:3548-983:201" propertyKey="561" nameBased="true" id="983:427"/></ViewModelInstanceString><ViewModelInstanceBoolean viewModelPropertyId="983:102" id="983:421"/></ViewModelInstance></NestedArtboardLayout><LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="983:420"/></LayoutComponent>
+            <LayoutComponent styleId="983:420" name="Label" id="983:422">
+                <NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="983:1" isStateful="true" name="Label" id="983:423">
+                    <NestedStateMachine animationId="983:2" id="983:424"/>
+                    <ViewModelInstance viewModelId="983:100" exports="true" name="Label" id="983:425">
+                        <ViewModelInstanceBoolean viewModelPropertyId="983:102" id="983:421"/>
+                        <ViewModelInstanceString propertyValue="Notifications" viewModelPropertyId="983:101" id="983:426">
+                            <DataBindContext sourcePathIds="10:3548-983:201" propertyKey="561" nameBased="true" id="983:427"/>
+                        </ViewModelInstanceString>
+                    </ViewModelInstance>
+                </NestedArtboardLayout>
+                <LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="983:420"/>
+            </LayoutComponent>
             <LayoutComponent styleId="10:3609" name="Options" id="10:3608">
                 <LayoutComponentStyle gapVertical="8" flexDirectionValue="column" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="10:3609"/>
                 <ArtboardComponentList participatesInLayout="true" id="10:3610">
                     <DataBindContext sourcePathIds="10:3548-10:3550" propertyKey="800" id="10:3611"/>
                 </ArtboardComponentList>
             </LayoutComponent>
-            <SemanticData role="radioGroup" traitFlags="32" name="Semantics" id="2:18"><DataBindContext sourcePathIds="10:3548-983:201" propertyKey="983" nameBased="true" id="983:428"/>
+            <SemanticData role="radioGroup" traitFlags="32" name="Semantics" id="2:18">
                 <DataBindContext sourcePathIds="10:3548-7:59" propertyKey="1004" nameBased="true" id="7:85"/>
+                <DataBindContext sourcePathIds="10:3548-983:201" propertyKey="983" nameBased="true" id="983:428"/>
             </SemanticData>
             <LayoutComponentStyle gapVertical="10" flexDirectionValue="column" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="10:3599"/>
         </LayoutComponent>

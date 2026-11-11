@@ -5,7 +5,18 @@
         </Fill>
         <LayoutComponentStyle id="252:240"/>
         <LayoutComponent styleId="252:123" name="Content" id="252:124">
-            <LayoutComponent styleId="983:385" name="Label" id="983:387"><NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="983:1" isStateful="true" name="Label" id="983:388"><NestedStateMachine animationId="983:2" id="983:389"/><ViewModelInstance viewModelId="983:100" exports="true" name="Label" id="983:390"><ViewModelInstanceString propertyValue="Delivery date" viewModelPropertyId="983:101" id="983:391"><DataBindContext sourcePathIds="252:1-252:2" propertyKey="561" nameBased="true" id="983:392"/></ViewModelInstanceString><ViewModelInstanceBoolean viewModelPropertyId="983:102" id="983:386"/></ViewModelInstance></NestedArtboardLayout><LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="fill" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="983:385"/></LayoutComponent>
+            <LayoutComponent styleId="983:385" name="Label" id="983:387">
+                <NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="983:1" isStateful="true" name="Label" id="983:388">
+                    <NestedStateMachine animationId="983:2" id="983:389"/>
+                    <ViewModelInstance viewModelId="983:100" exports="true" name="Label" id="983:390">
+                        <ViewModelInstanceBoolean viewModelPropertyId="983:102" id="983:386"/>
+                        <ViewModelInstanceString propertyValue="Delivery date" viewModelPropertyId="983:101" id="983:391">
+                            <DataBindContext sourcePathIds="252:1-252:2" propertyKey="561" nameBased="true" id="983:392"/>
+                        </ViewModelInstanceString>
+                    </ViewModelInstance>
+                </NestedArtboardLayout>
+                <LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="fill" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="983:385"/>
+            </LayoutComponent>
             <LayoutComponent height="40" styleId="252:78" isTargetOpaque="true" name="Field" id="252:13">
                 <LayoutComponent styleId="252:55" name="Text" id="252:56">
                     <Text sizingValue="autoHeight" name="Value" id="252:35">
@@ -338,7 +349,7 @@
             </KeyedObject>
         </LinearAnimation>
     </Artboard>
-    <ScriptAsset file="Date Field.luau" compilationOrder="15" serializedImplementedMethods="769" scriptProtocolValue="layout" codeFileId="0:62840" name="Date Field" groupId="327:1" id="252:17"/>
+    <ScriptAsset file="Date Field.luau" compilationOrder="14" serializedImplementedMethods="769" scriptProtocolValue="layout" codeFileId="0:62840" name="Date Field" groupId="327:1" id="252:17"/>
     <ViewModel defaultInstanceId="252:10" name="DateField" groupId="1:2673" id="252:1">
         <ViewModelPropertyString name="label" id="252:2"/>
         <ViewModelPropertyString name="value" id="252:3"/>

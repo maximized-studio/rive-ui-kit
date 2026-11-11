@@ -6,7 +6,20 @@
         <LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="153:1002"/>
         <LayoutComponent styleId="153:1003" name="Slider Range" id="153:1096">
             <LayoutComponent styleId="153:1004" name="Header" id="153:1097">
-                <LayoutComponent styleId="983:341" name="Label" id="983:344"><NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="983:1" isStateful="true" name="Label" id="983:345"><NestedStateMachine animationId="983:2" id="983:346"/><ViewModelInstance viewModelId="983:100" exports="true" name="Label" id="983:347"><ViewModelInstanceString propertyValue="Price" viewModelPropertyId="983:101" id="983:348"><DataBindContext sourcePathIds="153:1-153:2" propertyKey="561" nameBased="true" id="983:349"/></ViewModelInstanceString><ViewModelInstanceBoolean viewModelPropertyId="983:102" id="983:342"><DataBindContext sourcePathIds="153:1-153:7" propertyKey="593" nameBased="true" id="983:343"/></ViewModelInstanceBoolean></ViewModelInstance></NestedArtboardLayout><LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="fill" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="983:341"/></LayoutComponent>
+                <LayoutComponent styleId="983:341" name="Label" id="983:344">
+                    <NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="983:1" isStateful="true" name="Label" id="983:345">
+                        <NestedStateMachine animationId="983:2" id="983:346"/>
+                        <ViewModelInstance viewModelId="983:100" exports="true" name="Label" id="983:347">
+                            <ViewModelInstanceBoolean viewModelPropertyId="983:102" id="983:342">
+                                <DataBindContext sourcePathIds="153:1-153:7" propertyKey="593" nameBased="true" id="983:343"/>
+                            </ViewModelInstanceBoolean>
+                            <ViewModelInstanceString propertyValue="Price" viewModelPropertyId="983:101" id="983:348">
+                                <DataBindContext sourcePathIds="153:1-153:2" propertyKey="561" nameBased="true" id="983:349"/>
+                            </ViewModelInstanceString>
+                        </ViewModelInstance>
+                    </NestedArtboardLayout>
+                    <LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="fill" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="983:341"/>
+                </LayoutComponent>
                 <Text name="Value" id="153:1081">
                     <TextStylePaint fontSize="14" fontAssetId="0:7" familyName="Inter" styleName="Regular" id="153:1080">
                         <Fill fillRule="clockwise" id="153:1082">

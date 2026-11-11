@@ -158,7 +158,6 @@
                 <AnimationState animationId="148:1067" x="320" y="100" stateName="Open" id="148:1069"/>
                 <AnyState x="500" id="148:1071">
                     <StateTransition stateToId="148:1068" duration="150" interpolationType="cubic" id="148:1072">
-                        <CubicEaseInterpolator x1="0.42" x2="0.58" y2="1" id="978:40"/>
                         <TransitionViewModelCondition id="148:1073">
                             <TransitionPropertyViewModelComparator id="148:1074">
                                 <BindablePropertyBoolean id="148:1075">
@@ -167,9 +166,9 @@
                             </TransitionPropertyViewModelComparator>
                             <TransitionValueBooleanComparator id="148:1077"/>
                         </TransitionViewModelCondition>
+                        <CubicEaseInterpolator id="978:40"/>
                     </StateTransition>
                     <StateTransition stateToId="148:1069" duration="150" interpolationType="cubic" id="148:1078">
-                        <CubicEaseInterpolator x1="0.42" x2="0.58" y2="1" id="978:41"/>
                         <TransitionViewModelCondition id="148:1079">
                             <TransitionPropertyViewModelComparator id="148:1080">
                                 <BindablePropertyBoolean id="148:1081">
@@ -178,6 +177,7 @@
                             </TransitionPropertyViewModelComparator>
                             <TransitionValueBooleanComparator value="true" id="148:1083"/>
                         </TransitionViewModelCondition>
+                        <CubicEaseInterpolator id="978:41"/>
                     </StateTransition>
                 </AnyState>
                 <ExitState x="600" id="148:1084"/>

@@ -1,7 +1,18 @@
 <Rive version="1" kind="fragment">
     <Artboard defaultStateMachineId="10:4199" viewModelId="10:4154" viewModelInstanceId="10:4176" isComponent="true" includeInExport="false" spaceId="1:5601" width="220" height="136" styleId="10:4182" x="1200" y="853" name="Checkbox Group" id="10:4181">
         <LayoutComponent styleId="10:4184" name="Group" id="10:4183">
-            <LayoutComponent styleId="983:429" name="Label" id="983:431"><NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="983:1" isStateful="true" name="Label" id="983:432"><NestedStateMachine animationId="983:2" id="983:433"/><ViewModelInstance viewModelId="983:100" exports="true" name="Label" id="983:434"><ViewModelInstanceString propertyValue="Email preferences" viewModelPropertyId="983:101" id="983:435"><DataBindContext sourcePathIds="10:4154-983:203" propertyKey="561" nameBased="true" id="983:436"/></ViewModelInstanceString><ViewModelInstanceBoolean viewModelPropertyId="983:102" id="983:430"/></ViewModelInstance></NestedArtboardLayout><LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="983:429"/></LayoutComponent>
+            <LayoutComponent styleId="983:429" name="Label" id="983:431">
+                <NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="983:1" isStateful="true" name="Label" id="983:432">
+                    <NestedStateMachine animationId="983:2" id="983:433"/>
+                    <ViewModelInstance viewModelId="983:100" exports="true" name="Label" id="983:434">
+                        <ViewModelInstanceBoolean viewModelPropertyId="983:102" id="983:430"/>
+                        <ViewModelInstanceString propertyValue="Email preferences" viewModelPropertyId="983:101" id="983:435">
+                            <DataBindContext sourcePathIds="10:4154-983:203" propertyKey="561" nameBased="true" id="983:436"/>
+                        </ViewModelInstanceString>
+                    </ViewModelInstance>
+                </NestedArtboardLayout>
+                <LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="983:429"/>
+            </LayoutComponent>
             <LayoutComponent styleId="10:4194" name="Options" id="10:4193">
                 <LayoutComponentStyle gapVertical="8" flexDirectionValue="column" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="10:4194"/>
                 <LayoutComponent styleId="422:561" name="All" id="422:560">
@@ -40,8 +51,9 @@
                     <LayoutComponentStyle positionTypeValue="absolute" id="422:591"/>
                 </LayoutComponent>
             </LayoutComponent>
-            <SemanticData role="group" name="Semantics" id="2:23"><DataBindContext sourcePathIds="10:4154-983:203" propertyKey="983" nameBased="true" id="983:437"/>
+            <SemanticData role="group" name="Semantics" id="2:23">
                 <DataBindContext sourcePathIds="10:4154-7:61" propertyKey="1004" nameBased="true" id="7:65"/>
+                <DataBindContext sourcePathIds="10:4154-983:203" propertyKey="983" nameBased="true" id="983:437"/>
             </SemanticData>
             <LayoutComponentStyle gapVertical="10" flexDirectionValue="column" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="10:4184"/>
         </LayoutComponent>

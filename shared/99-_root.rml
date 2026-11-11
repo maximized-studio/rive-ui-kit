@@ -2671,7 +2671,6 @@
                 <ViewModelPropertyBoolean name="_all" id="422:503"/>
                 <ViewModelPropertyBoolean name="_mixed" id="422:504"/>
                 <ViewModelInstance exports="true" name="Preferences" id="10:4176">
-                    <ViewModelInstanceString propertyValue="Email preferences" viewModelPropertyId="983:203" id="983:204"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="7:61" id="7:62"/>
                     <ViewModelInstanceList viewModelPropertyId="10:4156" id="10:4177">
                         <ViewModelInstanceListItem viewModelId="1:149" viewModelInstanceId="10:4158" id="10:4178"/>
@@ -2682,6 +2681,7 @@
                     <ViewModelInstanceString propertyValue="All emails" viewModelPropertyId="422:502" id="422:506"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="422:503" id="422:507"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="422:504" id="422:508"/>
+                    <ViewModelInstanceString propertyValue="Email preferences" viewModelPropertyId="983:203" id="983:204"/>
                 </ViewModelInstance>
             </ViewModel>
             <ViewModel defaultInstanceId="10:4467" name="SwitchGroup" groupId="1:2673" id="10:4445">
@@ -2689,13 +2689,13 @@
                 <ViewModelPropertyBoolean name="a11yHidden" id="7:63"/>
                 <ViewModelPropertyList name="options" id="10:4447"/>
                 <ViewModelInstance exports="true" name="Connectivity" id="10:4467">
-                    <ViewModelInstanceString propertyValue="Connectivity" viewModelPropertyId="983:205" id="983:206"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="7:63" id="7:64"/>
                     <ViewModelInstanceList viewModelPropertyId="10:4447" id="10:4468">
                         <ViewModelInstanceListItem viewModelId="1:913" viewModelInstanceId="10:4449" id="10:4469"/>
                         <ViewModelInstanceListItem viewModelId="1:913" viewModelInstanceId="10:4455" id="10:4470"/>
                         <ViewModelInstanceListItem viewModelId="1:913" viewModelInstanceId="10:4461" id="10:4471"/>
                     </ViewModelInstanceList>
+                    <ViewModelInstanceString propertyValue="Connectivity" viewModelPropertyId="983:205" id="983:206"/>
                 </ViewModelInstance>
             </ViewModel>
             <ViewModel defaultInstanceId="10:3489" name="RadioSelection" groupId="1:2673" id="10:3488">
@@ -2713,7 +2713,6 @@
                 <ViewModelPropertyList name="options" id="10:3550"/>
                 <ViewModelPropertyViewModel viewModelReferenceId="10:3488" name="selection" id="10:3552"/>
                 <ViewModelInstance exports="true" name="Notifications" id="10:3580">
-                    <ViewModelInstanceString propertyValue="Notifications" viewModelPropertyId="983:201" id="983:202"/>
                     <ViewModelInstanceBoolean viewModelPropertyId="7:59" id="7:60"/>
                     <ViewModelInstanceList viewModelPropertyId="10:3550" id="10:3581">
                         <ViewModelInstanceListItem name="Email" viewModelId="1:949" viewModelInstanceId="10:3556" id="10:3583"/>
@@ -2721,6 +2720,7 @@
                         <ViewModelInstanceListItem name="Push" viewModelId="1:949" viewModelInstanceId="10:3572" id="10:3585"/>
                     </ViewModelInstanceList>
                     <ViewModelInstanceViewModel propertyValue="10:3554" viewModelPropertyId="10:3552" id="10:3582"/>
+                    <ViewModelInstanceString propertyValue="Notifications" viewModelPropertyId="983:201" id="983:202"/>
                 </ViewModelInstance>
             </ViewModel>
         </DataFolder>
@@ -2926,14 +2926,14 @@
     <ImageAsset file="Avatar.png" height="128" width="128" assetId="5251943" name="Avatar" groupId="1:2093" id="1:2091"/>
     <ImageAsset file="Showcase Cover.webp" format="webp" height="1080" width="1440" assetId="7319575" name="Showcase Cover" groupId="1:2093" id="42:629"/>
     <RenderPreset name="Preset 1" artboardId="10:110" format="png_sequence" width="1440" height="1080" id="57:1"/>
-    <ScriptAsset file="Zero Or Less.luau" compilationOrder="11" serializedImplementedMethods="3072" scriptProtocolValue="converter" codeFileId="0:84187" name="Zero Or Less" groupId="327:1" id="400:200"/>
-    <ScriptAsset file="Slider Discrete.luau" compilationOrder="8" serializedImplementedMethods="4985" scriptProtocolValue="layout" codeFileId="0:85120" name="Slider Discrete" groupId="327:1" id="403:400"/>
-    <ScriptAsset file="Calendar.luau" compilationOrder="9" serializedImplementedMethods="769" scriptProtocolValue="layout" codeFileId="0:91752" name="Calendar" groupId="327:1" id="410:400"/>
-    <ScriptAsset file="Accordion Single.luau" compilationOrder="14" serializedImplementedMethods="769" scriptProtocolValue="layout" codeFileId="0:80578" name="Accordion Single" groupId="327:1" id="414:10"/>
-    <ScriptAsset file="Select All.luau" compilationOrder="12" serializedImplementedMethods="769" scriptProtocolValue="layout" codeFileId="0:82275" name="Select All" groupId="327:1" id="422:520"/>
-    <ScriptAsset file="Pagination Pages.luau" compilationOrder="6" serializedImplementedMethods="769" scriptProtocolValue="layout" codeFileId="0:15811" name="Pagination Pages" groupId="327:1" id="912:3"/>
-    <ScriptAsset file="Viewport.luau" compilationOrder="10" serializedImplementedMethods="4921" scriptProtocolValue="layout" codeFileId="0:27924" name="Viewport" groupId="327:1" id="913:9"/>
-    <ScriptAsset file="Tooltip Placement.luau" compilationOrder="7" serializedImplementedMethods="4881" scriptProtocolValue="layout" codeFileId="0:20578" name="Tooltip Placement" groupId="327:1" id="914:10"/>
+    <ScriptAsset file="Zero Or Less.luau" compilationOrder="10" serializedImplementedMethods="3072" scriptProtocolValue="converter" codeFileId="0:84187" name="Zero Or Less" groupId="327:1" id="400:200"/>
+    <ScriptAsset file="Slider Discrete.luau" compilationOrder="7" serializedImplementedMethods="4985" scriptProtocolValue="layout" codeFileId="0:85120" name="Slider Discrete" groupId="327:1" id="403:400"/>
+    <ScriptAsset file="Calendar.luau" compilationOrder="8" serializedImplementedMethods="769" scriptProtocolValue="layout" codeFileId="0:91752" name="Calendar" groupId="327:1" id="410:400"/>
+    <ScriptAsset file="Accordion Single.luau" isModule="true" compilationOrder="13" serializedImplementedMethods="769" codeFileId="0:80578" name="Accordion Single" groupId="327:1" id="414:10"/>
+    <ScriptAsset file="Select All.luau" compilationOrder="11" serializedImplementedMethods="769" scriptProtocolValue="layout" codeFileId="0:82275" name="Select All" groupId="327:1" id="422:520"/>
+    <ScriptAsset file="Pagination Pages.luau" isModule="true" compilationOrder="5" serializedImplementedMethods="769" codeFileId="0:15811" name="Pagination Pages" groupId="327:1" id="912:3"/>
+    <ScriptAsset file="Viewport.luau" compilationOrder="9" serializedImplementedMethods="4921" scriptProtocolValue="layout" codeFileId="0:27924" name="Viewport" groupId="327:1" id="913:9"/>
+    <ScriptAsset file="Tooltip Placement.luau" isModule="true" compilationOrder="6" serializedImplementedMethods="4881" codeFileId="0:20578" name="Tooltip Placement" groupId="327:1" id="914:10"/>
     <ScriptedDataConverter scriptAssetId="400:200" name="Utils · Zero or less" groupId="1:2674" id="400:302"/>
     <Space name="Space 1" colorValue="FF2F2F2F" id="1:5601"/>
     <TransitionPropertyViewModelComparator id="1:2359"/>
