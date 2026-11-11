@@ -2926,15 +2926,15 @@
     <ImageAsset file="Avatar.png" height="128" width="128" assetId="5251943" name="Avatar" groupId="1:2093" id="1:2091"/>
     <ImageAsset file="Showcase Cover.webp" format="webp" height="1080" width="1440" assetId="7319575" name="Showcase Cover" groupId="1:2093" id="42:629"/>
     <RenderPreset name="Preset 1" artboardId="10:110" format="png_sequence" width="1440" height="1080" id="57:1"/>
-    <ScriptAsset file="Zero Or Less.luau" scriptProtocolValue="converter" name="Zero Or Less" groupId="327:1" id="400:200"/>
-    <ScriptAsset file="Slider Discrete.luau" scriptProtocolValue="layout" name="Slider Discrete" groupId="327:1" id="403:400"/>
-    <ScriptAsset file="Calendar.luau" scriptProtocolValue="layout" name="Calendar" groupId="327:1" id="410:400"/>
-    <ScriptAsset file="Accordion Single.luau" scriptProtocolValue="layout" name="Accordion Single" groupId="327:1" id="414:10"/>
-    <ScriptAsset file="Select All.luau" scriptProtocolValue="layout" name="Select All" groupId="327:1" id="422:520"/>
-    <ScriptAsset file="Pagination Pages.luau" scriptProtocolValue="layout" name="Pagination Pages" groupId="327:1" id="912:3"/>
-    <ScriptAsset file="Viewport.luau" scriptProtocolValue="layout" name="Viewport" groupId="327:1" id="913:9"/>
-    <ScriptAsset file="Tooltip Placement.luau" scriptProtocolValue="layout" name="Tooltip Placement" groupId="327:1" id="914:10"/>
-    <ScriptAsset file="Nav Expansion.luau" scriptProtocolValue="layout" name="Nav Expansion" groupId="327:1" id="985:5"/>
+    <ScriptAsset file="Zero Or Less.luau" isModule="true" compilationOrder="22" serializedImplementedMethods="3072" codeFileId="0:129045" name="Zero Or Less" groupId="327:1" id="400:200"/>
+    <ScriptAsset file="Slider Discrete.luau" isModule="true" compilationOrder="2" serializedImplementedMethods="4985" codeFileId="0:129978" name="Slider Discrete" groupId="327:1" id="403:400"/>
+    <ScriptAsset file="Calendar.luau" isModule="true" compilationOrder="5" serializedImplementedMethods="769" codeFileId="0:136742" name="Calendar" groupId="327:1" id="410:400"/>
+    <ScriptAsset file="Accordion Single.luau" isModule="true" compilationOrder="23" serializedImplementedMethods="769" codeFileId="0:146869" name="Accordion Single" groupId="327:1" id="414:10"/>
+    <ScriptAsset file="Select All.luau" isModule="true" compilationOrder="20" serializedImplementedMethods="769" codeFileId="0:148566" name="Select All" groupId="327:1" id="422:520"/>
+    <ScriptAsset file="Pagination Pages.luau" isModule="true" compilationOrder="10" serializedImplementedMethods="769" codeFileId="0:150478" name="Pagination Pages" groupId="327:1" id="912:3"/>
+    <ScriptAsset file="Viewport.luau" isModule="true" compilationOrder="11" serializedImplementedMethods="4921" codeFileId="0:155242" name="Viewport" groupId="327:1" id="913:9"/>
+    <ScriptAsset file="Tooltip Placement.luau" isModule="true" compilationOrder="21" serializedImplementedMethods="4881" codeFileId="0:158643" name="Tooltip Placement" groupId="327:1" id="914:10"/>
+    <ScriptAsset file="Nav Expansion.luau" isModule="true" compilationOrder="12" serializedImplementedMethods="769" codeFileId="0:165989" name="Nav Expansion" groupId="327:1" id="985:5"/>
     <ScriptedDataConverter scriptAssetId="400:200" name="Utils · Zero or less" groupId="1:2674" id="400:302"/>
     <Space name="Space 1" colorValue="FF2F2F2F" id="1:5601"/>
     <TransitionPropertyViewModelComparator id="1:2359"/>
