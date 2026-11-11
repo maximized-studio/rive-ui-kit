@@ -607,7 +607,7 @@
             </KeyedObject>
         </LinearAnimation>
     </Artboard>
-    <ScriptAsset file="Combobox.luau" isModule="true" compilationOrder="8" serializedImplementedMethods="769" codeFileId="0:105347" name="Combobox" groupId="327:1" id="676:1012"/>
+    <ScriptAsset file="Combobox.luau" compilationOrder="8" serializedImplementedMethods="769" scriptProtocolValue="layout" codeFileId="0:105347" name="Combobox" groupId="327:1" id="676:1012"/>
     <ViewModel defaultInstanceId="676:20" name="Combobox" groupId="1:2673" id="676:1">
         <ViewModelPropertyList name="options" id="676:2"/>
         <ViewModelPropertyString name="value" id="676:3"/>

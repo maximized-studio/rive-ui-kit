@@ -1265,7 +1265,7 @@
             </KeyedObject>
         </LinearAnimation>
     </Artboard>
-    <ScriptAsset file="PIN Input.luau" isModule="true" compilationOrder="6" serializedImplementedMethods="769" codeFileId="0:123919" name="PIN Input" groupId="327:1" id="650:1005"/>
+    <ScriptAsset file="PIN Input.luau" compilationOrder="6" serializedImplementedMethods="769" scriptProtocolValue="layout" codeFileId="0:123919" name="PIN Input" groupId="327:1" id="650:1005"/>
     <ViewModel defaultInstanceId="650:20" name="PinInput" groupId="1:2673" id="650:1">
         <ViewModelPropertyString name="value" id="650:2"/>
         <ViewModelPropertyString name="label" id="650:3"/>
