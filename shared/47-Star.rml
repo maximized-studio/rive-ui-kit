@@ -155,6 +155,7 @@
                 <AnimationState animationId="155:1008" x="320" y="100" stateName="Filled" id="155:1106"/>
                 <AnyState x="500" id="155:1108">
                     <StateTransition stateToId="155:1105" duration="120" interpolationType="cubic" id="155:1109">
+                        <CubicEaseInterpolator x1="0.42" x2="0.58" y2="1" id="978:42"/>
                         <TransitionViewModelCondition opValue="greaterThan" id="155:1110">
                             <TransitionPropertyViewModelComparator id="155:1111">
                                 <BindablePropertyNumber id="155:1112">
@@ -169,6 +170,7 @@
                         </TransitionViewModelCondition>
                     </StateTransition>
                     <StateTransition stateToId="155:1106" duration="120" interpolationType="cubic" id="155:1117">
+                        <CubicEaseInterpolator x1="0.42" x2="0.58" y2="1" id="978:43"/>
                         <TransitionViewModelCondition opValue="lessThanOrEqual" id="155:1118">
                             <TransitionPropertyViewModelComparator id="155:1119">
                                 <BindablePropertyNumber id="155:1120">
@@ -193,6 +195,7 @@
                 <AnimationState animationId="155:1010" x="320" y="100" stateName="On" id="155:1129"/>
                 <AnyState x="500" id="155:1131">
                     <StateTransition stateToId="155:1128" duration="100" interpolationType="cubic" id="155:1132">
+                        <CubicEaseInterpolator x1="0.42" x2="0.58" y2="1" id="978:44"/>
                         <TransitionViewModelCondition opValue="greaterThan" id="155:1133">
                             <TransitionPropertyViewModelComparator id="155:1134">
                                 <BindablePropertyNumber id="155:1135">
@@ -207,6 +210,7 @@
                         </TransitionViewModelCondition>
                     </StateTransition>
                     <StateTransition stateToId="155:1129" duration="100" interpolationType="cubic" id="155:1140">
+                        <CubicEaseInterpolator x1="0.42" x2="0.58" y2="1" id="978:45"/>
                         <TransitionViewModelCondition opValue="lessThanOrEqual" id="155:1141">
                             <TransitionPropertyViewModelComparator id="155:1142">
                                 <BindablePropertyNumber id="155:1143">

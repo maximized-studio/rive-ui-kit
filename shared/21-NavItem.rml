@@ -93,6 +93,7 @@
             <StateMachineLayer name="Layer 1" id="41:904">
                 <AnyState x="400" id="41:905">
                     <StateTransition stateToId="42:14" duration="120" interpolationType="cubic" id="42:15">
+                        <CubicEaseInterpolator x1="0.42" x2="0.58" y2="1" id="978:23"/>
                         <TransitionViewModelCondition id="42:18">
                             <TransitionPropertyViewModelComparator id="42:19">
                                 <BindablePropertyNumber id="42:20">
@@ -115,6 +116,7 @@
                         </TransitionViewModelCondition>
                     </StateTransition>
                     <StateTransition stateToId="41:908" duration="120" interpolationType="cubic" id="42:16">
+                        <CubicEaseInterpolator x1="0.42" x2="0.58" y2="1" id="978:24"/>
                         <TransitionViewModelCondition opValue="notEqual" id="42:31">
                             <TransitionPropertyViewModelComparator id="42:32">
                                 <BindablePropertyNumber id="42:33">
@@ -129,6 +131,7 @@
                         </TransitionViewModelCondition>
                     </StateTransition>
                     <StateTransition stateToId="41:908" duration="120" interpolationType="cubic" id="42:17">
+                        <CubicEaseInterpolator x1="0.42" x2="0.58" y2="1" id="978:25"/>
                         <TransitionViewModelCondition id="42:39">
                             <TransitionPropertyViewModelComparator id="42:40">
                                 <BindablePropertyBoolean id="42:41">
