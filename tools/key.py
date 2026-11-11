@@ -1,4 +1,4 @@
-"""Rewrites shared/83-Kbd.rml: the Key component (keyboard cap, Xbox / PlayStation face buttons, shoulder pill).
+"""Rewrites shared/83-Key.rml: the Key component (keyboard cap, Xbox / PlayStation face buttons, shoulder pill).
 Existing 830 ids are kept; new objects take ids from client 979. Run from the repo root."""
 import itertools, math
 import xml.dom.minidom
@@ -212,5 +212,5 @@ doc = f'''<Rive version="1" kind="fragment">
 '''
 out = xml.dom.minidom.parseString(doc.encode('utf-8')).toprettyxml(indent='    ')
 out = '\n'.join(l for l in out.split('\n')[1:] if l.strip()) + '\n'
-open('shared/83-Kbd.rml', 'w').write(out)
+open('shared/83-Key.rml', 'w').write(out)
 print(new_ids)
