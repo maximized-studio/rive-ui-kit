@@ -1,0 +1,149 @@
+<Rive version="1" kind="fragment">
+    <Artboard defaultStateMachineId="518:78" viewModelId="518:900" viewModelInstanceId="518:950" isComponent="true" spaceId="1:5601" width="360" height="240" styleId="518:77" x="5600" y="4400" name="Context Menu" id="518:1">
+        <Fill fillRule="clockwise" id="518:79">
+            <SolidColor colorValue="00000000" id="518:80"/>
+        </Fill>
+        <LayoutComponentStyle id="518:77"/>
+        <LayoutComponent styleId="518:35" name="Area" id="518:36">
+            <LayoutComponent width="200" styleId="518:5" name="Menu Layer" id="518:2">
+                <NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="146:1000" dataBindPathIds="518:900-518:920" name="Menu" id="518:3">
+                    <NestedStateMachine animationId="146:1001" id="518:4"/>
+                </NestedArtboardLayout>
+                <LayoutComponentStyle positionLeftUnitsValue="points" positionTopUnitsValue="points" positionTypeValue="absolute" intrinsicallySizedValue="true" layoutHeightScaleType="hug" heightUnitsValue="auto" id="518:5">
+                    <DataBindContext sourcePathIds="518:900-518:907" propertyKey="516" nameBased="true" id="518:6"/>
+                    <DataBindContext sourcePathIds="518:900-518:908" propertyKey="518" nameBased="true" id="518:7"/>
+                    <DataBindContext sourcePathIds="518:900-518:920-146:12-146:4" propertyKey="596" converterId="9:90" id="518:8"/>
+                </LayoutComponentStyle>
+            </LayoutComponent>
+            <LayoutComponent styleId="518:20" name="Hint" id="518:9">
+                <Text name="Hint" id="518:12">
+                    <TextStylePaint fontSize="14" fontAssetId="0:7" familyName="Inter" styleName="Medium" id="518:10">
+                        <Fill fillRule="clockwise" id="518:13">
+                            <SolidColor colorValue="FFA1A1AA" id="518:14">
+                                <DataBindContext sourcePathIds="10:7-10:7426" propertyKey="37" id="518:15"/>
+                            </SolidColor>
+                        </Fill>
+                        <TextStyleAxis tag="1869640570" axisValue="14" id="518:16"/>
+                        <TextStyleAxis tag="2003265652" axisValue="500" id="518:17"/>
+                    </TextStylePaint>
+                    <TextValueRun styleId="518:10" text="Press and hold anywhere" id="518:18">
+                        <DataBindContext sourcePathIds="518:900-518:901" propertyKey="268" nameBased="true" id="518:11"/>
+                    </TextValueRun>
+                    <LayoutParticipant layoutWidthScaleType="hug" layoutHeightScaleType="hug" id="518:19"/>
+                </Text>
+                <LayoutComponentStyle positionLeftUnitsValue="points" positionRightUnitsValue="points" positionTopUnitsValue="points" positionBottomUnitsValue="points" layoutAlignmentType="center" positionTypeValue="absolute" widthUnitsValue="auto" heightUnitsValue="auto" id="518:20"/>
+            </LayoutComponent>
+            <LayoutComponent styleId="518:22" name="Context Menu (script)" id="518:23">
+                <ScriptedLayout scriptAssetId="518:800" name="Context Menu" id="518:21"/>
+                <LayoutComponentStyle positionLeftUnitsValue="points" positionRightUnitsValue="points" positionTopUnitsValue="points" positionBottomUnitsValue="points" positionTypeValue="absolute" widthUnitsValue="auto" heightUnitsValue="auto" id="518:22"/>
+            </LayoutComponent>
+            <Fill fillRule="clockwise" id="518:24">
+                <SolidColor colorValue="FF18181B" id="518:25">
+                    <DataBindContext sourcePathIds="10:7-10:7406" propertyKey="37" id="518:26"/>
+                </SolidColor>
+            </Fill>
+            <Stroke join="round" id="518:27">
+                <SolidColor colorValue="FF27272A" id="518:28">
+                    <DataBindContext sourcePathIds="10:7-10:7418" propertyKey="37" id="518:29"/>
+                </SolidColor>
+            </Stroke>
+            <SemanticData role="group" name="Semantics" id="518:30">
+                <DataBindContext sourcePathIds="518:900-518:902" propertyKey="983" nameBased="true" id="518:31"/>
+                <DataBindContext sourcePathIds="518:900-518:901" propertyKey="985" nameBased="true" id="518:32"/>
+                <DataBindContext sourcePathIds="518:900-518:903" propertyKey="1004" nameBased="true" id="518:33"/>
+            </SemanticData>
+            <LayoutComponentStyle cornerRadiusTL="16" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="518:35">
+                <DataBindContext sourcePathIds="10:7-901:7" propertyKey="640" id="518:34"/>
+            </LayoutComponentStyle>
+        </LayoutComponent>
+        <StateMachine name="State Machine 1" id="518:78">
+            <StateMachineLayer name="Open" id="518:72">
+                <AnimationState animationId="518:43" x="160" y="-100" stateName="Closed" id="518:58"/>
+                <AnimationState animationId="518:57" x="400" y="-100" stateName="Shown" id="518:59"/>
+                <AnyState x="160" y="300" id="518:73">
+                    <StateTransition stateToId="518:59" id="518:65">
+                        <TransitionViewModelCondition id="518:61">
+                            <TransitionPropertyViewModelComparator id="518:62">
+                                <BindablePropertyBoolean id="518:63">
+                                    <DataBindContext sourcePathIds="518:900-518:920-146:12-146:4" propertyKey="634" id="518:64"/>
+                                </BindablePropertyBoolean>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueBooleanComparator value="true" id="518:60"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                    <StateTransition stateToId="518:58" id="518:71">
+                        <TransitionViewModelCondition id="518:67">
+                            <TransitionPropertyViewModelComparator id="518:68">
+                                <BindablePropertyBoolean id="518:69">
+                                    <DataBindContext sourcePathIds="518:900-518:920-146:12-146:4" propertyKey="634" id="518:70"/>
+                                </BindablePropertyBoolean>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueBooleanComparator id="518:66"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                </AnyState>
+                <ExitState x="640" y="300" id="518:74"/>
+                <EntryState id="518:75">
+                    <StateTransition stateToId="518:58" id="518:76"/>
+                </EntryState>
+            </StateMachineLayer>
+        </StateMachine>
+        <LinearAnimation loopValue="loop" name="Closed" id="518:43">
+            <KeyedObject objectId="518:2" id="518:39">
+                <KeyedProperty property="opacity" id="518:38">
+                    <KeyFrameDouble id="518:37"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="518:9" id="518:42">
+                <KeyedProperty property="opacity" id="518:41">
+                    <KeyFrameDouble value="1" id="518:40"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+        <LinearAnimation duration="8" name="Shown" id="518:57">
+            <KeyedObject objectId="518:2" id="518:52">
+                <KeyedProperty property="opacity" id="518:50">
+                    <KeyFrameDouble interpolationType="cubic" id="518:44">
+                        <CubicEaseInterpolator x1="0.2" x2="0" id="518:45"/>
+                    </KeyFrameDouble>
+                    <KeyFrameDouble value="1" interpolationType="linear" frame="8" id="518:46"/>
+                </KeyedProperty>
+                <KeyedProperty property="y" id="518:51">
+                    <KeyFrameDouble value="-4" interpolationType="cubic" id="518:47">
+                        <CubicEaseInterpolator x1="0.2" x2="0" id="518:48"/>
+                    </KeyFrameDouble>
+                    <KeyFrameDouble interpolationType="linear" frame="8" id="518:49"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="518:9" id="518:56">
+                <KeyedProperty property="opacity" id="518:55">
+                    <KeyFrameDouble value="1" interpolationType="linear" id="518:53"/>
+                    <KeyFrameDouble interpolationType="linear" frame="8" id="518:54"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+    </Artboard>
+    <ScriptAsset file="Context Menu.luau" serializedImplementedMethods="4921" scriptProtocolValue="layout" codeFileId="0:101002" name="Context Menu" groupId="327:1" id="518:800"/>
+    <ViewModel defaultInstanceId="518:950" name="ContextMenu" groupId="1:2673" id="518:900">
+        <ViewModelPropertyString name="hint" id="518:901"/>
+        <ViewModelPropertyString name="label" id="518:902"/>
+        <ViewModelPropertyBoolean name="a11yHidden" id="518:903"/>
+        <ViewModelPropertyNumber name="x" id="518:904"/>
+        <ViewModelPropertyNumber name="y" id="518:905"/>
+        <ViewModelPropertyTrigger name="openAt" id="518:906"/>
+        <ViewModelPropertyNumber name="_menuX" id="518:907"/>
+        <ViewModelPropertyNumber name="_menuY" id="518:908"/>
+        <ViewModelPropertyViewModel viewModelReferenceId="146:10" name="menu" id="518:920"/>
+        <ViewModelInstance exports="true" name="Files" id="518:950">
+            <ViewModelInstanceString propertyValue="Press and hold anywhere" viewModelPropertyId="518:901" id="518:133"/>
+            <ViewModelInstanceString propertyValue="File actions area" viewModelPropertyId="518:902" id="518:134"/>
+            <ViewModelInstanceBoolean viewModelPropertyId="518:903" id="518:135"/>
+            <ViewModelInstanceNumber viewModelPropertyId="518:904" id="518:136"/>
+            <ViewModelInstanceNumber viewModelPropertyId="518:905" id="518:137"/>
+            <ViewModelInstanceTrigger viewModelPropertyId="518:906" id="518:138"/>
+            <ViewModelInstanceNumber propertyValue="132" viewModelPropertyId="518:907" id="518:139"/>
+            <ViewModelInstanceNumber propertyValue="52" viewModelPropertyId="518:908" id="518:140"/>
+            <ViewModelInstanceViewModel propertyValue="518:961" viewModelPropertyId="518:920" id="518:141"/>
+        </ViewModelInstance>
+    </ViewModel>
+</Rive>

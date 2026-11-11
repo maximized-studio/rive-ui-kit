@@ -498,6 +498,7 @@
                                 </BindablePropertyNumber>
                             </TransitionPropertyViewModelComparator>
                         </TransitionViewModelCondition>
+                        <CubicEaseInterpolator id="978:19"/>
                     </StateTransition>
                     <StateTransition stateToId="145:165" duration="150" interpolationType="cubic" id="145:176">
                         <TransitionViewModelCondition id="145:177">
@@ -512,6 +513,7 @@
                                 </BindablePropertyNumber>
                             </TransitionPropertyViewModelComparator>
                         </TransitionViewModelCondition>
+                        <CubicEaseInterpolator id="978:20"/>
                     </StateTransition>
                 </AnyState>
                 <ExitState x="600" id="145:184"/>

@@ -1,0 +1,662 @@
+<Rive version="1" kind="fragment">
+    <Artboard defaultStateMachineId="830:7" viewModelId="830:1" viewModelInstanceId="830:4" isComponent="true" spaceId="1:5601" width="40" height="24" styleId="830:43" x="8400" name="Key" id="830:6">
+        <Fill fillRule="clockwise" id="830:44">
+            <SolidColor colorValue="00000000" id="830:45"/>
+        </Fill>
+        <LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="830:43"/>
+        <LayoutComponent styleId="979:96" name="Key" id="979:97">
+            <LayoutComponent styleId="830:35" name="Cap" id="830:36">
+                <LayoutComponent height="22" styleId="830:29" name="Face" id="830:30">
+                    <Text name="Keys" id="830:14">
+                        <TextStylePaint fontAssetId="0:7" familyName="Inter" styleName="Medium" id="830:12">
+                            <Fill fillRule="clockwise" id="830:15">
+                                <SolidColor colorValue="FF888888" id="830:16">
+                                    <DataBindContext sourcePathIds="10:7-10:7424" propertyKey="37" id="830:17"/>
+                                </SolidColor>
+                            </Fill>
+                            <TextStyleAxis tag="1869640570" axisValue="14" id="830:18"/>
+                            <TextStyleAxis tag="2003265652" axisValue="500" id="830:19"/>
+                        </TextStylePaint>
+                        <TextValueRun styleId="830:12" text="⌘ K" id="830:20">
+                            <DataBindContext sourcePathIds="830:1-830:2" propertyKey="268" nameBased="true" id="830:13"/>
+                        </TextValueRun>
+                        <LayoutParticipant layoutWidthScaleType="hug" layoutHeightScaleType="hug" id="830:21"/>
+                    </Text>
+                    <Stroke join="round" id="830:22">
+                        <SolidColor colorValue="FF27272A" id="830:23">
+                            <DataBindContext sourcePathIds="10:7-10:7418" propertyKey="37" id="830:24"/>
+                        </SolidColor>
+                    </Stroke>
+                    <Fill fillRule="clockwise" id="830:25">
+                        <SolidColor colorValue="FF27272A" id="830:26">
+                            <DataBindContext sourcePathIds="10:7-10:7414" propertyKey="37" id="830:27"/>
+                        </SolidColor>
+                    </Fill>
+                    <LayoutComponentStyle paddingLeft="7" paddingRight="7" layoutAlignmentType="center" cornerRadiusTL="6" minWidth="22" minWidthUnitsValue="points" layoutWidthScaleType="hug" widthUnitsValue="auto" id="830:29">
+                        <DataBindContext sourcePathIds="10:7-901:21" propertyKey="640" id="830:28"/>
+                    </LayoutComponentStyle>
+                </LayoutComponent>
+                <Fill fillRule="clockwise" id="830:31">
+                    <SolidColor colorValue="FF3F3F46" id="830:32">
+                        <DataBindContext sourcePathIds="10:7-10:7420" propertyKey="37" id="830:33"/>
+                    </SolidColor>
+                </Fill>
+                <LayoutComponentStyle paddingBottom="2" intrinsicallySizedValue="true" cornerRadiusTL="6" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="830:35">
+                    <DataBindContext sourcePathIds="10:7-901:21" propertyKey="640" id="830:34"/>
+                </LayoutComponentStyle>
+            </LayoutComponent>
+            <LayoutComponent styleId="979:77" name="Shoulder" id="979:80">
+                <LayoutComponent height="22" styleId="979:78" name="Face" id="979:81">
+                    <Text name="Keys" id="979:82">
+                        <TextStylePaint fontAssetId="0:7" familyName="Inter" styleName="SemiBold" id="979:79">
+                            <Fill fillRule="clockwise" id="979:83">
+                                <SolidColor colorValue="FFE4E4E7" id="979:84"/>
+                            </Fill>
+                            <TextStyleAxis tag="1869640570" axisValue="14" id="979:85"/>
+                            <TextStyleAxis tag="2003265652" axisValue="600" id="979:86"/>
+                        </TextStylePaint>
+                        <TextValueRun styleId="979:79" text="LB" id="979:87">
+                            <DataBindContext sourcePathIds="830:1-830:2" propertyKey="268" nameBased="true" id="979:88"/>
+                        </TextValueRun>
+                        <LayoutParticipant layoutWidthScaleType="hug" layoutHeightScaleType="hug" id="979:89"/>
+                    </Text>
+                    <Stroke id="979:90">
+                        <SolidColor colorValue="FF4A4A52" id="979:91"/>
+                    </Stroke>
+                    <Fill fillRule="clockwise" id="979:92">
+                        <SolidColor colorValue="FF2A2A2E" id="979:93"/>
+                    </Fill>
+                    <LayoutComponentStyle paddingLeft="10" paddingRight="10" layoutAlignmentType="center" cornerRadiusTL="11" minWidth="36" minWidthUnitsValue="points" layoutWidthScaleType="hug" widthUnitsValue="auto" id="979:78"/>
+                </LayoutComponent>
+                <Fill fillRule="clockwise" id="979:94">
+                    <SolidColor colorValue="FF111113" id="979:95"/>
+                </Fill>
+                <LayoutComponentStyle paddingBottom="2" intrinsicallySizedValue="true" cornerRadiusTL="11" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" displayValue="none" id="979:77"/>
+            </LayoutComponent>
+            <LayoutComponent styleId="979:66" name="Face Button" id="979:68">
+                <LayoutComponent width="22" height="22" styleId="979:67" name="Face" id="979:69">
+                    <Node x="11" y="11" name="Glyph" id="979:70">
+                        <Node opacity="0" name="Xbox" id="979:64">
+                            <Text alignValue="center" sizingValue="fixed" width="22" height="22" verticalAlignValue="middle" x="-11" y="-11" name="A" id="979:4">
+                                <TextStylePaint fontSize="13" fontAssetId="0:7" familyName="Inter" styleName="Bold" id="979:5">
+                                    <Fill fillRule="clockwise" id="979:6">
+                                        <SolidColor colorValue="FF6CCB3A" id="979:7"/>
+                                    </Fill>
+                                    <TextStyleAxis tag="1869640570" axisValue="14" id="979:8"/>
+                                    <TextStyleAxis tag="2003265652" axisValue="700" id="979:9"/>
+                                </TextStylePaint>
+                                <TextValueRun styleId="979:5" text="A" id="979:10"/>
+                            </Text>
+                            <Text alignValue="center" sizingValue="fixed" width="22" height="22" verticalAlignValue="middle" x="-11" y="-11" opacity="0" name="B" id="979:11">
+                                <TextStylePaint fontSize="13" fontAssetId="0:7" familyName="Inter" styleName="Bold" id="979:12">
+                                    <Fill fillRule="clockwise" id="979:13">
+                                        <SolidColor colorValue="FFF0483E" id="979:14"/>
+                                    </Fill>
+                                    <TextStyleAxis tag="1869640570" axisValue="14" id="979:15"/>
+                                    <TextStyleAxis tag="2003265652" axisValue="700" id="979:16"/>
+                                </TextStylePaint>
+                                <TextValueRun styleId="979:12" text="B" id="979:17"/>
+                            </Text>
+                            <Text alignValue="center" sizingValue="fixed" width="22" height="22" verticalAlignValue="middle" x="-11" y="-11" opacity="0" name="X" id="979:18">
+                                <TextStylePaint fontSize="13" fontAssetId="0:7" familyName="Inter" styleName="Bold" id="979:19">
+                                    <Fill fillRule="clockwise" id="979:20">
+                                        <SolidColor colorValue="FF3D9BF0" id="979:21"/>
+                                    </Fill>
+                                    <TextStyleAxis tag="1869640570" axisValue="14" id="979:22"/>
+                                    <TextStyleAxis tag="2003265652" axisValue="700" id="979:23"/>
+                                </TextStylePaint>
+                                <TextValueRun styleId="979:19" text="X" id="979:24"/>
+                            </Text>
+                            <Text alignValue="center" sizingValue="fixed" width="22" height="22" verticalAlignValue="middle" x="-11" y="-11" opacity="0" name="Y" id="979:25">
+                                <TextStylePaint fontSize="13" fontAssetId="0:7" familyName="Inter" styleName="Bold" id="979:26">
+                                    <Fill fillRule="clockwise" id="979:27">
+                                        <SolidColor colorValue="FFF7C81E" id="979:28"/>
+                                    </Fill>
+                                    <TextStyleAxis tag="1869640570" axisValue="14" id="979:29"/>
+                                    <TextStyleAxis tag="2003265652" axisValue="700" id="979:30"/>
+                                </TextStylePaint>
+                                <TextValueRun styleId="979:26" text="Y" id="979:31"/>
+                            </Text>
+                        </Node>
+                        <Node opacity="0" name="PlayStation" id="979:65">
+                            <Shape name="Cross" id="979:52">
+                                <PointsPath isClockwise="false" id="979:34">
+                                    <StraightVertex x="-3.4000001" y="-3.4000001" id="979:32"/>
+                                    <StraightVertex x="3.4000001" y="3.4000001" id="979:33"/>
+                                </PointsPath>
+                                <PointsPath id="979:37">
+                                    <StraightVertex x="3.4000001" y="-3.4000001" id="979:35"/>
+                                    <StraightVertex x="-3.4000001" y="3.4000001" id="979:36"/>
+                                </PointsPath>
+                                <Stroke thickness="1.6" cap="round" join="round" id="979:53">
+                                    <SolidColor colorValue="FF7FB6F2" id="979:54"/>
+                                </Stroke>
+                            </Shape>
+                            <Shape opacity="0" name="Circle" id="979:55">
+                                <PointsPath isClosed="true" id="979:42">
+                                    <CubicMirroredVertex distance="2.3748901" y="-4.3000002" id="979:38"/>
+                                    <CubicMirroredVertex rotation="1.5707964" distance="2.3748901" x="4.3000002" id="979:39"/>
+                                    <CubicMirroredVertex rotation="3.1415927" distance="2.3748901" y="4.3000002" id="979:40"/>
+                                    <CubicMirroredVertex rotation="-1.5707964" distance="2.3748901" x="-4.3000002" id="979:41"/>
+                                </PointsPath>
+                                <Stroke thickness="1.6" cap="round" join="round" id="979:56">
+                                    <SolidColor colorValue="FFF2666C" id="979:57"/>
+                                </Stroke>
+                            </Shape>
+                            <Shape opacity="0" name="Square" id="979:58">
+                                <PointsPath isClosed="true" id="979:47">
+                                    <StraightVertex x="-3.7" y="-3.7" id="979:43"/>
+                                    <StraightVertex x="3.7" y="-3.7" id="979:44"/>
+                                    <StraightVertex x="3.7" y="3.7" id="979:45"/>
+                                    <StraightVertex x="-3.7" y="3.7" id="979:46"/>
+                                </PointsPath>
+                                <Stroke thickness="1.6" cap="round" join="round" id="979:59">
+                                    <SolidColor colorValue="FFDC8FC4" id="979:60"/>
+                                </Stroke>
+                            </Shape>
+                            <Shape y="-0.40000001" opacity="0" name="Triangle" id="979:61">
+                                <PointsPath isClosed="true" id="979:51">
+                                    <StraightVertex y="-4.5" id="979:48"/>
+                                    <StraightVertex x="4.5" y="3.3" id="979:49"/>
+                                    <StraightVertex x="-4.5" y="3.3" id="979:50"/>
+                                </PointsPath>
+                                <Stroke thickness="1.6" cap="round" join="round" id="979:62">
+                                    <SolidColor colorValue="FF3FD6B0" id="979:63"/>
+                                </Stroke>
+                            </Shape>
+                        </Node>
+                    </Node>
+                    <Stroke id="979:71">
+                        <SolidColor colorValue="FF4A4A52" id="979:72"/>
+                    </Stroke>
+                    <Fill fillRule="clockwise" id="979:73">
+                        <SolidColor colorValue="FF2A2A2E" id="979:74"/>
+                    </Fill>
+                    <LayoutComponentStyle cornerRadiusTL="11" id="979:67"/>
+                </LayoutComponent>
+                <Fill fillRule="clockwise" id="979:75">
+                    <SolidColor colorValue="FF111113" id="979:76"/>
+                </Fill>
+                <LayoutComponentStyle paddingBottom="2" intrinsicallySizedValue="true" cornerRadiusTL="11" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" displayValue="none" id="979:66"/>
+            </LayoutComponent>
+            <LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="979:96"/>
+            <SemanticData role="text" name="Semantics" id="830:11">
+                <DataBindContext sourcePathIds="830:1-979:3" propertyKey="983" nameBased="true" id="830:9"/>
+                <DataBindContext sourcePathIds="830:1-830:3" propertyKey="1004" nameBased="true" id="830:10"/>
+            </SemanticData>
+        </LayoutComponent>
+        <StateMachine name="State Machine 1" id="830:7">
+            <StateMachineLayer name="Type" id="830:38">
+                <AnimationState animationId="830:8" stateName="Keyboard" id="830:37"/>
+                <AnyState id="830:39">
+                    <StateTransition stateToId="830:37" id="979:158">
+                        <TransitionViewModelCondition id="979:159">
+                            <TransitionPropertyViewModelComparator id="979:160">
+                                <BindablePropertyNumber id="979:161">
+                                    <DataBindContext sourcePathIds="830:1-979:1" propertyKey="636" id="979:162"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueNumberComparator id="979:163"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                    <StateTransition stateToId="979:165" id="979:166">
+                        <TransitionViewModelCondition id="979:167">
+                            <TransitionPropertyViewModelComparator id="979:168">
+                                <BindablePropertyNumber id="979:169">
+                                    <DataBindContext sourcePathIds="830:1-979:1" propertyKey="636" id="979:170"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueNumberComparator value="1" id="979:171"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                    <StateTransition stateToId="979:173" id="979:174">
+                        <TransitionViewModelCondition id="979:175">
+                            <TransitionPropertyViewModelComparator id="979:176">
+                                <BindablePropertyNumber id="979:177">
+                                    <DataBindContext sourcePathIds="830:1-979:1" propertyKey="636" id="979:178"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueNumberComparator value="2" id="979:179"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                    <StateTransition stateToId="979:181" id="979:182">
+                        <TransitionViewModelCondition id="979:183">
+                            <TransitionPropertyViewModelComparator id="979:184">
+                                <BindablePropertyNumber id="979:185">
+                                    <DataBindContext sourcePathIds="830:1-979:1" propertyKey="636" id="979:186"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueNumberComparator value="3" id="979:187"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                </AnyState>
+                <ExitState id="830:40"/>
+                <EntryState id="830:41">
+                    <StateTransition stateToId="830:37" id="830:42"/>
+                </EntryState>
+                <AnimationState animationId="979:164" stateName="Xbox" id="979:165"/>
+                <AnimationState animationId="979:172" stateName="PlayStation" id="979:173"/>
+                <AnimationState animationId="979:180" stateName="Shoulder" id="979:181"/>
+            </StateMachineLayer>
+            <StateMachineLayer name="Glyph" id="979:316">
+                <AnimationState animationId="979:284" stateName="0" id="979:285"/>
+                <AnimationState animationId="979:292" stateName="1" id="979:293"/>
+                <AnimationState animationId="979:300" stateName="2" id="979:301"/>
+                <AnimationState animationId="979:308" stateName="3" id="979:309"/>
+                <AnyState id="979:317">
+                    <StateTransition stateToId="979:285" id="979:286">
+                        <TransitionViewModelCondition id="979:287">
+                            <TransitionPropertyViewModelComparator id="979:288">
+                                <BindablePropertyNumber id="979:289">
+                                    <DataBindContext sourcePathIds="830:1-979:2" propertyKey="636" id="979:290"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueNumberComparator id="979:291"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                    <StateTransition stateToId="979:293" id="979:294">
+                        <TransitionViewModelCondition id="979:295">
+                            <TransitionPropertyViewModelComparator id="979:296">
+                                <BindablePropertyNumber id="979:297">
+                                    <DataBindContext sourcePathIds="830:1-979:2" propertyKey="636" id="979:298"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueNumberComparator value="1" id="979:299"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                    <StateTransition stateToId="979:301" id="979:302">
+                        <TransitionViewModelCondition id="979:303">
+                            <TransitionPropertyViewModelComparator id="979:304">
+                                <BindablePropertyNumber id="979:305">
+                                    <DataBindContext sourcePathIds="830:1-979:2" propertyKey="636" id="979:306"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueNumberComparator value="2" id="979:307"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                    <StateTransition stateToId="979:309" id="979:310">
+                        <TransitionViewModelCondition id="979:311">
+                            <TransitionPropertyViewModelComparator id="979:312">
+                                <BindablePropertyNumber id="979:313">
+                                    <DataBindContext sourcePathIds="830:1-979:2" propertyKey="636" id="979:314"/>
+                                </BindablePropertyNumber>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueNumberComparator value="3" id="979:315"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                </AnyState>
+                <ExitState id="979:318"/>
+                <EntryState id="979:319">
+                    <StateTransition stateToId="979:285" id="979:320"/>
+                </EntryState>
+            </StateMachineLayer>
+        </StateMachine>
+        <LinearAnimation loopValue="loop" name="Type Keyboard" id="830:8">
+            <KeyedObject objectId="830:35" id="979:98">
+                <KeyedProperty property="displayValue" id="979:99">
+                    <KeyFrameUint id="979:100"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="979:77" id="979:101">
+                <KeyedProperty property="displayValue" id="979:102">
+                    <KeyFrameUint value="1" id="979:103"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="979:66" id="979:104">
+                <KeyedProperty property="displayValue" id="979:105">
+                    <KeyFrameUint value="1" id="979:106"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="979:64" id="979:107">
+                <KeyedProperty property="opacity" id="979:108">
+                    <KeyFrameDouble interpolationType="linear" id="979:109"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="979:65" id="979:110">
+                <KeyedProperty property="opacity" id="979:111">
+                    <KeyFrameDouble interpolationType="linear" id="979:112"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+        <LinearAnimation loopValue="loop" name="Type Xbox" id="979:164">
+            <KeyedObject objectId="830:35" id="979:113">
+                <KeyedProperty property="displayValue" id="979:114">
+                    <KeyFrameUint value="1" id="979:115"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="979:77" id="979:116">
+                <KeyedProperty property="displayValue" id="979:117">
+                    <KeyFrameUint value="1" id="979:118"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="979:66" id="979:119">
+                <KeyedProperty property="displayValue" id="979:120">
+                    <KeyFrameUint id="979:121"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="979:64" id="979:122">
+                <KeyedProperty property="opacity" id="979:123">
+                    <KeyFrameDouble value="1" interpolationType="linear" id="979:124"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="979:65" id="979:125">
+                <KeyedProperty property="opacity" id="979:126">
+                    <KeyFrameDouble interpolationType="linear" id="979:127"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+        <LinearAnimation loopValue="loop" name="Type PlayStation" id="979:172">
+            <KeyedObject objectId="830:35" id="979:128">
+                <KeyedProperty property="displayValue" id="979:129">
+                    <KeyFrameUint value="1" id="979:130"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="979:77" id="979:131">
+                <KeyedProperty property="displayValue" id="979:132">
+                    <KeyFrameUint value="1" id="979:133"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="979:66" id="979:134">
+                <KeyedProperty property="displayValue" id="979:135">
+                    <KeyFrameUint id="979:136"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="979:64" id="979:137">
+                <KeyedProperty property="opacity" id="979:138">
+                    <KeyFrameDouble interpolationType="linear" id="979:139"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="979:65" id="979:140">
+                <KeyedProperty property="opacity" id="979:141">
+                    <KeyFrameDouble value="1" interpolationType="linear" id="979:142"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+        <LinearAnimation loopValue="loop" name="Type Shoulder" id="979:180">
+            <KeyedObject objectId="830:35" id="979:143">
+                <KeyedProperty property="displayValue" id="979:144">
+                    <KeyFrameUint value="1" id="979:145"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="979:77" id="979:146">
+                <KeyedProperty property="displayValue" id="979:147">
+                    <KeyFrameUint id="979:148"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="979:66" id="979:149">
+                <KeyedProperty property="displayValue" id="979:150">
+                    <KeyFrameUint value="1" id="979:151"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="979:64" id="979:152">
+                <KeyedProperty property="opacity" id="979:153">
+                    <KeyFrameDouble interpolationType="linear" id="979:154"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="979:65" id="979:155">
+                <KeyedProperty property="opacity" id="979:156">
+                    <KeyFrameDouble interpolationType="linear" id="979:157"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+        <LinearAnimation loopValue="loop" name="Glyph 0" id="979:284">
+            <KeyedObject objectId="979:4" id="979:188">
+                <KeyedProperty property="opacity" id="979:189">
+                    <KeyFrameDouble value="1" interpolationType="linear" id="979:190"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="979:11" id="979:191">
+                <KeyedProperty property="opacity" id="979:192">
+                    <KeyFrameDouble interpolationType="linear" id="979:193"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="979:18" id="979:194">
+                <KeyedProperty property="opacity" id="979:195">
+                    <KeyFrameDouble interpolationType="linear" id="979:196"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="979:25" id="979:197">
+                <KeyedProperty property="opacity" id="979:198">
+                    <KeyFrameDouble interpolationType="linear" id="979:199"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="979:52" id="979:200">
+                <KeyedProperty property="opacity" id="979:201">
+                    <KeyFrameDouble value="1" interpolationType="linear" id="979:202"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="979:55" id="979:203">
+                <KeyedProperty property="opacity" id="979:204">
+                    <KeyFrameDouble interpolationType="linear" id="979:205"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="979:58" id="979:206">
+                <KeyedProperty property="opacity" id="979:207">
+                    <KeyFrameDouble interpolationType="linear" id="979:208"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="979:61" id="979:209">
+                <KeyedProperty property="opacity" id="979:210">
+                    <KeyFrameDouble interpolationType="linear" id="979:211"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+        <LinearAnimation loopValue="loop" name="Glyph 1" id="979:292">
+            <KeyedObject objectId="979:4" id="979:212">
+                <KeyedProperty property="opacity" id="979:213">
+                    <KeyFrameDouble interpolationType="linear" id="979:214"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="979:11" id="979:215">
+                <KeyedProperty property="opacity" id="979:216">
+                    <KeyFrameDouble value="1" interpolationType="linear" id="979:217"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="979:18" id="979:218">
+                <KeyedProperty property="opacity" id="979:219">
+                    <KeyFrameDouble interpolationType="linear" id="979:220"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="979:25" id="979:221">
+                <KeyedProperty property="opacity" id="979:222">
+                    <KeyFrameDouble interpolationType="linear" id="979:223"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="979:52" id="979:224">
+                <KeyedProperty property="opacity" id="979:225">
+                    <KeyFrameDouble interpolationType="linear" id="979:226"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="979:55" id="979:227">
+                <KeyedProperty property="opacity" id="979:228">
+                    <KeyFrameDouble value="1" interpolationType="linear" id="979:229"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="979:58" id="979:230">
+                <KeyedProperty property="opacity" id="979:231">
+                    <KeyFrameDouble interpolationType="linear" id="979:232"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="979:61" id="979:233">
+                <KeyedProperty property="opacity" id="979:234">
+                    <KeyFrameDouble interpolationType="linear" id="979:235"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+        <LinearAnimation loopValue="loop" name="Glyph 2" id="979:300">
+            <KeyedObject objectId="979:4" id="979:236">
+                <KeyedProperty property="opacity" id="979:237">
+                    <KeyFrameDouble interpolationType="linear" id="979:238"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="979:11" id="979:239">
+                <KeyedProperty property="opacity" id="979:240">
+                    <KeyFrameDouble interpolationType="linear" id="979:241"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="979:18" id="979:242">
+                <KeyedProperty property="opacity" id="979:243">
+                    <KeyFrameDouble value="1" interpolationType="linear" id="979:244"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="979:25" id="979:245">
+                <KeyedProperty property="opacity" id="979:246">
+                    <KeyFrameDouble interpolationType="linear" id="979:247"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="979:52" id="979:248">
+                <KeyedProperty property="opacity" id="979:249">
+                    <KeyFrameDouble interpolationType="linear" id="979:250"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="979:55" id="979:251">
+                <KeyedProperty property="opacity" id="979:252">
+                    <KeyFrameDouble interpolationType="linear" id="979:253"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="979:58" id="979:254">
+                <KeyedProperty property="opacity" id="979:255">
+                    <KeyFrameDouble value="1" interpolationType="linear" id="979:256"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="979:61" id="979:257">
+                <KeyedProperty property="opacity" id="979:258">
+                    <KeyFrameDouble interpolationType="linear" id="979:259"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+        <LinearAnimation loopValue="loop" name="Glyph 3" id="979:308">
+            <KeyedObject objectId="979:4" id="979:260">
+                <KeyedProperty property="opacity" id="979:261">
+                    <KeyFrameDouble interpolationType="linear" id="979:262"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="979:11" id="979:263">
+                <KeyedProperty property="opacity" id="979:264">
+                    <KeyFrameDouble interpolationType="linear" id="979:265"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="979:18" id="979:266">
+                <KeyedProperty property="opacity" id="979:267">
+                    <KeyFrameDouble interpolationType="linear" id="979:268"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="979:25" id="979:269">
+                <KeyedProperty property="opacity" id="979:270">
+                    <KeyFrameDouble value="1" interpolationType="linear" id="979:271"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="979:52" id="979:272">
+                <KeyedProperty property="opacity" id="979:273">
+                    <KeyFrameDouble interpolationType="linear" id="979:274"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="979:55" id="979:275">
+                <KeyedProperty property="opacity" id="979:276">
+                    <KeyFrameDouble interpolationType="linear" id="979:277"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="979:58" id="979:278">
+                <KeyedProperty property="opacity" id="979:279">
+                    <KeyFrameDouble interpolationType="linear" id="979:280"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="979:61" id="979:281">
+                <KeyedProperty property="opacity" id="979:282">
+                    <KeyFrameDouble value="1" interpolationType="linear" id="979:283"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+    </Artboard>
+    <ViewModel defaultInstanceId="830:4" name="Key" groupId="1:2673" id="830:1">
+        <ViewModelPropertyString name="keys" id="830:2"/>
+        <ViewModelPropertyBoolean name="a11yHidden" id="830:3"/>
+        <ViewModelPropertyNumber name="type" id="979:1"/>
+        <ViewModelPropertyNumber name="glyph" id="979:2"/>
+        <ViewModelPropertyString name="label" id="979:3"/>
+        <ViewModelInstance exports="true" name="Command K" id="830:4">
+            <ViewModelInstanceString propertyValue="⌘ K" viewModelPropertyId="830:2" id="830:46"/>
+            <ViewModelInstanceBoolean viewModelPropertyId="830:3" id="830:47"/>
+            <ViewModelInstanceNumber viewModelPropertyId="979:1" id="979:321"/>
+            <ViewModelInstanceNumber viewModelPropertyId="979:2" id="979:322"/>
+            <ViewModelInstanceString propertyValue="Command K" viewModelPropertyId="979:3" id="979:323"/>
+        </ViewModelInstance>
+        <ViewModelInstance exports="true" name="Escape" id="830:5">
+            <ViewModelInstanceString propertyValue="Esc" viewModelPropertyId="830:2" id="830:48"/>
+            <ViewModelInstanceBoolean viewModelPropertyId="830:3" id="830:49"/>
+            <ViewModelInstanceNumber viewModelPropertyId="979:1" id="979:324"/>
+            <ViewModelInstanceNumber viewModelPropertyId="979:2" id="979:325"/>
+            <ViewModelInstanceString propertyValue="Escape" viewModelPropertyId="979:3" id="979:326"/>
+        </ViewModelInstance>
+        <ViewModelInstance exports="true" name="Xbox A" id="979:327">
+            <ViewModelInstanceString propertyValue="A" viewModelPropertyId="830:2" id="979:328"/>
+            <ViewModelInstanceBoolean viewModelPropertyId="830:3" id="979:329"/>
+            <ViewModelInstanceNumber propertyValue="1" viewModelPropertyId="979:1" id="979:330"/>
+            <ViewModelInstanceNumber viewModelPropertyId="979:2" id="979:331"/>
+            <ViewModelInstanceString propertyValue="A button" viewModelPropertyId="979:3" id="979:332"/>
+        </ViewModelInstance>
+        <ViewModelInstance exports="true" name="Xbox B" id="979:333">
+            <ViewModelInstanceString propertyValue="B" viewModelPropertyId="830:2" id="979:334"/>
+            <ViewModelInstanceBoolean viewModelPropertyId="830:3" id="979:335"/>
+            <ViewModelInstanceNumber propertyValue="1" viewModelPropertyId="979:1" id="979:336"/>
+            <ViewModelInstanceNumber propertyValue="1" viewModelPropertyId="979:2" id="979:337"/>
+            <ViewModelInstanceString propertyValue="B button" viewModelPropertyId="979:3" id="979:338"/>
+        </ViewModelInstance>
+        <ViewModelInstance exports="true" name="Xbox X" id="979:339">
+            <ViewModelInstanceString propertyValue="X" viewModelPropertyId="830:2" id="979:340"/>
+            <ViewModelInstanceBoolean viewModelPropertyId="830:3" id="979:341"/>
+            <ViewModelInstanceNumber propertyValue="1" viewModelPropertyId="979:1" id="979:342"/>
+            <ViewModelInstanceNumber propertyValue="2" viewModelPropertyId="979:2" id="979:343"/>
+            <ViewModelInstanceString propertyValue="X button" viewModelPropertyId="979:3" id="979:344"/>
+        </ViewModelInstance>
+        <ViewModelInstance exports="true" name="Xbox Y" id="979:345">
+            <ViewModelInstanceString propertyValue="Y" viewModelPropertyId="830:2" id="979:346"/>
+            <ViewModelInstanceBoolean viewModelPropertyId="830:3" id="979:347"/>
+            <ViewModelInstanceNumber propertyValue="1" viewModelPropertyId="979:1" id="979:348"/>
+            <ViewModelInstanceNumber propertyValue="3" viewModelPropertyId="979:2" id="979:349"/>
+            <ViewModelInstanceString propertyValue="Y button" viewModelPropertyId="979:3" id="979:350"/>
+        </ViewModelInstance>
+        <ViewModelInstance exports="true" name="PlayStation Cross" id="979:351">
+            <ViewModelInstanceString propertyValue="Cross" viewModelPropertyId="830:2" id="979:352"/>
+            <ViewModelInstanceBoolean viewModelPropertyId="830:3" id="979:353"/>
+            <ViewModelInstanceNumber propertyValue="2" viewModelPropertyId="979:1" id="979:354"/>
+            <ViewModelInstanceNumber viewModelPropertyId="979:2" id="979:355"/>
+            <ViewModelInstanceString propertyValue="Cross button" viewModelPropertyId="979:3" id="979:356"/>
+        </ViewModelInstance>
+        <ViewModelInstance exports="true" name="PlayStation Circle" id="979:357">
+            <ViewModelInstanceString propertyValue="Circle" viewModelPropertyId="830:2" id="979:358"/>
+            <ViewModelInstanceBoolean viewModelPropertyId="830:3" id="979:359"/>
+            <ViewModelInstanceNumber propertyValue="2" viewModelPropertyId="979:1" id="979:360"/>
+            <ViewModelInstanceNumber propertyValue="1" viewModelPropertyId="979:2" id="979:361"/>
+            <ViewModelInstanceString propertyValue="Circle button" viewModelPropertyId="979:3" id="979:362"/>
+        </ViewModelInstance>
+        <ViewModelInstance exports="true" name="PlayStation Square" id="979:363">
+            <ViewModelInstanceString propertyValue="Square" viewModelPropertyId="830:2" id="979:364"/>
+            <ViewModelInstanceBoolean viewModelPropertyId="830:3" id="979:365"/>
+            <ViewModelInstanceNumber propertyValue="2" viewModelPropertyId="979:1" id="979:366"/>
+            <ViewModelInstanceNumber propertyValue="2" viewModelPropertyId="979:2" id="979:367"/>
+            <ViewModelInstanceString propertyValue="Square button" viewModelPropertyId="979:3" id="979:368"/>
+        </ViewModelInstance>
+        <ViewModelInstance exports="true" name="PlayStation Triangle" id="979:369">
+            <ViewModelInstanceString propertyValue="Triangle" viewModelPropertyId="830:2" id="979:370"/>
+            <ViewModelInstanceBoolean viewModelPropertyId="830:3" id="979:371"/>
+            <ViewModelInstanceNumber propertyValue="2" viewModelPropertyId="979:1" id="979:372"/>
+            <ViewModelInstanceNumber propertyValue="3" viewModelPropertyId="979:2" id="979:373"/>
+            <ViewModelInstanceString propertyValue="Triangle button" viewModelPropertyId="979:3" id="979:374"/>
+        </ViewModelInstance>
+        <ViewModelInstance exports="true" name="LB" id="979:375">
+            <ViewModelInstanceString propertyValue="LB" viewModelPropertyId="830:2" id="979:376"/>
+            <ViewModelInstanceBoolean viewModelPropertyId="830:3" id="979:377"/>
+            <ViewModelInstanceNumber propertyValue="3" viewModelPropertyId="979:1" id="979:378"/>
+            <ViewModelInstanceNumber viewModelPropertyId="979:2" id="979:379"/>
+            <ViewModelInstanceString propertyValue="Left bumper" viewModelPropertyId="979:3" id="979:380"/>
+        </ViewModelInstance>
+        <ViewModelInstance exports="true" name="R2" id="979:381">
+            <ViewModelInstanceString propertyValue="R2" viewModelPropertyId="830:2" id="979:382"/>
+            <ViewModelInstanceBoolean viewModelPropertyId="830:3" id="979:383"/>
+            <ViewModelInstanceNumber propertyValue="3" viewModelPropertyId="979:1" id="979:384"/>
+            <ViewModelInstanceNumber viewModelPropertyId="979:2" id="979:385"/>
+            <ViewModelInstanceString propertyValue="R2 trigger" viewModelPropertyId="979:3" id="979:386"/>
+        </ViewModelInstance>
+    </ViewModel>
+</Rive>

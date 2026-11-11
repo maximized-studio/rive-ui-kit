@@ -29,7 +29,7 @@
                         <ViewModelInstanceNumber viewModelPropertyId="118:1" id="148:1030">
                             <DataBindContext sourcePathIds="148:1-148:3" propertyKey="575" nameBased="true" id="148:1029"/>
                         </ViewModelInstanceNumber>
-                        <ViewModelInstanceNumber propertyValue="1" viewModelPropertyId="136:1" id="148:1032">
+                        <ViewModelInstanceNumber viewModelPropertyId="136:1" id="148:1032">
                             <DataBindContext sourcePathIds="148:1-148:4" propertyKey="575" nameBased="true" id="148:1031"/>
                         </ViewModelInstanceNumber>
                         <ViewModelInstanceTrigger viewModelPropertyId="134:10" id="148:1033"/>
@@ -57,7 +57,7 @@
                         <ViewModelInstanceNumber viewModelPropertyId="118:1" id="148:1053">
                             <DataBindContext sourcePathIds="148:1-148:3" propertyKey="575" nameBased="true" id="148:1052"/>
                         </ViewModelInstanceNumber>
-                        <ViewModelInstanceNumber propertyValue="1" viewModelPropertyId="136:1" id="148:1055">
+                        <ViewModelInstanceNumber viewModelPropertyId="136:1" id="148:1055">
                             <DataBindContext sourcePathIds="148:1-148:4" propertyKey="575" nameBased="true" id="148:1054"/>
                         </ViewModelInstanceNumber>
                         <ViewModelInstanceTrigger viewModelPropertyId="134:10" id="148:1056"/>
@@ -166,6 +166,7 @@
                             </TransitionPropertyViewModelComparator>
                             <TransitionValueBooleanComparator id="148:1077"/>
                         </TransitionViewModelCondition>
+                        <CubicEaseInterpolator id="978:40"/>
                     </StateTransition>
                     <StateTransition stateToId="148:1069" duration="150" interpolationType="cubic" id="148:1078">
                         <TransitionViewModelCondition id="148:1079">
@@ -176,6 +177,7 @@
                             </TransitionPropertyViewModelComparator>
                             <TransitionValueBooleanComparator value="true" id="148:1083"/>
                         </TransitionViewModelCondition>
+                        <CubicEaseInterpolator id="978:41"/>
                     </StateTransition>
                 </AnyState>
                 <ExitState x="600" id="148:1084"/>

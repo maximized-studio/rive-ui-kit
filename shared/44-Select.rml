@@ -226,6 +226,7 @@
                             </TransitionPropertyViewModelComparator>
                             <TransitionValueBooleanComparator id="147:1154"/>
                         </TransitionViewModelCondition>
+                        <CubicEaseInterpolator id="978:38"/>
                     </StateTransition>
                     <StateTransition stateToId="147:1146" duration="150" interpolationType="cubic" id="147:1155">
                         <TransitionViewModelCondition id="147:1156">
@@ -236,6 +237,7 @@
                             </TransitionPropertyViewModelComparator>
                             <TransitionValueBooleanComparator value="true" id="147:1160"/>
                         </TransitionViewModelCondition>
+                        <CubicEaseInterpolator id="978:39"/>
                     </StateTransition>
                 </AnyState>
                 <ExitState x="600" id="147:1161"/>

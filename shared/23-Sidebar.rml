@@ -42,6 +42,31 @@
                         <LayoutComponentStyle gapVertical="1" flexDirectionValue="column" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="42:189"/>
                     </LayoutComponent>
                     <LayoutComponent width="28" height="28" styleId="122:24" name="Toggle All" id="122:21">
+                        <LayoutComponent styleId="985:10" name="Tip Overlay" id="985:11">
+                            <LayoutComponent width="240" height="240" styleId="985:16" name="Bubble Area" id="985:17">
+                                <NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="112:188" isStateful="true" name="Tooltip" id="985:18">
+                                    <NestedStateMachine animationId="112:190" id="985:19"/>
+                                    <ViewModelInstance viewModelId="112:1" exports="true" name="Toggle All Tooltip" id="985:30">
+                                        <ViewModelInstanceString propertyValue="Expand all" viewModelPropertyId="112:2" id="985:31">
+                                            <DataBindContext sourcePathIds="41:866-985:2" propertyKey="561" nameBased="true" id="985:32"/>
+                                        </ViewModelInstanceString>
+                                        <ViewModelInstanceNumber propertyValue="2" viewModelPropertyId="112:3" id="985:33"/>
+                                        <ViewModelInstanceBoolean viewModelPropertyId="112:4" id="985:34">
+                                            <DataBindContext sourcePathIds="41:866-122:6" propertyKey="593" nameBased="true" id="985:35"/>
+                                        </ViewModelInstanceBoolean>
+                                        <ViewModelInstanceBoolean propertyValue="true" viewModelPropertyId="112:5" id="985:36"/>
+                                    </ViewModelInstance>
+                                </NestedArtboardLayout>
+                                <LayoutComponentStyle layoutAlignmentType="centerRight" id="985:16"/>
+                            </LayoutComponent>
+                            <LayoutComponent width="100" height="100" styleId="985:14" name="Spacer" id="985:15">
+                                <LayoutComponentStyle widthUnitsValue="percent" heightUnitsValue="percent" id="985:14"/>
+                            </LayoutComponent>
+                            <LayoutComponent width="240" height="240" styleId="985:12" name="Mirror" id="985:13">
+                                <LayoutComponentStyle id="985:12"/>
+                            </LayoutComponent>
+                            <LayoutComponentStyle gapHorizontal="4" gapVertical="4" positionLeftUnitsValue="points" positionRightUnitsValue="points" positionTopUnitsValue="points" positionBottomUnitsValue="points" layoutAlignmentType="center" positionTypeValue="absolute" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="985:10"/>
+                        </LayoutComponent>
                         <LayoutComponent width="16" height="16" styleId="122:23" name="Icon" id="122:31">
                             <Node name="Art" id="122:32">
                                 <Shape name="Collapse" id="122:41">
@@ -94,7 +119,9 @@
                             </LayoutComponentStyle>
                             <DataBindContext sourcePathIds="41:866-122:6" propertyKey="18" nameBased="true" converterId="9:145" id="122:30"/>
                         </LayoutComponent>
-                        <SemanticData role="button" label="Expand or collapse all sections" traitFlags="32" name="Semantics" id="122:59"/>
+                        <SemanticData role="button" label="Expand all" traitFlags="32" name="Semantics" id="122:59">
+                            <DataBindContext sourcePathIds="41:866-985:2" propertyKey="983" nameBased="true" id="985:37"/>
+                        </SemanticData>
                         <FocusData name="Focus" id="0:15809"/>
                         <LayoutComponentStyle layoutAlignmentType="center" layoutTypeValue="stack" id="122:24"/>
                     </LayoutComponent>
@@ -113,14 +140,14 @@
                         <ArtboardComponentList name="Sections" participatesInLayout="true" complexDependency="true" id="100:66">
                             <DataBindContext sourcePathIds="41:866-100:54" propertyKey="800" id="100:67"/>
                         </ArtboardComponentList>
-                        <LayoutComponentStyle gapVertical="12" paddingLeft="12" paddingRight="12" paddingTop="12" paddingBottom="48" flexDirectionValue="column" intrinsicallySizedValue="true" layoutWidthScaleType="fill" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="162:1"/>
+                        <LayoutComponentStyle gapVertical="12" paddingLeft="12" paddingRight="12" paddingTop="12" paddingBottom="12" flexDirectionValue="column" intrinsicallySizedValue="true" layoutWidthScaleType="fill" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="162:1"/>
                         <ScrollConstraint physicsId="162:3" id="162:2"/>
                     </LayoutComponent>
-                    <LayoutComponentStyle layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="42:211"/>
+                    <LayoutComponentStyle flexBasisUnitsValue="points" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="42:211"/>
                 </LayoutComponent>
                 <LayoutComponentStyle flexDirectionValue="column" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="42:181"/>
                 <LayoutComponent styleId="28:1239" name="Footer" id="28:1238">
-                    <LayoutComponentStyle layoutAlignmentType="bottomLeft" flexDirectionValue="column" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="28:1239"/>
+                    <LayoutComponentStyle layoutAlignmentType="bottomLeft" flexDirectionValue="column" intrinsicallySizedValue="true" layoutWidthScaleType="fill" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="28:1239"/>
                     <LayoutComponent clip="true" height="30" styleId="28:1241" name="Ribbon" id="28:1240">
                         <Fill fillRule="clockwise" id="28:1242">
                             <SolidColor colorValue="FF62C03A" id="28:1243"/>
@@ -212,6 +239,10 @@
             </LayoutComponent>
             <LayoutComponentStyle layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="42:177"/>
         </LayoutComponent>
+        <LayoutComponent width="1" height="1" styleId="985:40" name="Nav Expansion (script)" id="985:41">
+            <ScriptedLayout scriptAssetId="985:5" name="Nav Expansion" id="985:42"/>
+            <LayoutComponentStyle positionTypeValue="absolute" id="985:40"/>
+        </LayoutComponent>
         <StateMachine name="State Machine 1" id="42:169">
             <StateMachineListener targetId="122:21" name="Toggle Hover On" id="122:61">
                 <ListenerInputType id="122:60"/>
@@ -251,11 +282,11 @@
                 <ListenerInputTypeSemantic listenerTypeValue="semanticAction" id="122:84">
                     <SemanticInput id="122:85"/>
                 </ListenerInputTypeSemantic>
-                <ListenerViewModelChange fromViewModelProperty="true" fromDataBindId="122:81" id="122:86">
-                    <BindablePropertyBoolean id="122:87">
-                        <DataBindContext sourcePathIds="41:866-122:4-122:2" propertyKey="634" id="122:81"/>
-                        <DataBindContext sourcePathIds="41:866-122:4-122:2" propertyKey="634" direction="true" converterId="1:1018" id="122:88"/>
-                    </BindablePropertyBoolean>
+                <ListenerViewModelChange fromViewModelProperty="true" fromDataBindId="985:21" id="122:86">
+                    <BindablePropertyTrigger id="985:20">
+                        <DataBindContext sourcePathIds="41:866-985:1" propertyKey="686" id="985:21"/>
+                        <DataBindContext sourcePathIds="41:866-985:1" propertyKey="686" direction="true" converterId="1:1332" id="985:22"/>
+                    </BindablePropertyTrigger>
                 </ListenerViewModelChange>
             </StateMachineListener>
             <StateMachineLayer name="Layer 1" id="42:170">

@@ -6,21 +6,18 @@
         <LayoutComponentStyle intrinsicallySizedValue="true" layoutHeightScaleType="hug" id="130:21"/>
         <LayoutComponent styleId="130:31" name="Frame" id="130:30">
             <LayoutComponent styleId="130:33" name="Header" id="130:32">
-                <Text sizingValue="autoHeight" name="Label" id="130:34">
-                    <TextStylePaint fontSize="14" fontAssetId="0:7" familyName="Inter" styleName="Medium" id="130:35">
-                        <Fill fillRule="clockwise" id="130:36">
-                            <SolidColor colorValue="FFFAFAFA" id="130:37">
-                                <DataBindContext sourcePathIds="10:7-10:7422" propertyKey="37" id="130:38"/>
-                            </SolidColor>
-                        </Fill>
-                        <TextStyleAxis tag="1869640570" axisValue="14" id="130:39"/>
-                        <TextStyleAxis tag="2003265652" axisValue="500" id="130:40"/>
-                    </TextStylePaint>
-                    <TextValueRun styleId="130:35" text="Uploading" id="130:41">
-                        <DataBindContext sourcePathIds="130:1-130:2" propertyKey="268" nameBased="true" id="130:42"/>
-                    </TextValueRun>
-                    <LayoutParticipant layoutWidthScaleType="fill" layoutHeightScaleType="hug" id="130:43"/>
-                </Text>
+                <LayoutComponent styleId="983:368" name="Label" id="983:370">
+                    <NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="983:1" isStateful="true" name="Label" id="983:371">
+                        <NestedStateMachine animationId="983:2" id="983:372"/>
+                        <ViewModelInstance viewModelId="983:100" exports="true" name="Label" id="983:373">
+                            <ViewModelInstanceBoolean viewModelPropertyId="983:102" id="983:369"/>
+                            <ViewModelInstanceString propertyValue="Uploading" viewModelPropertyId="983:101" id="983:374">
+                                <DataBindContext sourcePathIds="130:1-130:2" propertyKey="561" nameBased="true" id="983:375"/>
+                            </ViewModelInstanceString>
+                        </ViewModelInstance>
+                    </NestedArtboardLayout>
+                    <LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="fill" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="983:368"/>
+                </LayoutComponent>
                 <Text name="Value" id="130:44">
                     <TextStylePaint fontSize="14" fontAssetId="0:7" familyName="Inter" styleName="Regular" id="130:45">
                         <Fill fillRule="clockwise" id="130:46">
@@ -38,10 +35,22 @@
                     <SemanticData role="text" name="Semantics" id="130:55">
                         <DataBindContext sourcePathIds="130:1-130:3" propertyKey="983" nameBased="true" converterId="130:100" id="130:56"/>
                     </SemanticData>
+                    <DataBindContext sourcePathIds="130:1-402:1" propertyKey="18" nameBased="true" converterId="9:90" id="402:21"/>
                 </Text>
                 <LayoutComponentStyle gapHorizontal="12" intrinsicallySizedValue="true" layoutWidthScaleType="fill" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="130:33"/>
             </LayoutComponent>
             <LayoutComponent clip="true" height="8" styleId="130:61" name="Track" id="130:60">
+                <LayoutComponent width="38" styleId="402:31" name="Sweep" id="402:30">
+                    <Fill fillRule="clockwise" id="402:32">
+                        <SolidColor colorValue="FF2563EB" id="402:33">
+                            <DataBindContext sourcePathIds="10:7-10:2104" propertyKey="37" id="402:34"/>
+                        </SolidColor>
+                    </Fill>
+                    <LayoutComponentStyle positionLeftUnitsValue="points" positionTopUnitsValue="points" positionBottomUnitsValue="points" positionTypeValue="absolute" cornerRadiusTL="4" widthUnitsValue="percent" heightUnitsValue="auto" id="402:31">
+                        <DataBindContext sourcePathIds="10:7-901:21" propertyKey="640" converterId="0:0" id="402:35"/>
+                    </LayoutComponentStyle>
+                    <DataBindContext sourcePathIds="130:1-402:1" propertyKey="18" nameBased="true" converterId="9:145" id="402:36"/>
+                </LayoutComponent>
                 <LayoutComponent width="64" styleId="130:67" name="Bar" id="130:66">
                     <Fill fillRule="clockwise" id="130:71">
                         <SolidColor colorValue="FF2563EB" id="130:72">
@@ -53,6 +62,7 @@
                         <CubicEaseInterpolator id="130:68"/>
                     </LayoutComponentStyle>
                     <DataBindContext sourcePathIds="130:1-130:3" propertyKey="7" nameBased="true" converterId="130:9" id="130:70"/>
+                    <DataBindContext sourcePathIds="130:1-402:1" propertyKey="18" nameBased="true" converterId="9:90" id="402:20"/>
                 </LayoutComponent>
                 <Fill fillRule="clockwise" id="130:63">
                     <SolidColor colorValue="FF3F3F46" id="130:64">
@@ -78,7 +88,25 @@
                     <StateTransition stateToId="130:24" id="130:25"/>
                 </EntryState>
             </StateMachineLayer>
+            <StateMachineLayer name="Indeterminate" id="402:40">
+                <AnimationState animationId="402:50" stateName="Sweep" id="402:41"/>
+                <AnyState id="402:42"/>
+                <ExitState id="402:43"/>
+                <EntryState id="402:44">
+                    <StateTransition stateToId="402:41" id="402:45"/>
+                </EntryState>
+            </StateMachineLayer>
         </StateMachine>
         <LinearAnimation name="Timeline 1" id="130:28"/>
+        <LinearAnimation duration="96" loopValue="loop" name="Indeterminate Sweep" id="402:50">
+            <KeyedObject objectId="402:30" id="402:51">
+                <KeyedProperty property="x" id="402:52">
+                    <KeyFrameDouble value="-110" interpolationType="cubic" id="402:53">
+                        <CubicEaseInterpolator x1="0.64999998" x2="0.34999999" id="402:54"/>
+                    </KeyFrameDouble>
+                    <KeyFrameDouble value="290" frame="96" id="402:55"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
     </Artboard>
 </Rive>

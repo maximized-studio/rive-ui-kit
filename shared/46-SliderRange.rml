@@ -1,26 +1,25 @@
 <Rive version="1" kind="fragment">
-    <Artboard defaultStateMachineId="153:1001" viewModelId="153:1" viewModelInstanceId="153:20" isComponent="true" spaceId="1:5601" width="200" height="48" styleId="153:1002" x="3600" y="1100" name="Range Slider" id="153:1000">
+    <Artboard defaultStateMachineId="153:1001" viewModelId="153:1" viewModelInstanceId="153:20" isComponent="true" spaceId="1:5601" width="200" height="48" styleId="153:1002" x="3600" y="1100" name="Slider Range" id="153:1000">
         <Fill fillRule="clockwise" id="153:1094">
             <SolidColor colorValue="00000000" id="153:1095"/>
         </Fill>
         <LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="153:1002"/>
-        <LayoutComponent styleId="153:1003" name="Range Slider" id="153:1096">
+        <LayoutComponent styleId="153:1003" name="Slider Range" id="153:1096">
             <LayoutComponent styleId="153:1004" name="Header" id="153:1097">
-                <Text name="Label" id="153:1100">
-                    <TextStylePaint fontSize="14" fontAssetId="0:7" familyName="Inter" styleName="Medium" id="153:1098">
-                        <Fill fillRule="clockwise" id="153:1101">
-                            <SolidColor colorValue="FFFAFAFA" id="153:1102">
-                                <DataBindContext sourcePathIds="10:7-10:7422" propertyKey="37" id="153:1103"/>
-                            </SolidColor>
-                        </Fill>
-                        <TextStyleAxis tag="1869640570" axisValue="14" id="153:1104"/>
-                        <TextStyleAxis tag="2003265652" axisValue="500" id="153:1105"/>
-                    </TextStylePaint>
-                    <TextValueRun styleId="153:1098" text="Price" id="153:1106">
-                        <DataBindContext sourcePathIds="153:1-153:2" propertyKey="268" nameBased="true" id="153:1099"/>
-                    </TextValueRun>
-                    <LayoutParticipant layoutWidthScaleType="fill" layoutHeightScaleType="hug" id="153:1107"/>
-                </Text>
+                <LayoutComponent styleId="983:341" name="Label" id="983:344">
+                    <NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="983:1" isStateful="true" name="Label" id="983:345">
+                        <NestedStateMachine animationId="983:2" id="983:346"/>
+                        <ViewModelInstance viewModelId="983:100" exports="true" name="Label" id="983:347">
+                            <ViewModelInstanceBoolean viewModelPropertyId="983:102" id="983:342">
+                                <DataBindContext sourcePathIds="153:1-153:7" propertyKey="593" nameBased="true" id="983:343"/>
+                            </ViewModelInstanceBoolean>
+                            <ViewModelInstanceString propertyValue="Price" viewModelPropertyId="983:101" id="983:348">
+                                <DataBindContext sourcePathIds="153:1-153:2" propertyKey="561" nameBased="true" id="983:349"/>
+                            </ViewModelInstanceString>
+                        </ViewModelInstance>
+                    </NestedArtboardLayout>
+                    <LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="fill" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="983:341"/>
+                </LayoutComponent>
                 <Text name="Value" id="153:1081">
                     <TextStylePaint fontSize="14" fontAssetId="0:7" familyName="Inter" styleName="Regular" id="153:1080">
                         <Fill fillRule="clockwise" id="153:1082">

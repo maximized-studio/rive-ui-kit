@@ -134,6 +134,7 @@
                             </TransitionPropertyViewModelComparator>
                             <TransitionValueBooleanComparator value="true" id="42:142"/>
                         </TransitionViewModelCondition>
+                        <CubicEaseInterpolator id="978:26"/>
                     </StateTransition>
                     <StateTransition stateToId="42:74" duration="150" interpolationType="cubic" id="42:137">
                         <TransitionViewModelCondition id="42:143">
@@ -144,6 +145,7 @@
                             </TransitionPropertyViewModelComparator>
                             <TransitionValueBooleanComparator id="42:147"/>
                         </TransitionViewModelCondition>
+                        <CubicEaseInterpolator id="978:27"/>
                     </StateTransition>
                 </AnyState>
                 <ExitState x="480" id="42:72"/>
@@ -159,15 +161,6 @@
                     <BindablePropertyBoolean id="42:151">
                         <DataBindContext sourcePathIds="41:864-41:884" propertyKey="634" direction="true" converterId="1:1018" id="42:152"/>
                         <DataBindContext sourcePathIds="41:864-41:884" propertyKey="634" id="42:153"/>
-                    </BindablePropertyBoolean>
-                </ListenerViewModelChange>
-            </StateMachineListener>
-            <StateMachineListener targetId="42:64" name="Expand All" id="122:16">
-                <ListenerInputTypeViewModel viewModelPathIds="41:864-122:5-122:2" listenerTypeValue="viewModel" id="122:17"/>
-                <ListenerViewModelChange fromViewModelProperty="true" fromDataBindId="122:15" id="122:18">
-                    <BindablePropertyBoolean id="122:19">
-                        <DataBindContext sourcePathIds="41:864-122:5-122:2" propertyKey="634" id="122:15"/>
-                        <DataBindContext sourcePathIds="41:864-41:884" propertyKey="634" direction="true" id="122:20"/>
                     </BindablePropertyBoolean>
                 </ListenerViewModelChange>
             </StateMachineListener>

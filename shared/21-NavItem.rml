@@ -113,6 +113,7 @@
                             </TransitionPropertyViewModelComparator>
                             <TransitionValueBooleanComparator value="true" id="42:30"/>
                         </TransitionViewModelCondition>
+                        <CubicEaseInterpolator id="978:23"/>
                     </StateTransition>
                     <StateTransition stateToId="41:908" duration="120" interpolationType="cubic" id="42:16">
                         <TransitionViewModelCondition opValue="notEqual" id="42:31">
@@ -127,6 +128,7 @@
                                 </BindablePropertyNumber>
                             </TransitionPropertyViewModelComparator>
                         </TransitionViewModelCondition>
+                        <CubicEaseInterpolator id="978:24"/>
                     </StateTransition>
                     <StateTransition stateToId="41:908" duration="120" interpolationType="cubic" id="42:17">
                         <TransitionViewModelCondition id="42:39">
@@ -137,6 +139,7 @@
                             </TransitionPropertyViewModelComparator>
                             <TransitionValueBooleanComparator id="42:43"/>
                         </TransitionViewModelCondition>
+                        <CubicEaseInterpolator id="978:25"/>
                     </StateTransition>
                 </AnyState>
                 <ExitState x="480" id="41:906"/>

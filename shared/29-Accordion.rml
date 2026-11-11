@@ -10,6 +10,10 @@
                     <DataBindContext sourcePathIds="10:7-10:7418" propertyKey="37" id="104:194"/>
                 </SolidColor>
             </Fill>
+            <LayoutComponent styleId="414:21" name="Single (script)" id="414:20">
+                <ScriptedLayout scriptAssetId="414:10" name="Accordion Single" id="414:22"/>
+                <LayoutComponentStyle positionTypeValue="absolute" id="414:21"/>
+            </LayoutComponent>
             <ArtboardComponentList name="Items" participatesInLayout="true" id="104:195">
                 <DataBindContext sourcePathIds="104:8-104:9" propertyKey="800" nameBased="true" id="104:196"/>
             </ArtboardComponentList>

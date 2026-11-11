@@ -15,7 +15,7 @@
                             <DataBindContext sourcePathIds="157:1-157:9" propertyKey="687" twoWay="true" nameBased="true" id="157:1020"/>
                         </ViewModelInstanceTrigger>
                         <ViewModelInstanceBoolean viewModelPropertyId="7:1" id="157:1022">
-                            <DataBindContext sourcePathIds="157:1-157:7" propertyKey="593" nameBased="true" id="157:1021"/>
+                            <DataBindContext sourcePathIds="157:1-157:2" propertyKey="593" nameBased="true" converterId="400:303" id="157:1021"/>
                         </ViewModelInstanceBoolean>
                         <ViewModelInstanceBoolean viewModelPropertyId="7:3" id="157:1023"/>
                         <ViewModelInstanceNumber propertyValue="11" viewModelPropertyId="33:164" id="157:1024"/>
@@ -98,7 +98,7 @@
                             <DataBindContext sourcePathIds="157:1-157:10" propertyKey="687" twoWay="true" nameBased="true" id="157:1074"/>
                         </ViewModelInstanceTrigger>
                         <ViewModelInstanceBoolean viewModelPropertyId="7:1" id="157:1076">
-                            <DataBindContext sourcePathIds="157:1-157:7" propertyKey="593" nameBased="true" id="157:1075"/>
+                            <DataBindContext sourcePathIds="157:1-157:2" propertyKey="593" nameBased="true" converterId="400:306" id="157:1075"/>
                         </ViewModelInstanceBoolean>
                         <ViewModelInstanceBoolean viewModelPropertyId="7:3" id="157:1077"/>
                         <ViewModelInstanceNumber propertyValue="12" viewModelPropertyId="33:164" id="157:1078"/>

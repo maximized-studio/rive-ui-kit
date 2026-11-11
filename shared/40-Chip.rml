@@ -140,7 +140,7 @@
                         </PointsPath>
                         <Stroke thickness="1.75" cap="round" join="round" id="141:1072">
                             <SolidColor colorValue="FF1E3A8A" id="141:1073">
-                                <DataBindContext sourcePathIds="10:7-10:8490" propertyKey="37" id="141:1074"/>
+                                <DataBindContext sourcePathIds="10:7-118:4" propertyKey="37" id="141:1074"/>
                             </SolidColor>
                         </Stroke>
                     </Shape>
@@ -169,7 +169,7 @@
                         <TextStylePaint fontSize="14" fontAssetId="0:7" familyName="Inter" styleName="Medium" id="141:1030">
                             <Fill fillRule="clockwise" id="141:1032">
                                 <SolidColor colorValue="FF1E3A8A" id="141:1033">
-                                    <DataBindContext sourcePathIds="10:7-10:8490" propertyKey="37" id="141:1034"/>
+                                    <DataBindContext sourcePathIds="10:7-118:4" propertyKey="37" id="141:1034"/>
                                 </SolidColor>
                             </Fill>
                             <TextStyleAxis tag="1869640570" axisValue="14" id="141:1035"/>
@@ -218,12 +218,12 @@
             <LayoutComponent styleId="141:1017" opacity="0" name="Selected" id="141:1050">
                 <Fill fillRule="clockwise" id="141:1086">
                     <SolidColor colorValue="FFBFDBFE" id="141:1087">
-                        <DataBindContext sourcePathIds="10:7-10:8486" propertyKey="37" id="141:1088"/>
+                        <DataBindContext sourcePathIds="10:7-118:2" propertyKey="37" id="141:1088"/>
                     </SolidColor>
                 </Fill>
                 <Stroke id="141:1089">
                     <SolidColor colorValue="FF93C5FD" id="141:1090">
-                        <DataBindContext sourcePathIds="10:7-10:8488" propertyKey="37" id="141:1091"/>
+                        <DataBindContext sourcePathIds="10:7-118:2" propertyKey="37" id="141:1091"/>
                     </SolidColor>
                     <DataBindContext sourcePathIds="141:1-141:4" propertyKey="47" nameBased="true" converterId="9:90" id="141:6000"/>
                 </Stroke>
@@ -360,6 +360,7 @@
                             </TransitionPropertyViewModelComparator>
                             <TransitionValueBooleanComparator value="true" id="141:1172"/>
                         </TransitionViewModelCondition>
+                        <CubicEaseInterpolator id="978:36"/>
                     </StateTransition>
                     <StateTransition stateToId="141:1008" duration="150" interpolationType="cubic" id="141:1173">
                         <TransitionViewModelCondition id="141:1174">
@@ -370,6 +371,7 @@
                             </TransitionPropertyViewModelComparator>
                             <TransitionValueBooleanComparator id="141:1178"/>
                         </TransitionViewModelCondition>
+                        <CubicEaseInterpolator id="978:37"/>
                     </StateTransition>
                 </AnyState>
                 <ExitState x="480" id="141:1179"/>

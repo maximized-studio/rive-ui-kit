@@ -1,0 +1,85 @@
+<Rive version="1" kind="fragment">
+    <Artboard defaultStateMachineId="400:2" viewModelId="400:100" viewModelInstanceId="400:110" isComponent="true" spaceId="1:5601" width="40" height="40" styleId="400:3" x="4000" name="Spinner" id="400:1">
+        <Fill fillRule="clockwise" id="400:4">
+            <SolidColor colorValue="00000000" id="400:5"/>
+        </Fill>
+        <LayoutComponentStyle id="400:3"/>
+        <Node x="20" y="20" name="Art" id="400:10">
+            <SemanticData role="image" name="Semantics" id="400:11">
+                <DataBindContext sourcePathIds="400:100-400:101" propertyKey="983" nameBased="true" id="400:12"/>
+                <DataBindContext sourcePathIds="400:100-400:102" propertyKey="1004" nameBased="true" id="400:13"/>
+            </SemanticData>
+            <Shape name="Arc" id="400:20">
+                <Ellipse width="32" height="32" name="Circle" id="400:21"/>
+                <Stroke thickness="4" cap="round" join="round" id="400:22">
+                    <SolidColor colorValue="FF2563EB" id="400:23">
+                        <DataBindContext sourcePathIds="10:7-10:2104" propertyKey="37" id="400:24"/>
+                    </SolidColor>
+                    <TrimPath end="0.30000001" modeValue="sequential" id="400:25"/>
+                </Stroke>
+            </Shape>
+            <Shape name="Track" id="400:30">
+                <Ellipse width="32" height="32" name="Circle" id="400:31"/>
+                <Stroke thickness="4" cap="round" join="round" id="400:32">
+                    <SolidColor colorValue="FF3F3F46" id="400:33">
+                        <DataBindContext sourcePathIds="10:7-10:7418" propertyKey="37" id="400:34"/>
+                    </SolidColor>
+                </Stroke>
+            </Shape>
+        </Node>
+        <StateMachine name="State Machine 1" id="400:2">
+            <StateMachineLayer name="Spin" id="400:40">
+                <AnimationState animationId="400:60" stateName="Spin" id="400:41"/>
+                <AnyState id="400:42"/>
+                <ExitState id="400:43"/>
+                <EntryState id="400:44">
+                    <StateTransition stateToId="400:41" id="400:45"/>
+                </EntryState>
+            </StateMachineLayer>
+            <StateMachineLayer name="Sweep" id="400:50">
+                <AnimationState animationId="400:70" stateName="Sweep" id="400:51"/>
+                <AnyState id="400:52"/>
+                <ExitState id="400:53"/>
+                <EntryState id="400:54">
+                    <StateTransition stateToId="400:51" id="400:55"/>
+                </EntryState>
+            </StateMachineLayer>
+        </StateMachine>
+        <LinearAnimation duration="54" loopValue="loop" name="Spin" id="400:60">
+            <KeyedObject objectId="400:20" id="400:61">
+                <KeyedProperty property="rotation" id="400:62">
+                    <KeyFrameDouble interpolationType="linear" id="400:63"/>
+                    <KeyFrameDouble value="6.2831855" frame="54" id="400:64"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+        <LinearAnimation duration="84" loopValue="loop" name="Sweep" id="400:70">
+            <KeyedObject objectId="400:25" id="400:71">
+                <KeyedProperty property="end" id="400:72">
+                    <KeyFrameDouble value="0.079999998" interpolationType="cubic" id="400:73">
+                        <CubicEaseInterpolator x1="0.40000001" x2="0.2" id="400:74"/>
+                    </KeyFrameDouble>
+                    <KeyFrameDouble value="0.72000003" interpolationType="cubic" frame="42" id="400:75">
+                        <CubicEaseInterpolator x1="0.40000001" x2="0.2" id="400:76"/>
+                    </KeyFrameDouble>
+                    <KeyFrameDouble value="1.08" frame="84" id="400:77"/>
+                </KeyedProperty>
+                <KeyedProperty property="start" id="400:78">
+                    <KeyFrameDouble interpolationType="linear" id="400:79"/>
+                    <KeyFrameDouble interpolationType="cubic" frame="42" id="400:80">
+                        <CubicEaseInterpolator x1="0.40000001" x2="0.2" id="400:81"/>
+                    </KeyFrameDouble>
+                    <KeyFrameDouble value="1" frame="84" id="400:82"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+    </Artboard>
+    <ViewModel defaultInstanceId="400:110" name="Spinner" groupId="1:2673" id="400:100">
+        <ViewModelPropertyString name="label" id="400:101"/>
+        <ViewModelPropertyBoolean name="a11yHidden" id="400:102"/>
+        <ViewModelInstance exports="true" name="Loading" id="400:110">
+            <ViewModelInstanceString propertyValue="Loading" viewModelPropertyId="400:101" id="400:111"/>
+            <ViewModelInstanceBoolean viewModelPropertyId="400:102" id="400:112"/>
+        </ViewModelInstance>
+    </ViewModel>
+</Rive>
