@@ -200,7 +200,8 @@ function pointerUp(self: Slider, event: PointerEvent)
 end
 
 function pointerExit(self: Slider, event: PointerEvent)
-    if not self.down then
+    -- A tick under the pointer also reports an exit: only a pointer that really left the track counts.
+    if not self.down and not inside(self, event) then
         setBool(self.hover, false)
     end
 end

@@ -268,7 +268,8 @@ function pointerUp(self: Range, event: PointerEvent)
 end
 
 function pointerExit(self: Range, event: PointerEvent)
-    if self.active == 0 then
+    -- A tick under the pointer also reports an exit: only a pointer that really left the track counts.
+    if self.active == 0 and not inside(self, event.position) then
         hoverFor(self, 0)
     end
 end
