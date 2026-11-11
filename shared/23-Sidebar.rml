@@ -284,8 +284,8 @@
                 </ListenerInputTypeSemantic>
                 <ListenerViewModelChange fromViewModelProperty="true" fromDataBindId="985:21" id="122:86">
                     <BindablePropertyTrigger id="985:20">
-                        <DataBindContext sourcePathIds="41:866-985:1" propertyKey="686" direction="true" converterId="1:1332" id="985:22"/>
                         <DataBindContext sourcePathIds="41:866-985:1" propertyKey="686" id="985:21"/>
+                        <DataBindContext sourcePathIds="41:866-985:1" propertyKey="686" direction="true" converterId="1:1332" id="985:22"/>
                     </BindablePropertyTrigger>
                 </ListenerViewModelChange>
             </StateMachineListener>
