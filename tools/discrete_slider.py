@@ -1,4 +1,4 @@
-"""Generates the Discrete Slider (shared/56-DiscreteSlider.rml) and its tick (shared/55-SliderTick.rml).
+"""Generates the Discrete Slider (shared/56-SliderDiscrete.rml) and its tick (shared/55-SliderTick.rml).
 
 Look and states are native; the Luau script "Discrete Slider" maps pointer drags to `value`
 (snapped to `step` within min..max), writes `_fraction`, `_dragging`, `_hover` and fills `_ticks`.
@@ -152,7 +152,7 @@ def slider():
              f'cornerRadiusTL="2" layoutWidthScaleType="fill" widthUnitsValue="auto" id="{track_st}"/></LayoutComponent>')
     script_l, script_st = n(), n()
     script = (f'<LayoutComponent styleId="{script_st}" name="Drag" id="{script_l}">'
-              f'<ScriptedLayout scriptAssetId="403:400" name="Discrete Slider" id="{n()}"/>'
+              f'<ScriptedLayout scriptAssetId="403:400" name="Slider Discrete" id="{n()}"/>'
               f'<LayoutComponentStyle {ABS} edgeConstraints="84" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="{script_st}"/></LayoutComponent>')
     sem = (f'<SemanticData role="slider" traitFlags="32" name="Semantics" id="{n()}">'
            f'<DataBindContext sourcePathIds="{vp("label")}" propertyKey="983" nameBased="true" id="{n()}"/>'
@@ -222,7 +222,7 @@ def slider():
              f'{keyframes(n, bubble, 18, [(0, 1)])}{keyframes(n, bubble, 16, [(0, 1)])}{keyframes(n, bubble, 17, [(0, 1)])}{keyframes(n, hid, 18, [(0, 0.4)])}{keyframes(n, hv, 18, [(0, 0)])}</LinearAnimation>'
              f'<LinearAnimation name="Gate Up" id="{g_up_anim}"/><LinearAnimation name="Gate Down" id="{g_dn_anim}"/>')
     return f'''<Rive version="1" kind="fragment">
-<Artboard defaultStateMachineId="{sm}" viewModelId="{VM}" viewModelInstanceId="403:150" isComponent="true" spaceId="1:5601" width="280" height="56" styleId="{st}" x="4000" y="400" name="Discrete Slider" id="{ab}">
+<Artboard defaultStateMachineId="{sm}" viewModelId="{VM}" viewModelInstanceId="403:150" isComponent="true" spaceId="1:5601" width="280" height="56" styleId="{st}" x="4000" y="400" name="Slider Discrete" id="{ab}">
 <Fill fillRule="clockwise" id="{n()}"><SolidColor colorValue="00000000" id="{n()}"/></Fill>
 <LayoutComponentStyle intrinsicallySizedValue="true" layoutHeightScaleType="hug" heightUnitsValue="auto" id="{st}"/>
 {body}
@@ -242,29 +242,29 @@ def root_parts():
     tok = lambda k, conv='': (f'<FormulaTokenValue id="403:{next(c)}"><DataBindContext sourcePathIds="{vp(k)}" propertyKey="777" nameBased="true"'
                               + (f' converterId="{conv}"' if conv else '') + f' id="403:{next(c)}"/></FormulaTokenValue>')
     c = itertools.count(600)
-    conv = f'''    <DataConverterToString round="true" decimals="1" name="Discrete Slider · Value (1 decimal)" groupId="1:2674" id="403:305"/>
-    <DataConverterStringRemoveZeros name="Discrete Slider · No trailing zeros" groupId="1:2674" id="403:306"/>
-    <DataConverterGroup name="Discrete Slider · Value (to text)" groupId="1:2674" id="403:300">
+    conv = f'''    <DataConverterToString round="true" decimals="1" name="Slider Discrete · Value (1 decimal)" groupId="1:2674" id="403:305"/>
+    <DataConverterStringRemoveZeros name="Slider Discrete · No trailing zeros" groupId="1:2674" id="403:306"/>
+    <DataConverterGroup name="Slider Discrete · Value (to text)" groupId="1:2674" id="403:300">
         <DataConverterGroupItem converterId="403:305" id="403:307"/>
         <DataConverterGroupItem converterId="403:306" id="403:308"/>
     </DataConverterGroup>
-    <DataConverterFormula name="Discrete Slider · Thumb x" groupId="1:2674" id="403:301">
+    <DataConverterFormula name="Slider Discrete · Thumb x" groupId="1:2674" id="403:301">
         <FormulaTokenInput id="403:{next(c)}"/><FormulaTokenOperation operationType="multiply" id="403:{next(c)}"/><FormulaTokenValue operationValue="{TRACK_W}" id="403:{next(c)}"/>
         <FormulaTokenOperation id="403:{next(c)}"/><FormulaTokenValue operationValue="{PAD}" id="403:{next(c)}"/>
     </DataConverterFormula>
-    <DataConverterFormula name="Discrete Slider · Fill percent" groupId="1:2674" id="403:302">
+    <DataConverterFormula name="Slider Discrete · Fill percent" groupId="1:2674" id="403:302">
         <FormulaTokenInput id="403:{next(c)}"/><FormulaTokenOperation operationType="multiply" id="403:{next(c)}"/><FormulaTokenValue operationValue="100" id="403:{next(c)}"/>
     </DataConverterFormula>
-    <DataConverterFormula name="Discrete Slider · Step up" groupId="1:2674" id="403:303">
+    <DataConverterFormula name="Slider Discrete · Step up" groupId="1:2674" id="403:303">
         <FormulaTokenFunction id="403:{next(c)}"/>{tok("max")}<FormulaTokenArgumentSeparator id="403:{next(c)}"/>
         <FormulaTokenInput id="403:{next(c)}"/><FormulaTokenOperation id="403:{next(c)}"/>{tok("step")}<FormulaTokenParenthesisClose id="403:{next(c)}"/>
     </DataConverterFormula>
-    <DataConverterFormula name="Discrete Slider · Step down" groupId="1:2674" id="403:304">
+    <DataConverterFormula name="Slider Discrete · Step down" groupId="1:2674" id="403:304">
         <FormulaTokenFunction functionType="max" id="403:{next(c)}"/>{tok("min")}<FormulaTokenArgumentSeparator id="403:{next(c)}"/>
         <FormulaTokenInput id="403:{next(c)}"/><FormulaTokenOperation operationType="subtract" id="403:{next(c)}"/>{tok("step")}<FormulaTokenParenthesisClose id="403:{next(c)}"/>
     </DataConverterFormula>
 '''
-    script = '    <ScriptAsset file="Discrete Slider.luau" name="Discrete Slider" groupId="327:1" id="403:400"/>\n'
+    script = '    <ScriptAsset file="Slider Discrete.luau" name="Slider Discrete" groupId="327:1" id="403:400"/>\n'
     def inst(iid, name, vals):
         out = f'        <ViewModelInstance exports="true" name="{name}" id="{iid}">\n'
         for k, pid in P.items():
@@ -276,7 +276,7 @@ def root_parts():
         return out + '        </ViewModelInstance>\n'
     types = {'label': 'String', 'disabled': 'Boolean', 'a11yHidden': 'Boolean', 'showTicks': 'Boolean', '_dragging': 'Boolean', '_hover': 'Boolean',
              '_ticks': 'List', '_keyUp': 'Trigger', '_keyDown': 'Trigger', '_doUp': 'Trigger', '_doDown': 'Trigger'}
-    vm = f'    <ViewModel defaultInstanceId="403:150" name="DiscreteSlider" groupId="1:2673" id="{VM}">\n'
+    vm = f'    <ViewModel defaultInstanceId="403:150" name="SliderDiscrete" groupId="1:2673" id="{VM}">\n'
     vm += ''.join(f'        <ViewModelProperty{types.get(k, "Number")} name="{k}" id="{pid}"/>\n' for k, pid in P.items())
     vm += inst('403:150', 'Volume', dict(value=40, min=0, max=100, step=10, label='Volume', showTicks='true', _fraction=0.4))
     vm += inst('403:151', 'Temperature', dict(value=21, min=16, max=26, step=1, label='Temperature', showTicks='true', _fraction=0.5))
@@ -292,7 +292,7 @@ def root_parts():
 
 if __name__ == '__main__':
     open('shared/55-SliderTick.rml', 'w').write(tick())
-    open('shared/56-DiscreteSlider.rml', 'w').write(slider())
+    open('shared/56-SliderDiscrete.rml', 'w').write(slider())
     conv, script, vm = root_parts()
     p = 'shared/99-_root.rml'
     s = open(p).read()

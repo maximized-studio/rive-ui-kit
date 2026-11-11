@@ -1,10 +1,10 @@
 <Rive version="1" kind="fragment">
-    <Artboard defaultStateMachineId="153:1001" viewModelId="153:1" viewModelInstanceId="153:20" isComponent="true" spaceId="1:5601" width="200" height="48" styleId="153:1002" x="3600" y="1100" name="Range Slider" id="153:1000">
+    <Artboard defaultStateMachineId="153:1001" viewModelId="153:1" viewModelInstanceId="153:20" isComponent="true" spaceId="1:5601" width="200" height="48" styleId="153:1002" x="3600" y="1100" name="Slider Range" id="153:1000">
         <Fill fillRule="clockwise" id="153:1094">
             <SolidColor colorValue="00000000" id="153:1095"/>
         </Fill>
         <LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="153:1002"/>
-        <LayoutComponent styleId="153:1003" name="Range Slider" id="153:1096">
+        <LayoutComponent styleId="153:1003" name="Slider Range" id="153:1096">
             <LayoutComponent styleId="153:1004" name="Header" id="153:1097">
                 <Text name="Label" id="153:1100">
                     <TextStylePaint fontSize="14" fontAssetId="0:7" familyName="Inter" styleName="Medium" id="153:1098">

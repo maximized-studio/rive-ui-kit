@@ -1,7 +1,7 @@
-"""Generates the Range Discrete Slider (shared/56b-RangeDiscreteSlider.rml): two thumbs on the Discrete Slider's track.
+"""Generates the Slider Range Discrete (shared/56b-SliderRangeDiscrete.rml): two thumbs on the Slider Discrete's track.
 
-Same look and approach as the Discrete Slider (tools/discrete_slider.py, whose helpers, Slider Tick and converters it
-reuses): the look is native and bound, and the Luau script "Range Discrete Slider" maps drags to `low` / `high`
+Same look and approach as the Slider Discrete (tools/discrete_slider.py, whose helpers, Slider Tick and converters it
+reuses): the look is native and bound, and the Luau script "Slider Range Discrete" maps drags to `low` / `high`
 (snapped to `step` within min..max, never crossing), writes the thumbs' fractions and fills `_ticks` (on between
 the thumbs). Ids: 345 (view model, converters, script), 346 (artboard). Run from the repo root."""
 import sys, os
@@ -17,7 +17,7 @@ P = dict(low='345:101', high='345:102', min='345:103', max='345:104', step='345:
 TYPES = {'label': 'String', 'disabled': 'Boolean', 'a11yHidden': 'Boolean', 'showTicks': 'Boolean', '_hoverLow': 'Boolean',
          '_hoverHigh': 'Boolean', '_dragLow': 'Boolean', '_dragHigh': 'Boolean', '_ticks': 'List', '_keyUp': 'Trigger', '_keyDown': 'Trigger'}
 vp = lambda k: f'{VM}-{P[k]}'
-VALUE_TEXT, THUMB_X, PERCENT = '403:300', '403:301', '403:302'   # the Discrete Slider's converters
+VALUE_TEXT, THUMB_X, PERCENT = '403:300', '403:301', '403:302'   # the Slider Discrete's converters
 SCRIPT = '345:400'
 
 
@@ -80,7 +80,7 @@ def slider():
              f'cornerRadiusTL="2" layoutWidthScaleType="fill" widthUnitsValue="auto" id="{track_st}"/></LayoutComponent>')
     script_st = n()
     script = (f'<LayoutComponent styleId="{script_st}" name="Drag" id="{n()}">'
-              f'<ScriptedLayout scriptAssetId="{SCRIPT}" name="Range Discrete Slider" id="{n()}"/>'
+              f'<ScriptedLayout scriptAssetId="{SCRIPT}" name="Slider Range Discrete" id="{n()}"/>'
               f'<LayoutComponentStyle {ABS} edgeConstraints="84" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="{script_st}"/></LayoutComponent>')
     sem = (f'<SemanticData role="slider" traitFlags="32" name="Semantics" id="{n()}">'
            f'<DataBindContext sourcePathIds="{vp("label")}" propertyKey="983" nameBased="true" id="{n()}"/>'
@@ -144,7 +144,7 @@ def slider():
         return layer, anims
     low_layer, low_anims = look('Low Thumb', '_dragLow', '_hoverLow', low_bubble, low_halo)
     high_layer, high_anims = look('High Thumb', '_dragHigh', '_hoverHigh', high_bubble, high_halo)
-    art = f'''<Artboard defaultStateMachineId="{sm}" viewModelId="{VM}" viewModelInstanceId="345:150" isComponent="true" spaceId="1:5601" width="280" height="56" styleId="{st}" x="12000" y="0" name="Range Discrete Slider" id="{ab}">
+    art = f'''<Artboard defaultStateMachineId="{sm}" viewModelId="{VM}" viewModelInstanceId="345:150" isComponent="true" spaceId="1:5601" width="280" height="56" styleId="{st}" x="12000" y="0" name="Slider Range Discrete" id="{ab}">
 <Fill fillRule="clockwise" id="{n()}"><SolidColor colorValue="00000000" id="{n()}"/></Fill>
 <LayoutComponentStyle intrinsicallySizedValue="true" layoutHeightScaleType="hug" heightUnitsValue="auto" id="{st}"/>
 {body}
@@ -165,12 +165,12 @@ def view_model():
             pv = f' propertyValue="{v}"' if v is not None else ''
             out += f'<ViewModelInstance{TYPES.get(k, "Number")}{pv} viewModelPropertyId="{pid}" id="{nid()}"/>'
         return out + '</ViewModelInstance>'
-    vm = f'<ViewModel defaultInstanceId="345:150" name="RangeDiscreteSlider" groupId="1:2673" id="{VM}">'
+    vm = f'<ViewModel defaultInstanceId="345:150" name="SliderRangeDiscrete" groupId="1:2673" id="{VM}">'
     vm += ''.join(f'<ViewModelProperty{TYPES.get(k, "Number")} name="{k}" id="{pid}"/>' for k, pid in P.items())
     vm += inst('345:150', 'Price', dict(low=20, high=80, min=0, max=100, step=10, label='Price', showTicks='true',
                                         _lowFraction=0.2, _highFraction=0.8, _span=0.6))
     vm += '</ViewModel>'
-    script = f'<ScriptAsset file="Range Discrete Slider.luau" name="Range Discrete Slider" groupId="327:1" id="{SCRIPT}"/>'
+    script = f'<ScriptAsset file="Slider Range Discrete.luau" name="Slider Range Discrete" groupId="327:1" id="{SCRIPT}"/>'
     return vm + script
 
 
@@ -178,5 +178,5 @@ if __name__ == '__main__':
     sys.path.insert(0, 'tools')
     from rmlgen import pretty
     doc = f'<Rive version="1" kind="fragment">{slider()}{view_model()}</Rive>'
-    open('shared/56b-RangeDiscreteSlider.rml', 'w').write(pretty(doc))
+    open('shared/56b-SliderRangeDiscrete.rml', 'w').write(pretty(doc))
     print('ok')

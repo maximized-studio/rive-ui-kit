@@ -1,5 +1,5 @@
 <Rive version="1" kind="fragment">
-    <Artboard defaultStateMachineId="346:3" viewModelId="345:100" viewModelInstanceId="345:150" isComponent="true" spaceId="1:5601" width="280" height="56" styleId="346:2" x="12000" name="Range Discrete Slider" id="346:1">
+    <Artboard defaultStateMachineId="346:3" viewModelId="345:100" viewModelInstanceId="345:150" isComponent="true" spaceId="1:5601" width="280" height="56" styleId="346:2" x="12000" name="Slider Range Discrete" id="346:1">
         <Fill fillRule="clockwise" id="346:407">
             <SolidColor colorValue="00000000" id="346:408"/>
         </Fill>
@@ -71,7 +71,7 @@
             </LayoutComponent>
             <LayoutComponent height="24" styleId="346:5" name="Track Area" id="346:4">
                 <LayoutComponent styleId="346:165" name="Drag" id="346:166">
-                    <ScriptedLayout scriptAssetId="345:400" name="Range Discrete Slider" id="346:167"/>
+                    <ScriptedLayout scriptAssetId="345:400" name="Slider Range Discrete" id="346:167"/>
                     <LayoutComponentStyle positionLeftUnitsValue="points" positionRightUnitsValue="points" positionTopUnitsValue="points" positionBottomUnitsValue="points" edgeConstraints="84" positionTypeValue="absolute" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="346:165"/>
                 </LayoutComponent>
                 <Node x="10" y="12" name="Low Thumb" id="346:43">
@@ -592,8 +592,8 @@
             </KeyedObject>
         </LinearAnimation>
     </Artboard>
-    <ScriptAsset file="Range Discrete Slider.luau" compilationOrder="1" serializedImplementedMethods="4985" scriptProtocolValue="layout" codeFileId="0:27938" name="Range Discrete Slider" groupId="327:1" id="345:400"/>
-    <ViewModel defaultInstanceId="345:150" name="RangeDiscreteSlider" groupId="1:2673" id="345:100">
+    <ScriptAsset file="Slider Range Discrete.luau" compilationOrder="1" serializedImplementedMethods="4985" scriptProtocolValue="layout" codeFileId="0:27938" name="Slider Range Discrete" groupId="327:1" id="345:400"/>
+    <ViewModel defaultInstanceId="345:150" name="SliderRangeDiscrete" groupId="1:2673" id="345:100">
         <ViewModelPropertyNumber name="low" id="345:101"/>
         <ViewModelPropertyNumber name="high" id="345:102"/>
         <ViewModelPropertyNumber name="min" id="345:103"/>

@@ -1,5 +1,5 @@
 <Rive version="1" kind="fragment">
-    <Artboard defaultStateMachineId="405:3" viewModelId="403:100" viewModelInstanceId="403:150" isComponent="true" spaceId="1:5601" width="280" height="56" styleId="405:2" x="4000" y="400" name="Discrete Slider" id="405:1">
+    <Artboard defaultStateMachineId="405:3" viewModelId="403:100" viewModelInstanceId="403:150" isComponent="true" spaceId="1:5601" width="280" height="56" styleId="405:2" x="4000" y="400" name="Slider Discrete" id="405:1">
         <Fill fillRule="clockwise" id="405:308">
             <SolidColor colorValue="00000000" id="405:309"/>
         </Fill>
@@ -40,7 +40,7 @@
             </LayoutComponent>
             <LayoutComponent height="24" styleId="405:5" name="Track Area" id="405:4">
                 <LayoutComponent styleId="405:104" name="Drag" id="405:103">
-                    <ScriptedLayout scriptAssetId="403:400" name="Discrete Slider" id="405:105"/>
+                    <ScriptedLayout scriptAssetId="403:400" name="Slider Discrete" id="405:105"/>
                     <LayoutComponentStyle positionLeftUnitsValue="points" positionRightUnitsValue="points" positionTopUnitsValue="points" positionBottomUnitsValue="points" edgeConstraints="84" positionTypeValue="absolute" layoutWidthScaleType="fill" layoutHeightScaleType="fill" widthUnitsValue="auto" heightUnitsValue="auto" id="405:104"/>
                 </LayoutComponent>
                 <Node x="10" y="12" name="Thumb" id="405:6">
