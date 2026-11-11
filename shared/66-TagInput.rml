@@ -5,8 +5,20 @@
         </Fill>
         <LayoutComponentStyle gapVertical="6" flexDirectionValue="column" intrinsicallySizedValue="true" layoutHeightScaleType="hug" heightUnitsValue="auto" id="688:1252"/>
         <LayoutComponent styleId="688:1090" name="Label" id="688:1091">
-            
-            <LayoutComponent styleId="983:402" name="Label" id="983:405"><NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="983:1" isStateful="true" name="Label" id="983:406"><NestedStateMachine animationId="983:2" id="983:407"/><ViewModelInstance viewModelId="983:100" exports="true" name="Label" id="983:408"><ViewModelInstanceString propertyValue="Label" viewModelPropertyId="983:101" id="983:409"><DataBindContext sourcePathIds="688:1-688:4" propertyKey="561" nameBased="true" id="983:410"/></ViewModelInstanceString><ViewModelInstanceBoolean viewModelPropertyId="983:102" id="983:403"><DataBindContext sourcePathIds="688:1-688:6" propertyKey="593" nameBased="true" id="983:404"/></ViewModelInstanceBoolean></ViewModelInstance></NestedArtboardLayout><LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="983:402"/></LayoutComponent>
+            <LayoutComponent styleId="983:402" name="Label" id="983:405">
+                <NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="983:1" isStateful="true" name="Label" id="983:406">
+                    <NestedStateMachine animationId="983:2" id="983:407"/>
+                    <ViewModelInstance viewModelId="983:100" exports="true" name="Label" id="983:408">
+                        <ViewModelInstanceBoolean viewModelPropertyId="983:102" id="983:403">
+                            <DataBindContext sourcePathIds="688:1-688:6" propertyKey="593" nameBased="true" id="983:404"/>
+                        </ViewModelInstanceBoolean>
+                        <ViewModelInstanceString propertyValue="Label" viewModelPropertyId="983:101" id="983:409">
+                            <DataBindContext sourcePathIds="688:1-688:4" propertyKey="561" nameBased="true" id="983:410"/>
+                        </ViewModelInstanceString>
+                    </ViewModelInstance>
+                </NestedArtboardLayout>
+                <LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="983:402"/>
+            </LayoutComponent>
             <LayoutComponentStyle intrinsicallySizedValue="true" layoutTypeValue="stack" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="688:1090"/>
         </LayoutComponent>
         <LayoutComponent styleId="688:1048" name="Field" id="688:1002">
@@ -365,7 +377,7 @@
             </KeyedObject>
         </LinearAnimation>
     </Artboard>
-    <ScriptAsset file="Tag Input.luau" compilationOrder="4" serializedImplementedMethods="769" scriptProtocolValue="layout" codeFileId="0:50219" name="Tag Input" groupId="327:1" id="688:1009"/>
+    <ScriptAsset file="Tag Input.luau" compilationOrder="3" serializedImplementedMethods="769" scriptProtocolValue="layout" codeFileId="0:50219" name="Tag Input" groupId="327:1" id="688:1009"/>
     <ViewModel defaultInstanceId="688:20" name="TagInput" groupId="1:2673" id="688:1">
         <ViewModelPropertyList name="tags" id="688:2"/>
         <ViewModelPropertyString name="draft" id="688:3"/>

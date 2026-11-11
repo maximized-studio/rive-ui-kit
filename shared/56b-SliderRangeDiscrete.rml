@@ -6,7 +6,20 @@
         <LayoutComponentStyle intrinsicallySizedValue="true" layoutHeightScaleType="hug" heightUnitsValue="auto" id="346:2"/>
         <LayoutComponent styleId="346:218" name="Frame" id="346:219">
             <LayoutComponent styleId="346:174" name="Header" id="346:177">
-                <LayoutComponent styleId="983:359" name="Label" id="983:362"><NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="983:1" isStateful="true" name="Label" id="983:363"><NestedStateMachine animationId="983:2" id="983:364"/><ViewModelInstance viewModelId="983:100" exports="true" name="Label" id="983:365"><ViewModelInstanceString propertyValue="Price" viewModelPropertyId="983:101" id="983:366"><DataBindContext sourcePathIds="345:100-345:106" propertyKey="561" nameBased="true" id="983:367"/></ViewModelInstanceString><ViewModelInstanceBoolean viewModelPropertyId="983:102" id="983:360"><DataBindContext sourcePathIds="345:100-345:107" propertyKey="593" nameBased="true" id="983:361"/></ViewModelInstanceBoolean></ViewModelInstance></NestedArtboardLayout><LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="fill" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="983:359"/></LayoutComponent>
+                <LayoutComponent styleId="983:359" name="Label" id="983:362">
+                    <NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="983:1" isStateful="true" name="Label" id="983:363">
+                        <NestedStateMachine animationId="983:2" id="983:364"/>
+                        <ViewModelInstance viewModelId="983:100" exports="true" name="Label" id="983:365">
+                            <ViewModelInstanceBoolean viewModelPropertyId="983:102" id="983:360">
+                                <DataBindContext sourcePathIds="345:100-345:107" propertyKey="593" nameBased="true" id="983:361"/>
+                            </ViewModelInstanceBoolean>
+                            <ViewModelInstanceString propertyValue="Price" viewModelPropertyId="983:101" id="983:366">
+                                <DataBindContext sourcePathIds="345:100-345:106" propertyKey="561" nameBased="true" id="983:367"/>
+                            </ViewModelInstanceString>
+                        </ViewModelInstance>
+                    </NestedArtboardLayout>
+                    <LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="fill" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="983:359"/>
+                </LayoutComponent>
                 <LayoutComponent styleId="346:176" name="Values" id="346:175">
                     <Text name="Low" id="346:189">
                         <TextStylePaint fontSize="14" fontAssetId="0:7" familyName="Inter" styleName="Medium" id="346:188">
@@ -578,7 +591,7 @@
             </KeyedObject>
         </LinearAnimation>
     </Artboard>
-    <ScriptAsset file="Slider Range Discrete.luau" compilationOrder="2" serializedImplementedMethods="4985" scriptProtocolValue="layout" codeFileId="0:27938" name="Slider Range Discrete" groupId="327:1" id="345:400"/>
+    <ScriptAsset file="Slider Range Discrete.luau" compilationOrder="15" serializedImplementedMethods="4985" scriptProtocolValue="layout" codeFileId="0:27938" name="Slider Range Discrete" groupId="327:1" id="345:400"/>
     <ViewModel defaultInstanceId="345:150" name="SliderRangeDiscrete" groupId="1:2673" id="345:100">
         <ViewModelPropertyNumber name="low" id="345:101"/>
         <ViewModelPropertyNumber name="high" id="345:102"/>

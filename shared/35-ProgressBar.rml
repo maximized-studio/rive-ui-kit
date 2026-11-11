@@ -6,7 +6,18 @@
         <LayoutComponentStyle intrinsicallySizedValue="true" layoutHeightScaleType="hug" id="130:21"/>
         <LayoutComponent styleId="130:31" name="Frame" id="130:30">
             <LayoutComponent styleId="130:33" name="Header" id="130:32">
-                <LayoutComponent styleId="983:368" name="Label" id="983:370"><NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="983:1" isStateful="true" name="Label" id="983:371"><NestedStateMachine animationId="983:2" id="983:372"/><ViewModelInstance viewModelId="983:100" exports="true" name="Label" id="983:373"><ViewModelInstanceString propertyValue="Uploading" viewModelPropertyId="983:101" id="983:374"><DataBindContext sourcePathIds="130:1-130:2" propertyKey="561" nameBased="true" id="983:375"/></ViewModelInstanceString><ViewModelInstanceBoolean viewModelPropertyId="983:102" id="983:369"/></ViewModelInstance></NestedArtboardLayout><LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="fill" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="983:368"/></LayoutComponent>
+                <LayoutComponent styleId="983:368" name="Label" id="983:370">
+                    <NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="983:1" isStateful="true" name="Label" id="983:371">
+                        <NestedStateMachine animationId="983:2" id="983:372"/>
+                        <ViewModelInstance viewModelId="983:100" exports="true" name="Label" id="983:373">
+                            <ViewModelInstanceBoolean viewModelPropertyId="983:102" id="983:369"/>
+                            <ViewModelInstanceString propertyValue="Uploading" viewModelPropertyId="983:101" id="983:374">
+                                <DataBindContext sourcePathIds="130:1-130:2" propertyKey="561" nameBased="true" id="983:375"/>
+                            </ViewModelInstanceString>
+                        </ViewModelInstance>
+                    </NestedArtboardLayout>
+                    <LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="fill" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="983:368"/>
+                </LayoutComponent>
                 <Text name="Value" id="130:44">
                     <TextStylePaint fontSize="14" fontAssetId="0:7" familyName="Inter" styleName="Regular" id="130:45">
                         <Fill fillRule="clockwise" id="130:46">
