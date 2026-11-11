@@ -57,7 +57,7 @@ The components carry Rive semantics, so screen readers get a real accessibility 
 | Dialog | `dialog`, `text`, `button` ×2 | title; body; the two Buttons |
 | Discrete Slider, Knob, Range Discrete Slider | `slider` | label, value, disabled; increase / decrease |
 | Gauge | `text` | label, value |
-| Kbd | `text` | keys |
+| Key | `text` | label |
 | Menu / Menu Item | `list` / `listItem` | label; item label, selected (in a Select), disabled |
 | Number Field | `button` / `slider` / `button` | Decrease, label with the value, Increase; increase / decrease |
 | PIN Input, Tag Input | `textField` | label, value (Tag Input: the draft), disabled |
@@ -339,12 +339,14 @@ A semicircle meter with a needle.
 - The arc and the needle follow `value` through formulas; fully native.
 - Screen readers get `text` named by `label` with the value.
 
-## Kbd
+## Key
 
-A keyboard key cap for shortcuts (`⌘ K`, `Esc`).
+A key or button hint for shortcuts and controls: a keyboard key cap (`⌘ K`, `Esc`), an Xbox or PlayStation face button, or a shoulder button.
 
-- View model `Kbd`: `keys`, `a11yHidden`.
-- Screen readers get `keys` as `text`.
+- View model `Key`: `keys` (the text on a key cap or shoulder button), `type` (`0` keyboard key cap, `1` Xbox face button, `2` PlayStation face button, `3` shoulder or trigger pill such as `LB`, `RT`, `L1`, `R2`), `glyph` (for a face button: `0`–`3` are A, B, X, Y on Xbox and cross, circle, square, triangle on PlayStation), `label` (screen reader name), `a11yHidden`.
+- A Type layer picks the look and a Glyph layer the face glyph, each with one state per value. Every type is 24 pt high, so they sit in one row.
+- The key cap follows the theme. The gamepad buttons are dark in both modes with the platform's own glyph colours.
+- Screen readers get `label` as `text`: set it to what the key means ("Command K", "A button", "Left bumper"), since `keys` is only what is drawn.
 
 ## Knob
 
