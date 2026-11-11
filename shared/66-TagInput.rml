@@ -377,7 +377,7 @@
             </KeyedObject>
         </LinearAnimation>
     </Artboard>
-    <ScriptAsset file="Tag Input.luau" compilationOrder="4" serializedImplementedMethods="769" scriptProtocolValue="layout" codeFileId="0:50219" name="Tag Input" groupId="327:1" id="688:1009"/>
+    <ScriptAsset file="Tag Input.luau" scriptProtocolValue="layout" name="Tag Input" groupId="327:1" id="688:1009"/>
     <ViewModel defaultInstanceId="688:20" name="TagInput" groupId="1:2673" id="688:1">
         <ViewModelPropertyList name="tags" id="688:2"/>
         <ViewModelPropertyString name="draft" id="688:3"/>

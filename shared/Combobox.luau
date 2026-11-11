@@ -38,6 +38,7 @@ end
 local function str(p: Property<string>?): string
     return if p ~= nil then p.value else ''
 end
+
 local function labelOf(item: ViewModel): string
     local p = item:getString('label')
     return if p ~= nil then p.value else ''
@@ -85,11 +86,13 @@ local function filter(self: Combo)
     while results.length < #matches do
         local item = Data.ComboOption.new()
         local n = results.length + 1
+        local pick = item:getTrigger('_pick')
         if pick ~= nil then
             pick:addListener(item, function()
                 self.pending.pick = labelOf(item)
                 wake(self)
             end)
+        end
         local hover = item:getBoolean('_hover')
         if hover ~= nil then
             hover:addListener(item, function()
@@ -111,6 +114,8 @@ local function filter(self: Combo)
         setBool(item:getBoolean('selected'), label == chosen)
     end
     self.active = math.max(0, math.min(self.active, #matches))
+    if self.active == 0 and #matches > 0 then
+        self.active = 1
     end
     highlight(self)
     setBool(self.empty, #matches == 0)

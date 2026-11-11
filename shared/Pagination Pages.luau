@@ -1,3 +1,4 @@
+-- Pagination behaviour: which page buttons to show, and when Previous / Next are disabled.
 --
 -- Reads `page` and `pageCount`, fills `_pages` with Page Items: every page up to 7 pages,
 -- otherwise 1 … 4 5 6 … 20 (an item with value 0 is the ellipsis). Sets `_prevDisabled` on

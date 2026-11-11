@@ -13,6 +13,7 @@ type Ctx = {
     open: Property<boolean>?,
     items: PropertyList?,
     width: number,
+    height: number,
     pressing: boolean,
     held: number,
     px: number,
@@ -21,6 +22,7 @@ type Ctx = {
 
 local HOLD = 0.45
 local SLOP = 6
+local MENU_W = 200
 local ITEM_H = 40
 local PAD = 8
 
@@ -121,7 +123,7 @@ function advance(self: Ctx, seconds: number): boolean
     end
     self.held += seconds
     if self.held >= HOLD then
--- Tooltip Placement: the side the Tooltip Button's bubble really shows on.
+        self.pressing = false
         openAt(self, self.px, self.py)
         return false
     end
@@ -129,6 +131,7 @@ function advance(self: Ctx, seconds: number): boolean
 end
 
 function draw(self: Ctx, renderer: Renderer) end
+
 return function(context: Context): Layout<Ctx>
     return {
         context = nil,

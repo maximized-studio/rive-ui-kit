@@ -484,7 +484,7 @@
         <FormulaTokenValue operationValue="2.3561945" id="640:1046"/>
     </DataConverterFormula>
     <DataConverterToString round="true" name="Knob · Value (to text)" groupId="1:2674" id="640:540"/>
-    <ScriptAsset file="Knob Drag.luau" compilationOrder="6" serializedImplementedMethods="2102137" scriptProtocolValue="layout" codeFileId="0:54769" name="Knob Drag" groupId="327:1" id="640:1006"/>
+    <ScriptAsset file="Knob Drag.luau" scriptProtocolValue="layout" name="Knob Drag" groupId="327:1" id="640:1006"/>
     <ViewModel defaultInstanceId="640:20" name="Knob" groupId="1:2673" id="640:1">
         <ViewModelPropertyNumber name="value" id="640:2"/>
         <ViewModelPropertyNumber name="min" id="640:3"/>
