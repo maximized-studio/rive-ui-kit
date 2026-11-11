@@ -1,5 +1,5 @@
 <Rive version="1" kind="fragment">
-    <Artboard defaultStateMachineId="685:1001" viewModelId="685:1" viewModelInstanceId="685:20" isComponent="true" spaceId="1:5601" width="80" height="28" styleId="685:1147" x="7700" name="Tag" id="685:1000">
+    <Artboard defaultStateMachineId="685:1001" viewModelId="685:1" viewModelInstanceId="685:20" isComponent="true" spaceId="1:5601" width="80" height="28" styleId="685:1147" x="7700" name="Tag Input Item" id="685:1000">
         <Fill fillRule="clockwise" id="685:1148">
             <SolidColor colorValue="00000000" id="685:1149"/>
         </Fill>
@@ -232,7 +232,7 @@
             </KeyedObject>
         </LinearAnimation>
     </Artboard>
-    <ViewModel defaultInstanceId="685:20" name="Tag" groupId="1:2673" id="685:1">
+    <ViewModel defaultInstanceId="685:20" name="TagInputItem" groupId="1:2673" id="685:1">
         <ViewModelPropertyString name="label" id="685:2"/>
         <ViewModelPropertyTrigger name="_remove" id="685:3"/>
         <ViewModelPropertyBoolean name="_hover" id="685:4"/>

@@ -5,38 +5,8 @@
         </Fill>
         <LayoutComponentStyle gapVertical="6" flexDirectionValue="column" intrinsicallySizedValue="true" layoutHeightScaleType="hug" heightUnitsValue="auto" id="688:1252"/>
         <LayoutComponent styleId="688:1090" name="Label" id="688:1091">
-            <Text name="Disabled Label" id="688:1095">
-                <TextStylePaint fontSize="14" fontAssetId="0:7" familyName="Inter" styleName="Medium" id="688:1094">
-                    <Fill fillRule="clockwise" id="688:1096">
-                        <SolidColor colorValue="FFA1A1AA" id="688:1097">
-                            <DataBindContext sourcePathIds="10:7-10:7426" propertyKey="37" id="688:1098"/>
-                        </SolidColor>
-                    </Fill>
-                    <TextStyleAxis tag="1869640570" axisValue="14" id="688:1099"/>
-                    <TextStyleAxis tag="2003265652" axisValue="500" id="688:1100"/>
-                </TextStylePaint>
-                <TextValueRun styleId="688:1094" text="Label" id="688:1101">
-                    <DataBindContext sourcePathIds="688:1-688:4" propertyKey="268" nameBased="true" id="688:1092"/>
-                </TextValueRun>
-                <LayoutParticipant layoutWidthScaleType="hug" layoutHeightScaleType="hug" id="688:1102"/>
-                <DataBindContext sourcePathIds="688:1-688:6" propertyKey="18" nameBased="true" converterId="9:145" id="688:1093"/>
-            </Text>
-            <Text name="Label" id="688:1106">
-                <TextStylePaint fontSize="14" fontAssetId="0:7" familyName="Inter" styleName="Medium" id="688:1105">
-                    <Fill fillRule="clockwise" id="688:1107">
-                        <SolidColor colorValue="FFFAFAFA" id="688:1108">
-                            <DataBindContext sourcePathIds="10:7-10:7422" propertyKey="37" id="688:1109"/>
-                        </SolidColor>
-                    </Fill>
-                    <TextStyleAxis tag="1869640570" axisValue="14" id="688:1110"/>
-                    <TextStyleAxis tag="2003265652" axisValue="500" id="688:1111"/>
-                </TextStylePaint>
-                <TextValueRun styleId="688:1105" text="Label" id="688:1112">
-                    <DataBindContext sourcePathIds="688:1-688:4" propertyKey="268" nameBased="true" id="688:1103"/>
-                </TextValueRun>
-                <LayoutParticipant layoutWidthScaleType="hug" layoutHeightScaleType="hug" id="688:1113"/>
-                <DataBindContext sourcePathIds="688:1-688:6" propertyKey="18" nameBased="true" converterId="9:90" id="688:1104"/>
-            </Text>
+            
+            <LayoutComponent styleId="983:402" name="Label" id="983:405"><NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="983:1" isStateful="true" name="Label" id="983:406"><NestedStateMachine animationId="983:2" id="983:407"/><ViewModelInstance viewModelId="983:100" exports="true" name="Label" id="983:408"><ViewModelInstanceString propertyValue="Label" viewModelPropertyId="983:101" id="983:409"><DataBindContext sourcePathIds="688:1-688:4" propertyKey="561" nameBased="true" id="983:410"/></ViewModelInstanceString><ViewModelInstanceBoolean viewModelPropertyId="983:102" id="983:403"><DataBindContext sourcePathIds="688:1-688:6" propertyKey="593" nameBased="true" id="983:404"/></ViewModelInstanceBoolean></ViewModelInstance></NestedArtboardLayout><LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="983:402"/></LayoutComponent>
             <LayoutComponentStyle intrinsicallySizedValue="true" layoutTypeValue="stack" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="688:1090"/>
         </LayoutComponent>
         <LayoutComponent styleId="688:1048" name="Field" id="688:1002">

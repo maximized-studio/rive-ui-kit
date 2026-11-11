@@ -6,21 +6,7 @@
         <LayoutComponentStyle intrinsicallySizedValue="true" layoutHeightScaleType="hug" heightUnitsValue="auto" id="346:2"/>
         <LayoutComponent styleId="346:218" name="Frame" id="346:219">
             <LayoutComponent styleId="346:174" name="Header" id="346:177">
-                <Text name="Label" id="346:179">
-                    <TextStylePaint fontSize="14" fontAssetId="0:7" familyName="Inter" styleName="Medium" id="346:178">
-                        <Fill fillRule="clockwise" id="346:180">
-                            <SolidColor colorValue="FFFAFAFA" id="346:181">
-                                <DataBindContext sourcePathIds="10:7-10:7422" propertyKey="37" id="346:182"/>
-                            </SolidColor>
-                        </Fill>
-                        <TextStyleAxis tag="1869640570" axisValue="14" id="346:183"/>
-                        <TextStyleAxis tag="2003265652" axisValue="500" id="346:184"/>
-                    </TextStylePaint>
-                    <TextValueRun styleId="346:178" text="Price" id="346:185">
-                        <DataBindContext sourcePathIds="345:100-345:106" propertyKey="268" nameBased="true" id="346:186"/>
-                    </TextValueRun>
-                    <LayoutParticipant layoutWidthScaleType="fill" layoutHeightScaleType="hug" id="346:187"/>
-                </Text>
+                <LayoutComponent styleId="983:359" name="Label" id="983:362"><NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="983:1" isStateful="true" name="Label" id="983:363"><NestedStateMachine animationId="983:2" id="983:364"/><ViewModelInstance viewModelId="983:100" exports="true" name="Label" id="983:365"><ViewModelInstanceString propertyValue="Price" viewModelPropertyId="983:101" id="983:366"><DataBindContext sourcePathIds="345:100-345:106" propertyKey="561" nameBased="true" id="983:367"/></ViewModelInstanceString><ViewModelInstanceBoolean viewModelPropertyId="983:102" id="983:360"><DataBindContext sourcePathIds="345:100-345:107" propertyKey="593" nameBased="true" id="983:361"/></ViewModelInstanceBoolean></ViewModelInstance></NestedArtboardLayout><LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="fill" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="983:359"/></LayoutComponent>
                 <LayoutComponent styleId="346:176" name="Values" id="346:175">
                     <Text name="Low" id="346:189">
                         <TextStylePaint fontSize="14" fontAssetId="0:7" familyName="Inter" styleName="Medium" id="346:188">

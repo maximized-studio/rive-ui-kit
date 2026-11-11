@@ -178,38 +178,8 @@
                 </FocusData>
             </LayoutComponent>
             <LayoutComponent styleId="640:1161" name="Label" id="640:1162">
-                <Text name="Disabled Label" id="640:1166">
-                    <TextStylePaint fontSize="14" fontAssetId="0:7" familyName="Inter" styleName="Medium" id="640:1165">
-                        <Fill fillRule="clockwise" id="640:1167">
-                            <SolidColor colorValue="FFA1A1AA" id="640:1168">
-                                <DataBindContext sourcePathIds="10:7-10:7426" propertyKey="37" id="640:1169"/>
-                            </SolidColor>
-                        </Fill>
-                        <TextStyleAxis tag="1869640570" axisValue="14" id="640:1170"/>
-                        <TextStyleAxis tag="2003265652" axisValue="500" id="640:1171"/>
-                    </TextStylePaint>
-                    <TextValueRun styleId="640:1165" text="Volume" id="640:1172">
-                        <DataBindContext sourcePathIds="640:1-640:6" propertyKey="268" nameBased="true" id="640:1163"/>
-                    </TextValueRun>
-                    <LayoutParticipant layoutWidthScaleType="hug" layoutHeightScaleType="hug" id="640:1173"/>
-                    <DataBindContext sourcePathIds="640:1-640:7" propertyKey="18" nameBased="true" converterId="9:145" id="640:1164"/>
-                </Text>
-                <Text name="Label" id="640:1177">
-                    <TextStylePaint fontSize="14" fontAssetId="0:7" familyName="Inter" styleName="Medium" id="640:1176">
-                        <Fill fillRule="clockwise" id="640:1178">
-                            <SolidColor colorValue="FFD4D4D8" id="640:1179">
-                                <DataBindContext sourcePathIds="10:7-10:7424" propertyKey="37" id="640:1180"/>
-                            </SolidColor>
-                        </Fill>
-                        <TextStyleAxis tag="1869640570" axisValue="14" id="640:1181"/>
-                        <TextStyleAxis tag="2003265652" axisValue="500" id="640:1182"/>
-                    </TextStylePaint>
-                    <TextValueRun styleId="640:1176" text="Volume" id="640:1183">
-                        <DataBindContext sourcePathIds="640:1-640:6" propertyKey="268" nameBased="true" id="640:1174"/>
-                    </TextValueRun>
-                    <LayoutParticipant layoutWidthScaleType="hug" layoutHeightScaleType="hug" id="640:1184"/>
-                    <DataBindContext sourcePathIds="640:1-640:7" propertyKey="18" nameBased="true" converterId="9:90" id="640:1175"/>
-                </Text>
+                
+                <LayoutComponent styleId="983:411" name="Label" id="983:414"><NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="983:1" isStateful="true" name="Label" id="983:415"><NestedStateMachine animationId="983:2" id="983:416"/><ViewModelInstance viewModelId="983:100" exports="true" name="Label" id="983:417"><ViewModelInstanceString propertyValue="Volume" viewModelPropertyId="983:101" id="983:418"><DataBindContext sourcePathIds="640:1-640:6" propertyKey="561" nameBased="true" id="983:419"/></ViewModelInstanceString><ViewModelInstanceBoolean viewModelPropertyId="983:102" id="983:412"><DataBindContext sourcePathIds="640:1-640:7" propertyKey="593" nameBased="true" id="983:413"/></ViewModelInstanceBoolean></ViewModelInstance></NestedArtboardLayout><LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="983:411"/></LayoutComponent>
                 <LayoutComponentStyle intrinsicallySizedValue="true" layoutTypeValue="stack" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="640:1161"/>
             </LayoutComponent>
             <LayoutComponentStyle gapVertical="8" layoutAlignmentType="topCenter" flexDirectionValue="column" intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="640:1159"/>

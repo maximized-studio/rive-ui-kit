@@ -1,5 +1,5 @@
 <Rive version="1" kind="fragment">
-    <Artboard defaultStateMachineId="1:1740" viewModelId="1:1748" viewModelInstanceId="1:1749" isComponent="true" spaceId="1:5601" width="16" height="16" styleId="1:1736" y="1233" name="Label" id="1:1722">
+    <Artboard defaultStateMachineId="1:1740" viewModelId="1:1748" viewModelInstanceId="1:1749" isComponent="true" spaceId="1:5601" width="16" height="16" styleId="1:1736" y="1233" name="Tag" id="1:1722">
         <LayoutComponent width="5" height="15" styleId="1:1735" name="Row" id="1:1723">
             <LayoutComponent width="16" height="16" styleId="1:1732" name="Text Layout" id="1:1724">
                 <Text alignValue="center" verticalAlignValue="middle" fitFontSizeResizesBox="false" name="Text" id="1:1725">
@@ -12,7 +12,7 @@
                         <TextStyleAxis tag="1869640570" axisValue="14" name="Style Axis" id="1:1729"/>
                         <TextStyleAxis tag="2003265652" axisValue="500" name="Style Axis" id="1:1730"/>
                     </TextStylePaint>
-                    <TextValueRun styleId="1:1726" text="Label" name="Run 1" id="1:1731">
+                    <TextValueRun styleId="1:1726" text="Tag" name="Run 1" id="1:1731">
                         <DataBindContext sourcePathIds="1:1748-1:1750" propertyKey="268" id="1:3895"/>
                     </TextValueRun>
                 </Text>

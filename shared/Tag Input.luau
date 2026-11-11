@@ -72,7 +72,7 @@ local function add(self: TagInput, text: string)
             return
         end
     end
-    local item = Data.Tag.new()
+    local item = Data.TagInputItem.new()
     local p = item:getString('label')
     if p ~= nil then
         p.value = label

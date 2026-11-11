@@ -2,38 +2,8 @@
     <Artboard defaultStateMachineId="1:1875" viewModelId="1:1932" viewModelInstanceId="1:1933" isComponent="true" spaceId="1:5601" width="200" height="16" styleId="1:1873" y="2014" name="Slider" id="1:1870">
         <LayoutComponent width="192" height="16" styleId="1:2185" id="1:2184">
             <LayoutComponent styleId="1:2537" name="Label" id="1:2529">
-                <Text fitFontSizeResizesBox="false" name="Disabled Text" id="15:351">
-                    <TextStylePaint fontSize="16" fontAssetId="0:7" familyName="Inter" styleName="Regular" name="Style 1" id="15:352">
-                        <Fill name="Fill 1" id="15:353">
-                            <SolidColor colorValue="FFFAFAFA" name="Component" id="15:354">
-                                <DataBindContext sourcePathIds="10:7-10:7426" propertyKey="37" id="15:358"/>
-                            </SolidColor>
-                        </Fill>
-                        <TextStyleAxis tag="1869640570" axisValue="14" name="Style Axis" id="15:355"/>
-                        <TextStyleAxis tag="2003265652" axisValue="400" name="Style Axis" id="15:356"/>
-                    </TextStylePaint>
-                    <TextValueRun styleId="15:352" text="Slider
-" name="Run 1" id="15:357">
-                        <DataBindContext sourcePathIds="1:1932-1:2188" propertyKey="268" nameBased="true" id="15:359"/>
-                    </TextValueRun>
-                    <DataBindContext sourcePathIds="1:1932-7:35" propertyKey="18" nameBased="true" converterId="9:145" id="16:613"/>
-                </Text>
-                <Text fitFontSizeResizesBox="false" name="Text" id="1:2530">
-                    <TextStylePaint fontSize="16" fontAssetId="0:7" familyName="Inter" styleName="Regular" name="Style 1" id="1:2531">
-                        <Fill name="Fill 1" id="1:2532">
-                            <SolidColor colorValue="FFFAFAFA" name="Component" id="1:2533">
-                                <DataBindContext sourcePathIds="10:7-10:7422" propertyKey="37" id="10:7534"/>
-                            </SolidColor>
-                        </Fill>
-                        <TextStyleAxis tag="1869640570" axisValue="14" name="Style Axis" id="1:2534"/>
-                        <TextStyleAxis tag="2003265652" axisValue="400" name="Style Axis" id="1:2535"/>
-                    </TextStylePaint>
-                    <TextValueRun styleId="1:2531" text="Slider
-" name="Run 1" id="1:2536">
-                        <DataBindContext sourcePathIds="1:1932-1:2188" propertyKey="268" id="1:2539"/>
-                    </TextValueRun>
-                    <DataBindContext sourcePathIds="1:1932-7:35" propertyKey="18" nameBased="true" converterId="9:90" id="15:361"/>
-                </Text>
+                
+                <LayoutComponent styleId="983:332" name="Label" id="983:335"><NestedArtboardLayout instanceWidthScaleType="hug" instanceHeightScaleType="hug" artboardId="983:1" isStateful="true" name="Label" id="983:336"><NestedStateMachine animationId="983:2" id="983:337"/><ViewModelInstance viewModelId="983:100" exports="true" name="Label" id="983:338"><ViewModelInstanceString propertyValue="Slider" viewModelPropertyId="983:101" id="983:339"><DataBindContext sourcePathIds="1:1932-1:2188" propertyKey="561" nameBased="true" id="983:340"/></ViewModelInstanceString><ViewModelInstanceBoolean viewModelPropertyId="983:102" id="983:333"><DataBindContext sourcePathIds="1:1932-7:35" propertyKey="593" nameBased="true" id="983:334"/></ViewModelInstanceBoolean></ViewModelInstance></NestedArtboardLayout><LayoutComponentStyle intrinsicallySizedValue="true" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" id="983:332"/></LayoutComponent>
                 <LayoutComponentStyle intrinsicallySizedValue="true" layoutTypeValue="stack" layoutWidthScaleType="hug" layoutHeightScaleType="hug" widthUnitsValue="auto" heightUnitsValue="auto" name="Layout Style" id="1:2537"/>
             </LayoutComponent>
             <LayoutComponent width="191.97656" height="16" styleId="1:2187" id="1:2186">
