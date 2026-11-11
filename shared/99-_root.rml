@@ -2930,6 +2930,7 @@
     <ScriptAsset file="Slider Discrete.luau" compilationOrder="7" serializedImplementedMethods="4985" scriptProtocolValue="layout" codeFileId="0:85120" name="Slider Discrete" groupId="327:1" id="403:400"/>
     <ScriptAsset file="Calendar.luau" compilationOrder="8" serializedImplementedMethods="769" scriptProtocolValue="layout" codeFileId="0:91752" name="Calendar" groupId="327:1" id="410:400"/>
     <ScriptAsset file="Accordion Single.luau" compilationOrder="13" serializedImplementedMethods="769" scriptProtocolValue="layout" codeFileId="0:80578" name="Accordion Single" groupId="327:1" id="414:10"/>
+    <ScriptAsset file="Nav Expansion.luau" scriptProtocolValue="layout" name="Nav Expansion" groupId="327:1" id="985:5"/>
     <ScriptAsset file="Select All.luau" compilationOrder="11" serializedImplementedMethods="769" scriptProtocolValue="layout" codeFileId="0:82275" name="Select All" groupId="327:1" id="422:520"/>
     <ScriptAsset file="Pagination Pages.luau" compilationOrder="5" serializedImplementedMethods="769" scriptProtocolValue="layout" codeFileId="0:15811" name="Pagination Pages" groupId="327:1" id="912:3"/>
     <ScriptAsset file="Viewport.luau" compilationOrder="9" serializedImplementedMethods="4921" scriptProtocolValue="layout" codeFileId="0:27924" name="Viewport" groupId="327:1" id="913:9"/>
@@ -4080,6 +4081,8 @@
         <ViewModelPropertyList name="sections" id="100:54"/>
         <ViewModelPropertyViewModel viewModelReferenceId="122:1" name="expansion" id="122:4"/>
         <ViewModelPropertyBoolean name="_toggleHover" id="122:6"/>
+        <ViewModelPropertyTrigger name="_toggleAll" id="985:1"/>
+        <ViewModelPropertyString name="_toggleLabel" id="985:2"/>
         <ViewModelInstance exports="true" name="Default" id="42:346">
             <ViewModelInstanceList viewModelPropertyId="100:54" id="100:58">
                 <ViewModelInstanceListItem name="Actions" viewModelId="41:864" viewModelInstanceId="100:36" id="100:55"/>
@@ -4090,6 +4093,8 @@
             </ViewModelInstanceList>
             <ViewModelInstanceViewModel propertyValue="122:3" viewModelPropertyId="122:4" id="122:13"/>
             <ViewModelInstanceBoolean viewModelPropertyId="122:6" id="122:14"/>
+            <ViewModelInstanceTrigger viewModelPropertyId="985:1" id="985:3"/>
+            <ViewModelInstanceString propertyValue="Expand all" viewModelPropertyId="985:2" id="985:4"/>
         </ViewModelInstance>
     </ViewModel>
     <ViewModel defaultInstanceId="0:0" name="ButtonGroup" groupId="1:2673" id="92:606">
@@ -5329,7 +5334,7 @@
         </ViewModelInstance>
     </ViewModel>
     <ViewModel defaultInstanceId="122:3" name="NavExpansion" groupId="1:2673" id="122:1">
-        <ViewModelPropertyBoolean name="allOpen" id="122:2"/>
+        <ViewModelPropertyBoolean name="anyOpen" id="122:2"/>
         <ViewModelInstance exports="true" name="Default" id="122:3">
             <ViewModelInstanceBoolean viewModelPropertyId="122:2" id="122:7"/>
         </ViewModelInstance>

@@ -164,15 +164,6 @@
                     </BindablePropertyBoolean>
                 </ListenerViewModelChange>
             </StateMachineListener>
-            <StateMachineListener targetId="42:64" name="Expand All" id="122:16">
-                <ListenerInputTypeViewModel viewModelPathIds="41:864-122:5-122:2" listenerTypeValue="viewModel" id="122:17"/>
-                <ListenerViewModelChange fromViewModelProperty="true" fromDataBindId="122:15" id="122:18">
-                    <BindablePropertyBoolean id="122:19">
-                        <DataBindContext sourcePathIds="41:864-122:5-122:2" propertyKey="634" id="122:15"/>
-                        <DataBindContext sourcePathIds="41:864-41:884" propertyKey="634" direction="true" id="122:20"/>
-                    </BindablePropertyBoolean>
-                </ListenerViewModelChange>
-            </StateMachineListener>
         </StateMachine>
         <LinearAnimation name="Closed" id="42:68">
             <KeyedObject objectId="42:110" id="42:129">
