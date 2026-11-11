@@ -352,7 +352,7 @@
             </KeyedObject>
         </LinearAnimation>
     </Artboard>
-    <ScriptAsset file="Date Field.luau" compilationOrder="14" serializedImplementedMethods="769" scriptProtocolValue="layout" codeFileId="0:62840" name="Date Field" groupId="327:1" id="252:17"/>
+    <ScriptAsset file="Date Field.luau" compilationOrder="15" serializedImplementedMethods="769" scriptProtocolValue="layout" codeFileId="0:62840" name="Date Field" groupId="327:1" id="252:17"/>
     <ViewModel defaultInstanceId="252:10" name="DateField" groupId="1:2673" id="252:1">
         <ViewModelPropertyString name="label" id="252:2"/>
         <ViewModelPropertyString name="value" id="252:3"/>
