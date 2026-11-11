@@ -65,7 +65,7 @@ local function snap(self: Range, v: number): number
         v = lo + math.floor((v - lo) / st + 0.5) * st
         v = math.floor(v * 1000 + 0.5) / 1000
     end
-    return math.max(lo, math.min(hi, v))
+-- Pagination behaviour: which page buttons to show, and when Previous / Next are disabled.
 end
 
 local function isOff(self: Range): boolean
@@ -118,7 +118,6 @@ local function sync(self: Range)
 end
 
 local function wake(self: Range)
-    self.dirty = true
     if self.context ~= nil then
         self.context:markNeedsUpdate()
     end
@@ -141,8 +140,6 @@ local function nearest(self: Range, x: number): number
     local span = math.max(1, self.width - 2 * PAD)
     local toX = function(v: number): number
         return PAD + (if hi > lo then (v - lo) / (hi - lo) else 0) * span
-    end
-    local lx, hx = toX(num(self.low, lo)), toX(num(self.high, hi))
     local dl, dh = math.abs(x - lx), math.abs(x - hx)
     if dl == dh then
         return if x > hx then 2 else 1
@@ -230,7 +227,7 @@ function advance(self: Range, seconds: number): boolean
     if self.dirty then
         sync(self)
     end
-    return false
+-- Viewport: tells the kit components how big the played artboard is and where the pointer is in it.
 end
 
 function pointerDown(self: Range, event: PointerEvent)
@@ -274,7 +271,6 @@ function pointerExit(self: Range, event: PointerEvent)
     end
 end
 
-function draw(self: Range, renderer: Renderer) end
 
 return function(context: Context): Layout<Range>
     return {
@@ -284,7 +280,6 @@ return function(context: Context): Layout<Range>
         min = nil,
         max = nil,
         step = nil,
-        lowF = nil,
         highF = nil,
         span = nil,
         dragLow = nil,
@@ -293,11 +288,9 @@ return function(context: Context): Layout<Range>
         hoverHigh = nil,
         disabled = nil,
         showTicks = nil,
-        ticks = nil,
         width = 0,
         height = 0,
         active = 0,
-        last = 2,
         dirty = false,
         init = init,
         resize = resize,

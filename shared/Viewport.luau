@@ -1,4 +1,3 @@
--- Viewport: tells the kit components how big the played artboard is and where the pointer is in it.
 --
 -- Lives in the Theme Driver, which the host places once as a fill overlay at the artboard's top left,
 -- so this layout's box and its local coordinates are the artboard's. Writes four values on the

@@ -2931,9 +2931,9 @@
     <ScriptAsset file="Calendar.luau" compilationOrder="9" serializedImplementedMethods="769" scriptProtocolValue="layout" codeFileId="0:91752" name="Calendar" groupId="327:1" id="410:400"/>
     <ScriptAsset file="Accordion Single.luau" compilationOrder="15" serializedImplementedMethods="769" scriptProtocolValue="layout" codeFileId="0:80578" name="Accordion Single" groupId="327:1" id="414:10"/>
     <ScriptAsset file="Select All.luau" compilationOrder="13" serializedImplementedMethods="769" scriptProtocolValue="layout" codeFileId="0:82275" name="Select All" groupId="327:1" id="422:520"/>
-    <ScriptAsset file="Pagination Pages.luau" isModule="true" compilationOrder="8" serializedImplementedMethods="769" codeFileId="0:15811" name="Pagination Pages" groupId="327:1" id="912:3"/>
-    <ScriptAsset file="Viewport.luau" isModule="true" compilationOrder="11" serializedImplementedMethods="4921" codeFileId="0:27924" name="Viewport" groupId="327:1" id="913:9"/>
-    <ScriptAsset file="Tooltip Placement.luau" isModule="true" compilationOrder="7" serializedImplementedMethods="4881" codeFileId="0:20578" name="Tooltip Placement" groupId="327:1" id="914:10"/>
+    <ScriptAsset file="Pagination Pages.luau" compilationOrder="8" serializedImplementedMethods="769" scriptProtocolValue="layout" codeFileId="0:15811" name="Pagination Pages" groupId="327:1" id="912:3"/>
+    <ScriptAsset file="Viewport.luau" compilationOrder="11" serializedImplementedMethods="4921" scriptProtocolValue="layout" codeFileId="0:27924" name="Viewport" groupId="327:1" id="913:9"/>
+    <ScriptAsset file="Tooltip Placement.luau" compilationOrder="7" serializedImplementedMethods="4881" scriptProtocolValue="layout" codeFileId="0:20578" name="Tooltip Placement" groupId="327:1" id="914:10"/>
     <ScriptAsset file="Nav Expansion.luau" compilationOrder="10" serializedImplementedMethods="769" scriptProtocolValue="layout" codeFileId="0:148555" name="Nav Expansion" groupId="327:1" id="985:5"/>
     <ScriptedDataConverter scriptAssetId="400:200" name="Utils · Zero or less" groupId="1:2674" id="400:302"/>
     <Space name="Space 1" colorValue="FF2F2F2F" id="1:5601"/>

@@ -1,4 +1,3 @@
--- Tooltip Placement: the side the Tooltip Button's bubble really shows on.
 --
 -- `placement` is the side the app asks for (0 top, 1 bottom, 2 left, 3 right). The script writes
 -- `_placement`, which the overlay, the arrow and the Placement layer follow: the asked side, or the
