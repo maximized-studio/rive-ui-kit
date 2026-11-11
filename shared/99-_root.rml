@@ -5627,7 +5627,7 @@
         <ViewModelInstance exports="true" name="Publish" id="148:20">
             <ViewModelInstanceString propertyValue="Publish" viewModelPropertyId="148:2" id="146:345"/>
             <ViewModelInstanceNumber viewModelPropertyId="148:3" id="146:346"/>
-            <ViewModelInstanceNumber propertyValue="1" viewModelPropertyId="148:4" id="146:347"/>
+            <ViewModelInstanceNumber viewModelPropertyId="148:4" id="146:347"/>
             <ViewModelInstanceBoolean viewModelPropertyId="148:5" id="146:348"/>
             <ViewModelInstanceBoolean viewModelPropertyId="148:6" id="146:349"/>
             <ViewModelInstanceViewModel propertyValue="146:33" viewModelPropertyId="148:7" id="146:350"/>
